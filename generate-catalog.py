@@ -179,6 +179,7 @@ TITLE_SERIES_PATTERNS: list[tuple[str, str, str | None]] = [
     (r"at conference", "Ummah_Affairs", None),
     (r"refut|refuting", "Refutation", None),
     (r"khawarij and their aqeedah", "Refutation", None),
+    (r"democrates", "Refutation", None),
     (r"\bshia\b", "Refutation", None),
     (r"madkhali", "Refutation", None),
     (r"khilaf|khilaaf|caliphate", "Khilafah", None),

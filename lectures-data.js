@@ -30,7 +30,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "General",
     "label": "General Lectures",
-    "count": 150,
+    "count": 149,
     "subcategories": []
   },
   {
@@ -105,7 +105,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "Refutation",
     "label": "Refutations",
-    "count": 8,
+    "count": 9,
     "subcategories": []
   },
   {
@@ -698,8 +698,8 @@ const LECTURES = [
   },
   {
     "title": "DEMOCRATES - Those Who Participate In Democratic Election",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "DEMOCRATES - Those Who Participate In Democratic Election.mp3",
