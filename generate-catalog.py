@@ -32,6 +32,7 @@ ROOT = Path(__file__).resolve().parent.parent / "www" / "SheikhFaisalAudioLectur
 WEBSITE = Path(__file__).resolve().parent
 WEB_THUMB = WEBSITE / "thumb"
 SRC_CACHE = WEB_THUMB / "_src"
+ASSETS_OUT = WEB_THUMB / "assets"  # GitHub Pages-safe copy (no _src underscore folder)
 EXTRACTED = WEB_THUMB / "extracted"
 ARCHIVE_URL = "https://archive.org/metadata/FaisalAudios"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
@@ -119,6 +120,16 @@ def similarity(a: str, b: str) -> float:
 
 def web_path(path: Path) -> str:
     return path.relative_to(WEBSITE).as_posix()
+
+
+def publish_asset(cached: Path) -> str:
+    """Mirror thumb/_src/... → thumb/assets/... for GitHub Pages (Jekyll ignores _folders)."""
+    rel = cached.relative_to(SRC_CACHE)
+    dest = ASSETS_OUT / rel
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    if not dest.exists() or dest.stat().st_size != cached.stat().st_size:
+        shutil.copy2(cached, dest)
+    return web_path(dest)
 
 
 def strip_number_prefix(name: str) -> str:
@@ -262,7 +273,7 @@ class ThumbResolver:
                 if cover.is_file():
                     cached = SRC_CACHE / cover.relative_to(ROOT)
                     if cached.is_file():
-                        self.covers[str(folder.relative_to(ROOT))] = web_path(cached)
+                        self.covers[str(folder.relative_to(ROOT))] = publish_asset(cached)
 
     def _best_fuzzy(self, target: str, candidates: list[tuple[str, str]], threshold=0.82):
         if len(target) < 10:
@@ -290,7 +301,7 @@ class ThumbResolver:
                 continue
             cached = SRC_CACHE / item.relative_to(ROOT)
             if cached.is_file():
-                results.append((norm(item.stem), web_path(cached)))
+                results.append((norm(item.stem), publish_asset(cached)))
         return results
 
     def resolve(self, mp3_path: Path, title: str, rel_folder: str) -> str | None:
@@ -428,7 +439,7 @@ def main():
 
     with_thumb = sum(1 for lec in lectures if lec["thumb"])
     from_embedded = sum(1 for lec in lectures if lec["thumb"] and "/extracted/" in lec["thumb"])
-    from_src = sum(1 for lec in lectures if lec["thumb"] and "/_src/" in lec["thumb"])
+    from_assets = sum(1 for lec in lectures if lec["thumb"] and "/assets/" in lec["thumb"])
     from_flat = sum(
         1 for lec in lectures
         if lec["thumb"] and lec["thumb"].startswith("thumb/")
@@ -440,7 +451,7 @@ def main():
     print(f"Generated {len(lectures)} lectures across {len(cat_meta)} categories")
     print(f"Thumbnails resolved: {with_thumb} / {len(lectures)} ({100*with_thumb/len(lectures):.1f}%)")
     print(f"  - flat thumb/: {from_flat}")
-    print(f"  - thumb/_src/ (inline, covers, category): {from_src}")
+    print(f"  - thumb/assets/ (series covers, inline): {from_assets}")
     print(f"  - thumb/extracted/ (embedded MP3 art): {from_embedded}")
     print(f"  - no thumbnail: {len(lectures) - with_thumb}")
     print(f"Output: {out}")

@@ -167,7 +167,7 @@
   </footer>
 
   <script src="site.js"></script>
-  <script src="lectures-data.js?v=20260617c"></script>
+  <script src="lectures-data.js?v=20260617d"></script>
   <script>
     /* ── State ── */
     const state = {
@@ -289,7 +289,7 @@
       const thumbSection = hasThumb
         ? `<div class="thumb-frame relative flex items-center justify-center p-3 overflow-hidden">
             ${placeholderHtml(lecture.categoryLabel)}
-            <img src="${lecture.thumb}" alt="" class="relative z-[1]" loading="lazy"
+            <img src="${thumbSrc(lecture.thumb)}" alt="" class="relative z-[1]" loading="lazy"
               onerror="this.style.display='none'">
             <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950/80 text-gold text-[10px] font-semibold uppercase tracking-wider backdrop-blur-sm z-10">
               ${escapeHtml(lecture.categoryLabel)}

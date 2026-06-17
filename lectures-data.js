@@ -3271,7 +3271,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12).mp3",
-    "thumb": "thumb/_src/Personality Disorders (Series)/COVER.png"
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
   },
   {
     "id": 309,
@@ -3281,7 +3281,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12).mp3",
-    "thumb": "thumb/_src/Personality Disorders (Series)/COVER.png"
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
   },
   {
     "id": 310,
@@ -3291,7 +3291,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 3] Narcissistic (05.06.12).mp3",
-    "thumb": "thumb/_src/Personality Disorders (Series)/COVER.png"
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
   },
   {
     "id": 311,
@@ -3301,7 +3301,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 4] PTSD (05.07.12).mp3",
-    "thumb": "thumb/_src/Personality Disorders (Series)/COVER.png"
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
   },
   {
     "id": 312,
@@ -3311,7 +3311,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 5] Anti-Social (05.08.12).mp3",
-    "thumb": "thumb/_src/Personality Disorders (Series)/COVER.png"
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
   },
   {
     "id": 313,
@@ -4621,7 +4621,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/TAFSEER OF SURAH AT TAWBAH - Abdallah Al Faisal.mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/TAFSEER OF SURAH AT TAWBAH - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/TAFSEER OF SURAH AT TAWBAH - Abdallah Al Faisal.jpg"
   },
   {
     "id": 444,
@@ -4631,7 +4631,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (001-014) [Part 1] The Verse of the Sword (03.05.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 445,
@@ -4641,7 +4641,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (014-021) [Part 2] Allah Shall Punish the Kuffaar With Your Hands (03.06.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 446,
@@ -4651,7 +4651,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (022-027) [Part 3] The Battle of Hunain (03.07.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 447,
@@ -4661,7 +4661,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (028-030) [Part 4] Accept Islam, Pay the Jizya Or Prepare to Fight (03.08.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 448,
@@ -4671,7 +4671,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (031-034) [Part 5] None Has the Right to be Worshiped Except Allah (03.10.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 449,
@@ -4681,7 +4681,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (034-039) [Part 6] Iblis Has Beautified For Them Their Evil Deeds (03.12.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 450,
@@ -4691,7 +4691,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (039-054) [Part 7] Beware of the Murjif (03.13.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 451,
@@ -4701,7 +4701,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (055-066) [Part 8] Mocking An Aspect of the Deen Makes You Become a Kaafir (03.14.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 452,
@@ -4711,7 +4711,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (064-067) [Part 9] The Hypocrites Live in Fear of Being Exposed (03.15.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 453,
@@ -4721,7 +4721,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (067-073) [Part 10] Strive Hard Against the Disbelievers and the Hypocrites (03.17.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 454,
@@ -4731,7 +4731,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (073-080) [Part 11] The Evil Triangle (03.19.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 455,
@@ -4741,7 +4741,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (080-084) [Part 12] 15 People You Are Not Allowed to Pray Janazah Over (03.20.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 456,
@@ -4751,7 +4751,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (084-097) [Part 13] The Hypocrites Will Always Hide Behind Wallahi (03.21.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 457,
@@ -4761,7 +4761,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (097-105) [Part 14] The Munafiqeen See Zakah As A Fine Unleashed Against Them (03.22.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 458,
@@ -4771,7 +4771,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (105-111) [Part 15] The Dangers of Masjid Dirar (03.24.12)[v2].mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 459,
@@ -4781,7 +4781,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (111-118) [Part 16] Allah Desires the Soul of the Believers in Exchange for Jannah (03.26.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 460,
@@ -4791,7 +4791,7 @@ const LECTURES = [
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (119-129) [Part 17] Be in the Company of the Righteous (03.27.12).mp3",
-    "thumb": "thumb/_src/Tafseer/Tafseer surah Taubah/cover.png"
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 461,
@@ -5391,7 +5391,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 01] Arabia Before Islam (03.31.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 521,
@@ -5401,7 +5401,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 02] Replacing the Blackstone (04.01.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 522,
@@ -5411,7 +5411,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 03] The Cave of Hira (04.02.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 523,
@@ -5421,7 +5421,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 04] The Hijrah to Abyssinia (04.03.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 524,
@@ -5431,7 +5431,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 05] The Conversion of Umar A Glory for Islam (04.04.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 525,
@@ -5441,7 +5441,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 06] Al-Isra Wal-Miraj (04.05.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 526,
@@ -5451,7 +5451,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 07] The Pledge of Aqabah (04.07.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 527,
@@ -5461,7 +5461,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 08] The Hijrah from Makkah to Madina (04.08.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 528,
@@ -5471,7 +5471,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 09] The Battle of Badr (04.09.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 529,
@@ -5481,7 +5481,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 10] The Treachery of Banu Qainuqa (04.11.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 530,
@@ -5491,7 +5491,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 11] The Battle of Uhud (04.12.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 531,
@@ -5501,7 +5501,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 12] The Treachery of Banu Nadir (04.14.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 532,
@@ -5511,7 +5511,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 13] The Battle of the Ditch (04.15.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 533,
@@ -5521,7 +5521,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 14] The Slander of Aisha [RA] (04.16.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 534,
@@ -5531,7 +5531,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 15] 42 Lessons From The Slander of Aisha [RA] (04.17.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 535,
@@ -5541,7 +5541,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 16] The Treaty of Hudaibiya (04.19.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 536,
@@ -5551,7 +5551,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 17] The Conquest of Khaibar (04.21.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 537,
@@ -5561,7 +5561,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 18] The Battle of Mu'tah (04.22.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 538,
@@ -5571,7 +5571,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 19] The Conquest of Makkah (04.23.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 539,
@@ -5581,7 +5581,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 20] The Battle of Hunain (04.24.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 540,
@@ -5591,7 +5591,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 21] The Tabuk Expedition (04.25.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 541,
@@ -5601,7 +5601,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 22] Abu Bakr Performs the Pilgrimage (04.26.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 542,
@@ -5611,7 +5611,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 23] The Pilgrimage of the Prophet (04.28.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 543,
@@ -5621,7 +5621,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 24] The Farewell Sermon (04.29.12).mp3",
-    "thumb": "thumb/_src/The Sealed Nector (Series)/cover.png"
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 544,
