@@ -46,6 +46,8 @@ EXCLUDED_LECTURES = {
     "abu mutassim",
     # Duplicate of Tafseer 033 Surah Al-Ahzab [Part 2] (06.14.12)
     "tafsir surah al ahzaab part 2 the prophet saw is closer to the believers than themselves",
+    # Duplicate of Tafseer 033 Surah Al-Ahzab [Part 4] (06.17.12)
+    "tafsir surah ahzab marriage of the prophet saw to zaynab bint jahsh ra",
 }
 
 
@@ -296,6 +298,82 @@ def dedupe_lectures(lectures: list[dict]) -> list[dict]:
         if existing is None or lecture_dedupe_rank(lecture) > lecture_dedupe_rank(existing):
             best[key] = lecture
     return list(best.values())
+
+
+def extract_part_number(title: str) -> int | None:
+    patterns = [
+        r"\[Part\s*0*(\d+)\]",
+        r"-\s*Part\s*0*(\d+)\s*-",
+        r"\bPart\s*0*(\d+)\b",
+        r"\bPt\s*0*(\d+)\b",
+        r"\bPART\s*0*(\d+)\b",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, title, re.I)
+        if match:
+            return int(match.group(1))
+    return None
+
+
+def is_canonical_tafseer_title(title: str) -> bool:
+    return bool(re.match(r"^Tafseer\s+\d{3}\s", title, re.I))
+
+
+def is_legacy_tafsir_title(title: str) -> bool:
+    return bool(re.match(r"^Tafsir\s", title, re.I)) and not is_canonical_tafseer_title(title)
+
+
+def tafseer_variant_rank(lecture: dict) -> tuple[int, int, int]:
+    """Lower is better: prefer canonical, non-REVISITED, non-(1) copies."""
+    title = lecture["title"]
+    legacy = 1 if is_legacy_tafsir_title(title) else 0
+    revisited = 1 if re.search(r"\[REVISITED\]", title, re.I) else 0
+    copy_suffix = 1 if re.search(r"\(\d+\)\s*$", title) else 0
+    return (legacy, revisited, copy_suffix)
+
+
+def pick_best_tafseer_variant(group: list[dict]) -> dict:
+    canonical = [lec for lec in group if is_canonical_tafseer_title(lec["title"])]
+    pool = canonical if canonical else group
+    return min(pool, key=tafseer_variant_rank)
+
+
+def drop_tafseer_duplicates(lectures: list[dict]) -> list[dict]:
+    """Within Tafseer sub-series, keep one lecture per part (canonical over legacy)."""
+    by_sub_part: dict[tuple[str, int], list[dict]] = {}
+    kept: list[dict] = []
+
+    for lecture in lectures:
+        if lecture["category"] != "Tafseer":
+            kept.append(lecture)
+            continue
+        sub = lecture.get("subcategory")
+        part = extract_part_number(lecture["title"])
+        if sub and part is not None:
+            by_sub_part.setdefault((sub, part), []).append(lecture)
+        else:
+            kept.append(lecture)
+
+    for group in by_sub_part.values():
+        kept.append(pick_best_tafseer_variant(group))
+
+    return kept
+
+
+def drop_copy_suffix_duplicates(lectures: list[dict]) -> list[dict]:
+    """Drop Foo(1).mp3 when Foo.mp3 exists in the same category."""
+    titles_by_cat: dict[str, set[str]] = {}
+    for lecture in lectures:
+        titles_by_cat.setdefault(lecture["category"], set()).add(lecture["title"])
+
+    def is_copy(lecture: dict) -> bool:
+        title = lecture["title"]
+        if not re.search(r"\(\d+\)\s*$", title):
+            return False
+        base = re.sub(r"\(\d+\)\s*$", "", title).strip()
+        return base in titles_by_cat.get(lecture["category"], set())
+
+    return [lec for lec in lectures if not is_copy(lec)]
 
 
 def label_for_category(category: str) -> str:
@@ -598,6 +676,8 @@ def main():
             })
 
     lectures = dedupe_lectures(lectures)
+    lectures = drop_tafseer_duplicates(lectures)
+    lectures = drop_copy_suffix_duplicates(lectures)
     lectures.sort(key=lecture_sort_key)
     for index, lecture in enumerate(lectures):
         lecture["id"] = index
