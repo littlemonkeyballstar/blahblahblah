@@ -417,9 +417,22 @@ def strip_number_prefix(name: str) -> str:
     return re.sub(r"^\d+\.", "", name)
 
 
+def humanize_underscore_title(stem: str) -> str:
+    """the_8_Gates_of_Paradise_mp3 → The 8 Gates of Paradise."""
+    text = re.sub(r"_mp3$", "", stem, flags=re.I)
+    text = text.replace("_", " ")
+    text = re.sub(r"\s+", " ", text).strip()
+    if text and text[0].islower():
+        text = text[0].upper() + text[1:]
+    return text
+
+
 def display_title(filename_stem: str) -> str:
-    """Strip leading episode numbers from lecture display titles."""
-    return strip_number_prefix(filename_stem).strip()
+    """Strip leading episode numbers; humanize underscore slug filenames."""
+    title = strip_number_prefix(filename_stem).strip()
+    if "_" in title:
+        title = humanize_underscore_title(title)
+    return title
 
 
 def resolve_lecture_title(filename_stem: str) -> str:
