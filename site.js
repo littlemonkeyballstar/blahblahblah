@@ -67,8 +67,6 @@ function mountMobileStyles() {
         width: 2.5rem; height: 2.5rem; font-size: 0.875rem;
         top: 8.5rem; background: rgba(212, 168, 83, 0.95);
       }
-      #slideshow audio { min-height: 2.75rem; }
-
       .audio-cat-nav {
         display: flex !important;
         flex-direction: row !important;

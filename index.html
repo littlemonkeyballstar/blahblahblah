@@ -154,7 +154,6 @@
     }
 
     function buildSlide(lec) {
-      const audioUrl = archiveStreamUrl(ARCHIVE_BASE, lec.archive);
       const link = `audio.html?lecture=${lec.id}`;
       return `
         <div class="flex-shrink-0 w-full" data-slide>
@@ -165,14 +164,11 @@
             <div class="slide-slide-content flex-1 flex flex-col justify-center px-4 sm:px-10 py-5 sm:py-6 bg-gradient-to-br from-slate-900 to-slate-850">
               <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-2">${escapeHtml(lec.categoryLabel)}</span>
               <a href="${link}" class="slide-slide-title font-display text-lg sm:text-2xl lg:text-3xl text-white leading-snug hover:text-gold-light transition">${escapeHtml(lec.title)}</a>
-              <p class="text-slate-400 text-sm mt-3 mb-4 flex items-center gap-2">
+              <p class="text-slate-400 text-sm mt-3 flex items-center gap-2">
                 <i class="fas fa-headphones text-gold"></i> Stream from Internet Archive
               </p>
-              <audio controls preload="none" class="max-w-md h-9" onclick="event.stopPropagation()">
-                <source src="${audioUrl}" type="audio/mpeg">
-              </audio>
-              <a href="${link}" class="inline-flex items-center gap-2 mt-4 text-sm text-gold hover:text-gold-light font-medium">
-                Open in Audio Library <i class="fas fa-arrow-right text-xs"></i>
+              <a href="${link}" class="inline-flex items-center gap-2 mt-5 px-5 py-2.5 rounded-full bg-gold/15 border border-gold/30 text-gold hover:bg-gold hover:text-slate-950 font-medium text-sm transition w-fit">
+                <i class="fas fa-play text-xs"></i> Listen in Audio Library <i class="fas fa-arrow-right text-xs"></i>
               </a>
             </div>
           </div>
