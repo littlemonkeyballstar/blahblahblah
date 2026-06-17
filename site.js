@@ -1,6 +1,7 @@
 /* Shared helpers for Shaykh Abdullah Faisal Archive */
 const SITE_DISCLAIMER = `This is not an official website and is not affiliated with Shaykh Abdullah Faisal. This archive is maintained independently and is intended strictly for educational purposes.`;
 const TELEGRAM_URL = 'https://t.me/ShaykhAbdullahFaisal';
+const TELEGRAM_PDF_URL = 'https://t.me/Shaykh_faisal_pdf';
 
 function mountMobileStyles() {
   if (document.getElementById('mobile-styles')) return;
@@ -240,7 +241,16 @@ function mountTopBar() {
 function mountTelegramLink(id = 'siteTelegram') {
   const el = document.getElementById(id);
   if (!el) return;
-  el.innerHTML = `<a href="${TELEGRAM_URL}" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 text-slate-300 hover:border-gold/40 hover:text-gold transition text-sm" target="_blank" rel="noopener"><i class="fa-brands fa-telegram text-lg"></i> @ShaykhAbdullahFaisal</a>`;
+  const linkClass = 'inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-slate-700 text-slate-300 hover:border-gold/40 hover:text-gold transition text-sm';
+  el.innerHTML = `
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-3 flex-wrap">
+      <a href="${TELEGRAM_URL}" class="${linkClass}" target="_blank" rel="noopener">
+        <i class="fa-brands fa-telegram text-lg"></i> @ShaykhAbdullahFaisal
+      </a>
+      <a href="${TELEGRAM_PDF_URL}" class="${linkClass}" target="_blank" rel="noopener">
+        <i class="fa-brands fa-telegram text-lg"></i> PDFs — @Shaykh_faisal_pdf
+      </a>
+    </div>`;
 }
 
 function archiveStreamUrl(base, path) {
