@@ -53,6 +53,9 @@ EXCLUDED_LECTURES = {
     # Duplicate split of EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN
     "debunking the letter of the wicked scholars to amirul muhmineen part 1",
     "debunking the letter of the wicked scholars to amirul muhmineen part 2",
+    # Duplicate split of The 4 Branches Of Tauheed (single file kept)
+    "the 4 branches of tauheed part 1",
+    "the 4 branches of tauheed part 2",
 }
 
 def is_blocked_thumb(path: Path) -> bool:
