@@ -30,7 +30,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "General",
     "label": "General Lectures",
-    "count": 152,
+    "count": 151,
     "subcategories": []
   },
   {
@@ -105,7 +105,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "Refutation",
     "label": "Refutations",
-    "count": 7,
+    "count": 8,
     "subcategories": []
   },
   {
@@ -1408,8 +1408,8 @@ const LECTURES = [
   },
   {
     "title": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.mp3",
