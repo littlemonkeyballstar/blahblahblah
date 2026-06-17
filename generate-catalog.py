@@ -520,25 +520,52 @@ def flat_thumb_lookup_key(path: Path) -> str:
     return norm(stem)
 
 
-def flat_thumb_quality_rank(path: Path) -> tuple[int, str]:
-    """Prefer full-quality images over *_thumb copies."""
-    low = 1 if re.search(r"_thumb$", path.stem, re.I) else 0
-    return (low, path.name.lower())
+THUMB_MATCH_ALIASES = {
+    norm("NO PEACE WITH JEWS"): norm("NO PEACE WITH THE JEWS - Abdallah Al Faisal"),
+}
+
+
+def is_digest_thumb_key(key: str) -> bool:
+    return bool(re.fullmatch(r"[a-f0-9]{12,}", key))
+
+
+def find_lecture_for_flat_thumb(key: str, lectures: list[dict]) -> dict | None:
+    """Resolve a thumb/ filename stem to the best matching lecture."""
+    key = THUMB_MATCH_ALIASES.get(key, key)
+
+    if is_digest_thumb_key(key):
+        for lecture in lectures:
+            thumb = lecture.get("thumb") or ""
+            if key in thumb:
+                return lecture
+        return None
+
+    by_stem = {norm(Path(lecture["archive"]).stem): lecture for lecture in lectures}
+    by_title = {norm(lecture["title"]): lecture for lecture in lectures}
+
+    lecture = by_stem.get(key) or by_title.get(key)
+    if lecture is not None:
+        return lecture
+
+    best_match = None
+    best_score = 0.0
+    for candidate in lectures:
+        for probe in (norm(Path(candidate["archive"]).stem), norm(candidate["title"])):
+            if len(probe) < 8:
+                continue
+            score = similarity(key, probe)
+            if score > best_score and score >= 0.82:
+                best_score = score
+                best_match = candidate
+    return best_match
 
 
 def build_featured_lectures(lectures: list[dict]) -> list[dict]:
-    """Map high-quality thumb/ root images (no *_thumb copies) to featured slideshow lectures."""
+    """Map every high-quality thumb/ root image to a lecture for the homepage slideshow."""
     if not WEB_THUMB.exists():
         return []
 
-    by_stem: dict[str, dict] = {}
-    by_title: dict[str, dict] = {}
-    for lecture in lectures:
-        by_stem[norm(Path(lecture["archive"]).stem)] = lecture
-        by_title.setdefault(norm(lecture["title"]), lecture)
-
     featured: list[dict] = []
-    seen_ids: set[int] = set()
 
     paths = [
         path for path in WEB_THUMB.iterdir()
@@ -552,23 +579,9 @@ def build_featured_lectures(lectures: list[dict]) -> list[dict]:
         if len(key) < 4:
             continue
 
-        lecture = by_stem.get(key) or by_title.get(key)
+        lecture = find_lecture_for_flat_thumb(key, lectures)
         if lecture is None:
-            best_match = None
-            best_score = 0.0
-            for candidate in lectures:
-                for probe in (norm(Path(candidate["archive"]).stem), norm(candidate["title"])):
-                    if len(probe) < 10:
-                        continue
-                    score = similarity(key, probe)
-                    if score > best_score and score >= 0.88:
-                        best_score = score
-                        best_match = candidate
-            lecture = best_match
-
-        if lecture is None or lecture["id"] in seen_ids:
             continue
-        seen_ids.add(lecture["id"])
         featured.append({"id": lecture["id"], "thumb": web_path(path)})
 
     return featured

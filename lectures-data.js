@@ -831,7 +831,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Diseases_of_the_Heart/DISEASES OF THE HEART - Shaykh Faisal.mp3",
-    "thumb": "thumb/extracted/48420958b6505c.png",
+    "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png",
     "id": 55
   },
   {
@@ -861,7 +861,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.mp3",
-    "thumb": "thumb/extracted/2d4826a85a4df7.png",
+    "thumb": "thumb/DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.png",
     "id": 58
   },
   {
@@ -871,7 +871,7 @@ const LECTURES = [
     "subcategory": "refutation_general",
     "subcategoryLabel": "General Refutations",
     "archive": "DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.mp3",
-    "thumb": "thumb/extracted/333b0e30619e23.png",
+    "thumb": "thumb/DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.png",
     "id": 59
   },
   {
@@ -921,7 +921,7 @@ const LECTURES = [
     "subcategory": "refutation_deviants",
     "subcategoryLabel": "Deviant Groups",
     "archive": "Entering the Lizard Hole.mp3",
-    "thumb": null,
+    "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal.png",
     "id": 64
   },
   {
@@ -931,7 +931,7 @@ const LECTURES = [
     "subcategory": "refutation_deviants",
     "subcategoryLabel": "Deviant Groups",
     "archive": "ENTERING THE LIZARD HOLE - Shaykh Faisal.mp3",
-    "thumb": "thumb/extracted/d2a9f27e607741.png",
+    "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal.png",
     "id": 65
   },
   {
@@ -1051,7 +1051,7 @@ const LECTURES = [
     "subcategory": "refutation_deviants",
     "subcategoryLabel": "Deviant Groups",
     "archive": "GAY LESBIAN LGBT - Shaykh Faisal.mp3",
-    "thumb": "thumb/extracted/735a60005a6915.png",
+    "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal.png",
     "id": 77
   },
   {
@@ -1471,7 +1471,7 @@ const LECTURES = [
     "subcategory": "refutation_khawarij",
     "subcategoryLabel": "Khawarij",
     "archive": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.mp3",
-    "thumb": "thumb/extracted/0501e347642f1c.png",
+    "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.png",
     "id": 119
   },
   {
@@ -1631,7 +1631,7 @@ const LECTURES = [
     "subcategory": "refutation_madkhali",
     "subcategoryLabel": "Madkhalis",
     "archive": "MADKHALIS - Shaykh Faisal.mp3",
-    "thumb": "thumb/extracted/c48e02c5223b8e.png",
+    "thumb": "thumb/MADKHALIS - Shaykh Faisal.png",
     "id": 135
   },
   {
@@ -1761,7 +1761,7 @@ const LECTURES = [
     "subcategory": "refutation_deviants",
     "subcategoryLabel": "Deviant Groups",
     "archive": "MURJIA - Shaykh Faisal.mp3",
-    "thumb": "thumb/extracted/113610821772f1.jpg",
+    "thumb": "thumb/MURJIA - Shaykh Faisal.jpg",
     "id": 148
   },
   {
@@ -1831,7 +1831,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.mp3",
-    "thumb": "thumb/extracted/9238f754a0f4be.png",
+    "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png",
     "id": 155
   },
   {
@@ -2451,7 +2451,7 @@ const LECTURES = [
     "subcategory": "refutation_madkhali",
     "subcategoryLabel": "Madkhalis",
     "archive": "SAUDI SALAFI - Shaykh Faisal.mp3",
-    "thumb": "thumb/extracted/2cdd3bda0c2ff4.jpg",
+    "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal.jpg",
     "id": 217
   },
   {
@@ -2881,7 +2881,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "SIGNS OF HYPOCRITES - Shaykh Faisal.mp3",
-    "thumb": "thumb/extracted/4cb985dbd41048.png",
+    "thumb": "thumb/SIGNS OF HYPOCRITES - Shaykh Faisal.png",
     "id": 260
   },
   {
@@ -5572,7 +5572,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3",
-    "thumb": "thumb/extracted/e86bea0151be95.jpg",
+    "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg",
     "id": 529
   },
   {
@@ -5592,7 +5592,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3",
-    "thumb": "thumb/extracted/b9f73d13b0cd72.png",
+    "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png",
     "id": 531
   },
   {
@@ -5657,8 +5657,24 @@ const FEATURED_LECTURES = [
     "thumb": "thumb/DEMOCRATES - Those Who Participate In Democratic Election.png"
   },
   {
+    "id": 55,
+    "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png"
+  },
+  {
+    "id": 58,
+    "thumb": "thumb/DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.png"
+  },
+  {
+    "id": 59,
+    "thumb": "thumb/DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.png"
+  },
+  {
     "id": 60,
     "thumb": "thumb/DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 65,
+    "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal.png"
   },
   {
     "id": 67,
@@ -5669,12 +5685,20 @@ const FEATURED_LECTURES = [
     "thumb": "thumb/EXCUSE OF IGNORANCE - Abdallah Al Faisal.jpg"
   },
   {
+    "id": 146,
+    "thumb": "thumb/f9c271ac07d98b.png"
+  },
+  {
     "id": 71,
     "thumb": "thumb/FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.jpg"
   },
   {
     "id": 75,
     "thumb": "thumb/FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 77,
+    "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal.png"
   },
   {
     "id": 87,
@@ -5697,8 +5721,16 @@ const FEATURED_LECTURES = [
     "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg"
   },
   {
+    "id": 103,
+    "thumb": "thumb/JIHAD AIMS & OBJECTIVES - Abdallah Al Faisal.jpg"
+  },
+  {
     "id": 118,
     "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg"
+  },
+  {
+    "id": 119,
+    "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.png"
   },
   {
     "id": 120,
@@ -5713,12 +5745,24 @@ const FEATURED_LECTURES = [
     "thumb": "thumb/KUFR DOONA KUFR - Abdallah Al Faisal.jpg"
   },
   {
+    "id": 135,
+    "thumb": "thumb/MADKHALIS - Shaykh Faisal.png"
+  },
+  {
     "id": 137,
     "thumb": "thumb/MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.jpg"
   },
   {
     "id": 141,
     "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 141,
+    "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.png"
+  },
+  {
+    "id": 148,
+    "thumb": "thumb/MURJIA - Shaykh Faisal.jpg"
   },
   {
     "id": 151,
@@ -5733,6 +5777,10 @@ const FEATURED_LECTURES = [
     "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png"
   },
   {
+    "id": 155,
+    "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png"
+  },
+  {
     "id": 156,
     "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg"
   },
@@ -5743,6 +5791,10 @@ const FEATURED_LECTURES = [
   {
     "id": 161,
     "thumb": "thumb/NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.png"
+  },
+  {
+    "id": 162,
+    "thumb": "thumb/NO PEACE WITH JEWS.jpg"
   },
   {
     "id": 163,
@@ -5769,8 +5821,16 @@ const FEATURED_LECTURES = [
     "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.jpg"
   },
   {
+    "id": 200,
+    "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.png"
+  },
+  {
     "id": 213,
     "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png"
+  },
+  {
+    "id": 217,
+    "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal.jpg"
   },
   {
     "id": 234,
@@ -5793,6 +5853,10 @@ const FEATURED_LECTURES = [
     "thumb": "thumb/SHIA KNOW YOUR ENEMY - Shaykh Faisal.jpg"
   },
   {
+    "id": 260,
+    "thumb": "thumb/SIGNS OF HYPOCRITES - Shaykh Faisal.png"
+  },
+  {
     "id": 500,
     "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg"
   },
@@ -5811,5 +5875,13 @@ const FEATURED_LECTURES = [
   {
     "id": 517,
     "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png"
+  },
+  {
+    "id": 529,
+    "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg"
+  },
+  {
+    "id": 531,
+    "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png"
   }
 ];
