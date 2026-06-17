@@ -188,7 +188,7 @@ _CLIP_TITLES_RAW = [
         "If you are not practicing, you will develop a personality disorder",
     ),
     ("if you dont do jihad it will come to your door!!", "If you don't do jihad, it will come to your door"),
-    ("ignore the jailoom", "Ignore the jahiliyyah"),
+    ("ignore the jailoom", "Never Argue with a Jahiloon"),
     ("importance of hijra 2", "The importance of hijra (part 2)"),
     ("is dawla khawarij", "Is the dawla khawarij?"),
     ("man made izims skizims", "The shame of man-made law"),

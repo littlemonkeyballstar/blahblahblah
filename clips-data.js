@@ -524,7 +524,7 @@ const CLIPS = [
   },
   {
     "id": 65,
-    "title": "Ignore the jahiliyyah",
+    "title": "Never Argue with a Jahiloon",
     "file": "ignore the jailoom.mp4",
     "archive": "ignore the jailoom.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/ignore the jailoom_000001.jpg",
