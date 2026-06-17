@@ -41,6 +41,11 @@ COVER_NAMES = {"cover.png", "cover.jpg", "cover.jpeg", "cover.webp",
 # Never use these as lecture thumbnails (generic fallbacks / spectrograms)
 THUMB_BLOCKLIST = {"__ia_thumb.jpg", "__ia_thumb.png"}
 
+EXCLUDED_LECTURES = {
+    "abu ghazi",
+    "abu mutassim",
+}
+
 
 def is_blocked_thumb(path: Path) -> bool:
     name = path.name
@@ -511,6 +516,8 @@ def main():
         dirnames.sort()
         for filename in sorted(filenames):
             if not filename.lower().endswith(".mp3"):
+                continue
+            if norm(filename[:-4]) in EXCLUDED_LECTURES:
                 continue
             full = Path(dirpath) / filename
             rel = full.relative_to(ROOT)
