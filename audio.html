@@ -194,7 +194,7 @@
           (l.subcategoryLabel && l.subcategoryLabel.toLowerCase().includes(q))
         );
       }
-      return list;
+      return list.sort((a, b) => a.title.localeCompare(b.title, undefined, { sensitivity: 'base' }));
     }
 
     /* ── Render category sidebar ── */

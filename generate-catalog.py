@@ -240,12 +240,8 @@ def resolve_category(title: str, folder_category: str, folder_subcategory: str |
     return category, subcategory
 
 
-def lecture_sort_key(lecture: dict) -> tuple:
-    cat = lecture["category"]
-    cat_rank = CAT_ORDER.index(cat) if cat in CAT_ORDER else len(CAT_ORDER)
-    sub = lecture.get("subcategory") or ""
-    sub_label = lecture.get("subcategoryLabel") or sub
-    return (cat_rank, sub_label.lower(), lecture["title"].lower())
+def lecture_sort_key(lecture: dict) -> str:
+    return lecture["title"].lower()
 
 
 def label_for_category(category: str) -> str:
@@ -553,9 +549,7 @@ def main():
             categories[cat]["subs"][sub] = SUB_DISPLAY.get(sub, sub)
 
     cat_meta = []
-    ordered_ids = [cat_id for cat_id in CAT_ORDER if cat_id in categories]
-    ordered_ids.extend(sorted(set(categories) - set(CAT_ORDER)))
-    for cat_id in ordered_ids:
+    for cat_id in sorted(categories, key=lambda c: label_for_category(c).lower()):
         subs = sorted(categories[cat_id]["subs"].items(), key=lambda x: x[1])
         cat_meta.append({
             "id": cat_id,
