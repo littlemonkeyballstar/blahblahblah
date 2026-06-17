@@ -192,21 +192,30 @@
       return null;
     }
 
+    /** Part order only for a single part-based series (e.g. Sealed Nectar) or one sub-series (e.g. Baqarah). */
+    function shouldSortByParts() {
+      if (state.category === 'all') return false;
+      if (state.subcategory !== 'all') return true;
+      const cat = LECTURE_CATEGORIES.find(c => c.id === state.category);
+      return !!(cat && !cat.subcategories.length);
+    }
+
     function sortLectures(list) {
-      const inSeries = state.category !== 'all';
+      const byParts = shouldSortByParts();
       return [...list].sort((a, b) => {
-        if (inSeries) {
+        if (byParts) {
+          const partA = extractPartNumber(a.title);
+          const partB = extractPartNumber(b.title);
+          if (partA !== null && partB !== null && partA !== partB) return partA - partB;
+          if (partA !== null && partB === null) return -1;
+          if (partA === null && partB !== null) return 1;
+        } else if (state.category !== 'all' && state.subcategory === 'all') {
           const subA = a.subcategoryLabel || '';
           const subB = b.subcategoryLabel || '';
           if (subA !== subB) {
             return subA.localeCompare(subB, undefined, { sensitivity: 'base' });
           }
         }
-        const partA = extractPartNumber(a.title);
-        const partB = extractPartNumber(b.title);
-        if (partA !== null && partB !== null && partA !== partB) return partA - partB;
-        if (partA !== null && partB === null) return -1;
-        if (partA === null && partB !== null) return 1;
         return a.title.localeCompare(b.title, undefined, { sensitivity: 'base' });
       });
     }
