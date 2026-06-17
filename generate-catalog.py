@@ -94,6 +94,9 @@ DISPLAY_NAMES = {
     "Character_Dawah": "Character & Dawah",
     "Ummah_Affairs": "Ummah & Contemporary Issues",
     "The 5 Desperate Zindeeq": "The 5 Desperate Zindeeq",
+    "Quran_Studies": "Quran Studies",
+    "Iman_Afterlife": "Iman & the Hereafter",
+    "Islamic_Knowledge": "Islamic Knowledge",
 }
 
 # Fold small / sect-specific folders into broader categories
@@ -110,6 +113,7 @@ SUB_DISPLAY = {
     "refutation_khawarij": "Khawarij",
     "refutation_jews": "Jews",
     "refutation_deviants": "Deviant Groups",
+    "refutation_sufism": "Sufism & Bid'ah",
     "refutation_general": "General Refutations",
     "rules_of_divorce": "Rules of Divorce",
     "rules_of_nikah": "Rules of Nikah",
@@ -136,6 +140,7 @@ CATEGORY_SUB_ORDER: dict[str, list[str]] = {
         "refutation_khawarij",
         "refutation_jews",
         "refutation_deviants",
+        "refutation_sufism",
         "refutation_general",
     ],
     "Nikah_Divorce": [
@@ -159,6 +164,9 @@ CAT_ORDER = [
     "Prophets_Seerah",
     "Tawheed",
     "Aqeedah",
+    "Iman_Afterlife",
+    "Quran_Studies",
+    "Islamic_Knowledge",
     "Fiqh_Worship",
     "Jihad",
     "Khilafah",
@@ -192,9 +200,16 @@ TITLE_SERIES_PATTERNS: list[tuple[str, str, str | None]] = [
     (r"wicked scholar|let the scholars beware|definition of a scholar", "Wicked_Scholars", None),
     (r"5 desperate zindeeq|five desperate zindeeq", "The 5 Desperate Zindeeq", None),
     (r"diseases of the heart", "Diseases_of_the_Heart", None),
-    (r"road to sincerity|reality of sincerity", "Diseases_of_the_Heart", None),
+    (r"road to sincerity|reality of sincerity|satan's web|satans web", "Diseases_of_the_Heart", None),
     (r"at conference", "Ummah_Affairs", None),
-    (r"science of quran|animals of the holy quran|prophesies of the holy quran", "Science in the quran", None),
+    (r"science of quran|animals of the holy quran|prophesies of the holy quran|20 laws of nature", "Science in the quran", None),
+    (r"21 reasons.*quran|10 things.*cannot doubt|watering down.*quran|islam was revealed in stages|"
+     r"our 6 sacred|quran is a wise|abrogated evidences", "Quran_Studies", None),
+    (r"reality of emaan|paradise is exclusive|8 gates of paradise|35 people|36 people|"
+     r"power of intercession|they do not love allah|trade that saves|painful torment|wish for death|"
+     r"\bworst sins\b|evil effects of sins|evil consequences.*rasool|they shall reap", "Iman_Afterlife", None),
+    (r"^knowledge -|philosophy of the islamic jurisprudence|ijtihaad maslaha|5 ahkaam of shariah|"
+     r"5 needs of mankind|importance of intention|dua - the weapon|role of the masjid", "Islamic_Knowledge", None),
     (r"people of the cave|sleepers in the cave", "Prophets_Seerah", None),
     (r"women in islam|wives & children|parent child|marital discord|daughters are diamonds|muslim home|tainted love", "Nikah_Divorce", None),
     (r"importance of hijrah|declaration of war", "Jihad", None),
@@ -211,6 +226,7 @@ TITLE_SERIES_PATTERNS: list[tuple[str, str, str | None]] = [
     (r"radical islamic terror|white supremacy|domain of apostasy", "Refutation", None),
     (r"insulting the prophet|slander of aisha|ifk", "Refutation", None),
     (r"kashf ush shubuhaat|removing the doubts", "Refutation", None),
+    (r"goofi soofis|barking dogs of jahann|muslim marrying non muslim|tawassul", "Refutation", None),
     (r"khilaf|khilaaf|caliphate", "Khilafah", None),
     (r"ramadan|ramadhan|laylatul qadr|virtues of ramadan", "Ramadan", None),
     (r"\bjihad\b", "Jihad", None),
@@ -224,7 +240,11 @@ TITLE_THEME_PATTERNS: list[tuple[str, str]] = [
         r"impediment|excuse of ignorance|kufr doona|dismantle the sharia|"
         r"are you a takfiri|what makes you a kafir|25 things.*kaafir|shirk in perspective|"
         r"invalidation of your actions|let.?s call a spade|nawaqid|nawaaqid|seven conditions of shahada|"
-        r"principles of ahlus sunna|29 principles|where is allah|friends of allah",
+        r"principles of ahlus sunna|29 principles|where is allah|friends of allah|"
+        r"we shall never follow the jews|be and it is|allah's sunnah|allah blesses|crucial tests from allah|"
+        r"gifts from allah|special favors of allah|25 promises of allah|don't envy the kuffaar|jahiliyya|"
+        r"kufaar and the fear|exposing those who insult allah|beware of going against the ijmaa3?|"
+        r"allah is sufficient to take revenge",
         "Aqeedah",
     ),
     (
@@ -241,15 +261,21 @@ TITLE_THEME_PATTERNS: list[tuple[str, str]] = [
     ),
     (
         r"sincere|brotherhood|sisterhood|etiquette|dawah|manhood|priorities|balanced nation|"
-        r"etiquettes of dawah|merits and etiquettes|foundations of the islamic brotherhood",
+        r"etiquettes of dawah|merits and etiquettes|foundations of the islamic brotherhood|we hear.*obey|"
+        r"we shall never give up|the wisdom of the prophet",
         "Character_Dawah",
     ),
     (
         r"cancers in the body|challenges facing|ideological warfare|human rights|muslim character|"
         r"natural instinct|signs before the day|unity|the jinn\b|\btawba\b|black magic|\bmagic\b|"
         r"dreams|judgment day|leadership in islam|changing the goalpost|mad dogs|sheikh abdullah faisal -|"
+        r"their hearts are alike|^love -|"
         r"islam under siege|islam and the west|natural disasters|human soul|mysteries of the soul|"
-        r"signs before judgement|judgement day",
+        r"signs before judgement|judgement day|9 reasons they hate|reasons kuffaar hate|american ban|"
+        r"siege of al aqsa|usa bombing|evil rulers|ship is sinking|resist to exist|reality of racism|"
+        r"reality of fitnah|hyenas of the ummah|farewell khutbah|weakness of mankind|weaknesses of mankind|"
+        r"might without wisdom|money can't buy|you can't have your cake|worst con artist|reality of poverty|"
+        r"reality of fgm|islam the most hygienic|holy spirit",
         "Ummah_Affairs",
     ),
 ]
@@ -261,6 +287,7 @@ REFUTATION_SUB_PATTERNS: list[tuple[str, str]] = [
     (r"khawarij", "refutation_khawarij"),
     (r"jew", "refutation_jews"),
     (r"murjia|lizard hole|gay lesbian|lgbt|kashf ush shubuhaat|removing the doubts", "refutation_deviants"),
+    (r"goofi soofis|barking dogs|tawassul", "refutation_sufism"),
     (r"do not take the kuffar|do not take my enemy|rejecting the taghut|fight in the cause of taghut|"
      r"worst of creatures|insulting the prophet|slander of aisha|ifk|radical islamic terror|"
      r"white supremacy|domain of apostasy|refut", "refutation_general"),
