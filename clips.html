@@ -13,7 +13,6 @@
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .font-display { font-family: 'Playfair Display', Georgia, serif; }
-    .top-bar { background: linear-gradient(135deg, #0a1628 0%, #1a1f2e 40%, #0f1a14 100%); }
     .text-gold-gradient { background: linear-gradient(135deg, #e8c97a, #d4a853, #c49a3c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .islamic-pattern { background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d4a853' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E"); }
     .thumb-box { background: linear-gradient(180deg, #0f172a 0%, #1a2332 100%); }
@@ -21,21 +20,16 @@
 </head>
 <body class="bg-slate-950 text-slate-200 islamic-pattern min-h-screen flex flex-col">
 
-  <div class="top-bar border-b border-amber-900/20 py-2.5 px-4 sm:px-8">
-    <div class="max-w-[90rem] mx-auto flex justify-between text-xs sm:text-sm">
-      <span class="text-amber-300/90 font-medium">الموقع الأرشيفي • Archive Site</span>
-      <span class="text-amber-400/80 font-medium text-right">اللهم حرر شيخنا الحبيب • May Allah free our beloved Shaykh</span>
-    </div>
-  </div>
+  <div id="siteTopBar"></div>
 
-  <header class="bg-slate-925/90 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
-    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-4 flex flex-col sm:flex-row justify-between gap-4">
-      <a href="index.html" class="font-display text-2xl sm:text-3xl font-bold text-gold-gradient">Shaykh Abdullah Faisal</a>
-      <nav class="flex flex-wrap gap-1 text-sm font-medium">
+  <header class="site-header bg-slate-925/90 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
+    <div class="site-header__inner max-w-[90rem] mx-auto px-4 sm:px-8 py-3 sm:py-5 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
+      <a href="index.html" class="site-header__title font-display text-xl sm:text-3xl font-bold text-gold-gradient text-center sm:text-left shrink-0">Shaykh Abdullah Faisal</a>
+      <nav class="site-nav flex sm:flex-wrap gap-1 text-sm font-medium justify-start sm:justify-end">
         <a href="index.html" data-nav="home" class="px-4 py-2 rounded-full transition">Home</a>
-        <a href="clips.html" data-nav="clips" class="px-4 py-2 rounded-full transition">Clips/Shots</a>
-        <a href="videos.html" data-nav="videos" class="px-4 py-2 rounded-full transition">Video Lectures</a>
-        <a href="audio.html" data-nav="audio" class="px-4 py-2 rounded-full transition">Audio Lectures</a>
+        <a href="clips.html" data-nav="clips" class="px-4 py-2 rounded-full transition"><span class="nav-long">Clips/Shots</span><span class="nav-short">Clips</span></a>
+        <a href="videos.html" data-nav="videos" class="px-4 py-2 rounded-full transition"><span class="nav-long">Video Lectures</span><span class="nav-short">Videos</span></a>
+        <a href="audio.html" data-nav="audio" class="px-4 py-2 rounded-full transition"><span class="nav-long">Audio Lectures</span><span class="nav-short">Audio</span></a>
       </nav>
     </div>
   </header>
@@ -55,6 +49,7 @@
   </main>
 
   <footer class="border-t border-slate-800 bg-slate-925/50 py-10 px-4 text-center">
+    <p id="siteTelegram" class="mb-4"></p>
     <p id="siteDisclaimer" class="text-slate-500 text-sm max-w-2xl mx-auto leading-relaxed"></p>
   </footer>
 
@@ -93,10 +88,33 @@
       pag.querySelectorAll('button').forEach(b => b.onclick = () => { state.page = +b.dataset.p; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
     }
 
+    function applyDeepLink() {
+      const param = new URLSearchParams(location.search).get('clip');
+      if (param === null) return;
+      const clip = CLIPS.find(c => c.id === parseInt(param, 10));
+      if (!clip) return;
+      state.search = '';
+      document.getElementById('search').value = '';
+      const list = filtered();
+      const idx = list.findIndex(c => c.id === clip.id);
+      if (idx >= 0) state.page = Math.floor(idx / state.perPage) + 1;
+      render();
+      requestAnimationFrame(() => {
+        const el = document.getElementById('clip-' + clip.id);
+        if (el) {
+          el.classList.add('ring-2', 'ring-gold', 'shadow-lg', 'shadow-gold/20');
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+    }
+
     document.getElementById('search').oninput = e => { state.search = e.target.value; state.page = 1; render(); };
+    mountTopBar();
     document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
+    mountTelegramLink();
     setActiveNav('clips');
     render();
+    applyDeepLink();
   </script>
 </body>
 </html>

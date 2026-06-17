@@ -29,7 +29,6 @@
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .font-display { font-family: 'Playfair Display', Georgia, serif; }
-    .top-bar { background: linear-gradient(135deg, #0a1628 0%, #1a1f2e 40%, #0f1a14 100%); }
     .text-gold-gradient {
       background: linear-gradient(135deg, #e8c97a 0%, #d4a853 50%, #c49a3c 100%);
       -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
@@ -49,21 +48,16 @@
 </head>
 <body class="bg-slate-950 text-slate-200 antialiased islamic-pattern min-h-screen flex flex-col">
 
-  <div class="top-bar border-b border-amber-900/20 py-2.5 px-4 sm:px-8">
-    <div class="max-w-7xl mx-auto flex flex-row items-center justify-between gap-4 text-xs sm:text-sm">
-      <span class="text-amber-300/90 font-medium tracking-wide">الموقع الأرشيفي • Archive Site</span>
-      <span class="text-amber-400/80 font-medium tracking-wide text-right">اللهم حرر شيخنا الحبيب • May Allah free our beloved Shaykh</span>
-    </div>
-  </div>
+  <div id="siteTopBar"></div>
 
-  <header class="bg-slate-925/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4 sm:py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
-      <a href="index.html" class="font-display text-2xl sm:text-3xl font-bold text-gold-gradient tracking-wide">Shaykh Abdullah Faisal</a>
-      <nav class="flex flex-wrap items-center gap-1 sm:gap-2 text-sm font-medium">
+  <header class="site-header bg-slate-925/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+    <div class="site-header__inner max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-5 flex flex-col sm:flex-row items-center sm:items-center justify-between gap-3 sm:gap-4">
+      <a href="index.html" class="site-header__title font-display text-xl sm:text-3xl font-bold text-gold-gradient tracking-wide text-center sm:text-left shrink-0">Shaykh Abdullah Faisal</a>
+      <nav class="site-nav flex sm:flex-wrap items-center gap-1 sm:gap-2 text-sm font-medium justify-start sm:justify-end">
         <a href="index.html" data-nav="home" class="px-4 py-2 rounded-full transition">Home</a>
-        <a href="clips.html" data-nav="clips" class="px-4 py-2 rounded-full transition">Clips/Shots</a>
-        <a href="videos.html" data-nav="videos" class="px-4 py-2 rounded-full transition">Video Lectures</a>
-        <a href="audio.html" data-nav="audio" class="px-4 py-2 rounded-full transition">Audio Lectures</a>
+        <a href="clips.html" data-nav="clips" class="px-4 py-2 rounded-full transition"><span class="nav-long">Clips/Shots</span><span class="nav-short">Clips</span></a>
+        <a href="videos.html" data-nav="videos" class="px-4 py-2 rounded-full transition"><span class="nav-long">Video Lectures</span><span class="nav-short">Videos</span></a>
+        <a href="audio.html" data-nav="audio" class="px-4 py-2 rounded-full transition"><span class="nav-long">Audio Lectures</span><span class="nav-short">Audio</span></a>
       </nav>
     </div>
   </header>
@@ -73,8 +67,8 @@
     <!-- Hero Slideshow — 8 seconds per slide -->
     <section class="max-w-7xl mx-auto px-4 sm:px-8 pt-8 sm:pt-12 pb-6">
       <div class="flex items-center justify-between mb-6">
-        <h2 class="font-display text-2xl sm:text-3xl text-gold-gradient flex items-center gap-3">
-          <i class="fas fa-star text-gold"></i> Featured Audio Lectures
+        <h2 class="mobile-section-title font-display text-xl sm:text-3xl text-gold-gradient flex items-center gap-2 sm:gap-3">
+          <i class="fas fa-star text-gold text-sm sm:text-base"></i> Featured Audio Lectures
         </h2>
         <div id="slideDots" class="hidden sm:flex items-center gap-2"></div>
       </div>
@@ -94,8 +88,8 @@
     </section>
 
     <!-- Previews -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-8 py-10 sm:py-14 border-t border-slate-800/80">
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
+    <section class="max-w-7xl mx-auto px-4 sm:px-8 py-8 sm:py-14 border-t border-slate-800/80">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-10">
 
         <div>
           <div class="flex items-center justify-between mb-5">
@@ -129,7 +123,7 @@
       <h2 class="font-display text-2xl text-gold-gradient mb-8 text-center">Listen Now</h2>
       <div id="listenGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
       <div class="text-center mt-10">
-        <a href="audio.html" class="inline-flex items-center gap-2 px-8 py-3.5 bg-gold hover:bg-gold-light text-slate-950 font-semibold rounded-full transition shadow-lg shadow-gold/20">
+        <a href="audio.html" class="mobile-cta-btn inline-flex items-center gap-2 px-8 py-3.5 bg-gold hover:bg-gold-light text-slate-950 font-semibold rounded-full transition shadow-lg shadow-gold/20">
           <i class="fas fa-book-open"></i> Browse All Audio Lectures <i class="fas fa-arrow-right text-sm"></i>
         </a>
       </div>
@@ -139,8 +133,9 @@
 
   <footer class="border-t border-slate-800 bg-slate-925/50 py-10 px-4 text-center">
     <p class="font-display text-gold/70 text-lg mb-3">Shaykh Abdullah Faisal — Educational Archive</p>
+    <p id="siteTelegram" class="mb-4"></p>
     <p id="siteDisclaimer" class="text-slate-500 text-sm max-w-2xl mx-auto leading-relaxed mb-4"></p>
-    <p class="text-slate-600 text-xs">Audio: <a href="https://archive.org/details/FaisalAudios" class="text-gold/70 hover:underline" target="_blank" rel="noopener">FaisalAudios</a> · Videos: <a href="https://archive.org/details/FaisalVideos" class="text-gold/70 hover:underline" target="_blank" rel="noopener">FaisalVideos</a> · Clips: <a href="https://archive.org/details/the-creed-of-the-shia" class="text-gold/70 hover:underline" target="_blank" rel="noopener">the-creed-of-the-shia</a></p>
+    <p class="footer-links text-slate-600 text-xs sm:text-xs">Audio: <a href="https://archive.org/details/FaisalAudios" class="text-gold/70 hover:underline" target="_blank" rel="noopener">FaisalAudios</a><span class="hidden sm:inline"> · </span><br class="sm:hidden">Videos: <a href="https://archive.org/details/FaisalVideos" class="text-gold/70 hover:underline" target="_blank" rel="noopener">FaisalVideos</a><span class="hidden sm:inline"> · </span><br class="sm:hidden">Clips: <a href="https://archive.org/details/the-creed-of-the-shia" class="text-gold/70 hover:underline" target="_blank" rel="noopener">the-creed-of-the-shia</a></p>
   </footer>
 
   <script src="site.js"></script>
@@ -167,9 +162,9 @@
             <a href="${link}" class="sm:w-[42%] slide-thumb thumb-box flex items-center justify-center p-4 flex-shrink-0 group">
               ${thumbMarkup(lec.thumb, lec.title, 'max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700')}
             </a>
-            <div class="flex-1 flex flex-col justify-center px-6 sm:px-10 py-6 bg-gradient-to-br from-slate-900 to-slate-850">
+            <div class="slide-slide-content flex-1 flex flex-col justify-center px-4 sm:px-10 py-5 sm:py-6 bg-gradient-to-br from-slate-900 to-slate-850">
               <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-2">${escapeHtml(lec.categoryLabel)}</span>
-              <a href="${link}" class="font-display text-xl sm:text-2xl lg:text-3xl text-white leading-snug hover:text-gold-light transition">${escapeHtml(lec.title)}</a>
+              <a href="${link}" class="slide-slide-title font-display text-lg sm:text-2xl lg:text-3xl text-white leading-snug hover:text-gold-light transition">${escapeHtml(lec.title)}</a>
               <p class="text-slate-400 text-sm mt-3 mb-4 flex items-center gap-2">
                 <i class="fas fa-headphones text-gold"></i> Stream from Internet Archive
               </p>
@@ -221,17 +216,23 @@
       const box = document.getElementById('slideshow');
       box.onmouseenter = () => clearInterval(slideTimer);
       box.onmouseleave = resetTimer;
+      let touchX = 0;
+      box.addEventListener('touchstart', e => { touchX = e.changedTouches[0].screenX; }, { passive: true });
+      box.addEventListener('touchend', e => {
+        const dx = e.changedTouches[0].screenX - touchX;
+        if (Math.abs(dx) > 48) goTo(currentSlide + (dx < 0 ? 1 : -1));
+      }, { passive: true });
       resetTimer();
     }
 
     function previewCard(href, thumb, title, sub, icon) {
       return `
-        <a href="${href}" class="card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900/50 group">
-          <div class="w-24 h-14 rounded-lg overflow-hidden thumb-box flex items-center justify-center flex-shrink-0 p-1">
+        <a href="${href}" class="mobile-preview-card card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900/50 group active:bg-slate-800/80">
+          <div class="preview-thumb w-24 h-14 rounded-lg overflow-hidden thumb-box flex items-center justify-center flex-shrink-0 p-1">
             ${thumb ? `<img src="${thumbSrc(thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="lazy" onerror="this.style.display='none'">` : `<i class="fas ${icon} text-gold/40"></i>`}
           </div>
           <div class="min-w-0 flex-1">
-            <p class="text-sm font-medium text-slate-100 truncate group-hover:text-gold transition">${escapeHtml(title)}</p>
+            <p class="preview-title text-sm font-medium text-slate-100 group-hover:text-gold transition">${escapeHtml(title)}</p>
             <p class="text-xs text-slate-500 mt-0.5">${escapeHtml(sub)}</p>
           </div>
           <i class="fas fa-play text-gold/40 group-hover:text-gold text-sm"></i>
@@ -240,11 +241,11 @@
 
     function initPreviews() {
       document.getElementById('clipsPreview').innerHTML = randomPick(CLIPS, 4).map(c =>
-        previewCard('clips.html', c.thumb, c.title, 'Short clip', 'fa-film')
+        previewCard(`clips.html?clip=${c.id}`, c.thumb, c.title, 'Short clip', 'fa-film')
       ).join('');
 
       document.getElementById('videosPreview').innerHTML = randomPick(VIDEOS, 4).map(v =>
-        previewCard('videos.html', v.thumb, v.title, 'Video lecture', 'fa-video')
+        previewCard(`videos.html?video=${v.id}`, v.thumb, v.title, 'Video lecture', 'fa-video')
       ).join('');
 
       document.getElementById('audioPreview').innerHTML = randomPick(LECTURES, 4).map(l =>
@@ -268,7 +269,9 @@
       }).join('');
     }
 
+    mountTopBar();
     document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
+    mountTelegramLink();
     setActiveNav('home');
     initSlideshow();
     initPreviews();
