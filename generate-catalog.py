@@ -50,6 +50,9 @@ EXCLUDED_LECTURES = {
     "tafsir surah al ahzaab part 9 the etiquettes of giving and returning salaam",
     "tafsir surah al ahzaab part 10 the eight types of iddah in islam",
     "tafsir surah ahzab marriage of the prophet saw to zaynab bint jahsh ra",
+    # Duplicate split of EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN
+    "debunking the letter of the wicked scholars to amirul muhmineen part 1",
+    "debunking the letter of the wicked scholars to amirul muhmineen part 2",
 }
 
 def is_blocked_thumb(path: Path) -> bool:
