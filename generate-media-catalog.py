@@ -48,6 +48,37 @@ def norm(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def strip_video_number_prefix(stem: str) -> str:
+    """02.Title, 03.Title, 08.Title, or 06.35 Title → drop leading episode numbers."""
+    stem = re.sub(r"^\d+\.\d+\s+", "", stem)
+    stem = re.sub(r"^\d+\.", "", stem)
+    return stem.strip()
+
+
+def display_video_title(filename: str) -> str:
+    return strip_video_number_prefix(Path(filename).stem)
+
+
+def has_video_number_prefix(stem: str) -> bool:
+    return bool(re.match(r"^\d+\.", stem))
+
+
+def dedupe_videos_by_title(videos: list[dict]) -> list[dict]:
+    """Keep one entry per display title; prefer files without a numeric prefix."""
+    best: dict[str, dict] = {}
+    for video in videos:
+        key = norm(video["title"])
+        existing = best.get(key)
+        if existing is None:
+            best[key] = video
+            continue
+        new_prefixed = has_video_number_prefix(Path(video["file"]).stem)
+        old_prefixed = has_video_number_prefix(Path(existing["file"]).stem)
+        if old_prefixed and not new_prefixed:
+            best[key] = video
+    return list(best.values())
+
+
 def clean_clip_title(title: str) -> str:
     """Turn raw IA filenames into readable display titles."""
     title = title.replace("_", " ")
@@ -305,13 +336,16 @@ def build_videos():
     for name in chosen:
         videos.append({
             "id": len(videos),
-            "title": Path(name).stem,
+            "title": display_video_title(name),
             "file": name,
             "archive": name,
             "thumb": find_thumb(name, local_index, archive_thumb_map),
             "stream": "https://archive.org/download/FaisalVideos/" + urllib.parse.quote(name),
         })
 
+    videos = dedupe_videos_by_title(videos)
+    for index, video in enumerate(videos):
+        video["id"] = index
     return videos
 
 

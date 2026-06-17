@@ -4,7 +4,7 @@ const VIDEOS_ARCHIVE_BASE = "https://archive.org/download/FaisalVideos/";
 const VIDEOS = [
   {
     "id": 0,
-    "title": "02.Christianity Refuted by Shaikh Faisal",
+    "title": "Christianity Refuted by Shaikh Faisal",
     "file": "02.Christianity Refuted by Shaikh Faisal.mp4",
     "archive": "02.Christianity Refuted by Shaikh Faisal.mp4",
     "thumb": "thumb/videos/02.Christianity Refuted by Shaikh Faisal.jpg",
@@ -12,7 +12,7 @@ const VIDEOS = [
   },
   {
     "id": 1,
-    "title": "03.Eidul Fitr 2017 - Shaikh Faisal",
+    "title": "Eidul Fitr 2017 - Shaikh Faisal",
     "file": "03.Eidul Fitr 2017 - Shaikh Faisal.mp4",
     "archive": "03.Eidul Fitr 2017 - Shaikh Faisal.mp4",
     "thumb": "thumb/videos/03.Eidul Fitr 2017 - Shaikh Faisal.jpg",
@@ -20,7 +20,7 @@ const VIDEOS = [
   },
   {
     "id": 2,
-    "title": "04.The Virtues of Eid by Shaikh Faisal",
+    "title": "The Virtues of Eid by Shaikh Faisal",
     "file": "04.The Virtues of Eid by Shaikh Faisal.mp4",
     "archive": "04.The Virtues of Eid by Shaikh Faisal.mp4",
     "thumb": "thumb/videos/04.The Virtues of Eid by Shaikh Faisal.jpg",
@@ -28,7 +28,7 @@ const VIDEOS = [
   },
   {
     "id": 3,
-    "title": "06.35 signs of a Munafiq by Sheikh Abdullah Faisal",
+    "title": "signs of a Munafiq by Sheikh Abdullah Faisal",
     "file": "06.35 signs of a Munafiq by Sheikh Abdullah Faisal.mp4",
     "archive": "06.35 signs of a Munafiq by Sheikh Abdullah Faisal.mp4",
     "thumb": "thumb/videos/06.35 signs of a Munafiq by Sheikh Abdullah Faisal.jpg",
@@ -36,11 +36,11 @@ const VIDEOS = [
   },
   {
     "id": 4,
-    "title": "08.Tafsir Surah Hujuraat by Shaikh Faisal",
-    "file": "08.Tafsir Surah Hujuraat by Shaikh Faisal.mp4",
-    "archive": "08.Tafsir Surah Hujuraat by Shaikh Faisal.mp4",
-    "thumb": "thumb/videos/08.Tafsir Surah Hujuraat by Shaikh Faisal.jpg",
-    "stream": "https://archive.org/download/FaisalVideos/08.Tafsir%20Surah%20Hujuraat%20by%20Shaikh%20Faisal.mp4"
+    "title": "Tafsir Surah Hujuraat by Shaikh Faisal",
+    "file": "Tafsir Surah Hujuraat by Shaikh Faisal.mp4",
+    "archive": "Tafsir Surah Hujuraat by Shaikh Faisal.mp4",
+    "thumb": "thumb/videos/Tafsir Surah Hujuraat by Shaikh Faisal.jpg",
+    "stream": "https://archive.org/download/FaisalVideos/Tafsir%20Surah%20Hujuraat%20by%20Shaikh%20Faisal.mp4"
   },
   {
     "id": 5,
@@ -820,14 +820,6 @@ const VIDEOS = [
   },
   {
     "id": 102,
-    "title": "Tafsir Surah Hujuraat by Shaikh Faisal",
-    "file": "Tafsir Surah Hujuraat by Shaikh Faisal.mp4",
-    "archive": "Tafsir Surah Hujuraat by Shaikh Faisal.mp4",
-    "thumb": "thumb/videos/Tafsir Surah Hujuraat by Shaikh Faisal.jpg",
-    "stream": "https://archive.org/download/FaisalVideos/Tafsir%20Surah%20Hujuraat%20by%20Shaikh%20Faisal.mp4"
-  },
-  {
-    "id": 103,
     "title": "Tafsir Surah Iklaas - Shaikh Faisal - Aug 23rd 2014",
     "file": "Tafsir Surah Iklaas - Shaikh Faisal - Aug 23rd 2014.mp4",
     "archive": "Tafsir Surah Iklaas - Shaikh Faisal - Aug 23rd 2014.mp4",
@@ -835,7 +827,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Tafsir%20Surah%20Iklaas%20-%20Shaikh%20Faisal%20-%20Aug%2023rd%202014.mp4"
   },
   {
-    "id": 104,
+    "id": 103,
     "title": "Tafsir Surah Kawthar by Shaikh Faisal",
     "file": "Tafsir Surah Kawthar by Shaikh Faisal.mp4",
     "archive": "Tafsir Surah Kawthar by Shaikh Faisal.mp4",
@@ -843,7 +835,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Tafsir%20Surah%20Kawthar%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 105,
+    "id": 104,
     "title": "Tafsir Surah Masad by Shaikh Faisal Dec 2014",
     "file": "Tafsir Surah Masad by Shaikh Faisal Dec 2014.mp4",
     "archive": "Tafsir Surah Masad by Shaikh Faisal Dec 2014.mp4",
@@ -851,7 +843,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Tafsir%20Surah%20Masad%20by%20Shaikh%20Faisal%20Dec%202014.mp4"
   },
   {
-    "id": 106,
+    "id": 105,
     "title": "Tafsir Surah Mulk by Shaikh Faisal",
     "file": "Tafsir Surah Mulk by Shaikh Faisal.mp4",
     "archive": "Tafsir Surah Mulk by Shaikh Faisal.mp4",
@@ -859,7 +851,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Tafsir%20Surah%20Mulk%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 107,
+    "id": 106,
     "title": "Tafsir Surah Nasr by Shaikh Faisal Dec 2014",
     "file": "Tafsir Surah Nasr by Shaikh Faisal Dec 2014.mp4",
     "archive": "Tafsir Surah Nasr by Shaikh Faisal Dec 2014.mp4",
@@ -867,7 +859,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Tafsir%20Surah%20Nasr%20by%20Shaikh%20Faisal%20Dec%202014.mp4"
   },
   {
-    "id": 108,
+    "id": 107,
     "title": "Tafsir Surah Zalzala - Shaikh Faisal Dec 2014",
     "file": "Tafsir Surah Zalzala - Shaikh Faisal Dec 2014.mp4",
     "archive": "Tafsir Surah Zalzala - Shaikh Faisal Dec 2014.mp4",
@@ -875,7 +867,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Tafsir%20Surah%20Zalzala%20-%20Shaikh%20Faisal%20Dec%202014.mp4"
   },
   {
-    "id": 109,
+    "id": 108,
     "title": "Taharah [Bulugh Al-Maram] by Shaikh Faisal",
     "file": "Taharah [Bulugh Al-Maram] by Shaikh Faisal.mp4",
     "archive": "Taharah [Bulugh Al-Maram] by Shaikh Faisal.mp4",
@@ -883,7 +875,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Taharah%20%5BBulugh%20Al-Maram%5D%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 110,
+    "id": 109,
     "title": "The 16 Shades of Kufr by Shaikh Faisal",
     "file": "The 16 Shades of Kufr by Shaikh Faisal.mp4",
     "archive": "The 16 Shades of Kufr by Shaikh Faisal.mp4",
@@ -891,7 +883,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%2016%20Shades%20of%20Kufr%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 111,
+    "id": 110,
     "title": "The 19 Realities of the Truth by Shaikh Faisal",
     "file": "The 19 Realities of the Truth by Shaikh Faisal.mp4",
     "archive": "The 19 Realities of the Truth by Shaikh Faisal.mp4",
@@ -899,7 +891,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%2019%20Realities%20of%20the%20Truth%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 112,
+    "id": 111,
     "title": "The 30 Scholastic Questions by Shaikh Faisal",
     "file": "The 30 Scholastic Questions by Shaikh Faisal.mp4",
     "archive": "The 30 Scholastic Questions by Shaikh Faisal.mp4",
@@ -907,7 +899,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%2030%20Scholastic%20Questions%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 113,
+    "id": 112,
     "title": "The 35 Signs of a Hypocrite by Shaikh Faisal",
     "file": "The 35 Signs of a Hypocrite by Shaikh Faisal.mp4",
     "archive": "The 35 Signs of a Hypocrite by Shaikh Faisal.mp4",
@@ -915,7 +907,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%2035%20Signs%20of%20a%20Hypocrite%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 114,
+    "id": 113,
     "title": "The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal",
     "file": "The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.mp4",
     "archive": "The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.mp4",
@@ -923,7 +915,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Barking%20Dogs%20of%20Jahannam%20%28Refuting%20the%20Khawarij%29%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 115,
+    "id": 114,
     "title": "The Best Generation - Shaikh Faisal 2008",
     "file": "The Best Generation - Shaikh Faisal 2008.mp4",
     "archive": "The Best Generation - Shaikh Faisal 2008.mp4",
@@ -931,7 +923,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Best%20Generation%20-%20Shaikh%20Faisal%202008.mp4"
   },
   {
-    "id": 116,
+    "id": 115,
     "title": "The Devil s Deception of the Aathir by Shaikh Faisal",
     "file": "The Devil s Deception of the Aathir by Shaikh Faisal.mp4",
     "archive": "The Devil s Deception of the Aathir by Shaikh Faisal.mp4",
@@ -939,7 +931,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Devil%20s%20Deception%20of%20the%20Aathir%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 117,
+    "id": 116,
     "title": "The Devils Deception of the Quraniyoon by Shaikh Faisal",
     "file": "The Devils Deception of the Quraniyoon by Shaikh Faisal.mp4",
     "archive": "The Devils Deception of the Quraniyoon by Shaikh Faisal.mp4",
@@ -947,7 +939,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Devils%20Deception%20of%20the%20Quraniyoon%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 118,
+    "id": 117,
     "title": "The Eight Gates of Paradise - Shaikh Faisal",
     "file": "The Eight Gates of Paradise - Shaikh Faisal.mp4",
     "archive": "The Eight Gates of Paradise - Shaikh Faisal.mp4",
@@ -955,7 +947,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Eight%20Gates%20of%20Paradise%20-%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 119,
+    "id": 118,
     "title": "The Fiqh of Marriage by Shaikh Faisal",
     "file": "The Fiqh of Marriage by Shaikh Faisal.mp4",
     "archive": "The Fiqh of Marriage by Shaikh Faisal.mp4",
@@ -963,7 +955,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Fiqh%20of%20Marriage%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 120,
+    "id": 119,
     "title": "The Five Ahkaam of the Shariah by Shaikh Faisal",
     "file": "The Five Ahkaam of the Shariah by Shaikh Faisal.mp4",
     "archive": "The Five Ahkaam of the Shariah by Shaikh Faisal.mp4",
@@ -971,7 +963,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Five%20Ahkaam%20of%20the%20Shariah%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 121,
+    "id": 120,
     "title": "The Five Needs of Mankind by Shaikh Faisal",
     "file": "The Five Needs of Mankind by Shaikh Faisal.mp4",
     "archive": "The Five Needs of Mankind by Shaikh Faisal.mp4",
@@ -979,7 +971,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Five%20Needs%20of%20Mankind%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 122,
+    "id": 121,
     "title": "The Four Branches of Tawheed (aka Authentic Tawheed) 2001",
     "file": "The Four Branches of Tawheed (aka Authentic Tawheed) 2001.mp4",
     "archive": "The Four Branches of Tawheed (aka Authentic Tawheed) 2001.mp4",
@@ -987,7 +979,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Four%20Branches%20of%20Tawheed%20%28aka%20Authentic%20Tawheed%29%202001.mp4"
   },
   {
-    "id": 123,
+    "id": 122,
     "title": "The Four Pillars of Qadr by Shaikh Faisal",
     "file": "The Four Pillars of Qadr by Shaikh Faisal.mp4",
     "archive": "The Four Pillars of Qadr by Shaikh Faisal.mp4",
@@ -995,7 +987,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Four%20Pillars%20of%20Qadr%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 124,
+    "id": 123,
     "title": "The Importance of Marriage - Shaikh Faisal",
     "file": "The Importance of Marriage - Shaikh Faisal.mp4",
     "archive": "The Importance of Marriage - Shaikh Faisal.mp4",
@@ -1003,7 +995,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Importance%20of%20Marriage%20-%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 125,
+    "id": 124,
     "title": "The Laws of Nature by Shaikh Faisal",
     "file": "The Laws of Nature by Shaikh Faisal.mp4",
     "archive": "The Laws of Nature by Shaikh Faisal.mp4",
@@ -1011,7 +1003,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Laws%20of%20Nature%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 126,
+    "id": 125,
     "title": "The Making of an Ummah by Shaikh Faisal 2008",
     "file": "The Making of an Ummah by Shaikh Faisal 2008.mp4",
     "archive": "The Making of an Ummah by Shaikh Faisal 2008.mp4",
@@ -1019,7 +1011,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Making%20of%20an%20Ummah%20by%20Shaikh%20Faisal%202008.mp4"
   },
   {
-    "id": 127,
+    "id": 126,
     "title": "The Manhaj for Establishing the Shariah by Shaikh Faisal",
     "file": "The Manhaj for Establishing the Shariah by Shaikh Faisal.mp4",
     "archive": "The Manhaj for Establishing the Shariah by Shaikh Faisal.mp4",
@@ -1027,7 +1019,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Manhaj%20for%20Establishing%20the%20Shariah%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 128,
+    "id": 127,
     "title": "The Philosophy of Islamic Jurisprudence by Shaikh Faisal",
     "file": "The Philosophy of Islamic Jurisprudence by Shaikh Faisal.mp4",
     "archive": "The Philosophy of Islamic Jurisprudence by Shaikh Faisal.mp4",
@@ -1035,7 +1027,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Philosophy%20of%20Islamic%20Jurisprudence%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 129,
+    "id": 128,
     "title": "The Predictions of the Quran by Shaikh Faisal",
     "file": "The Predictions of the Quran by Shaikh Faisal.mp4",
     "archive": "The Predictions of the Quran by Shaikh Faisal.mp4",
@@ -1043,7 +1035,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Predictions%20of%20the%20Quran%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 130,
+    "id": 129,
     "title": "The Prophet Muhammad s (saw) Last Sermon by Shaikh Faisal",
     "file": "The Prophet Muhammad s (saw) Last Sermon by Shaikh Faisal.mp4",
     "archive": "The Prophet Muhammad s (saw) Last Sermon by Shaikh Faisal.mp4",
@@ -1051,7 +1043,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Prophet%20Muhammad%20s%20%28saw%29%20Last%20Sermon%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 131,
+    "id": 130,
     "title": "The Quran has no flaws by Shaikh Faisal",
     "file": "The Quran has no flaws by Shaikh Faisal.mp4",
     "archive": "The Quran has no flaws by Shaikh Faisal.mp4",
@@ -1059,7 +1051,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Quran%20has%20no%20flaws%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 132,
+    "id": 131,
     "title": "The Reality Of Iman (Video)",
     "file": "The Reality Of Iman (Video).mp4",
     "archive": "The Reality Of Iman (Video).mp4",
@@ -1067,7 +1059,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Reality%20Of%20Iman%20%28Video%29.mp4"
   },
   {
-    "id": 133,
+    "id": 132,
     "title": "The Reality Of The Truth",
     "file": "The Reality Of The Truth.mp4",
     "archive": "The Reality Of The Truth.mp4",
@@ -1075,7 +1067,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Reality%20Of%20The%20Truth.mp4"
   },
   {
-    "id": 134,
+    "id": 133,
     "title": "The Rules of Fasting   Shaikh Faisal",
     "file": "The Rules of Fasting   Shaikh Faisal.mp4",
     "archive": "The Rules of Fasting   Shaikh Faisal.mp4",
@@ -1083,7 +1075,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Rules%20of%20Fasting%20%20%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 135,
+    "id": 134,
     "title": "The Six Types of Love by Shaikh Faisal",
     "file": "The Six Types of Love by Shaikh Faisal.mp4",
     "archive": "The Six Types of Love by Shaikh Faisal.mp4",
@@ -1091,7 +1083,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Six%20Types%20of%20Love%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 136,
+    "id": 135,
     "title": "The State of the Ummah by Shaikh Faisal (2)",
     "file": "The State of the Ummah by Shaikh Faisal (2).mp4",
     "archive": "The State of the Ummah by Shaikh Faisal (2).mp4",
@@ -1099,15 +1091,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20State%20of%20the%20Ummah%20by%20Shaikh%20Faisal%20%282%29.mp4"
   },
   {
-    "id": 137,
-    "title": "The State of the Ummah by Shaikh Faisal",
-    "file": "The State of the Ummah by Shaikh Faisal.mp4",
-    "archive": "The State of the Ummah by Shaikh Faisal.mp4",
-    "thumb": "thumb/videos/The State of the Ummah by Shaikh Faisal (2).jpg",
-    "stream": "https://archive.org/download/FaisalVideos/The%20State%20of%20the%20Ummah%20by%20Shaikh%20Faisal.mp4"
-  },
-  {
-    "id": 138,
+    "id": 136,
     "title": "The Story of Abraham by Shaikh Faisal",
     "file": "The Story of Abraham by Shaikh Faisal.mp4",
     "archive": "The Story of Abraham by Shaikh Faisal.mp4",
@@ -1115,7 +1099,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Story%20of%20Abraham%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 139,
+    "id": 137,
     "title": "The Three Principles of Muhammad ibn Abdul Wahhab by Shaikh Faisal",
     "file": "The Three Principles of Muhammad ibn Abdul Wahhab by Shaikh Faisal.mp4",
     "archive": "The Three Principles of Muhammad ibn Abdul Wahhab by Shaikh Faisal.mp4",
@@ -1123,7 +1107,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/The%20Three%20Principles%20of%20Muhammad%20ibn%20Abdul%20Wahhab%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 140,
+    "id": 138,
     "title": "VIRTUES OF TAQWA - Abdallah Al Faisal",
     "file": "VIRTUES OF TAQWA - Abdallah Al Faisal.mp4",
     "archive": "VIRTUES OF TAQWA - Abdallah Al Faisal.mp4",
@@ -1131,7 +1115,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/VIRTUES%20OF%20TAQWA%20-%20Abdallah%20Al%20Faisal.mp4"
   },
   {
-    "id": 141,
+    "id": 139,
     "title": "Virtues Of Charity (Video)",
     "file": "Virtues Of Charity (Video).mp4",
     "archive": "Virtues Of Charity (Video).mp4",
@@ -1139,7 +1123,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Virtues%20Of%20Charity%20%28Video%29.mp4"
   },
   {
-    "id": 142,
+    "id": 140,
     "title": "Virtues of Ramadan by Shaikh Faisal",
     "file": "Virtues of Ramadan by Shaikh Faisal.mp4",
     "archive": "Virtues of Ramadan by Shaikh Faisal.mp4",
@@ -1147,7 +1131,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Virtues%20of%20Ramadan%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 143,
+    "id": 141,
     "title": "WICKED SCHOLAR - Abdallah Al Faisal",
     "file": "WICKED SCHOLAR - Abdallah Al Faisal.mp4",
     "archive": "WICKED SCHOLAR - Abdallah Al Faisal.mp4",
@@ -1155,7 +1139,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/WICKED%20SCHOLAR%20-%20Abdallah%20Al%20Faisal.mp4"
   },
   {
-    "id": 144,
+    "id": 142,
     "title": "Why the Quran is a Wise Book   Shaikh Faisal",
     "file": "Why the Quran is a Wise Book   Shaikh Faisal.mp4",
     "archive": "Why the Quran is a Wise Book   Shaikh Faisal.mp4",
@@ -1163,7 +1147,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Why%20the%20Quran%20is%20a%20Wise%20Book%20%20%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 145,
+    "id": 143,
     "title": "Women in Islam",
     "file": "Women in Islam.mp4",
     "archive": "Women in Islam.mp4",
