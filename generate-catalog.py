@@ -330,6 +330,92 @@ LECTURE_SORT_PRIORITY = {
     norm("TAFSEER OF SURAH AT TAWBAH - Abdallah Al Faisal"): 0,
 }
 
+# Root-level lectures that belong in General Lectures (catalog state before 53b3c30).
+GENERAL_LECTURE_TITLES = frozenset(
+    norm(title)
+    for title in [
+        "20 Laws of Nature",
+        "25 promises of Allah (swt) to the believer",
+        "4 Crucial Tests from Allah (06.27.11)",
+        "6 Gifts from Allah to Muhammad (SAW) (06.29.11)",
+        "6 Special Favors of Allah to Muhammad [SAW] (12.20.11)",
+        "7 Worst Sins (07.11.11)",
+        "9 Reasons They Hate Us",
+        "Abrogated Evidences (06.29.11)",
+        "Allah Blesses Whom He Wills (06.28.11)",
+        "Allah is Sufficient to Take Revenge Against Them (08.24.11)",
+        "Allah's Sunnah Will Never Change (11.15.11 to 11.16.11)",
+        "Be And It Is (07.12.11)",
+        "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11)",
+        "Don't Envy the Kuffaar for their Jahiliyya (07.26.11)",
+        "Dua - The weapon of a believer",
+        "Exposing Those Who Insult Allah (07.10.11)",
+        "IJTIHAAD MASLAHA - Abdallah Al Faisal",
+        "ISLAM THE MOST HYGIENIC RELIGION - Abdallah Al Faisal",
+        "Islam was Revealed in Stages (08.28.11)",
+        "Jahiliyya Gives Everyone a Raw Deal (07.24.11)",
+        "KNOWLEDGE - Abdallah Al Faisal",
+        "Kufaar and the Fear Factor (07.03.11)",
+        "LOVE - Abdallah Al Faisal",
+        "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal",
+        "Might Without Wisdom is a Recipe for Disaster (07.27.11)",
+        "Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal",
+        "Our 6 Sacred Possessions",
+        "Paradise is Exclusive to the Muslims (07.04.11)",
+        "Power of Intercession (07.18.11)",
+        "REALITY OF EMAAN - Abdallah Al Faisal",
+        "REALITY OF POVERTY - Abdallah Al Faisal",
+        "ROLE OF THE MASJID - Shaykh Faisal",
+        "Reality of FGM (08.25.11)",
+        "Reality of Poverty (02.27.12)",
+        "Resist To Exist (07.07.11)",
+        "Satan's Web (dars)",
+        "Satans Web (12.17.11)",
+        "THEY DO NOT LOVE ALLAH - Abdallah Al Faisal",
+        "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal",
+        "Tawassul",
+        "The 10 things Muslims Cannot Doubt",
+        "The 21 Reasons Why The Quran Is A Wise Book",
+        "The 35 People Allah SWT Abhors",
+        "The 36 People Allah SWT Loves",
+        "The 5 Ahkaam of Shariah",
+        "The 5 Needs of Mankind2",
+        "The 8 Gates of Paradise",
+        "The American Ban on Muslims",
+        "The Bombing of the Goofi Soofis",
+        "The Evil Consequences Of Insulting The Rasool (Saw)",
+        "The Evil Effects of Sins",
+        "The Evil Rulers Of The World",
+        "The Holy Spirit (06.18.11)",
+        "The Hyenas Of The Ummah",
+        "The Importance of Intention",
+        "The Philosophy of the islamic Jurisprudence",
+        "The Reality of Fitnah",
+        "The Reality of Racism",
+        "The Ship Is Sinking (07.13.11)",
+        "The farewell khutbah 14-07-14",
+        "The wisdom of the Prophet (saw) 07-15-14",
+        "Their hearts Are Alike",
+        "They Shall Reap What They Sow and You Shall Reap What You Sow (08.22.11)",
+        "They Shall Reap What They Sow and You Shall Reap What You Sow 08",
+        "Towards Watering Down The Holy Quran",
+        "We Hear & We Obey (06.23.11)",
+        "We Shall Never Follow the Jews & the Christians (07.14.11)",
+        "We Shall Never give up Better For Worse (07.16.11)",
+        "Weakness of Mankind [Part 1] (06.25.11)",
+        "Weakness of Mankind [Part 2] (06.26.11)",
+        "Weakness of Mankind [Part 3] (06.27.11)",
+        "Wish For Death If Your Claim Is The Truth (06.25.11)",
+        "Worst Con Artist is the Man Who Cons Himself (08.03.11)",
+        "You Can't Have Your Cake & Eat It Too (07.20.11)",
+        "the 9 reasons kuffaar hate us",
+        "the Barking dogs of jahannam",
+        "the Siege of al Aqsa",
+        "the Weaknesses of Mankind2",
+        "the usa Bombing of Assad, a Muslim perspective",
+    ]
+)
+
 
 def detect_tafsir_subcategory(title: str) -> str | None:
     for pattern, sub_id in TAFSIR_SUB_PATTERNS:
@@ -390,6 +476,9 @@ def resolve_category(title: str, folder_category: str, folder_subcategory: str |
     if re.search(r"tafseer|tafsir", title, re.I):
         category = "Tafseer"
         subcategory = detect_tafsir_subcategory(title) or subcategory
+
+    if norm(title) in GENERAL_LECTURE_TITLES:
+        return "General", None
 
     return category, subcategory
 
