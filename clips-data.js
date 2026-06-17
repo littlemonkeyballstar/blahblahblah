@@ -500,7 +500,7 @@ const CLIPS = [
   },
   {
     "id": 62,
-    "title": "Ibn Baz",
+    "title": "Why is ibn Baz a kaffir?",
     "file": "ibn baz.mp4",
     "archive": "ibn baz.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/ibn baz_000001.jpg",

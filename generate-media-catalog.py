@@ -182,7 +182,7 @@ _CLIP_TITLES_RAW = [
     ("demanding shariya", "Demanding the implementation of sharia"),
     ("falling into the vicous webb of the shaytan", "Falling into the vicious web of the shaytan"),
     ("giving up better for worse", "Giving up the better for the worse"),
-    ("ibn baz", "Ibn Baz"),
+    ("ibn baz", "Why is ibn Baz a kaffir?"),
     (
         "if you are mot practicing u will get a personality",
         "If you are not practicing, you will develop a personality disorder",
