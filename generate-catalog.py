@@ -52,7 +52,6 @@ EXCLUDED_LECTURES = {
     "tafsir surah ahzab marriage of the prophet saw to zaynab bint jahsh ra",
 }
 
-
 def is_blocked_thumb(path: Path) -> bool:
     name = path.name
     if name in THUMB_BLOCKLIST:
@@ -238,6 +237,11 @@ def norm(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+LECTURE_TITLE_OVERRIDES = {
+    norm("conf_imped_takfir"): "Why is takfir important",
+}
+
+
 def detect_tafsir_subcategory(title: str) -> str | None:
     for pattern, sub_id in TAFSIR_SUB_PATTERNS:
         if re.search(pattern, title, re.I):
@@ -412,6 +416,11 @@ def strip_number_prefix(name: str) -> str:
 def display_title(filename_stem: str) -> str:
     """Strip leading episode numbers from lecture display titles."""
     return strip_number_prefix(filename_stem).strip()
+
+
+def resolve_lecture_title(filename_stem: str) -> str:
+    title = display_title(filename_stem)
+    return LECTURE_TITLE_OVERRIDES.get(norm(filename_stem), title)
 
 
 def load_archive_index():
@@ -663,7 +672,7 @@ def main():
             else:
                 folder_category, folder_subcategory = "General", None
 
-            title = display_title(filename[:-4])
+            title = resolve_lecture_title(filename[:-4])
             category, subcategory = resolve_category(title, folder_category, folder_subcategory)
             thumb = resolver.resolve(full, title, folder)
 
