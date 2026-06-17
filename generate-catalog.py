@@ -242,6 +242,7 @@ def norm(text: str) -> str:
 
 LECTURE_TITLE_OVERRIDES = {
     norm("conf_imped_takfir"): "Why is takfir important",
+    norm("is-the-dawla-khawarij"): "Is the dawla khawarij?",
 }
 
 

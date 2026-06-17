@@ -1187,7 +1187,7 @@ const LECTURES = [
     "id": 96
   },
   {
-    "title": "is-the-dawla-khawarij",
+    "title": "Is the dawla khawarij?",
     "category": "Khilafah",
     "categoryLabel": "Khilafah",
     "subcategory": null,
