@@ -103,7 +103,7 @@
 
       <div class="relative max-w-xl">
         <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"></i>
-        <input id="searchInput" type="search" placeholder="Search lectures by title…"
+        <input id="searchInput" type="search" placeholder="Search all lectures by title or topic…"
           class="w-full pl-11 pr-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/30 transition">
       </div>
     </div>
@@ -217,7 +217,14 @@
       return 0;
     }
 
-    function sortLectures(list) {
+    function sortLectures(list, options = {}) {
+      const globalSearch = !!options.globalSearch;
+      if (globalSearch || state.category === 'all') {
+        return [...list].sort((a, b) =>
+          a.title.localeCompare(b.title, undefined, { sensitivity: 'base' })
+        );
+      }
+
       const byParts = shouldSortByParts();
       const useSubOrder = state.category !== 'all' && state.subcategory === 'all';
       return [...list].sort((a, b) => {
@@ -236,22 +243,21 @@
     }
 
     function getFiltered() {
+      const query = state.search.trim();
+      const searching = !!query;
+
       let list = LECTURES;
-      if (state.category !== 'all') {
-        list = list.filter(l => l.category === state.category);
+      if (searching) {
+        list = list.filter(l => matchesLectureSearch(l, query));
+      } else {
+        if (state.category !== 'all') {
+          list = list.filter(l => l.category === state.category);
+        }
+        if (state.subcategory !== 'all') {
+          list = list.filter(l => l.subcategory === state.subcategory);
+        }
       }
-      if (state.subcategory !== 'all') {
-        list = list.filter(l => l.subcategory === state.subcategory);
-      }
-      if (state.search.trim()) {
-        const q = state.search.trim().toLowerCase();
-        list = list.filter(l =>
-          l.title.toLowerCase().includes(q) ||
-          l.categoryLabel.toLowerCase().includes(q) ||
-          (l.subcategoryLabel && l.subcategoryLabel.toLowerCase().includes(q))
-        );
-      }
-      return sortLectures(list);
+      return sortLectures(list, { globalSearch: searching });
     }
 
     /* ── Render category sidebar ── */
@@ -385,7 +391,11 @@
       document.getElementById('totalCount').textContent = LECTURES.length;
 
       let label = '';
-      if (state.category !== 'all') {
+      const query = state.search.trim();
+      if (query) {
+        label = ' across all lectures';
+        label += ` matching "${query}"`;
+      } else if (state.category !== 'all') {
         const cat = LECTURE_CATEGORIES.find(c => c.id === state.category);
         label = ' in ' + (cat ? cat.label : state.category);
         if (state.subcategory !== 'all' && cat) {
@@ -393,7 +403,6 @@
           if (sub) label += ' › ' + sub.label;
         }
       }
-      if (state.search.trim()) label += ` matching "${state.search.trim()}"`;
       document.getElementById('activeLabel').textContent = label;
 
       const grid = document.getElementById('lectureGrid');

@@ -253,6 +253,34 @@ function escapeHtml(str) {
   return d.innerHTML;
 }
 
+/** Lowercase + fold accents/apostrophes for reliable client-side search. */
+function normalizeForSearch(text) {
+  return (text || '')
+    .toLowerCase()
+    .normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[''`´]/g, "'")
+    .replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function lectureSearchHaystack(lecture) {
+  return normalizeForSearch([
+    lecture.title,
+    lecture.categoryLabel,
+    lecture.subcategoryLabel || '',
+    lecture.category || '',
+  ].join(' '));
+}
+
+function matchesLectureSearch(lecture, rawQuery) {
+  const words = normalizeForSearch(rawQuery).split(' ').filter(Boolean);
+  if (!words.length) return true;
+  const haystack = lectureSearchHaystack(lecture);
+  return words.every(word => haystack.includes(word));
+}
+
 function isValidThumb(src) {
   return src && !src.includes('__ia_thumb');
 }
