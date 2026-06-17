@@ -55,7 +55,28 @@ const LECTURE_CATEGORIES = [
     "id": "Nikah_Divorce",
     "label": "Nikah & Divorce",
     "count": 11,
-    "subcategories": []
+    "subcategories": [
+      {
+        "id": "rules_of_divorce",
+        "label": "Rules of Divorce",
+        "count": 2
+      },
+      {
+        "id": "rules_of_nikah",
+        "label": "Rules of Nikah",
+        "count": 4
+      },
+      {
+        "id": "types_to_avoid",
+        "label": "Types to Avoid Marrying",
+        "count": 4
+      },
+      {
+        "id": "fiqh_of_divorce",
+        "label": "Fiqh of Divorce",
+        "count": 1
+      }
+    ]
   },
   {
     "id": "Personality Disorders (Series)",
@@ -2359,8 +2380,8 @@ const LECTURES = [
     "title": "Rules of Divorce [Part 1] (07.06.11)",
     "category": "Nikah_Divorce",
     "categoryLabel": "Nikah & Divorce",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "rules_of_divorce",
+    "subcategoryLabel": "Rules of Divorce",
     "archive": "Nikah_Divorce/Rules of Divorce [Part 1] (07.06.11).mp3",
     "thumb": null,
     "id": 216
@@ -2369,8 +2390,8 @@ const LECTURES = [
     "title": "Rules of Divorce [Part 2] Revisited (07.08.11)",
     "category": "Nikah_Divorce",
     "categoryLabel": "Nikah & Divorce",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "rules_of_divorce",
+    "subcategoryLabel": "Rules of Divorce",
     "archive": "Nikah_Divorce/Rules of Divorce [Part 2] Revisited (07.08.11).mp3",
     "thumb": null,
     "id": 217
@@ -2399,8 +2420,8 @@ const LECTURES = [
     "title": "Rules of Nikah [Part 1] (06.30.11)",
     "category": "Nikah_Divorce",
     "categoryLabel": "Nikah & Divorce",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "rules_of_nikah",
+    "subcategoryLabel": "Rules of Nikah",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 1] (06.30.11).mp3",
     "thumb": null,
     "id": 220
@@ -2409,8 +2430,8 @@ const LECTURES = [
     "title": "Rules of Nikah [Part 2] (07.01.11)",
     "category": "Nikah_Divorce",
     "categoryLabel": "Nikah & Divorce",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "rules_of_nikah",
+    "subcategoryLabel": "Rules of Nikah",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 2] (07.01.11).mp3",
     "thumb": null,
     "id": 221
@@ -2419,8 +2440,8 @@ const LECTURES = [
     "title": "Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11)",
     "category": "Nikah_Divorce",
     "categoryLabel": "Nikah & Divorce",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "rules_of_nikah",
+    "subcategoryLabel": "Rules of Nikah",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11).mp3",
     "thumb": null,
     "id": 222
@@ -2429,8 +2450,8 @@ const LECTURES = [
     "title": "Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11)",
     "category": "Nikah_Divorce",
     "categoryLabel": "Nikah & Divorce",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "rules_of_nikah",
+    "subcategoryLabel": "Rules of Nikah",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11).mp3",
     "thumb": null,
     "id": 223
@@ -4579,8 +4600,8 @@ const LECTURES = [
     "title": "The 18 Types Of Women You Should Not Marry",
     "category": "Nikah_Divorce",
     "categoryLabel": "Nikah & Divorce",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "types_to_avoid",
+    "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "The 18 Types Of Women You Should Not Marry.mp3",
     "thumb": null,
     "id": 438
@@ -4589,8 +4610,8 @@ const LECTURES = [
     "title": "The 18 Types Of Women You Should Not Marry",
     "category": "Nikah_Divorce",
     "categoryLabel": "Nikah & Divorce",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "types_to_avoid",
+    "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3",
     "thumb": null,
     "id": 439
@@ -4599,8 +4620,8 @@ const LECTURES = [
     "title": "The 20 Types Of Men You Should Not Marry",
     "category": "Nikah_Divorce",
     "categoryLabel": "Nikah & Divorce",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "types_to_avoid",
+    "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "The 20 Types Of Men You Should Not Marry.mp3",
     "thumb": null,
     "id": 440
@@ -4609,8 +4630,8 @@ const LECTURES = [
     "title": "The 20 Types Of Men You Should Not Marry",
     "category": "Nikah_Divorce",
     "categoryLabel": "Nikah & Divorce",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "types_to_avoid",
+    "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3",
     "thumb": null,
     "id": 441
@@ -4929,8 +4950,8 @@ const LECTURES = [
     "title": "the Fiqh of Divorce",
     "category": "Nikah_Divorce",
     "categoryLabel": "Nikah & Divorce",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "fiqh_of_divorce",
+    "subcategoryLabel": "Fiqh of Divorce",
     "archive": "Nikah_Divorce/the Fiqh of Divorce.mp3",
     "thumb": null,
     "id": 473

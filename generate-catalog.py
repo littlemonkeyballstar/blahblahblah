@@ -96,6 +96,10 @@ CATEGORY_MERGE = {
 }
 
 SUB_DISPLAY = {
+    "rules_of_divorce": "Rules of Divorce",
+    "rules_of_nikah": "Rules of Nikah",
+    "types_to_avoid": "Types to Avoid Marrying",
+    "fiqh_of_divorce": "Fiqh of Divorce",
     "Tafsir baqarah": "Tafsir Al-Baqarah",
     "Tafseer surah Taubah": "Tafsir At-Tawbah",
     "tafseer TaHa": "Tafsir Ta-Ha",
@@ -107,6 +111,23 @@ SUB_DISPLAY = {
     "Tafseer surah luqman": "Tafsir Luqman",
     "tafseer surah yasin": "Tafsir Ya-Sin",
 }
+
+# Sub-series display order within a category (overrides A–Z by label).
+CATEGORY_SUB_ORDER: dict[str, list[str]] = {
+    "Nikah_Divorce": [
+        "rules_of_divorce",
+        "rules_of_nikah",
+        "types_to_avoid",
+        "fiqh_of_divorce",
+    ],
+}
+
+NIKAH_DIVORCE_SUB_PATTERNS: list[tuple[str, str]] = [
+    (r"rules of divorce", "rules_of_divorce"),
+    (r"rules of nikah", "rules_of_nikah"),
+    (r"types of (women|men) you should not marry", "types_to_avoid"),
+    (r"fiqh of divorce", "fiqh_of_divorce"),
+]
 
 CAT_ORDER = [
     "Tafseer",
@@ -218,6 +239,13 @@ def detect_tafsir_subcategory(title: str) -> str | None:
     return None
 
 
+def detect_nikah_divorce_subcategory(title: str) -> str | None:
+    for pattern, sub_id in NIKAH_DIVORCE_SUB_PATTERNS:
+        if re.search(pattern, title, re.I):
+            return sub_id
+    return None
+
+
 def resolve_category(title: str, folder_category: str, folder_subcategory: str | None) -> tuple[str, str | None]:
     """Apply merges, series detection, and thematic grouping."""
     category = CATEGORY_MERGE.get(folder_category, folder_category)
@@ -241,6 +269,9 @@ def resolve_category(title: str, folder_category: str, folder_subcategory: str |
 
     if category == "Tafseer" and not subcategory:
         subcategory = detect_tafsir_subcategory(title)
+
+    if category == "Nikah_Divorce":
+        subcategory = detect_nikah_divorce_subcategory(title) or subcategory
 
     return category, subcategory
 
@@ -557,7 +588,15 @@ def main():
 
     cat_meta = []
     for cat_id in sorted(categories, key=lambda c: label_for_category(c).lower()):
-        subs = sorted(categories[cat_id]["subs"].items(), key=lambda x: x[1])
+        sub_order = CATEGORY_SUB_ORDER.get(cat_id)
+        if sub_order:
+            rank = {sub_id: index for index, sub_id in enumerate(sub_order)}
+            subs = sorted(
+                categories[cat_id]["subs"].items(),
+                key=lambda x: (rank.get(x[0], len(sub_order)), x[1]),
+            )
+        else:
+            subs = sorted(categories[cat_id]["subs"].items(), key=lambda x: x[1])
         cat_meta.append({
             "id": cat_id,
             "label": categories[cat_id]["label"],
