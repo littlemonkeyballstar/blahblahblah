@@ -48,6 +48,166 @@ def norm(text: str) -> str:
     return re.sub(r"\s+", " ", text).strip()
 
 
+def clean_clip_title(title: str) -> str:
+    """Turn raw IA filenames into readable display titles."""
+    title = title.replace("_", " ")
+    title = re.sub(r"#\w+", "", title)
+    title = re.sub(r"\s+-\s*Trim\s*$", "", title, flags=re.I)
+    title = re.sub(r"\s*\(\d+\)\s*$", "", title)
+    # YouTube-style ids (11 chars with at least one digit — avoids stripping words like "journalists")
+    title = re.sub(r"\s+(?=\S{11}$)\S*\d\S*\s*$", "", title)
+    title = re.sub(r"\s+", " ", title).strip()
+    return title
+
+
+# Clips to hide from the public clips library (normalized stems / archive names)
+EXCLUDED_CLIP_NORMS = {
+    norm("awdfgg"),
+    norm("recpect to a dead person"),
+    # Old placeholder names superseded by renamed IA uploads
+    norm("0426 (1)"),
+    norm("0504"),
+    norm("0530 (2)"),
+    norm("0601 (1)"),
+    norm("0604 (1)"),
+    norm("short"),
+    norm("video_2026-05-17_13-25-14"),
+    norm("video_2026-05-17_13-27-53"),
+    norm("video_2026-05-17_13-30-00"),
+    norm("video_2026-05-17_13-32-38"),
+    norm("video_2026-05-17_13-33-53"),
+    # Duplicate of renamed upload
+    norm("comfort in the truth"),
+    norm("alwaraalbara"),
+}
+
+# Polished display title for every clip (keyed by normalized IA filename stem)
+_CLIP_TITLES_RAW = [
+    ("0510", "Refusing to takfir Mushrikeen (polytheists) — Shaykh Abdullah Faisal"),
+    ("2 They Will Fight You Until You Leave Islam", "They will fight you until you leave Islam"),
+    ("A Controversial Ruling  Seeking Help from Non(1)", "A controversial ruling: seeking help from non-Muslims"),
+    ("A kaffir has no protecter!", "A kafir has no protector!"),
+    (
+        "All the kaffirs have their own brand in islam! - Shaykh Abdullah Faisal",
+        "All the kuffar have their own brand in Islam — Shaykh Abdullah Faisal",
+    ),
+    ("Allah is sufficient to take revange", "Allah is sufficient to take revenge against them"),
+    ("Cure to scitzo", "Cure for schizophrenia"),
+    (
+        "DO NOT TAKE MY ENEMY AS YOUR FRIENDby Shaykh Abdu",
+        "Do not take my enemy as your friend — Shaykh Abdullah Faisal",
+    ),
+    (
+        "DONT_KEEP_ISLAM_IN_THE_FOUR_CORNERS_OF_THE_MASJID_#foryoupage_#fyp",
+        "Don't keep Islam in the four corners of the masjid",
+    ),
+    ("Democracy is the greatest shirk", "Democracy is the greatest shirk"),
+    (
+        "Did Jesus preach Jihad  Sheikh Abdullah al Faisal Answers",
+        "Did Jesus preach jihad? — Shaykh Abdullah Faisal answers",
+    ),
+    ("Dismantaling shariya (WIth captions)", "Dismantling sharia (with captions)"),
+    ("Dismantling Sharia  Minor Sin or Major Disbel", "Dismantling sharia: minor sin or major disbelief"),
+    (
+        "Every Big Evil Empire Has Its Endby Shaykh Abdull",
+        "Every big evil empire has its end — Shaykh Abdullah Faisal",
+    ),
+    ("Every man needs to know this before marriage", "Every man needs to know this before marriage"),
+    ("Explosive Claim  Sheikh Albani's Link to Free", "Explosive claim: Sheikh Albani's link to Freemasonry"),
+    ("Exposing Ibn Baz’s Aid to the Kuffar", "Exposing Ibn Baz's aid to the kuffar"),
+    ("Exposing the evil world order - The jews", "Exposing the evil world order — the Jews"),
+    (
+        "Extremist vs. Islamic View  Are All Muslims G(1)",
+        "Extremist vs Islamic view: are all Muslims grave worshippers?",
+    ),
+    ("Hero or Killer  The Biased Criticism of Sadda", "Hero or killer: the biased criticism of Saddam"),
+    ("How did ALI (ra) Deal with the Khawarij (Puritans)", "How did Ali (ra) deal with the Khawarij?"),
+    ("How do we deal with those who reject dawla1", "How do we deal with people who reject the dawla?"),
+    ("Hypocrites Rushing To Join The Kuffar", "Hypocrites rushing to join the kuffar"),
+    ("Ideological Warfare  The Only Battle That Tru(1)", "Ideological warfare: the only battle that truly matters"),
+    (
+        "If They Put The Sun In My Right Hand & Moon In My",
+        "If they put the sun in my right hand and the moon in my left, I would not cease",
+    ),
+    ("Ignoring Invasion, Fixating on Women Driving", "Ignoring invasion, fixating on women driving"),
+    ("Is it nessesery to takfir (muslims by name)", "Is it necessary to takfir Muslims by name?"),
+    ("Jews & Christians Will Never Be Pleased With You", "Jews and Christians will never be pleased with you"),
+    ("Jokers in the Pack - Refuting the Ashaa", "Jokers in the pack — refuting the Ash'ari"),
+    ("Living in humulation while ummah suffers (ptsd)", "Living in humiliation while the ummah suffers (PTSD)"),
+    ("Only a sincere beliver finds comfort in the truth!", "Only a sincere believer finds comfort in the truth"),
+    (
+        "Oppression causes apostasy(Forced Marriages as ex",
+        "Oppression causes apostasy (forced marriages as an example)",
+    ),
+    (
+        "Shamsis_teacher_Abu_Khadeeja_exposed_as_a_homosexual_pedophile_i0zSl3gpFog",
+        "Shamsi's teacher Abu Khadeeja exposed",
+    ),
+    ("Shaykh faisal funny", "Shaykh Faisal (humorous clip)"),
+    ("The 'Headless Chicken' Mentality of Modern Ex", "The headless chicken mentality of modern extremists"),
+    ("The Battle Between Truth & Falsehood Never Ends", "The battle between truth and falsehood never ends"),
+    ("The Creed Of the shia ", "The creed of the Shia"),
+    ("The Evil Scholar is a lizard - Shaykh Abdullah Faisal", "The evil scholar is a lizard — Shaykh Abdullah Faisal"),
+    ("The Importance of hijra - shaykh abdullah faisal", "The importance of hijra — Shaykh Abdullah Faisal"),
+    ("The Sin of Refusing to Call a Kafir a Kafir", "The sin of refusing to call a kafir a kafir"),
+    ("The Ummah is Sick & The Scholars are to Blame", "The ummah is sick and the scholars are to blame"),
+    ("The killing of journalists", "The killing of journalists"),
+    ("The lie about Jihad", "The lie about jihad"),
+    (
+        "The man who goes out in Jihad",
+        "The man who goes out in Jihad, facing the enemy, will attain the highest honor "
+        "and remain elevated above all others. — Shaykh Abdullah Faisal",
+    ),
+    ("They Control what you learn about isllam", "They control what you learn about Islam"),
+    ("They Will Fight You Until You Leave Islam (Baqara", "They will fight you until you leave Islam (Surah Baqarah)"),
+    (
+        "Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal",
+        "Those who label the mujahideen as khawarij — Shaykh Abdullah Faisal",
+    ),
+    ("Those who follow their evil and corrupted desires", "Those who follow their evil and corrupted desires"),
+    ("WHY ALLAH BLESS THE KUFFAR1 - Trim", "Why does Allah bless the kuffar?"),
+    ("Who Is 'The Other'  Defining 'The Excuser' In(1)", "Who is 'the other'? Defining 'the excuser' in Islam"),
+    ("Why do christians love jews and hate muslims", "Why do Christians love Jews and hate Muslims?"),
+    ("Your Choice of Spouse Reveals Your True Faith", "Your choice of spouse reveals your true faith"),
+    ("al wala al bara", "Al-wala wal-bara"),
+    (
+        "allah wil dump you and your wicked schohler in the hellfire",
+        "Allah will dump you and your wicked scholar in the Hellfire",
+    ),
+    ("amj and faisal refuting hazami's", "AMJ and Faisal refuting Hazami"),
+    ("baqara 216", "Surah al-Baqarah 216"),
+    ("blind follwing wickeed schohlers", "Blind following wicked scholars will dump you in the Hellfire"),
+    ("booti", "Refuting al-Bouti"),
+    ("dealing with thise who reject dawla", "How do we deal with people who reject the dawla? (2)"),
+    ("demanding shariya", "Demanding the implementation of sharia"),
+    ("falling into the vicous webb of the shaytan", "Falling into the vicious web of the shaytan"),
+    ("giving up better for worse", "Giving up the better for the worse"),
+    ("ibn baz", "Ibn Baz"),
+    (
+        "if you are mot practicing u will get a personality",
+        "If you are not practicing, you will develop a personality disorder",
+    ),
+    ("if you dont do jihad it will come to your door!!", "If you don't do jihad, it will come to your door"),
+    ("ignore the jailoom", "Ignore the jahiliyyah"),
+    ("importance of hijra 2", "The importance of hijra (part 2)"),
+    ("is dawla khawarij", "Is the dawla khawarij?"),
+    ("man made izims skizims", "The shame of man-made law"),
+    ("murfti of the taghut", "The mufti of the taghut"),
+    ("narrsasit", "Narcissist personality disorder"),
+    ("reality of truth 12", "The reality of truth (part 12)"),
+    ("reject taghut", "Reject the taghut"),
+    ("sdadwf", "Refuting those who put false conditions on jihad"),
+    ("sign of a khawarij", "Signs of the khawarij"),
+    ("signs of a hypocrite clip", "Signs of a hypocrite"),
+    ("solution is living at dar al islam", "The solution is living in dar al-Islam"),
+    ("tahakum", "Tahakum — ruling by other than what Allah revealed"),
+    ("taliban breaks buddah ", "The Taliban destroys the Buddha statues"),
+    ("the spy who killed imam al awlaki", "The spy who killed Imam Anwar al-Awlaki"),
+    ("wicked scholars Abdullah faisal shaykh", "Wicked scholars — Shaykh Abdullah Faisal"),
+]
+CLIP_TITLE_OVERRIDES = {norm(stem): title for stem, title in _CLIP_TITLES_RAW}
+
+
 def similarity(a: str, b: str) -> float:
     if a == b:
         return 1.0
@@ -177,6 +337,11 @@ def build_clips():
             continue
         if dedupe_key in seen:
             continue
+        stem = Path(name).stem
+        if stem.endswith(".ia"):
+            stem = stem[:-3]
+        if norm(stem) in EXCLUDED_CLIP_NORMS:
+            continue
         seen.add(dedupe_key)
         chosen.append(name)
 
@@ -189,9 +354,11 @@ def build_clips():
         if not thumb:
             thumb = find_thumb(name, {}, archive_thumb_map)
 
+        stem_key = norm(stem)
+        title = CLIP_TITLE_OVERRIDES.get(stem_key, clean_clip_title(stem))
         clips.append({
             "id": len(clips),
-            "title": stem,
+            "title": title,
             "file": name,
             "archive": name,
             "thumb": thumb,

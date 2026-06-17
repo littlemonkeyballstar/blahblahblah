@@ -60,25 +60,34 @@ def is_low_quality_thumb(path: Path) -> bool:
 DISPLAY_NAMES = {
     "General": "General Lectures",
     "Tafseer": "Tafseer",
-    "Jihad": "Jihad",
-    "Tawheed": "Tawheed",
-    "Ramadan": "Ramadan",
-    "Refutation": "Refutations",
-    "Conference": "Conference",
-    "Diseases_of_the_Heart": "Diseases of the Heart",
-    "Jokers in the pack": "Jokers in the Pack",
-    "Khilafah": "Khilafah",
-    "Madkhali": "Madkhali",
-    "Nikah_Divorce": "Nikah & Divorce",
-    "Personality Disorders (Series)": "Personality Disorders",
-    "Radio_Show": "Radio Show",
-    "Science in the quran": "Science in the Quran",
-    "Shia": "Shia",
-    "The 5 Desperate Zindeeq": "The 5 Desperate Zindeeq",
-    "The Devils Deception": "The Devil's Deception",
     "The Sealed Nector (Series)": "The Sealed Nectar",
-    "Who Are You?": "Who Are You?",
+    "Prophets_Seerah": "Prophets & Seerah",
+    "Tawheed": "Tawheed",
+    "Aqeedah": "Aqeedah",
+    "Fiqh_Worship": "Fiqh & Worship",
+    "Jihad": "Jihad",
+    "Khilafah": "Khilafah",
+    "Refutation": "Refutations",
+    "Jokers in the pack": "Jokers in the Pack",
+    "The Devils Deception": "The Devil's Deception",
     "Wicked_Scholars": "Wicked Scholars",
+    "Science in the quran": "Science in the Quran",
+    "Nikah_Divorce": "Nikah & Divorce",
+    "Ramadan": "Ramadan",
+    "Diseases_of_the_Heart": "Diseases of the Heart",
+    "Personality Disorders (Series)": "Personality Disorders",
+    "Who Are You?": "Who Are You?",
+    "Radio_Show": "Radio Show",
+    "Character_Dawah": "Character & Dawah",
+    "Ummah_Affairs": "Ummah & Contemporary Issues",
+    "The 5 Desperate Zindeeq": "The 5 Desperate Zindeeq",
+}
+
+# Fold small / sect-specific folders into broader categories
+CATEGORY_MERGE = {
+    "Madkhali": "Refutation",
+    "Shia": "Refutation",
+    "Conference": "Ummah_Affairs",
 }
 
 SUB_DISPLAY = {
@@ -95,11 +104,98 @@ SUB_DISPLAY = {
 }
 
 CAT_ORDER = [
-    "Tafseer", "Tawheed", "Jihad", "Ramadan", "Refutation", "Khilafah", "Shia",
-    "Wicked_Scholars", "Diseases_of_the_Heart", "The Sealed Nector (Series)",
-    "The Devils Deception", "Science in the quran", "Nikah_Divorce", "Conference",
-    "Radio_Show", "Madkhali", "Jokers in the pack", "The 5 Desperate Zindeeq",
-    "Who Are You?", "Personality Disorders (Series)", "General",
+    "Tafseer",
+    "The Sealed Nector (Series)",
+    "Prophets_Seerah",
+    "Tawheed",
+    "Aqeedah",
+    "Fiqh_Worship",
+    "Jihad",
+    "Khilafah",
+    "Refutation",
+    "Jokers in the pack",
+    "The 5 Desperate Zindeeq",
+    "The Devils Deception",
+    "Wicked_Scholars",
+    "Science in the quran",
+    "Nikah_Divorce",
+    "Ramadan",
+    "Diseases_of_the_Heart",
+    "Personality Disorders (Series)",
+    "Who Are You?",
+    "Radio_Show",
+    "Character_Dawah",
+    "Ummah_Affairs",
+    "General",
+]
+
+# Re-home root-level lectures into named series when the title matches
+TITLE_SERIES_PATTERNS: list[tuple[str, str, str | None]] = [
+    (r"sealed nectar", "The Sealed Nector (Series)", None),
+    (r"jokers in the pack", "Jokers in the pack", None),
+    (r"devil'?s deception|devils deception", "The Devils Deception", None),
+    (r"science of quran", "Science in the quran", None),
+    (r"who are you", "Who Are You?", None),
+    (r"personality disorders", "Personality Disorders (Series)", None),
+    (r"^radio show", "Radio_Show", None),
+    (r"rules of nikah|rules of divorce|types of (women|men) you should not marry", "Nikah_Divorce", None),
+    (r"wicked scholar", "Wicked_Scholars", None),
+    (r"5 desperate zindeeq|five desperate zindeeq", "The 5 Desperate Zindeeq", None),
+    (r"diseases of the heart", "Diseases_of_the_Heart", None),
+    (r"at conference", "Ummah_Affairs", None),
+    (r"refut|refuting", "Refutation", None),
+    (r"\bshia\b", "Refutation", None),
+    (r"madkhali", "Refutation", None),
+    (r"khilaf|caliphate", "Khilafah", None),
+    (r"ramadan|ramadhan|laylatul qadr|virtues of ramadan", "Ramadan", None),
+    (r"\bjihad\b", "Jihad", None),
+    (r"tawheed|tauheed|branches of tauheed", "Tawheed", None),
+]
+
+# Thematic buckets for miscellaneous root-level lectures
+TITLE_THEME_PATTERNS: list[tuple[str, str]] = [
+    (
+        r"takfir|kufr|kafir|kaafir|shirk|democracy|munafiq|hypocrite|wala.?wal.?bara|al.?wala|"
+        r"impediment|excuse of ignorance|kufr doona|dismantle the sharia|meltdown of democracy|"
+        r"are you a takfiri|what makes you a kafir|25 things.*kaafir|shirk in perspective|"
+        r"invalidation of your actions|let.?s call a spade",
+        "Aqeedah",
+    ),
+    (
+        r"salah|prayer|fasting|hajj|fiqh|paradise \[part|rules of |description of paradise|"
+        r"description of the prophet|merits of salah|how to make hajj|fiqhul waaqi|menses|clothing|"
+        r"qadr|pillars of qadr|lailatul qadr explained",
+        "Fiqh_Worship",
+    ),
+    (
+        r"\badam |\bmusa |\bibrahim|prophet muhammad|miracles of the prophet|israa|mi.?raaj|"
+        r"isra wal|boy and the king|pharoah|khidr|qaroon|islam of umar|signs of musa",
+        "Prophets_Seerah",
+    ),
+    (
+        r"sincere|brotherhood|sisterhood|etiquette|dawah|manhood|priorities|balanced nation|"
+        r"etiquettes of dawah|merits and etiquettes|foundations of the islamic brotherhood",
+        "Character_Dawah",
+    ),
+    (
+        r"cancers in the body|challenges facing|ideological warfare|human rights|muslim character|"
+        r"natural instinct|signs before the day|unity|the jinn\b|\btawba\b|black magic|\bmagic\b|"
+        r"dreams|judgment day|leadership in islam|changing the goalpost|mad dogs|sheikh abdullah faisal -",
+        "Ummah_Affairs",
+    ),
+]
+
+TAFSIR_SUB_PATTERNS: list[tuple[str, str]] = [
+    (r"baqarah|baqara", "Tafsir baqarah"),
+    (r"taubah|tawbah", "Tafseer surah Taubah"),
+    (r"ta.?ha|taha", "tafseer TaHa"),
+    (r"furqan", "Tafseer Al Furqan"),
+    (r"kahf", "tafseer al kahf"),
+    (r"naml", "Tafseer an-naml"),
+    (r"ankabut", "Tafseer Al - ankabut"),
+    (r"ahzab", "tafseer surah al ahzab"),
+    (r"luqman", "Tafseer surah luqman"),
+    (r"yasin|ya.?sin", "tafseer surah yasin"),
 ]
 
 
@@ -108,6 +204,52 @@ def norm(text: str) -> str:
     text = re.sub(r"\s*_thumb$", "", text, flags=re.I)
     text = re.sub(r"[^a-z0-9]+", " ", text)
     return re.sub(r"\s+", " ", text).strip()
+
+
+def detect_tafsir_subcategory(title: str) -> str | None:
+    for pattern, sub_id in TAFSIR_SUB_PATTERNS:
+        if re.search(pattern, title, re.I):
+            return sub_id
+    return None
+
+
+def resolve_category(title: str, folder_category: str, folder_subcategory: str | None) -> tuple[str, str | None]:
+    """Apply merges, series detection, and thematic grouping."""
+    category = CATEGORY_MERGE.get(folder_category, folder_category)
+    subcategory = folder_subcategory
+
+    if category == "General":
+        for pattern, series_cat, series_sub in TITLE_SERIES_PATTERNS:
+            if re.search(pattern, title, re.I):
+                category = series_cat
+                subcategory = series_sub or subcategory
+                break
+        else:
+            for pattern, theme_cat in TITLE_THEME_PATTERNS:
+                if re.search(pattern, title, re.I):
+                    category = theme_cat
+                    break
+
+    if category == "General" and re.search(r"tafseer|tafsir", title, re.I):
+        category = "Tafseer"
+        subcategory = detect_tafsir_subcategory(title) or subcategory
+
+    if category == "Tafseer" and not subcategory:
+        subcategory = detect_tafsir_subcategory(title)
+
+    return category, subcategory
+
+
+def lecture_sort_key(lecture: dict) -> tuple:
+    cat = lecture["category"]
+    cat_rank = CAT_ORDER.index(cat) if cat in CAT_ORDER else len(CAT_ORDER)
+    sub = lecture.get("subcategory") or ""
+    sub_label = lecture.get("subcategoryLabel") or sub
+    return (cat_rank, sub_label.lower(), lecture["title"].lower())
+
+
+def label_for_category(category: str) -> str:
+    return DISPLAY_NAMES.get(category, category.replace("_", " "))
 
 
 def similarity(a: str, b: str) -> float:
@@ -368,8 +510,6 @@ def main():
     resolver = ThumbResolver()
 
     lectures = []
-    categories = {}
-    stats = {"file": 0, "cover": 0, "category": 0, "flat": 0, "embedded": 0, "none": 0}
 
     for dirpath, dirnames, filenames in os.walk(ROOT):
         dirnames.sort()
@@ -381,33 +521,41 @@ def main():
             folder = rel.parent.as_posix() if rel.parent != Path(".") else ""
             if folder:
                 parts = folder.split("/")
-                category = parts[0]
-                subcategory = "/".join(parts[1:]) if len(parts) > 1 else None
+                folder_category = parts[0]
+                folder_subcategory = "/".join(parts[1:]) if len(parts) > 1 else None
             else:
-                category, subcategory = "General", None
+                folder_category, folder_subcategory = "General", None
 
             title = filename[:-4]
+            category, subcategory = resolve_category(title, folder_category, folder_subcategory)
             thumb = resolver.resolve(full, title, folder)
 
             lectures.append({
-                "id": len(lectures),
                 "title": title,
                 "category": category,
-                "categoryLabel": DISPLAY_NAMES.get(category, category),
+                "categoryLabel": label_for_category(category),
                 "subcategory": subcategory,
                 "subcategoryLabel": SUB_DISPLAY.get(subcategory, subcategory) if subcategory else None,
                 "archive": archive_path(folder, filename, by_path, by_name),
                 "thumb": thumb,
             })
 
-            categories.setdefault(category, {"label": DISPLAY_NAMES.get(category, category), "subs": {}})
-            if subcategory:
-                categories[category]["subs"][subcategory] = SUB_DISPLAY.get(subcategory, subcategory)
+    lectures.sort(key=lecture_sort_key)
+    for index, lecture in enumerate(lectures):
+        lecture["id"] = index
+
+    categories: dict[str, dict] = {}
+    for lecture in lectures:
+        cat = lecture["category"]
+        categories.setdefault(cat, {"label": label_for_category(cat), "subs": {}})
+        sub = lecture.get("subcategory")
+        if sub:
+            categories[cat]["subs"][sub] = SUB_DISPLAY.get(sub, sub)
 
     cat_meta = []
-    for cat_id in CAT_ORDER:
-        if cat_id not in categories:
-            continue
+    ordered_ids = [cat_id for cat_id in CAT_ORDER if cat_id in categories]
+    ordered_ids.extend(sorted(set(categories) - set(CAT_ORDER)))
+    for cat_id in ordered_ids:
         subs = sorted(categories[cat_id]["subs"].items(), key=lambda x: x[1])
         cat_meta.append({
             "id": cat_id,
