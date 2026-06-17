@@ -43,7 +43,6 @@
     .thumb-box { background: linear-gradient(180deg, #0f172a 0%, #1a2332 100%); }
     .slide-thumb { height: 16rem; }
     @media (min-width: 640px) { .slide-thumb { height: 18rem; } }
-    audio { border-radius: .5rem; width: 100%; }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-200 antialiased islamic-pattern min-h-screen flex flex-col">
@@ -88,7 +87,7 @@
     </section>
 
     <!-- Previews -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-8 py-8 sm:py-14 border-t border-slate-800/80">
+    <section class="max-w-7xl mx-auto px-4 sm:px-8 py-8 sm:py-14 pb-16 border-t border-slate-800/80">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 sm:gap-10">
 
         <div>
@@ -115,17 +114,6 @@
           <div id="audioPreview" class="space-y-3"></div>
         </div>
 
-      </div>
-    </section>
-
-    <!-- Quick listen grid -->
-    <section class="max-w-7xl mx-auto px-4 sm:px-8 pb-16">
-      <h2 class="font-display text-2xl text-gold-gradient mb-8 text-center">Listen Now</h2>
-      <div id="listenGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
-      <div class="text-center mt-10">
-        <a href="audio.html" class="mobile-cta-btn inline-flex items-center gap-2 px-8 py-3.5 bg-gold hover:bg-gold-light text-slate-950 font-semibold rounded-full transition shadow-lg shadow-gold/20">
-          <i class="fas fa-book-open"></i> Browse All Audio Lectures <i class="fas fa-arrow-right text-sm"></i>
-        </a>
       </div>
     </section>
 
@@ -247,22 +235,6 @@
       document.getElementById('audioPreview').innerHTML = randomPick(LECTURES, 4).map(l =>
         previewCard(`audio.html?lecture=${l.id}`, l.thumb, l.title, l.categoryLabel, 'fa-headphones')
       ).join('');
-
-      const grid = randomPick(LECTURES, 6);
-      document.getElementById('listenGrid').innerHTML = grid.map(l => {
-        const audioUrl = archiveStreamUrl(ARCHIVE_BASE, l.archive);
-        return `
-          <div class="card-hover rounded-2xl border border-slate-800 bg-slate-900/60 overflow-hidden flex flex-col">
-            <a href="audio.html?lecture=${l.id}" class="h-44 thumb-box flex items-center justify-center p-3">
-              ${thumbMarkup(l.thumb, l.title, 'max-w-full max-h-full object-contain')}
-            </a>
-            <div class="p-4 flex flex-col flex-1">
-              <span class="text-[10px] uppercase tracking-wider text-gold/70">${escapeHtml(l.categoryLabel)}</span>
-              <h3 class="font-medium text-sm text-slate-100 mt-1 mb-3 line-clamp-2">${escapeHtml(l.title)}</h3>
-              <audio controls preload="none" class="mt-auto h-9"><source src="${audioUrl}" type="audio/mpeg"></audio>
-            </div>
-          </div>`;
-      }).join('');
     }
 
     mountTopBar();
