@@ -280,6 +280,22 @@ def lecture_sort_key(lecture: dict) -> str:
     return lecture["title"].lower()
 
 
+def lecture_dedupe_rank(lecture: dict) -> tuple[int, int]:
+    """Prefer category-folder copies over root-level duplicates."""
+    archive = lecture["archive"]
+    return (1 if "/" in archive else 0, len(archive))
+
+
+def dedupe_lectures(lectures: list[dict]) -> list[dict]:
+    best: dict[tuple[str, str], dict] = {}
+    for lecture in lectures:
+        key = (lecture["category"], norm(lecture["title"]))
+        existing = best.get(key)
+        if existing is None or lecture_dedupe_rank(lecture) > lecture_dedupe_rank(existing):
+            best[key] = lecture
+    return list(best.values())
+
+
 def label_for_category(category: str) -> str:
     return DISPLAY_NAMES.get(category, category.replace("_", " "))
 
@@ -579,6 +595,7 @@ def main():
                 "thumb": thumb,
             })
 
+    lectures = dedupe_lectures(lectures)
     lectures.sort(key=lecture_sort_key)
     for index, lecture in enumerate(lectures):
         lecture["id"] = index

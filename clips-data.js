@@ -47,7 +47,7 @@ const CLIPS = [
     "title": "Allah is sufficient to take revenge against them",
     "file": "Allah is sufficient to take revange.mp4",
     "archive": "Allah is sufficient to take revange.mp4",
-    "thumb": null,
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Allah is sufficient to take revange_000001.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/Allah%20is%20sufficient%20to%20take%20revange.mp4"
   },
   {
@@ -175,7 +175,7 @@ const CLIPS = [
     "title": "How do we deal with people who reject the dawla?",
     "file": "How do we deal with those who reject dawla1.mp4",
     "archive": "How do we deal with those who reject dawla1.mp4",
-    "thumb": null,
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/How do we deal with those who reject dawla1_000001.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/How%20do%20we%20deal%20with%20those%20who%20reject%20dawla1.mp4"
   },
   {
@@ -343,7 +343,7 @@ const CLIPS = [
     "title": "The lie about jihad",
     "file": "The lie about Jihad.mp4",
     "archive": "The lie about Jihad.mp4",
-    "thumb": null,
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The lie about Jihad_000001.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/The%20lie%20about%20Jihad.mp4"
   },
   {
@@ -439,7 +439,7 @@ const CLIPS = [
     "title": "AMJ and Faisal refuting Hazami",
     "file": "amj and faisal refuting hazami's.mp4",
     "archive": "amj and faisal refuting hazami's.mp4",
-    "thumb": null,
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/amj and faisal refuting hazami's_000001.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/amj%20and%20faisal%20refuting%20hazami%27s.mp4"
   },
   {
@@ -471,7 +471,7 @@ const CLIPS = [
     "title": "How do we deal with people who reject the dawla? (2)",
     "file": "dealing with thise who reject dawla.mp4",
     "archive": "dealing with thise who reject dawla.mp4",
-    "thumb": null,
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/dealing with thise who reject dawla_000001.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/dealing%20with%20thise%20who%20reject%20dawla.mp4"
   },
   {
@@ -479,7 +479,7 @@ const CLIPS = [
     "title": "Demanding the implementation of sharia",
     "file": "demanding shariya.mp4",
     "archive": "demanding shariya.mp4",
-    "thumb": null,
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/demanding shariya_000001.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/demanding%20shariya.mp4"
   },
   {
