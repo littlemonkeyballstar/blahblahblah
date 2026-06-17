@@ -527,7 +527,7 @@ def flat_thumb_quality_rank(path: Path) -> tuple[int, str]:
 
 
 def build_featured_lectures(lectures: list[dict]) -> list[dict]:
-    """Map every thumb/ root image to a lecture for the homepage featured slideshow."""
+    """Map high-quality thumb/ root images (no *_thumb copies) to featured slideshow lectures."""
     if not WEB_THUMB.exists():
         return []
 
@@ -545,8 +545,9 @@ def build_featured_lectures(lectures: list[dict]) -> list[dict]:
         if path.is_file()
         and path.suffix.lower() in IMAGE_EXTS
         and not is_blocked_thumb(path)
+        and not is_low_quality_thumb(path)
     ]
-    for path in sorted(paths, key=flat_thumb_quality_rank):
+    for path in sorted(paths, key=lambda p: p.name.lower()):
         key = flat_thumb_lookup_key(path)
         if len(key) < 4:
             continue
