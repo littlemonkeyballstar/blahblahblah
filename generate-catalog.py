@@ -129,6 +129,7 @@ SUB_DISPLAY = {
     "tafseer surah al ahzab": "Tafsir Al-Ahzab",
     "Tafseer surah luqman": "Tafsir Luqman",
     "tafseer surah yasin": "Tafsir Ya-Sin",
+    "Tafseer surah Qasas": "Tafsir Al-Qasas",
 }
 
 # Sub-series display order within a category (overrides A–Z by label).
@@ -304,6 +305,7 @@ TAFSIR_SUB_PATTERNS: list[tuple[str, str]] = [
     (r"ahzab", "tafseer surah al ahzab"),
     (r"luqman", "Tafseer surah luqman"),
     (r"yasin|ya.?sin", "tafseer surah yasin"),
+    (r"qasas", "Tafseer surah Qasas"),
 ]
 
 
@@ -376,6 +378,10 @@ def resolve_category(title: str, folder_category: str, folder_subcategory: str |
     if category == "Refutation":
         subcategory = detect_refutation_subcategory(title) or subcategory
 
+    if re.search(r"tafseer|tafsir", title, re.I):
+        category = "Tafseer"
+        subcategory = detect_tafsir_subcategory(title) or subcategory
+
     return category, subcategory
 
 
@@ -389,10 +395,17 @@ def lecture_sort_key(lecture: dict) -> str:
     return lecture["title"].lower()
 
 
-def lecture_dedupe_rank(lecture: dict) -> tuple[int, int]:
-    """Prefer category-folder copies over root-level duplicates."""
+def lecture_dedupe_rank(lecture: dict) -> tuple[int, int, int]:
+    """Prefer Tafseer-folder copies, then other folder copies over root duplicates."""
     archive = lecture["archive"]
-    return (1 if "/" in archive else 0, len(archive))
+    lower = archive.lower()
+    if lower.startswith("tafseer/"):
+        folder_rank = 2
+    elif "/" in archive:
+        folder_rank = 1
+    else:
+        folder_rank = 0
+    return (folder_rank, 1 if "/" in archive else 0, -len(archive))
 
 
 def dedupe_lectures(lectures: list[dict]) -> list[dict]:
