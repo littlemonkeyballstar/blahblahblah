@@ -92,7 +92,7 @@ const CLIPS = [
   },
   {
     "id": 11,
-    "title": "Dismantling sharia (with captions)",
+    "title": "The shirk in dismantling shariya",
     "file": "Dismantaling shariya (WIth captions).mp4",
     "archive": "Dismantaling shariya (WIth captions).mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Dismantaling shariya (WIth captions)_000001.jpg",

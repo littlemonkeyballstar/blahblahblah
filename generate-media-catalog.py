@@ -106,7 +106,7 @@ _CLIP_TITLES_RAW = [
         "Did Jesus preach Jihad  Sheikh Abdullah al Faisal Answers",
         "Did Jesus preach jihad? — Shaykh Abdullah Faisal answers",
     ),
-    ("Dismantaling shariya (WIth captions)", "Dismantling sharia (with captions)"),
+    ("Dismantaling shariya (WIth captions)", "The shirk in dismantling shariya"),
     ("Dismantling Sharia  Minor Sin or Major Disbel", "Dismantling sharia: minor sin or major disbelief"),
     (
         "Every Big Evil Empire Has Its Endby Shaykh Abdull",
