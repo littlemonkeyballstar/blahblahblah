@@ -311,6 +311,11 @@ def strip_number_prefix(name: str) -> str:
     return re.sub(r"^\d+\.", "", name)
 
 
+def display_title(filename_stem: str) -> str:
+    """Strip leading episode numbers from lecture display titles."""
+    return strip_number_prefix(filename_stem).strip()
+
+
 def load_archive_index():
     with urllib.request.urlopen(ARCHIVE_URL, timeout=30) as resp:
         data = json.load(resp)
@@ -560,7 +565,7 @@ def main():
             else:
                 folder_category, folder_subcategory = "General", None
 
-            title = filename[:-4]
+            title = display_title(filename[:-4])
             category, subcategory = resolve_category(title, folder_category, folder_subcategory)
             thumb = resolver.resolve(full, title, folder)
 
