@@ -70,6 +70,7 @@
       border-radius: 9999px;
       background: radial-gradient(circle, color-mix(in srgb, var(--ph-accent) 28%, transparent) 0%, transparent 70%);
       pointer-events: none;
+      transition: transform 0.35s ease, opacity 0.35s ease;
     }
     .lecture-placeholder__content {
       position: absolute;
@@ -151,7 +152,20 @@
       width: 3px;
       border-radius: 9999px;
       background: var(--ph-accent);
+      transform: scaleY(0.55);
+      opacity: 0.45;
+    }
+    .lecture-placeholder.is-playing .lecture-placeholder__wave span {
       animation: ph-wave 1.35s ease-in-out infinite;
+    }
+    .lecture-placeholder.is-playing .lecture-placeholder__glow {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1.08);
+      transition: transform 0.35s ease, opacity 0.35s ease;
+    }
+    .lecture-card.is-playing-audio {
+      border-color: rgba(212, 168, 83, 0.35);
+      box-shadow: 0 0 0 1px rgba(212, 168, 83, 0.12);
     }
     .lecture-placeholder__wave span:nth-child(1) { height: 0.45rem; animation-delay: 0s; }
     .lecture-placeholder__wave span:nth-child(2) { height: 0.85rem; animation-delay: 0.12s; }
@@ -578,6 +592,36 @@
       }
 
       renderPagination(totalPages);
+      bindLectureAudioPlayers();
+    }
+
+    function bindLectureAudioPlayers() {
+      const grid = document.getElementById('lectureGrid');
+      grid.querySelectorAll('audio').forEach(audio => {
+        const card = audio.closest('.lecture-card');
+        const placeholder = card?.querySelector('.lecture-placeholder');
+        if (!placeholder) return;
+
+        const setPlaying = (playing) => {
+          placeholder.classList.toggle('is-playing', playing);
+          card.classList.toggle('is-playing-audio', playing);
+        };
+
+        audio.addEventListener('play', () => {
+          grid.querySelectorAll('audio').forEach(other => {
+            if (other !== audio && !other.paused) other.pause();
+          });
+          grid.querySelectorAll('.lecture-placeholder.is-playing').forEach(el => {
+            el.classList.remove('is-playing');
+          });
+          grid.querySelectorAll('.lecture-card.is-playing-audio').forEach(el => {
+            el.classList.remove('is-playing-audio');
+          });
+          setPlaying(true);
+        });
+        audio.addEventListener('pause', () => setPlaying(false));
+        audio.addEventListener('ended', () => setPlaying(false));
+      });
     }
 
     function renderPagination(totalPages) {
