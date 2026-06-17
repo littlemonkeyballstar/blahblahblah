@@ -104,6 +104,13 @@ CATEGORY_MERGE = {
 }
 
 SUB_DISPLAY = {
+    "refutation_shia": "Shia",
+    "refutation_madkhali": "Madkhalis",
+    "refutation_democracy": "Democracy & Secularism",
+    "refutation_khawarij": "Khawarij",
+    "refutation_jews": "Jews",
+    "refutation_deviants": "Deviant Groups",
+    "refutation_general": "General Refutations",
     "rules_of_divorce": "Rules of Divorce",
     "rules_of_nikah": "Rules of Nikah",
     "types_to_avoid": "Types to Avoid Marrying",
@@ -122,6 +129,15 @@ SUB_DISPLAY = {
 
 # Sub-series display order within a category (overrides A–Z by label).
 CATEGORY_SUB_ORDER: dict[str, list[str]] = {
+    "Refutation": [
+        "refutation_shia",
+        "refutation_madkhali",
+        "refutation_democracy",
+        "refutation_khawarij",
+        "refutation_jews",
+        "refutation_deviants",
+        "refutation_general",
+    ],
     "Nikah_Divorce": [
         "rules_of_divorce",
         "rules_of_nikah",
@@ -173,15 +189,28 @@ TITLE_SERIES_PATTERNS: list[tuple[str, str, str | None]] = [
     (r"personality disorders", "Personality Disorders (Series)", None),
     (r"^radio show", "Radio_Show", None),
     (r"rules of nikah|rules of divorce|types of (women|men) you should not marry", "Nikah_Divorce", None),
-    (r"wicked scholar", "Wicked_Scholars", None),
+    (r"wicked scholar|let the scholars beware|definition of a scholar", "Wicked_Scholars", None),
     (r"5 desperate zindeeq|five desperate zindeeq", "The 5 Desperate Zindeeq", None),
     (r"diseases of the heart", "Diseases_of_the_Heart", None),
+    (r"road to sincerity|reality of sincerity", "Diseases_of_the_Heart", None),
     (r"at conference", "Ummah_Affairs", None),
+    (r"science of quran|animals of the holy quran|prophesies of the holy quran", "Science in the quran", None),
+    (r"people of the cave|sleepers in the cave", "Prophets_Seerah", None),
+    (r"women in islam|wives & children|parent child|marital discord|daughters are diamonds|muslim home|tainted love", "Nikah_Divorce", None),
+    (r"importance of hijrah|declaration of war", "Jihad", None),
+    (r"message from the calipha|manhaj for establishing shariah", "Khilafah", None),
     (r"refut|refuting", "Refutation", None),
     (r"khawarij and their aqeedah", "Refutation", None),
-    (r"democrates", "Refutation", None),
-    (r"\bshia\b", "Refutation", None),
-    (r"madkhali", "Refutation", None),
+    (r"democrat|secularism|meltdown of democracy", "Refutation", None),
+    (r"\bshia\b|hate the shia", "Refutation", None),
+    (r"madkhali|saudi salafi", "Refutation", None),
+    (r"\bmurjia\b|lizard hole|gay lesbian|lgbt", "Refutation", None),
+    (r"reality of the jews|no peace with the jews|the reality of the jews", "Refutation", None),
+    (r"shariah vs man made|do not take the kuffar|do not take my enemy", "Refutation", None),
+    (r"rejecting the taghut|fight in the cause of taghut|worst of creatures", "Refutation", None),
+    (r"radical islamic terror|white supremacy|domain of apostasy", "Refutation", None),
+    (r"insulting the prophet|slander of aisha|ifk", "Refutation", None),
+    (r"kashf ush shubuhaat|removing the doubts", "Refutation", None),
     (r"khilaf|khilaaf|caliphate", "Khilafah", None),
     (r"ramadan|ramadhan|laylatul qadr|virtues of ramadan", "Ramadan", None),
     (r"\bjihad\b", "Jihad", None),
@@ -192,15 +221,17 @@ TITLE_SERIES_PATTERNS: list[tuple[str, str, str | None]] = [
 TITLE_THEME_PATTERNS: list[tuple[str, str]] = [
     (
         r"takfir|kufr|kafir|kaafir|shirk|democracy|munafiq|hypocrite|wala.?wal.?bara|al.?wala|"
-        r"impediment|excuse of ignorance|kufr doona|dismantle the sharia|meltdown of democracy|"
+        r"impediment|excuse of ignorance|kufr doona|dismantle the sharia|"
         r"are you a takfiri|what makes you a kafir|25 things.*kaafir|shirk in perspective|"
-        r"invalidation of your actions|let.?s call a spade",
+        r"invalidation of your actions|let.?s call a spade|nawaqid|nawaaqid|seven conditions of shahada|"
+        r"principles of ahlus sunna|29 principles|where is allah|friends of allah",
         "Aqeedah",
     ),
     (
         r"salah|prayer|fasting|hajj|fiqh|paradise \[part|rules of |description of paradise|"
         r"description of the prophet|merits of salah|how to make hajj|fiqhul waaqi|menses|clothing|"
-        r"qadr|pillars of qadr|lailatul qadr explained",
+        r"qadr|pillars of qadr|lailatul qadr explained|application of revelation|punishment of the grave|"
+        r"virtues of makkah|virtues of dhikr|rules and merits of zakah",
         "Fiqh_Worship",
     ),
     (
@@ -216,9 +247,23 @@ TITLE_THEME_PATTERNS: list[tuple[str, str]] = [
     (
         r"cancers in the body|challenges facing|ideological warfare|human rights|muslim character|"
         r"natural instinct|signs before the day|unity|the jinn\b|\btawba\b|black magic|\bmagic\b|"
-        r"dreams|judgment day|leadership in islam|changing the goalpost|mad dogs|sheikh abdullah faisal -",
+        r"dreams|judgment day|leadership in islam|changing the goalpost|mad dogs|sheikh abdullah faisal -|"
+        r"islam under siege|islam and the west|natural disasters|human soul|mysteries of the soul|"
+        r"signs before judgement|judgement day",
         "Ummah_Affairs",
     ),
+]
+
+REFUTATION_SUB_PATTERNS: list[tuple[str, str]] = [
+    (r"shia|hate the shia", "refutation_shia"),
+    (r"madkhali|saudi salafi", "refutation_madkhali"),
+    (r"democrat|secularism|meltdown of democracy|shariah vs man made|nationalism secularism", "refutation_democracy"),
+    (r"khawarij", "refutation_khawarij"),
+    (r"jew", "refutation_jews"),
+    (r"murjia|lizard hole|gay lesbian|lgbt|kashf ush shubuhaat|removing the doubts", "refutation_deviants"),
+    (r"do not take the kuffar|do not take my enemy|rejecting the taghut|fight in the cause of taghut|"
+     r"worst of creatures|insulting the prophet|slander of aisha|ifk|radical islamic terror|"
+     r"white supremacy|domain of apostasy|refut", "refutation_general"),
 ]
 
 TAFSIR_SUB_PATTERNS: list[tuple[str, str]] = [
@@ -262,10 +307,22 @@ def detect_nikah_divorce_subcategory(title: str) -> str | None:
     return None
 
 
+def detect_refutation_subcategory(title: str) -> str | None:
+    for pattern, sub_id in REFUTATION_SUB_PATTERNS:
+        if re.search(pattern, title, re.I):
+            return sub_id
+    return None
+
+
 def resolve_category(title: str, folder_category: str, folder_subcategory: str | None) -> tuple[str, str | None]:
     """Apply merges, series detection, and thematic grouping."""
     category = CATEGORY_MERGE.get(folder_category, folder_category)
     subcategory = folder_subcategory
+
+    if folder_category == "Madkhali":
+        subcategory = "refutation_madkhali"
+    elif folder_category == "Shia":
+        subcategory = "refutation_shia"
 
     if category == "General":
         for pattern, series_cat, series_sub in TITLE_SERIES_PATTERNS:
@@ -289,7 +346,16 @@ def resolve_category(title: str, folder_category: str, folder_subcategory: str |
     if category == "Nikah_Divorce":
         subcategory = detect_nikah_divorce_subcategory(title) or subcategory
 
+    if category == "Refutation":
+        subcategory = detect_refutation_subcategory(title) or subcategory
+
     return category, subcategory
+
+
+def category_sort_key(cat_id: str) -> tuple[int, int | str]:
+    if cat_id in CAT_ORDER:
+        return (0, CAT_ORDER.index(cat_id))
+    return (1, label_for_category(cat_id).lower())
 
 
 def lecture_sort_key(lecture: dict) -> str:
@@ -721,7 +787,7 @@ def main():
             categories[cat]["subs"][sub] = SUB_DISPLAY.get(sub, sub)
 
     cat_meta = []
-    for cat_id in sorted(categories, key=lambda c: label_for_category(c).lower()):
+    for cat_id in sorted(categories, key=category_sort_key):
         sub_order = CATEGORY_SUB_ORDER.get(cat_id)
         if sub_order:
             rank = {sub_id: index for index, sub_id in enumerate(sub_order)}

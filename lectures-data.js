@@ -4,117 +4,6 @@ const THUMB_FALLBACK = "thumb/__ia_thumb.jpg";
 
 const LECTURE_CATEGORIES = [
   {
-    "id": "Aqeedah",
-    "label": "Aqeedah",
-    "count": 32,
-    "subcategories": []
-  },
-  {
-    "id": "Character_Dawah",
-    "label": "Character & Dawah",
-    "count": 13,
-    "subcategories": []
-  },
-  {
-    "id": "Diseases_of_the_Heart",
-    "label": "Diseases of the Heart",
-    "count": 4,
-    "subcategories": []
-  },
-  {
-    "id": "Fiqh_Worship",
-    "label": "Fiqh & Worship",
-    "count": 19,
-    "subcategories": []
-  },
-  {
-    "id": "General",
-    "label": "General Lectures",
-    "count": 149,
-    "subcategories": []
-  },
-  {
-    "id": "Jihad",
-    "label": "Jihad",
-    "count": 3,
-    "subcategories": []
-  },
-  {
-    "id": "Jokers in the pack",
-    "label": "Jokers in the Pack",
-    "count": 12,
-    "subcategories": []
-  },
-  {
-    "id": "Khilafah",
-    "label": "Khilafah",
-    "count": 9,
-    "subcategories": []
-  },
-  {
-    "id": "Nikah_Divorce",
-    "label": "Nikah & Divorce",
-    "count": 9,
-    "subcategories": [
-      {
-        "id": "rules_of_divorce",
-        "label": "Rules of Divorce",
-        "count": 2
-      },
-      {
-        "id": "rules_of_nikah",
-        "label": "Rules of Nikah",
-        "count": 4
-      },
-      {
-        "id": "types_to_avoid",
-        "label": "Types to Avoid Marrying",
-        "count": 2
-      },
-      {
-        "id": "fiqh_of_divorce",
-        "label": "Fiqh of Divorce",
-        "count": 1
-      }
-    ]
-  },
-  {
-    "id": "Personality Disorders (Series)",
-    "label": "Personality Disorders",
-    "count": 5,
-    "subcategories": []
-  },
-  {
-    "id": "Prophets_Seerah",
-    "label": "Prophets & Seerah",
-    "count": 17,
-    "subcategories": []
-  },
-  {
-    "id": "Radio_Show",
-    "label": "Radio Show",
-    "count": 7,
-    "subcategories": []
-  },
-  {
-    "id": "Ramadan",
-    "label": "Ramadan",
-    "count": 5,
-    "subcategories": []
-  },
-  {
-    "id": "Refutation",
-    "label": "Refutations",
-    "count": 9,
-    "subcategories": []
-  },
-  {
-    "id": "Science in the quran",
-    "label": "Science in the Quran",
-    "count": 16,
-    "subcategories": []
-  },
-  {
     "id": "Tafseer",
     "label": "Tafseer",
     "count": 149,
@@ -172,9 +61,93 @@ const LECTURE_CATEGORIES = [
     ]
   },
   {
+    "id": "The Sealed Nector (Series)",
+    "label": "The Sealed Nectar",
+    "count": 24,
+    "subcategories": []
+  },
+  {
+    "id": "Prophets_Seerah",
+    "label": "Prophets & Seerah",
+    "count": 19,
+    "subcategories": []
+  },
+  {
     "id": "Tawheed",
     "label": "Tawheed",
     "count": 4,
+    "subcategories": []
+  },
+  {
+    "id": "Aqeedah",
+    "label": "Aqeedah",
+    "count": 37,
+    "subcategories": []
+  },
+  {
+    "id": "Fiqh_Worship",
+    "label": "Fiqh & Worship",
+    "count": 26,
+    "subcategories": []
+  },
+  {
+    "id": "Jihad",
+    "label": "Jihad",
+    "count": 6,
+    "subcategories": []
+  },
+  {
+    "id": "Khilafah",
+    "label": "Khilafah",
+    "count": 11,
+    "subcategories": []
+  },
+  {
+    "id": "Refutation",
+    "label": "Refutations",
+    "count": 36,
+    "subcategories": [
+      {
+        "id": "refutation_shia",
+        "label": "Shia",
+        "count": 3
+      },
+      {
+        "id": "refutation_madkhali",
+        "label": "Madkhalis",
+        "count": 2
+      },
+      {
+        "id": "refutation_democracy",
+        "label": "Democracy & Secularism",
+        "count": 5
+      },
+      {
+        "id": "refutation_khawarij",
+        "label": "Khawarij",
+        "count": 1
+      },
+      {
+        "id": "refutation_jews",
+        "label": "Jews",
+        "count": 3
+      },
+      {
+        "id": "refutation_deviants",
+        "label": "Deviant Groups",
+        "count": 6
+      },
+      {
+        "id": "refutation_general",
+        "label": "General Refutations",
+        "count": 16
+      }
+    ]
+  },
+  {
+    "id": "Jokers in the pack",
+    "label": "Jokers in the Pack",
+    "count": 12,
     "subcategories": []
   },
   {
@@ -190,15 +163,60 @@ const LECTURE_CATEGORIES = [
     "subcategories": []
   },
   {
-    "id": "The Sealed Nector (Series)",
-    "label": "The Sealed Nectar",
-    "count": 24,
+    "id": "Wicked_Scholars",
+    "label": "Wicked Scholars",
+    "count": 8,
     "subcategories": []
   },
   {
-    "id": "Ummah_Affairs",
-    "label": "Ummah & Contemporary Issues",
-    "count": 27,
+    "id": "Science in the quran",
+    "label": "Science in the Quran",
+    "count": 19,
+    "subcategories": []
+  },
+  {
+    "id": "Nikah_Divorce",
+    "label": "Nikah & Divorce",
+    "count": 19,
+    "subcategories": [
+      {
+        "id": "rules_of_divorce",
+        "label": "Rules of Divorce",
+        "count": 2
+      },
+      {
+        "id": "rules_of_nikah",
+        "label": "Rules of Nikah",
+        "count": 4
+      },
+      {
+        "id": "types_to_avoid",
+        "label": "Types to Avoid Marrying",
+        "count": 2
+      },
+      {
+        "id": "fiqh_of_divorce",
+        "label": "Fiqh of Divorce",
+        "count": 1
+      }
+    ]
+  },
+  {
+    "id": "Ramadan",
+    "label": "Ramadan",
+    "count": 5,
+    "subcategories": []
+  },
+  {
+    "id": "Diseases_of_the_Heart",
+    "label": "Diseases of the Heart",
+    "count": 6,
+    "subcategories": []
+  },
+  {
+    "id": "Personality Disorders (Series)",
+    "label": "Personality Disorders",
+    "count": 5,
     "subcategories": []
   },
   {
@@ -208,9 +226,27 @@ const LECTURE_CATEGORIES = [
     "subcategories": []
   },
   {
-    "id": "Wicked_Scholars",
-    "label": "Wicked Scholars",
-    "count": 6,
+    "id": "Radio_Show",
+    "label": "Radio Show",
+    "count": 7,
+    "subcategories": []
+  },
+  {
+    "id": "Character_Dawah",
+    "label": "Character & Dawah",
+    "count": 13,
+    "subcategories": []
+  },
+  {
+    "id": "Ummah_Affairs",
+    "label": "Ummah & Contemporary Issues",
+    "count": 34,
+    "subcategories": []
+  },
+  {
+    "id": "General",
+    "label": "General Lectures",
+    "count": 79,
     "subcategories": []
   }
 ];
@@ -268,8 +304,8 @@ const LECTURES = [
   },
   {
     "title": "29 Principles of Ahlus Sunnah Wal Jama'ah (01.12.12 to 01.19.12)",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Aqeedah",
+    "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "29 Principles of Ahlus Sunnah Wal Jama'ah (01.12.12 to 01.19.12).mp3",
@@ -458,8 +494,8 @@ const LECTURES = [
   },
   {
     "title": "Application of Revelation - Quran, Sunnah, ijmaa and Qiyas",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Fiqh_Worship",
+    "categoryLabel": "Fiqh & Worship",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Application of Revelation - Quran, Sunnah, ijmaa and Qiyas.mp3",
@@ -468,8 +504,8 @@ const LECTURES = [
   },
   {
     "title": "Application of Revelation Daroora Mafhoom Qawl Sahaba Urf Amal of Madina",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Fiqh_Worship",
+    "categoryLabel": "Fiqh & Worship",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Application_of_Revelation_Daroora_Mafhoom_Qawl_Sahaba_Urf_Amal_of_Madina_mp3.mp3",
@@ -478,8 +514,8 @@ const LECTURES = [
   },
   {
     "title": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Fiqh_Worship",
+    "categoryLabel": "Fiqh & Worship",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan.mp3",
@@ -648,8 +684,8 @@ const LECTURES = [
   },
   {
     "title": "Daughters Are Diamonds (06.30.11)",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Nikah_Divorce",
+    "categoryLabel": "Nikah & Divorce",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Daughters Are Diamonds (06.30.11).mp3",
@@ -658,8 +694,8 @@ const LECTURES = [
   },
   {
     "title": "DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Jihad",
+    "categoryLabel": "Jihad",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.mp3",
@@ -668,8 +704,8 @@ const LECTURES = [
   },
   {
     "title": "DEFINITION OF A SCHOLAR - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Wicked_Scholars",
+    "categoryLabel": "Wicked Scholars",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "DEFINITION OF A SCHOLAR - Abdallah Al Faisal.mp3",
@@ -700,8 +736,8 @@ const LECTURES = [
     "title": "DEMOCRATES - Those Who Participate In Democratic Election",
     "category": "Refutation",
     "categoryLabel": "Refutations",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "refutation_democracy",
+    "subcategoryLabel": "Democracy & Secularism",
     "archive": "DEMOCRATES - Those Who Participate In Democratic Election.mp3",
     "thumb": "thumb/DEMOCRATES - Those Who Participate In Democratic Election.png",
     "id": 48
@@ -808,20 +844,20 @@ const LECTURES = [
   },
   {
     "title": "DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/333b0e30619e23.png",
     "id": 59
   },
   {
     "title": "DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.mp3",
     "thumb": "thumb/DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.jpg",
     "id": 60
@@ -858,20 +894,20 @@ const LECTURES = [
   },
   {
     "title": "Entering the Lizard Hole",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_deviants",
+    "subcategoryLabel": "Deviant Groups",
     "archive": "Entering the Lizard Hole.mp3",
     "thumb": null,
     "id": 64
   },
   {
     "title": "ENTERING THE LIZARD HOLE - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_deviants",
+    "subcategoryLabel": "Deviant Groups",
     "archive": "ENTERING THE LIZARD HOLE - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/d2a9f27e607741.png",
     "id": 65
@@ -968,8 +1004,8 @@ const LECTURES = [
   },
   {
     "title": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Aqeedah",
+    "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.mp3",
@@ -988,10 +1024,10 @@ const LECTURES = [
   },
   {
     "title": "GAY LESBIAN LGBT - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_deviants",
+    "subcategoryLabel": "Deviant Groups",
     "archive": "GAY LESBIAN LGBT - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/735a60005a6915.png",
     "id": 77
@@ -1078,8 +1114,8 @@ const LECTURES = [
   },
   {
     "title": "Human Soul (10.06.11)",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Ummah_Affairs",
+    "categoryLabel": "Ummah & Contemporary Issues",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Human Soul (10.06.11).mp3",
@@ -1088,10 +1124,10 @@ const LECTURES = [
   },
   {
     "title": "IFK  SLANDER OF AYSHA - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "IFK  SLANDER OF AYSHA - Shaykh Faisal.mp3",
     "thumb": "thumb/IFK  SLANDER OF AYSHA - Shaykh Faisal.jpg",
     "id": 87
@@ -1118,8 +1154,8 @@ const LECTURES = [
   },
   {
     "title": "IMPORTANCE OF HIJRAH - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Jihad",
+    "categoryLabel": "Jihad",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "IMPORTANCE OF HIJRAH - Abdallah Al Faisal.mp3",
@@ -1128,10 +1164,10 @@ const LECTURES = [
   },
   {
     "title": "INSULTING THE PROPHET ﷺ  - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "INSULTING THE PROPHET ﷺ  - Abdallah Al Faisal.mp3",
     "thumb": "thumb/INSULTING THE PROPHET ABDALLAH AL FAISAL.jpg",
     "id": 91
@@ -1178,8 +1214,8 @@ const LECTURES = [
   },
   {
     "title": "ISLAM AND THE WEST - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Ummah_Affairs",
+    "categoryLabel": "Ummah & Contemporary Issues",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "ISLAM AND THE WEST - Abdallah Al Faisal.mp3",
@@ -1208,8 +1244,8 @@ const LECTURES = [
   },
   {
     "title": "ISLAM UNDER SIEGE - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Ummah_Affairs",
+    "categoryLabel": "Ummah & Contemporary Issues",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "ISLAM UNDER SIEGE - Shaykh Faisal.mp3",
@@ -1378,8 +1414,8 @@ const LECTURES = [
   },
   {
     "title": "JUDGEMENT DAY - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Ummah_Affairs",
+    "categoryLabel": "Ummah & Contemporary Issues",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "JUDGEMENT DAY - Abdallah Al Faisal.mp3",
@@ -1398,10 +1434,10 @@ const LECTURES = [
   },
   {
     "title": "KASHF USH SHUBUHAAT - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_deviants",
+    "subcategoryLabel": "Deviant Groups",
     "archive": "KASHF USH SHUBUHAAT - Shaykh Faisal.mp3",
     "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg",
     "id": 118
@@ -1410,8 +1446,8 @@ const LECTURES = [
     "title": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal",
     "category": "Refutation",
     "categoryLabel": "Refutations",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "refutation_khawarij",
+    "subcategoryLabel": "Khawarij",
     "archive": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/0501e347642f1c.png",
     "id": 119
@@ -1498,8 +1534,8 @@ const LECTURES = [
   },
   {
     "title": "LET THE SCHOLARS BEWARE - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Wicked_Scholars",
+    "categoryLabel": "Wicked Scholars",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "LET THE SCHOLARS BEWARE - Abdallah Al Faisal.mp3",
@@ -1570,8 +1606,8 @@ const LECTURES = [
     "title": "MADKHALIS - Shaykh Faisal",
     "category": "Refutation",
     "categoryLabel": "Refutations",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "refutation_madkhali",
+    "subcategoryLabel": "Madkhalis",
     "archive": "MADKHALIS - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/c48e02c5223b8e.png",
     "id": 135
@@ -1588,8 +1624,8 @@ const LECTURES = [
   },
   {
     "title": "MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Khilafah",
+    "categoryLabel": "Khilafah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.mp3",
@@ -1618,8 +1654,8 @@ const LECTURES = [
   },
   {
     "title": "MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Nikah_Divorce",
+    "categoryLabel": "Nikah & Divorce",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal.mp3",
@@ -1628,10 +1664,10 @@ const LECTURES = [
   },
   {
     "title": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal",
-    "category": "Aqeedah",
-    "categoryLabel": "Aqeedah",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_democracy",
+    "subcategoryLabel": "Democracy & Secularism",
     "archive": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.mp3",
     "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.png",
     "id": 141
@@ -1658,8 +1694,8 @@ const LECTURES = [
   },
   {
     "title": "Message from the Calipha (HA) to the Ummah",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Khilafah",
+    "categoryLabel": "Khilafah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Message from the Calipha (HA) to the Ummah.mp3",
@@ -1698,10 +1734,10 @@ const LECTURES = [
   },
   {
     "title": "MURJIA - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_deviants",
+    "subcategoryLabel": "Deviant Groups",
     "archive": "MURJIA - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/113610821772f1.jpg",
     "id": 148
@@ -1748,8 +1784,8 @@ const LECTURES = [
   },
   {
     "title": "Muslim Home (12.21.11 to 12.22.11)",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Nikah_Divorce",
+    "categoryLabel": "Nikah & Divorce",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Muslim Home (12.21.11 to 12.22.11).mp3",
@@ -1768,8 +1804,8 @@ const LECTURES = [
   },
   {
     "title": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Ummah_Affairs",
+    "categoryLabel": "Ummah & Contemporary Issues",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.mp3",
@@ -1778,18 +1814,18 @@ const LECTURES = [
   },
   {
     "title": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal",
-    "category": "Aqeedah",
-    "categoryLabel": "Aqeedah",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_democracy",
+    "subcategoryLabel": "Democracy & Secularism",
     "archive": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.mp3",
     "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg",
     "id": 156
   },
   {
     "title": "Natural Disasters - Why They Occur",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Ummah_Affairs",
+    "categoryLabel": "Ummah & Contemporary Issues",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Natural Disasters - Why They Occur.mp3",
@@ -1798,8 +1834,8 @@ const LECTURES = [
   },
   {
     "title": "NATURAL DISASTERS, WHY DO THEY OCCUR - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Ummah_Affairs",
+    "categoryLabel": "Ummah & Contemporary Issues",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "NATURAL DISASTERS, WHY DO THEY OCCUR - Abdallah Al Faisal.mp3",
@@ -1808,8 +1844,8 @@ const LECTURES = [
   },
   {
     "title": "Nawaaqid al islam by Muhd ibn Abdul Wahhab",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Aqeedah",
+    "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Nawaaqid al islam by Muhd ibn Abdul Wahhab.mp3",
@@ -1818,8 +1854,8 @@ const LECTURES = [
   },
   {
     "title": "NAWAQID AL ISLAM - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Aqeedah",
+    "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "NAWAQID AL ISLAM - Abdallah Al Faisal.mp3",
@@ -1838,10 +1874,10 @@ const LECTURES = [
   },
   {
     "title": "NO PEACE WITH THE JEWS - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_jews",
+    "subcategoryLabel": "Jews",
     "archive": "NO PEACE WITH THE JEWS - Abdallah Al Faisal.mp3",
     "thumb": null,
     "id": 162
@@ -1878,8 +1914,8 @@ const LECTURES = [
   },
   {
     "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Nikah_Divorce",
+    "categoryLabel": "Nikah & Divorce",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.mp3",
@@ -1888,8 +1924,8 @@ const LECTURES = [
   },
   {
     "title": "PEOPLE OF THE CAVE - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Prophets_Seerah",
+    "categoryLabel": "Prophets & Seerah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "PEOPLE OF THE CAVE - Abdallah Al Faisal.mp3",
@@ -1958,8 +1994,8 @@ const LECTURES = [
   },
   {
     "title": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Aqeedah",
+    "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.mp3",
@@ -1968,8 +2004,8 @@ const LECTURES = [
   },
   {
     "title": "Prophesies of the Holy Quran (11.22.11 to 11.23.11)",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Science in the quran",
+    "categoryLabel": "Science in the Quran",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Prophesies of the Holy Quran (11.22.11 to 11.23.11).mp3",
@@ -1978,8 +2014,8 @@ const LECTURES = [
   },
   {
     "title": "PUNISHMENT OF THE GRAVE - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Fiqh_Worship",
+    "categoryLabel": "Fiqh & Worship",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "PUNISHMENT OF THE GRAVE - Abdallah Al Faisal.mp3",
@@ -1988,20 +2024,20 @@ const LECTURES = [
   },
   {
     "title": "Radical Islamic Terrorism",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "Radical Islamic Terrorism.mp3",
     "thumb": null,
     "id": 177
   },
   {
     "title": "Radical islamic terrorism2",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "Radical islamic terrorism2.mp3",
     "thumb": null,
     "id": 178
@@ -2148,8 +2184,8 @@ const LECTURES = [
   },
   {
     "title": "Reality of Sincerity (12.07.11)",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Diseases_of_the_Heart",
+    "categoryLabel": "Diseases of the Heart",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Reality of Sincerity (12.07.11).mp3",
@@ -2158,10 +2194,10 @@ const LECTURES = [
   },
   {
     "title": "REALITY OF THE JEWS - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_jews",
+    "subcategoryLabel": "Jews",
     "archive": "REALITY OF THE JEWS - Abdallah Al Faisal.mp3",
     "thumb": "thumb/REALITY OF THE JEWS - Abdallah Al Faisal.jpg",
     "id": 194
@@ -2170,8 +2206,8 @@ const LECTURES = [
     "title": "Refuting Geert Wilders (07.07.11)",
     "category": "Refutation",
     "categoryLabel": "Refutations",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "Refutation/Refuting Geert Wilders (07.07.11).mp3",
     "thumb": null,
     "id": 195
@@ -2180,8 +2216,8 @@ const LECTURES = [
     "title": "Refuting The Lie Concerning Kufr Doona Kufr",
     "category": "Refutation",
     "categoryLabel": "Refutations",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "Refutation/Refuting The Lie Concerning Kufr Doona Kufr.mp3",
     "thumb": null,
     "id": 196
@@ -2190,28 +2226,28 @@ const LECTURES = [
     "title": "Refuting The Lie Concerning The Excuse of Ignorance",
     "category": "Refutation",
     "categoryLabel": "Refutations",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "Refutation/Refuting The Lie Concerning The Excuse of Ignorance.mp3",
     "thumb": null,
     "id": 197
   },
   {
     "title": "REJECTING THE TAGHUT - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "REJECTING THE TAGHUT - Abdallah Al Faisal.mp3",
     "thumb": null,
     "id": 198
   },
   {
     "title": "Removing the Doubts",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_deviants",
+    "subcategoryLabel": "Deviant Groups",
     "archive": "Removing the Doubts.mp3",
     "thumb": null,
     "id": 199
@@ -2238,8 +2274,8 @@ const LECTURES = [
   },
   {
     "title": "Road to Sincerity (07.17.11)",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Diseases_of_the_Heart",
+    "categoryLabel": "Diseases of the Heart",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Road to Sincerity (07.17.11).mp3",
@@ -2258,8 +2294,8 @@ const LECTURES = [
   },
   {
     "title": "Rules and Merits of Zakah (09.01.11)",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Fiqh_Worship",
+    "categoryLabel": "Fiqh & Worship",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Rules and Merits of Zakah (09.01.11).mp3",
@@ -2388,10 +2424,10 @@ const LECTURES = [
   },
   {
     "title": "SAUDI SALAFI - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_madkhali",
+    "subcategoryLabel": "Madkhalis",
     "archive": "SAUDI SALAFI - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/2cdd3bda0c2ff4.jpg",
     "id": 217
@@ -2558,18 +2594,18 @@ const LECTURES = [
   },
   {
     "title": "SECULARISM - Shaykh Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_democracy",
+    "subcategoryLabel": "Democracy & Secularism",
     "archive": "SECULARISM - Shaykh Abdallah Al Faisal.mp3",
     "thumb": "thumb/SECULARISM - Shaykh Abdallah Al Faisal.png",
     "id": 234
   },
   {
     "title": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Aqeedah",
+    "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.mp3",
@@ -2588,10 +2624,10 @@ const LECTURES = [
   },
   {
     "title": "SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_democracy",
+    "subcategoryLabel": "Democracy & Secularism",
     "archive": "SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.mp3",
     "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png",
     "id": 237
@@ -2738,8 +2774,8 @@ const LECTURES = [
   },
   {
     "title": "Sheikh Abdullah Faisal - The Muslim Home",
-    "category": "Ummah_Affairs",
-    "categoryLabel": "Ummah & Contemporary Issues",
+    "category": "Nikah_Divorce",
+    "categoryLabel": "Nikah & Divorce",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - The Muslim Home.mp3",
@@ -2780,8 +2816,8 @@ const LECTURES = [
     "title": "SHIA GREATEST ENEMY WITHIN - Shaykh Faisal",
     "category": "Refutation",
     "categoryLabel": "Refutations",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "refutation_shia",
+    "subcategoryLabel": "Shia",
     "archive": "Shia/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.mp3",
     "thumb": "thumb/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.jpg",
     "id": 256
@@ -2790,8 +2826,8 @@ const LECTURES = [
     "title": "SHIA KNOW YOUR ENEMY - Shaykh Faisal",
     "category": "Refutation",
     "categoryLabel": "Refutations",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "refutation_shia",
+    "subcategoryLabel": "Shia",
     "archive": "Shia/SHIA KNOW YOUR ENEMY - Shaykh Faisal.mp3",
     "thumb": "thumb/SHIA KNOW YOUR ENEMY - Shaykh Faisal.jpg",
     "id": 257
@@ -2808,8 +2844,8 @@ const LECTURES = [
   },
   {
     "title": "SIGNS BEFORE JUDGEMENT DAY - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Ummah_Affairs",
+    "categoryLabel": "Ummah & Contemporary Issues",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "SIGNS BEFORE JUDGEMENT DAY - Shaykh Faisal.mp3",
@@ -2828,20 +2864,20 @@ const LECTURES = [
   },
   {
     "title": "Slander of Aisha (RA) (07.12.11)",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "Slander of Aisha (RA) (07.12.11).mp3",
     "thumb": null,
     "id": 261
   },
   {
     "title": "Slander of Aisha (RA) [REVISITED] (08.14.11)",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "Slander of Aisha (RA) [REVISITED] (08.14.11).mp3",
     "thumb": null,
     "id": 262
@@ -4348,8 +4384,8 @@ const LECTURES = [
   },
   {
     "title": "TAINTED LOVE - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Nikah_Divorce",
+    "categoryLabel": "Nikah & Divorce",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "TAINTED LOVE - Abdallah Al Faisal.mp3",
@@ -4358,8 +4394,8 @@ const LECTURES = [
   },
   {
     "title": "tainted love 2013.04.20 (evening)",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Nikah_Divorce",
+    "categoryLabel": "Nikah & Divorce",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "tainted love 2013.04.20 (evening).mp3",
@@ -4628,8 +4664,8 @@ const LECTURES = [
   },
   {
     "title": "The Animals Of The Holy Quran - Part 1",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Science in the quran",
+    "categoryLabel": "Science in the Quran",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Animals Of The Holy Quran - Part 1.mp3",
@@ -4638,8 +4674,8 @@ const LECTURES = [
   },
   {
     "title": "The Animals Of The Holy Quran - Part 2",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Science in the quran",
+    "categoryLabel": "Science in the Quran",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Animals Of The Holy Quran - Part 2.mp3",
@@ -4688,10 +4724,10 @@ const LECTURES = [
   },
   {
     "title": "THE DOMAIN OF APOSTASY",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "THE DOMAIN OF APOSTASY.mp3",
     "thumb": null,
     "id": 447
@@ -4838,8 +4874,8 @@ const LECTURES = [
   },
   {
     "title": "The importance of Hijrah",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Jihad",
+    "categoryLabel": "Jihad",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The importance of Hijrah.mp3",
@@ -4868,8 +4904,8 @@ const LECTURES = [
   },
   {
     "title": "The Muslim Home (dars)",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Nikah_Divorce",
+    "categoryLabel": "Nikah & Divorce",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Muslim Home (dars).mp3",
@@ -4908,10 +4944,10 @@ const LECTURES = [
   },
   {
     "title": "THE REALITY OF THE JEWS",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_jews",
+    "subcategoryLabel": "Jews",
     "archive": "THE REALITY OF THE JEWS.mp3",
     "thumb": null,
     "id": 469
@@ -5188,8 +5224,8 @@ const LECTURES = [
   },
   {
     "title": "the Sleepers in the Cave",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Prophets_Seerah",
+    "categoryLabel": "Prophets & Seerah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "the Sleepers in the Cave.mp3",
@@ -5208,8 +5244,8 @@ const LECTURES = [
   },
   {
     "title": "The virtues of Dhikr",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Fiqh_Worship",
+    "categoryLabel": "Fiqh & Worship",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The virtues of Dhikr.mp3",
@@ -5248,10 +5284,10 @@ const LECTURES = [
   },
   {
     "title": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.mp3",
     "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg",
     "id": 503
@@ -5298,10 +5334,10 @@ const LECTURES = [
   },
   {
     "title": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.mp3",
     "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg",
     "id": 508
@@ -5338,8 +5374,8 @@ const LECTURES = [
   },
   {
     "title": "VIRTUES OF MAKKAH - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Fiqh_Worship",
+    "categoryLabel": "Fiqh & Worship",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "VIRTUES OF MAKKAH - Shaykh Faisal.mp3",
@@ -5428,8 +5464,8 @@ const LECTURES = [
   },
   {
     "title": "Where Is Allah SWT (07.08.11)",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Aqeedah",
+    "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Where Is Allah SWT (07.08.11).mp3",
@@ -5438,10 +5474,10 @@ const LECTURES = [
   },
   {
     "title": "White Supremacy - A Cancer In The Body of Humanity",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "White Supremacy - A Cancer In The Body of Humanity.mp3",
     "thumb": null,
     "id": 522
@@ -5520,8 +5556,8 @@ const LECTURES = [
     "title": "Why we hate the shia",
     "category": "Refutation",
     "categoryLabel": "Refutations",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "subcategory": "refutation_shia",
+    "subcategoryLabel": "Shia",
     "archive": "Shia/Why we hate the shia.mp3",
     "thumb": null,
     "id": 530
@@ -5558,8 +5594,8 @@ const LECTURES = [
   },
   {
     "title": "WIVES & CHILDREN - Shaykh Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Nikah_Divorce",
+    "categoryLabel": "Nikah & Divorce",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3",
@@ -5568,8 +5604,8 @@ const LECTURES = [
   },
   {
     "title": "WOMEN IN ISLAM - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Nikah_Divorce",
+    "categoryLabel": "Nikah & Divorce",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "WOMEN IN ISLAM - Abdallah Al Faisal.mp3",
