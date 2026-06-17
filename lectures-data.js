@@ -30,7 +30,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "General",
     "label": "General Lectures",
-    "count": 151,
+    "count": 150,
     "subcategories": []
   },
   {
@@ -48,7 +48,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "Khilafah",
     "label": "Khilafah",
-    "count": 8,
+    "count": 9,
     "subcategories": []
   },
   {
@@ -598,8 +598,8 @@ const LECTURES = [
   },
   {
     "title": "Can the Khilaafa survive",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Khilafah",
+    "categoryLabel": "Khilafah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Can the Khilaafa survive.mp3",
