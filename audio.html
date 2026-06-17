@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="559+ audio lectures by Shaykh Abdullah Faisal — organized by series and topic.">
+  <title>Audio Lectures • Shaykh Abdullah Faisal</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: { DEFAULT: '#d4a853', light: '#e8c97a', dark: '#b8923f' },
+            slate: { 850: '#1a2332', 925: '#0c1220', 950: '#080d18' }
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'Georgia', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-display { font-family: 'Playfair Display', Georgia, serif; }
+    .top-bar { background: linear-gradient(135deg, #0a1628 0%, #1a1f2e 40%, #0f1a14 100%); }
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #e8c97a 0%, #d4a853 50%, #c49a3c 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .islamic-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23d4a853' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+    .cat-btn.active { background: rgba(212,168,83,0.15); color: #d4a853; border-color: rgba(212,168,83,0.4); }
+    .sub-btn.active { background: #d4a853; color: #080d18; }
+    .lecture-card {
+      transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+    }
+    .lecture-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+      border-color: rgba(212,168,83,.25);
+    }
+    .thumb-placeholder {
+      background: linear-gradient(135deg, #1a2332 0%, #0f172a 50%, #1c1910 100%);
+    }
+    /* Show full thumbnail without cropping */
+    .thumb-frame {
+      height: 14rem;
+      background: linear-gradient(180deg, #0f172a 0%, #1a2332 100%);
+    }
+    @media (min-width: 640px) { .thumb-frame { height: 15rem; } }
+    .thumb-frame img {
+      object-fit: contain;
+      max-width: 100%;
+      max-height: 100%;
+      width: auto;
+      height: auto;
+    }
+    .scrollbar-thin::-webkit-scrollbar { height: 6px; }
+    .scrollbar-thin::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
+    audio { width: 100%; border-radius: .5rem; }
+    .hide-scrollbar::-webkit-scrollbar { display: none; }
+    .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-200 antialiased islamic-pattern min-h-screen flex flex-col">
+
+  <!-- Top bar -->
+  <div class="top-bar border-b border-amber-900/20 py-2.5 px-4 sm:px-8">
+    <div class="max-w-[90rem] mx-auto flex flex-row items-center justify-between gap-4 text-xs sm:text-sm">
+      <span class="text-amber-300/90 font-medium tracking-wide">الموقع الأرشيفي • Archive Site</span>
+      <span class="text-amber-400/80 font-medium tracking-wide text-right">اللهم حرر شيخنا الحبيب • May Allah free our beloved Shaykh</span>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="bg-slate-925/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+    <div class="max-w-[90rem] mx-auto px-4 sm:px-8 py-4 sm:py-5 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <a href="index.html" class="font-display text-2xl sm:text-3xl font-bold text-gold-gradient tracking-wide">Shaykh Abdullah Faisal</a>
+      <nav class="flex flex-wrap items-center gap-1 sm:gap-2 text-sm font-medium">
+        <a href="index.html" data-nav="home" class="px-4 py-2 rounded-full transition">Home</a>
+        <a href="clips.html" data-nav="clips" class="px-4 py-2 rounded-full transition">Clips/Shots</a>
+        <a href="videos.html" data-nav="videos" class="px-4 py-2 rounded-full transition">Video Lectures</a>
+        <a href="audio.html" data-nav="audio" class="px-4 py-2 rounded-full transition">Audio Lectures</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1 max-w-[90rem] w-full mx-auto px-4 sm:px-8 py-8 sm:py-10">
+
+    <!-- Page title + search -->
+    <div class="mb-8">
+      <h1 class="font-display text-3xl sm:text-4xl text-gold-gradient mb-2">Audio Lectures</h1>
+      <p class="text-slate-400 text-sm sm:text-base mb-6">
+        <span id="totalCount">559</span> lectures organized by series — streamed from
+        <a href="https://archive.org/details/FaisalAudios" class="text-gold hover:underline" target="_blank" rel="noopener">Internet Archive</a>
+      </p>
+
+      <div class="relative max-w-xl">
+        <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"></i>
+        <input id="searchInput" type="search" placeholder="Search lectures by title…"
+          class="w-full pl-11 pr-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold/50 focus:ring-1 focus:ring-gold/30 transition">
+      </div>
+    </div>
+
+    <div class="flex flex-col lg:flex-row gap-8">
+
+      <!-- Sidebar: categories -->
+      <aside class="lg:w-64 flex-shrink-0">
+        <div class="lg:sticky lg:top-28 bg-slate-900/60 border border-slate-800 rounded-2xl p-4">
+          <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-3 px-2">Categories</h2>
+          <nav id="categoryNav" class="space-y-1 max-h-[60vh] overflow-y-auto scrollbar-thin pr-1"></nav>
+        </div>
+      </aside>
+
+      <!-- Main content -->
+      <div class="flex-1 min-w-0">
+
+        <!-- Subcategory chips -->
+        <div id="subcategoryBar" class="hidden mb-5">
+          <p class="text-xs uppercase tracking-widest text-slate-500 mb-2">Sub-series</p>
+          <div id="subcategoryChips" class="flex flex-wrap gap-2"></div>
+        </div>
+
+        <!-- Results bar -->
+        <div class="flex flex-wrap items-center justify-between gap-3 mb-5 pb-4 border-b border-slate-800">
+          <p class="text-sm text-slate-400">
+            Showing <span id="showingCount" class="text-gold font-medium">0</span> lectures
+            <span id="activeLabel" class="text-slate-500"></span>
+          </p>
+          <div class="flex items-center gap-2 text-sm">
+            <label for="perPage" class="text-slate-500">Per page</label>
+            <select id="perPage" class="bg-slate-900 border border-slate-700 rounded-lg px-3 py-1.5 text-slate-200 focus:outline-none focus:border-gold/50">
+              <option value="12">12</option>
+              <option value="24" selected>24</option>
+              <option value="48">48</option>
+              <option value="96">96</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Lecture grid -->
+        <div id="lectureGrid" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5"></div>
+
+        <!-- Empty state -->
+        <div id="emptyState" class="hidden text-center py-20">
+          <i class="fas fa-headphones text-4xl text-slate-700 mb-4"></i>
+          <p class="text-slate-400 text-lg">No lectures match your search.</p>
+          <button id="clearFilters" class="mt-4 text-gold hover:underline text-sm">Clear filters</button>
+        </div>
+
+        <!-- Pagination -->
+        <div id="pagination" class="flex items-center justify-center gap-2 mt-10"></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-925/50 py-10 px-4 text-center">
+    <p class="text-slate-400 text-sm mb-3">May Allah reward Shaykh Abdullah Faisal and hasten his release. Ameen.</p>
+    <p id="siteDisclaimer" class="text-slate-500 text-sm max-w-2xl mx-auto leading-relaxed"></p>
+  </footer>
+
+  <script src="site.js"></script>
+  <script src="lectures-data.js?v=20260617c"></script>
+  <script>
+    /* ── State ── */
+    const state = {
+      category: 'all',
+      subcategory: 'all',
+      search: '',
+      page: 1,
+      perPage: 24,
+    };
+
+    function getFiltered() {
+      let list = LECTURES;
+      if (state.category !== 'all') {
+        list = list.filter(l => l.category === state.category);
+      }
+      if (state.subcategory !== 'all') {
+        list = list.filter(l => l.subcategory === state.subcategory);
+      }
+      if (state.search.trim()) {
+        const q = state.search.trim().toLowerCase();
+        list = list.filter(l =>
+          l.title.toLowerCase().includes(q) ||
+          l.categoryLabel.toLowerCase().includes(q) ||
+          (l.subcategoryLabel && l.subcategoryLabel.toLowerCase().includes(q))
+        );
+      }
+      return list;
+    }
+
+    /* ── Render category sidebar ── */
+    function renderCategories() {
+      const nav = document.getElementById('categoryNav');
+      const total = LECTURES.length;
+
+      let html = `
+        <button data-cat="all" class="cat-btn w-full text-left px-3 py-2.5 rounded-lg text-sm border border-transparent hover:bg-slate-800 transition flex justify-between items-center active">
+          <span><i class="fas fa-layer-group w-5 text-gold/70"></i> All Lectures</span>
+          <span class="text-xs text-slate-500">${total}</span>
+        </button>`;
+
+      LECTURE_CATEGORIES.forEach(cat => {
+        html += `
+          <button data-cat="${escapeHtml(cat.id)}" class="cat-btn w-full text-left px-3 py-2.5 rounded-lg text-sm border border-transparent hover:bg-slate-800 transition flex justify-between items-center">
+            <span class="truncate pr-2">${escapeHtml(cat.label)}</span>
+            <span class="text-xs text-slate-500 flex-shrink-0">${cat.count}</span>
+          </button>`;
+      });
+
+      nav.innerHTML = html;
+      nav.querySelectorAll('.cat-btn').forEach(btn => {
+        btn.addEventListener('click', () => selectCategory(btn.dataset.cat));
+      });
+    }
+
+    function selectCategory(catId) {
+      state.category = catId;
+      state.subcategory = 'all';
+      state.page = 1;
+      updateCategoryUI();
+      renderSubcategories();
+      renderLectures();
+    }
+
+    function updateCategoryUI() {
+      document.querySelectorAll('.cat-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.cat === state.category);
+      });
+    }
+
+    /* ── Subcategory chips ── */
+    function renderSubcategories() {
+      const bar = document.getElementById('subcategoryBar');
+      const chips = document.getElementById('subcategoryChips');
+
+      if (state.category === 'all') {
+        bar.classList.add('hidden');
+        return;
+      }
+
+      const cat = LECTURE_CATEGORIES.find(c => c.id === state.category);
+      if (!cat || !cat.subcategories.length) {
+        bar.classList.add('hidden');
+        return;
+      }
+
+      bar.classList.remove('hidden');
+      let html = `<button data-sub="all" class="sub-btn active px-4 py-1.5 rounded-full text-xs font-medium border border-slate-700 hover:border-gold/40 transition">All ${escapeHtml(cat.label)}</button>`;
+      cat.subcategories.forEach(sub => {
+        html += `<button data-sub="${escapeHtml(sub.id)}" class="sub-btn px-4 py-1.5 rounded-full text-xs font-medium border border-slate-700 text-slate-300 hover:border-gold/40 transition">${escapeHtml(sub.label)} <span class="opacity-60">(${sub.count})</span></button>`;
+      });
+      chips.innerHTML = html;
+
+      chips.querySelectorAll('.sub-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          state.subcategory = btn.dataset.sub;
+          state.page = 1;
+          chips.querySelectorAll('.sub-btn').forEach(b => b.classList.toggle('active', b === btn));
+          renderLectures();
+        });
+      });
+    }
+
+    function placeholderHtml(categoryLabel) {
+      return `<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4 thumb-placeholder">
+        <i class="fas fa-book-quran text-3xl text-gold/30 mb-2"></i>
+        <span class="text-[10px] uppercase tracking-widest text-slate-500">${escapeHtml(categoryLabel)}</span>
+      </div>`;
+    }
+
+    /* ── Lecture card ── */
+    function buildCard(lecture) {
+      const audioUrl = archiveStreamUrl(ARCHIVE_BASE, lecture.archive);
+      const hasThumb = isValidThumb(lecture.thumb);
+
+      const subBadge = lecture.subcategoryLabel
+        ? `<span class="text-[10px] uppercase tracking-wider text-slate-500">${escapeHtml(lecture.subcategoryLabel)}</span>`
+        : '';
+
+      const thumbSection = hasThumb
+        ? `<div class="thumb-frame relative flex items-center justify-center p-3 overflow-hidden">
+            ${placeholderHtml(lecture.categoryLabel)}
+            <img src="${lecture.thumb}" alt="" class="relative z-[1]" loading="lazy"
+              onerror="this.style.display='none'">
+            <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950/80 text-gold text-[10px] font-semibold uppercase tracking-wider backdrop-blur-sm z-10">
+              ${escapeHtml(lecture.categoryLabel)}
+            </span>
+          </div>`
+        : `<div class="thumb-frame relative overflow-hidden">
+            ${placeholderHtml(lecture.categoryLabel)}
+            <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950/80 text-gold text-[10px] font-semibold uppercase tracking-wider backdrop-blur-sm z-10">
+              ${escapeHtml(lecture.categoryLabel)}
+            </span>
+          </div>`;
+
+      return `
+        <article id="lecture-${lecture.id}" class="lecture-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col">
+          ${thumbSection}
+          <div class="p-4 flex flex-col flex-1">
+            ${subBadge}
+            <h3 class="font-medium text-sm text-slate-100 leading-snug mt-1 mb-3 line-clamp-3" title="${escapeHtml(lecture.title)}">${escapeHtml(lecture.title)}</h3>
+            <audio controls preload="none" class="mt-auto h-9">
+              <source src="${audioUrl}" type="audio/mpeg">
+            </audio>
+          </div>
+        </article>`;
+    }
+
+    /* ── Main render ── */
+    function renderLectures() {
+      const filtered = getFiltered();
+      const totalPages = Math.max(1, Math.ceil(filtered.length / state.perPage));
+      if (state.page > totalPages) state.page = totalPages;
+
+      const start = (state.page - 1) * state.perPage;
+      const pageItems = filtered.slice(start, start + state.perPage);
+
+      document.getElementById('showingCount').textContent = filtered.length;
+      document.getElementById('totalCount').textContent = LECTURES.length;
+
+      let label = '';
+      if (state.category !== 'all') {
+        const cat = LECTURE_CATEGORIES.find(c => c.id === state.category);
+        label = ' in ' + (cat ? cat.label : state.category);
+        if (state.subcategory !== 'all' && cat) {
+          const sub = cat.subcategories.find(s => s.id === state.subcategory);
+          if (sub) label += ' › ' + sub.label;
+        }
+      }
+      if (state.search.trim()) label += ` matching "${state.search.trim()}"`;
+      document.getElementById('activeLabel').textContent = label;
+
+      const grid = document.getElementById('lectureGrid');
+      const empty = document.getElementById('emptyState');
+
+      if (!pageItems.length) {
+        grid.innerHTML = '';
+        empty.classList.remove('hidden');
+      } else {
+        empty.classList.add('hidden');
+        grid.innerHTML = pageItems.map(buildCard).join('');
+      }
+
+      renderPagination(totalPages);
+    }
+
+    function renderPagination(totalPages) {
+      const el = document.getElementById('pagination');
+      if (totalPages <= 1) { el.innerHTML = ''; return; }
+
+      let html = '';
+      const addBtn = (p, label, disabled) => {
+        html += `<button data-page="${p}" ${disabled ? 'disabled' : ''}
+          class="px-3 py-1.5 rounded-lg text-sm border border-slate-700 ${disabled ? 'opacity-40 cursor-not-allowed' : 'hover:border-gold/40 hover:text-gold'} transition">${label}</button>`;
+      };
+
+      addBtn(state.page - 1, '<i class="fas fa-chevron-left"></i>', state.page === 1);
+
+      const range = [];
+      for (let i = 1; i <= totalPages; i++) {
+        if (i === 1 || i === totalPages || (i >= state.page - 2 && i <= state.page + 2)) range.push(i);
+      }
+      let prev = 0;
+      range.forEach(i => {
+        if (i - prev > 1) html += `<span class="px-1 text-slate-600">…</span>`;
+        const active = i === state.page;
+        html += `<button data-page="${i}" class="px-3 py-1.5 rounded-lg text-sm border ${active ? 'bg-gold text-slate-950 border-gold font-semibold' : 'border-slate-700 hover:border-gold/40'} transition">${i}</button>`;
+        prev = i;
+      });
+
+      addBtn(state.page + 1, '<i class="fas fa-chevron-right"></i>', state.page === totalPages);
+
+      el.innerHTML = html;
+      el.querySelectorAll('button[data-page]').forEach(btn => {
+        if (!btn.disabled) {
+          btn.addEventListener('click', () => {
+            state.page = parseInt(btn.dataset.page);
+            renderLectures();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          });
+        }
+      });
+    }
+
+    /* ── Events ── */
+    document.getElementById('searchInput').addEventListener('input', e => {
+      state.search = e.target.value;
+      state.page = 1;
+      renderLectures();
+    });
+
+    document.getElementById('perPage').addEventListener('change', e => {
+      state.perPage = parseInt(e.target.value);
+      state.page = 1;
+      renderLectures();
+    });
+
+    document.getElementById('clearFilters').addEventListener('click', () => {
+      state.category = 'all';
+      state.subcategory = 'all';
+      state.search = '';
+      state.page = 1;
+      document.getElementById('searchInput').value = '';
+      updateCategoryUI();
+      renderSubcategories();
+      renderLectures();
+    });
+
+    function applyDeepLink() {
+      const param = new URLSearchParams(location.search).get('lecture');
+      if (param === null) return;
+      const lec = LECTURES.find(l => l.id === parseInt(param, 10));
+      if (!lec) return;
+      state.category = lec.category;
+      state.subcategory = lec.subcategory || 'all';
+      updateCategoryUI();
+      renderSubcategories();
+      const list = getFiltered();
+      const idx = list.findIndex(l => l.id === lec.id);
+      if (idx >= 0) state.page = Math.floor(idx / state.perPage) + 1;
+      renderLectures();
+      requestAnimationFrame(() => {
+        const el = document.getElementById('lecture-' + lec.id);
+        if (el) {
+          el.classList.add('ring-2', 'ring-gold', 'shadow-lg', 'shadow-gold/20');
+          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+      });
+    }
+
+    /* ── Init ── */
+    document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
+    setActiveNav('audio');
+    document.getElementById('totalCount').textContent = LECTURES.length;
+    renderCategories();
+    renderSubcategories();
+    renderLectures();
+    applyDeepLink();
+  </script>
+
+</body>
+</html>
