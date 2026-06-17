@@ -44,9 +44,11 @@ THUMB_BLOCKLIST = {"__ia_thumb.jpg", "__ia_thumb.png"}
 EXCLUDED_LECTURES = {
     "abu ghazi",
     "abu mutassim",
-    # Duplicate of Tafseer 033 Surah Al-Ahzab [Part 2] (06.14.12)
+    # Low-quality legacy Al-Ahzab copies (no thumbs; canonical Tafseer 033 series kept)
     "tafsir surah al ahzaab part 2 the prophet saw is closer to the believers than themselves",
-    # Duplicate of Tafseer 033 Surah Al-Ahzab [Part 4] (06.17.12)
+    "tafsir surah al ahzaab part 8 the 18 virtues of dhikr",
+    "tafsir surah al ahzaab part 9 the etiquettes of giving and returning salaam",
+    "tafsir surah al ahzaab part 10 the eight types of iddah in islam",
     "tafsir surah ahzab marriage of the prophet saw to zaynab bint jahsh ra",
 }
 
