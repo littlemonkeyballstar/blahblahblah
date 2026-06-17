@@ -44,6 +44,8 @@ THUMB_BLOCKLIST = {"__ia_thumb.jpg", "__ia_thumb.png"}
 EXCLUDED_LECTURES = {
     "abu ghazi",
     "abu mutassim",
+    # Duplicate of Tafseer 033 Surah Al-Ahzab [Part 2] (06.14.12)
+    "tafsir surah al ahzaab part 2 the prophet saw is closer to the believers than themselves",
 }
 
 

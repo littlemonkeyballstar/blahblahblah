@@ -117,12 +117,12 @@ const LECTURE_CATEGORIES = [
   {
     "id": "Tafseer",
     "label": "Tafseer",
-    "count": 157,
+    "count": 156,
     "subcategories": [
       {
         "id": "tafseer surah al ahzab",
         "label": "Tafsir Al-Ahzab",
-        "count": 16
+        "count": 15
       },
       {
         "id": "Tafseer Al - ankabut",
@@ -4057,16 +4057,6 @@ const LECTURES = [
     "id": 383
   },
   {
-    "title": "Tafsir surah Al Ahzaab - Part 2 - The Prophet (Saw) Is Closer To The Believers Than Themselves",
-    "category": "Tafseer",
-    "categoryLabel": "Tafseer",
-    "subcategory": "tafseer surah al ahzab",
-    "subcategoryLabel": "Tafsir Al-Ahzab",
-    "archive": "Tafseer/tafseer surah al ahzab/Tafsir surah Al Ahzaab - Part 2 - The Prophet (Saw) Is Closer To The Believers Than Themselves.mp3",
-    "thumb": null,
-    "id": 384
-  },
-  {
     "title": "Tafsir surah Al Ahzaab - Part 8 - The 18 Virtues Of Dhikr",
     "category": "Tafseer",
     "categoryLabel": "Tafseer",
@@ -4074,7 +4064,7 @@ const LECTURES = [
     "subcategoryLabel": "Tafsir Al-Ahzab",
     "archive": "Tafseer/tafseer surah al ahzab/Tafsir surah Al Ahzaab - Part 8 - The 18 Virtues Of Dhikr.mp3",
     "thumb": null,
-    "id": 385
+    "id": 384
   },
   {
     "title": "Tafsir surah Al Ahzaab - Part 9 - The Etiquettes Of Giving And Returning Salaam",
@@ -4084,7 +4074,7 @@ const LECTURES = [
     "subcategoryLabel": "Tafsir Al-Ahzab",
     "archive": "Tafseer/tafseer surah al ahzab/Tafsir surah Al Ahzaab - Part 9 - The Etiquettes Of Giving And Returning Salaam.mp3",
     "thumb": null,
-    "id": 386
+    "id": 385
   },
   {
     "title": "Tafsir Surah Al ‘Araf - Part 20 - Allah (swt) Has The Most Beautiful Names",
@@ -4094,7 +4084,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 20 - Allah (swt) Has The Most Beautiful Names.mp3",
     "thumb": null,
-    "id": 387
+    "id": 386
   },
   {
     "title": "Tafsir Surah Al ‘Araf - Part 21 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn",
@@ -4104,7 +4094,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 21 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn.mp3",
     "thumb": null,
-    "id": 388
+    "id": 387
   },
   {
     "title": "Tafsir Surah Al ‘Araf - Part 21 - The Knowledge Of Ghaib Is With Allah (swt) Alone",
@@ -4114,7 +4104,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 21 - The Knowledge Of Ghaib Is With Allah (swt) Alone.mp3",
     "thumb": null,
-    "id": 389
+    "id": 388
   },
   {
     "title": "Tafsir Surah Al ‘Araf - Part 22 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn",
@@ -4124,7 +4114,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 22 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn.mp3",
     "thumb": null,
-    "id": 390
+    "id": 389
   },
   {
     "title": "Tafsir Surah Al ‘Araf - Part 23 - Listen To The Quran When It Is Recited",
@@ -4134,7 +4124,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 23 - Listen To The Quran When It Is Recited.mp3",
     "thumb": null,
-    "id": 391
+    "id": 390
   },
   {
     "title": "Tafsir Surah Al'Araf - Part 5 - Friends will be foes on Judgement day except the pious",
@@ -4144,7 +4134,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al'Araf - Part 5 - Friends will be foes on Judgement day except the pious.mp3",
     "thumb": null,
-    "id": 392
+    "id": 391
   },
   {
     "title": "Tafsir Surah Al'Araf - Part 6 - The History Of Shirk",
@@ -4154,7 +4144,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al'Araf - Part 6 - The History Of Shirk.mp3",
     "thumb": null,
-    "id": 393
+    "id": 392
   },
   {
     "title": "Tafsir surah Ar-rum - Be generous to your near relative 08-23-14 part 6",
@@ -4164,7 +4154,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Ar-rum - Be generous to your near relative 08-23-14 part 6.mp3",
     "thumb": null,
-    "id": 394
+    "id": 393
   },
   {
     "title": "Tafsir surah Ar-rum - Your spouse is a sign from Allah 20-8-14",
@@ -4174,7 +4164,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Ar-rum - Your spouse is a sign from Allah 20-8-14.mp3",
     "thumb": null,
-    "id": 395
+    "id": 394
   },
   {
     "title": "Tafsir surah Ar-rum -Allah is the originator of the heavens and the earth 19-8-14 part 3",
@@ -4184,7 +4174,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Ar-rum -Allah is the originator of the heavens and the earth 19-8-14 part 3.mp3",
     "thumb": null,
-    "id": 396
+    "id": 395
   },
   {
     "title": "Tafsir surah Ar-rum -The spiritually dead will never hear  25-8-14 part 7",
@@ -4194,7 +4184,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Ar-rum -The spiritually dead will never hear  25-8-14 part 7.mp3",
     "thumb": null,
-    "id": 397
+    "id": 396
   },
   {
     "title": "Tafsir surah Ar-rum part 1-2",
@@ -4204,7 +4194,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Ar-rum part 1-2.mp3",
     "thumb": null,
-    "id": 398
+    "id": 397
   },
   {
     "title": "Tafsir surah Ar-rum- Everyone was born on fitrah 22-8-14",
@@ -4214,7 +4204,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Ar-rum- Everyone was born on fitrah 22-8-14.mp3",
     "thumb": null,
-    "id": 399
+    "id": 398
   },
   {
     "title": "Tafsir Surah Baqara - seek help in sabr n salah",
@@ -4224,7 +4214,7 @@ const LECTURES = [
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqara - seek help in sabr n salah.mp3",
     "thumb": null,
-    "id": 400
+    "id": 399
   },
   {
     "title": "Tafsir Surah Baqarah Pt1",
@@ -4234,7 +4224,7 @@ const LECTURES = [
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah Pt1.mp3",
     "thumb": null,
-    "id": 401
+    "id": 400
   },
   {
     "title": "Tafsir Surah Baqarah Pt3",
@@ -4244,7 +4234,7 @@ const LECTURES = [
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah Pt3.mp3",
     "thumb": null,
-    "id": 402
+    "id": 401
   },
   {
     "title": "Tafsir Surah Baqarah pt8  Wish for Death if u are truthful",
@@ -4254,7 +4244,7 @@ const LECTURES = [
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah pt8  Wish for Death if u are truthful.mp3",
     "thumb": null,
-    "id": 403
+    "id": 402
   },
   {
     "title": "Tafsir Surah Baqarah Pt9 Magic",
@@ -4264,7 +4254,7 @@ const LECTURES = [
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah Pt9 Magic.mp3",
     "thumb": null,
-    "id": 404
+    "id": 403
   },
   {
     "title": "TAFSIR SURAH FALAQ",
@@ -4274,7 +4264,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/TAFSIR SURAH FALAQ.mp3",
     "thumb": null,
-    "id": 405
+    "id": 404
   },
   {
     "title": "Tafsir Surah Mudathhir - The 19 guardian angels 1-9-14 (part 2)",
@@ -4284,7 +4274,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Mudathhir - The 19 guardian angels 1-9-14 (part 2).mp3",
     "thumb": null,
-    "id": 406
+    "id": 405
   },
   {
     "title": "Tafsir surah mudathir - You shall be dumped in saqqr 31-08-14 (part 1)",
@@ -4294,7 +4284,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah mudathir - You shall be dumped in saqqr 31-08-14 (part 1) .mp3",
     "thumb": null,
-    "id": 407
+    "id": 406
   },
   {
     "title": "Tafsir surah muddatthir - They run away from the haqq like donkeys run away from the lion (part 3)",
@@ -4304,7 +4294,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah muddatthir - They run away from the haqq like donkeys run away from the lion (part 3).mp3",
     "thumb": null,
-    "id": 408
+    "id": 407
   },
   {
     "title": "TAFSIR SURAH NAS 12-8-14",
@@ -4314,7 +4304,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/TAFSIR SURAH NAS 12-8-14.mp3",
     "thumb": null,
-    "id": 409
+    "id": 408
   },
   {
     "title": "Tafsir Surah Qasas - Allah (swt) spoke to Musa (as) Part 3",
@@ -4324,7 +4314,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Qasas - Allah (swt) spoke to Musa (as) Part 3.mp3",
     "thumb": null,
-    "id": 410
+    "id": 409
   },
   {
     "title": "Tafsir surah Qasas - Divide and rule- PART 1",
@@ -4334,7 +4324,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Qasas - Divide and rule- PART 1.mp3",
     "thumb": null,
-    "id": 411
+    "id": 410
   },
   {
     "title": "Tafsir Surah Qasas - Makkah Is The Mother Of All Towns - Part 6",
@@ -4344,7 +4334,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Qasas - Makkah Is The Mother Of All Towns - Part 6.mp3",
     "thumb": null,
-    "id": 412
+    "id": 411
   },
   {
     "title": "Tafsir Surah Qasas - Paradise is for those who are humble - Part  9",
@@ -4354,7 +4344,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Qasas - Paradise is for those who are humble - Part  9.mp3",
     "thumb": null,
-    "id": 413
+    "id": 412
   },
   {
     "title": "Tafsir Surah Qasas - Paradise is for those who are humble - Part  9",
@@ -4364,7 +4354,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Tafsir Surah Qasas - Paradise is for those who are humble - Part  9.mp3",
     "thumb": null,
-    "id": 414
+    "id": 413
   },
   {
     "title": "TAFSIR SURAH QASAS - THE CHRISTIANS CRY WHEN THEY HEAR THE QURAN  - PART 5",
@@ -4374,7 +4364,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/TAFSIR SURAH QASAS - THE CHRISTIANS CRY WHEN THEY HEAR THE QURAN  - PART 5.mp3",
     "thumb": null,
-    "id": 415
+    "id": 414
   },
   {
     "title": "Tafsir Surah Qasas - The escape of Musa (as) from darul harb part 2",
@@ -4384,7 +4374,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Qasas - The escape of Musa (as) from darul harb part 2.mp3",
     "thumb": null,
-    "id": 416
+    "id": 415
   },
   {
     "title": "Tafsir Surah Qasas - The Pharaoh asked for a tower to see Allah (swt)",
@@ -4394,7 +4384,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Qasas - The Pharaoh asked for a tower to see Allah (swt).mp3",
     "thumb": null,
-    "id": 417
+    "id": 416
   },
   {
     "title": "Tafsir Surah Qasas - There Is No Racism In Islam - Part 7",
@@ -4404,7 +4394,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Qasas - There Is No Racism In Islam - Part 7.mp3",
     "thumb": null,
-    "id": 418
+    "id": 417
   },
   {
     "title": "Tafsir Surah Qasas -The Story of  Musa (as) And Qaroon - Part 8",
@@ -4414,7 +4404,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Qasas -The Story of  Musa (as) And Qaroon - Part 8.mp3",
     "thumb": null,
-    "id": 419
+    "id": 418
   },
   {
     "title": "Tafsir Surah Saff - Part 1 - Lying On Allah (swt)",
@@ -4424,7 +4414,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Saff - Part 1 - Lying On Allah (swt).mp3",
     "thumb": null,
-    "id": 420
+    "id": 419
   },
   {
     "title": "Tafsir Surah Saff - Part 2 - Propaganda Warfare",
@@ -4434,7 +4424,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Saff - Part 2 - Propaganda Warfare.mp3",
     "thumb": null,
-    "id": 421
+    "id": 420
   },
   {
     "title": "TAFSIR SURAH SAJDA",
@@ -4444,7 +4434,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/TAFSIR SURAH SAJDA .mp3",
     "thumb": null,
-    "id": 422
+    "id": 421
   },
   {
     "title": "TAFSIR SURAH SAQDA",
@@ -4454,7 +4444,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/TAFSIR SURAH SAQDA .mp3",
     "thumb": null,
-    "id": 423
+    "id": 422
   },
   {
     "title": "Tafsir surah Waqia - mankind will be divided into three on DOJ 08-27-14",
@@ -4464,7 +4454,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Waqia - mankind will be divided into three on DOJ 08-27-14.mp3",
     "thumb": null,
-    "id": 424
+    "id": 423
   },
   {
     "title": "Tafsir surah waqia - The Tree of Zaquum 08-28-14",
@@ -4474,7 +4464,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah waqia - The Tree of Zaquum 08-28-14.mp3",
     "thumb": null,
-    "id": 425
+    "id": 424
   },
   {
     "title": "Tafsir Surah Waqia -The Quran is a noble book (Part 3)",
@@ -4484,7 +4474,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Waqia -The Quran is a noble book (Part 3).mp3",
     "thumb": null,
-    "id": 426
+    "id": 425
   },
   {
     "title": "TAINTED LOVE - Abdallah Al Faisal",
@@ -4494,7 +4484,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "TAINTED LOVE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 427
+    "id": 426
   },
   {
     "title": "tainted love 2013.04.20 (evening)",
@@ -4504,7 +4494,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "tainted love 2013.04.20 (evening).mp3",
     "thumb": null,
-    "id": 428
+    "id": 427
   },
   {
     "title": "Tawassul",
@@ -4514,7 +4504,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tawassul.mp3",
     "thumb": null,
-    "id": 429
+    "id": 428
   },
   {
     "title": "TAWHEED AL HAKEEMIYAH ONLY WAY TO IMPLEMENT SHARIAH - Abdallah Al Faisal",
@@ -4524,7 +4514,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tawheed/TAWHEED AL HAKEEMIYAH ONLY WAY TO IMPLEMENT SHARIAH - Abdallah Al Faisal.mp3",
     "thumb": "thumb/extracted/d17f4338067f7f.png",
-    "id": 430
+    "id": 429
   },
   {
     "title": "The 10 things Muslims Cannot Doubt",
@@ -4534,7 +4524,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 10 things Muslims Cannot Doubt.mp3",
     "thumb": null,
-    "id": 431
+    "id": 430
   },
   {
     "title": "The 13 Shades Of Kufr",
@@ -4544,7 +4534,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 13 Shades Of Kufr.mp3",
     "thumb": null,
-    "id": 432
+    "id": 431
   },
   {
     "title": "The 15 Shades of Kufr",
@@ -4554,7 +4544,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 15 Shades of Kufr.mp3",
     "thumb": null,
-    "id": 433
+    "id": 432
   },
   {
     "title": "The 17 Shades of Shirk (dars)",
@@ -4564,7 +4554,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 17 Shades of Shirk (dars).mp3",
     "thumb": null,
-    "id": 434
+    "id": 433
   },
   {
     "title": "The 18 Types Of Women You Should Not Marry",
@@ -4574,7 +4564,7 @@ const LECTURES = [
     "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3",
     "thumb": null,
-    "id": 435
+    "id": 434
   },
   {
     "title": "The 20 Types Of Men You Should Not Marry",
@@ -4584,7 +4574,7 @@ const LECTURES = [
     "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3",
     "thumb": null,
-    "id": 436
+    "id": 435
   },
   {
     "title": "The 21 Reasons Why The Quran Is A Wise Book",
@@ -4594,7 +4584,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 21 Reasons Why The Quran Is A Wise Book.mp3",
     "thumb": null,
-    "id": 437
+    "id": 436
   },
   {
     "title": "The 35 People Allah SWT Abhors",
@@ -4604,7 +4594,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 35 People Allah SWT Abhors.mp3",
     "thumb": null,
-    "id": 438
+    "id": 437
   },
   {
     "title": "The 36 People Allah SWT Loves",
@@ -4614,7 +4604,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 36 People Allah SWT Loves.mp3",
     "thumb": null,
-    "id": 439
+    "id": 438
   },
   {
     "title": "The 4 Branches Of Tauheed",
@@ -4624,7 +4614,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tawheed/The 4 Branches Of Tauheed.mp3",
     "thumb": null,
-    "id": 440
+    "id": 439
   },
   {
     "title": "The 4 Branches Of Tauheed Part 1",
@@ -4634,7 +4624,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tawheed/The 4 Branches Of Tauheed Part 1.mp3",
     "thumb": null,
-    "id": 441
+    "id": 440
   },
   {
     "title": "The 4 Branches Of Tauheed Part 2",
@@ -4644,7 +4634,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tawheed/The 4 Branches Of Tauheed Part 2.mp3",
     "thumb": null,
-    "id": 442
+    "id": 441
   },
   {
     "title": "The 4 Pillars Of Qadr",
@@ -4654,7 +4644,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 4 Pillars Of Qadr.mp3",
     "thumb": null,
-    "id": 443
+    "id": 442
   },
   {
     "title": "The 5 Ahkaam of Shariah",
@@ -4664,7 +4654,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 5 Ahkaam of Shariah.mp3",
     "thumb": null,
-    "id": 444
+    "id": 443
   },
   {
     "title": "The 5 Desperate Zindeeq - Brelvis (02.16.12)",
@@ -4674,7 +4664,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Brelvis (02.16.12).mp3",
     "thumb": "thumb/extracted/b04fec2582151f.jpg",
-    "id": 445
+    "id": 444
   },
   {
     "title": "The 5 Desperate Zindeeq - Democrats (evening dars 02.18.12)",
@@ -4684,7 +4674,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Democrats (evening dars 02.18.12).mp3",
     "thumb": "thumb/extracted/41b5aff9acda6a.jpg",
-    "id": 446
+    "id": 445
   },
   {
     "title": "The 5 Desperate Zindeeq - Goofy Sufi (02.11.12)",
@@ -4694,7 +4684,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Goofy Sufi (02.11.12).mp3",
     "thumb": "thumb/extracted/b8aa5601d8bc82.jpg",
-    "id": 447
+    "id": 446
   },
   {
     "title": "The 5 Desperate Zindeeq - MADkhalis (02.14.12 to 02.15.12)",
@@ -4704,7 +4694,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - MADkhalis (02.14.12 to 02.15.12).mp3",
     "thumb": "thumb/extracted/136b8efb67a320.jpg",
-    "id": 448
+    "id": 447
   },
   {
     "title": "The 5 Desperate Zindeeq - Shady Shia (02.12.12 to 02.13.12)",
@@ -4714,7 +4704,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Shady Shia (02.12.12 to 02.13.12).mp3",
     "thumb": "thumb/extracted/b44b317b263042.jpg",
-    "id": 449
+    "id": 448
   },
   {
     "title": "The 5 Needs of Mankind2",
@@ -4724,7 +4714,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 5 Needs of Mankind2.mp3",
     "thumb": null,
-    "id": 450
+    "id": 449
   },
   {
     "title": "The 57 Signs Of A Munafiq - Part 1",
@@ -4734,7 +4724,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 57 Signs Of A Munafiq - Part 1.mp3",
     "thumb": null,
-    "id": 451
+    "id": 450
   },
   {
     "title": "the 9 reasons kuffaar hate us",
@@ -4744,7 +4734,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the 9 reasons kuffaar hate us.mp3",
     "thumb": null,
-    "id": 452
+    "id": 451
   },
   {
     "title": "The American Ban on Muslims",
@@ -4754,7 +4744,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The American Ban on Muslims.mp3",
     "thumb": null,
-    "id": 453
+    "id": 452
   },
   {
     "title": "The Animals Of The Holy Quran - Part 1",
@@ -4764,7 +4754,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Animals Of The Holy Quran - Part 1.mp3",
     "thumb": null,
-    "id": 454
+    "id": 453
   },
   {
     "title": "The Animals Of The Holy Quran - Part 2",
@@ -4774,7 +4764,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Animals Of The Holy Quran - Part 2.mp3",
     "thumb": null,
-    "id": 455
+    "id": 454
   },
   {
     "title": "the Barking dogs of jahannam",
@@ -4784,7 +4774,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the Barking dogs of jahannam.mp3",
     "thumb": null,
-    "id": 456
+    "id": 455
   },
   {
     "title": "The Bombing of the Goofi Soofis",
@@ -4794,7 +4784,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Bombing of the Goofi Soofis.mp3",
     "thumb": null,
-    "id": 457
+    "id": 456
   },
   {
     "title": "The Devil's Deception of the Aathir",
@@ -4804,7 +4794,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/The Devil's Deception of the Aathir.mp3",
     "thumb": null,
-    "id": 458
+    "id": 457
   },
   {
     "title": "The Devil's Deception of the Murjia",
@@ -4814,7 +4804,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/The Devil's Deception of the Murjia.mp3",
     "thumb": null,
-    "id": 459
+    "id": 458
   },
   {
     "title": "THE DOMAIN OF APOSTASY",
@@ -4824,7 +4814,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "THE DOMAIN OF APOSTASY.mp3",
     "thumb": null,
-    "id": 460
+    "id": 459
   },
   {
     "title": "The Enemies of the Caliphate",
@@ -4834,7 +4824,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Khilafah/The Enemies of the Caliphate.mp3",
     "thumb": null,
-    "id": 461
+    "id": 460
   },
   {
     "title": "The Etiquettes of Asking Questions",
@@ -4844,7 +4834,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Etiquettes of Asking Questions.mp3",
     "thumb": null,
-    "id": 462
+    "id": 461
   },
   {
     "title": "The Evil Consequences Of Insulting The Rasool (Saw)",
@@ -4854,7 +4844,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Evil Consequences Of Insulting The Rasool (Saw).mp3",
     "thumb": null,
-    "id": 463
+    "id": 462
   },
   {
     "title": "The Evil Effects of Sins",
@@ -4864,7 +4854,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Evil Effects of Sins.mp3",
     "thumb": null,
-    "id": 464
+    "id": 463
   },
   {
     "title": "The Evil Rulers Of The World",
@@ -4874,7 +4864,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Evil Rulers Of The World.mp3",
     "thumb": null,
-    "id": 465
+    "id": 464
   },
   {
     "title": "The farewell khutbah 14-07-14",
@@ -4884,7 +4874,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The farewell khutbah 14-07-14.mp3",
     "thumb": null,
-    "id": 466
+    "id": 465
   },
   {
     "title": "The Fiqh of Clothing",
@@ -4894,7 +4884,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Fiqh of Clothing.mp3",
     "thumb": null,
-    "id": 467
+    "id": 466
   },
   {
     "title": "the Fiqh of Divorce",
@@ -4904,7 +4894,7 @@ const LECTURES = [
     "subcategoryLabel": "Fiqh of Divorce",
     "archive": "Nikah_Divorce/the Fiqh of Divorce.mp3",
     "thumb": null,
-    "id": 468
+    "id": 467
   },
   {
     "title": "the Fiqh of Food-1",
@@ -4914,7 +4904,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the Fiqh of Food-1.mp3",
     "thumb": null,
-    "id": 469
+    "id": 468
   },
   {
     "title": "The Fiqh of Menses",
@@ -4924,7 +4914,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Fiqh of Menses.mp3",
     "thumb": null,
-    "id": 470
+    "id": 469
   },
   {
     "title": "The Fiqh of Trading",
@@ -4934,7 +4924,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Fiqh of Trading.mp3",
     "thumb": null,
-    "id": 471
+    "id": 470
   },
   {
     "title": "The Holy Spirit (06.18.11)",
@@ -4944,7 +4934,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Holy Spirit (06.18.11).mp3",
     "thumb": null,
-    "id": 472
+    "id": 471
   },
   {
     "title": "The Hyenas Of The Ummah",
@@ -4954,7 +4944,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Hyenas Of The Ummah.mp3",
     "thumb": null,
-    "id": 473
+    "id": 472
   },
   {
     "title": "The importance of Hijrah",
@@ -4964,7 +4954,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The importance of Hijrah.mp3",
     "thumb": null,
-    "id": 474
+    "id": 473
   },
   {
     "title": "The Importance of Intention",
@@ -4974,7 +4964,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Importance of Intention.mp3",
     "thumb": null,
-    "id": 475
+    "id": 474
   },
   {
     "title": "THE IMPORTANCE OF SHARI`AH",
@@ -4984,7 +4974,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Khilafah/THE IMPORTANCE OF SHARI`AH.mp3",
     "thumb": null,
-    "id": 476
+    "id": 475
   },
   {
     "title": "The Muslim Home (dars)",
@@ -4994,7 +4984,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Muslim Home (dars).mp3",
     "thumb": null,
-    "id": 477
+    "id": 476
   },
   {
     "title": "The Philosophy of the islamic Jurisprudence",
@@ -5004,7 +4994,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Philosophy of the islamic Jurisprudence.mp3",
     "thumb": null,
-    "id": 478
+    "id": 477
   },
   {
     "title": "The Reality of Fitnah",
@@ -5014,7 +5004,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Reality of Fitnah.mp3",
     "thumb": null,
-    "id": 479
+    "id": 478
   },
   {
     "title": "The Reality of Racism",
@@ -5024,7 +5014,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Reality of Racism.mp3",
     "thumb": null,
-    "id": 480
+    "id": 479
   },
   {
     "title": "THE REALITY OF THE JEWS",
@@ -5034,7 +5024,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "THE REALITY OF THE JEWS.mp3",
     "thumb": null,
-    "id": 481
+    "id": 480
   },
   {
     "title": "The Rules of Fasting",
@@ -5044,7 +5034,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Rules of Fasting.mp3",
     "thumb": null,
-    "id": 482
+    "id": 481
   },
   {
     "title": "The Sealed Nectar [Part 01] Arabia Before Islam (03.31.12)",
@@ -5054,7 +5044,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 01] Arabia Before Islam (03.31.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 483
+    "id": 482
   },
   {
     "title": "The Sealed Nectar [Part 02] Replacing the Blackstone (04.01.12)",
@@ -5064,7 +5054,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 02] Replacing the Blackstone (04.01.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 484
+    "id": 483
   },
   {
     "title": "The Sealed Nectar [Part 03] The Cave of Hira (04.02.12)",
@@ -5074,7 +5064,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 03] The Cave of Hira (04.02.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 485
+    "id": 484
   },
   {
     "title": "The Sealed Nectar [Part 04] The Hijrah to Abyssinia (04.03.12)",
@@ -5084,7 +5074,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 04] The Hijrah to Abyssinia (04.03.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 486
+    "id": 485
   },
   {
     "title": "The Sealed Nectar [Part 05] The Conversion of Umar A Glory for Islam (04.04.12)",
@@ -5094,7 +5084,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 05] The Conversion of Umar A Glory for Islam (04.04.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 487
+    "id": 486
   },
   {
     "title": "The Sealed Nectar [Part 06] Al-Isra Wal-Miraj (04.05.12)",
@@ -5104,7 +5094,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 06] Al-Isra Wal-Miraj (04.05.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 488
+    "id": 487
   },
   {
     "title": "The Sealed Nectar [Part 07] The Pledge of Aqabah (04.07.12)",
@@ -5114,7 +5104,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 07] The Pledge of Aqabah (04.07.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 489
+    "id": 488
   },
   {
     "title": "The Sealed Nectar [Part 08] The Hijrah from Makkah to Madina (04.08.12)",
@@ -5124,7 +5114,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 08] The Hijrah from Makkah to Madina (04.08.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 490
+    "id": 489
   },
   {
     "title": "The Sealed Nectar [Part 09] The Battle of Badr (04.09.12)",
@@ -5134,7 +5124,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 09] The Battle of Badr (04.09.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 491
+    "id": 490
   },
   {
     "title": "The Sealed Nectar [Part 10] The Treachery of Banu Qainuqa (04.11.12)",
@@ -5144,7 +5134,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 10] The Treachery of Banu Qainuqa (04.11.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 492
+    "id": 491
   },
   {
     "title": "The Sealed Nectar [Part 11] The Battle of Uhud (04.12.12)",
@@ -5154,7 +5144,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 11] The Battle of Uhud (04.12.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 493
+    "id": 492
   },
   {
     "title": "The Sealed Nectar [Part 12] The Treachery of Banu Nadir (04.14.12)",
@@ -5164,7 +5154,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 12] The Treachery of Banu Nadir (04.14.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 494
+    "id": 493
   },
   {
     "title": "The Sealed Nectar [Part 13] The Battle of the Ditch (04.15.12)",
@@ -5174,7 +5164,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 13] The Battle of the Ditch (04.15.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 495
+    "id": 494
   },
   {
     "title": "The Sealed Nectar [Part 14] The Slander of Aisha [RA] (04.16.12)",
@@ -5184,7 +5174,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 14] The Slander of Aisha [RA] (04.16.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 496
+    "id": 495
   },
   {
     "title": "The Sealed Nectar [Part 15] 42 Lessons From The Slander of Aisha [RA] (04.17.12)",
@@ -5194,7 +5184,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 15] 42 Lessons From The Slander of Aisha [RA] (04.17.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 497
+    "id": 496
   },
   {
     "title": "The Sealed Nectar [Part 16] The Treaty of Hudaibiya (04.19.12)",
@@ -5204,7 +5194,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 16] The Treaty of Hudaibiya (04.19.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 498
+    "id": 497
   },
   {
     "title": "The Sealed Nectar [Part 17] The Conquest of Khaibar (04.21.12)",
@@ -5214,7 +5204,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 17] The Conquest of Khaibar (04.21.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 499
+    "id": 498
   },
   {
     "title": "The Sealed Nectar [Part 18] The Battle of Mu'tah (04.22.12)",
@@ -5224,7 +5214,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 18] The Battle of Mu'tah (04.22.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 500
+    "id": 499
   },
   {
     "title": "The Sealed Nectar [Part 19] The Conquest of Makkah (04.23.12)",
@@ -5234,7 +5224,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 19] The Conquest of Makkah (04.23.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 501
+    "id": 500
   },
   {
     "title": "The Sealed Nectar [Part 20] The Battle of Hunain (04.24.12)",
@@ -5244,7 +5234,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 20] The Battle of Hunain (04.24.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 502
+    "id": 501
   },
   {
     "title": "The Sealed Nectar [Part 21] The Tabuk Expedition (04.25.12)",
@@ -5254,7 +5244,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 21] The Tabuk Expedition (04.25.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 503
+    "id": 502
   },
   {
     "title": "The Sealed Nectar [Part 22] Abu Bakr Performs the Pilgrimage (04.26.12)",
@@ -5264,7 +5254,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 22] Abu Bakr Performs the Pilgrimage (04.26.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 504
+    "id": 503
   },
   {
     "title": "The Sealed Nectar [Part 23] The Pilgrimage of the Prophet (04.28.12)",
@@ -5274,7 +5264,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 23] The Pilgrimage of the Prophet (04.28.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 505
+    "id": 504
   },
   {
     "title": "The Sealed Nectar [Part 24] The Farewell Sermon (04.29.12)",
@@ -5284,7 +5274,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 24] The Farewell Sermon (04.29.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 506
+    "id": 505
   },
   {
     "title": "The Ship Is Sinking (07.13.11)",
@@ -5294,7 +5284,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Ship Is Sinking (07.13.11).mp3",
     "thumb": null,
-    "id": 507
+    "id": 506
   },
   {
     "title": "the Siege of al Aqsa",
@@ -5304,7 +5294,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the Siege of al Aqsa.mp3",
     "thumb": null,
-    "id": 508
+    "id": 507
   },
   {
     "title": "the Sleepers in the Cave",
@@ -5314,7 +5304,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the Sleepers in the Cave.mp3",
     "thumb": null,
-    "id": 509
+    "id": 508
   },
   {
     "title": "the usa Bombing of Assad, a Muslim perspective",
@@ -5324,7 +5314,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the usa Bombing of Assad, a Muslim perspective.mp3",
     "thumb": null,
-    "id": 510
+    "id": 509
   },
   {
     "title": "The virtues of Dhikr",
@@ -5334,7 +5324,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The virtues of Dhikr.mp3",
     "thumb": null,
-    "id": 511
+    "id": 510
   },
   {
     "title": "the Weaknesses of Mankind2",
@@ -5344,7 +5334,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the Weaknesses of Mankind2.mp3",
     "thumb": null,
-    "id": 512
+    "id": 511
   },
   {
     "title": "The wisdom of the Prophet (saw) 07-15-14",
@@ -5354,7 +5344,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The wisdom of the Prophet (saw) 07-15-14.mp3",
     "thumb": null,
-    "id": 513
+    "id": 512
   },
   {
     "title": "the_8_Gates_of_Paradise_mp3",
@@ -5364,7 +5354,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the_8_Gates_of_Paradise_mp3.mp3",
     "thumb": null,
-    "id": 514
+    "id": 513
   },
   {
     "title": "The_Fiqh_of_Asking_Questions_mp3",
@@ -5374,7 +5364,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The_Fiqh_of_Asking_Questions_mp3.mp3",
     "thumb": null,
-    "id": 515
+    "id": 514
   },
   {
     "title": "Their hearts Are Alike",
@@ -5384,7 +5374,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Their hearts Are Alike.mp3",
     "thumb": null,
-    "id": 516
+    "id": 515
   },
   {
     "title": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal",
@@ -5394,7 +5384,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.mp3",
     "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg",
-    "id": 517
+    "id": 516
   },
   {
     "title": "THEY DO NOT LOVE ALLAH - Abdallah Al Faisal",
@@ -5404,7 +5394,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "THEY DO NOT LOVE ALLAH - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 518
+    "id": 517
   },
   {
     "title": "They Shall Reap What They Sow and You Shall Reap What You Sow (08.22.11)",
@@ -5414,7 +5404,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "They Shall Reap What They Sow and You Shall Reap What You Sow (08.22.11).mp3",
     "thumb": null,
-    "id": 519
+    "id": 518
   },
   {
     "title": "They_Shall_Reap_What_They_Sow_and_You_Shall_Reap_What_You_Sow_08",
@@ -5424,7 +5414,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "They_Shall_Reap_What_They_Sow_and_You_Shall_Reap_What_You_Sow_08.mp3",
     "thumb": null,
-    "id": 520
+    "id": 519
   },
   {
     "title": "THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal",
@@ -5434,7 +5424,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 521
+    "id": 520
   },
   {
     "title": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal",
@@ -5444,7 +5434,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.mp3",
     "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg",
-    "id": 522
+    "id": 521
   },
   {
     "title": "Towards Watering Down The Holy Quran",
@@ -5454,7 +5444,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Towards Watering Down The Holy Quran.mp3",
     "thumb": null,
-    "id": 523
+    "id": 522
   },
   {
     "title": "Towards Watering Down The Holy Quran(1)",
@@ -5464,7 +5454,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Towards Watering Down The Holy Quran(1).mp3",
     "thumb": null,
-    "id": 524
+    "id": 523
   },
   {
     "title": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal",
@@ -5474,7 +5464,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.mp3",
     "thumb": "thumb/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.png",
-    "id": 525
+    "id": 524
   },
   {
     "title": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR - Abdallah Al Faisal",
@@ -5484,7 +5474,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/extracted/40f8d0fb22e4b9.jpg",
-    "id": 526
+    "id": 525
   },
   {
     "title": "VIRTUES OF MAKKAH - Shaykh Faisal",
@@ -5494,7 +5484,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "VIRTUES OF MAKKAH - Shaykh Faisal.mp3",
     "thumb": "thumb/VIRTUES OF MAKKAH - Shaykh Faisal.jpg",
-    "id": 527
+    "id": 526
   },
   {
     "title": "VIRTUES OF RAMADAN - Abdallah Al Faisal",
@@ -5504,7 +5494,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Ramadan/VIRTUES OF RAMADAN - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 528
+    "id": 527
   },
   {
     "title": "We Hear & We Obey (06.23.11)",
@@ -5514,7 +5504,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "We Hear & We Obey (06.23.11).mp3",
     "thumb": null,
-    "id": 529
+    "id": 528
   },
   {
     "title": "We Shall Never Follow the Jews & the Christians (07.14.11)",
@@ -5524,7 +5514,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "We Shall Never Follow the Jews & the Christians (07.14.11).mp3",
     "thumb": null,
-    "id": 530
+    "id": 529
   },
   {
     "title": "We Shall Never give up Better For Worse (07.16.11)",
@@ -5534,7 +5524,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "We Shall Never give up Better For Worse (07.16.11).mp3",
     "thumb": null,
-    "id": 531
+    "id": 530
   },
   {
     "title": "Weakness of Mankind [Part 1] (06.25.11)",
@@ -5544,7 +5534,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Weakness of Mankind [Part 1] (06.25.11).mp3",
     "thumb": null,
-    "id": 532
+    "id": 531
   },
   {
     "title": "Weakness of Mankind [Part 2] (06.26.11)",
@@ -5554,7 +5544,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Weakness of Mankind [Part 2] (06.26.11).mp3",
     "thumb": null,
-    "id": 533
+    "id": 532
   },
   {
     "title": "Weakness of Mankind [Part 3] (06.27.11)",
@@ -5564,7 +5554,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Weakness of Mankind [Part 3] (06.27.11).mp3",
     "thumb": null,
-    "id": 534
+    "id": 533
   },
   {
     "title": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal",
@@ -5574,7 +5564,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png",
-    "id": 535
+    "id": 534
   },
   {
     "title": "Where Is Allah SWT (07.08.11)",
@@ -5584,7 +5574,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Where Is Allah SWT (07.08.11).mp3",
     "thumb": null,
-    "id": 536
+    "id": 535
   },
   {
     "title": "White Supremacy - A Cancer In The Body of Humanity",
@@ -5594,7 +5584,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "White Supremacy - A Cancer In The Body of Humanity.mp3",
     "thumb": null,
-    "id": 537
+    "id": 536
   },
   {
     "title": "Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11)",
@@ -5604,7 +5594,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11).mp3",
     "thumb": null,
-    "id": 538
+    "id": 537
   },
   {
     "title": "Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11)",
@@ -5614,7 +5604,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11).mp3",
     "thumb": null,
-    "id": 539
+    "id": 538
   },
   {
     "title": "Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11)",
@@ -5624,7 +5614,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11).mp3",
     "thumb": null,
-    "id": 540
+    "id": 539
   },
   {
     "title": "Who Are You – Part 1",
@@ -5634,7 +5624,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who Are You – Part 1.mp3",
     "thumb": null,
-    "id": 541
+    "id": 540
   },
   {
     "title": "Who Are You – Part 2",
@@ -5644,7 +5634,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who Are You – Part 2.mp3",
     "thumb": null,
-    "id": 542
+    "id": 541
   },
   {
     "title": "Who are You2",
@@ -5654,7 +5644,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who are You2.mp3",
     "thumb": null,
-    "id": 543
+    "id": 542
   },
   {
     "title": "Why we hate the shia",
@@ -5664,7 +5654,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Shia/Why we hate the shia.mp3",
     "thumb": null,
-    "id": 544
+    "id": 543
   },
   {
     "title": "WICKED SCHOLAR - Abdallah Al Faisal",
@@ -5674,7 +5664,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/WICKED SCHOLAR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 545
+    "id": 544
   },
   {
     "title": "WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal",
@@ -5684,7 +5674,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/e86bea0151be95.jpg",
-    "id": 546
+    "id": 545
   },
   {
     "title": "Wish For Death If Your Claim Is The Truth (06.25.11)",
@@ -5694,7 +5684,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Wish For Death If Your Claim Is The Truth (06.25.11).mp3",
     "thumb": null,
-    "id": 547
+    "id": 546
   },
   {
     "title": "WIVES & CHILDREN - Shaykh Faisal",
@@ -5704,7 +5694,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/b9f73d13b0cd72.png",
-    "id": 548
+    "id": 547
   },
   {
     "title": "WOMEN IN ISLAM - Abdallah Al Faisal",
@@ -5714,7 +5704,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "WOMEN IN ISLAM - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 549
+    "id": 548
   },
   {
     "title": "Worst Con Artist is the Man Who Cons Himself (08.03.11)",
@@ -5724,7 +5714,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Worst Con Artist is the Man Who Cons Himself (08.03.11).mp3",
     "thumb": null,
-    "id": 550
+    "id": 549
   },
   {
     "title": "You Can't Have Your Cake & Eat It Too (07.20.11)",
@@ -5734,6 +5724,6 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "You Can't Have Your Cake & Eat It Too (07.20.11).mp3",
     "thumb": null,
-    "id": 551
+    "id": 550
   }
 ];
