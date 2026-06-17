@@ -345,6 +345,10 @@
       return 0;
     }
 
+    function lectureSortPriority(lecture) {
+      return lecture.sortPriority ?? 9999;
+    }
+
     function sortLectures(list, options = {}) {
       const globalSearch = !!options.globalSearch;
       if (globalSearch || state.category === 'all') {
@@ -356,6 +360,8 @@
       const byParts = shouldSortByParts();
       const useSubOrder = state.category !== 'all' && state.subcategory === 'all';
       return [...list].sort((a, b) => {
+        const prioCmp = lectureSortPriority(a) - lectureSortPriority(b);
+        if (prioCmp !== 0) return prioCmp;
         if (byParts) {
           const partCmp = compareParts(a, b);
           if (partCmp !== 0) return partCmp;

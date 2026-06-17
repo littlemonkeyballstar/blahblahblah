@@ -3785,13 +3785,14 @@ const LECTURES = [
     "id": 350
   },
   {
-    "title": "TAFSEER OF SURAH AT TAWBAH - Abdallah Al Faisal",
+    "title": "Tafsir At-Tawbah (Whole 25h lecture)",
     "category": "Tafseer",
     "categoryLabel": "Tafseer",
     "subcategory": "Tafseer surah Taubah",
     "subcategoryLabel": "Tafsir At-Tawbah",
     "archive": "Tafseer/Tafseer surah Taubah/TAFSEER OF SURAH AT TAWBAH - Abdallah Al Faisal.mp3",
     "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/TAFSEER OF SURAH AT TAWBAH - Abdallah Al Faisal.jpg",
+    "sortPriority": 0,
     "id": 351
   },
   {

@@ -322,6 +322,12 @@ def norm(text: str) -> str:
 LECTURE_TITLE_OVERRIDES = {
     norm("conf_imped_takfir"): "Why is takfir important",
     norm("is-the-dawla-khawarij"): "Is the dawla khawarij?",
+    norm("TAFSEER OF SURAH AT TAWBAH - Abdallah Al Faisal"): "Tafsir At-Tawbah (Whole 25h lecture)",
+}
+
+# Pin specific lectures to the top of their sub-series (lower = earlier).
+LECTURE_SORT_PRIORITY = {
+    norm("TAFSEER OF SURAH AT TAWBAH - Abdallah Al Faisal"): 0,
 }
 
 
@@ -804,7 +810,7 @@ def main():
             category, subcategory = resolve_category(title, folder_category, folder_subcategory)
             thumb = resolver.resolve(full, title, folder)
 
-            lectures.append({
+            entry = {
                 "title": title,
                 "category": category,
                 "categoryLabel": label_for_category(category),
@@ -812,7 +818,11 @@ def main():
                 "subcategoryLabel": SUB_DISPLAY.get(subcategory, subcategory) if subcategory else None,
                 "archive": archive_path(folder, filename, by_path, by_name),
                 "thumb": thumb,
-            })
+            }
+            priority = LECTURE_SORT_PRIORITY.get(norm(filename[:-4]))
+            if priority is not None:
+                entry["sortPriority"] = priority
+            lectures.append(entry)
 
     lectures = dedupe_lectures(lectures)
     lectures = drop_tafseer_duplicates(lectures)
