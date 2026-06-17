@@ -49,6 +49,119 @@
       box-shadow: 0 10px 30px rgba(0,0,0,.35);
       border-color: rgba(212,168,83,.25);
     }
+    /* Rich placeholder for lectures without thumbnails */
+    .lecture-placeholder {
+      background: linear-gradient(145deg, var(--ph-from) 0%, var(--ph-via) 52%, var(--ph-to) 100%);
+    }
+    .lecture-placeholder__pattern {
+      position: absolute;
+      inset: 0;
+      opacity: 0.14;
+      background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 0l2.5 7.5H30l-6 4.5 2.5 7.5L20 15l-6.5 4.5 2.5-7.5-6-4.5h7.5z' fill='%23d4a853' fill-opacity='.35'/%3E%3C/svg%3E");
+      background-size: 42px 42px;
+    }
+    .lecture-placeholder__glow {
+      position: absolute;
+      width: 9rem;
+      height: 9rem;
+      left: 50%;
+      top: 42%;
+      transform: translate(-50%, -50%);
+      border-radius: 9999px;
+      background: radial-gradient(circle, color-mix(in srgb, var(--ph-accent) 28%, transparent) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .lecture-placeholder__content {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 2.75rem 1.25rem 1.5rem;
+      text-align: center;
+      z-index: 1;
+    }
+    .lecture-placeholder__part {
+      position: absolute;
+      top: 0.65rem;
+      right: 0.65rem;
+      padding: 0.2rem 0.55rem;
+      border-radius: 0.4rem;
+      background: rgba(8, 13, 24, 0.82);
+      border: 1px solid color-mix(in srgb, var(--ph-accent) 45%, transparent);
+      color: var(--ph-accent);
+      font-size: 0.625rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .lecture-placeholder__icon-ring {
+      width: 4.25rem;
+      height: 4.25rem;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(8, 13, 24, 0.55);
+      border: 1px solid color-mix(in srgb, var(--ph-accent) 35%, transparent);
+      box-shadow: 0 0 0 1px rgba(255,255,255,0.04) inset;
+      margin-bottom: 0.65rem;
+    }
+    .lecture-placeholder__icon-ring i {
+      font-size: 1.55rem;
+      color: var(--ph-accent);
+      opacity: 0.92;
+    }
+    .lecture-placeholder__sub {
+      font-size: 0.625rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: rgba(226, 232, 240, 0.72);
+      margin-bottom: 0.35rem;
+      max-width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .lecture-placeholder__label {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 0.8rem;
+      line-height: 1.35;
+      color: rgba(241, 245, 249, 0.88);
+      max-width: 16rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    .lecture-placeholder__wave {
+      position: absolute;
+      bottom: 0.85rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      align-items: flex-end;
+      gap: 0.22rem;
+      height: 1.35rem;
+      opacity: 0.55;
+    }
+    .lecture-placeholder__wave span {
+      display: block;
+      width: 3px;
+      border-radius: 9999px;
+      background: var(--ph-accent);
+      animation: ph-wave 1.35s ease-in-out infinite;
+    }
+    .lecture-placeholder__wave span:nth-child(1) { height: 0.45rem; animation-delay: 0s; }
+    .lecture-placeholder__wave span:nth-child(2) { height: 0.85rem; animation-delay: 0.12s; }
+    .lecture-placeholder__wave span:nth-child(3) { height: 1.15rem; animation-delay: 0.24s; }
+    .lecture-placeholder__wave span:nth-child(4) { height: 0.75rem; animation-delay: 0.36s; }
+    .lecture-placeholder__wave span:nth-child(5) { height: 0.5rem; animation-delay: 0.48s; }
+    @keyframes ph-wave {
+      0%, 100% { transform: scaleY(0.55); opacity: 0.45; }
+      50% { transform: scaleY(1); opacity: 0.95; }
+    }
     .thumb-placeholder {
       background: linear-gradient(135deg, #1a2332 0%, #0f172a 50%, #1c1910 100%);
     }
@@ -167,7 +280,7 @@
   </footer>
 
   <script src="site.js"></script>
-  <script src="lectures-data.js?v=20260617i"></script>
+  <script src="lectures-data.js?v=20260617j"></script>
   <script>
     /* ── State ── */
     const state = {
@@ -333,10 +446,58 @@
       });
     }
 
-    function placeholderHtml(categoryLabel) {
+    const CATEGORY_PLACEHOLDER_THEMES = {
+      Tafseer: { icon: 'fa-book-open', from: '#081a16', via: '#102820', to: '#1a2332', accent: '#6ee7b7' },
+      Aqeedah: { icon: 'fa-star-and-crescent', from: '#1a1424', via: '#231a30', to: '#1a2332', accent: '#c4b5fd' },
+      Fiqh_Worship: { icon: 'fa-hands-praying', from: '#141f2e', via: '#172338', to: '#1a2332', accent: '#93c5fd' },
+      Prophets_Seerah: { icon: 'fa-mosque', from: '#1a1810', via: '#252015', to: '#1a2332', accent: '#fcd34d' },
+      Tawheed: { icon: 'fa-hand-holding-heart', from: '#1a1520', via: '#221828', to: '#1a2332', accent: '#f9a8d4' },
+      Jihad: { icon: 'fa-shield-halved', from: '#1f1414', via: '#2a1818', to: '#1a2332', accent: '#fca5a5' },
+      Khilafah: { icon: 'fa-landmark', from: '#141a24', via: '#182030', to: '#1a2332', accent: '#7dd3fc' },
+      Refutation: { icon: 'fa-gavel', from: '#1f1810', via: '#2a2215', to: '#1a2332', accent: '#fdba74' },
+      'Jokers in the pack': { icon: 'fa-masks-theater', from: '#1a1420', via: '#241828', to: '#1a2332', accent: '#e879f9' },
+      'The 5 Desperate Zindeeq': { icon: 'fa-triangle-exclamation', from: '#241410', via: '#301a14', to: '#1a2332', accent: '#fb923c' },
+      'The Devils Deception': { icon: 'fa-eye-slash', from: '#141418', via: '#1c1c24', to: '#1a2332', accent: '#a78bfa' },
+      Wicked_Scholars: { icon: 'fa-user-slash', from: '#1a1414', via: '#261818', to: '#1a2332', accent: '#f87171' },
+      'Science in the quran': { icon: 'fa-atom', from: '#101a22', via: '#142430', to: '#1a2332', accent: '#67e8f9' },
+      Nikah_Divorce: { icon: 'fa-ring', from: '#1a1420', via: '#241a28', to: '#1a2332', accent: '#f9a8d4' },
+      Ramadan: { icon: 'fa-moon', from: '#101428', via: '#141c34', to: '#1a2332', accent: '#a5b4fc' },
+      Diseases_of_the_Heart: { icon: 'fa-heart-pulse', from: '#1f1218', via: '#2a1620', to: '#1a2332', accent: '#fb7185' },
+      'Personality Disorders (Series)': { icon: 'fa-brain', from: '#181428', via: '#201830', to: '#1a2332', accent: '#d8b4fe' },
+      'Who Are You?': { icon: 'fa-user', from: '#141820', via: '#1a2030', to: '#1a2332', accent: '#bae6fd' },
+      Radio_Show: { icon: 'fa-tower-broadcast', from: '#101820', via: '#142030', to: '#1a2332', accent: '#86efac' },
+      Character_Dawah: { icon: 'fa-people-group', from: '#101a18', via: '#142820', to: '#1a2332', accent: '#86efac' },
+      Ummah_Affairs: { icon: 'fa-globe', from: '#141820', via: '#1a2230', to: '#1a2332', accent: '#7dd3fc' },
+      'The Sealed Nector (Series)': { icon: 'fa-book-quran', from: '#1a1810', via: '#262015', to: '#1a2332', accent: '#d4a853' },
+      General: { icon: 'fa-headphones', from: '#1a2332', via: '#121a28', to: '#1c1910', accent: '#d4a853' },
+    };
+
+    function categoryPlaceholderTheme(categoryId) {
+      return CATEGORY_PLACEHOLDER_THEMES[categoryId] || CATEGORY_PLACEHOLDER_THEMES.General;
+    }
+
+    function simplePlaceholderHtml(categoryLabel) {
       return `<div class="absolute inset-0 flex flex-col items-center justify-center text-center p-4 thumb-placeholder">
         <i class="fas fa-book-quran text-3xl text-gold/30 mb-2"></i>
         <span class="text-[10px] uppercase tracking-widest text-slate-500">${escapeHtml(categoryLabel)}</span>
+      </div>`;
+    }
+
+    function richPlaceholderHtml(lecture) {
+      const theme = categoryPlaceholderTheme(lecture.category);
+      const part = extractPartNumber(lecture.title);
+      const sub = lecture.subcategoryLabel;
+      const preview = lecture.title.length > 78 ? `${lecture.title.slice(0, 75)}…` : lecture.title;
+      return `<div class="lecture-placeholder absolute inset-0" style="--ph-from:${theme.from};--ph-via:${theme.via};--ph-to:${theme.to};--ph-accent:${theme.accent}">
+        <div class="lecture-placeholder__pattern"></div>
+        <div class="lecture-placeholder__glow"></div>
+        <div class="lecture-placeholder__content">
+          ${part ? `<span class="lecture-placeholder__part">Part ${part}</span>` : ''}
+          <div class="lecture-placeholder__icon-ring"><i class="fas ${theme.icon}"></i></div>
+          ${sub ? `<p class="lecture-placeholder__sub">${escapeHtml(sub)}</p>` : `<p class="lecture-placeholder__sub">${escapeHtml(lecture.categoryLabel)}</p>`}
+          <p class="lecture-placeholder__label">${escapeHtml(preview)}</p>
+          <div class="lecture-placeholder__wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
+        </div>
       </div>`;
     }
 
@@ -345,13 +506,13 @@
       const audioUrl = archiveStreamUrl(ARCHIVE_BASE, lecture.archive);
       const hasThumb = isValidThumb(lecture.thumb);
 
-      const subBadge = lecture.subcategoryLabel
+      const subBadge = hasThumb && lecture.subcategoryLabel
         ? `<span class="text-[10px] uppercase tracking-wider text-slate-500">${escapeHtml(lecture.subcategoryLabel)}</span>`
         : '';
 
       const thumbSection = hasThumb
         ? `<div class="thumb-frame relative flex items-center justify-center p-3 overflow-hidden">
-            ${placeholderHtml(lecture.categoryLabel)}
+            ${simplePlaceholderHtml(lecture.categoryLabel)}
             <img src="${thumbSrc(lecture.thumb)}" alt="" class="relative z-[1]" loading="lazy"
               onerror="this.style.display='none'">
             <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950/80 text-gold text-[10px] font-semibold uppercase tracking-wider backdrop-blur-sm z-10">
@@ -359,7 +520,7 @@
             </span>
           </div>`
         : `<div class="thumb-frame relative overflow-hidden">
-            ${placeholderHtml(lecture.categoryLabel)}
+            ${richPlaceholderHtml(lecture)}
             <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950/80 text-gold text-[10px] font-semibold uppercase tracking-wider backdrop-blur-sm z-10">
               ${escapeHtml(lecture.categoryLabel)}
             </span>
