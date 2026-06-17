@@ -171,6 +171,8 @@ CAT_ORDER = [
     "Iman_Afterlife",
     "Quran_Studies",
     "Islamic_Knowledge",
+    "Ummah_Affairs",
+    "General",
     "Fiqh_Worship",
     "Jihad",
     "Khilafah",
@@ -187,8 +189,6 @@ CAT_ORDER = [
     "Who Are You?",
     "Radio_Show",
     "Character_Dawah",
-    "Ummah_Affairs",
-    "General",
 ]
 
 # Re-home root-level lectures into named series when the title matches

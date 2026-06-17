@@ -68,6 +68,15 @@ function mountMobileStyles() {
         width: 2.5rem; height: 2.5rem; font-size: 0.875rem;
         top: 8.5rem; background: rgba(212, 168, 83, 0.95);
       }
+      .audio-category-panel {
+        position: sticky;
+        top: 4.25rem;
+        z-index: 40;
+        background: rgba(12, 18, 32, 0.96) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+      }
       .audio-cat-nav {
         display: flex !important;
         flex-direction: row !important;
@@ -76,7 +85,8 @@ function mountMobileStyles() {
         -webkit-overflow-scrolling: touch;
         gap: 0.5rem !important;
         max-height: none !important;
-        padding-bottom: 0.375rem;
+        padding: 0.125rem 0.25rem 0.5rem;
+        scroll-snap-type: x proximity;
         scrollbar-width: none;
       }
       .audio-cat-nav::-webkit-scrollbar { display: none; }
@@ -86,6 +96,12 @@ function mountMobileStyles() {
         white-space: nowrap;
         min-height: 2.75rem;
         padding: 0.625rem 0.875rem !important;
+        scroll-snap-align: center;
+      }
+      .cat-picker-btn.active {
+        background: rgba(212, 168, 83, 0.15);
+        color: #d4a853;
+        border-color: rgba(212, 168, 83, 0.4);
       }
 
       #subcategoryChips {

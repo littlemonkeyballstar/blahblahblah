@@ -96,6 +96,18 @@ const LECTURE_CATEGORIES = [
     "subcategories": []
   },
   {
+    "id": "Ummah_Affairs",
+    "label": "Ummah & Contemporary Issues",
+    "count": 34,
+    "subcategories": []
+  },
+  {
+    "id": "General",
+    "label": "General Lectures",
+    "count": 79,
+    "subcategories": []
+  },
+  {
     "id": "Fiqh_Worship",
     "label": "Fiqh & Worship",
     "count": 26,
@@ -246,18 +258,6 @@ const LECTURE_CATEGORIES = [
     "id": "Character_Dawah",
     "label": "Character & Dawah",
     "count": 13,
-    "subcategories": []
-  },
-  {
-    "id": "Ummah_Affairs",
-    "label": "Ummah & Contemporary Issues",
-    "count": 34,
-    "subcategories": []
-  },
-  {
-    "id": "General",
-    "label": "General Lectures",
-    "count": 79,
     "subcategories": []
   }
 ];

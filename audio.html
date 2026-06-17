@@ -197,6 +197,18 @@
     audio { width: 100%; border-radius: .5rem; }
     .hide-scrollbar::-webkit-scrollbar { display: none; }
     .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    .audio-cat-scroll {
+      position: relative;
+      mask-image: linear-gradient(90deg, transparent, #000 0.75rem, #000 calc(100% - 0.75rem), transparent);
+    }
+    .category-picker-sheet {
+      animation: cat-sheet-in 0.28s ease-out;
+    }
+    @keyframes cat-sheet-in {
+      from { transform: translateY(100%); opacity: 0.6; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    body.category-picker-open { overflow: hidden; }
   </style>
 </head>
 
@@ -240,11 +252,41 @@
 
       <!-- Sidebar: categories -->
       <aside class="lg:w-64 flex-shrink-0 w-full">
-        <div class="lg:sticky lg:top-28 bg-slate-900/60 border border-slate-800 rounded-2xl p-3 sm:p-4">
-          <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-3 px-2">Categories</h2>
-          <nav id="categoryNav" class="audio-cat-nav space-y-1 lg:max-h-[60vh] lg:overflow-y-auto scrollbar-thin pr-1"></nav>
+        <div class="audio-category-panel lg:sticky lg:top-28 bg-slate-900/60 border border-slate-800 rounded-2xl p-3 sm:p-4">
+          <div class="flex items-center justify-between gap-2 mb-3 px-1 sm:px-2">
+            <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-500">Categories</h2>
+            <button type="button" id="openCategoryPicker" class="lg:hidden text-xs font-medium text-gold border border-gold/30 rounded-lg px-3 py-2 min-h-[2.75rem] hover:bg-gold/10 transition">
+              <i class="fas fa-list-ul mr-1.5"></i> Browse all
+            </button>
+          </div>
+          <p id="activeCategoryMobile" class="lg:hidden text-sm text-slate-300 mb-2 px-1 truncate"></p>
+          <div class="audio-cat-scroll lg:contents">
+            <nav id="categoryNav" class="audio-cat-nav space-y-1 lg:max-h-[60vh] lg:overflow-y-auto scrollbar-thin pr-1" aria-label="Quick category filters"></nav>
+          </div>
+          <p class="lg:hidden text-[10px] text-slate-500 mt-2 px-1">Swipe the row above, or tap Browse all for the full list.</p>
         </div>
       </aside>
+
+      <!-- Mobile: full category picker -->
+      <div id="categoryPicker" class="fixed inset-0 z-[70] hidden" role="dialog" aria-modal="true" aria-labelledby="categoryPickerTitle" aria-hidden="true">
+        <button type="button" id="categoryPickerBackdrop" class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm" aria-label="Close category list"></button>
+        <div class="category-picker-sheet absolute inset-x-0 bottom-0 max-h-[88vh] flex flex-col rounded-t-2xl border border-slate-700 bg-slate-925 shadow-2xl">
+          <div class="flex items-center justify-between gap-3 px-4 py-3 border-b border-slate-800 shrink-0">
+            <h2 id="categoryPickerTitle" class="font-display text-lg text-gold-gradient">All categories</h2>
+            <button type="button" id="closeCategoryPicker" class="w-10 h-10 rounded-full border border-slate-700 text-slate-400 hover:text-gold hover:border-gold/40 transition" aria-label="Close">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+          <div class="px-4 py-3 border-b border-slate-800 shrink-0">
+            <div class="relative">
+              <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 text-sm"></i>
+              <input id="categoryPickerSearch" type="search" placeholder="Filter categories…"
+                class="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold/50 text-base">
+            </div>
+          </div>
+          <nav id="categoryPickerList" class="overflow-y-auto overscroll-contain px-3 py-2 pb-[max(1rem,env(safe-area-inset-bottom))] space-y-1" aria-label="All lecture categories"></nav>
+        </div>
+      </div>
 
       <!-- Main content -->
       <div class="flex-1 min-w-0">
@@ -295,7 +337,7 @@
   </footer>
 
   <script src="site.js"></script>
-  <script src="lectures-data.js?v=20260617j"></script>
+  <script src="lectures-data.js?v=20260617k"></script>
   <script>
     /* ── State ── */
     const state = {
@@ -394,29 +436,107 @@
       return sortLectures(list, { globalSearch: searching });
     }
 
+    function categoryLabel(catId) {
+      if (catId === 'all') return 'All Lectures';
+      const cat = LECTURE_CATEGORIES.find(c => c.id === catId);
+      return cat ? cat.label : catId;
+    }
+
+    function categoryCount(catId) {
+      if (catId === 'all') return LECTURES.length;
+      const cat = LECTURE_CATEGORIES.find(c => c.id === catId);
+      return cat ? cat.count : 0;
+    }
+
+    function categoryButtonHtml(catId, label, count, active) {
+      const icon = catId === 'all' ? '<i class="fas fa-layer-group w-5 text-gold/70"></i> ' : '';
+      return `<button type="button" data-cat="${escapeHtml(catId)}" class="cat-btn w-full text-left px-3 py-2.5 rounded-lg text-sm border border-transparent hover:bg-slate-800 transition flex justify-between items-center gap-2${active ? ' active' : ''}">
+        <span class="truncate pr-2">${icon}${escapeHtml(label)}</span>
+        <span class="text-xs text-slate-500 flex-shrink-0">${count}</span>
+      </button>`;
+    }
+
+    function pickerButtonHtml(catId, label, count, active) {
+      return `<button type="button" data-cat="${escapeHtml(catId)}" class="cat-picker-btn w-full text-left px-4 py-3.5 min-h-[3rem] rounded-xl text-sm border border-transparent hover:bg-slate-800 transition flex justify-between items-center gap-3${active ? ' active' : ''}">
+        <span class="text-slate-100">${escapeHtml(label)}</span>
+        <span class="text-xs text-slate-500 flex-shrink-0 tabular-nums">${count}</span>
+      </button>`;
+    }
+
     /* ── Render category sidebar ── */
     function renderCategories() {
       const nav = document.getElementById('categoryNav');
-      const total = LECTURES.length;
-
-      let html = `
-        <button data-cat="all" class="cat-btn w-full text-left px-3 py-2.5 rounded-lg text-sm border border-transparent hover:bg-slate-800 transition flex justify-between items-center active">
-          <span><i class="fas fa-layer-group w-5 text-gold/70"></i> All Lectures</span>
-          <span class="text-xs text-slate-500">${total}</span>
-        </button>`;
-
+      let html = categoryButtonHtml('all', 'All Lectures', LECTURES.length, state.category === 'all');
       LECTURE_CATEGORIES.forEach(cat => {
-        html += `
-          <button data-cat="${escapeHtml(cat.id)}" class="cat-btn w-full text-left px-3 py-2.5 rounded-lg text-sm border border-transparent hover:bg-slate-800 transition flex justify-between items-center">
-            <span class="truncate pr-2">${escapeHtml(cat.label)}</span>
-            <span class="text-xs text-slate-500 flex-shrink-0">${cat.count}</span>
-          </button>`;
+        html += categoryButtonHtml(cat.id, cat.label, cat.count, state.category === cat.id);
       });
-
       nav.innerHTML = html;
       nav.querySelectorAll('.cat-btn').forEach(btn => {
         btn.addEventListener('click', () => selectCategory(btn.dataset.cat));
       });
+      renderCategoryPickerList();
+      updateCategoryUI();
+    }
+
+    function renderCategoryPickerList() {
+      const list = document.getElementById('categoryPickerList');
+      if (!list) return;
+      const query = (document.getElementById('categoryPickerSearch')?.value || '').trim().toLowerCase();
+      const items = [{ id: 'all', label: 'All Lectures', count: LECTURES.length }]
+        .concat(LECTURE_CATEGORIES.map(cat => ({ id: cat.id, label: cat.label, count: cat.count })))
+        .filter(item => !query || item.label.toLowerCase().includes(query));
+
+      if (!items.length) {
+        list.innerHTML = '<p class="text-center text-slate-500 py-8 text-sm">No categories match your search.</p>';
+        return;
+      }
+
+      list.innerHTML = items.map(item =>
+        pickerButtonHtml(item.id, item.label, item.count, state.category === item.id)
+      ).join('');
+
+      list.querySelectorAll('.cat-picker-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          selectCategory(btn.dataset.cat);
+          closeCategoryPicker();
+        });
+      });
+    }
+
+    function scrollActiveCategoryIntoView() {
+      const nav = document.getElementById('categoryNav');
+      const active = nav?.querySelector('.cat-btn.active');
+      if (!active || window.matchMedia('(min-width: 1024px)').matches) return;
+      active.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+
+    function updateActiveCategoryMobile() {
+      const el = document.getElementById('activeCategoryMobile');
+      if (!el) return;
+      const count = categoryCount(state.category);
+      el.textContent = `${categoryLabel(state.category)} (${count})`;
+    }
+
+    function openCategoryPicker() {
+      const picker = document.getElementById('categoryPicker');
+      if (!picker) return;
+      picker.classList.remove('hidden');
+      picker.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('category-picker-open');
+      const search = document.getElementById('categoryPickerSearch');
+      if (search) {
+        search.value = '';
+        renderCategoryPickerList();
+        requestAnimationFrame(() => search.focus());
+      }
+    }
+
+    function closeCategoryPicker() {
+      const picker = document.getElementById('categoryPicker');
+      if (!picker) return;
+      picker.classList.add('hidden');
+      picker.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('category-picker-open');
     }
 
     function selectCategory(catId) {
@@ -432,6 +552,11 @@
       document.querySelectorAll('.cat-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.cat === state.category);
       });
+      document.querySelectorAll('.cat-picker-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.cat === state.category);
+      });
+      updateActiveCategoryMobile();
+      scrollActiveCategoryIntoView();
     }
 
     /* ── Subcategory chips ── */
@@ -683,6 +808,14 @@
       state.perPage = parseInt(e.target.value);
       state.page = 1;
       renderLectures();
+    });
+
+    document.getElementById('openCategoryPicker')?.addEventListener('click', openCategoryPicker);
+    document.getElementById('closeCategoryPicker')?.addEventListener('click', closeCategoryPicker);
+    document.getElementById('categoryPickerBackdrop')?.addEventListener('click', closeCategoryPicker);
+    document.getElementById('categoryPickerSearch')?.addEventListener('input', renderCategoryPickerList);
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape') closeCategoryPicker();
     });
 
     document.getElementById('clearFilters').addEventListener('click', () => {
