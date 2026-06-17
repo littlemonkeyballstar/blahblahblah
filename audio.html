@@ -178,6 +178,39 @@
       perPage: 24,
     };
 
+    /** Pull part/episode number from titles like "Part 1", "Pt3", "[Part 01]". */
+    function extractPartNumber(title) {
+      const patterns = [
+        /\[Part\s*0*(\d+)\]/i,
+        /\bPart\s*0*(\d+)\b/i,
+        /\bPt\s*0*(\d+)\b/i,
+      ];
+      for (const pattern of patterns) {
+        const match = title.match(pattern);
+        if (match) return parseInt(match[1], 10);
+      }
+      return null;
+    }
+
+    function sortLectures(list) {
+      const inSeries = state.category !== 'all';
+      return [...list].sort((a, b) => {
+        if (inSeries) {
+          const subA = a.subcategoryLabel || '';
+          const subB = b.subcategoryLabel || '';
+          if (subA !== subB) {
+            return subA.localeCompare(subB, undefined, { sensitivity: 'base' });
+          }
+        }
+        const partA = extractPartNumber(a.title);
+        const partB = extractPartNumber(b.title);
+        if (partA !== null && partB !== null && partA !== partB) return partA - partB;
+        if (partA !== null && partB === null) return -1;
+        if (partA === null && partB !== null) return 1;
+        return a.title.localeCompare(b.title, undefined, { sensitivity: 'base' });
+      });
+    }
+
     function getFiltered() {
       let list = LECTURES;
       if (state.category !== 'all') {
@@ -194,7 +227,7 @@
           (l.subcategoryLabel && l.subcategoryLabel.toLowerCase().includes(q))
         );
       }
-      return list.sort((a, b) => a.title.localeCompare(b.title, undefined, { sensitivity: 'base' }));
+      return sortLectures(list);
     }
 
     /* ── Render category sidebar ── */
