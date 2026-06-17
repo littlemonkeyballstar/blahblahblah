@@ -5626,3 +5626,250 @@ const LECTURES = [
     "id": 534
   }
 ];
+
+const FEATURED_LECTURES = [
+  {
+    "id": 27,
+    "thumb": "thumb/ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.png"
+  },
+  {
+    "id": 35,
+    "thumb": "thumb/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 37,
+    "thumb": "thumb/BOY AND THE KING - Shaykh Faisal.jpg"
+  },
+  {
+    "id": 44,
+    "thumb": "thumb/DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 46,
+    "thumb": "thumb/DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal.png"
+  },
+  {
+    "id": 47,
+    "thumb": "thumb/DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.png"
+  },
+  {
+    "id": 48,
+    "thumb": "thumb/DEMOCRATES - Those Who Participate In Democratic Election.png"
+  },
+  {
+    "id": 60,
+    "thumb": "thumb/DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 67,
+    "thumb": "thumb/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 68,
+    "thumb": "thumb/EXCUSE OF IGNORANCE - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 71,
+    "thumb": "thumb/FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 75,
+    "thumb": "thumb/FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 87,
+    "thumb": "thumb/IFK  SLANDER OF AYSHA - Shaykh Faisal.jpg"
+  },
+  {
+    "id": 89,
+    "thumb": "thumb/IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.png"
+  },
+  {
+    "id": 90,
+    "thumb": "thumb/IMPORTANCE OF HIJRAH - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 91,
+    "thumb": "thumb/INSULTING THE PROPHET ABDALLAH AL FAISAL.jpg"
+  },
+  {
+    "id": 99,
+    "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg"
+  },
+  {
+    "id": 118,
+    "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg"
+  },
+  {
+    "id": 120,
+    "thumb": "thumb/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.jpg"
+  },
+  {
+    "id": 121,
+    "thumb": "thumb/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.jpg"
+  },
+  {
+    "id": 124,
+    "thumb": "thumb/KUFR DOONA KUFR - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 137,
+    "thumb": "thumb/MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.jpg"
+  },
+  {
+    "id": 141,
+    "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 151,
+    "thumb": "thumb/MUSA AND KHIDR - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 152,
+    "thumb": "thumb/MUSA AND QAROON - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 154,
+    "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png"
+  },
+  {
+    "id": 156,
+    "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 160,
+    "thumb": "thumb/NAWAQID AL ISLAM - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 161,
+    "thumb": "thumb/NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.png"
+  },
+  {
+    "id": 163,
+    "thumb": "thumb/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 166,
+    "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg"
+  },
+  {
+    "id": 167,
+    "thumb": "thumb/PEOPLE OF THE CAVE - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 174,
+    "thumb": "thumb/PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 194,
+    "thumb": "thumb/REALITY OF THE JEWS - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 200,
+    "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 213,
+    "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png"
+  },
+  {
+    "id": 234,
+    "thumb": "thumb/SECULARISM - Shaykh Abdallah Al Faisal.png"
+  },
+  {
+    "id": 235,
+    "thumb": "thumb/SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.png"
+  },
+  {
+    "id": 237,
+    "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png"
+  },
+  {
+    "id": 256,
+    "thumb": "thumb/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.jpg"
+  },
+  {
+    "id": 257,
+    "thumb": "thumb/SHIA KNOW YOUR ENEMY - Shaykh Faisal.jpg"
+  },
+  {
+    "id": 500,
+    "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 505,
+    "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg"
+  },
+  {
+    "id": 507,
+    "thumb": "thumb/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.png"
+  },
+  {
+    "id": 509,
+    "thumb": "thumb/VIRTUES OF MAKKAH - Shaykh Faisal.jpg"
+  },
+  {
+    "id": 517,
+    "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png"
+  },
+  {
+    "id": 55,
+    "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal_thumb.jpg"
+  },
+  {
+    "id": 58,
+    "thumb": "thumb/DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal_thumb.jpg"
+  },
+  {
+    "id": 59,
+    "thumb": "thumb/DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal_thumb.jpg"
+  },
+  {
+    "id": 65,
+    "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal_thumb.jpg"
+  },
+  {
+    "id": 74,
+    "thumb": "thumb/FOURTY SEVEN SIGNS OF THE WICKED SCHOLAR - Abdallah Al Faisal_thumb.jpg"
+  },
+  {
+    "id": 77,
+    "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal_thumb.jpg"
+  },
+  {
+    "id": 119,
+    "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal_thumb.jpg"
+  },
+  {
+    "id": 135,
+    "thumb": "thumb/MADKHALIS - Shaykh Faisal_thumb.jpg"
+  },
+  {
+    "id": 146,
+    "thumb": "thumb/MILLATU IBRAHIM - Shaykh Faisal_thumb.jpg"
+  },
+  {
+    "id": 148,
+    "thumb": "thumb/MURJIA - Shaykh Faisal_thumb.jpg"
+  },
+  {
+    "id": 155,
+    "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal_thumb.jpg"
+  },
+  {
+    "id": 217,
+    "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal_thumb.jpg"
+  },
+  {
+    "id": 260,
+    "thumb": "thumb/SIGNS OF HYPOCRITES - Shaykh Faisal_thumb.jpg"
+  },
+  {
+    "id": 529,
+    "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal_thumb.jpg"
+  },
+  {
+    "id": 531,
+    "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal_thumb.jpg"
+  }
+];

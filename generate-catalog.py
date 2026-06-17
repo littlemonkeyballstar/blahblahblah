@@ -515,6 +515,64 @@ def similarity(a: str, b: str) -> float:
     return SequenceMatcher(None, a, b).ratio()
 
 
+def flat_thumb_lookup_key(path: Path) -> str:
+    stem = re.sub(r"_thumb$", "", path.stem, flags=re.I)
+    return norm(stem)
+
+
+def flat_thumb_quality_rank(path: Path) -> tuple[int, str]:
+    """Prefer full-quality images over *_thumb copies."""
+    low = 1 if re.search(r"_thumb$", path.stem, re.I) else 0
+    return (low, path.name.lower())
+
+
+def build_featured_lectures(lectures: list[dict]) -> list[dict]:
+    """Map every thumb/ root image to a lecture for the homepage featured slideshow."""
+    if not WEB_THUMB.exists():
+        return []
+
+    by_stem: dict[str, dict] = {}
+    by_title: dict[str, dict] = {}
+    for lecture in lectures:
+        by_stem[norm(Path(lecture["archive"]).stem)] = lecture
+        by_title.setdefault(norm(lecture["title"]), lecture)
+
+    featured: list[dict] = []
+    seen_ids: set[int] = set()
+
+    paths = [
+        path for path in WEB_THUMB.iterdir()
+        if path.is_file()
+        and path.suffix.lower() in IMAGE_EXTS
+        and not is_blocked_thumb(path)
+    ]
+    for path in sorted(paths, key=flat_thumb_quality_rank):
+        key = flat_thumb_lookup_key(path)
+        if len(key) < 4:
+            continue
+
+        lecture = by_stem.get(key) or by_title.get(key)
+        if lecture is None:
+            best_match = None
+            best_score = 0.0
+            for candidate in lectures:
+                for probe in (norm(Path(candidate["archive"]).stem), norm(candidate["title"])):
+                    if len(probe) < 10:
+                        continue
+                    score = similarity(key, probe)
+                    if score > best_score and score >= 0.88:
+                        best_score = score
+                        best_match = candidate
+            lecture = best_match
+
+        if lecture is None or lecture["id"] in seen_ids:
+            continue
+        seen_ids.add(lecture["id"])
+        featured.append({"id": lecture["id"], "thumb": web_path(path)})
+
+    return featured
+
+
 def web_path(path: Path) -> str:
     return path.relative_to(WEBSITE).as_posix()
 
@@ -867,6 +925,8 @@ def main():
             ],
         })
 
+    featured_pool = build_featured_lectures(lectures)
+
     out = WEBSITE / "lectures-data.js"
     with open(out, "w", encoding="utf-8") as handle:
         handle.write("/* Auto-generated — run generate-catalog.py to refresh */\n")
@@ -876,6 +936,8 @@ def main():
         json.dump(cat_meta, handle, ensure_ascii=False, indent=2)
         handle.write(";\n\nconst LECTURES = ")
         json.dump(lectures, handle, ensure_ascii=False, indent=2)
+        handle.write(";\n\nconst FEATURED_LECTURES = ")
+        json.dump(featured_pool, handle, ensure_ascii=False, indent=2)
         handle.write(";\n")
 
     with_thumb = sum(1 for lec in lectures if lec["thumb"])
@@ -890,6 +952,7 @@ def main():
     print(f"Mirrored {mirrored} source images to thumb/_src/")
     print(f"Copied {copied} images to flat thumb/")
     print(f"Generated {len(lectures)} lectures across {len(cat_meta)} categories")
+    print(f"Featured slideshow pool: {len(featured_pool)} lectures (thumb/ folder artwork)")
     print(f"Thumbnails resolved: {with_thumb} / {len(lectures)} ({100*with_thumb/len(lectures):.1f}%)")
     print(f"  - flat thumb/: {from_flat}")
     print(f"  - thumb/assets/ (series covers, inline): {from_assets}")

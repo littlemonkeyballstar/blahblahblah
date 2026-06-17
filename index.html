@@ -138,8 +138,14 @@
     let featured = [];
 
     function getFeaturedLectures() {
-      const pool = LECTURES.filter(l => isFlatThumb(l.thumb));
-      return randomPick(pool.length >= 8 ? pool : LECTURES.filter(l => isValidThumb(l.thumb)), 8);
+      const pool = (typeof FEATURED_LECTURES !== 'undefined' ? FEATURED_LECTURES : [])
+        .map(entry => {
+          const lecture = LECTURES.find(l => l.id === entry.id);
+          return lecture ? { ...lecture, thumb: entry.thumb } : null;
+        })
+        .filter(Boolean);
+      const count = Math.min(8, pool.length);
+      return count ? randomPick(pool, count) : [];
     }
 
     function buildSlide(lec) {
@@ -189,6 +195,11 @@
 
     function initSlideshow() {
       featured = getFeaturedLectures();
+      const slideshow = document.getElementById('slideshow');
+      if (!featured.length) {
+        slideshow.closest('section').style.display = 'none';
+        return;
+      }
       document.getElementById('slideTrack').innerHTML = featured.map(buildSlide).join('');
       const dots = featured.map((_, i) =>
         `<button class="slide-dot h-2 rounded-full transition-all ${i===0?'active bg-gold w-7':'bg-slate-600 w-2'}" data-i="${i}" aria-label="Slide ${i+1}"></button>`
@@ -198,12 +209,11 @@
       document.querySelectorAll('.slide-dot').forEach(d => d.addEventListener('click', () => goTo(+d.dataset.i)));
       document.getElementById('prevBtn').onclick = () => goTo(currentSlide - 1);
       document.getElementById('nextBtn').onclick = () => goTo(currentSlide + 1);
-      const box = document.getElementById('slideshow');
-      box.onmouseenter = () => clearInterval(slideTimer);
-      box.onmouseleave = resetTimer;
+      slideshow.onmouseenter = () => clearInterval(slideTimer);
+      slideshow.onmouseleave = resetTimer;
       let touchX = 0;
-      box.addEventListener('touchstart', e => { touchX = e.changedTouches[0].screenX; }, { passive: true });
-      box.addEventListener('touchend', e => {
+      slideshow.addEventListener('touchstart', e => { touchX = e.changedTouches[0].screenX; }, { passive: true });
+      slideshow.addEventListener('touchend', e => {
         const dx = e.changedTouches[0].screenX - touchX;
         if (Math.abs(dx) > 48) goTo(currentSlide + (dx < 0 ? 1 : -1));
       }, { passive: true });
