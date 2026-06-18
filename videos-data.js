@@ -1153,5 +1153,13 @@ const VIDEOS = [
     "archive": "Women in Islam.mp4",
     "thumb": "thumb/videos/Women in Islam.jpg",
     "stream": "https://archive.org/download/FaisalVideos/Women%20in%20Islam.mp4"
+  },
+  {
+    "id": 144,
+    "title": "The creed of the Shia",
+    "file": "The Creed Of the shia .mp4",
+    "archive": "The Creed Of the shia .mp4",
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Creed Of the shia _000001.jpg",
+    "stream": "https://archive.org/download/the-creed-of-the-shia/The%20Creed%20Of%20the%20shia%20.mp4"
   }
 ];

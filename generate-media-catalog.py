@@ -13,7 +13,16 @@ VIDEO_SRC = WEBSITE.parent / "www" / "Sheikh Faisal Video Lectures"
 VIDEO_THUMB_OUT = WEBSITE / "thumb" / "videos"
 VIDEOS_ARCHIVE = "https://archive.org/metadata/FaisalVideos"
 CLIPS_ARCHIVE = "https://archive.org/metadata/the-creed-of-the-shia"
+CLIPS_ARCHIVE_BASE = "https://archive.org/download/the-creed-of-the-shia/"
 BLOCKED = {"__ia_thumb.jpg", "__ia_thumb.png"}
+
+# Full-length videos hosted on the clips IA item but listed under Video Lectures.
+PROMOTED_VIDEOS_FROM_CLIPS = [
+    {
+        "file": "The Creed Of the shia .mp4",
+        "title": "The creed of the Shia",
+    },
+]
 
 # Lectures to hide from the public video library
 EXCLUDED_VIDEOS = {
@@ -110,6 +119,7 @@ EXCLUDED_CLIP_NORMS = {
     # Duplicate of renamed upload
     norm("comfort in the truth"),
     norm("alwaraalbara"),
+    norm("The Creed Of the shia "),
 }
 
 # Polished display title for every clip (keyed by normalized IA filename stem)
@@ -177,7 +187,6 @@ _CLIP_TITLES_RAW = [
     ("Shaykh faisal funny", "Shaykh Faisal (humorous clip)"),
     ("The 'Headless Chicken' Mentality of Modern Ex", "The headless chicken mentality of modern extremists"),
     ("The Battle Between Truth & Falsehood Never Ends", "The battle between truth and falsehood never ends"),
-    ("The Creed Of the shia ", "The creed of the Shia"),
     ("The Evil Scholar is a lizard - Shaykh Abdullah Faisal", "The evil scholar is a lizard — Shaykh Abdullah Faisal"),
     ("The Importance of hijra - shaykh abdullah faisal", "The importance of hijra — Shaykh Abdullah Faisal"),
     ("The Sin of Refusing to Call a Kafir a Kafir", "The sin of refusing to call a kafir a kafir"),
@@ -302,6 +311,45 @@ def find_thumb(filename: str, local_index: dict[str, str], archive_map: dict[str
     return None
 
 
+def build_clips_archive_thumb_map(meta: dict) -> dict[str, str]:
+    archive_thumb_map: dict[str, str] = {}
+    for item in meta.get("files", []):
+        name = item.get("name", "")
+        if "the-creed-of-the-shia.thumbs/" in name and name.endswith(".jpg") and "_000001." in name:
+            base = name.split("/")[-1]
+            stem = re.sub(r"_000001\.jpg$", "", base)
+            archive_thumb_map[norm(stem)] = f"https://archive.org/download/the-creed-of-the-shia/{name}"
+    return archive_thumb_map
+
+
+def append_promoted_videos(videos: list[dict], clips_meta: dict) -> list[dict]:
+    """Add selected full-length videos from the clips archive to the video library."""
+    if not PROMOTED_VIDEOS_FROM_CLIPS:
+        return videos
+
+    thumb_map = build_clips_archive_thumb_map(clips_meta)
+    existing_titles = {norm(video["title"]) for video in videos}
+
+    for spec in PROMOTED_VIDEOS_FROM_CLIPS:
+        title = spec["title"]
+        if norm(title) in existing_titles:
+            continue
+        filename = spec["file"]
+        stem = Path(filename).stem
+        thumb = find_thumb(stem + ".mp4", {}, thumb_map) or find_thumb(filename, {}, thumb_map)
+        videos.append({
+            "id": len(videos),
+            "title": title,
+            "file": filename,
+            "archive": filename,
+            "thumb": thumb,
+            "stream": CLIPS_ARCHIVE_BASE + urllib.parse.quote(filename),
+        })
+        existing_titles.add(norm(title))
+
+    return videos
+
+
 def build_videos():
     meta = fetch_metadata(VIDEOS_ARCHIVE)
     local_index = build_thumb_index()
@@ -349,16 +397,10 @@ def build_videos():
     return videos
 
 
-def build_clips():
-    meta = fetch_metadata(CLIPS_ARCHIVE)
-
-    archive_thumb_map: dict[str, str] = {}
-    for item in meta.get("files", []):
-        name = item.get("name", "")
-        if "the-creed-of-the-shia.thumbs/" in name and name.endswith(".jpg") and "_000001." in name:
-            base = name.split("/")[-1]
-            stem = re.sub(r"_000001\.jpg$", "", base)
-            archive_thumb_map[norm(stem)] = f"https://archive.org/download/the-creed-of-the-shia/{name}"
+def build_clips(meta: dict | None = None):
+    if meta is None:
+        meta = fetch_metadata(CLIPS_ARCHIVE)
+    archive_thumb_map = build_clips_archive_thumb_map(meta)
 
     all_mp4 = [f["name"] for f in meta.get("files", []) if f.get("name", "").endswith(".mp4")]
     chosen = []
@@ -414,10 +456,11 @@ def write_js(filename: str, const_name: str, base_const: str, base_url: str, ite
 
 
 def main():
-    videos = build_videos()
-    clips = build_clips()
+    clips_meta = fetch_metadata(CLIPS_ARCHIVE)
+    videos = append_promoted_videos(build_videos(), clips_meta)
+    clips = build_clips(clips_meta)
     write_js("videos-data.js", "VIDEOS", "VIDEOS_ARCHIVE_BASE", "https://archive.org/download/FaisalVideos/", videos)
-    write_js("clips-data.js", "CLIPS", "CLIPS_ARCHIVE_BASE", "https://archive.org/download/the-creed-of-the-shia/", clips)
+    write_js("clips-data.js", "CLIPS", "CLIPS_ARCHIVE_BASE", CLIPS_ARCHIVE_BASE, clips)
 
     v_thumbs = sum(1 for v in videos if v.get("thumb"))
     c_thumbs = sum(1 for c in clips if c.get("thumb"))
