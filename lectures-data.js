@@ -104,7 +104,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "General",
     "label": "General Lectures",
-    "count": 79,
+    "count": 78,
     "subcategories": []
   },
   {
@@ -5336,23 +5336,13 @@ const LECTURES = [
   },
   {
     "title": "Towards Watering Down The Holy Quran",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "category": "Quran_Studies",
+    "categoryLabel": "Quran Studies",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Towards Watering Down The Holy Quran.mp3",
     "thumb": null,
     "id": 507
-  },
-  {
-    "title": "Towards Watering Down The Holy Quran(1)",
-    "category": "Quran_Studies",
-    "categoryLabel": "Quran Studies",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "Towards Watering Down The Holy Quran(1).mp3",
-    "thumb": null,
-    "id": 508
   },
   {
     "title": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal",
@@ -5362,7 +5352,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.mp3",
     "thumb": "thumb/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.png",
-    "id": 509
+    "id": 508
   },
   {
     "title": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR - Abdallah Al Faisal",
@@ -5372,7 +5362,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/extracted/40f8d0fb22e4b9.jpg",
-    "id": 510
+    "id": 509
   },
   {
     "title": "VIRTUES OF MAKKAH - Shaykh Faisal",
@@ -5382,7 +5372,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "VIRTUES OF MAKKAH - Shaykh Faisal.mp3",
     "thumb": "thumb/VIRTUES OF MAKKAH - Shaykh Faisal.jpg",
-    "id": 511
+    "id": 510
   },
   {
     "title": "VIRTUES OF RAMADAN - Abdallah Al Faisal",
@@ -5392,7 +5382,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Ramadan/VIRTUES OF RAMADAN - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 512
+    "id": 511
   },
   {
     "title": "We Hear & We Obey (06.23.11)",
@@ -5402,7 +5392,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "We Hear & We Obey (06.23.11).mp3",
     "thumb": null,
-    "id": 513
+    "id": 512
   },
   {
     "title": "We Shall Never Follow the Jews & the Christians (07.14.11)",
@@ -5412,7 +5402,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "We Shall Never Follow the Jews & the Christians (07.14.11).mp3",
     "thumb": null,
-    "id": 514
+    "id": 513
   },
   {
     "title": "We Shall Never give up Better For Worse (07.16.11)",
@@ -5422,7 +5412,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "We Shall Never give up Better For Worse (07.16.11).mp3",
     "thumb": null,
-    "id": 515
+    "id": 514
   },
   {
     "title": "Weakness of Mankind [Part 1] (06.25.11)",
@@ -5432,7 +5422,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Weakness of Mankind [Part 1] (06.25.11).mp3",
     "thumb": null,
-    "id": 516
+    "id": 515
   },
   {
     "title": "Weakness of Mankind [Part 2] (06.26.11)",
@@ -5442,7 +5432,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Weakness of Mankind [Part 2] (06.26.11).mp3",
     "thumb": null,
-    "id": 517
+    "id": 516
   },
   {
     "title": "Weakness of Mankind [Part 3] (06.27.11)",
@@ -5452,7 +5442,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Weakness of Mankind [Part 3] (06.27.11).mp3",
     "thumb": null,
-    "id": 518
+    "id": 517
   },
   {
     "title": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal",
@@ -5462,7 +5452,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png",
-    "id": 519
+    "id": 518
   },
   {
     "title": "Where Is Allah SWT (07.08.11)",
@@ -5472,7 +5462,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Where Is Allah SWT (07.08.11).mp3",
     "thumb": null,
-    "id": 520
+    "id": 519
   },
   {
     "title": "White Supremacy - A Cancer In The Body of Humanity",
@@ -5482,7 +5472,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "White Supremacy - A Cancer In The Body of Humanity.mp3",
     "thumb": null,
-    "id": 521
+    "id": 520
   },
   {
     "title": "Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11)",
@@ -5492,7 +5482,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11).mp3",
     "thumb": null,
-    "id": 522
+    "id": 521
   },
   {
     "title": "Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11)",
@@ -5502,7 +5492,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11).mp3",
     "thumb": null,
-    "id": 523
+    "id": 522
   },
   {
     "title": "Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11)",
@@ -5512,7 +5502,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11).mp3",
     "thumb": null,
-    "id": 524
+    "id": 523
   },
   {
     "title": "Who Are You – Part 1",
@@ -5522,7 +5512,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who Are You – Part 1.mp3",
     "thumb": null,
-    "id": 525
+    "id": 524
   },
   {
     "title": "Who Are You – Part 2",
@@ -5532,7 +5522,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who Are You – Part 2.mp3",
     "thumb": null,
-    "id": 526
+    "id": 525
   },
   {
     "title": "Who are You2",
@@ -5542,7 +5532,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who are You2.mp3",
     "thumb": null,
-    "id": 527
+    "id": 526
   },
   {
     "title": "Why is takfir important",
@@ -5552,7 +5542,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "conf_imped_takfir.mp3",
     "thumb": null,
-    "id": 528
+    "id": 527
   },
   {
     "title": "Why we hate the shia",
@@ -5562,7 +5552,7 @@ const LECTURES = [
     "subcategoryLabel": "Shia",
     "archive": "Shia/Why we hate the shia.mp3",
     "thumb": null,
-    "id": 529
+    "id": 528
   },
   {
     "title": "WICKED SCHOLAR - Abdallah Al Faisal",
@@ -5572,7 +5562,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/WICKED SCHOLAR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 530
+    "id": 529
   },
   {
     "title": "WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal",
@@ -5582,7 +5572,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3",
     "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg",
-    "id": 531
+    "id": 530
   },
   {
     "title": "Wish For Death If Your Claim Is The Truth (06.25.11)",
@@ -5592,7 +5582,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Wish For Death If Your Claim Is The Truth (06.25.11).mp3",
     "thumb": null,
-    "id": 532
+    "id": 531
   },
   {
     "title": "WIVES & CHILDREN - Shaykh Faisal",
@@ -5602,7 +5592,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3",
     "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png",
-    "id": 533
+    "id": 532
   },
   {
     "title": "WOMEN IN ISLAM - Abdallah Al Faisal",
@@ -5612,7 +5602,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "WOMEN IN ISLAM - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 534
+    "id": 533
   },
   {
     "title": "Worst Con Artist is the Man Who Cons Himself (08.03.11)",
@@ -5622,7 +5612,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Worst Con Artist is the Man Who Cons Himself (08.03.11).mp3",
     "thumb": null,
-    "id": 535
+    "id": 534
   },
   {
     "title": "You Can't Have Your Cake & Eat It Too (07.20.11)",
@@ -5632,7 +5622,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "You Can't Have Your Cake & Eat It Too (07.20.11).mp3",
     "thumb": null,
-    "id": 536
+    "id": 535
   }
 ];
 
@@ -5874,23 +5864,23 @@ const FEATURED_LECTURES = [
     "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 509,
+    "id": 508,
     "thumb": "thumb/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.png"
   },
   {
-    "id": 511,
+    "id": 510,
     "thumb": "thumb/VIRTUES OF MAKKAH - Shaykh Faisal.jpg"
   },
   {
-    "id": 519,
+    "id": 518,
     "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png"
   },
   {
-    "id": 531,
+    "id": 530,
     "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg"
   },
   {
-    "id": 533,
+    "id": 532,
     "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png"
   }
 ];

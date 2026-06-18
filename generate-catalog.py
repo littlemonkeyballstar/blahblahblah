@@ -323,6 +323,12 @@ LECTURE_TITLE_OVERRIDES = {
     norm("conf_imped_takfir"): "Why is takfir important",
     norm("is-the-dawla-khawarij"): "Is the dawla khawarij?",
     norm("TAFSEER OF SURAH AT TAWBAH - Abdallah Al Faisal"): "Tafsir At-Tawbah (Whole 25h lecture)",
+    norm("Towards Watering Down The Holy Quran(1)"): "Towards Watering Down The Holy Quran",
+}
+
+LECTURE_CATEGORY_OVERRIDES = {
+    norm("Towards Watering Down The Holy Quran"): "Quran_Studies",
+    norm("Towards Watering Down The Holy Quran(1)"): "Quran_Studies",
 }
 
 # Pin specific lectures to the top of their sub-series (lower = earlier).
@@ -398,7 +404,6 @@ GENERAL_LECTURE_TITLES = frozenset(
         "Their hearts Are Alike",
         "They Shall Reap What They Sow and You Shall Reap What You Sow (08.22.11)",
         "They Shall Reap What They Sow and You Shall Reap What You Sow 08",
-        "Towards Watering Down The Holy Quran",
         "We Hear & We Obey (06.23.11)",
         "We Shall Never Follow the Jews & the Christians (07.14.11)",
         "We Shall Never give up Better For Worse (07.16.11)",
@@ -493,7 +498,7 @@ def lecture_sort_key(lecture: dict) -> str:
     return lecture["title"].lower()
 
 
-def lecture_dedupe_rank(lecture: dict) -> tuple[int, int, int]:
+def lecture_dedupe_rank(lecture: dict) -> tuple[int, int, int, int]:
     """Prefer Tafseer-folder copies, then other folder copies over root duplicates."""
     archive = lecture["archive"]
     lower = archive.lower()
@@ -503,7 +508,9 @@ def lecture_dedupe_rank(lecture: dict) -> tuple[int, int, int]:
         folder_rank = 1
     else:
         folder_rank = 0
-    return (folder_rank, 1 if "/" in archive else 0, -len(archive))
+    stem = Path(archive).stem
+    clean_copy = 1 if not re.search(r"\(\d+\)\s*$", stem) else 0
+    return (folder_rank, clean_copy, 1 if "/" in archive else 0, -len(archive))
 
 
 def dedupe_lectures(lectures: list[dict]) -> list[dict]:
@@ -967,8 +974,12 @@ def main():
             else:
                 folder_category, folder_subcategory = "General", None
 
-            title = resolve_lecture_title(filename[:-4])
+            stem = filename[:-4]
+            title = resolve_lecture_title(stem)
             category, subcategory = resolve_category(title, folder_category, folder_subcategory)
+            if norm(stem) in LECTURE_CATEGORY_OVERRIDES:
+                category = LECTURE_CATEGORY_OVERRIDES[norm(stem)]
+                subcategory = None
             thumb = resolver.resolve(full, title, folder)
 
             entry = {
