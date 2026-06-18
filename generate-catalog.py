@@ -97,7 +97,6 @@ DISPLAY_NAMES = {
     "Character_Dawah": "Character & Dawah",
     "Ummah_Affairs": "Ummah & Contemporary Issues",
     "The 5 Desperate Zindeeq": "The 5 Desperate Zindeeq",
-    "Quran_Studies": "Quran Studies",
     "Iman_Afterlife": "Iman & the Hereafter",
     "Islamic_Knowledge": "Islamic Knowledge",
 }
@@ -169,7 +168,6 @@ CAT_ORDER = [
     "Tawheed",
     "Aqeedah",
     "Iman_Afterlife",
-    "Quran_Studies",
     "Islamic_Knowledge",
     "Ummah_Affairs",
     "General",
@@ -208,7 +206,7 @@ TITLE_SERIES_PATTERNS: list[tuple[str, str, str | None]] = [
     (r"at conference", "Ummah_Affairs", None),
     (r"science of quran|animals of the holy quran|prophesies of the holy quran|20 laws of nature", "Science in the quran", None),
     (r"21 reasons.*quran|10 things.*cannot doubt|watering down.*quran|islam was revealed in stages|"
-     r"our 6 sacred|quran is a wise|abrogated evidences", "Quran_Studies", None),
+     r"our 6 sacred|quran is a wise|abrogated evidences", "Refutation", None),
     (r"reality of emaan|paradise is exclusive|8 gates of paradise|35 people|36 people|"
      r"power of intercession|they do not love allah|trade that saves|painful torment|wish for death|"
      r"\bworst sins\b|evil effects of sins|evil consequences.*rasool|they shall reap", "Iman_Afterlife", None),
@@ -295,6 +293,8 @@ REFUTATION_SUB_PATTERNS: list[tuple[str, str]] = [
     (r"do not take the kuffar|do not take my enemy|rejecting the taghut|fight in the cause of taghut|"
      r"worst of creatures|insulting the prophet|slander of aisha|ifk|radical islamic terror|"
      r"white supremacy|domain of apostasy|refut", "refutation_general"),
+    (r"watering down.*quran|10 things.*cannot doubt|21 reasons.*quran|abrogated evidences|"
+     r"our 6 sacred|islam was revealed in stages|quran is a wise", "refutation_general"),
 ]
 
 TAFSIR_SUB_PATTERNS: list[tuple[str, str]] = [
@@ -327,8 +327,8 @@ LECTURE_TITLE_OVERRIDES = {
 }
 
 LECTURE_CATEGORY_OVERRIDES = {
-    norm("Towards Watering Down The Holy Quran"): "Quran_Studies",
-    norm("Towards Watering Down The Holy Quran(1)"): "Quran_Studies",
+    norm("Towards Watering Down The Holy Quran"): "Refutation",
+    norm("Towards Watering Down The Holy Quran(1)"): "Refutation",
 }
 
 # Pin specific lectures to the top of their sub-series (lower = earlier).
@@ -980,6 +980,8 @@ def main():
             if norm(stem) in LECTURE_CATEGORY_OVERRIDES:
                 category = LECTURE_CATEGORY_OVERRIDES[norm(stem)]
                 subcategory = None
+            if category == "Refutation" and not subcategory:
+                subcategory = detect_refutation_subcategory(title)
             thumb = resolver.resolve(full, title, folder)
 
             entry = {

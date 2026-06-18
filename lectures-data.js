@@ -90,12 +90,6 @@ const LECTURE_CATEGORIES = [
     "subcategories": []
   },
   {
-    "id": "Quran_Studies",
-    "label": "Quran Studies",
-    "count": 1,
-    "subcategories": []
-  },
-  {
     "id": "Ummah_Affairs",
     "label": "Ummah & Contemporary Issues",
     "count": 34,
@@ -128,7 +122,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "Refutation",
     "label": "Refutations",
-    "count": 36,
+    "count": 37,
     "subcategories": [
       {
         "id": "refutation_shia",
@@ -163,7 +157,7 @@ const LECTURE_CATEGORIES = [
       {
         "id": "refutation_general",
         "label": "General Refutations",
-        "count": 16
+        "count": 17
       }
     ]
   },
@@ -5336,10 +5330,10 @@ const LECTURES = [
   },
   {
     "title": "Towards Watering Down The Holy Quran",
-    "category": "Quran_Studies",
-    "categoryLabel": "Quran Studies",
-    "subcategory": null,
-    "subcategoryLabel": null,
+    "category": "Refutation",
+    "categoryLabel": "Refutations",
+    "subcategory": "refutation_general",
+    "subcategoryLabel": "General Refutations",
     "archive": "Towards Watering Down The Holy Quran.mp3",
     "thumb": null,
     "id": 507
