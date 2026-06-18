@@ -4,7 +4,7 @@ const SITE_DISCLAIMER = `This is not an official website and is not affiliated w
 const TELEGRAM_URL = 'https://t.me/ShaykhAbdullahFaisal';
 const TELEGRAM_PDF_URL = 'https://t.me/Shaykh_faisal_pdf';
 /** Paste your Cloudflare Web Analytics token from the dashboard to enable stats. */
-const CLOUDFLARE_ANALYTICS_TOKEN = '';
+const CLOUDFLARE_ANALYTICS_TOKEN = 'c26870c8f6414600ac3e8e0df17d47bb';
 
 const _lectureChunks = new Map();
 const _lectureChunkLoads = new Map();
