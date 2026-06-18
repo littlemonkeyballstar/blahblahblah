@@ -6,7 +6,17 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <meta name="description" content="542+ audio lectures by Shaykh Abdullah Faisal — organized by series and topic.">
+  <meta name="description" content="500+ audio lectures by Shaykh Abdullah Faisal — organized by series and topic.">
+  <link rel="canonical" href="https://shaykhabdullahfaisal.com/audio.html">
+  <meta property="og:title" content="Audio Lectures • Shaykh Abdullah Faisal">
+  <meta property="og:description" content="500+ audio lectures by Shaykh Abdullah Faisal — organized by series and topic.">
+  <meta property="og:url" content="https://shaykhabdullahfaisal.com/audio.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Shaykh Abdullah Faisal — Educational Archive">
+  <meta property="og:image" content="https://shaykhabdullahfaisal.com/apple-touch-icon.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Audio Lectures • Shaykh Abdullah Faisal">
+  <meta name="twitter:description" content="500+ audio lectures by Shaykh Abdullah Faisal — organized by series and topic.">
   <title>Audio Lectures • Shaykh Abdullah Faisal</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
@@ -340,7 +350,7 @@
   </footer>
 
   <script src="site.js"></script>
-  <script src="lectures-data.js?v=20260617k"></script>
+  <script src="lectures-meta.js"></script>
   <script>
     /* ── State ── */
     const state = {
@@ -425,7 +435,7 @@
       const query = state.search.trim();
       const searching = !!query;
 
-      let list = LECTURES;
+      let list = getLoadedLectures();
       if (searching) {
         list = list.filter(l => matchesLectureSearch(l, query));
       } else {
@@ -446,7 +456,7 @@
     }
 
     function categoryCount(catId) {
-      if (catId === 'all') return LECTURES.length;
+      if (catId === 'all') return LECTURE_TOTAL;
       const cat = LECTURE_CATEGORIES.find(c => c.id === catId);
       return cat ? cat.count : 0;
     }
@@ -469,7 +479,7 @@
     /* ── Render category sidebar ── */
     function renderCategories() {
       const nav = document.getElementById('categoryNav');
-      let html = categoryButtonHtml('all', 'All Lectures', LECTURES.length, state.category === 'all');
+      let html = categoryButtonHtml('all', 'All Lectures', LECTURE_TOTAL, state.category === 'all');
       LECTURE_CATEGORIES.forEach(cat => {
         html += categoryButtonHtml(cat.id, cat.label, cat.count, state.category === cat.id);
       });
@@ -485,7 +495,7 @@
       const list = document.getElementById('categoryPickerList');
       if (!list) return;
       const query = (document.getElementById('categoryPickerSearch')?.value || '').trim().toLowerCase();
-      const items = [{ id: 'all', label: 'All Lectures', count: LECTURES.length }]
+      const items = [{ id: 'all', label: 'All Lectures', count: LECTURE_TOTAL }]
         .concat(LECTURE_CATEGORIES.map(cat => ({ id: cat.id, label: cat.label, count: cat.count })))
         .filter(item => !query || item.label.toLowerCase().includes(query));
 
@@ -548,6 +558,25 @@
       state.page = 1;
       updateCategoryUI();
       renderSubcategories();
+      refreshLectures();
+    }
+
+    let lectureLoadToken = 0;
+
+    async function refreshLectures() {
+      const token = ++lectureLoadToken;
+      const grid = document.getElementById('lectureGrid');
+      const empty = document.getElementById('emptyState');
+      empty.classList.add('hidden');
+      grid.innerHTML = '<p class="col-span-full text-center py-16 text-slate-500"><i class="fas fa-spinner fa-spin mr-2"></i>Loading lectures…</p>';
+      try {
+        await ensureLecturesForFilter(state.category, state.search);
+      } catch (err) {
+        if (token !== lectureLoadToken) return;
+        grid.innerHTML = '<p class="col-span-full text-center py-16 text-red-400/90">Could not load lectures. Please refresh the page.</p>';
+        return;
+      }
+      if (token !== lectureLoadToken) return;
       renderLectures();
     }
 
@@ -590,7 +619,7 @@
           state.subcategory = btn.dataset.sub;
           state.page = 1;
           chips.querySelectorAll('.sub-btn').forEach(b => b.classList.toggle('active', b === btn));
-          renderLectures();
+          refreshLectures();
         });
       });
     }
@@ -700,7 +729,7 @@
       const pageItems = filtered.slice(start, start + state.perPage);
 
       document.getElementById('showingCount').textContent = filtered.length;
-      document.getElementById('totalCount').textContent = LECTURES.length;
+      document.getElementById('totalCount').textContent = LECTURE_TOTAL;
 
       let label = '';
       const query = state.search.trim();
@@ -800,10 +829,12 @@
     }
 
     /* ── Events ── */
+    let searchDebounce = null;
     document.getElementById('searchInput').addEventListener('input', e => {
       state.search = e.target.value;
       state.page = 1;
-      renderLectures();
+      clearTimeout(searchDebounce);
+      searchDebounce = setTimeout(() => refreshLectures(), 200);
     });
 
     document.getElementById('perPage').addEventListener('change', e => {
@@ -828,13 +859,17 @@
       document.getElementById('searchInput').value = '';
       updateCategoryUI();
       renderSubcategories();
-      renderLectures();
+      refreshLectures();
     });
 
-    function applyDeepLink() {
+    async function applyDeepLink() {
       const param = new URLSearchParams(location.search).get('lecture');
       if (param === null) return;
-      const lec = LECTURES.find(l => l.id === parseInt(param, 10));
+      const id = parseInt(param, 10);
+      const catId = typeof LECTURE_ID_INDEX !== 'undefined' ? LECTURE_ID_INDEX[String(id)] : null;
+      if (catId) await loadLectureChunk(catId);
+      else await loadAllLectureChunks();
+      const lec = getLoadedLectures().find(l => l.id === id);
       if (!lec) return;
       state.category = lec.category;
       state.subcategory = lec.subcategory || 'all';
@@ -858,11 +893,10 @@
     document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
     mountTelegramLink();
     setActiveNav('audio');
-    document.getElementById('totalCount').textContent = LECTURES.length;
+    document.getElementById('totalCount').textContent = LECTURE_TOTAL;
     renderCategories();
     renderSubcategories();
-    renderLectures();
-    applyDeepLink();
+    refreshLectures().then(() => applyDeepLink());
   </script>
 
 </body>

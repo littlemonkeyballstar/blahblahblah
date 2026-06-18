@@ -1,7 +1,154 @@
 /* Shared helpers for Shaykh Abdullah Faisal Archive */
+const SITE_URL = 'https://shaykhabdullahfaisal.com';
 const SITE_DISCLAIMER = `This is not an official website and is not affiliated with Shaykh Abdullah Faisal. This archive is maintained independently and is intended strictly for educational purposes.`;
 const TELEGRAM_URL = 'https://t.me/ShaykhAbdullahFaisal';
 const TELEGRAM_PDF_URL = 'https://t.me/Shaykh_faisal_pdf';
+/** Paste your Cloudflare Web Analytics token from the dashboard to enable stats. */
+const CLOUDFLARE_ANALYTICS_TOKEN = '';
+
+const _lectureChunks = new Map();
+const _lectureChunkLoads = new Map();
+const _loadedScripts = new Set();
+
+function registerLectureChunk(catId, items) {
+  _lectureChunks.set(catId, items);
+}
+
+function getLoadedLectures() {
+  return [..._lectureChunks.values()]
+    .flat()
+    .sort((a, b) => a.id - b.id);
+}
+
+function loadScriptOnce(src) {
+  if (_loadedScripts.has(src)) {
+    return _lectureChunkLoads.get(src) || Promise.resolve();
+  }
+  _loadedScripts.add(src);
+  const promise = new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error(`Failed to load ${src}`));
+    document.head.appendChild(script);
+  });
+  _lectureChunkLoads.set(src, promise);
+  return promise;
+}
+
+async function loadLectureChunk(catId) {
+  if (_lectureChunks.has(catId)) return;
+  const url = typeof LECTURE_CHUNK_URLS !== 'undefined' ? LECTURE_CHUNK_URLS[catId] : null;
+  if (!url) return;
+  await loadScriptOnce(url);
+}
+
+async function loadAllLectureChunks() {
+  if (typeof LECTURE_CHUNK_URLS === 'undefined') return;
+  await Promise.all(Object.keys(LECTURE_CHUNK_URLS).map(loadLectureChunk));
+}
+
+async function ensureLecturesForFilter(category, searchQuery) {
+  if ((searchQuery || '').trim() || category === 'all') {
+    await loadAllLectureChunks();
+  } else {
+    await loadLectureChunk(category);
+  }
+}
+
+function initCloudflareAnalytics() {
+  if (!CLOUDFLARE_ANALYTICS_TOKEN) return;
+  const src = 'https://static.cloudflareinsights.com/beacon.min.js';
+  if (document.querySelector(`script[data-cf-beacon][src="${src}"]`)) return;
+  const script = document.createElement('script');
+  script.defer = true;
+  script.src = src;
+  script.setAttribute('data-cf-beacon', JSON.stringify({ token: CLOUDFLARE_ANALYTICS_TOKEN }));
+  document.head.appendChild(script);
+}
+
+function searchIndexHaystack(item) {
+  return normalizeForSearch([item.title, item.sub || '', item.type || ''].join(' '));
+}
+
+function searchGlobalIndex(query, limit = 20) {
+  if (typeof SEARCH_INDEX === 'undefined') return [];
+  const words = normalizeForSearch(query).split(' ').filter(Boolean);
+  if (!words.length) return [];
+  const results = [];
+  for (const item of SEARCH_INDEX) {
+    const haystack = searchIndexHaystack(item);
+    if (words.every(word => haystack.includes(word))) results.push(item);
+    if (results.length >= limit) break;
+  }
+  return results;
+}
+
+const SEARCH_TYPE_META = {
+  audio: { label: 'Audio', icon: 'fa-headphones', page: 'audio.html' },
+  video: { label: 'Video', icon: 'fa-video', page: 'videos.html' },
+  clip: { label: 'Clip', icon: 'fa-film', page: 'clips.html' },
+};
+
+function mountGlobalSearch({ inputId = 'globalSearch', resultsId = 'globalSearchResults' } = {}) {
+  const input = document.getElementById(inputId);
+  const results = document.getElementById(resultsId);
+  if (!input || !results || typeof SEARCH_INDEX === 'undefined') return;
+
+  let debounceTimer = null;
+
+  const hideResults = () => {
+    results.classList.add('hidden');
+    results.innerHTML = '';
+  };
+
+  const renderResults = (items) => {
+    if (!items.length) {
+      results.innerHTML = '<p class="px-4 py-3 text-sm text-slate-500">No results found.</p>';
+      results.classList.remove('hidden');
+      return;
+    }
+    results.innerHTML = items.map(item => {
+      const meta = SEARCH_TYPE_META[item.type] || SEARCH_TYPE_META.audio;
+      return `
+        <a href="${item.href}" class="global-search-result flex items-center gap-3 px-4 py-3 hover:bg-slate-800/80 transition border-b border-slate-800/80 last:border-0">
+          <span class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
+            <i class="fas ${meta.icon} text-gold text-sm"></i>
+          </span>
+          <span class="min-w-0 flex-1">
+            <span class="block text-sm text-slate-100 leading-snug line-clamp-2">${escapeHtml(item.title)}</span>
+            <span class="block text-xs text-slate-500 mt-0.5">${escapeHtml(meta.label)}${item.sub ? ` · ${escapeHtml(item.sub)}` : ''}</span>
+          </span>
+          <i class="fas fa-arrow-right text-gold/40 text-xs flex-shrink-0"></i>
+        </a>`;
+    }).join('');
+    results.classList.remove('hidden');
+  };
+
+  input.addEventListener('input', () => {
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(() => {
+      const query = input.value.trim();
+      if (!query) {
+        hideResults();
+        return;
+      }
+      renderResults(searchGlobalIndex(query));
+    }, 180);
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      input.blur();
+      hideResults();
+    }
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!results.contains(e.target) && e.target !== input) hideResults();
+  });
+}
 
 function mountMobileStyles() {
   if (document.getElementById('mobile-styles')) return;
@@ -160,11 +307,19 @@ function mountMobileStyles() {
         transform: none !important;
       }
     }
+
+    .global-search-panel {
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+    }
+    .global-search-result:active {
+      background: rgba(30, 41, 59, 0.9);
+    }
   `;
   document.head.appendChild(style);
 }
 
 function mountTopBar() {
+  initCloudflareAnalytics();
   mountMobileStyles();
   if (!document.getElementById('top-bar-styles')) {
     const style = document.createElement('style');

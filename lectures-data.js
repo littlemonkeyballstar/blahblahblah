@@ -2653,7 +2653,7 @@ const LECTURES = [
     "categoryLabel": "Prophets & Seerah",
     "subcategory": null,
     "subcategoryLabel": null,
-    "archive": "19.Sheikh Abdullah Faisal   Al Isra Wal Mira'aj.mp3",
+    "archive": "Sheikh Abdullah Faisal   Al Isra Wal Mira'aj.mp3",
     "thumb": null,
     "id": 239
   },
@@ -2663,7 +2663,7 @@ const LECTURES = [
     "categoryLabel": "Ummah & Contemporary Issues",
     "subcategory": null,
     "subcategoryLabel": null,
-    "archive": "18.Sheikh Abdullah Faisal - Cancers in the Body of The Ummah.mp3",
+    "archive": "Sheikh Abdullah Faisal - Cancers in the Body of The Ummah.mp3",
     "thumb": null,
     "id": 240
   },
@@ -2673,7 +2673,7 @@ const LECTURES = [
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
-    "archive": "17.Sheikh Abdullah Faisal - Democracy   The Greatest Shirk.mp3",
+    "archive": "Sheikh Abdullah Faisal - Democracy   The Greatest Shirk.mp3",
     "thumb": null,
     "id": 241
   },
@@ -2683,7 +2683,7 @@ const LECTURES = [
     "categoryLabel": "Ummah & Contemporary Issues",
     "subcategory": null,
     "subcategoryLabel": null,
-    "archive": "16.Sheikh Abdullah Faisal - Human Rights.mp3",
+    "archive": "Sheikh Abdullah Faisal - Human Rights.mp3",
     "thumb": null,
     "id": 242
   },

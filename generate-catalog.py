@@ -946,6 +946,119 @@ class ThumbResolver:
         return extract_embedded_art(mp3_path, rel_key)
 
 
+def category_chunk_slug(cat_id: str) -> str:
+    slug = re.sub(r"[^a-z0-9]+", "-", cat_id.lower()).strip("-")
+    return slug or "general"
+
+
+def write_catalog_outputs(
+    lectures: list[dict],
+    cat_meta: list[dict],
+    featured_pool: list[dict],
+    version: str,
+) -> None:
+    """Write split catalog bundles for lazy-loaded audio + lighter homepage."""
+    by_id = {lec["id"]: lec for lec in lectures}
+    featured_resolved = []
+    for entry in featured_pool:
+        lec = by_id.get(entry["id"])
+        if not lec:
+            continue
+        featured_resolved.append({
+            "id": lec["id"],
+            "title": lec["title"],
+            "categoryLabel": lec["categoryLabel"],
+            "thumb": entry.get("thumb") or lec.get("thumb"),
+        })
+
+    home_lectures = [
+        {
+            "id": lec["id"],
+            "title": lec["title"],
+            "categoryLabel": lec["categoryLabel"],
+        }
+        for lec in lectures
+    ]
+
+    id_index = {str(lec["id"]): lec["category"] for lec in lectures}
+    audio_search = [
+        {
+            "type": "audio",
+            "id": lec["id"],
+            "title": lec["title"],
+            "sub": lec["categoryLabel"],
+            "href": f"audio.html?lecture={lec['id']}",
+        }
+        for lec in lectures
+    ]
+
+    chunk_dir = WEBSITE / "data" / "lectures"
+    chunk_dir.mkdir(parents=True, exist_ok=True)
+    chunk_urls: dict[str, str] = {}
+    by_cat: dict[str, list[dict]] = {}
+    for lecture in lectures:
+        by_cat.setdefault(lecture["category"], []).append(lecture)
+
+    for cat_id in sorted(by_cat, key=category_sort_key):
+        slug = category_chunk_slug(cat_id)
+        rel_path = f"data/lectures/{slug}.js"
+        chunk_urls[cat_id] = f"{rel_path}?v={version}"
+        chunk_path = WEBSITE / rel_path
+        with open(chunk_path, "w", encoding="utf-8") as handle:
+            handle.write(f"/* Auto-generated chunk: {cat_id} */\n")
+            handle.write(f"registerLectureChunk({json.dumps(cat_id)}, ")
+            json.dump(by_cat[cat_id], handle, ensure_ascii=False, indent=2)
+            handle.write(");\n")
+
+    meta_path = WEBSITE / "lectures-meta.js"
+    with open(meta_path, "w", encoding="utf-8") as handle:
+        handle.write("/* Auto-generated — run generate-catalog.py to refresh */\n")
+        handle.write('const ARCHIVE_BASE = "https://archive.org/download/FaisalAudios/";\n')
+        handle.write('const THUMB_FALLBACK = "thumb/__ia_thumb.jpg";\n')
+        handle.write(f"const LECTURE_TOTAL = {len(lectures)};\n\n")
+        handle.write("const LECTURE_CATEGORIES = ")
+        json.dump(cat_meta, handle, ensure_ascii=False, indent=2)
+        handle.write(";\n\nconst FEATURED_LECTURES = ")
+        json.dump(featured_pool, handle, ensure_ascii=False, indent=2)
+        handle.write(";\n\nconst LECTURE_ID_INDEX = ")
+        json.dump(id_index, handle, ensure_ascii=False, indent=2)
+        handle.write(";\n\nconst LECTURE_CHUNK_URLS = ")
+        json.dump(chunk_urls, handle, ensure_ascii=False, indent=2)
+        handle.write(";\n")
+
+    home_path = WEBSITE / "lectures-home.js"
+    with open(home_path, "w", encoding="utf-8") as handle:
+        handle.write("/* Auto-generated — run generate-catalog.py to refresh */\n")
+        handle.write("const HOME_FEATURED = ")
+        json.dump(featured_resolved, handle, ensure_ascii=False, indent=2)
+        handle.write(";\n\nconst HOME_LECTURES = ")
+        json.dump(home_lectures, handle, ensure_ascii=False, indent=2)
+        handle.write(";\n")
+
+    search_partial = WEBSITE / "data" / "search-audio.json"
+    search_partial.parent.mkdir(parents=True, exist_ok=True)
+    with open(search_partial, "w", encoding="utf-8") as handle:
+        json.dump(audio_search, handle, ensure_ascii=False, indent=2)
+
+    out = WEBSITE / "lectures-data.js"
+    with open(out, "w", encoding="utf-8") as handle:
+        handle.write("/* Auto-generated — run generate-catalog.py to refresh */\n")
+        handle.write('const ARCHIVE_BASE = "https://archive.org/download/FaisalAudios/";\n')
+        handle.write('const THUMB_FALLBACK = "thumb/__ia_thumb.jpg";\n\n')
+        handle.write("const LECTURE_CATEGORIES = ")
+        json.dump(cat_meta, handle, ensure_ascii=False, indent=2)
+        handle.write(";\n\nconst LECTURES = ")
+        json.dump(lectures, handle, ensure_ascii=False, indent=2)
+        handle.write(";\n\nconst FEATURED_LECTURES = ")
+        json.dump(featured_pool, handle, ensure_ascii=False, indent=2)
+        handle.write(";\n")
+
+    print(f"Wrote {meta_path}")
+    print(f"Wrote {home_path}")
+    print(f"Wrote {len(chunk_urls)} lecture chunks under data/lectures/")
+    print(f"Wrote {search_partial}")
+
+
 def main():
     if not HAS_MUTAGEN:
         print("Warning: install mutagen for embedded cover extraction (pip install mutagen)")
@@ -1042,19 +1155,10 @@ def main():
         })
 
     featured_pool = build_featured_lectures(lectures)
+    catalog_version = __import__("datetime").date.today().strftime("%Y%m%d")
+    write_catalog_outputs(lectures, cat_meta, featured_pool, catalog_version)
 
     out = WEBSITE / "lectures-data.js"
-    with open(out, "w", encoding="utf-8") as handle:
-        handle.write("/* Auto-generated — run generate-catalog.py to refresh */\n")
-        handle.write('const ARCHIVE_BASE = "https://archive.org/download/FaisalAudios/";\n')
-        handle.write('const THUMB_FALLBACK = "thumb/__ia_thumb.jpg";\n\n')
-        handle.write("const LECTURE_CATEGORIES = ")
-        json.dump(cat_meta, handle, ensure_ascii=False, indent=2)
-        handle.write(";\n\nconst LECTURES = ")
-        json.dump(lectures, handle, ensure_ascii=False, indent=2)
-        handle.write(";\n\nconst FEATURED_LECTURES = ")
-        json.dump(featured_pool, handle, ensure_ascii=False, indent=2)
-        handle.write(";\n")
 
     with_thumb = sum(1 for lec in lectures if lec["thumb"])
     from_embedded = sum(1 for lec in lectures if lec["thumb"] and "/extracted/" in lec["thumb"])

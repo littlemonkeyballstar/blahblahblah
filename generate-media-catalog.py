@@ -455,12 +455,50 @@ def write_js(filename: str, const_name: str, base_const: str, base_url: str, ite
     print(f"Wrote {path} ({len(items)} items)")
 
 
+def write_search_index(videos: list[dict], clips: list[dict]) -> None:
+    audio_path = WEBSITE / "data" / "search-audio.json"
+    audio_entries = []
+    if audio_path.is_file():
+        with open(audio_path, encoding="utf-8") as handle:
+            audio_entries = json.load(handle)
+
+    video_entries = [
+        {
+            "type": "video",
+            "id": video["id"],
+            "title": video["title"],
+            "sub": "Video lecture",
+            "href": f"videos.html?video={video['id']}",
+        }
+        for video in videos
+    ]
+    clip_entries = [
+        {
+            "type": "clip",
+            "id": clip["id"],
+            "title": clip["title"],
+            "sub": "Short clip",
+            "href": f"clips.html?clip={clip['id']}",
+        }
+        for clip in clips
+    ]
+    search_index = audio_entries + video_entries + clip_entries
+    out = WEBSITE / "search-index.js"
+    with open(out, "w", encoding="utf-8") as handle:
+        handle.write("/* Auto-generated — run generate-catalog.py then generate-media-catalog.py */\n")
+        handle.write("const SEARCH_INDEX = ")
+        json.dump(search_index, handle, ensure_ascii=False, indent=2)
+        handle.write(";\n")
+    print(f"Wrote {out} ({len(search_index)} searchable items)")
+
+
 def main():
     clips_meta = fetch_metadata(CLIPS_ARCHIVE)
     videos = append_promoted_videos(build_videos(), clips_meta)
     clips = build_clips(clips_meta)
     write_js("videos-data.js", "VIDEOS", "VIDEOS_ARCHIVE_BASE", "https://archive.org/download/FaisalVideos/", videos)
     write_js("clips-data.js", "CLIPS", "CLIPS_ARCHIVE_BASE", CLIPS_ARCHIVE_BASE, clips)
+    write_search_index(videos, clips)
 
     v_thumbs = sum(1 for v in videos if v.get("thumb"))
     c_thumbs = sum(1 for c in clips if c.get("thumb"))

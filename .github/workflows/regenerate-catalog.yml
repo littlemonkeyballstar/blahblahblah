@@ -1,0 +1,26 @@
+name: Regenerate catalog
+
+on:
+  workflow_dispatch:
+
+jobs:
+  catalog:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: pip install mutagen
+
+      - name: Regenerate media catalog
+        run: python3 generate-media-catalog.py
+
+      - name: Note on audio catalog
+        run: |
+          echo "Audio catalog (generate-catalog.py) requires local MP3 source."
+          echo "Run manually: python3 generate-catalog.py && python3 generate-media-catalog.py"
