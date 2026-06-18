@@ -410,12 +410,14 @@ const HOME_LECTURES = [
   {
     "id": 4,
     "title": "25 Things That Makes You A Kaafir (12.31.11 to 01.03.12)",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/extracted/84a689044caef9.jpg"
   },
   {
     "id": 5,
     "title": "29 Principles of Ahlus Sunnah Wal Jama'ah (01.12.12 to 01.19.12)",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/extracted/19db6ea7cc8c46.jpg"
   },
   {
     "id": 6,
@@ -425,7 +427,8 @@ const HOME_LECTURES = [
   {
     "id": 7,
     "title": "4 Pillars of Qadr (12.24.11)",
-    "categoryLabel": "Fiqh & Worship"
+    "categoryLabel": "Fiqh & Worship",
+    "thumb": "thumb/extracted/dba37ed1feed4a.jpg"
   },
   {
     "id": 8,
@@ -440,7 +443,8 @@ const HOME_LECTURES = [
   {
     "id": 10,
     "title": "6 Special Favors of Allah to Muhammad [SAW] (12.20.11)",
-    "categoryLabel": "General Lectures"
+    "categoryLabel": "General Lectures",
+    "thumb": "thumb/extracted/bdca466316cd4b.jpg"
   },
   {
     "id": 11,
@@ -510,7 +514,8 @@ const HOME_LECTURES = [
   {
     "id": 24,
     "title": "Allah's Sunnah Will Never Change (11.15.11 to 11.16.11)",
-    "categoryLabel": "General Lectures"
+    "categoryLabel": "General Lectures",
+    "thumb": "thumb/extracted/e15c7f8eb0f20c.jpg"
   },
   {
     "id": 25,
@@ -530,7 +535,8 @@ const HOME_LECTURES = [
   {
     "id": 28,
     "title": "ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.png"
   },
   {
     "id": 29,
@@ -550,7 +556,8 @@ const HOME_LECTURES = [
   {
     "id": 32,
     "title": "Balanced Nation (12.19.11)",
-    "categoryLabel": "Character & Dawah"
+    "categoryLabel": "Character & Dawah",
+    "thumb": "thumb/extracted/8dcb3b088624c3.jpg"
   },
   {
     "id": 33,
@@ -570,7 +577,8 @@ const HOME_LECTURES = [
   {
     "id": 36,
     "title": "BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal",
-    "categoryLabel": "Wicked Scholars"
+    "categoryLabel": "Wicked Scholars",
+    "thumb": "thumb/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.jpg"
   },
   {
     "id": 37,
@@ -580,7 +588,8 @@ const HOME_LECTURES = [
   {
     "id": 38,
     "title": "BOY AND THE KING - Shaykh Faisal",
-    "categoryLabel": "Prophets & Seerah"
+    "categoryLabel": "Prophets & Seerah",
+    "thumb": "thumb/BOY AND THE KING - Shaykh Faisal.jpg"
   },
   {
     "id": 39,
@@ -615,7 +624,8 @@ const HOME_LECTURES = [
   {
     "id": 45,
     "title": "DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal",
-    "categoryLabel": "Jihad"
+    "categoryLabel": "Jihad",
+    "thumb": "thumb/DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.jpg"
   },
   {
     "id": 46,
@@ -625,17 +635,20 @@ const HOME_LECTURES = [
   {
     "id": 47,
     "title": "DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal.png"
   },
   {
     "id": 48,
     "title": "DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.png"
   },
   {
     "id": 49,
     "title": "DEMOCRATES - Those Who Participate In Democratic Election",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/DEMOCRATES - Those Who Participate In Democratic Election.png"
   },
   {
     "id": 50,
@@ -665,12 +678,14 @@ const HOME_LECTURES = [
   {
     "id": 55,
     "title": "Diseases of the Heart (12.26.11 to 12.29.11)",
-    "categoryLabel": "Diseases of the Heart"
+    "categoryLabel": "Diseases of the Heart",
+    "thumb": "thumb/extracted/076fb5be36c654.jpg"
   },
   {
     "id": 56,
     "title": "DISEASES OF THE HEART - Shaykh Faisal",
-    "categoryLabel": "Diseases of the Heart"
+    "categoryLabel": "Diseases of the Heart",
+    "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png"
   },
   {
     "id": 57,
@@ -685,17 +700,20 @@ const HOME_LECTURES = [
   {
     "id": 59,
     "title": "DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.png"
   },
   {
     "id": 60,
     "title": "DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.png"
   },
   {
     "id": 61,
     "title": "DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.jpg"
   },
   {
     "id": 62,
@@ -715,12 +733,14 @@ const HOME_LECTURES = [
   {
     "id": 65,
     "title": "Entering the Lizard Hole",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal.png"
   },
   {
     "id": 66,
     "title": "ENTERING THE LIZARD HOLE - Shaykh Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal.png"
   },
   {
     "id": 67,
@@ -730,12 +750,14 @@ const HOME_LECTURES = [
   {
     "id": 68,
     "title": "EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal",
-    "categoryLabel": "Wicked Scholars"
+    "categoryLabel": "Wicked Scholars",
+    "thumb": "thumb/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.jpg"
   },
   {
     "id": 69,
     "title": "EXCUSE OF IGNORANCE - Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/EXCUSE OF IGNORANCE - Abdallah Al Faisal.jpg"
   },
   {
     "id": 70,
@@ -750,12 +772,14 @@ const HOME_LECTURES = [
   {
     "id": 72,
     "title": "FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.jpg"
   },
   {
     "id": 73,
     "title": "Fiqhul Waaqi (04.30.12)",
-    "categoryLabel": "Fiqh & Worship"
+    "categoryLabel": "Fiqh & Worship",
+    "thumb": "thumb/extracted/077f32b6dc714f.jpg"
   },
   {
     "id": 74,
@@ -770,7 +794,8 @@ const HOME_LECTURES = [
   {
     "id": 76,
     "title": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.jpg"
   },
   {
     "id": 77,
@@ -780,7 +805,8 @@ const HOME_LECTURES = [
   {
     "id": 78,
     "title": "GAY LESBIAN LGBT - Shaykh Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal.png"
   },
   {
     "id": 79,
@@ -795,7 +821,8 @@ const HOME_LECTURES = [
   {
     "id": 81,
     "title": "How to be Sincere to Allah (08.04.11 to 08.07.11)",
-    "categoryLabel": "Character & Dawah"
+    "categoryLabel": "Character & Dawah",
+    "thumb": "thumb/extracted/4cbffbbbd24ca8.jpg"
   },
   {
     "id": 82,
@@ -805,7 +832,8 @@ const HOME_LECTURES = [
   {
     "id": 83,
     "title": "How to be Sincere to the Leaders (12.06.11)",
-    "categoryLabel": "Character & Dawah"
+    "categoryLabel": "Character & Dawah",
+    "thumb": "thumb/extracted/fd6728401a4f1a.jpg"
   },
   {
     "id": 84,
@@ -820,17 +848,20 @@ const HOME_LECTURES = [
   {
     "id": 86,
     "title": "How To Make Hajj (10.25.11)[v2]",
-    "categoryLabel": "Fiqh & Worship"
+    "categoryLabel": "Fiqh & Worship",
+    "thumb": "thumb/extracted/3e8344b2f72015.jpg"
   },
   {
     "id": 87,
     "title": "Human Soul (10.06.11)",
-    "categoryLabel": "Ummah & Contemporary Issues"
+    "categoryLabel": "Ummah & Contemporary Issues",
+    "thumb": "thumb/extracted/b5590561372303.jpg"
   },
   {
     "id": 88,
     "title": "IFK  SLANDER OF AYSHA - Shaykh Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/IFK  SLANDER OF AYSHA - Shaykh Faisal.jpg"
   },
   {
     "id": 89,
@@ -840,17 +871,20 @@ const HOME_LECTURES = [
   {
     "id": 90,
     "title": "IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.png"
   },
   {
     "id": 91,
     "title": "IMPORTANCE OF HIJRAH - Abdallah Al Faisal",
-    "categoryLabel": "Jihad"
+    "categoryLabel": "Jihad",
+    "thumb": "thumb/IMPORTANCE OF HIJRAH - Abdallah Al Faisal.jpg"
   },
   {
     "id": 92,
     "title": "INSULTING THE PROPHET ﷺ  - Abdallah Al Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/INSULTING THE PROPHET ABDALLAH AL FAISAL.jpg"
   },
   {
     "id": 93,
@@ -890,7 +924,8 @@ const HOME_LECTURES = [
   {
     "id": 100,
     "title": "ISLAM UNDER SIEGE - Shaykh Faisal",
-    "categoryLabel": "Ummah & Contemporary Issues"
+    "categoryLabel": "Ummah & Contemporary Issues",
+    "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg"
   },
   {
     "id": 101,
@@ -900,7 +935,8 @@ const HOME_LECTURES = [
   {
     "id": 102,
     "title": "Islamic Etiquettes (11.26.11)",
-    "categoryLabel": "Character & Dawah"
+    "categoryLabel": "Character & Dawah",
+    "thumb": "thumb/extracted/74a3ae70b699b0.jpg"
   },
   {
     "id": 103,
@@ -910,67 +946,80 @@ const HOME_LECTURES = [
   {
     "id": 104,
     "title": "JIHAD AIMS & OBJECTIVES - Shaykh Faisal",
-    "categoryLabel": "Jihad"
+    "categoryLabel": "Jihad",
+    "thumb": "thumb/extracted/5943e51a1e4e99.jpg"
   },
   {
     "id": 105,
     "title": "Jokers in the Pack - Refuting the Ashaa'ira (09.22.11)",
-    "categoryLabel": "Jokers in the Pack"
+    "categoryLabel": "Jokers in the Pack",
+    "thumb": "thumb/extracted/787a2e39c0a084.jpg"
   },
   {
     "id": 106,
     "title": "Jokers in the Pack - Refuting the Barelvis (09.15.11)",
-    "categoryLabel": "Jokers in the Pack"
+    "categoryLabel": "Jokers in the Pack",
+    "thumb": "thumb/extracted/aa33845bb947d5.jpg"
   },
   {
     "id": 107,
     "title": "Jokers in the Pack - Refuting the Democrats (09.25.11)",
-    "categoryLabel": "Jokers in the Pack"
+    "categoryLabel": "Jokers in the Pack",
+    "thumb": "thumb/extracted/6fc2d99d26e86c.jpg"
   },
   {
     "id": 108,
     "title": "Jokers in the Pack - Refuting the Goofy Sufi (09.07.11 to 09.08.11)",
-    "categoryLabel": "Jokers in the Pack"
+    "categoryLabel": "Jokers in the Pack",
+    "thumb": "thumb/extracted/7ec1dd62855308.jpg"
   },
   {
     "id": 109,
     "title": "Jokers in the Pack - Refuting the Hizb ut Tahrir (09.17.11 to 09.18.11)",
-    "categoryLabel": "Jokers in the Pack"
+    "categoryLabel": "Jokers in the Pack",
+    "thumb": "thumb/extracted/e82be5cea574d4.jpg"
   },
   {
     "id": 110,
     "title": "Jokers in the Pack - Refuting the Khawarij (09.04.11)[v2]",
-    "categoryLabel": "Jokers in the Pack"
+    "categoryLabel": "Jokers in the Pack",
+    "thumb": "thumb/extracted/c7cb6d95434762.jpg"
   },
   {
     "id": 111,
     "title": "Jokers in the Pack - Refuting the Murjia (09.05.11)",
-    "categoryLabel": "Jokers in the Pack"
+    "categoryLabel": "Jokers in the Pack",
+    "thumb": "thumb/extracted/fc48e24075122d.jpg"
   },
   {
     "id": 112,
     "title": "Jokers in the Pack - Refuting the Mutazila (09.06.11)",
-    "categoryLabel": "Jokers in the Pack"
+    "categoryLabel": "Jokers in the Pack",
+    "thumb": "thumb/extracted/0d0b3abc5b8d23.jpg"
   },
   {
     "id": 113,
     "title": "Jokers in the Pack - Refuting the Parvezis (09.20.11)",
-    "categoryLabel": "Jokers in the Pack"
+    "categoryLabel": "Jokers in the Pack",
+    "thumb": "thumb/extracted/d7425d6a8787a3.jpg"
   },
   {
     "id": 114,
     "title": "Jokers in the Pack - Refuting the Qadiyaani (09.21.11)",
-    "categoryLabel": "Jokers in the Pack"
+    "categoryLabel": "Jokers in the Pack",
+    "thumb": "thumb/extracted/09d526bcf4824f.jpg"
   },
   {
     "id": 115,
     "title": "Jokers in the Pack - Refuting the Saudi Salafi (09.10.11 to 09.11.11)",
-    "categoryLabel": "Jokers in the Pack"
+    "categoryLabel": "Jokers in the Pack",
+    "thumb": "thumb/extracted/7624621f770187.jpg"
   },
   {
     "id": 116,
     "title": "Jokers in the Pack - Refuting the Shia (09.12.11 to 09.14.11)",
-    "categoryLabel": "Jokers in the Pack"
+    "categoryLabel": "Jokers in the Pack",
+    "thumb": "thumb/extracted/01d0797b9f6e26.jpg"
   },
   {
     "id": 117,
@@ -985,22 +1034,26 @@ const HOME_LECTURES = [
   {
     "id": 119,
     "title": "KASHF USH SHUBUHAAT - Shaykh Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg"
   },
   {
     "id": 120,
     "title": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.png"
   },
   {
     "id": 121,
     "title": "KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal",
-    "categoryLabel": "Khilafah"
+    "categoryLabel": "Khilafah",
+    "thumb": "thumb/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.jpg"
   },
   {
     "id": 122,
     "title": "KHILAFAH SURVIVE & REVIVE - Shaykh Faisal",
-    "categoryLabel": "Khilafah"
+    "categoryLabel": "Khilafah",
+    "thumb": "thumb/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.jpg"
   },
   {
     "id": 123,
@@ -1015,7 +1068,8 @@ const HOME_LECTURES = [
   {
     "id": 125,
     "title": "KUFR DOONA KUFR - Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/KUFR DOONA KUFR - Abdallah Al Faisal.jpg"
   },
   {
     "id": 126,
@@ -1060,7 +1114,8 @@ const HOME_LECTURES = [
   {
     "id": 134,
     "title": "LOVE - Abdallah Al Faisal",
-    "categoryLabel": "General Lectures"
+    "categoryLabel": "General Lectures",
+    "thumb": "thumb/extracted/6d7686edec03e1.jpg"
   },
   {
     "id": 135,
@@ -1070,7 +1125,8 @@ const HOME_LECTURES = [
   {
     "id": 136,
     "title": "MADKHALIS - Shaykh Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/MADKHALIS - Shaykh Faisal.png"
   },
   {
     "id": 137,
@@ -1080,7 +1136,8 @@ const HOME_LECTURES = [
   {
     "id": 138,
     "title": "MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal",
-    "categoryLabel": "Khilafah"
+    "categoryLabel": "Khilafah",
+    "thumb": "thumb/MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.jpg"
   },
   {
     "id": 139,
@@ -1100,12 +1157,14 @@ const HOME_LECTURES = [
   {
     "id": 142,
     "title": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.png"
   },
   {
     "id": 143,
     "title": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12",
-    "categoryLabel": "Character & Dawah"
+    "categoryLabel": "Character & Dawah",
+    "thumb": "thumb/extracted/78f1df9c3dffb9.jpg"
   },
   {
     "id": 144,
@@ -1125,7 +1184,8 @@ const HOME_LECTURES = [
   {
     "id": 147,
     "title": "MILLATU IBRAHIM - Shaykh Faisal",
-    "categoryLabel": "Prophets & Seerah"
+    "categoryLabel": "Prophets & Seerah",
+    "thumb": "thumb/extracted/f9c271ac07d98b.png"
   },
   {
     "id": 148,
@@ -1135,7 +1195,8 @@ const HOME_LECTURES = [
   {
     "id": 149,
     "title": "MURJIA - Shaykh Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/MURJIA - Shaykh Faisal.jpg"
   },
   {
     "id": 150,
@@ -1150,32 +1211,38 @@ const HOME_LECTURES = [
   {
     "id": 152,
     "title": "MUSA AND KHIDR - Abdallah Al Faisal",
-    "categoryLabel": "Prophets & Seerah"
+    "categoryLabel": "Prophets & Seerah",
+    "thumb": "thumb/MUSA AND KHIDR - Abdallah Al Faisal.jpg"
   },
   {
     "id": 153,
     "title": "MUSA AND QAROON - Abdallah Al Faisal",
-    "categoryLabel": "Prophets & Seerah"
+    "categoryLabel": "Prophets & Seerah",
+    "thumb": "thumb/MUSA AND QAROON - Abdallah Al Faisal.jpg"
   },
   {
     "id": 154,
     "title": "Muslim Home (12.21.11 to 12.22.11)",
-    "categoryLabel": "Nikah & Divorce"
+    "categoryLabel": "Nikah & Divorce",
+    "thumb": "thumb/extracted/8be0c03a517daa.jpg"
   },
   {
     "id": 155,
     "title": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal",
-    "categoryLabel": "General Lectures"
+    "categoryLabel": "General Lectures",
+    "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png"
   },
   {
     "id": 156,
     "title": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal",
-    "categoryLabel": "Ummah & Contemporary Issues"
+    "categoryLabel": "Ummah & Contemporary Issues",
+    "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png"
   },
   {
     "id": 157,
     "title": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg"
   },
   {
     "id": 158,
@@ -1195,12 +1262,14 @@ const HOME_LECTURES = [
   {
     "id": 161,
     "title": "NAWAQID AL ISLAM - Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/NAWAQID AL ISLAM - Abdallah Al Faisal.jpg"
   },
   {
     "id": 162,
     "title": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.png"
   },
   {
     "id": 163,
@@ -1210,7 +1279,8 @@ const HOME_LECTURES = [
   {
     "id": 164,
     "title": "OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal",
-    "categoryLabel": "Khilafah"
+    "categoryLabel": "Khilafah",
+    "thumb": "thumb/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.jpg"
   },
   {
     "id": 165,
@@ -1225,37 +1295,44 @@ const HOME_LECTURES = [
   {
     "id": 167,
     "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal",
-    "categoryLabel": "Nikah & Divorce"
+    "categoryLabel": "Nikah & Divorce",
+    "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg"
   },
   {
     "id": 168,
     "title": "PEOPLE OF THE CAVE - Abdallah Al Faisal",
-    "categoryLabel": "Prophets & Seerah"
+    "categoryLabel": "Prophets & Seerah",
+    "thumb": "thumb/PEOPLE OF THE CAVE - Abdallah Al Faisal.jpg"
   },
   {
     "id": 169,
     "title": "Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12)",
-    "categoryLabel": "Personality Disorders"
+    "categoryLabel": "Personality Disorders",
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
   },
   {
     "id": 170,
     "title": "Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12)",
-    "categoryLabel": "Personality Disorders"
+    "categoryLabel": "Personality Disorders",
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
   },
   {
     "id": 171,
     "title": "Personality Disorders [Part 3] Narcissistic (05.06.12)",
-    "categoryLabel": "Personality Disorders"
+    "categoryLabel": "Personality Disorders",
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
   },
   {
     "id": 172,
     "title": "Personality Disorders [Part 4] PTSD (05.07.12)",
-    "categoryLabel": "Personality Disorders"
+    "categoryLabel": "Personality Disorders",
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
   },
   {
     "id": 173,
     "title": "Personality Disorders [Part 5] Anti-Social (05.08.12)",
-    "categoryLabel": "Personality Disorders"
+    "categoryLabel": "Personality Disorders",
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
   },
   {
     "id": 174,
@@ -1265,12 +1342,14 @@ const HOME_LECTURES = [
   {
     "id": 175,
     "title": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.jpg"
   },
   {
     "id": 176,
     "title": "Prophesies of the Holy Quran (11.22.11 to 11.23.11)",
-    "categoryLabel": "Science in the Quran"
+    "categoryLabel": "Science in the Quran",
+    "thumb": "thumb/extracted/d6ec668de41ae1.jpg"
   },
   {
     "id": 177,
@@ -1290,7 +1369,8 @@ const HOME_LECTURES = [
   {
     "id": 180,
     "title": "Radio Show - Allah's Blessings to Mankind (08.20.11)",
-    "categoryLabel": "Radio Show"
+    "categoryLabel": "Radio Show",
+    "thumb": "thumb/extracted/2676a8f4838e99.jpg"
   },
   {
     "id": 181,
@@ -1300,27 +1380,32 @@ const HOME_LECTURES = [
   {
     "id": 182,
     "title": "Radio Show - Diseases of the Heart (10.29.11)",
-    "categoryLabel": "Diseases of the Heart"
+    "categoryLabel": "Diseases of the Heart",
+    "thumb": "thumb/extracted/f5c36659976c9e.jpg"
   },
   {
     "id": 183,
     "title": "Radio Show - God In Islam (11.19.11)",
-    "categoryLabel": "Radio Show"
+    "categoryLabel": "Radio Show",
+    "thumb": "thumb/extracted/b1693094c8ce71.jpg"
   },
   {
     "id": 184,
     "title": "Radio Show - Judgment Day (11.26.11)",
-    "categoryLabel": "Radio Show"
+    "categoryLabel": "Radio Show",
+    "thumb": "thumb/extracted/6862f6ca95768a.jpg"
   },
   {
     "id": 185,
     "title": "Radio Show - Manhood (10.22.11)",
-    "categoryLabel": "Radio Show"
+    "categoryLabel": "Radio Show",
+    "thumb": "thumb/extracted/e38b5240266f79.jpg"
   },
   {
     "id": 186,
     "title": "Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11)",
-    "categoryLabel": "Radio Show"
+    "categoryLabel": "Radio Show",
+    "thumb": "thumb/extracted/f30bbb19eb83af.jpg"
   },
   {
     "id": 187,
@@ -1350,22 +1435,26 @@ const HOME_LECTURES = [
   {
     "id": 192,
     "title": "Reality of Poverty (02.27.12)",
-    "categoryLabel": "General Lectures"
+    "categoryLabel": "General Lectures",
+    "thumb": "thumb/extracted/290cda89069668.jpg"
   },
   {
     "id": 193,
     "title": "REALITY OF POVERTY - Abdallah Al Faisal",
-    "categoryLabel": "General Lectures"
+    "categoryLabel": "General Lectures",
+    "thumb": "thumb/extracted/4e609eaf7de4d7.jpg"
   },
   {
     "id": 194,
     "title": "Reality of Sincerity (12.07.11)",
-    "categoryLabel": "Diseases of the Heart"
+    "categoryLabel": "Diseases of the Heart",
+    "thumb": "thumb/extracted/1e7db6b17401c6.jpg"
   },
   {
     "id": 195,
     "title": "REALITY OF THE JEWS - Abdallah Al Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/REALITY OF THE JEWS - Abdallah Al Faisal.jpg"
   },
   {
     "id": 196,
@@ -1395,7 +1484,8 @@ const HOME_LECTURES = [
   {
     "id": 201,
     "title": "REQUIREMENTS OF JIHAD - Abdallah Al Faisal",
-    "categoryLabel": "Jihad"
+    "categoryLabel": "Jihad",
+    "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.png"
   },
   {
     "id": 202,
@@ -1460,7 +1550,8 @@ const HOME_LECTURES = [
   {
     "id": 214,
     "title": "SALAFI JIHADI - Shaykh Faisal",
-    "categoryLabel": "Jihad"
+    "categoryLabel": "Jihad",
+    "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png"
   },
   {
     "id": 215,
@@ -1475,12 +1566,14 @@ const HOME_LECTURES = [
   {
     "id": 217,
     "title": "Satans Web (12.17.11)",
-    "categoryLabel": "General Lectures"
+    "categoryLabel": "General Lectures",
+    "thumb": "thumb/extracted/63ebe64c1fee50.jpg"
   },
   {
     "id": 218,
     "title": "SAUDI SALAFI - Shaykh Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal.jpg"
   },
   {
     "id": 219,
@@ -1565,12 +1658,14 @@ const HOME_LECTURES = [
   {
     "id": 235,
     "title": "SECULARISM - Shaykh Abdallah Al Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/SECULARISM - Shaykh Abdallah Al Faisal.png"
   },
   {
     "id": 236,
     "title": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.png"
   },
   {
     "id": 237,
@@ -1580,7 +1675,8 @@ const HOME_LECTURES = [
   {
     "id": 238,
     "title": "SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png"
   },
   {
     "id": 239,
@@ -1675,12 +1771,14 @@ const HOME_LECTURES = [
   {
     "id": 257,
     "title": "SHIA GREATEST ENEMY WITHIN - Shaykh Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.jpg"
   },
   {
     "id": 258,
     "title": "SHIA KNOW YOUR ENEMY - Shaykh Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/SHIA KNOW YOUR ENEMY - Shaykh Faisal.jpg"
   },
   {
     "id": 259,
@@ -1695,7 +1793,8 @@ const HOME_LECTURES = [
   {
     "id": 261,
     "title": "SIGNS OF HYPOCRITES - Shaykh Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/SIGNS OF HYPOCRITES - Shaykh Faisal.png"
   },
   {
     "id": 262,
@@ -1710,257 +1809,308 @@ const HOME_LECTURES = [
   {
     "id": 264,
     "title": "Tafseer 002.255 Ayat Al-Kursi (10.23.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/842d02122759fc.jpg"
   },
   {
     "id": 265,
     "title": "Tafseer 009 Surah Taubah (001-014) [Part 1] The Verse of the Sword (03.05.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 266,
     "title": "Tafseer 009 Surah Taubah (014-021) [Part 2] Allah Shall Punish the Kuffaar With Your Hands (03.06.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 267,
     "title": "Tafseer 009 Surah Taubah (022-027) [Part 3] The Battle of Hunain (03.07.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 268,
     "title": "Tafseer 009 Surah Taubah (028-030) [Part 4] Accept Islam, Pay the Jizya Or Prepare to Fight (03.08.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 269,
     "title": "Tafseer 009 Surah Taubah (031-034) [Part 5] None Has the Right to be Worshiped Except Allah (03.10.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 270,
     "title": "Tafseer 009 Surah Taubah (034-039) [Part 6] Iblis Has Beautified For Them Their Evil Deeds (03.12.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 271,
     "title": "Tafseer 009 Surah Taubah (039-054) [Part 7] Beware of the Murjif (03.13.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 272,
     "title": "Tafseer 009 Surah Taubah (055-066) [Part 8] Mocking An Aspect of the Deen Makes You Become a Kaafir (03.14.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 273,
     "title": "Tafseer 009 Surah Taubah (064-067) [Part 9] The Hypocrites Live in Fear of Being Exposed (03.15.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 274,
     "title": "Tafseer 009 Surah Taubah (067-073) [Part 10] Strive Hard Against the Disbelievers and the Hypocrites (03.17.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 275,
     "title": "Tafseer 009 Surah Taubah (073-080) [Part 11] The Evil Triangle (03.19.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 276,
     "title": "Tafseer 009 Surah Taubah (080-084) [Part 12] 15 People You Are Not Allowed to Pray Janazah Over (03.20.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 277,
     "title": "Tafseer 009 Surah Taubah (084-097) [Part 13] The Hypocrites Will Always Hide Behind Wallahi (03.21.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 278,
     "title": "Tafseer 009 Surah Taubah (097-105) [Part 14] The Munafiqeen See Zakah As A Fine Unleashed Against Them (03.22.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 279,
     "title": "Tafseer 009 Surah Taubah (105-111) [Part 15] The Dangers of Masjid Dirar (03.24.12)[v2]",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 280,
     "title": "Tafseer 009 Surah Taubah (111-118) [Part 16] Allah Desires the Soul of the Believers in Exchange for Jannah (03.26.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 281,
     "title": "Tafseer 009 Surah Taubah (119-129) [Part 17] Be in the Company of the Righteous (03.27.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "id": 282,
     "title": "Tafseer 018 Surah Al-Kahf [Part 1] The Quran Is Free From Crookedness (11.10.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/256748f09575bc.jpg"
   },
   {
     "id": 283,
     "title": "Tafseer 018 Surah Al-Kahf [Part 2] The People of the Cave (11.12.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/5358e5634bc34e.jpg"
   },
   {
     "id": 284,
     "title": "Tafseer 020 Surah TaHa (001-008) [Part 1] Unto Allah Belongs the Most Beautiful Names (07.01.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/8ec53eb8d167ad.jpg"
   },
   {
     "id": 285,
     "title": "Tafseer 020 Surah TaHa (005-023) [Part 2] The Hour Is Coming (07.02.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/4fd75a19b79012.jpg"
   },
   {
     "id": 286,
     "title": "Tafseer 020 Surah TaHa (023-047) [Part 3] Be Gentle With Your Dawah (07.03.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/c47f507aa49ed7.jpg"
   },
   {
     "id": 287,
     "title": "Tafseer 020 Surah TaHa (043-073) [Part 4] The Pharaoh's Magicians Embraced Islam (07.04.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/206202462d7bbf.jpg"
   },
   {
     "id": 288,
     "title": "Tafseer 020 Surah TaHa (071-073) [Part 5] The Rules of Ikraah (07.09.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/02712cadc4c131.jpg"
   },
   {
     "id": 289,
     "title": "Tafseer 020 Surah TaHa (072-079) [Part 6] Pharaoh, the Opportunist (07.10.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/ffe447b21900a1.jpg"
   },
   {
     "id": 290,
     "title": "Tafseer 020 Surah TaHa (080-097) [Part 7] The Jews Worshipped the Golden Calf (07.11.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/984b1d76d948c3.jpg"
   },
   {
     "id": 291,
     "title": "Tafseer 023 Surah Mu'minun [1-11] (02.26.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/4bba8bf656d2d4.jpg"
   },
   {
     "id": 292,
     "title": "Tafseer 025 Surah Al-Furqan (01-10) [Part 1] The Qur'an is the Ultimate Furqan (06.03.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/fb0b6d011a4ec9.jpg"
   },
   {
     "id": 293,
     "title": "Tafseer 025 Surah Al-Furqan (10-21) [Part 2] The Roaring of the Hellfire (06.04.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/c7a1baf5918dbc.jpg"
   },
   {
     "id": 294,
     "title": "Tafseer 025 Surah Al-Furqan (21-31) [Part 3] Every Prophet Has An Enemy (06.05.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/ff57ca0b05212b.jpg"
   },
   {
     "id": 295,
     "title": "Tafseer 025 Surah Al-Furqan (30-32) [Part 4] Why Did Allah Reveal the Quran in Stages (06.06.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/3c324270201cf0.jpg"
   },
   {
     "id": 296,
     "title": "Tafseer 025 Surah Al-Furqan (32-51) [Part 5] The Barakah of Islam Are For Those Whom Allah Loves (06.07.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/a682358e2382a6.jpg"
   },
   {
     "id": 297,
     "title": "Tafseer 025 Surah Al-Furqan (50-57) [Part 6] The Kuffaar Takes Sides With Shaitan Against Allah (06.09.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/cd4d1d134083a5.jpg"
   },
   {
     "id": 298,
     "title": "Tafseer 025 Surah Al-Furqan (57-64) [Part 7] Only Allah is Al-Hayy (The Ever-Living) (06.10.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/62236a9f114dd2.jpg"
   },
   {
     "id": 299,
     "title": "Tafseer 025 Surah Al-Furqan (63-69) [Part 8] Zina Causes Murder (06.11.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/a360ef604c7979.jpg"
   },
   {
     "id": 300,
     "title": "Tafseer 025 Surah Al-Furqan (68-77) [Part 9] Make Duaa To Allah For A Pious Family (06.12.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/847ae3f2af4c74.jpg"
   },
   {
     "id": 301,
     "title": "Tafseer 027 Surah An-Naml [Part 1] The 3 Dimensions Of Eeman (11.01.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/3b01fb82bb895f.jpg"
   },
   {
     "id": 302,
     "title": "Tafseer 027 Surah An-Naml [Part 2] Sulaiman (AS) and the Ant (11.02.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/e12cd5a6d078d9.jpg"
   },
   {
     "id": 303,
     "title": "Tafseer 027 Surah An-Naml [Part 3] The Wisdom of the Hudhud (11.03.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/eb85bcf2e0e14d.jpg"
   },
   {
     "id": 304,
     "title": "Tafseer 027 Surah An-Naml [Part 4] The Islamic Ruling on Gifts [i] (11.08.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/d591c5720efb7b.jpg"
   },
   {
     "id": 305,
     "title": "Tafseer 027 Surah An-Naml [Part 5] The Islamic Ruling on Gifts [ii] (11.09.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/36526e11248a40.jpg"
   },
   {
     "id": 306,
     "title": "Tafseer 029 Surah Al-Ankabut (01-10) [Part 1] We Shall All Be Tested (05.22.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/94733af9bd733f.jpg"
   },
   {
     "id": 307,
     "title": "Tafseer 029 Surah Al-Ankabut (11-18) [Part 2] You Shall Carry the Sins of Others on Day Judgment (05.23.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/95b4e2598bd8d4.jpg"
   },
   {
     "id": 308,
     "title": "Tafseer 029 Surah Al-Ankabut (19-35) [Part 3] The Kaafir Has No Hope (05.24.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/2ff31b4f87764e.jpg"
   },
   {
     "id": 309,
     "title": "Tafseer 029 Surah Al-Ankabut (34-38) [Part 4] The People of Ad and Thamud (05.27.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/ea44577712be6b.jpg"
   },
   {
     "id": 310,
     "title": "Tafseer 029 Surah Al-Ankabut (38-44) [Part 5] The Perished Nations Are Lessons (05.28.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/4bb3649b1d034f.jpg"
   },
   {
     "id": 311,
     "title": "Tafseer 029 Surah Al-Ankabut (44-45) [Part 6] The Virtues of Dhikr (05.29.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/f20b939edcc3a6.jpg"
   },
   {
     "id": 312,
     "title": "Tafseer 029 Surah Al-Ankabut (45-50) [Part 7] The Ummah of Hafidh and Isnad (05.30.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/5feb89eedef831.jpg"
   },
   {
     "id": 313,
     "title": "Tafseer 029 Surah Al-Ankabut (46-58) [Part 8] Reason with the People of the Book in a Better Way (05.31.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/15f8db8fce9016.jpg"
   },
   {
     "id": 314,
     "title": "Tafseer 029 Surah Al-Ankabut (56-69) [Part 9] Breaking A Promise Made To Allah (06.02.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/ba291f29ea8c9f.jpg"
   },
   {
     "id": 315,
@@ -1985,57 +2135,68 @@ const HOME_LECTURES = [
   {
     "id": 319,
     "title": "Tafseer 033 Surah Al-Ahzab (01-05) [Part 1] Do Not Consult the Kuffaar in Regard to Your Deen (06.13.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/4eb04daabca660.jpg"
   },
   {
     "id": 320,
     "title": "Tafseer 033 Surah Al-Ahzab (06-22) [Part 2] Muhammad (SAW) is Closer to the Believers than Themselves (06.14.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/947df72eaa7f81.jpg"
   },
   {
     "id": 321,
     "title": "Tafseer 033 Surah Al-Ahzab (22-31) [Part 3] Fulfill Your Covenant With Allah (06.16.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/a0b201390a9a7d.jpg"
   },
   {
     "id": 322,
     "title": "Tafseer 033 Surah Al-Ahzab (32-35) [Part 4] The Wives of the Prophet Belong to his Household (06.17.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/aba9d5f7b154c5.jpg"
   },
   {
     "id": 323,
     "title": "Tafseer 033 Surah Al-Ahzab (36-37) [Part 5] The Story of Julaybib (06.18.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/941084cb6f5791.jpg"
   },
   {
     "id": 324,
     "title": "Tafseer 033 Surah Al-Ahzab (38-48) [Part 6] Do Not Obey the Kuffaar and the Munafiqeen (06.19.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/1848c515e5c059.jpg"
   },
   {
     "id": 325,
     "title": "Tafseer 033 Surah Al-Ahzab (49-52) [Part 7] Marriage to Your 1st Cousin Is Allowed In Islam (06.20.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/50f8070c5b9df3.jpg"
   },
   {
     "id": 326,
     "title": "Tafseer 033 Surah Al-Ahzab (53-56) [Part 8] The Importance of Giving Salaams to the Prophet (SAW) (06.21.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/cf5a4598d72eef.jpg"
   },
   {
     "id": 327,
     "title": "Tafseer 033 Surah Al-Ahzab (57-58) [Part 9] Beware of Annoying Allah and His Messenger (06.25.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/6eab7bfcc08e20.jpg"
   },
   {
     "id": 328,
     "title": "Tafseer 033 Surah Al-Ahzab (59-68) [Part 10] The Importance of Hijab (06.26.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/4775aae1b21180.jpg"
   },
   {
     "id": 329,
     "title": "Tafseer 033 Surah Al-Ahzab (69-73) [Part 11] Fear Allah and Speak Straight to the Point (06.27.12 to 06.28.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/d4ec0b4ca5db6b.jpg"
   },
   {
     "id": 330,
@@ -2060,97 +2221,116 @@ const HOME_LECTURES = [
   {
     "id": 334,
     "title": "Tafseer 047 Surah Muhammad (09.27.11 to 09.28.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/bc2bc01243b8a6.jpg"
   },
   {
     "id": 335,
     "title": "Tafseer 057 Surah Hadid (02.22.12 to 02.25.12)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/d66c64ad8181aa.jpg"
   },
   {
     "id": 336,
     "title": "Tafseer 067 Surah Al-Mulk (10.26.11 to 10.31.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/60a35008070536.jpg"
   },
   {
     "id": 337,
     "title": "Tafseer 090 Surah Al-Balad (10.09.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/4cc48a3d891feb.jpg"
   },
   {
     "id": 338,
     "title": "Tafseer 095 Surah At-Tin (12.11.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/36b1241210ac10.jpg"
   },
   {
     "id": 339,
     "title": "Tafseer 098 Surah Al-Baiyinah (10.10.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/3726f72e14c466.jpg"
   },
   {
     "id": 340,
     "title": "Tafseer 101 Surah Al-Qari'ah (10.08.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/739c165e697d8a.jpg"
   },
   {
     "id": 341,
     "title": "Tafseer 102 Surah At-Takathur (10.12.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/1ff69cdd478a5e.jpg"
   },
   {
     "id": 342,
     "title": "Tafseer 103 Surah Al-Asr (10.17.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/679706d5cd76a7.jpg"
   },
   {
     "id": 343,
     "title": "Tafseer 104 Surah Al-Humazah (10.07.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/1438fba286fa5a.jpg"
   },
   {
     "id": 344,
     "title": "Tafseer 105 Surah Al-Feel (10.13.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/b610fb20d28306.jpg"
   },
   {
     "id": 345,
     "title": "Tafseer 106 Surah Quraish (10.15.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/28bedcd2e71cad.jpg"
   },
   {
     "id": 346,
     "title": "Tafseer 107 Surah Al-Ma'um (10.18.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/e3fda8f4b46f82.jpg"
   },
   {
     "id": 347,
     "title": "Tafseer 108 Surah Al-Kawthar (10.16.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/651fa9c538124f.jpg"
   },
   {
     "id": 348,
     "title": "Tafseer 109 Surah Al-Kafiroon (10.22.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/22cdc6a0d8053b.jpg"
   },
   {
     "id": 349,
     "title": "Tafseer 110 Surah An-Nasr (10.19.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/6ce57ee0d36f26.jpg"
   },
   {
     "id": 350,
     "title": "Tafseer 111 Surah Al-Masad (10.11.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/7cd9fdafd55192.jpg"
   },
   {
     "id": 351,
     "title": "Tafseer 113 Surah Al-Falaq (10.24.11)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/extracted/c932246fec57cf.jpg"
   },
   {
     "id": 352,
     "title": "Tafsir At-Tawbah (Whole 25h lecture)",
-    "categoryLabel": "Tafseer"
+    "categoryLabel": "Tafseer",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/TAFSEER OF SURAH AT TAWBAH - Abdallah Al Faisal.jpg"
   },
   {
     "id": 353,
@@ -2470,7 +2650,8 @@ const HOME_LECTURES = [
   {
     "id": 416,
     "title": "TAWHEED AL HAKEEMIYAH ONLY WAY TO IMPLEMENT SHARIAH - Abdallah Al Faisal",
-    "categoryLabel": "Tawheed"
+    "categoryLabel": "Tawheed",
+    "thumb": "thumb/extracted/d17f4338067f7f.png"
   },
   {
     "id": 417,
@@ -2535,27 +2716,32 @@ const HOME_LECTURES = [
   {
     "id": 429,
     "title": "The 5 Desperate Zindeeq - Brelvis (02.16.12)",
-    "categoryLabel": "The 5 Desperate Zindeeq"
+    "categoryLabel": "The 5 Desperate Zindeeq",
+    "thumb": "thumb/extracted/b04fec2582151f.jpg"
   },
   {
     "id": 430,
     "title": "The 5 Desperate Zindeeq - Democrats (evening dars 02.18.12)",
-    "categoryLabel": "The 5 Desperate Zindeeq"
+    "categoryLabel": "The 5 Desperate Zindeeq",
+    "thumb": "thumb/extracted/41b5aff9acda6a.jpg"
   },
   {
     "id": 431,
     "title": "The 5 Desperate Zindeeq - Goofy Sufi (02.11.12)",
-    "categoryLabel": "The 5 Desperate Zindeeq"
+    "categoryLabel": "The 5 Desperate Zindeeq",
+    "thumb": "thumb/extracted/b8aa5601d8bc82.jpg"
   },
   {
     "id": 432,
     "title": "The 5 Desperate Zindeeq - MADkhalis (02.14.12 to 02.15.12)",
-    "categoryLabel": "The 5 Desperate Zindeeq"
+    "categoryLabel": "The 5 Desperate Zindeeq",
+    "thumb": "thumb/extracted/136b8efb67a320.jpg"
   },
   {
     "id": 433,
     "title": "The 5 Desperate Zindeeq - Shady Shia (02.12.12 to 02.13.12)",
-    "categoryLabel": "The 5 Desperate Zindeeq"
+    "categoryLabel": "The 5 Desperate Zindeeq",
+    "thumb": "thumb/extracted/b44b317b263042.jpg"
   },
   {
     "id": 434,
@@ -2735,122 +2921,146 @@ const HOME_LECTURES = [
   {
     "id": 469,
     "title": "The Sealed Nectar [Part 01] Arabia Before Islam (03.31.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 470,
     "title": "The Sealed Nectar [Part 02] Replacing the Blackstone (04.01.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 471,
     "title": "The Sealed Nectar [Part 03] The Cave of Hira (04.02.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 472,
     "title": "The Sealed Nectar [Part 04] The Hijrah to Abyssinia (04.03.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 473,
     "title": "The Sealed Nectar [Part 05] The Conversion of Umar A Glory for Islam (04.04.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 474,
     "title": "The Sealed Nectar [Part 06] Al-Isra Wal-Miraj (04.05.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 475,
     "title": "The Sealed Nectar [Part 07] The Pledge of Aqabah (04.07.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 476,
     "title": "The Sealed Nectar [Part 08] The Hijrah from Makkah to Madina (04.08.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 477,
     "title": "The Sealed Nectar [Part 09] The Battle of Badr (04.09.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 478,
     "title": "The Sealed Nectar [Part 10] The Treachery of Banu Qainuqa (04.11.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 479,
     "title": "The Sealed Nectar [Part 11] The Battle of Uhud (04.12.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 480,
     "title": "The Sealed Nectar [Part 12] The Treachery of Banu Nadir (04.14.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 481,
     "title": "The Sealed Nectar [Part 13] The Battle of the Ditch (04.15.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 482,
     "title": "The Sealed Nectar [Part 14] The Slander of Aisha [RA] (04.16.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 483,
     "title": "The Sealed Nectar [Part 15] 42 Lessons From The Slander of Aisha [RA] (04.17.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 484,
     "title": "The Sealed Nectar [Part 16] The Treaty of Hudaibiya (04.19.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 485,
     "title": "The Sealed Nectar [Part 17] The Conquest of Khaibar (04.21.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 486,
     "title": "The Sealed Nectar [Part 18] The Battle of Mu'tah (04.22.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 487,
     "title": "The Sealed Nectar [Part 19] The Conquest of Makkah (04.23.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 488,
     "title": "The Sealed Nectar [Part 20] The Battle of Hunain (04.24.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 489,
     "title": "The Sealed Nectar [Part 21] The Tabuk Expedition (04.25.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 490,
     "title": "The Sealed Nectar [Part 22] Abu Bakr Performs the Pilgrimage (04.26.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 491,
     "title": "The Sealed Nectar [Part 23] The Pilgrimage of the Prophet (04.28.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 492,
     "title": "The Sealed Nectar [Part 24] The Farewell Sermon (04.29.12)",
-    "categoryLabel": "The Sealed Nectar"
+    "categoryLabel": "The Sealed Nectar",
+    "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png"
   },
   {
     "id": 493,
@@ -2895,7 +3105,8 @@ const HOME_LECTURES = [
   {
     "id": 501,
     "title": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg"
   },
   {
     "id": 502,
@@ -2920,7 +3131,8 @@ const HOME_LECTURES = [
   {
     "id": 506,
     "title": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal",
-    "categoryLabel": "Refutations"
+    "categoryLabel": "Refutations",
+    "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg"
   },
   {
     "id": 507,
@@ -2930,17 +3142,20 @@ const HOME_LECTURES = [
   {
     "id": 508,
     "title": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal",
-    "categoryLabel": "General Lectures"
+    "categoryLabel": "General Lectures",
+    "thumb": "thumb/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.png"
   },
   {
     "id": 509,
     "title": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR - Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/extracted/40f8d0fb22e4b9.jpg"
   },
   {
     "id": 510,
     "title": "VIRTUES OF MAKKAH - Shaykh Faisal",
-    "categoryLabel": "Fiqh & Worship"
+    "categoryLabel": "Fiqh & Worship",
+    "thumb": "thumb/VIRTUES OF MAKKAH - Shaykh Faisal.jpg"
   },
   {
     "id": 511,
@@ -2980,7 +3195,8 @@ const HOME_LECTURES = [
   {
     "id": 518,
     "title": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal",
-    "categoryLabel": "Aqeedah"
+    "categoryLabel": "Aqeedah",
+    "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png"
   },
   {
     "id": 519,
@@ -3040,7 +3256,8 @@ const HOME_LECTURES = [
   {
     "id": 530,
     "title": "WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal",
-    "categoryLabel": "Wicked Scholars"
+    "categoryLabel": "Wicked Scholars",
+    "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg"
   },
   {
     "id": 531,
@@ -3050,7 +3267,8 @@ const HOME_LECTURES = [
   {
     "id": 532,
     "title": "WIVES & CHILDREN - Shaykh Faisal",
-    "categoryLabel": "Nikah & Divorce"
+    "categoryLabel": "Nikah & Divorce",
+    "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png"
   },
   {
     "id": 533,

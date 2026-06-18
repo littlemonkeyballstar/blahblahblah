@@ -264,7 +264,8 @@
         previewCard(`videos.html?video=${v.id}`, v.thumb, v.title, 'Video lecture', 'fa-video')
       ).join('');
 
-      const audioPool = typeof HOME_LECTURES !== 'undefined' ? HOME_LECTURES : [];
+      const audioPool = (typeof HOME_LECTURES !== 'undefined' ? HOME_LECTURES : [])
+        .filter(l => l.thumb);
       document.getElementById('audioPreview').innerHTML = randomPick(audioPool, 4).map(l =>
         previewCard(`audio.html?lecture=${l.id}`, l.thumb, l.title, l.categoryLabel, 'fa-headphones')
       ).join('');

@@ -971,14 +971,16 @@ def write_catalog_outputs(
             "thumb": entry.get("thumb") or lec.get("thumb"),
         })
 
-    home_lectures = [
-        {
+    home_lectures = []
+    for lec in lectures:
+        entry = {
             "id": lec["id"],
             "title": lec["title"],
             "categoryLabel": lec["categoryLabel"],
         }
-        for lec in lectures
-    ]
+        if lec.get("thumb"):
+            entry["thumb"] = lec["thumb"]
+        home_lectures.append(entry)
 
     id_index = {str(lec["id"]): lec["category"] for lec in lectures}
     audio_search = [
