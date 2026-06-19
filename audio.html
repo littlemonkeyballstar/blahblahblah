@@ -246,20 +246,10 @@
       pointer-events: none;
       transition: opacity 0.22s ease, transform 0.22s ease, border-color 0.22s ease;
     }
-    .lecture-card:hover .audio-skip-controls,
-    .lecture-card.is-playing-audio .audio-skip-controls,
-    .lecture-card:focus-within .audio-skip-controls {
+    .lecture-card.is-playing-audio .audio-skip-controls {
       opacity: 1;
       pointer-events: auto;
-    }
-    .lecture-card.is-playing-audio .audio-skip-controls {
       border-color: rgba(212, 168, 83, 0.35);
-    }
-    @media (max-width: 639px) {
-      .audio-skip-controls {
-        opacity: 0.94;
-        pointer-events: auto;
-      }
     }
     .audio-skip-btn {
       display: inline-flex;
