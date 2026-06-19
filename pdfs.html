@@ -18,8 +18,7 @@
   <meta name="twitter:title" content="PDF Books • Shaykh Abdullah Faisal">
   <meta name="twitter:description" content="PDF books and writings by Shaykh Abdullah Faisal — download from Internet Archive.">
   <title>PDF Books • Shaykh Abdullah Faisal</title>
-  <script src="https://cdn.tailwindcss.com" onerror="document.documentElement.classList.add('no-tailwind')"></script>
-  <script src="tailwind-guard.js"></script>
+  <link rel="stylesheet" href="site.css" onerror="document.documentElement.classList.add('no-tailwind')">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
@@ -198,50 +197,52 @@
       const allSeries = getSeriesGroups(list);
       const standaloneList = sortedPdfs(list.filter(p => !p.series));
 
-      if (grouped) {
+      animateContentSwap(sections, () => {
+        if (grouped) {
+          grid.classList.add('hidden');
+          grid.innerHTML = '';
+          pag.innerHTML = '';
+          const seriesSection = allSeries.length ? `
+            <section class="mb-12">
+              <h2 class="font-display text-2xl text-gold-gradient mb-2 flex items-center gap-3">
+                <i class="fas fa-list-ol text-gold/80"></i>
+                Multi-Part Series
+              </h2>
+              <p class="text-sm text-slate-500 mb-6">Part 1, Part 2, and so on — grouped together and in reading order.</p>
+              ${renderSeriesBlocks(allSeries, { showCategory: true, className: 'space-y-6' })}
+            </section>` : '';
+
+          const categorySections = groupByCategory(standaloneList).map(({ cat, items }) => `
+            <section class="mb-12 last:mb-0">
+              <h2 class="font-display text-2xl text-gold-gradient mb-6 flex items-center gap-3">
+                <span class="w-8 h-px bg-gold/40"></span>
+                ${escapeHtml(cat.label)}
+                <span class="text-sm font-normal text-slate-500">(${items.length})</span>
+              </h2>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">${renderCards(items)}</div>
+            </section>`).join('');
+
+          sections.innerHTML = (seriesSection + categorySections) || '<p class="text-slate-500 text-center py-16">No books found.</p>';
+          bindPdfPreviewControls(sections);
+          return;
+        }
+
+        sections.innerHTML = '';
         grid.classList.add('hidden');
-        grid.innerHTML = '';
         pag.innerHTML = '';
-        const seriesSection = allSeries.length ? `
-          <section class="mb-12">
-            <h2 class="font-display text-2xl text-gold-gradient mb-2 flex items-center gap-3">
-              <i class="fas fa-list-ol text-gold/80"></i>
-              Multi-Part Series
-            </h2>
-            <p class="text-sm text-slate-500 mb-6">Part 1, Part 2, and so on — grouped together and in reading order.</p>
-            ${renderSeriesBlocks(allSeries, { showCategory: true, className: 'space-y-6' })}
-          </section>` : '';
 
-        const categorySections = groupByCategory(standaloneList).map(({ cat, items }) => `
-          <section class="mb-12 last:mb-0">
-            <h2 class="font-display text-2xl text-gold-gradient mb-6 flex items-center gap-3">
-              <span class="w-8 h-px bg-gold/40"></span>
-              ${escapeHtml(cat.label)}
-              <span class="text-sm font-normal text-slate-500">(${items.length})</span>
-            </h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">${renderCards(items)}</div>
-          </section>`).join('');
+        const filteredSeries = getSeriesGroups(list);
+        const filteredStandalone = sortedPdfs(list.filter(p => !p.series));
+        const seriesHtml = filteredSeries.length
+          ? `<div class="mb-8">${renderSeriesBlocks(filteredSeries, { showCategory: state.category === 'all' })}</div>`
+          : '';
+        const standaloneHtml = filteredStandalone.length
+          ? `<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">${renderCards(filteredStandalone)}</div>`
+          : '';
 
-        sections.innerHTML = (seriesSection + categorySections) || '<p class="text-slate-500 text-center py-16">No books found.</p>';
+        sections.innerHTML = (seriesHtml + standaloneHtml) || '<p class="text-slate-500 text-center py-16">No books found.</p>';
         bindPdfPreviewControls(sections);
-        return;
-      }
-
-      sections.innerHTML = '';
-      grid.classList.add('hidden');
-      pag.innerHTML = '';
-
-      const filteredSeries = getSeriesGroups(list);
-      const filteredStandalone = sortedPdfs(list.filter(p => !p.series));
-      const seriesHtml = filteredSeries.length
-        ? `<div class="mb-8">${renderSeriesBlocks(filteredSeries, { showCategory: state.category === 'all' })}</div>`
-        : '';
-      const standaloneHtml = filteredStandalone.length
-        ? `<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">${renderCards(filteredStandalone)}</div>`
-        : '';
-
-      sections.innerHTML = (seriesHtml + standaloneHtml) || '<p class="text-slate-500 text-center py-16">No books found.</p>';
-      bindPdfPreviewControls(sections);
+      });
     }
 
     function applyDeepLink() {

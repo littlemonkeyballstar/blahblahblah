@@ -1,0 +1,10 @@
+{
+  "name": "shaykh-abdullah-faisal-archive",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i ./src/tailwind.css -o ./site.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
+  }
+}

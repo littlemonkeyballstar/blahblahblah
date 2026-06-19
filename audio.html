@@ -19,8 +19,7 @@
   <meta name="twitter:description" content="500+ audio lectures by Shaykh Abdullah Faisal — organized by series and topic.">
   <title>Audio Lectures • Shaykh Abdullah Faisal</title>
 
-  <script src="https://cdn.tailwindcss.com" onerror="document.documentElement.classList.add('no-tailwind')"></script>
-  <script src="tailwind-guard.js"></script>
+  <link rel="stylesheet" href="site.css" onerror="document.documentElement.classList.add('no-tailwind')">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -768,16 +767,17 @@
       const grid = document.getElementById('lectureGrid');
       const empty = document.getElementById('emptyState');
 
-      if (!pageItems.length) {
-        grid.innerHTML = '';
-        empty.classList.remove('hidden');
-      } else {
-        empty.classList.add('hidden');
-        grid.innerHTML = pageItems.map(buildCard).join('');
-      }
-
-      renderPagination(totalPages);
-      bindLectureAudioPlayers();
+      animateContentSwap(grid, () => {
+        if (!pageItems.length) {
+          grid.innerHTML = '';
+          empty.classList.remove('hidden');
+        } else {
+          empty.classList.add('hidden');
+          grid.innerHTML = pageItems.map(buildCard).join('');
+        }
+        renderPagination(totalPages);
+        bindLectureAudioPlayers();
+      });
     }
 
     function bindLectureAudioPlayers() {
