@@ -1087,10 +1087,13 @@ function mountMobileStyles() {
     .media-card__title-wrap {
       flex: 1 1 auto;
       min-width: 0;
-      position: relative;
     }
-    .media-card__title {
-      margin: 0;
+    .media-card__title-viewport {
+      overflow: hidden;
+      height: 1.375rem;
+      min-width: 0;
+    }
+    .media-card__title-track {
       font-size: 0.875rem;
       line-height: 1.375rem;
       font-weight: 500;
@@ -1099,40 +1102,33 @@ function mountMobileStyles() {
       overflow: hidden;
       text-overflow: ellipsis;
     }
-    .media-card__title-full {
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: calc(100% + 0.45rem);
-      z-index: 40;
-      padding: 0.5rem 0.65rem;
-      border-radius: 0.5rem;
-      background: rgba(15, 23, 42, 0.98);
-      border: 1px solid rgba(212, 168, 83, 0.32);
-      color: #f8fafc;
-      font-size: 0.8125rem;
-      line-height: 1.45;
-      font-weight: 500;
-      white-space: normal;
-      word-break: break-word;
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.42);
-      opacity: 0;
-      visibility: hidden;
-      pointer-events: none;
-      transition: opacity 0.15s ease, visibility 0.15s ease;
+    .media-card__title-text--repeat {
+      display: none;
     }
-    .media-card__title-full::after {
-      content: '';
-      position: absolute;
-      left: 1rem;
-      top: 100%;
-      border: 6px solid transparent;
-      border-top-color: rgba(212, 168, 83, 0.32);
+    .media-card__title-wrap.is-overflow .media-card__title-text--repeat {
+      display: none;
     }
-    .media-card__title-wrap.is-overflow:hover .media-card__title-full,
-    .media-card__title-wrap.is-overflow:focus-within .media-card__title-full {
-      opacity: 1;
-      visibility: visible;
+    .media-card__title-wrap.is-overflow.is-marquee-active .media-card__title-track {
+      display: inline-flex;
+      align-items: center;
+      gap: 2.5rem;
+      overflow: visible;
+      text-overflow: unset;
+      max-width: none;
+      will-change: transform;
+      animation: media-title-marquee var(--marquee-duration, 14s) linear infinite;
+    }
+    .media-card__title-wrap.is-overflow.is-marquee-active .media-card__title-text--repeat {
+      display: inline;
+    }
+    @keyframes media-title-marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(var(--marquee-distance, -50%)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .media-card__title-wrap.is-marquee-active .media-card__title-track {
+        animation: none;
+      }
     }
     .media-card__actions {
       display: inline-flex;
@@ -1376,16 +1372,45 @@ function downloadIconLink(url, { label = 'Download', className = '' } = {}) {
   </a>`;
 }
 
+function setMediaCardMarquee(wrap, on) {
+  if (!wrap?.classList.contains('is-overflow')) return;
+  wrap.classList.toggle('is-marquee-active', on);
+  if (!on) {
+    const track = wrap.querySelector('.media-card__title-track');
+    if (track) track.style.transform = '';
+  }
+}
+
 function bindMediaCardTitles(root = document) {
   root.querySelectorAll('.media-card__title-wrap:not([data-title-bound])').forEach((wrap) => {
     wrap.dataset.titleBound = '1';
-    const title = wrap.querySelector('.media-card__title');
-    if (!title) return;
+    const viewport = wrap.querySelector('.media-card__title-viewport');
+    const track = wrap.querySelector('.media-card__title-track');
+    const text = wrap.querySelector('.media-card__title-text');
+    if (!viewport || !track || !text) return;
+
+    const head = wrap.closest('.media-card__head');
+    const marqueeGap = 40;
+    const marqueeSpeed = 26;
+
     requestAnimationFrame(() => {
-      if (title.scrollWidth > title.clientWidth + 1) {
-        wrap.classList.add('is-overflow');
-        title.setAttribute('title', title.textContent || '');
-      }
+      if (text.scrollWidth <= viewport.clientWidth + 1) return;
+      wrap.classList.add('is-overflow');
+      text.setAttribute('title', text.textContent || '');
+
+      const textWidth = text.scrollWidth;
+      const distance = textWidth + marqueeGap;
+      const duration = Math.max(8, distance / marqueeSpeed);
+      wrap.style.setProperty('--marquee-distance', `-${distance}px`);
+      wrap.style.setProperty('--marquee-duration', `${duration}s`);
+
+      const activate = () => setMediaCardMarquee(wrap, true);
+      const deactivate = () => setMediaCardMarquee(wrap, false);
+      const hoverTarget = head || wrap;
+      hoverTarget.addEventListener('mouseenter', activate);
+      hoverTarget.addEventListener('mouseleave', deactivate);
+      hoverTarget.addEventListener('focusin', activate);
+      hoverTarget.addEventListener('focusout', deactivate);
     });
   });
 }
@@ -1836,16 +1861,18 @@ function mediaCard({
         ${badgeHtml}
       </div>`;
 
-  const titleTip = `<span class="media-card__title-full" role="tooltip">${escapeHtml(title)}</span>`;
-
   return `
     <article id="${id || ''}" class="media-card bg-slate-900/70 border border-slate-800 rounded-2xl flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5 sm:hover:-translate-y-0.5">
       ${thumbSection}
       <div class="media-card__inner p-4 sm:p-4">
         <div class="media-card__head">
           <div class="media-card__title-wrap">
-            <p class="media-card__title">${escapeHtml(title)}</p>
-            ${titleTip}
+            <div class="media-card__title-viewport">
+              <div class="media-card__title-track">
+                <span class="media-card__title-text">${escapeHtml(title)}</span>
+                <span class="media-card__title-text media-card__title-text--repeat" aria-hidden="true">${escapeHtml(title)}</span>
+              </div>
+            </div>
           </div>
           ${actions}
         </div>
