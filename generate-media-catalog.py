@@ -13,7 +13,6 @@ from pathlib import Path
 WEBSITE = Path(__file__).resolve().parent
 VIDEO_SRC = WEBSITE.parent / "www" / "Sheikh Faisal Video Lectures"
 VIDEO_THUMB_OUT = WEBSITE / "thumb" / "videos"
-CLIP_THUMB_OUT = WEBSITE / "thumb" / "clips"
 VIDEOS_ARCHIVE = "https://archive.org/metadata/FaisalVideos"
 CLIPS_ARCHIVE = "https://archive.org/metadata/the-creed-of-the-shia"
 CLIPS_ARCHIVE_BASE = "https://archive.org/download/the-creed-of-the-shia/"
@@ -333,25 +332,6 @@ def find_thumb(filename: str, local_index: dict[str, str], archive_map: dict[str
     return _thumb_lookup(filename, local_index) or _thumb_lookup(filename, archive_map)
 
 
-def find_clip_thumb(filename: str, local_index: dict[str, str], archive_map: dict[str, str]) -> str | None:
-    """Prefer Internet Archive thumbs; use local thumb/clips/ only as fallback."""
-    return _thumb_lookup(filename, archive_map) or _thumb_lookup(filename, local_index)
-
-
-def build_clip_thumb_index() -> dict[str, str]:
-    index: dict[str, str] = {}
-    if not CLIP_THUMB_OUT.is_dir():
-        return index
-    for src in CLIP_THUMB_OUT.iterdir():
-        if src.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"}:
-            continue
-        rel = f"thumb/clips/{src.name}"
-        for key in (norm(src.stem), norm(src.name)):
-            if key:
-                index.setdefault(key, rel)
-    return index
-
-
 def build_clips_archive_thumb_map(meta: dict) -> dict[str, str]:
     archive_thumb_map: dict[str, str] = {}
     for item in meta.get("files", []):
@@ -442,7 +422,6 @@ def build_clips(meta: dict | None = None):
     if meta is None:
         meta = fetch_metadata(CLIPS_ARCHIVE)
     archive_thumb_map = build_clips_archive_thumb_map(meta)
-    local_clip_thumbs = build_clip_thumb_index()
 
     all_mp4 = [f["name"] for f in meta.get("files", []) if f.get("name", "").endswith(".mp4")]
     chosen = []
@@ -468,9 +447,9 @@ def build_clips(meta: dict | None = None):
         stem = Path(name).stem
         if stem.endswith(".ia"):
             stem = stem[:-3]
-        thumb = find_clip_thumb(stem + ".mp4", local_clip_thumbs, archive_thumb_map)
+        thumb = find_thumb(stem + ".mp4", {}, archive_thumb_map)
         if not thumb:
-            thumb = find_clip_thumb(name, local_clip_thumbs, archive_thumb_map)
+            thumb = find_thumb(name, {}, archive_thumb_map)
 
         stem_key = norm(stem)
         title = CLIP_TITLE_OVERRIDES.get(stem_key, clean_clip_title(stem))
