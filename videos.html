@@ -95,6 +95,7 @@
           stream: v.stream,
           hideThumbImage: true,
         })).join('') || '<p class="text-slate-500 col-span-full text-center py-16">No videos found.</p>';
+        bindMediaVideos(grid);
       });
 
       const pag = document.getElementById('pagination');

@@ -794,6 +794,41 @@ function mountMobileStyles() {
       .media-card h3 { font-size: 0.9375rem; line-height: 1.45; }
       .media-card video { min-height: 12rem; }
 
+    .media-video-wrap { border-radius: 0.5rem; overflow: hidden; }
+    .media-video-loader {
+      position: absolute;
+      inset: 0;
+      z-index: 4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+    .media-video-wrap.is-loading .media-video-loader {
+      opacity: 1;
+    }
+    .media-video-loader__spinner {
+      width: 2.25rem;
+      height: 2.25rem;
+      border-radius: 999px;
+      border: 2px solid rgba(212, 168, 83, 0.22);
+      border-top-color: #d4a853;
+      animation: media-video-spin 0.8s linear infinite;
+    }
+    @keyframes media-video-spin {
+      to { transform: rotate(360deg); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .media-video-loader__spinner {
+        animation: none;
+        border-color: rgba(212, 168, 83, 0.35);
+        border-top-color: #d4a853;
+      }
+    }
+
       .mobile-cta-btn {
         width: 100%;
         justify-content: center;
@@ -1328,8 +1363,11 @@ function mediaCard({ id, thumb, title, badge, stream, downloadUrl, posterOnly = 
     className: 'absolute top-2 right-2 z-10 bg-slate-950/75 backdrop-blur-sm border border-slate-700/80 hover:border-gold/40',
   });
   const videoBlock = posterOnly ? '' : `
-    <div class="relative mt-auto">
-      <video controls preload="none" playsinline class="w-full rounded-lg bg-black ${hideThumbImage ? 'aspect-video' : ''}" ${poster}>
+    <div class="media-video-wrap relative mt-auto">
+      <div class="media-video-loader" aria-hidden="true">
+        <div class="media-video-loader__spinner" role="presentation"></div>
+      </div>
+      <video controls preload="none" playsinline class="media-video w-full rounded-lg bg-black ${hideThumbImage ? 'aspect-video' : ''}" ${poster}>
         <source src="${stream}" type="video/mp4">
       </video>
       ${downloadLink}
@@ -1350,6 +1388,42 @@ function mediaCard({ id, thumb, title, badge, stream, downloadUrl, posterOnly = 
         ${videoBlock}
       </div>
     </article>`;
+}
+
+function bindMediaVideos(root = document) {
+  root.querySelectorAll('.media-video-wrap:not([data-video-bound])').forEach((wrap) => {
+    wrap.dataset.videoBound = '1';
+    const video = wrap.querySelector('video');
+    if (!video) return;
+
+    let showTimer = null;
+
+    const setLoading = (on) => {
+      clearTimeout(showTimer);
+      if (on) {
+        showTimer = window.setTimeout(() => wrap.classList.add('is-loading'), 120);
+      } else {
+        wrap.classList.remove('is-loading');
+      }
+    };
+
+    video.addEventListener('loadstart', () => {
+      if (video.networkState > HTMLMediaElement.NETWORK_EMPTY) setLoading(true);
+    });
+    video.addEventListener('waiting', () => setLoading(true));
+    video.addEventListener('stalled', () => setLoading(true));
+    video.addEventListener('seeking', () => {
+      if (!video.paused) setLoading(true);
+    });
+    video.addEventListener('playing', () => setLoading(false));
+    video.addEventListener('canplay', () => {
+      if (!video.paused) setLoading(false);
+    });
+    video.addEventListener('seeked', () => setLoading(false));
+    video.addEventListener('pause', () => setLoading(false));
+    video.addEventListener('error', () => setLoading(false));
+    video.addEventListener('emptied', () => setLoading(false));
+  });
 }
 
 function setActiveNav(page) {
