@@ -27,7 +27,7 @@ registerLectureChunk("Diseases_of_the_Heart", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Diseases_of_the_Heart/Diseases of the Heart [Lust]- Shaikh Faisal 2.12.2011 PT Dars.mp3",
-    "thumb": "thumb/generated/8b3a27c583029154.jpg",
+    "thumb": null,
     "id": 57
   },
   {
@@ -57,7 +57,7 @@ registerLectureChunk("Diseases_of_the_Heart", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Road to Sincerity (07.17.11).mp3",
-    "thumb": "thumb/generated/28cc1388b757ca5a.jpg",
+    "thumb": null,
     "id": 203
   }
 ]);

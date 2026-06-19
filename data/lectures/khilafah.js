@@ -7,7 +7,7 @@ registerLectureChunk("Khilafah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Can the Khilaafa survive.mp3",
-    "thumb": "thumb/generated/85b86f9c37b458bb.jpg",
+    "thumb": null,
     "id": 39
   },
   {
@@ -17,7 +17,7 @@ registerLectureChunk("Khilafah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Khilafah/Future of the Caliphate.mp3",
-    "thumb": "thumb/generated/398e664fe282baae.jpg",
+    "thumb": null,
     "id": 77
   },
   {
@@ -27,7 +27,7 @@ registerLectureChunk("Khilafah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Khilafah/Is the caliphate valid.mp3",
-    "thumb": "thumb/generated/126e86bbfc3d96af.jpg",
+    "thumb": null,
     "id": 95
   },
   {
@@ -37,7 +37,7 @@ registerLectureChunk("Khilafah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Khilafah/is-the-dawla-khawarij.mp3",
-    "thumb": "thumb/generated/ef04f74b201bf549.jpg",
+    "thumb": null,
     "id": 96
   },
   {
@@ -77,7 +77,7 @@ registerLectureChunk("Khilafah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Message from the Calipha (HA) to the Ummah.mp3",
-    "thumb": "thumb/generated/934e4387ec35731c.jpg",
+    "thumb": null,
     "id": 145
   },
   {
@@ -97,7 +97,7 @@ registerLectureChunk("Khilafah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Khilafah/The Enemies of the Caliphate.mp3",
-    "thumb": "thumb/generated/06b172dbb2382605.jpg",
+    "thumb": null,
     "id": 446
   },
   {
@@ -107,7 +107,7 @@ registerLectureChunk("Khilafah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Khilafah/THE IMPORTANCE OF SHARI`AH.mp3",
-    "thumb": "thumb/generated/831fdf21899b0635.jpg",
+    "thumb": null,
     "id": 462
   }
 ]);

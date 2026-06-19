@@ -27,7 +27,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Al-Wala wal-Bara by shaykh Abdullah Faisal.mp3",
-    "thumb": "thumb/generated/fdd2c109aba63aa8.jpg",
+    "thumb": null,
     "id": 18
   },
   {
@@ -37,7 +37,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Allah Blesses Whom He Wills (06.28.11)(1).mp3",
-    "thumb": "thumb/generated/d39713a86ac597cd.jpg",
+    "thumb": null,
     "id": 21
   },
   {
@@ -77,7 +77,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "DISMANTLE THE SHARIAH IS MAJOR KUFR - Abdallah Al Faisal.mp3",
-    "thumb": "thumb/generated/7c7396fc4c775155.jpg",
+    "thumb": null,
     "id": 58
   },
   {
@@ -127,7 +127,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Hearts of the Kafirs Are Alike (07.11.11).mp3",
-    "thumb": "thumb/generated/d4dabee1988795cc.jpg",
+    "thumb": null,
     "id": 80
   },
   {
@@ -147,7 +147,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Invalidation Of Your Actions – Part 1.mp3",
-    "thumb": "thumb/generated/29bb52070732c9ce.jpg",
+    "thumb": null,
     "id": 93
   },
   {
@@ -157,7 +157,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Invalidation Of Your Actions – Part 2.mp3",
-    "thumb": "thumb/generated/98ff93b3000f39a5.jpg",
+    "thumb": null,
     "id": 94
   },
   {
@@ -177,7 +177,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Let's Call A Spade A Spade - Part 2.mp3",
-    "thumb": "thumb/generated/c9cb9313a698bbff.jpg",
+    "thumb": null,
     "id": 130
   },
   {
@@ -187,7 +187,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Let's Call A Spade A Spade - Part 3.mp3",
-    "thumb": "thumb/generated/ae5cdb918ac59764.jpg",
+    "thumb": null,
     "id": 131
   },
   {
@@ -197,7 +197,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Let's Call A Spade A Spade - Part 4.mp3",
-    "thumb": "thumb/generated/6550ab690bfba3f2.jpg",
+    "thumb": null,
     "id": 132
   },
   {
@@ -207,7 +207,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Let's Call A Spade A Spade Part 1.mp3",
-    "thumb": "thumb/generated/6433e4308b69d6bd.jpg",
+    "thumb": null,
     "id": 133
   },
   {
@@ -217,7 +217,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Nawaaqid al islam by Muhd ibn Abdul Wahhab.mp3",
-    "thumb": "thumb/generated/c8d5da0d65fea539.jpg",
+    "thumb": null,
     "id": 160
   },
   {
@@ -267,7 +267,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Democracy   The Greatest Shirk.mp3",
-    "thumb": "thumb/generated/3fd7183195da16b4.jpg",
+    "thumb": null,
     "id": 241
   },
   {
@@ -277,7 +277,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Shirk In Perspective (07.10.11).mp3",
-    "thumb": "thumb/generated/2cbd1f269ebe8593.jpg",
+    "thumb": null,
     "id": 259
   },
   {
@@ -297,7 +297,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The 13 Shades Of Kufr.mp3",
-    "thumb": "thumb/generated/def9a9de4b6368ce.jpg",
+    "thumb": null,
     "id": 418
   },
   {
@@ -307,7 +307,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The 15 Shades of Kufr.mp3",
-    "thumb": "thumb/generated/f8171ef2e6d4dd79.jpg",
+    "thumb": null,
     "id": 419
   },
   {
@@ -317,7 +317,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The 17 Shades of Shirk (dars).mp3",
-    "thumb": "thumb/generated/e1d6a2391dc5dd5c.jpg",
+    "thumb": null,
     "id": 420
   },
   {
@@ -327,7 +327,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The 57 Signs Of A Munafiq - Part 1.mp3",
-    "thumb": "thumb/generated/ca8436eeb04d32ec.jpg",
+    "thumb": null,
     "id": 435
   },
   {
@@ -337,7 +337,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal.mp3",
-    "thumb": "thumb/generated/8e251ca5565efbb4.jpg",
+    "thumb": null,
     "id": 505
   },
   {
@@ -367,7 +367,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Where Is Allah SWT (07.08.11).mp3",
-    "thumb": "thumb/generated/35f5d4026b90fdeb.jpg",
+    "thumb": null,
     "id": 519
   },
   {
@@ -377,7 +377,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "conf_imped_takfir.mp3",
-    "thumb": "thumb/generated/ef65ea3dd3110354.jpg",
+    "thumb": null,
     "id": 527
   }
 ]);

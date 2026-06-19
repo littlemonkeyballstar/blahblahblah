@@ -7,7 +7,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "20 Du'as of Ibrahim (08.17.11 to 08.18.11).mp3",
-    "thumb": "thumb/generated/1d795fed90833107.jpg",
+    "thumb": null,
     "id": 1
   },
   {
@@ -17,7 +17,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "9 Signs of Musa to the Pharoah (06.22.11).mp3",
-    "thumb": "thumb/generated/e81c7fb64551838a.jpg",
+    "thumb": null,
     "id": 13
   },
   {
@@ -27,7 +27,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Adam_Alayhi_Salam_And_The_Satan_The_Eternal_Battle_Part_1.mp3",
-    "thumb": "thumb/generated/02a6dfe217b08476.jpg",
+    "thumb": null,
     "id": 15
   },
   {
@@ -37,7 +37,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Adam_Alayhi_Salam_And_The_Satan_The_Eternal_Battle_–_Part_2.mp3",
-    "thumb": "thumb/generated/5014b40a20be6282.jpg",
+    "thumb": null,
     "id": 16
   },
   {
@@ -47,7 +47,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "al Israa wal Mi'raaj.mp3",
-    "thumb": "thumb/generated/9083c8ca6804c39b.jpg",
+    "thumb": null,
     "id": 17
   },
   {
@@ -57,7 +57,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Allah (SWT) Has Honored Bani Adam - Mankind.mp3",
-    "thumb": "thumb/generated/64a78b2a0ac7aa83.jpg",
+    "thumb": null,
     "id": 19
   },
   {
@@ -67,7 +67,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Allah's Commandments to Ibrahim (AS) (07.21.11).mp3",
-    "thumb": "thumb/generated/5a8233fa56372750.jpg",
+    "thumb": null,
     "id": 23
   },
   {
@@ -77,7 +77,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Beware of Invading the Land of Ibrahim (07.28.11).mp3",
-    "thumb": "thumb/generated/f9b182396892f657.jpg",
+    "thumb": null,
     "id": 35
   },
   {
@@ -97,7 +97,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Islam of Umar (RA) (07.09.11).mp3",
-    "thumb": "thumb/generated/411de0dfffd6645f.jpg",
+    "thumb": null,
     "id": 98
   },
   {
@@ -107,7 +107,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Many Miracles of the Prophet Muhammad (SAW) (07.20.11).mp3",
-    "thumb": "thumb/generated/6f78d1eb35261e9e.jpg",
+    "thumb": null,
     "id": 140
   },
   {
@@ -127,7 +127,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Musa & al Khidr (dars).mp3",
-    "thumb": "thumb/generated/086cca8e9c3ba148.jpg",
+    "thumb": null,
     "id": 150
   },
   {
@@ -137,7 +137,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Musa & Al-Khidr (07.09.11).mp3",
-    "thumb": "thumb/generated/307aef0bbd6e53b2.jpg",
+    "thumb": null,
     "id": 151
   },
   {
@@ -177,7 +177,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal   Al Isra Wal Mira'aj.mp3",
-    "thumb": "thumb/generated/3f19a6c5965e2b9a.jpg",
+    "thumb": null,
     "id": 239
   },
   {
@@ -187,7 +187,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "the Sleepers in the Cave.mp3",
-    "thumb": "thumb/generated/07bd7832554fb262.jpg",
+    "thumb": null,
     "id": 495
   }
 ]);

@@ -17,7 +17,7 @@ registerLectureChunk("Tawheed", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tawheed/The 4 Branches Of Tauheed.mp3",
-    "thumb": "thumb/generated/2f0a166082e80c2c.jpg",
+    "thumb": null,
     "id": 426
   }
 ]);

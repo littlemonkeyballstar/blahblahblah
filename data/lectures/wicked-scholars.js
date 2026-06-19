@@ -17,7 +17,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "DEFINITION OF A SCHOLAR - Abdallah Al Faisal.mp3",
-    "thumb": "thumb/generated/b296dd663b5fda7d.jpg",
+    "thumb": null,
     "id": 46
   },
   {
@@ -37,7 +37,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/FOURTY SEVEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal.mp3",
-    "thumb": "thumb/generated/c1ef52b5c1e3a39c.jpg",
+    "thumb": null,
     "id": 75
   },
   {
@@ -47,7 +47,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "LET THE SCHOLARS BEWARE - Abdallah Al Faisal.mp3",
-    "thumb": "thumb/generated/eef5121f80e29a81.jpg",
+    "thumb": null,
     "id": 129
   },
   {
@@ -57,7 +57,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/SEVENTEEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal.mp3",
-    "thumb": "thumb/generated/eee996e15a071cae.jpg",
+    "thumb": null,
     "id": 237
   },
   {
@@ -67,7 +67,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/WICKED SCHOLAR - Abdallah Al Faisal.mp3",
-    "thumb": "thumb/generated/6390f5e71af6a0c9.jpg",
+    "thumb": null,
     "id": 529
   },
   {
