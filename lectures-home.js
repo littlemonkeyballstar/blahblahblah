@@ -2,7 +2,7 @@
 const HOME_FEATURED_PINNED = [
   {
     "id": 18,
-    "title": "Al-Wala wal-Bara by shaykh Abdullah Faisal",
+    "title": "Al-Wala wal-Bara by Shaykh Abdullah Faisal",
     "categoryLabel": "Aqeedah",
     "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png"
   }
@@ -11,7 +11,7 @@ const HOME_FEATURED_PINNED = [
 const HOME_FEATURED = [
   {
     "id": 18,
-    "title": "Al-Wala wal-Bara by shaykh Abdullah Faisal",
+    "title": "Al-Wala wal-Bara by Shaykh Abdullah Faisal",
     "categoryLabel": "Aqeedah",
     "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png"
   },

@@ -443,7 +443,7 @@ const LECTURES = [
     "id": 17
   },
   {
-    "title": "Al-Wala wal-Bara by shaykh Abdullah Faisal",
+    "title": "Al-Wala wal-Bara by Shaykh Abdullah Faisal",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
