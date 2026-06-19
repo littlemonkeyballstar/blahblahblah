@@ -147,10 +147,7 @@
       transition: top 0.28s ease, bottom 0.28s ease, opacity 0.28s ease;
     }
     .lecture-placeholder.is-playing .lecture-placeholder__wave {
-      bottom: auto;
-      top: 0.72rem;
-      opacity: 0.95;
-      z-index: 25;
+      opacity: 0;
     }
     .lecture-placeholder__wave span {
       display: block;
@@ -226,87 +223,72 @@
     .lecture-card:hover .lecture-download-glass {
       border-color: rgba(255, 255, 255, 0.22);
     }
-    .audio-skip-controls {
-      position: absolute;
-      bottom: 0.55rem;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 20;
-      display: inline-flex;
+    .audio-transport-strip {
+      display: flex;
       align-items: center;
-      gap: 0.15rem;
-      padding: 0.2rem 0.25rem;
-      border-radius: 999px;
-      background: rgba(15, 23, 42, 0.52);
-      backdrop-filter: blur(12px);
-      -webkit-backdrop-filter: blur(12px);
-      border: 1px solid rgba(255, 255, 255, 0.14);
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+      justify-content: space-between;
+      gap: 0.65rem;
+      max-height: 0;
       opacity: 0;
+      overflow: hidden;
       pointer-events: none;
-      transition: opacity 0.22s ease, transform 0.22s ease, border-color 0.22s ease;
+      padding: 0 0.85rem;
+      background: linear-gradient(180deg, rgba(14, 20, 34, 0.98) 0%, rgba(10, 15, 28, 1) 100%);
+      border-bottom: 0 solid rgba(212, 168, 83, 0.14);
+      transition: max-height 0.3s ease, opacity 0.25s ease, padding 0.3s ease, border-bottom-width 0.3s ease;
     }
-    .lecture-card.is-playing-audio .audio-skip-controls {
+    .lecture-card.is-playing-audio .audio-transport-strip {
+      max-height: 2.85rem;
       opacity: 1;
       pointer-events: auto;
-      border-color: rgba(212, 168, 83, 0.35);
+      padding: 0.5rem 0.85rem;
+      border-bottom-width: 1px;
     }
-    .audio-skip-btn {
+    .audio-transport-btn {
       display: inline-flex;
       align-items: center;
-      gap: 0.22rem;
-      padding: 0.32rem 0.58rem;
+      gap: 0.28rem;
+      padding: 0.38rem 0.7rem;
       border-radius: 999px;
-      font-size: 0.625rem;
+      font-size: 0.6875rem;
       font-weight: 600;
-      letter-spacing: 0.03em;
+      letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: rgba(248, 250, 252, 0.92);
-      background: transparent;
-      border: none;
+      color: rgba(226, 232, 240, 0.92);
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.1);
       cursor: pointer;
-      transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+      flex-shrink: 0;
+      transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease, transform 0.15s ease;
     }
-    .audio-skip-btn:hover {
-      background: rgba(212, 168, 83, 0.16);
+    .audio-transport-btn:hover {
+      background: rgba(212, 168, 83, 0.14);
+      border-color: rgba(212, 168, 83, 0.38);
       color: #e8c97a;
     }
-    .audio-skip-btn:active { transform: scale(0.94); }
-    .audio-skip-btn i { font-size: 0.58rem; opacity: 0.92; }
-    .audio-skip-btn + .audio-skip-btn {
-      border-left: 1px solid rgba(255, 255, 255, 0.1);
-      padding-left: 0.62rem;
-      margin-left: 0.05rem;
-    }
-    .audio-playing-wave {
-      position: absolute;
-      top: 0.72rem;
-      left: 50%;
-      transform: translateX(-50%);
-      z-index: 25;
+    .audio-transport-btn:active { transform: scale(0.96); }
+    .audio-transport-btn i { font-size: 0.62rem; opacity: 0.9; }
+    .audio-transport-wave {
       display: flex;
       align-items: flex-end;
-      gap: 0.22rem;
-      height: 1.35rem;
-      opacity: 0;
-      pointer-events: none;
-      transition: opacity 0.28s ease;
+      justify-content: center;
+      gap: 0.2rem;
+      height: 1.2rem;
+      flex: 1;
+      min-width: 0;
     }
-    .lecture-card.is-playing-audio .audio-playing-wave {
-      opacity: 0.95;
-    }
-    .lecture-card.is-playing-audio .audio-playing-wave span {
+    .lecture-card.is-playing-audio .audio-transport-wave span {
       display: block;
       width: 3px;
       border-radius: 9999px;
       background: #d4a853;
       animation: ph-wave 1.35s ease-in-out infinite;
     }
-    .audio-playing-wave span:nth-child(1) { height: 0.45rem; animation-delay: 0s; }
-    .audio-playing-wave span:nth-child(2) { height: 0.85rem; animation-delay: 0.12s; }
-    .audio-playing-wave span:nth-child(3) { height: 1.15rem; animation-delay: 0.24s; }
-    .audio-playing-wave span:nth-child(4) { height: 0.75rem; animation-delay: 0.36s; }
-    .audio-playing-wave span:nth-child(5) { height: 0.5rem; animation-delay: 0.48s; }
+    .audio-transport-wave span:nth-child(1) { height: 0.4rem; animation-delay: 0s; }
+    .audio-transport-wave span:nth-child(2) { height: 0.75rem; animation-delay: 0.12s; }
+    .audio-transport-wave span:nth-child(3) { height: 1rem; animation-delay: 0.24s; }
+    .audio-transport-wave span:nth-child(4) { height: 0.65rem; animation-delay: 0.36s; }
+    .audio-transport-wave span:nth-child(5) { height: 0.45rem; animation-delay: 0.48s; }
     .scrollbar-thin::-webkit-scrollbar { height: 6px; }
     .scrollbar-thin::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
     audio { width: 100%; border-radius: .5rem; }
@@ -797,8 +779,7 @@
         : '';
 
       const downloadOverlay = downloadGlassLink(audioUrl, { label: 'Download audio' });
-      const skipControls = audioSkipControlsHtml();
-      const playingWave = `<div class="audio-playing-wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>`;
+      const transportStrip = audioTransportStripHtml();
 
       const thumbSection = hasThumb
         ? `<div class="thumb-frame relative flex items-center justify-center p-3 overflow-hidden">
@@ -808,8 +789,6 @@
             <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950/80 text-gold text-[10px] font-semibold uppercase tracking-wider backdrop-blur-sm z-10">
               ${escapeHtml(lecture.categoryLabel)}
             </span>
-            ${playingWave}
-            ${skipControls}
             ${downloadOverlay}
           </div>`
         : `<div class="thumb-frame relative overflow-hidden">
@@ -817,13 +796,13 @@
             <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950/80 text-gold text-[10px] font-semibold uppercase tracking-wider backdrop-blur-sm z-10">
               ${escapeHtml(lecture.categoryLabel)}
             </span>
-            ${skipControls}
             ${downloadOverlay}
           </div>`;
 
       return `
         <article id="lecture-${lecture.id}" class="lecture-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col">
           ${thumbSection}
+          ${transportStrip}
           <div class="p-4 flex flex-col flex-1">
             ${subBadge}
             <h3 class="font-medium text-sm text-slate-100 leading-snug mt-1 mb-3 line-clamp-3" title="${escapeHtml(lecture.title)}">${escapeHtml(lecture.title)}</h3>

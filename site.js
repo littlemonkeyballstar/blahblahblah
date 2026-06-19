@@ -120,15 +120,16 @@ function skipAudioBy(audio, deltaSec) {
   else audio.addEventListener('loadedmetadata', apply, { once: true });
 }
 
-function audioSkipControlsHtml() {
-  const back = AUDIO_SKIP_SEC;
-  const fwd = AUDIO_SKIP_SEC;
-  return `<div class="audio-skip-controls" role="group" aria-label="Skip ${back} seconds">
-    <button type="button" class="audio-skip-btn" data-audio-skip="-${back}" aria-label="Back ${back} seconds">
-      <i class="fas fa-rotate-left" aria-hidden="true"></i><span>${back}s</span>
+function audioTransportStripHtml() {
+  const sec = AUDIO_SKIP_SEC;
+  const wave = '<span></span><span></span><span></span><span></span><span></span>';
+  return `<div class="audio-transport-strip" role="group" aria-label="Skip ${sec} seconds">
+    <button type="button" class="audio-transport-btn" data-audio-skip="-${sec}" aria-label="Back ${sec} seconds">
+      <i class="fas fa-rotate-left" aria-hidden="true"></i><span>${sec}s</span>
     </button>
-    <button type="button" class="audio-skip-btn" data-audio-skip="${fwd}" aria-label="Forward ${fwd} seconds">
-      <span>${fwd}s</span><i class="fas fa-rotate-right" aria-hidden="true"></i>
+    <div class="audio-transport-wave" aria-hidden="true">${wave}</div>
+    <button type="button" class="audio-transport-btn" data-audio-skip="${sec}" aria-label="Forward ${sec} seconds">
+      <span>${sec}s</span><i class="fas fa-rotate-right" aria-hidden="true"></i>
     </button>
   </div>`;
 }
