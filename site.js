@@ -229,7 +229,9 @@ function mountMobileStyles() {
         position: sticky;
         top: 4.25rem;
         z-index: 40;
-        background: #0c1220 !important;
+        background: rgba(12, 18, 32, 0.96) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
       }
       .audio-cat-nav {
@@ -515,7 +517,7 @@ function mediaCard({ id, thumb, title, badge, stream, posterOnly = false, hideTh
   const imgBlock = encThumb
     ? `<img src="${encThumb}" alt="" class="relative z-[1] max-w-full max-h-full object-contain" loading="lazy" onerror="this.style.display='none'">`
     : `<i class="fas fa-play-circle text-4xl text-gold/25"></i>`;
-  const badgeHtml = badge ? `<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-md bg-slate-950 text-gold text-[10px] font-semibold uppercase tracking-wider">${escapeHtml(badge)}</span>` : '';
+  const badgeHtml = badge ? `<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-md bg-slate-950/85 text-gold text-[10px] font-semibold uppercase tracking-wider">${escapeHtml(badge)}</span>` : '';
   const videoBlock = posterOnly ? '' : `
     <video controls preload="none" playsinline class="w-full rounded-lg bg-black ${hideThumbImage ? 'aspect-video' : 'mt-auto'}" ${poster}>
       <source src="${stream}" type="video/mp4">
@@ -529,7 +531,7 @@ function mediaCard({ id, thumb, title, badge, stream, posterOnly = false, hideTh
       </div>`;
 
   return `
-    <article id="${id || ''}" class="media-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5 sm:hover:-translate-y-0.5">
+    <article id="${id || ''}" class="media-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5 sm:hover:-translate-y-0.5">
       ${thumbSection}
       <div class="p-4 sm:p-4 flex flex-col flex-1 min-w-0">
         <h3 class="font-medium text-sm sm:text-sm text-slate-100 leading-snug ${hideThumbImage ? 'mb-3 sm:mb-4' : 'mb-3'} line-clamp-4 sm:line-clamp-3" title="${escapeHtml(title)}">${escapeHtml(title)}</h3>
