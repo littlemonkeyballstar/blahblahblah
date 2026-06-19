@@ -2,11 +2,14 @@
 """Generate pdfs-data.js from Internet Archive collection faisalPDF."""
 import json
 import re
+import subprocess
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
 WEBSITE = Path(__file__).resolve().parent
+PDF_LOCAL_ROOT = WEBSITE.parent / "www"
+PDF_THUMB_OUT = WEBSITE / "thumb" / "pdfs"
 PDF_METADATA_URL = "https://archive.org/metadata/faisalPDF"
 PDF_DOWNLOAD_BASE = "https://archive.org/download/faisalPDF/"
 PDF_DETAILS_URL = "https://archive.org/details/faisalPDF"
@@ -75,25 +78,113 @@ def fetch_pdfs() -> list[dict]:
     pdfs = sorted(best.values(), key=lambda x: x["title"].lower())
     for index, pdf in enumerate(pdfs):
         pdf["id"] = index
+    attach_thumbs(pdfs)
     return pdfs
 
 
+def has_pdftoppm() -> bool:
+    try:
+        subprocess.run(["pdftoppm", "-v"], capture_output=True, check=True)
+        return True
+    except (FileNotFoundError, subprocess.CalledProcessError):
+        return False
+
+
+def extract_pdf_thumb(local_pdf: Path, dest: Path) -> bool:
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    prefix = dest.with_suffix("")
+    if dest.exists():
+        dest.unlink()
+    cmd = [
+        "pdftoppm",
+        "-f", "1",
+        "-l", "1",
+        "-jpeg",
+        "-r", "72",
+        "-singlefile",
+        str(local_pdf),
+        str(prefix),
+    ]
+    try:
+        subprocess.run(cmd, check=True, timeout=120)
+        return dest.exists() and dest.stat().st_size > 500
+    except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
+        dest.unlink(missing_ok=True)
+        return False
+
+
+def attach_thumbs(pdfs: list[dict]) -> None:
+    if not has_pdftoppm():
+        print("pdftoppm not found — skipping PDF thumbnail generation")
+        return
+
+    created = 0
+    for pdf in pdfs:
+        local_pdf = PDF_LOCAL_ROOT / pdf["archive"]
+        if not local_pdf.is_file():
+            continue
+        thumb_rel = f"thumb/pdfs/{pdf['id']}.jpg"
+        thumb_path = WEBSITE / thumb_rel
+        if thumb_path.exists() and thumb_path.stat().st_mtime >= local_pdf.stat().st_mtime:
+            pdf["thumb"] = thumb_rel
+            continue
+        if extract_pdf_thumb(local_pdf, thumb_path):
+            pdf["thumb"] = thumb_rel
+            created += 1
+    print(f"PDF thumbnails: {sum(1 for pdf in pdfs if pdf.get('thumb'))} ready ({created} regenerated)")
+
+
 def write_search_pdfs(pdfs: list[dict]) -> None:
-    entries = [
-        {
+    entries = []
+    for pdf in pdfs:
+        entry = {
             "type": "pdf",
             "id": pdf["id"],
             "title": pdf["title"],
             "sub": pdf.get("sizeLabel", ""),
             "href": f"pdfs.html?pdf={pdf['id']}",
         }
-        for pdf in pdfs
-    ]
+        if pdf.get("thumb"):
+            entry["thumb"] = pdf["thumb"]
+        entries.append(entry)
     out = WEBSITE / "data" / "search-pdfs.json"
     out.parent.mkdir(parents=True, exist_ok=True)
     with open(out, "w", encoding="utf-8") as handle:
         json.dump(entries, handle, ensure_ascii=False, indent=2)
     print(f"Wrote {out} ({len(entries)} searchable PDFs)")
+
+
+def patch_search_index_pdfs(pdfs: list[dict]) -> None:
+    search_path = WEBSITE / "search-index.js"
+    if not search_path.is_file():
+        return
+
+    text = search_path.read_text(encoding="utf-8")
+    match = re.search(r"const SEARCH_INDEX = (\[.*\]);", text, re.S)
+    if not match:
+        return
+
+    existing = json.loads(match.group(1))
+    pdf_entries = []
+    for pdf in pdfs:
+        entry = {
+            "type": "pdf",
+            "id": pdf["id"],
+            "title": pdf["title"],
+            "sub": pdf.get("sizeLabel", ""),
+            "href": f"pdfs.html?pdf={pdf['id']}",
+        }
+        if pdf.get("thumb"):
+            entry["thumb"] = pdf["thumb"]
+        pdf_entries.append(entry)
+
+    merged = [item for item in existing if item.get("type") != "pdf"] + pdf_entries
+    with open(search_path, "w", encoding="utf-8") as handle:
+        handle.write("/* Auto-generated — run generate-catalog.py, generate-media-catalog.py, generate-pdf-catalog.py */\n")
+        handle.write("const SEARCH_INDEX = ")
+        json.dump(merged, handle, ensure_ascii=False, indent=2)
+        handle.write(";\n")
+    print(f"Patched {search_path} ({len(pdf_entries)} PDF search entries)")
 
 
 def main():
@@ -108,6 +199,7 @@ def main():
         handle.write(";\n")
     print(f"Wrote {out} ({len(pdfs)} PDFs)")
     write_search_pdfs(pdfs)
+    patch_search_index_pdfs(pdfs)
 
 
 if __name__ == "__main__":

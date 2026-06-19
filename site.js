@@ -639,21 +639,34 @@ function bindPdfPreviewControls(root = document) {
   });
 }
 
-function pdfCard({ id, title, sizeLabel, downloadUrl, embedUrl, detailsUrl }) {
+function pdfCard({ id, title, sizeLabel, downloadUrl, embedUrl, detailsUrl, thumb }) {
+  const hasThumb = isValidThumb(thumb);
+  const thumbImg = hasThumb
+    ? `<img src="${thumbSrc(thumb)}" alt="" class="absolute inset-0 w-full h-full object-cover object-top transition duration-300 group-hover:scale-[1.02]" loading="lazy"
+        onerror="this.style.display='none'">`
+    : '';
+  const thumbFallback = hasThumb ? '' : `
+        <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 p-4 text-center">
+          <span class="w-14 h-14 rounded-2xl bg-red-950/60 border border-red-900/40 flex items-center justify-center">
+            <i class="fas fa-file-pdf text-3xl text-red-400/90"></i>
+          </span>
+        </div>`;
+
   const previewBlock = embedUrl
     ? `<button type="button" class="pdf-preview-open group relative w-full aspect-[4/5] bg-slate-950 border-b border-slate-800 overflow-hidden text-left"
         data-title="${escapeHtml(title)}" data-embed="${escapeHtml(embedUrl)}" data-download="${escapeHtml(downloadUrl || '')}" data-details="${escapeHtml(detailsUrl || '')}" aria-label="Preview ${escapeHtml(title)}">
         <div class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900"></div>
-        <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 p-4 text-center transition group-hover:bg-gold/5">
-          <span class="w-14 h-14 rounded-2xl bg-red-950/60 border border-red-900/40 flex items-center justify-center group-hover:scale-105 transition-transform">
-            <i class="fas fa-file-pdf text-3xl text-red-400/90"></i>
+        ${thumbImg}
+        ${thumbFallback}
+        <div class="absolute inset-0 bg-slate-950/0 group-hover:bg-slate-950/35 transition"></div>
+        <div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-slate-950/95 via-slate-950/70 to-transparent">
+          <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-950/85 text-[10px] font-medium text-slate-200 border border-slate-700 group-hover:border-gold/40 group-hover:text-gold transition">
+            <i class="fas fa-eye text-[9px]"></i> Preview
           </span>
-          <span class="text-xs font-medium text-slate-300 group-hover:text-gold transition">Click to preview</span>
         </div>
-        <span class="absolute bottom-2 right-2 px-2 py-1 rounded-md bg-slate-950/80 text-[10px] text-slate-400 border border-slate-800">Page 1</span>
       </button>`
-    : `<div class="w-full aspect-[4/5] bg-slate-950 border-b border-slate-800 flex items-center justify-center">
-        <i class="fas fa-file-pdf text-4xl text-red-400/70"></i>
+    : `<div class="w-full aspect-[4/5] bg-slate-950 border-b border-slate-800 overflow-hidden relative flex items-center justify-center">
+        ${hasThumb ? `<img src="${thumbSrc(thumb)}" alt="" class="absolute inset-0 w-full h-full object-cover object-top" loading="lazy">` : '<i class="fas fa-file-pdf text-4xl text-red-400/70"></i>'}
       </div>`;
 
   const actions = [
