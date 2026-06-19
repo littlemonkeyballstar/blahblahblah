@@ -5469,7 +5469,7 @@ const SEARCH_INDEX = [
   {
     "type": "clip",
     "id": 42,
-    "title": "The man who goes out in Jihad, facing the enemy, will attain the highest honor and remain elevated above all others. — Shaykh Abdullah Faisal",
+    "title": "The man who goes out for jihad",
     "sub": "Short clip",
     "href": "clips.html?clip=42",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The man who goes out in Jihad_000001.jpg"

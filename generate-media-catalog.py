@@ -195,11 +195,7 @@ _CLIP_TITLES_RAW = [
     ("The Ummah is Sick & The Scholars are to Blame", "The ummah is sick and the scholars are to blame"),
     ("The killing of journalists", "The killing of journalists"),
     ("The lie about Jihad", "The lie about jihad"),
-    (
-        "The man who goes out in Jihad",
-        "The man who goes out in Jihad, facing the enemy, will attain the highest honor "
-        "and remain elevated above all others. — Shaykh Abdullah Faisal",
-    ),
+    ("The man who goes out in Jihad", "The man who goes out for jihad"),
     ("They Control what you learn about isllam", "They control what you learn about Islam"),
     ("They Will Fight You Until You Leave Islam (Baqara", "They will fight you until you leave Islam (Surah Baqarah)"),
     (
