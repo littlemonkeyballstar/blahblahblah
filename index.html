@@ -90,6 +90,47 @@
       </div>
     </section>
 
+    <!-- Site updates (dismissible) -->
+    <section id="siteUpdates" class="max-w-7xl mx-auto px-4 sm:px-8 pt-6 hidden">
+      <div class="rounded-2xl border border-gold/25 bg-slate-900/70 overflow-hidden">
+        <div class="flex items-start justify-between gap-3 px-5 py-4 border-b border-slate-800 bg-slate-925/60">
+          <div>
+            <p class="text-[10px] uppercase tracking-widest text-gold mb-1">June 2026</p>
+            <h2 class="font-display text-lg sm:text-xl text-gold-gradient">What’s new on the archive</h2>
+          </div>
+          <button type="button" id="dismissUpdates" class="w-9 h-9 rounded-full border border-slate-700 text-slate-400 hover:text-gold hover:border-gold/40 transition shrink-0" aria-label="Dismiss update notes">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="px-5 py-5 text-sm text-slate-300 leading-relaxed space-y-5">
+          <div>
+            <h3 class="font-medium text-slate-100 mb-2 flex items-center gap-2"><i class="fas fa-file-pdf text-red-400/90 text-sm"></i> PDF Books</h3>
+            <ul class="list-disc pl-5 space-y-1 text-slate-400">
+              <li>New <a href="pdfs.html" class="text-gold hover:underline">PDF Books</a> page — 26 books hosted on Internet Archive</li>
+              <li>Cover thumbnails, in-browser preview, and download on every book</li>
+              <li>Multi-part series grouped together (Science Of Quran, Challenges Facing the Ummah, Refuting The Lie)</li>
+              <li>Browse by topic: Quran &amp; Tafsir, Aqeedah, Ummah Affairs, Character &amp; Family, and more</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-medium text-slate-100 mb-2 flex items-center gap-2"><i class="fas fa-search text-gold text-sm"></i> Search &amp; navigation</h3>
+            <ul class="list-disc pl-5 space-y-1 text-slate-400">
+              <li>Homepage search now covers audio, videos, clips, and PDFs — with thumbnails in results</li>
+              <li>PDF Books added to the menu on every page</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="font-medium text-slate-100 mb-2 flex items-center gap-2"><i class="fas fa-headphones text-gold text-sm"></i> Listening &amp; downloads</h3>
+            <ul class="list-disc pl-5 space-y-1 text-slate-400">
+              <li>Audio lectures resume where you left off when you return to the site</li>
+              <li>Download icon on audio, video, clip, and PDF cards — save files from Internet Archive</li>
+            </ul>
+          </div>
+          <p class="text-xs text-slate-500 pt-1">All media is streamed from Internet Archive. More books and lectures will be added over time, in shā’ Allāh.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Hero Slideshow — 8 seconds per slide -->
     <section class="max-w-7xl mx-auto px-4 sm:px-8 pt-8 sm:pt-12 pb-6">
       <div class="flex items-center justify-between mb-6">
@@ -270,6 +311,19 @@
       document.getElementById('audioPreview').innerHTML = randomPick(audioPool, 4).map(l =>
         previewCard(`audio.html?lecture=${l.id}`, l.thumb, l.title, l.categoryLabel, 'fa-headphones')
       ).join('');
+    }
+
+    const UPDATES_DISMISS_KEY = 'site-updates-2026-06-dismissed';
+    const updatesPanel = document.getElementById('siteUpdates');
+    const dismissBtn = document.getElementById('dismissUpdates');
+    if (updatesPanel && !localStorage.getItem(UPDATES_DISMISS_KEY)) {
+      updatesPanel.classList.remove('hidden');
+    }
+    if (dismissBtn && updatesPanel) {
+      dismissBtn.onclick = () => {
+        updatesPanel.classList.add('hidden');
+        localStorage.setItem(UPDATES_DISMISS_KEY, '1');
+      };
     }
 
     mountTopBar();
