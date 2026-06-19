@@ -294,10 +294,30 @@ function isInternalPageLink(anchor) {
 function getPageTransitionOverlay() {
   if (pageTransitionOverlay) return pageTransitionOverlay;
   pageTransitionOverlay = document.createElement('div');
+  pageTransitionOverlay.id = 'page-transition-overlay';
   pageTransitionOverlay.className = 'page-transition-overlay';
   pageTransitionOverlay.setAttribute('aria-hidden', 'true');
   document.body.appendChild(pageTransitionOverlay);
   return pageTransitionOverlay;
+}
+
+/** Clear exit animation state — needed when the browser restores a page from back/forward cache. */
+function resetPageTransitionState() {
+  document.documentElement.classList.remove('is-exiting');
+  document.querySelectorAll('.page-transition-overlay').forEach((overlay) => {
+    overlay.classList.remove('page-transition-overlay--active');
+  });
+}
+
+function handlePageShow(event) {
+  resetPageTransitionState();
+  if (!event.persisted) return;
+  if (document.getElementById('homeMain')) {
+    document.getElementById('homeMain')?.classList.add('is-ready');
+    dismissHomeBootScreen();
+  }
+  const main = document.querySelector('main.site-page');
+  if (main) main.classList.add('site-page-ready');
 }
 
 function navigateWithTransition(href) {
@@ -426,8 +446,10 @@ function initSiteMotion() {
   mountMotionStyles();
   enhanceNavLinks();
   bindPageExitTransitions();
+  resetPageTransitionState();
   preparePageEnter();
   enableContentSwapSoon();
+  window.addEventListener('pageshow', handlePageShow);
 }
 
 function animateContentSwap(container, updateFn, { stagger = true } = {}) {
