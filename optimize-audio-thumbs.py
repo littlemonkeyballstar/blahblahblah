@@ -17,8 +17,8 @@ LECTURE_GLOBS = [
     WEBSITE / "home-previews-pool.js",
 ]
 
-CARD_MAX_PX = 480
-WEBP_QUALITY = 82
+CARD_MAX_PX = 320
+WEBP_QUALITY = 80
 
 
 def collect_thumb_paths() -> set[str]:
@@ -50,7 +50,9 @@ def optimize_one(src_rel: str) -> tuple[bool, int, int]:
     dest = WEBSITE / card_rel(src_rel)
     dest.parent.mkdir(parents=True, exist_ok=True)
     if dest.exists() and dest.stat().st_mtime >= src.stat().st_mtime:
-        return False, src.stat().st_size, dest.stat().st_size
+        with Image.open(dest) as existing:
+            if max(existing.size) <= CARD_MAX_PX + 2:
+                return False, src.stat().st_size, dest.stat().st_size
 
     with Image.open(src) as img:
         img = img.convert("RGB")

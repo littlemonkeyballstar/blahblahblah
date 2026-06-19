@@ -675,6 +675,7 @@ function mountContinueListening(audioLookup) {
         <i class="fas fa-play text-gold/50 group-hover:text-gold text-sm flex-shrink-0"></i>
       </a>`;
   }).join('');
+  enhanceGridThumbs(listEl, { priorityCount: 3 });
 
   section.classList.add('home-fade-in');
 }
@@ -1498,7 +1499,7 @@ function randomPick(arr, count) {
   return shuffleArray(arr).slice(0, Math.min(count, arr.length));
 }
 
-function thumbMarkup(src, alt, className = 'max-w-full max-h-full object-contain') {
+function thumbMarkup(src, alt, className = 'max-w-full max-h-full object-contain', { eager = false } = {}) {
   if (!isValidThumb(src)) {
     return `<div class="thumb-box w-full h-full flex items-center justify-center ${className}"><i class="fas fa-book-quran text-3xl text-gold/25"></i></div>`;
   }
@@ -1506,7 +1507,9 @@ function thumbMarkup(src, alt, className = 'max-w-full max-h-full object-contain
   const onerror = thumbCardRel(src)
     ? `if(!this.dataset.thumbFb){this.dataset.thumbFb='1';this.src='${thumbSrc(src).replace(/'/g, '%27')}'}else{this.outerHTML='${icon}'}`
     : `this.outerHTML='${icon}'`;
-  return `<img src="${thumbDisplaySrc(src)}" alt="${escapeHtml(alt)}" class="${className}" loading="lazy" decoding="async" onerror="${onerror}">`;
+  const loading = eager ? 'eager' : 'lazy';
+  const priority = eager ? ' fetchpriority="high"' : '';
+  return `<img src="${thumbDisplaySrc(src)}" alt="${escapeHtml(alt)}" class="${className}" loading="${loading}" decoding="async"${priority} onerror="${onerror}">`;
 }
 
 function thumbCardRel(src) {
@@ -1545,7 +1548,10 @@ function enhanceGridThumbs(root, { priorityCount = 6 } = {}) {
   if (!root) return;
   root.querySelectorAll('img').forEach((img, index) => {
     img.decoding = 'async';
-    if (index < priorityCount) img.fetchPriority = 'high';
+    if (index < priorityCount) {
+      img.loading = 'eager';
+      img.fetchPriority = 'high';
+    }
   });
 }
 

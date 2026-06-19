@@ -363,13 +363,13 @@
       return count ? randomPick(pool, count) : [];
     }
 
-    function buildSlide(lec) {
+    function buildSlide(lec, index = 0) {
       const link = `audio.html?lecture=${lec.id}`;
       return `
         <div class="flex-shrink-0 w-full" data-slide>
           <div class="flex flex-col sm:flex-row min-h-[18rem]">
             <a href="${link}" class="sm:w-[42%] slide-thumb thumb-box flex items-center justify-center p-4 flex-shrink-0 group">
-              ${thumbMarkup(lec.thumb, lec.title, 'max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700')}
+              ${thumbMarkup(lec.thumb, lec.title, 'max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-700', { eager: index === 0 })}
             </a>
             <div class="slide-slide-content flex-1 flex flex-col justify-center px-4 sm:px-10 py-5 sm:py-6 bg-gradient-to-br from-slate-900 to-slate-850">
               <span class="text-gold text-xs font-semibold uppercase tracking-widest mb-2">${escapeHtml(lec.categoryLabel)}</span>
@@ -416,7 +416,7 @@
         return;
       }
       slideshow.classList.add('home-fade-in');
-      document.getElementById('slideTrack').innerHTML = featured.map(buildSlide).join('');
+      document.getElementById('slideTrack').innerHTML = featured.map((lec, i) => buildSlide(lec, i)).join('');
       const dots = featured.map((_, i) =>
         `<button class="slide-dot h-2 rounded-full transition-all ${i===0?'active bg-gold w-7':'bg-slate-600 w-2'}" data-i="${i}" aria-label="Slide ${i+1}"></button>`
       ).join('');
@@ -436,11 +436,14 @@
       resetTimer();
     }
 
-    function previewCard(href, thumb, title, sub, icon) {
+    function previewCard(href, thumb, title, sub, icon, { eager = false } = {}) {
+      const thumbImg = thumb
+        ? `<img src="${thumbDisplaySrc(thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="${eager ? 'eager' : 'lazy'}" decoding="async"${eager ? ' fetchpriority="high"' : ''} onerror="${thumbImgFallbackHandler(thumb)}">`
+        : `<i class="fas ${icon} text-gold/40"></i>`;
       return `
         <a href="${href}" class="mobile-preview-card card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900/50 group active:bg-slate-800/80">
           <div class="preview-thumb w-24 h-14 rounded-lg overflow-hidden thumb-box flex items-center justify-center flex-shrink-0 p-1">
-            ${thumb ? `<img src="${thumbSrc(thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="lazy" onerror="this.style.display='none'">` : `<i class="fas ${icon} text-gold/40"></i>`}
+            ${thumbImg}
           </div>
           <div class="min-w-0 flex-1">
             <p class="preview-title text-sm font-medium text-slate-100 group-hover:text-gold transition">${escapeHtml(title)}</p>
@@ -463,8 +466,8 @@
         previewCard(`videos.html?video=${v.id}`, v.thumb, v.title, 'Video lecture', 'fa-video')
       ).join('');
 
-      document.getElementById('audioPreview').innerHTML = randomPick(audioPool, 4).map(l =>
-        previewCard(`audio.html?lecture=${l.id}`, l.thumb, l.title, l.categoryLabel, 'fa-headphones')
+      document.getElementById('audioPreview').innerHTML = randomPick(audioPool, 4).map((l, i) =>
+        previewCard(`audio.html?lecture=${l.id}`, l.thumb, l.title, l.categoryLabel, 'fa-headphones', { eager: i === 0 })
       ).join('');
 
       document.querySelectorAll('#clipsPreview, #videosPreview, #audioPreview').forEach((el, i) => {
