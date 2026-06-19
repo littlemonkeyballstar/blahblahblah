@@ -304,20 +304,39 @@ function getPageTransitionOverlay() {
 /** Clear exit animation state — needed when the browser restores a page from back/forward cache. */
 function resetPageTransitionState() {
   document.documentElement.classList.remove('is-exiting');
+  document.body.style.pointerEvents = '';
   document.querySelectorAll('.page-transition-overlay').forEach((overlay) => {
     overlay.classList.remove('page-transition-overlay--active');
   });
 }
 
+function isBackForwardNavigation() {
+  const [nav] = performance.getEntriesByType('navigation');
+  return nav?.type === 'back_forward';
+}
+
+function unlockHomepageIfNeeded() {
+  const main = document.getElementById('homeMain');
+  if (!main) return;
+  main.classList.add('is-ready');
+  dismissHomeBootScreen();
+  const boot = document.getElementById('homeBootScreen');
+  if (boot) {
+    boot.classList.add('is-done');
+    boot.style.pointerEvents = 'none';
+  }
+}
+
 function handlePageShow(event) {
   resetPageTransitionState();
-  if (!event.persisted) return;
-  if (document.getElementById('homeMain')) {
-    document.getElementById('homeMain')?.classList.add('is-ready');
-    dismissHomeBootScreen();
+  if (event.persisted || isBackForwardNavigation()) {
+    unlockHomepageIfNeeded();
+    document.querySelector('main.site-page')?.classList.add('site-page-ready');
   }
-  const main = document.querySelector('main.site-page');
-  if (main) main.classList.add('site-page-ready');
+}
+
+function handlePageHide() {
+  resetPageTransitionState();
 }
 
 function navigateWithTransition(href) {
@@ -328,7 +347,10 @@ function navigateWithTransition(href) {
   const overlay = getPageTransitionOverlay();
   document.documentElement.classList.add('is-exiting');
   overlay.classList.add('page-transition-overlay--active');
-  window.setTimeout(() => { location.href = href; }, 60);
+  window.setTimeout(() => {
+    resetPageTransitionState();
+    location.href = href;
+  }, 60);
 }
 
 function bindPageExitTransitions() {
@@ -371,9 +393,6 @@ function mountMotionStyles() {
     .page-transition-overlay--active {
       opacity: 1;
       pointer-events: auto;
-    }
-    html.is-exiting body {
-      pointer-events: none;
     }
 
     main.site-page {
@@ -450,6 +469,7 @@ function initSiteMotion() {
   preparePageEnter();
   enableContentSwapSoon();
   window.addEventListener('pageshow', handlePageShow);
+  window.addEventListener('pagehide', handlePageHide);
 }
 
 function animateContentSwap(container, updateFn, { stagger = true } = {}) {
