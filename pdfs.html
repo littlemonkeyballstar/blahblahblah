@@ -91,7 +91,10 @@
         title: p.title,
         sizeLabel: p.sizeLabel,
         downloadUrl: p.download,
+        embedUrl: p.embed,
+        detailsUrl: p.details,
       })).join('') || '<p class="text-slate-500 col-span-full text-center py-16">No books found.</p>';
+      bindPdfPreviewControls(document.getElementById('grid'));
 
       const pag = document.getElementById('pagination');
       if (pages <= 1) { pag.innerHTML = ''; return; }
@@ -119,11 +122,20 @@
           el.classList.add('ring-2', 'ring-gold', 'shadow-lg', 'shadow-gold/20');
           el.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
+        if (pdf.embed) {
+          openPdfPreview({
+            title: pdf.title,
+            embedUrl: pdf.embed,
+            downloadUrl: pdf.download,
+            detailsUrl: pdf.details,
+          });
+        }
       });
     }
 
     document.getElementById('search').oninput = e => { state.search = e.target.value; state.page = 1; render(); };
     mountTopBar();
+    mountPdfPreviewModal();
     document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
     mountTelegramLink();
     setActiveNav('pdfs');

@@ -26,6 +26,10 @@ def display_title(archive_path: str) -> str:
     return re.sub(r"\s+", " ", stem).strip()
 
 
+def archive_embed_path(path: str) -> str:
+    return "/".join(urllib.parse.quote(part, safe="") for part in path.split("/"))
+
+
 def format_size(num_bytes: int) -> str:
     if num_bytes < 1024:
         return f"{num_bytes} B"
@@ -46,12 +50,15 @@ def fetch_pdfs() -> list[dict]:
         if item.get("format") == "Metadata":
             continue
         size = int(item.get("size", 0))
+        encoded = archive_embed_path(name)
         entries.append({
             "title": display_title(name),
             "archive": name,
             "size": size,
             "sizeLabel": format_size(size),
             "download": PDF_DOWNLOAD_BASE + urllib.parse.quote(name),
+            "embed": f"https://archive.org/embed/faisalPDF/{encoded}#page/n1/mode/1up",
+            "details": f"{PDF_DETAILS_URL}/{encoded}",
         })
 
     # Drop duplicate debunking letter (keep spaced filename version)

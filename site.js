@@ -537,21 +537,137 @@ function archiveStreamUrl(base, path) {
 
 function downloadButtonHtml(url, label = 'Download') {
   if (!url) return '';
-  return `<a href="${url}" class="media-download-btn inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:border-gold/40 hover:text-gold text-xs font-medium transition w-fit mt-3" target="_blank" rel="noopener">
+  return `<a href="${url}" class="media-download-btn inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:border-gold/40 hover:text-gold text-xs font-medium transition w-fit" target="_blank" rel="noopener" download>
     <i class="fas fa-download"></i> ${escapeHtml(label)}
   </a>`;
 }
 
-function pdfCard({ id, title, sizeLabel, downloadUrl }) {
+function previewButtonHtml({ embedUrl, title = '', downloadUrl = '', detailsUrl = '', label = 'Preview' }) {
+  if (!embedUrl) return '';
+  return `<button type="button" class="pdf-preview-btn inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:border-gold/40 hover:text-gold text-xs font-medium transition w-fit"
+    data-title="${escapeHtml(title)}" data-embed="${escapeHtml(embedUrl)}" data-download="${escapeHtml(downloadUrl)}" data-details="${escapeHtml(detailsUrl)}">
+    <i class="fas fa-eye"></i> ${escapeHtml(label)}
+  </button>`;
+}
+
+function archivePdfEmbedUrl(identifier, archivePath) {
+  const encoded = archivePath.split('/').map(part => encodeURIComponent(part)).join('/');
+  return `https://archive.org/embed/${identifier}/${encoded}#page/n1/mode/1up`;
+}
+
+let pdfPreviewModalMounted = false;
+
+function mountPdfPreviewModal() {
+  if (pdfPreviewModalMounted || document.getElementById('pdfPreviewModal')) return;
+  pdfPreviewModalMounted = true;
+
+  const modal = document.createElement('div');
+  modal.id = 'pdfPreviewModal';
+  modal.className = 'fixed inset-0 z-[80] hidden';
+  modal.setAttribute('role', 'dialog');
+  modal.setAttribute('aria-modal', 'true');
+  modal.setAttribute('aria-hidden', 'true');
+  modal.innerHTML = `
+    <button type="button" id="pdfPreviewBackdrop" class="absolute inset-0 bg-slate-950/85 backdrop-blur-sm" aria-label="Close preview"></button>
+    <div class="relative z-10 h-full flex flex-col p-3 sm:p-5 max-w-6xl mx-auto">
+      <div class="flex items-start justify-between gap-3 mb-3 shrink-0">
+        <div class="min-w-0">
+          <p class="text-[10px] uppercase tracking-widest text-slate-500 mb-1">PDF preview</p>
+          <h2 id="pdfPreviewTitle" class="font-display text-lg sm:text-xl text-gold-gradient leading-snug line-clamp-2"></h2>
+        </div>
+        <button type="button" id="pdfPreviewClose" class="w-10 h-10 rounded-full border border-slate-700 text-slate-400 hover:text-gold hover:border-gold/40 transition shrink-0" aria-label="Close preview">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="flex-1 min-h-0 rounded-xl overflow-hidden border border-slate-700 bg-white shadow-2xl shadow-black/40">
+        <iframe id="pdfPreviewFrame" title="PDF preview" class="w-full h-full border-0" loading="lazy" allow="fullscreen"></iframe>
+      </div>
+      <div class="flex flex-wrap items-center justify-between gap-3 mt-3 shrink-0">
+        <p class="text-xs text-slate-500">Powered by Internet Archive reader</p>
+        <div class="flex flex-wrap gap-2">
+          <a id="pdfPreviewArchiveLink" href="#" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:border-gold/40 hover:text-gold text-xs font-medium transition" target="_blank" rel="noopener">
+            <i class="fas fa-external-link-alt"></i> View on Archive
+          </a>
+          <a id="pdfPreviewDownloadLink" href="#" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-gold/40 bg-gold/10 text-gold text-xs font-medium transition hover:bg-gold/20" target="_blank" rel="noopener" download>
+            <i class="fas fa-download"></i> Download
+          </a>
+        </div>
+      </div>
+    </div>`;
+  document.body.appendChild(modal);
+
+  const closePreview = () => {
+    modal.classList.add('hidden');
+    modal.setAttribute('aria-hidden', 'true');
+    document.getElementById('pdfPreviewFrame').src = 'about:blank';
+    document.body.classList.remove('overflow-hidden');
+  };
+
+  document.getElementById('pdfPreviewBackdrop').onclick = closePreview;
+  document.getElementById('pdfPreviewClose').onclick = closePreview;
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !modal.classList.contains('hidden')) closePreview();
+  });
+}
+
+function openPdfPreview({ title, embedUrl, downloadUrl, detailsUrl }) {
+  mountPdfPreviewModal();
+  const modal = document.getElementById('pdfPreviewModal');
+  document.getElementById('pdfPreviewTitle').textContent = title || 'PDF preview';
+  document.getElementById('pdfPreviewFrame').src = embedUrl;
+  const archiveLink = document.getElementById('pdfPreviewArchiveLink');
+  const downloadLink = document.getElementById('pdfPreviewDownloadLink');
+  if (detailsUrl) archiveLink.href = detailsUrl;
+  if (downloadUrl) downloadLink.href = downloadUrl;
+  modal.classList.remove('hidden');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('overflow-hidden');
+}
+
+function bindPdfPreviewControls(root = document) {
+  root.querySelectorAll('.pdf-preview-btn, .pdf-preview-open').forEach(el => {
+    if (el.dataset.boundPreview) return;
+    el.dataset.boundPreview = '1';
+    el.addEventListener('click', () => {
+      openPdfPreview({
+        title: el.dataset.title || '',
+        embedUrl: el.dataset.embed || '',
+        downloadUrl: el.dataset.download || '',
+        detailsUrl: el.dataset.details || '',
+      });
+    });
+  });
+}
+
+function pdfCard({ id, title, sizeLabel, downloadUrl, embedUrl, detailsUrl }) {
+  const previewBlock = embedUrl
+    ? `<button type="button" class="pdf-preview-open group relative w-full aspect-[4/5] bg-slate-950 border-b border-slate-800 overflow-hidden text-left"
+        data-title="${escapeHtml(title)}" data-embed="${escapeHtml(embedUrl)}" data-download="${escapeHtml(downloadUrl || '')}" data-details="${escapeHtml(detailsUrl || '')}" aria-label="Preview ${escapeHtml(title)}">
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900"></div>
+        <div class="absolute inset-0 flex flex-col items-center justify-center gap-2 p-4 text-center transition group-hover:bg-gold/5">
+          <span class="w-14 h-14 rounded-2xl bg-red-950/60 border border-red-900/40 flex items-center justify-center group-hover:scale-105 transition-transform">
+            <i class="fas fa-file-pdf text-3xl text-red-400/90"></i>
+          </span>
+          <span class="text-xs font-medium text-slate-300 group-hover:text-gold transition">Click to preview</span>
+        </div>
+        <span class="absolute bottom-2 right-2 px-2 py-1 rounded-md bg-slate-950/80 text-[10px] text-slate-400 border border-slate-800">Page 1</span>
+      </button>`
+    : `<div class="w-full aspect-[4/5] bg-slate-950 border-b border-slate-800 flex items-center justify-center">
+        <i class="fas fa-file-pdf text-4xl text-red-400/70"></i>
+      </div>`;
+
+  const actions = [
+    previewButtonHtml({ embedUrl, title, downloadUrl, detailsUrl }),
+    downloadButtonHtml(downloadUrl),
+  ].filter(Boolean).join('');
+
   return `
     <article id="${id || ''}" class="pdf-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5">
-      <div class="p-5 flex flex-col flex-1 min-w-0">
-        <div class="w-12 h-12 rounded-xl bg-red-950/50 border border-red-900/30 flex items-center justify-center mb-4 flex-shrink-0">
-          <i class="fas fa-file-pdf text-2xl text-red-400/90"></i>
-        </div>
-        <h3 class="font-medium text-sm text-slate-100 leading-snug mb-2 line-clamp-4" title="${escapeHtml(title)}">${escapeHtml(title)}</h3>
-        <p class="text-xs text-slate-500 mb-1">${escapeHtml(sizeLabel || '')}</p>
-        ${downloadButtonHtml(downloadUrl)}
+      ${previewBlock}
+      <div class="p-4 flex flex-col flex-1 min-w-0">
+        <h3 class="font-medium text-sm text-slate-100 leading-snug mb-2 line-clamp-3" title="${escapeHtml(title)}">${escapeHtml(title)}</h3>
+        <p class="text-xs text-slate-500 mb-3">${escapeHtml(sizeLabel || '')}</p>
+        <div class="flex flex-wrap gap-2 mt-auto">${actions}</div>
       </div>
     </article>`;
 }
