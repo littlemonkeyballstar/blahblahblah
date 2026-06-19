@@ -580,11 +580,15 @@ function mountPdfPreviewModal() {
           <i class="fas fa-times"></i>
         </button>
       </div>
-      <div class="flex-1 min-h-0 rounded-xl overflow-hidden border border-slate-700 bg-white shadow-2xl shadow-black/40">
-        <iframe id="pdfPreviewFrame" title="PDF preview" class="w-full h-full border-0" loading="lazy" allow="fullscreen"></iframe>
+      <div class="pdf-preview-frame relative flex-1 min-h-[min(75vh,calc(100dvh-11rem))] rounded-xl overflow-hidden border border-slate-700 bg-slate-900 shadow-2xl shadow-black/40">
+        <div id="pdfPreviewLoader" class="absolute inset-0 z-10 flex flex-col items-center justify-center gap-3 bg-slate-900 text-slate-400">
+          <i class="fas fa-circle-notch fa-spin text-2xl text-gold"></i>
+          <span class="text-sm">Loading PDF…</span>
+        </div>
+        <iframe id="pdfPreviewFrame" title="PDF preview" class="relative z-20 w-full h-full border-0 bg-white" allow="fullscreen"></iframe>
       </div>
       <div class="flex flex-wrap items-center justify-between gap-3 mt-3 shrink-0">
-        <p class="text-xs text-slate-500">Powered by Internet Archive reader</p>
+        <p class="text-xs text-slate-500">Preview from Internet Archive</p>
         <div class="flex flex-wrap gap-2">
           <a id="pdfPreviewArchiveLink" href="#" class="inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:border-gold/40 hover:text-gold text-xs font-medium transition" target="_blank" rel="noopener">
             <i class="fas fa-external-link-alt"></i> View on Archive
@@ -600,7 +604,15 @@ function mountPdfPreviewModal() {
   const closePreview = () => {
     modal.classList.add('hidden');
     modal.setAttribute('aria-hidden', 'true');
-    document.getElementById('pdfPreviewFrame').src = 'about:blank';
+    const frame = document.getElementById('pdfPreviewFrame');
+    const loader = document.getElementById('pdfPreviewLoader');
+    frame.src = 'about:blank';
+    frame.onload = null;
+    frame.onerror = null;
+    if (loader) {
+      loader.classList.remove('hidden');
+      loader.innerHTML = '<i class="fas fa-circle-notch fa-spin text-2xl text-gold"></i><span class="text-sm">Loading PDF…</span>';
+    }
     document.body.classList.remove('overflow-hidden');
   };
 
@@ -611,11 +623,36 @@ function mountPdfPreviewModal() {
   });
 }
 
+function pdfPreviewSrc(downloadUrl, detailsUrl) {
+  if (downloadUrl) return downloadUrl;
+  if (detailsUrl) return `${detailsUrl}${detailsUrl.includes('?') ? '&' : '?'}view=theater`;
+  return '';
+}
+
 function openPdfPreview({ title, embedUrl, downloadUrl, detailsUrl }) {
   mountPdfPreviewModal();
   const modal = document.getElementById('pdfPreviewModal');
+  const frame = document.getElementById('pdfPreviewFrame');
+  const loader = document.getElementById('pdfPreviewLoader');
+  const previewUrl = pdfPreviewSrc(downloadUrl, detailsUrl) || embedUrl;
+
   document.getElementById('pdfPreviewTitle').textContent = title || 'PDF preview';
-  document.getElementById('pdfPreviewFrame').src = embedUrl;
+  if (loader) loader.classList.remove('hidden');
+
+  frame.onload = () => {
+    if (loader) loader.classList.add('hidden');
+  };
+  frame.onerror = () => {
+    if (loader) {
+      loader.innerHTML = '<p class="text-sm text-slate-400 px-6 text-center">Preview could not load. Use <strong class="text-gold">View on Archive</strong> or <strong class="text-gold">Download</strong> below.</p>';
+    }
+  };
+
+  frame.src = 'about:blank';
+  requestAnimationFrame(() => {
+    frame.src = previewUrl;
+  });
+
   const archiveLink = document.getElementById('pdfPreviewArchiveLink');
   const downloadLink = document.getElementById('pdfPreviewDownloadLink');
   if (detailsUrl) archiveLink.href = detailsUrl;
@@ -631,10 +668,10 @@ function bindPdfPreviewControls(root = document) {
     el.dataset.boundPreview = '1';
     el.addEventListener('click', () => {
       openPdfPreview({
-        title: el.dataset.title || '',
-        embedUrl: el.dataset.embed || '',
-        downloadUrl: el.dataset.download || '',
-        detailsUrl: el.dataset.details || '',
+        title: el.getAttribute('data-title') || '',
+        embedUrl: el.getAttribute('data-embed') || '',
+        downloadUrl: el.getAttribute('data-download') || '',
+        detailsUrl: el.getAttribute('data-details') || '',
       });
     });
   });
