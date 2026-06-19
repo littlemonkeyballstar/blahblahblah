@@ -308,7 +308,7 @@ function navigateWithTransition(href) {
   const overlay = getPageTransitionOverlay();
   document.documentElement.classList.add('is-exiting');
   overlay.classList.add('page-transition-overlay--active');
-  window.setTimeout(() => { location.href = href; }, 220);
+  window.setTimeout(() => { location.href = href; }, 60);
 }
 
 function bindPageExitTransitions() {
@@ -325,9 +325,7 @@ function preparePageEnter() {
   const main = document.getElementById('homeMain') || document.querySelector('main');
   if (!main || main.id === 'homeMain') return;
   main.classList.add('site-page');
-  requestAnimationFrame(() => {
-    requestAnimationFrame(() => main.classList.add('site-page-ready'));
-  });
+  requestAnimationFrame(() => main.classList.add('site-page-ready'));
 }
 
 function enhanceNavLinks() {
@@ -347,10 +345,8 @@ function mountMotionStyles() {
       z-index: 200;
       pointer-events: none;
       opacity: 0;
-      background: rgba(8, 13, 24, 0.55);
-      backdrop-filter: blur(4px);
-      -webkit-backdrop-filter: blur(4px);
-      transition: opacity 0.22s ease;
+      background: rgba(8, 13, 24, 0.35);
+      transition: opacity 0.1s ease-out;
     }
     .page-transition-overlay--active {
       opacity: 1;
