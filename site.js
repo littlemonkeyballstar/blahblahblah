@@ -1499,17 +1499,21 @@ function randomPick(arr, count) {
   return shuffleArray(arr).slice(0, Math.min(count, arr.length));
 }
 
-function thumbMarkup(src, alt, className = 'max-w-full max-h-full object-contain', { eager = false } = {}) {
+function thumbMarkup(src, alt, className = 'max-w-full max-h-full object-contain', { eager = false, fullQuality = false } = {}) {
   if (!isValidThumb(src)) {
     return `<div class="thumb-box w-full h-full flex items-center justify-center ${className}"><i class="fas fa-book-quran text-3xl text-gold/25"></i></div>`;
   }
   const icon = `<div class=\\'thumb-box w-full h-full flex items-center justify-center\\'><i class=\\'fas fa-book-quran text-3xl text-gold/25\\'></i></div>`;
-  const onerror = thumbCardRel(src)
-    ? `if(!this.dataset.thumbFb){this.dataset.thumbFb='1';this.src='${thumbSrc(src).replace(/'/g, '%27')}'}else{this.outerHTML='${icon}'}`
-    : `this.outerHTML='${icon}'`;
+  const onerror = fullQuality
+    ? `this.outerHTML='${icon}'`
+    : thumbCardRel(src)
+      ? `if(!this.dataset.thumbFb){this.dataset.thumbFb='1';this.src='${thumbSrc(src).replace(/'/g, '%27')}'}else{this.outerHTML='${icon}'}`
+      : `this.outerHTML='${icon}'`;
+  const imgSrc = fullQuality ? thumbSrc(src) : thumbDisplaySrc(src);
   const loading = eager ? 'eager' : 'lazy';
   const priority = eager ? ' fetchpriority="high"' : '';
-  return `<img src="${thumbDisplaySrc(src)}" alt="${escapeHtml(alt)}" class="${className}" loading="${loading}" decoding="async"${priority} onerror="${onerror}">`;
+  const decoding = fullQuality ? '' : ' decoding="async"';
+  return `<img src="${imgSrc}" alt="${escapeHtml(alt)}" class="${className}" loading="${loading}"${decoding}${priority} onerror="${onerror}">`;
 }
 
 function thumbCardRel(src) {
