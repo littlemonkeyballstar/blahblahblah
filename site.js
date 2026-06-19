@@ -1647,7 +1647,7 @@ function mediaCard({ id, thumb, title, badge, stream, downloadUrl, posterOnly = 
   const encThumb = thumbSrc(thumb);
   const poster = encThumb ? `poster="${encThumb}"` : '';
   const imgBlock = encThumb
-    ? `<img src="${encThumb}" alt="" class="relative z-[1] max-w-full max-h-full object-contain" loading="lazy" onerror="this.style.display='none'">`
+    ? `<img src="${encThumb}" alt="" class="relative z-[1] max-w-full max-h-full object-contain" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.display='none'">`
     : `<i class="fas fa-play-circle text-4xl text-gold/25"></i>`;
   const badgeHtml = badge ? `<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-md bg-slate-950/85 text-gold text-[10px] font-semibold uppercase tracking-wider">${escapeHtml(badge)}</span>` : '';
   const downloadLink = downloadIconLink(downloadUrl || stream, {

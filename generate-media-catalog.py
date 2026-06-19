@@ -333,8 +333,24 @@ def find_thumb(filename: str, local_index: dict[str, str], archive_map: dict[str
     return _thumb_lookup(filename, local_index) or _thumb_lookup(filename, archive_map)
 
 
+# Renamed IA uploads → legacy local thumb filenames (from extract-clip-thumbs.py).
+CLIP_LOCAL_THUMB_ALIASES = {
+    norm("The Evil Scholar is a lizard - Shaykh Abdullah Faisal"): "thumb/clips/0426 (1).jpg",
+    norm("allah wil dump you and your wicked schohler in the hellfire"): "thumb/clips/0504.jpg",
+    norm("The man who goes out in Jihad"): "thumb/clips/0530 (2).jpg",
+    norm("Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal"): "thumb/clips/0601 (1).jpg",
+    norm("All the kaffirs have their own brand in islam! - Shaykh Abdullah Faisal"): "thumb/clips/0604 (1).jpg",
+}
+
+
 def find_clip_thumb(filename: str, local_index: dict[str, str], archive_map: dict[str, str]) -> str | None:
     """Prefer local thumb/clips/ (same-origin, mobile-safe); IA URL as fallback."""
+    stem = Path(filename).stem
+    if stem.endswith(".ia"):
+        stem = stem[:-3]
+    alias = CLIP_LOCAL_THUMB_ALIASES.get(norm(stem))
+    if alias:
+        return alias
     return _thumb_lookup(filename, local_index) or _thumb_lookup(filename, archive_map)
 
 
