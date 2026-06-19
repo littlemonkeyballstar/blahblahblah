@@ -1,5 +1,5 @@
 /* Auto-generated — run generate-catalog.py to refresh */
-const HOME_FEATURED_PINNED = [
+const HOME_FEATURED_GUARANTEED = [
   {
     "id": 18,
     "title": "Al-Wala wal-Bara by Shaykh Abdullah Faisal",

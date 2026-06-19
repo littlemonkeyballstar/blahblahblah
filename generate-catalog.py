@@ -64,8 +64,8 @@ EXCLUDED_LECTURES = {
     "towards watering down the holy quran",
 }
 
-# Always included in the homepage featured slideshow (matched by MP3 filename stem).
-PINNED_HOME_FEATURED_STEMS = [
+# Always included in the homepage featured slideshow, but order is shuffled (MP3 stem).
+GUARANTEED_HOME_FEATURED_STEMS = [
     "Al-Wala wal-Bara by shaykh Abdullah Faisal",
 ]
 
@@ -700,22 +700,22 @@ def build_featured_lectures(lectures: list[dict]) -> list[dict]:
     return featured
 
 
-def build_pinned_home_featured(lectures: list[dict]) -> list[dict]:
-    """Resolve pinned slideshow entries from PINNED_HOME_FEATURED_STEMS."""
+def build_guaranteed_home_featured(lectures: list[dict]) -> list[dict]:
+    """Resolve always-included slideshow entries from GUARANTEED_HOME_FEATURED_STEMS."""
     by_stem = {norm(Path(lec["archive"]).stem): lec for lec in lectures}
-    pinned: list[dict] = []
-    for stem in PINNED_HOME_FEATURED_STEMS:
+    guaranteed: list[dict] = []
+    for stem in GUARANTEED_HOME_FEATURED_STEMS:
         lec = by_stem.get(norm(stem))
         if not lec:
-            print(f"Warning: pinned featured lecture not found: {stem}")
+            print(f"Warning: guaranteed featured lecture not found: {stem}")
             continue
-        pinned.append({
+        guaranteed.append({
             "id": lec["id"],
             "title": lec["title"],
             "categoryLabel": lec["categoryLabel"],
             "thumb": lec.get("thumb"),
         })
-    return pinned
+    return guaranteed
 
 
 def web_path(path: Path) -> str:
@@ -990,7 +990,7 @@ def write_catalog_outputs(
     lectures: list[dict],
     cat_meta: list[dict],
     featured_pool: list[dict],
-    pinned_featured: list[dict],
+    guaranteed_featured: list[dict],
     version: str,
 ) -> None:
     """Write split catalog bundles for lazy-loaded audio + lighter homepage."""
@@ -1069,8 +1069,8 @@ def write_catalog_outputs(
     home_path = WEBSITE / "lectures-home.js"
     with open(home_path, "w", encoding="utf-8") as handle:
         handle.write("/* Auto-generated — run generate-catalog.py to refresh */\n")
-        handle.write("const HOME_FEATURED_PINNED = ")
-        json.dump(pinned_featured, handle, ensure_ascii=False, indent=2)
+        handle.write("const HOME_FEATURED_GUARANTEED = ")
+        json.dump(guaranteed_featured, handle, ensure_ascii=False, indent=2)
         handle.write(";\n\nconst HOME_FEATURED = ")
         json.dump(featured_resolved, handle, ensure_ascii=False, indent=2)
         handle.write(";\n")
@@ -1203,9 +1203,9 @@ def main():
         })
 
     featured_pool = build_featured_lectures(lectures)
-    pinned_featured = build_pinned_home_featured(lectures)
+    guaranteed_featured = build_guaranteed_home_featured(lectures)
     catalog_version = __import__("datetime").date.today().strftime("%Y%m%d")
-    write_catalog_outputs(lectures, cat_meta, featured_pool, pinned_featured, catalog_version)
+    write_catalog_outputs(lectures, cat_meta, featured_pool, guaranteed_featured, catalog_version)
 
     out = WEBSITE / "lectures-data.js"
 
