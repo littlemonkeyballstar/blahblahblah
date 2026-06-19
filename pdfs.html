@@ -53,13 +53,19 @@
     <h1 class="font-display text-3xl sm:text-4xl text-gold-gradient mb-2">PDF Books</h1>
     <p class="text-slate-400 text-sm mb-6"><span id="count">0</span> books hosted on <a href="https://archive.org/details/faisalPDF" class="text-gold hover:underline" target="_blank" rel="noopener">Internet Archive</a></p>
 
-    <div class="relative max-w-xl mb-8">
+    <div class="relative max-w-xl mb-6">
       <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"></i>
       <input id="search" type="search" placeholder="Search PDF books…" class="w-full pl-11 pr-4 py-3 rounded-xl bg-slate-900 border border-slate-700 focus:outline-none focus:border-gold/50">
     </div>
 
-    <p class="text-sm text-slate-500 mb-5">Showing <span id="showing" class="text-gold">0</span> books</p>
-    <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5"></div>
+    <div id="categoryBar" class="mb-6">
+      <p class="text-xs uppercase tracking-widest text-slate-500 mb-2">Browse by topic</p>
+      <div id="categoryChips" class="flex flex-wrap gap-2"></div>
+    </div>
+
+    <p class="text-sm text-slate-500 mb-5">Showing <span id="showing" class="text-gold">0</span> books<span id="activeCategoryLabel"></span></p>
+    <div id="sections"></div>
+    <div id="grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 hidden"></div>
     <div id="pagination" class="flex justify-center gap-2 mt-10 flex-wrap"></div>
   </main>
 
@@ -71,22 +77,33 @@
   <script src="site.js"></script>
   <script src="pdfs-data.js"></script>
   <script>
-    const state = { search: '', page: 1, perPage: 24 };
+    const state = { search: '', category: 'all', page: 1, perPage: 24 };
 
-    function filtered() {
-      if (!state.search.trim()) return PDFS;
-      const q = state.search.toLowerCase();
-      return PDFS.filter(p => p.title.toLowerCase().includes(q));
+    function sortedPdfs(list) {
+      return [...list].sort((a, b) => (a.sortOrder ?? a.id) - (b.sortOrder ?? b.id));
     }
 
-    function render() {
-      const list = filtered();
-      document.getElementById('count').textContent = PDFS.length;
-      const pages = Math.max(1, Math.ceil(list.length / state.perPage));
-      if (state.page > pages) state.page = pages;
-      const slice = list.slice((state.page - 1) * state.perPage, state.page * state.perPage);
-      document.getElementById('showing').textContent = list.length;
-      document.getElementById('grid').innerHTML = slice.map(p => pdfCard({
+    function filtered() {
+      let list = PDFS;
+      if (state.category !== 'all') {
+        list = list.filter(p => p.category === state.category);
+      }
+      const q = state.search.trim().toLowerCase();
+      if (q) {
+        list = list.filter(p => {
+          const haystack = [p.title, p.categoryLabel, p.series, p.part ? `part ${p.part}` : ''].join(' ').toLowerCase();
+          return haystack.includes(q);
+        });
+      }
+      return sortedPdfs(list);
+    }
+
+    function shouldGroupSections(list) {
+      return state.category === 'all' && !state.search.trim();
+    }
+
+    function pdfCardData(p) {
+      return {
         id: 'pdf-' + p.id,
         title: p.title,
         sizeLabel: p.sizeLabel,
@@ -94,10 +111,126 @@
         embedUrl: p.embed,
         detailsUrl: p.details,
         thumb: p.thumb,
-      })).join('') || '<p class="text-slate-500 col-span-full text-center py-16">No books found.</p>';
-      bindPdfPreviewControls(document.getElementById('grid'));
+        series: p.series,
+        part: p.part,
+        categoryLabel: p.categoryLabel,
+      };
+    }
 
+    function renderCards(list) {
+      return list.map(p => pdfCard(pdfCardData(p))).join('') || '<p class="text-slate-500 col-span-full text-center py-16">No books found.</p>';
+    }
+
+    function groupByCategory(list) {
+      const groups = [];
+      for (const cat of PDF_CATEGORIES) {
+        const items = list.filter(p => p.category === cat.id);
+        if (items.length) groups.push({ cat, items });
+      }
+      return groups;
+    }
+
+    function groupBySeries(items) {
+      const seriesMap = new Map();
+      const standalone = [];
+      for (const pdf of items) {
+        if (pdf.series) {
+          if (!seriesMap.has(pdf.series)) seriesMap.set(pdf.series, []);
+          seriesMap.get(pdf.series).push(pdf);
+        } else {
+          standalone.push(pdf);
+        }
+      }
+      const seriesGroups = [...seriesMap.entries()]
+        .map(([name, pdfs]) => ({
+          name,
+          items: sortedPdfs(pdfs).sort((a, b) => (a.part ?? 99) - (b.part ?? 99)),
+        }))
+        .sort((a, b) => a.name.localeCompare(b.name));
+      return { seriesGroups, standalone: sortedPdfs(standalone) };
+    }
+
+    function renderCategoryChips() {
+      const chips = document.getElementById('categoryChips');
+      const counts = { all: PDFS.length };
+      for (const cat of PDF_CATEGORIES) {
+        counts[cat.id] = PDFS.filter(p => p.category === cat.id).length;
+      }
+      const items = [{ id: 'all', label: 'All books' }, ...PDF_CATEGORIES];
+      chips.innerHTML = items
+        .filter(item => item.id === 'all' || counts[item.id])
+        .map(item => {
+          const active = state.category === item.id;
+          const count = counts[item.id];
+          return `<button type="button" data-category="${item.id}" class="px-3.5 py-2 rounded-full text-sm border transition ${active ? 'bg-gold text-slate-950 border-gold font-semibold' : 'border-slate-700 text-slate-300 hover:border-gold/40 hover:text-gold'}">${escapeHtml(item.label)}${item.id === 'all' ? '' : ` <span class="opacity-70">(${count})</span>`}</button>`;
+        }).join('');
+      chips.querySelectorAll('button').forEach(btn => {
+        btn.onclick = () => {
+          state.category = btn.dataset.category;
+          state.page = 1;
+          renderCategoryChips();
+          render();
+        };
+      });
+    }
+
+    function render() {
+      const list = filtered();
+      const grouped = shouldGroupSections(list);
+      document.getElementById('count').textContent = PDFS.length;
+      document.getElementById('showing').textContent = list.length;
+      document.getElementById('activeCategoryLabel').textContent =
+        state.category !== 'all'
+          ? ' in ' + (PDF_CATEGORIES.find(c => c.id === state.category)?.label || state.category)
+          : (state.search.trim() ? ` matching "${state.search.trim()}"` : '');
+
+      const sections = document.getElementById('sections');
+      const grid = document.getElementById('grid');
       const pag = document.getElementById('pagination');
+
+      if (grouped) {
+        grid.classList.add('hidden');
+        grid.innerHTML = '';
+        pag.innerHTML = '';
+        sections.innerHTML = groupByCategory(list).map(({ cat, items }) => {
+          const { seriesGroups, standalone } = groupBySeries(items);
+          const blocks = [
+            ...seriesGroups.map(group => `
+              <div class="mb-8">
+                <h3 class="font-display text-lg text-gold/90 mb-4 flex items-center gap-2">
+                  <i class="fas fa-layer-group text-sm"></i> ${escapeHtml(group.name)}
+                  <span class="text-xs font-normal text-slate-500">(${group.items.length} parts)</span>
+                </h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">${renderCards(group.items)}</div>
+              </div>`),
+            standalone.length ? `
+              <div class="mb-8">
+                ${seriesGroups.length ? '<h3 class="font-display text-lg text-slate-300 mb-4">Other books</h3>' : ''}
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">${renderCards(standalone)}</div>
+              </div>` : '',
+          ].join('');
+          return `
+            <section class="mb-12 last:mb-0">
+              <h2 class="font-display text-2xl text-gold-gradient mb-6 flex items-center gap-3">
+                <span class="w-8 h-px bg-gold/40"></span>
+                ${escapeHtml(cat.label)}
+                <span class="text-sm font-normal text-slate-500">(${items.length})</span>
+              </h2>
+              ${blocks || `<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5">${renderCards(items)}</div>`}
+            </section>`;
+        }).join('') || '<p class="text-slate-500 text-center py-16">No books found.</p>';
+        bindPdfPreviewControls(sections);
+        return;
+      }
+
+      sections.innerHTML = '';
+      grid.classList.remove('hidden');
+      const pages = Math.max(1, Math.ceil(list.length / state.perPage));
+      if (state.page > pages) state.page = pages;
+      const slice = list.slice((state.page - 1) * state.perPage, state.page * state.perPage);
+      grid.innerHTML = renderCards(slice);
+      bindPdfPreviewControls(grid);
+
       if (pages <= 1) { pag.innerHTML = ''; return; }
       pag.innerHTML = Array.from({ length: pages }, (_, i) => i + 1)
         .filter(i => i === 1 || i === pages || Math.abs(i - state.page) <= 2)
@@ -140,6 +273,7 @@
     document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
     mountTelegramLink();
     setActiveNav('pdfs');
+    renderCategoryChips();
     render();
     applyDeepLink();
   </script>

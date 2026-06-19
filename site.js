@@ -639,7 +639,21 @@ function bindPdfPreviewControls(root = document) {
   });
 }
 
-function pdfCard({ id, title, sizeLabel, downloadUrl, embedUrl, detailsUrl, thumb }) {
+function pdfSeriesBadge({ series, part, categoryLabel }) {
+  if (series && part) {
+    return `<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-md bg-slate-950/85 text-gold text-[10px] font-semibold uppercase tracking-wider border border-gold/20">${escapeHtml(series)} · Part ${part}</span>`;
+  }
+  if (series) {
+    return `<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-md bg-slate-950/85 text-gold text-[10px] font-semibold uppercase tracking-wider border border-gold/20">${escapeHtml(series)}</span>`;
+  }
+  if (categoryLabel) {
+    return `<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-md bg-slate-950/85 text-slate-300 text-[10px] font-semibold uppercase tracking-wider border border-slate-700">${escapeHtml(categoryLabel)}</span>`;
+  }
+  return '';
+}
+
+function pdfCard({ id, title, sizeLabel, downloadUrl, embedUrl, detailsUrl, thumb, series, part, categoryLabel }) {
+  const badge = pdfSeriesBadge({ series, part, categoryLabel });
   const hasThumb = isValidThumb(thumb);
   const thumbImg = hasThumb
     ? `<img src="${thumbSrc(thumb)}" alt="" class="absolute inset-0 w-full h-full object-cover object-top transition duration-300 group-hover:scale-[1.02]" loading="lazy"
@@ -658,6 +672,7 @@ function pdfCard({ id, title, sizeLabel, downloadUrl, embedUrl, detailsUrl, thum
         <div class="absolute inset-0 bg-gradient-to-b from-slate-900 via-slate-950 to-slate-900"></div>
         ${thumbImg}
         ${thumbFallback}
+        ${badge}
         <div class="absolute inset-0 bg-slate-950/0 group-hover:bg-slate-950/35 transition"></div>
         <div class="absolute inset-x-0 bottom-0 p-3 bg-gradient-to-t from-slate-950/95 via-slate-950/70 to-transparent">
           <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-slate-950/85 text-[10px] font-medium text-slate-200 border border-slate-700 group-hover:border-gold/40 group-hover:text-gold transition">
@@ -678,6 +693,7 @@ function pdfCard({ id, title, sizeLabel, downloadUrl, embedUrl, detailsUrl, thum
     <article id="${id || ''}" class="pdf-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5">
       ${previewBlock}
       <div class="p-4 flex flex-col flex-1 min-w-0">
+        ${series ? `<p class="text-[10px] uppercase tracking-wider text-gold/80 mb-1 line-clamp-1">${escapeHtml(series)}${part ? ` · Part ${part}` : ''}</p>` : (categoryLabel ? `<p class="text-[10px] uppercase tracking-wider text-slate-500 mb-1 line-clamp-1">${escapeHtml(categoryLabel)}</p>` : '')}
         <h3 class="font-medium text-sm text-slate-100 leading-snug mb-2 line-clamp-3" title="${escapeHtml(title)}">${escapeHtml(title)}</h3>
         <p class="text-xs text-slate-500 mb-3">${escapeHtml(sizeLabel || '')}</p>
         <div class="flex flex-wrap gap-2 mt-auto">${actions}</div>
