@@ -9,7 +9,7 @@ Thumbnail resolution order:
   4. Root thumb/ folder (exact / fuzzy match)
   5. Embedded album art extracted from the MP3 ID3 tags
 
-Run after adding lectures or thumbnails:
+Run after adding lectures or thumbnails (then optimize-audio-thumbs.py for fast card images):
     python3 generate-catalog.py
 """
 import hashlib

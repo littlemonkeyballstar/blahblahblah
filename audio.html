@@ -709,8 +709,8 @@
       const thumbSection = hasThumb
         ? `<div class="thumb-frame relative flex items-center justify-center p-3 overflow-hidden">
             ${simplePlaceholderHtml(lecture.categoryLabel)}
-            <img src="${thumbSrc(lecture.thumb)}" alt="" class="relative z-[1]" loading="lazy"
-              onerror="this.style.display='none'">
+            <img src="${thumbDisplaySrc(lecture.thumb)}" alt="" class="relative z-[1]" loading="lazy" decoding="async"
+              onerror="${thumbImgFallbackHandler(lecture.thumb)}">
             <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950/80 text-gold text-[10px] font-semibold uppercase tracking-wider backdrop-blur-sm z-10">
               ${escapeHtml(lecture.categoryLabel)}
             </span>
@@ -775,8 +775,9 @@
           empty.classList.add('hidden');
           grid.innerHTML = pageItems.map(buildCard).join('');
         }
-        renderPagination(totalPages);
-        bindLectureAudioPlayers();
+      renderPagination(totalPages);
+      bindLectureAudioPlayers();
+      enhanceGridThumbs(grid, { priorityCount: 8 });
       });
     }
 

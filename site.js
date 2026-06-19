@@ -358,9 +358,8 @@ function mountMotionStyles() {
 
     main.site-page {
       opacity: 0;
-      transform: translateY(12px);
-      transition: opacity 0.5s cubic-bezier(0.22, 1, 0.36, 1),
-                  transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
+      transform: translateY(4px);
+      transition: opacity 0.18s ease-out, transform 0.18s ease-out;
     }
     main.site-page.site-page-ready {
       opacity: 1;
@@ -659,7 +658,7 @@ function mountContinueListening(audioLookup) {
     const thumb = meta?.thumb;
     const href = `audio.html?lecture=${entry.id}`;
     const thumbHtml = thumb && isValidThumb(thumb)
-      ? `<img src="${thumbSrc(thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="lazy" onerror="this.style.display='none'">`
+      ? `<img src="${thumbDisplaySrc(thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="lazy" decoding="async" onerror="${thumbImgFallbackHandler(thumb)}">`
       : `<i class="fas fa-headphones text-gold/50 text-lg"></i>`;
     return `
       <a href="${href}" class="continue-listening-card card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900/60 group">
@@ -1503,13 +1502,51 @@ function thumbMarkup(src, alt, className = 'max-w-full max-h-full object-contain
   if (!isValidThumb(src)) {
     return `<div class="thumb-box w-full h-full flex items-center justify-center ${className}"><i class="fas fa-book-quran text-3xl text-gold/25"></i></div>`;
   }
-  return `<img src="${thumbSrc(src)}" alt="${escapeHtml(alt)}" class="${className}" loading="lazy" onerror="this.outerHTML='<div class=\\'thumb-box w-full h-full flex items-center justify-center\\'><i class=\\'fas fa-book-quran text-3xl text-gold/25\\'></i></div>'">`;
+  const icon = `<div class=\\'thumb-box w-full h-full flex items-center justify-center\\'><i class=\\'fas fa-book-quran text-3xl text-gold/25\\'></i></div>`;
+  const onerror = thumbCardRel(src)
+    ? `if(!this.dataset.thumbFb){this.dataset.thumbFb='1';this.src='${thumbSrc(src).replace(/'/g, '%27')}'}else{this.outerHTML='${icon}'}`
+    : `this.outerHTML='${icon}'`;
+  return `<img src="${thumbDisplaySrc(src)}" alt="${escapeHtml(alt)}" class="${className}" loading="lazy" decoding="async" onerror="${onerror}">`;
+}
+
+function thumbCardRel(src) {
+  if (!isValidThumb(src) || !src.startsWith('thumb/') || src.startsWith('thumb/cards/')) return null;
+  if (src.startsWith('http://') || src.startsWith('https://')) return null;
+  const inner = src.slice('thumb/'.length);
+  const dot = inner.lastIndexOf('.');
+  if (dot <= 0) return null;
+  const stem = inner.slice(0, dot);
+  const ext = inner.slice(dot + 1).toLowerCase();
+  if (!['jpg', 'jpeg', 'png', 'webp'].includes(ext)) return null;
+  return `thumb/cards/${stem}.webp`;
 }
 
 function thumbSrc(src) {
   if (!isValidThumb(src)) return '';
   if (src.startsWith('http://') || src.startsWith('https://')) return src;
   return src.split('/').map((part, i) => (i === 0 ? part : encodeURIComponent(part))).join('/');
+}
+
+/** Prefer small WebP card thumbnails for grid/list views; falls back to full image on error. */
+function thumbDisplaySrc(src) {
+  return thumbSrc(thumbCardRel(src) || src);
+}
+
+function thumbImgFallbackHandler(src) {
+  const full = thumbSrc(src);
+  const card = thumbCardRel(src);
+  if (!card || full === thumbDisplaySrc(src)) {
+    return 'this.style.display=\'none\'';
+  }
+  return `if(!this.dataset.thumbFb){this.dataset.thumbFb='1';this.src='${full.replace(/'/g, '%27')}'}else{this.style.display='none'}`;
+}
+
+function enhanceGridThumbs(root, { priorityCount = 6 } = {}) {
+  if (!root) return;
+  root.querySelectorAll('img').forEach((img, index) => {
+    img.decoding = 'async';
+    if (index < priorityCount) img.fetchPriority = 'high';
+  });
 }
 
 function mediaCard({ id, thumb, title, badge, stream, downloadUrl, posterOnly = false, hideThumbImage = false }) {
