@@ -542,6 +542,13 @@ function downloadIconLink(url, { label = 'Download', className = '' } = {}) {
   </a>`;
 }
 
+function downloadGlassLink(url, { label = 'Download' } = {}) {
+  if (!url) return '';
+  return `<a href="${url}" class="lecture-download-glass" target="_blank" rel="noopener" download title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">
+    <i class="fas fa-download"></i>
+  </a>`;
+}
+
 function previewButtonHtml({ embedUrl, title = '', downloadUrl = '', detailsUrl = '', label = 'Read', fullWidth = false }) {
   if (!embedUrl) return '';
   const widthClass = fullWidth ? 'w-full justify-center' : 'w-fit';
