@@ -69,12 +69,13 @@
   <script src="site.js"></script>
   <script src="clips-data.js"></script>
   <script>
+    const CLIPS_DISPLAY = shuffleArray([...CLIPS]);
     const state = { search: '', page: 1, perPage: 18 };
 
     function filtered() {
-      if (!state.search.trim()) return CLIPS;
+      if (!state.search.trim()) return CLIPS_DISPLAY;
       const q = state.search.toLowerCase();
-      return CLIPS.filter(c => c.title.toLowerCase().includes(q));
+      return CLIPS_DISPLAY.filter(c => c.title.toLowerCase().includes(q));
     }
 
     function render() {
