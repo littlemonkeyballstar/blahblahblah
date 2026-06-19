@@ -1,4 +1,4 @@
-/* Auto-generated — run generate-catalog.py then generate-media-catalog.py */
+/* Auto-generated — run generate-catalog.py then generate-media-catalog.py; PDFs from generate-pdf-catalog.py */
 const SEARCH_INDEX = [
   {
     "type": "audio",
@@ -5769,5 +5769,187 @@ const SEARCH_INDEX = [
     "sub": "Short clip",
     "href": "clips.html?clip=79",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/wicked scholars Abdullah faisal shaykh_000001.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 0,
+    "title": "100 Fabricated Hadiths (Shaikh Abdullah Faisal)",
+    "sub": "5.2 MB",
+    "href": "pdfs.html?pdf=0"
+  },
+  {
+    "type": "pdf",
+    "id": 1,
+    "title": "Adam and Shaitan - The eternal battle",
+    "sub": "317.9 KB",
+    "href": "pdfs.html?pdf=1"
+  },
+  {
+    "type": "pdf",
+    "id": 2,
+    "title": "Allah (SWT) Has Honored Bani Adam - Mankind",
+    "sub": "163.5 KB",
+    "href": "pdfs.html?pdf=2"
+  },
+  {
+    "type": "pdf",
+    "id": 3,
+    "title": "Among Your Wives and Children Are Enemies to You By Shaykh Abdullah",
+    "sub": "261.1 KB",
+    "href": "pdfs.html?pdf=3"
+  },
+  {
+    "type": "pdf",
+    "id": 4,
+    "title": "Are You A Takfiri - Shaykh Abdullah Faisal",
+    "sub": "277.9 KB",
+    "href": "pdfs.html?pdf=4"
+  },
+  {
+    "type": "pdf",
+    "id": 5,
+    "title": "Challenges Facing the Muslim Ummah",
+    "sub": "198.1 KB",
+    "href": "pdfs.html?pdf=5"
+  },
+  {
+    "type": "pdf",
+    "id": 6,
+    "title": "Challenges Facing the Muslim Ummah Part II",
+    "sub": "258.3 KB",
+    "href": "pdfs.html?pdf=6"
+  },
+  {
+    "type": "pdf",
+    "id": 7,
+    "title": "Debunking The Letter Of The Wicked Scholars To Amirul Muhmineen",
+    "sub": "404.4 KB",
+    "href": "pdfs.html?pdf=7"
+  },
+  {
+    "type": "pdf",
+    "id": 8,
+    "title": "Islam Under Siege By Shaykh Faisal",
+    "sub": "327.5 KB",
+    "href": "pdfs.html?pdf=8"
+  },
+  {
+    "type": "pdf",
+    "id": 9,
+    "title": "Murjiya Refutation by shaykh faisal",
+    "sub": "268.2 KB",
+    "href": "pdfs.html?pdf=9"
+  },
+  {
+    "type": "pdf",
+    "id": 10,
+    "title": "Natural Disasters - Why They Occur",
+    "sub": "178.8 KB",
+    "href": "pdfs.html?pdf=10"
+  },
+  {
+    "type": "pdf",
+    "id": 11,
+    "title": "Natural Instincts - By shaykh Abdullah Faisal",
+    "sub": "12.9 MB",
+    "href": "pdfs.html?pdf=11"
+  },
+  {
+    "type": "pdf",
+    "id": 12,
+    "title": "PERSONALITY DISORDERS by Shaykh Abdullah Faisal",
+    "sub": "431.2 KB",
+    "href": "pdfs.html?pdf=12"
+  },
+  {
+    "type": "pdf",
+    "id": 13,
+    "title": "Refuting The Lie Concerning Kufr Doona Kufr",
+    "sub": "312.7 KB",
+    "href": "pdfs.html?pdf=13"
+  },
+  {
+    "type": "pdf",
+    "id": 14,
+    "title": "Refuting The Lie Concerning The Excuse of Ignorance",
+    "sub": "181.4 KB",
+    "href": "pdfs.html?pdf=14"
+  },
+  {
+    "type": "pdf",
+    "id": 15,
+    "title": "Science Of Quran Part 3 The History Of The Quran's Descent",
+    "sub": "156.2 KB",
+    "href": "pdfs.html?pdf=15"
+  },
+  {
+    "type": "pdf",
+    "id": 16,
+    "title": "Science Of Quran Part 4 The 20 Reasons Why The Quran Is A Wise Book",
+    "sub": "238.2 KB",
+    "href": "pdfs.html?pdf=16"
+  },
+  {
+    "type": "pdf",
+    "id": 17,
+    "title": "Science Of Quran – Part 1",
+    "sub": "308.5 KB",
+    "href": "pdfs.html?pdf=17"
+  },
+  {
+    "type": "pdf",
+    "id": 18,
+    "title": "Science Of Quran – Part 2 – The Wahy",
+    "sub": "133.7 KB",
+    "href": "pdfs.html?pdf=18"
+  },
+  {
+    "type": "pdf",
+    "id": 19,
+    "title": "SHARIAH VS MAN-MADE LAWS by Shaykh Abdullah Faisal",
+    "sub": "428.7 KB",
+    "href": "pdfs.html?pdf=19"
+  },
+  {
+    "type": "pdf",
+    "id": 20,
+    "title": "Tafsir Surah Saff",
+    "sub": "462.8 KB",
+    "href": "pdfs.html?pdf=20"
+  },
+  {
+    "type": "pdf",
+    "id": 21,
+    "title": "The Evil Rulers Of The World",
+    "sub": "336.9 KB",
+    "href": "pdfs.html?pdf=21"
+  },
+  {
+    "type": "pdf",
+    "id": 22,
+    "title": "THE OBLIGATION TO ESTABLISH THE KHILAFAH by shaykh faisal",
+    "sub": "236.8 KB",
+    "href": "pdfs.html?pdf=22"
+  },
+  {
+    "type": "pdf",
+    "id": 23,
+    "title": "Their Hearts Are Alike",
+    "sub": "176.7 KB",
+    "href": "pdfs.html?pdf=23"
+  },
+  {
+    "type": "pdf",
+    "id": 24,
+    "title": "Towards Watering Down The Holy Quran",
+    "sub": "196.3 KB",
+    "href": "pdfs.html?pdf=24"
+  },
+  {
+    "type": "pdf",
+    "id": 25,
+    "title": "Who Are You",
+    "sub": "490.0 KB",
+    "href": "pdfs.html?pdf=25"
   }
 ];

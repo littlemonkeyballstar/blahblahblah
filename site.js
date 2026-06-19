@@ -185,6 +185,7 @@ const SEARCH_TYPE_META = {
   audio: { label: 'Audio', icon: 'fa-headphones', page: 'audio.html' },
   video: { label: 'Video', icon: 'fa-video', page: 'videos.html' },
   clip: { label: 'Clip', icon: 'fa-film', page: 'clips.html' },
+  pdf: { label: 'PDF', icon: 'fa-file-pdf', page: 'pdfs.html' },
 };
 
 function searchResultThumb(item, meta) {
@@ -534,6 +535,27 @@ function archiveStreamUrl(base, path) {
   return base + encodeURI(path).replace(/%2F/g, '/');
 }
 
+function downloadButtonHtml(url, label = 'Download') {
+  if (!url) return '';
+  return `<a href="${url}" class="media-download-btn inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:border-gold/40 hover:text-gold text-xs font-medium transition w-fit mt-3" target="_blank" rel="noopener">
+    <i class="fas fa-download"></i> ${escapeHtml(label)}
+  </a>`;
+}
+
+function pdfCard({ id, title, sizeLabel, downloadUrl }) {
+  return `
+    <article id="${id || ''}" class="pdf-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5">
+      <div class="p-5 flex flex-col flex-1 min-w-0">
+        <div class="w-12 h-12 rounded-xl bg-red-950/50 border border-red-900/30 flex items-center justify-center mb-4 flex-shrink-0">
+          <i class="fas fa-file-pdf text-2xl text-red-400/90"></i>
+        </div>
+        <h3 class="font-medium text-sm text-slate-100 leading-snug mb-2 line-clamp-4" title="${escapeHtml(title)}">${escapeHtml(title)}</h3>
+        <p class="text-xs text-slate-500 mb-1">${escapeHtml(sizeLabel || '')}</p>
+        ${downloadButtonHtml(downloadUrl)}
+      </div>
+    </article>`;
+}
+
 function escapeHtml(str) {
   const d = document.createElement('div');
   d.textContent = str;
@@ -607,7 +629,7 @@ function thumbSrc(src) {
   return src.split('/').map((part, i) => (i === 0 ? part : encodeURIComponent(part))).join('/');
 }
 
-function mediaCard({ id, thumb, title, badge, stream, posterOnly = false, hideThumbImage = false }) {
+function mediaCard({ id, thumb, title, badge, stream, downloadUrl, posterOnly = false, hideThumbImage = false }) {
   const encThumb = thumbSrc(thumb);
   const poster = encThumb ? `poster="${encThumb}"` : '';
   const imgBlock = encThumb
@@ -632,6 +654,7 @@ function mediaCard({ id, thumb, title, badge, stream, posterOnly = false, hideTh
       <div class="p-4 sm:p-4 flex flex-col flex-1 min-w-0">
         <h3 class="font-medium text-sm sm:text-sm text-slate-100 leading-snug ${hideThumbImage ? 'mb-3 sm:mb-4' : 'mb-3'} line-clamp-4 sm:line-clamp-3" title="${escapeHtml(title)}">${escapeHtml(title)}</h3>
         ${videoBlock}
+        ${downloadButtonHtml(downloadUrl || stream)}
       </div>
     </article>`;
 }

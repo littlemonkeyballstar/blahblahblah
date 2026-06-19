@@ -240,6 +240,7 @@
         <a href="clips.html" data-nav="clips" class="px-4 py-2 rounded-full transition"><span class="nav-long">Clips/Shorts</span><span class="nav-short">Clips</span></a>
         <a href="videos.html" data-nav="videos" class="px-4 py-2 rounded-full transition"><span class="nav-long">Video Lectures</span><span class="nav-short">Videos</span></a>
         <a href="audio.html" data-nav="audio" class="px-4 py-2 rounded-full transition"><span class="nav-long">Audio Lectures</span><span class="nav-short">Audio</span></a>
+        <a href="pdfs.html" data-nav="pdfs" class="px-4 py-2 rounded-full transition"><span class="nav-long">PDF Books</span><span class="nav-short">PDFs</span></a>
       </nav>
     </div>
   </header>
@@ -715,6 +716,7 @@
             <audio controls preload="none" class="mt-auto h-9" data-lecture-id="${lecture.id}">
               <source src="${audioUrl}" type="audio/mpeg">
             </audio>
+            ${downloadButtonHtml(audioUrl)}
           </div>
         </article>`;
     }

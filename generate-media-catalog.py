@@ -487,10 +487,17 @@ def write_search_index(videos: list[dict], clips: list[dict]) -> None:
         if clip.get("thumb"):
             entry["thumb"] = clip["thumb"]
         clip_entries.append(entry)
-    search_index = audio_entries + video_entries + clip_entries
+
+    pdf_entries = []
+    pdf_path = WEBSITE / "data" / "search-pdfs.json"
+    if pdf_path.is_file():
+        with open(pdf_path, encoding="utf-8") as handle:
+            pdf_entries = json.load(handle)
+
+    search_index = audio_entries + video_entries + clip_entries + pdf_entries
     out = WEBSITE / "search-index.js"
     with open(out, "w", encoding="utf-8") as handle:
-        handle.write("/* Auto-generated — run generate-catalog.py then generate-media-catalog.py */\n")
+        handle.write("/* Auto-generated — run generate-catalog.py, generate-media-catalog.py, generate-pdf-catalog.py */\n")
         handle.write("const SEARCH_INDEX = ")
         json.dump(search_index, handle, ensure_ascii=False, indent=2)
         handle.write(";\n")
