@@ -5439,7 +5439,7 @@ const SEARCH_INDEX = [
   {
     "type": "clip",
     "id": 40,
-    "title": "The Betrayal of the Mujahideenby Saudi Salafis in",
+    "title": "The Betrayal of the Mujahideen by Saudi Salafis in Yemen",
     "sub": "Short clip",
     "href": "clips.html?clip=40",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Betrayal of the Mujahideenby Saudi Salafis in_000001.jpg"
@@ -5551,7 +5551,7 @@ const SEARCH_INDEX = [
   {
     "type": "clip",
     "id": 54,
-    "title": "Why Being Ignorant in Islam Can Lead to Being a 22",
+    "title": "Why Being Ignorant in Islam Can Lead to Being a Munafiq (Hypocrite)",
     "sub": "Short clip",
     "href": "clips.html?clip=54",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Why Being Ignorant in Islam Can Lead to Being a 22_000001.jpg"
@@ -5559,7 +5559,7 @@ const SEARCH_INDEX = [
   {
     "type": "clip",
     "id": 55,
-    "title": "Why Believing in Allah Doesn'tMake You Special",
+    "title": "Why Believing in Allah Doesn't Make You Special",
     "sub": "Short clip",
     "href": "clips.html?clip=55",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Why Believing in Allah Doesn'tMake You Special_000001.jpg"

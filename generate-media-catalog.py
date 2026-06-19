@@ -180,6 +180,18 @@ _CLIP_TITLES_RAW = [
         "How to spot a Munafiq",
         "How to spot a Munafiq (Hypocrite) by Shaykh Abdullah Faisal",
     ),
+    (
+        "The Betrayal of the Mujahideenby Saudi Salafis in",
+        "The Betrayal of the Mujahideen by Saudi Salafis in Yemen",
+    ),
+    (
+        "Why Believing in Allah Doesn'tMake You Special",
+        "Why Believing in Allah Doesn't Make You Special",
+    ),
+    (
+        "Why Being Ignorant in Islam Can Lead to Being a 22",
+        "Why Being Ignorant in Islam Can Lead to Being a Munafiq (Hypocrite)",
+    ),
     ("How do we deal with those who reject dawla1", "How do we deal with people who reject the dawla?"),
     ("Hypocrites Rushing To Join The Kuffar", "Hypocrites rushing to join the kuffar"),
     ("Ideological Warfare  The Only Battle That Tru(1)", "Ideological warfare: the only battle that truly matters"),
