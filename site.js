@@ -107,6 +107,45 @@ function tryRestoreAudioProgress(audio, lectureId) {
   return true;
 }
 
+const AUDIO_SKIP_SEC = 10;
+
+function skipAudioBy(audio, deltaSec) {
+  if (!audio) return;
+  const apply = () => {
+    const duration = audio.duration;
+    const max = Number.isFinite(duration) && duration > 0 ? duration : Number.POSITIVE_INFINITY;
+    audio.currentTime = Math.max(0, Math.min(max, audio.currentTime + deltaSec));
+  };
+  if (audio.readyState >= HTMLMediaElement.HAVE_METADATA) apply();
+  else audio.addEventListener('loadedmetadata', apply, { once: true });
+}
+
+function audioSkipControlsHtml() {
+  const back = AUDIO_SKIP_SEC;
+  const fwd = AUDIO_SKIP_SEC;
+  return `<div class="audio-skip-controls" role="group" aria-label="Skip ${back} seconds">
+    <button type="button" class="audio-skip-btn" data-audio-skip="-${back}" aria-label="Back ${back} seconds">
+      <i class="fas fa-rotate-left" aria-hidden="true"></i><span>${back}s</span>
+    </button>
+    <button type="button" class="audio-skip-btn" data-audio-skip="${fwd}" aria-label="Forward ${fwd} seconds">
+      <span>${fwd}s</span><i class="fas fa-rotate-right" aria-hidden="true"></i>
+    </button>
+  </div>`;
+}
+
+function bindAudioSkipControls(root, audio) {
+  if (!root || !audio) return;
+  root.querySelectorAll('[data-audio-skip]').forEach((btn) => {
+    btn.addEventListener('click', (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const delta = parseInt(btn.dataset.audioSkip, 10);
+      if (!Number.isFinite(delta)) return;
+      skipAudioBy(audio, delta);
+    });
+  });
+}
+
 function bindAudioProgress(audio) {
   const lectureId = lectureIdFromAudio(audio);
   if (!Number.isFinite(lectureId)) return;
