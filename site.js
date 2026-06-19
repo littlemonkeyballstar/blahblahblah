@@ -34,22 +34,62 @@ function lectureIdFromAudio(audio) {
   return match ? parseInt(match[1], 10) : null;
 }
 
+function parseAudioProgressEntry(value) {
+  if (typeof value === 'number' && value > 0) {
+    return { seconds: value, at: 0 };
+  }
+  if (value && typeof value === 'object' && typeof value.t === 'number' && value.t > 0) {
+    return { seconds: value.t, at: typeof value.at === 'number' ? value.at : 0 };
+  }
+  return null;
+}
+
 function saveAudioProgress(lectureId, currentTime, duration) {
   if (!Number.isFinite(lectureId) || !Number.isFinite(currentTime)) return;
   const store = readAudioProgressStore();
+  const key = String(lectureId);
   if (duration && currentTime >= duration - AUDIO_PROGRESS_END_MARGIN_SEC) {
-    delete store[lectureId];
+    delete store[key];
   } else if (currentTime < AUDIO_PROGRESS_MIN_SAVE_SEC) {
-    delete store[lectureId];
+    delete store[key];
   } else {
-    store[lectureId] = Math.round(currentTime * 10) / 10;
+    store[key] = {
+      t: Math.round(currentTime * 10) / 10,
+      at: Date.now(),
+    };
   }
   writeAudioProgressStore(store);
 }
 
 function loadAudioProgress(lectureId) {
-  const value = readAudioProgressStore()[lectureId];
-  return typeof value === 'number' && value > 0 ? value : 0;
+  const parsed = parseAudioProgressEntry(readAudioProgressStore()[String(lectureId)]);
+  return parsed ? parsed.seconds : 0;
+}
+
+function getContinueListeningEntries(limit = 3) {
+  const store = readAudioProgressStore();
+  return Object.entries(store)
+    .map(([id, value]) => {
+      const parsed = parseAudioProgressEntry(value);
+      if (!parsed) return null;
+      const lectureId = parseInt(id, 10);
+      if (!Number.isFinite(lectureId)) return null;
+      return { id: lectureId, seconds: parsed.seconds, at: parsed.at };
+    })
+    .filter(Boolean)
+    .sort((a, b) => b.at - a.at)
+    .slice(0, limit);
+}
+
+function formatAudioTimestamp(seconds) {
+  const total = Math.max(0, Math.floor(seconds));
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const s = total % 60;
+  if (h > 0) {
+    return `${h}:${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`;
+  }
+  return `${m}:${String(s).padStart(2, '0')}`;
 }
 
 function tryRestoreAudioProgress(audio, lectureId) {
@@ -358,6 +398,96 @@ function mountGlobalSearch({ inputId = 'globalSearch', resultsId = 'globalSearch
   document.addEventListener('click', (e) => {
     if (!results.contains(e.target) && e.target !== input) hideResults();
   });
+}
+
+function mountGlobalSearchShell() {
+  if (document.getElementById('globalSearch')) {
+    mountGlobalSearch();
+    return;
+  }
+  const header = document.querySelector('.site-header');
+  if (!header) return;
+
+  const section = document.createElement('section');
+  section.className = 'global-search-section max-w-7xl mx-auto px-4 sm:px-8 pt-4 sm:pt-5';
+  section.setAttribute('aria-label', 'Site search');
+  section.innerHTML = `
+    <div class="relative max-w-2xl mx-auto">
+      <label for="globalSearch" class="sr-only">Search audio, videos, clips, and PDFs</label>
+      <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none"></i>
+      <input id="globalSearch" type="search" placeholder="Search lectures, videos, clips, and PDFs…" autocomplete="off"
+        class="w-full pl-11 pr-4 py-3 sm:py-3.5 rounded-xl bg-slate-900 border border-slate-700 focus:outline-none focus:border-gold/50 text-slate-100 placeholder:text-slate-500">
+      <div id="globalSearchResults" class="global-search-panel hidden absolute left-0 right-0 top-full mt-2 z-50 rounded-xl border border-slate-700 bg-slate-925 overflow-hidden max-h-[min(24rem,60vh)] overflow-y-auto"></div>
+    </div>`;
+
+  const main = document.querySelector('main');
+  if (main && main.parentNode) {
+    main.parentNode.insertBefore(section, main);
+  } else {
+    header.insertAdjacentElement('afterend', section);
+  }
+
+  mountGlobalSearch();
+}
+
+function buildAudioLookup(pool) {
+  const map = new Map();
+  if (!Array.isArray(pool)) return map;
+  for (const item of pool) {
+    if (Number.isFinite(item.id)) map.set(item.id, item);
+  }
+  return map;
+}
+
+function mountContinueListening(audioLookup) {
+  const section = document.getElementById('continueListeningSection');
+  if (!section) return;
+
+  const entries = getContinueListeningEntries(3);
+  if (!entries.length) {
+    section.classList.add('hidden');
+    section.innerHTML = '';
+    return;
+  }
+
+  const lookup = audioLookup instanceof Map ? audioLookup : buildAudioLookup(audioLookup);
+  section.classList.remove('hidden');
+  section.innerHTML = `
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="font-display text-lg sm:text-xl text-gold-gradient flex items-center gap-2">
+        <i class="fas fa-play-circle text-gold text-sm"></i> Continue listening
+      </h2>
+      <a href="audio.html" class="text-sm text-gold hover:text-gold-light">Audio library <i class="fas fa-arrow-right text-xs"></i></a>
+    </div>
+    <div id="continueListeningList" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>`;
+
+  const listEl = document.getElementById('continueListeningList');
+  listEl.innerHTML = entries.map((entry) => {
+    const meta = lookup.get(entry.id);
+    const title = meta?.title || `Lecture #${entry.id}`;
+    const sub = meta?.categoryLabel || 'Audio lecture';
+    const thumb = meta?.thumb;
+    const href = `audio.html?lecture=${entry.id}`;
+    const thumbHtml = thumb && isValidThumb(thumb)
+      ? `<img src="${thumbSrc(thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="lazy" onerror="this.style.display='none'">`
+      : `<i class="fas fa-headphones text-gold/50 text-lg"></i>`;
+    return `
+      <a href="${href}" class="continue-listening-card card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900/60 group">
+        <div class="continue-listening-thumb w-16 h-16 rounded-lg overflow-hidden thumb-box flex items-center justify-center flex-shrink-0 p-1">
+          ${thumbHtml}
+        </div>
+        <div class="min-w-0 flex-1">
+          <p class="text-sm font-medium text-slate-100 group-hover:text-gold transition line-clamp-2 leading-snug">${escapeHtml(title)}</p>
+          <p class="text-xs text-slate-500 mt-0.5">${escapeHtml(sub)}</p>
+          <p class="text-xs text-gold/80 mt-1.5 flex items-center gap-1.5">
+            <i class="fas fa-clock text-[0.65rem]"></i> Resume at ${formatAudioTimestamp(entry.seconds)}
+          </p>
+        </div>
+        <i class="fas fa-play text-gold/50 group-hover:text-gold text-sm flex-shrink-0"></i>
+      </a>`;
+  }).join('');
+
+  section.classList.add('home-fade-in');
 }
 
 function mountLayoutFallback() {
@@ -669,6 +799,16 @@ function mountMobileStyles() {
     .global-search-result:active {
       background: rgba(30, 41, 59, 0.9);
     }
+
+    .global-search-section { position: relative; z-index: 45; }
+    .global-search-section + main { padding-top: 0.25rem; }
+
+    .continue-listening-card .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
   `;
   document.head.appendChild(style);
 }
@@ -763,6 +903,8 @@ function mountTopBar() {
         </div>
       </div>
     </div>`;
+
+  mountGlobalSearchShell();
 }
 
 function mountTelegramLink(id = 'siteTelegram') {
