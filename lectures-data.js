@@ -5329,7 +5329,7 @@ const LECTURES = [
     "categoryLabel": "Refutations",
     "subcategory": "refutation_general",
     "subcategoryLabel": "General Refutations",
-    "archive": "Towards Watering Down The Holy Quran.mp3",
+    "archive": "Towards Watering Down The Holy Quran(1).mp3",
     "thumb": null,
     "id": 506
   },

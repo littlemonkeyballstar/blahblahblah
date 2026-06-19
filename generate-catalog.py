@@ -60,6 +60,8 @@ EXCLUDED_LECTURES = {
     "the 4 branches of tauheed part 2",
     # Duplicate of "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-"
     "fourty seven signs of the wicked scholar abdullah al faisal",
+    # 9-byte corrupt stub on IA; real audio is Towards Watering Down The Holy Quran(1).mp3
+    "towards watering down the holy quran",
 }
 
 def is_blocked_thumb(path: Path) -> bool:
