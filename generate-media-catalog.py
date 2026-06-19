@@ -462,26 +462,31 @@ def write_search_index(videos: list[dict], clips: list[dict]) -> None:
         with open(audio_path, encoding="utf-8") as handle:
             audio_entries = json.load(handle)
 
-    video_entries = [
-        {
+    video_entries = []
+    for video in videos:
+        entry = {
             "type": "video",
             "id": video["id"],
             "title": video["title"],
             "sub": "Video lecture",
             "href": f"videos.html?video={video['id']}",
         }
-        for video in videos
-    ]
-    clip_entries = [
-        {
+        if video.get("thumb"):
+            entry["thumb"] = video["thumb"]
+        video_entries.append(entry)
+
+    clip_entries = []
+    for clip in clips:
+        entry = {
             "type": "clip",
             "id": clip["id"],
             "title": clip["title"],
             "sub": "Short clip",
             "href": f"clips.html?clip={clip['id']}",
         }
-        for clip in clips
-    ]
+        if clip.get("thumb"):
+            entry["thumb"] = clip["thumb"]
+        clip_entries.append(entry)
     search_index = audio_entries + video_entries + clip_entries
     out = WEBSITE / "search-index.js"
     with open(out, "w", encoding="utf-8") as handle:

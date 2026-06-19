@@ -983,16 +983,18 @@ def write_catalog_outputs(
         home_lectures.append(entry)
 
     id_index = {str(lec["id"]): lec["category"] for lec in lectures}
-    audio_search = [
-        {
+    audio_search = []
+    for lec in lectures:
+        entry = {
             "type": "audio",
             "id": lec["id"],
             "title": lec["title"],
             "sub": lec["categoryLabel"],
             "href": f"audio.html?lecture={lec['id']}",
         }
-        for lec in lectures
-    ]
+        if lec.get("thumb"):
+            entry["thumb"] = lec["thumb"]
+        audio_search.append(entry)
 
     chunk_dir = WEBSITE / "data" / "lectures"
     chunk_dir.mkdir(parents=True, exist_ok=True)

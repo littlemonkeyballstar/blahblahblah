@@ -91,6 +91,18 @@ const SEARCH_TYPE_META = {
   clip: { label: 'Clip', icon: 'fa-film', page: 'clips.html' },
 };
 
+function searchResultThumb(item, meta) {
+  if (isValidThumb(item.thumb)) {
+    return `<div class="global-search-thumb w-14 h-10 rounded-lg overflow-hidden thumb-box flex items-center justify-center flex-shrink-0 p-0.5">
+      <img src="${thumbSrc(item.thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="lazy"
+        onerror="this.parentElement.outerHTML='<span class=\\'global-search-thumb w-9 h-9 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0\\'><i class=\\'fas ${meta.icon} text-gold text-sm\\'></i></span>'">
+    </div>`;
+  }
+  return `<span class="global-search-thumb w-9 h-9 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
+    <i class="fas ${meta.icon} text-gold text-sm"></i>
+  </span>`;
+}
+
 function mountGlobalSearch({ inputId = 'globalSearch', resultsId = 'globalSearchResults' } = {}) {
   const input = document.getElementById(inputId);
   const results = document.getElementById(resultsId);
@@ -113,9 +125,7 @@ function mountGlobalSearch({ inputId = 'globalSearch', resultsId = 'globalSearch
       const meta = SEARCH_TYPE_META[item.type] || SEARCH_TYPE_META.audio;
       return `
         <a href="${item.href}" class="global-search-result flex items-center gap-3 px-4 py-3 hover:bg-slate-800/80 transition border-b border-slate-800/80 last:border-0">
-          <span class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
-            <i class="fas ${meta.icon} text-gold text-sm"></i>
-          </span>
+          ${searchResultThumb(item, meta)}
           <span class="min-w-0 flex-1">
             <span class="block text-sm text-slate-100 leading-snug line-clamp-2">${escapeHtml(item.title)}</span>
             <span class="block text-xs text-slate-500 mt-0.5">${escapeHtml(meta.label)}${item.sub ? ` · ${escapeHtml(item.sub)}` : ''}</span>
