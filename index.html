@@ -19,27 +19,13 @@
   <meta name="twitter:description" content="Independent educational archive of Shaykh Abdullah Faisal — audio, video lectures, and clips.">
   <meta name="twitter:image" content="https://shaykhabdullahfaisal.com/apple-touch-icon.png">
   <title>Shaykh Abdullah Faisal • Archive</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            gold: { DEFAULT: '#d4a853', light: '#e8c97a', dark: '#b8923f' },
-            slate: { 850: '#1a2332', 925: '#0c1220', 950: '#080d18' }
-          },
-          fontFamily: {
-            display: ['"Playfair Display"', 'Georgia', 'serif'],
-            body: ['Inter', 'system-ui', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
+  <script src="https://cdn.tailwindcss.com" onerror="document.documentElement.classList.add('no-tailwind')"></script>
+  <script src="tailwind-guard.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"></noscript>
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .font-display { font-family: 'Playfair Display', Georgia, serif; }
@@ -57,9 +43,85 @@
     .thumb-box { background: linear-gradient(180deg, #0f172a 0%, #1a2332 100%); }
     .slide-thumb { height: 16rem; }
     @media (min-width: 640px) { .slide-thumb { height: 18rem; } }
+
+    .home-boot {
+      position: fixed; inset: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(8, 13, 24, 0.92);
+      backdrop-filter: blur(6px);
+      transition: opacity 0.45s ease, visibility 0.45s ease;
+    }
+    .home-boot.is-done { opacity: 0; visibility: hidden; pointer-events: none; }
+    .home-boot__inner { text-align: center; }
+    .home-boot__spinner {
+      width: 2.75rem; height: 2.75rem; margin: 0 auto 1rem;
+      border-radius: 999px;
+      border: 3px solid rgba(212, 168, 83, 0.2);
+      border-top-color: #d4a853;
+      animation: home-spin 0.85s linear infinite;
+    }
+    .home-boot__label { color: #94a3b8; font-size: 0.875rem; letter-spacing: 0.04em; }
+    @keyframes home-spin { to { transform: rotate(360deg); } }
+
+    #homeMain {
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.55s ease, transform 0.55s ease;
+    }
+    #homeMain.is-ready { opacity: 1; transform: none; }
+    .home-fade-in { animation: home-fade-in 0.5s ease both; }
+    @keyframes home-fade-in {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: none; }
+    }
+
+    .home-skeleton-card,
+    .home-skeleton-slide {
+      display: flex; gap: 0.75rem; padding: 0.75rem;
+      border-radius: 0.75rem; border: 1px solid #1e293b;
+      background: rgba(15, 23, 42, 0.5);
+    }
+    .home-skeleton-slide { min-height: 18rem; flex-direction: column; }
+    @media (min-width: 640px) {
+      .home-skeleton-slide { flex-direction: row; }
+    }
+    .home-skeleton-thumb,
+    .home-skeleton-slide-thumb {
+      flex-shrink: 0; border-radius: 0.5rem;
+      background: linear-gradient(90deg, #1a2332 0%, #243044 50%, #1a2332 100%);
+      background-size: 200% 100%;
+      animation: home-shimmer 1.2s ease-in-out infinite;
+    }
+    .home-skeleton-thumb { width: 6rem; height: 3.25rem; }
+    .home-skeleton-slide-thumb { width: 100%; height: 16rem; }
+    @media (min-width: 640px) {
+      .home-skeleton-slide-thumb { width: 42%; height: 18rem; }
+    }
+    .home-skeleton-lines { flex: 1; display: flex; flex-direction: column; gap: 0.5rem; padding-top: 0.25rem; }
+    .home-skeleton-slide-body { flex: 1; display: flex; flex-direction: column; gap: 0.625rem; justify-content: center; padding: 1rem; }
+    .home-skeleton-line {
+      height: 0.75rem; border-radius: 999px;
+      background: linear-gradient(90deg, #1a2332 0%, #243044 50%, #1a2332 100%);
+      background-size: 200% 100%;
+      animation: home-shimmer 1.2s ease-in-out infinite;
+    }
+    .home-skeleton-line--wide { width: 92%; }
+    .home-skeleton-line--medium { width: 68%; }
+    .home-skeleton-line--short { width: 38%; height: 0.625rem; }
+    @keyframes home-shimmer {
+      0% { background-position: 200% 0; }
+      100% { background-position: -200% 0; }
+    }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-200 antialiased islamic-pattern min-h-screen flex flex-col">
+
+  <div id="homeBootScreen" class="home-boot" aria-live="polite">
+    <div class="home-boot__inner">
+      <div class="home-boot__spinner" role="presentation"></div>
+      <p class="home-boot__label">Loading archive…</p>
+    </div>
+  </div>
 
   <div id="siteTopBar"></div>
 
@@ -77,7 +139,7 @@
     </div>
   </header>
 
-  <main class="flex-1">
+  <main id="homeMain" class="flex-1">
 
     <!-- Global search -->
     <section class="max-w-7xl mx-auto px-4 sm:px-8 pt-6 sm:pt-8">
@@ -154,10 +216,6 @@
   </footer>
 
   <script src="site.js"></script>
-  <script src="search-index.js"></script>
-  <script src="lectures-home.js"></script>
-  <script src="videos-data.js"></script>
-  <script src="clips-data.js"></script>
   <script>
     const SLIDE_MS = 8000; // slower slideshow
     let currentSlide = 0;
@@ -222,6 +280,7 @@
         slideshow.closest('section').style.display = 'none';
         return;
       }
+      slideshow.classList.add('home-fade-in');
       document.getElementById('slideTrack').innerHTML = featured.map(buildSlide).join('');
       const dots = featured.map((_, i) =>
         `<button class="slide-dot h-2 rounded-full transition-all ${i===0?'active bg-gold w-7':'bg-slate-600 w-2'}" data-i="${i}" aria-label="Slide ${i+1}"></button>`
@@ -257,28 +316,59 @@
     }
 
     function initPreviews() {
-      document.getElementById('clipsPreview').innerHTML = randomPick(CLIPS, 4).map(c =>
+      const clips = typeof HOME_CLIPS_POOL !== 'undefined' ? HOME_CLIPS_POOL : [];
+      const videos = typeof HOME_VIDEOS_POOL !== 'undefined' ? HOME_VIDEOS_POOL : [];
+      const audioPool = typeof HOME_AUDIO_POOL !== 'undefined' ? HOME_AUDIO_POOL : [];
+
+      document.getElementById('clipsPreview').innerHTML = randomPick(clips, 4).map(c =>
         previewCard(`clips.html?clip=${c.id}`, c.thumb, c.title, 'Short clip', 'fa-film')
       ).join('');
 
-      document.getElementById('videosPreview').innerHTML = randomPick(VIDEOS, 4).map(v =>
+      document.getElementById('videosPreview').innerHTML = randomPick(videos, 4).map(v =>
         previewCard(`videos.html?video=${v.id}`, v.thumb, v.title, 'Video lecture', 'fa-video')
       ).join('');
 
-      const audioPool = (typeof HOME_LECTURES !== 'undefined' ? HOME_LECTURES : [])
-        .filter(l => l.thumb);
       document.getElementById('audioPreview').innerHTML = randomPick(audioPool, 4).map(l =>
         previewCard(`audio.html?lecture=${l.id}`, l.thumb, l.title, l.categoryLabel, 'fa-headphones')
       ).join('');
+
+      document.querySelectorAll('#clipsPreview, #videosPreview, #audioPreview').forEach((el, i) => {
+        el.style.animationDelay = `${i * 0.08}s`;
+        el.classList.add('home-fade-in');
+      });
     }
 
-    mountTopBar();
-    document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
-    mountTelegramLink();
-    setActiveNav('home');
-    mountGlobalSearch();
-    initSlideshow();
-    initPreviews();
+    function showHomeSkeletons() {
+      document.getElementById('slideTrack').innerHTML = homeSlideSkeleton();
+      document.getElementById('clipsPreview').innerHTML = homePreviewSkeleton(4);
+      document.getElementById('videosPreview').innerHTML = homePreviewSkeleton(4);
+      document.getElementById('audioPreview').innerHTML = homePreviewSkeleton(4);
+    }
+
+    async function bootHome() {
+      try {
+        mountTopBar();
+        document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
+        mountTelegramLink();
+        setActiveNav('home');
+        mountGlobalSearch();
+        showHomeSkeletons();
+
+        await Promise.all([
+          loadExternalScript('lectures-home.js'),
+          loadExternalScript('home-previews-pool.js'),
+        ]);
+
+        initSlideshow();
+        initPreviews();
+        revealHomeContent();
+      } catch (err) {
+        console.error('Homepage init failed:', err);
+        revealHomeContent();
+      }
+    }
+
+    bootHome();
   </script>
 </body>
 </html>

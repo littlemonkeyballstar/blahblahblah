@@ -164,6 +164,90 @@ function initCloudflareAnalytics() {
   document.head.appendChild(script);
 }
 
+let searchIndexLoadPromise = null;
+
+function loadScriptOnce(src) {
+  if (document.querySelector(`script[src="${src}"]`)) {
+    return typeof SEARCH_INDEX !== 'undefined'
+      ? Promise.resolve()
+      : new Promise((resolve) => {
+          const check = () => {
+            if (typeof SEARCH_INDEX !== 'undefined') resolve();
+            else setTimeout(check, 40);
+          };
+          check();
+        });
+  }
+  return new Promise((resolve, reject) => {
+    const script = document.createElement('script');
+    script.src = src;
+    script.async = true;
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error(`Failed to load ${src}`));
+    document.head.appendChild(script);
+  });
+}
+
+function ensureSearchIndexLoaded() {
+  if (typeof SEARCH_INDEX !== 'undefined') return Promise.resolve();
+  if (!searchIndexLoadPromise) {
+    searchIndexLoadPromise = loadScriptOnce('search-index.js');
+  }
+  return searchIndexLoadPromise;
+}
+
+const externalScriptPromises = new Map();
+
+function loadExternalScript(src) {
+  if (externalScriptPromises.has(src)) return externalScriptPromises.get(src);
+  const promise = document.querySelector(`script[src="${src}"]`)
+    ? Promise.resolve()
+    : new Promise((resolve, reject) => {
+        const script = document.createElement('script');
+        script.src = src;
+        script.async = true;
+        script.onload = () => resolve();
+        script.onerror = () => reject(new Error(`Failed to load ${src}`));
+        document.head.appendChild(script);
+      });
+  externalScriptPromises.set(src, promise);
+  return promise;
+}
+
+function homePreviewSkeleton(count = 4) {
+  return Array.from({ length: count }, () => `
+    <div class="home-skeleton-card" aria-hidden="true">
+      <div class="home-skeleton-thumb"></div>
+      <div class="home-skeleton-lines">
+        <div class="home-skeleton-line home-skeleton-line--wide"></div>
+        <div class="home-skeleton-line"></div>
+      </div>
+    </div>`).join('');
+}
+
+function homeSlideSkeleton() {
+  return `<div class="home-skeleton-slide" aria-hidden="true">
+    <div class="home-skeleton-slide-thumb"></div>
+    <div class="home-skeleton-slide-body">
+      <div class="home-skeleton-line home-skeleton-line--short"></div>
+      <div class="home-skeleton-line home-skeleton-line--wide"></div>
+      <div class="home-skeleton-line home-skeleton-line--medium"></div>
+    </div>
+  </div>`;
+}
+
+function dismissHomeBootScreen() {
+  const screen = document.getElementById('homeBootScreen');
+  if (!screen) return;
+  screen.classList.add('is-done');
+  window.setTimeout(() => screen.remove(), 450);
+}
+
+function revealHomeContent() {
+  document.getElementById('homeMain')?.classList.add('is-ready');
+  dismissHomeBootScreen();
+}
+
 function searchIndexHaystack(item) {
   return normalizeForSearch([item.title, item.sub || '', item.type || ''].join(' '));
 }
@@ -203,9 +287,10 @@ function searchResultThumb(item, meta) {
 function mountGlobalSearch({ inputId = 'globalSearch', resultsId = 'globalSearchResults' } = {}) {
   const input = document.getElementById(inputId);
   const results = document.getElementById(resultsId);
-  if (!input || !results || typeof SEARCH_INDEX === 'undefined') return;
+  if (!input || !results) return;
 
   let debounceTimer = null;
+  let indexLoadPromise = null;
 
   const hideResults = () => {
     results.classList.add('hidden');
@@ -233,6 +318,22 @@ function mountGlobalSearch({ inputId = 'globalSearch', resultsId = 'globalSearch
     results.classList.remove('hidden');
   };
 
+  const loadIndex = () => {
+    if (typeof SEARCH_INDEX !== 'undefined') return Promise.resolve();
+    if (!indexLoadPromise) {
+      results.innerHTML = '<p class="px-4 py-3 text-sm text-slate-500">Loading search…</p>';
+      results.classList.remove('hidden');
+      indexLoadPromise = ensureSearchIndexLoaded().catch(() => {
+        indexLoadPromise = null;
+        results.innerHTML = '<p class="px-4 py-3 text-sm text-slate-500">Search unavailable. Try again.</p>';
+        throw new Error('search-index load failed');
+      });
+    }
+    return indexLoadPromise;
+  };
+
+  input.addEventListener('focus', () => { loadIndex(); });
+
   input.addEventListener('input', () => {
     clearTimeout(debounceTimer);
     debounceTimer = setTimeout(() => {
@@ -241,7 +342,9 @@ function mountGlobalSearch({ inputId = 'globalSearch', resultsId = 'globalSearch
         hideResults();
         return;
       }
-      renderResults(searchGlobalIndex(query));
+      loadIndex().then(() => {
+        if (typeof SEARCH_INDEX !== 'undefined') renderResults(searchGlobalIndex(query));
+      }).catch(() => {});
     }, 180);
   });
 
@@ -255,6 +358,151 @@ function mountGlobalSearch({ inputId = 'globalSearch', resultsId = 'globalSearch
   document.addEventListener('click', (e) => {
     if (!results.contains(e.target) && e.target !== input) hideResults();
   });
+}
+
+function mountLayoutFallback() {
+  if (document.getElementById('layout-fallback')) return;
+  const style = document.createElement('style');
+  style.id = 'layout-fallback';
+  style.textContent = `
+    html.no-tailwind body {
+      background-color: #080d18;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+    }
+    html.no-tailwind .min-h-screen { min-height: 100vh; }
+    html.no-tailwind .flex { display: flex; }
+    html.no-tailwind .flex-col { flex-direction: column; }
+    html.no-tailwind .flex-1 { flex: 1 1 0%; }
+    html.no-tailwind .flex-shrink-0 { flex-shrink: 0; }
+    html.no-tailwind .items-center { align-items: center; }
+    html.no-tailwind .justify-center { justify-content: center; }
+    html.no-tailwind .justify-between { justify-content: space-between; }
+    html.no-tailwind .gap-1 { gap: 0.25rem; }
+    html.no-tailwind .gap-2 { gap: 0.5rem; }
+    html.no-tailwind .gap-3 { gap: 0.75rem; }
+    html.no-tailwind .gap-8 { gap: 2rem; }
+    html.no-tailwind .hidden { display: none !important; }
+    html.no-tailwind .block { display: block; }
+    html.no-tailwind .grid { display: grid; }
+    html.no-tailwind .grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+    html.no-tailwind .relative { position: relative; }
+    html.no-tailwind .absolute { position: absolute; }
+    html.no-tailwind .sticky { position: sticky; }
+    html.no-tailwind .top-0 { top: 0; }
+    html.no-tailwind .left-0 { left: 0; }
+    html.no-tailwind .right-0 { right: 0; }
+    html.no-tailwind .top-1\\/2 { top: 50%; }
+    html.no-tailwind .z-10 { z-index: 10; }
+    html.no-tailwind .z-50 { z-index: 50; }
+    html.no-tailwind .w-full { width: 100%; }
+    html.no-tailwind .w-10 { width: 2.5rem; }
+    html.no-tailwind .h-10 { height: 2.5rem; }
+    html.no-tailwind .w-24 { width: 6rem; }
+    html.no-tailwind .h-14 { height: 3.5rem; }
+    html.no-tailwind .min-w-0 { min-width: 0; }
+    html.no-tailwind .max-w-2xl { max-width: 42rem; }
+    html.no-tailwind .max-w-7xl { max-width: 80rem; }
+    html.no-tailwind .mx-auto { margin-left: auto; margin-right: auto; }
+    html.no-tailwind .mb-3 { margin-bottom: 0.75rem; }
+    html.no-tailwind .mb-4 { margin-bottom: 1rem; }
+    html.no-tailwind .mb-6 { margin-bottom: 1.5rem; }
+    html.no-tailwind .mt-2 { margin-top: 0.5rem; }
+    html.no-tailwind .mt-3 { margin-top: 0.75rem; }
+    html.no-tailwind .mt-5 { margin-top: 1.25rem; }
+    html.no-tailwind .px-4 { padding-left: 1rem; padding-right: 1rem; }
+    html.no-tailwind .px-5 { padding-left: 1.25rem; padding-right: 1.25rem; }
+    html.no-tailwind .py-3 { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+    html.no-tailwind .py-4 { padding-top: 1rem; padding-bottom: 1rem; }
+    html.no-tailwind .py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+    html.no-tailwind .py-10 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+    html.no-tailwind .pt-6 { padding-top: 1.5rem; }
+    html.no-tailwind .pt-8 { padding-top: 2rem; }
+    html.no-tailwind .pb-6 { padding-bottom: 1.5rem; }
+    html.no-tailwind .pb-16 { padding-bottom: 4rem; }
+    html.no-tailwind .pl-11 { padding-left: 2.75rem; }
+    html.no-tailwind .p-3 { padding: 0.75rem; }
+    html.no-tailwind .p-4 { padding: 1rem; }
+    html.no-tailwind .text-center { text-align: center; }
+    html.no-tailwind .text-xs { font-size: 0.75rem; }
+    html.no-tailwind .text-sm { font-size: 0.875rem; }
+    html.no-tailwind .text-lg { font-size: 1.125rem; }
+    html.no-tailwind .text-xl { font-size: 1.25rem; }
+    html.no-tailwind .font-bold { font-weight: 700; }
+    html.no-tailwind .font-medium { font-weight: 500; }
+    html.no-tailwind .font-semibold { font-weight: 600; }
+    html.no-tailwind .leading-snug { line-height: 1.375; }
+    html.no-tailwind .leading-relaxed { line-height: 1.625; }
+    html.no-tailwind .uppercase { text-transform: uppercase; }
+    html.no-tailwind .tracking-wide { letter-spacing: 0.025em; }
+    html.no-tailwind .tracking-widest { letter-spacing: 0.1em; }
+    html.no-tailwind .rounded-lg { border-radius: 0.5rem; }
+    html.no-tailwind .rounded-xl { border-radius: 0.75rem; }
+    html.no-tailwind .rounded-2xl { border-radius: 1rem; }
+    html.no-tailwind .rounded-full { border-radius: 9999px; }
+    html.no-tailwind .border { border-width: 1px; border-style: solid; }
+    html.no-tailwind .border-b { border-bottom-width: 1px; border-style: solid; }
+    html.no-tailwind .border-t { border-top-width: 1px; border-style: solid; }
+    html.no-tailwind .border-slate-700 { border-color: #334155; }
+    html.no-tailwind .border-slate-800 { border-color: #1e293b; }
+    html.no-tailwind .bg-slate-900 { background-color: #0f172a; }
+    html.no-tailwind .bg-slate-950 { background-color: #080d18; }
+    html.no-tailwind .bg-slate-925,
+    html.no-tailwind .bg-slate-925\\/50,
+    html.no-tailwind .bg-slate-925\\/90 { background-color: #0c1220; }
+    html.no-tailwind .bg-slate-900\\/50,
+    html.no-tailwind .bg-slate-900\\/60 { background-color: rgba(15, 23, 42, 0.6); }
+    html.no-tailwind .bg-gold { background-color: #d4a853; }
+    html.no-tailwind .bg-gold\\/90 { background-color: rgba(212, 168, 83, 0.9); }
+    html.no-tailwind .bg-gold\\/15 { background-color: rgba(212, 168, 83, 0.15); }
+    html.no-tailwind .text-white { color: #fff; }
+    html.no-tailwind .text-slate-100 { color: #f1f5f9; }
+    html.no-tailwind .text-slate-200 { color: #e2e8f0; }
+    html.no-tailwind .text-slate-400 { color: #94a3b8; }
+    html.no-tailwind .text-slate-500 { color: #64748b; }
+    html.no-tailwind .text-slate-600 { color: #475569; }
+    html.no-tailwind .text-slate-950 { color: #020617; }
+    html.no-tailwind .text-gold { color: #d4a853; }
+    html.no-tailwind .overflow-hidden { overflow: hidden; }
+    html.no-tailwind .overflow-y-auto { overflow-y: auto; }
+    html.no-tailwind .space-y-3 > * + * { margin-top: 0.75rem; }
+    html.no-tailwind .-translate-y-1\\/2 { transform: translateY(-50%); }
+    html.no-tailwind .shadow-lg { box-shadow: 0 10px 15px -3px rgba(0,0,0,0.3); }
+    html.no-tailwind .shadow-2xl { box-shadow: 0 25px 50px -12px rgba(0,0,0,0.45); }
+    html.no-tailwind .sr-only {
+      position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+      overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0;
+    }
+    html.no-tailwind #slideTrack { display: flex; }
+    html.no-tailwind [data-slide] { flex-shrink: 0; width: 100%; }
+    html.no-tailwind .site-header { border-bottom: 1px solid #1e293b; background: rgba(12, 18, 32, 0.95); }
+    html.no-tailwind input[type="search"] {
+      width: 100%; box-sizing: border-box;
+      background: #0f172a; color: #f1f5f9; border: 1px solid #334155;
+    }
+    @media (min-width: 640px) {
+      html.no-tailwind .sm\\:flex { display: flex; }
+      html.no-tailwind .sm\\:flex-row { flex-direction: row; }
+      html.no-tailwind .sm\\:hidden { display: none !important; }
+      html.no-tailwind .sm\\:px-8 { padding-left: 2rem; padding-right: 2rem; }
+      html.no-tailwind .sm\\:pt-8 { padding-top: 2rem; }
+      html.no-tailwind .sm\\:pt-12 { padding-top: 3rem; }
+      html.no-tailwind .sm\\:py-14 { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+      html.no-tailwind .sm\\:text-3xl { font-size: 1.875rem; }
+      html.no-tailwind .sm\\:w-12 { width: 3rem; }
+      html.no-tailwind .sm\\:h-12 { height: 3rem; }
+      html.no-tailwind .sm\\:left-5 { left: 1.25rem; }
+      html.no-tailwind .sm\\:right-5 { right: 1.25rem; }
+      html.no-tailwind .sm\\:inline { display: inline; }
+    }
+    @media (min-width: 1024px) {
+      html.no-tailwind .lg\\:grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+  `;
+  document.head.appendChild(style);
 }
 
 function mountMobileStyles() {
@@ -427,6 +675,7 @@ function mountMobileStyles() {
 
 function mountTopBar() {
   initCloudflareAnalytics();
+  mountLayoutFallback();
   mountMobileStyles();
   if (!document.getElementById('top-bar-styles')) {
     const style = document.createElement('style');

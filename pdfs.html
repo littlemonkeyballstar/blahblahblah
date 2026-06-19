@@ -18,10 +18,8 @@
   <meta name="twitter:title" content="PDF Books • Shaykh Abdullah Faisal">
   <meta name="twitter:description" content="PDF books and writings by Shaykh Abdullah Faisal — download from Internet Archive.">
   <title>PDF Books • Shaykh Abdullah Faisal</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = { theme: { extend: { colors: { gold: { DEFAULT: '#d4a853' }, slate: { 925: '#0c1220', 950: '#080d18' } }, fontFamily: { display: ['"Playfair Display"', 'Georgia', 'serif'], body: ['Inter', 'system-ui', 'sans-serif'] } } } };
-  </script>
+  <script src="https://cdn.tailwindcss.com" onerror="document.documentElement.classList.add('no-tailwind')"></script>
+  <script src="tailwind-guard.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
@@ -272,7 +270,7 @@
       });
     }
 
-    document.getElementById('search').oninput = e => { state.search = e.target.value; state.page = 1; render(); };
+    document.getElementById('search').oninput = e => { state.search = e.target.value; render(); };
     mountTopBar();
     mountPdfPreviewModal();
     document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;

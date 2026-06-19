@@ -19,23 +19,8 @@
   <meta name="twitter:description" content="500+ audio lectures by Shaykh Abdullah Faisal — organized by series and topic.">
   <title>Audio Lectures • Shaykh Abdullah Faisal</title>
 
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            gold: { DEFAULT: '#d4a853', light: '#e8c97a', dark: '#b8923f' },
-            slate: { 850: '#1a2332', 925: '#0c1220', 950: '#080d18' }
-          },
-          fontFamily: {
-            display: ['"Playfair Display"', 'Georgia', 'serif'],
-            body: ['Inter', 'system-ui', 'sans-serif']
-          }
-        }
-      }
-    }
-  </script>
+  <script src="https://cdn.tailwindcss.com" onerror="document.documentElement.classList.add('no-tailwind')"></script>
+  <script src="tailwind-guard.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

@@ -3,6 +3,8 @@
 import json
 import re
 import shutil
+import subprocess
+import sys
 import urllib.parse
 import urllib.request
 from difflib import SequenceMatcher
@@ -516,6 +518,10 @@ def main():
     c_thumbs = sum(1 for c in clips if c.get("thumb"))
     print(f"Videos: {len(videos)} ({v_thumbs} with thumbnails)")
     print(f"Clips: {len(clips)} ({c_thumbs} with thumbnails)")
+
+    build_home_pool = WEBSITE / "build-home-previews-pool.py"
+    if build_home_pool.is_file():
+        subprocess.run([sys.executable, str(build_home_pool)], check=False, cwd=WEBSITE)
 
 
 if __name__ == "__main__":

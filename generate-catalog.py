@@ -17,6 +17,8 @@ import json
 import os
 import re
 import shutil
+import subprocess
+import sys
 import urllib.request
 from difflib import SequenceMatcher
 from pathlib import Path
@@ -1035,14 +1037,16 @@ def write_catalog_outputs(
         handle.write("/* Auto-generated — run generate-catalog.py to refresh */\n")
         handle.write("const HOME_FEATURED = ")
         json.dump(featured_resolved, handle, ensure_ascii=False, indent=2)
-        handle.write(";\n\nconst HOME_LECTURES = ")
-        json.dump(home_lectures, handle, ensure_ascii=False, indent=2)
         handle.write(";\n")
 
     search_partial = WEBSITE / "data" / "search-audio.json"
     search_partial.parent.mkdir(parents=True, exist_ok=True)
     with open(search_partial, "w", encoding="utf-8") as handle:
         json.dump(audio_search, handle, ensure_ascii=False, indent=2)
+
+    build_home_pool = WEBSITE / "build-home-previews-pool.py"
+    if build_home_pool.is_file():
+        subprocess.run([sys.executable, str(build_home_pool)], check=False, cwd=WEBSITE)
 
     out = WEBSITE / "lectures-data.js"
     with open(out, "w", encoding="utf-8") as handle:
