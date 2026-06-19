@@ -1067,6 +1067,10 @@ function mountMobileStyles() {
       overflow: hidden;
     }
 
+    .media-card {
+      position: relative;
+      overflow: visible;
+    }
     .media-card__inner {
       display: flex;
       flex-direction: column;
@@ -1075,48 +1079,85 @@ function mountMobileStyles() {
     }
     .media-card__head {
       display: flex;
-      align-items: flex-start;
-      gap: 0.5rem;
-      min-height: 2.875rem;
+      align-items: center;
+      gap: 0.625rem;
+      min-height: 2.25rem;
       margin-bottom: 0.75rem;
     }
     .media-card__title-wrap {
       flex: 1 1 auto;
       min-width: 0;
-      height: 2.875rem;
-      overflow: hidden;
+      position: relative;
     }
-    .media-card__title-track {
+    .media-card__title {
+      margin: 0;
       font-size: 0.875rem;
-      line-height: 1.4375rem;
+      line-height: 1.375rem;
       font-weight: 500;
       color: #f1f5f9;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
+      white-space: nowrap;
       overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    .media-card__title-full {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: calc(100% + 0.45rem);
+      z-index: 40;
+      padding: 0.5rem 0.65rem;
+      border-radius: 0.5rem;
+      background: rgba(15, 23, 42, 0.98);
+      border: 1px solid rgba(212, 168, 83, 0.32);
+      color: #f8fafc;
+      font-size: 0.8125rem;
+      line-height: 1.45;
+      font-weight: 500;
+      white-space: normal;
       word-break: break-word;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.42);
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      transition: opacity 0.15s ease, visibility 0.15s ease;
+    }
+    .media-card__title-full::after {
+      content: '';
+      position: absolute;
+      left: 1rem;
+      top: 100%;
+      border: 6px solid transparent;
+      border-top-color: rgba(212, 168, 83, 0.32);
+    }
+    .media-card__title-wrap.is-overflow:hover .media-card__title-full,
+    .media-card__title-wrap.is-overflow:focus-within .media-card__title-full {
+      opacity: 1;
+      visibility: visible;
     }
     .media-card__actions {
-      display: flex;
-      align-items: center;
-      gap: 0.375rem;
+      display: inline-flex;
+      align-items: stretch;
       flex-shrink: 0;
-      padding-top: 0.0625rem;
+      border-radius: 0.5rem;
+      border: 1px solid rgba(51, 65, 85, 0.75);
+      background: rgba(2, 6, 23, 0.45);
+      overflow: hidden;
     }
     .media-card__action-btn {
-      width: 2rem;
-      height: 2rem;
-      border-radius: 0.5rem;
-      border: 1px solid rgba(51, 65, 85, 0.85);
-      background: rgba(2, 6, 23, 0.55);
+      width: 1.875rem;
+      height: 1.875rem;
+      border: none;
+      border-radius: 0;
+      background: transparent;
       color: #94a3b8;
-      transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+      transition: color 0.2s ease, background 0.2s ease;
+    }
+    .media-card__action-btn + .media-card__action-btn {
+      border-left: 1px solid rgba(51, 65, 85, 0.75);
     }
     .media-card__action-btn:hover {
       color: #d4a853;
-      border-color: rgba(212, 168, 83, 0.45);
-      background: rgba(15, 23, 42, 0.85);
+      background: rgba(15, 23, 42, 0.75);
     }
     .media-card__action-btn.share-link-btn {
       cursor: pointer;
@@ -1125,28 +1166,14 @@ function mountMobileStyles() {
     }
     .media-card__video {
       margin-top: auto;
+      border-radius: 0.5rem;
+      overflow: hidden;
     }
-    #grid .media-card,
-    #grid > .media-card {
+    #grid .media-card {
       height: 100%;
     }
-    @media (hover: hover) and (pointer: fine) {
-      .media-card__title-wrap.is-overflow:hover .media-card__title-track {
-        display: inline-block;
-        -webkit-line-clamp: unset;
-        white-space: nowrap;
-        max-width: none;
-        animation: media-card-title-scroll 12s linear infinite;
-      }
-    }
-    @keyframes media-card-title-scroll {
-      0%, 18% { transform: translateX(0); }
-      82%, 100% { transform: translateX(var(--title-scroll, -40%)); }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .media-card__title-wrap.is-overflow:hover .media-card__title-track {
-        animation: none;
-      }
+    .media-card:hover {
+      z-index: 8;
     }
   `;
   document.head.appendChild(style);
@@ -1352,20 +1379,12 @@ function downloadIconLink(url, { label = 'Download', className = '' } = {}) {
 function bindMediaCardTitles(root = document) {
   root.querySelectorAll('.media-card__title-wrap:not([data-title-bound])').forEach((wrap) => {
     wrap.dataset.titleBound = '1';
-    const track = wrap.querySelector('.media-card__title-track');
-    if (!track) return;
+    const title = wrap.querySelector('.media-card__title');
+    if (!title) return;
     requestAnimationFrame(() => {
-      const overflowsVertically = track.scrollHeight > wrap.clientHeight + 1;
-      const probe = track.cloneNode(true);
-      probe.style.cssText = 'position:absolute;visibility:hidden;pointer-events:none;display:inline-block;white-space:nowrap;width:auto;max-width:none;-webkit-line-clamp:unset;';
-      wrap.appendChild(probe);
-      const fullWidth = probe.scrollWidth;
-      const viewWidth = wrap.clientWidth;
-      probe.remove();
-      if (!overflowsVertically && fullWidth <= viewWidth + 1) return;
-      wrap.classList.add('is-overflow');
-      if (fullWidth > viewWidth + 1) {
-        wrap.style.setProperty('--title-scroll', `-${fullWidth - viewWidth}px`);
+      if (title.scrollWidth > title.clientWidth + 1) {
+        wrap.classList.add('is-overflow');
+        title.setAttribute('title', title.textContent || '');
       }
     });
   });
@@ -1811,19 +1830,22 @@ function mediaCard({
         </div>`;
 
   const thumbSection = hideThumbImage ? '' : `
-      <div class="media-thumb relative flex items-center justify-center p-3 overflow-hidden">
+      <div class="media-thumb relative flex items-center justify-center p-3 overflow-hidden rounded-t-2xl">
         <div class="absolute inset-0 thumb-box"></div>
         ${imgBlock}
         ${badgeHtml}
       </div>`;
 
+  const titleTip = `<span class="media-card__title-full" role="tooltip">${escapeHtml(title)}</span>`;
+
   return `
-    <article id="${id || ''}" class="media-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5 sm:hover:-translate-y-0.5">
+    <article id="${id || ''}" class="media-card bg-slate-900/70 border border-slate-800 rounded-2xl flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5 sm:hover:-translate-y-0.5">
       ${thumbSection}
       <div class="media-card__inner p-4 sm:p-4">
         <div class="media-card__head">
-          <div class="media-card__title-wrap" title="${escapeHtml(title)}">
-            <div class="media-card__title-track"><span class="media-card__title-text">${escapeHtml(title)}</span></div>
+          <div class="media-card__title-wrap">
+            <p class="media-card__title">${escapeHtml(title)}</p>
+            ${titleTip}
           </div>
           ${actions}
         </div>
