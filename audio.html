@@ -713,10 +713,12 @@
           <div class="p-4 flex flex-col flex-1">
             ${subBadge}
             <h3 class="font-medium text-sm text-slate-100 leading-snug mt-1 mb-3 line-clamp-3" title="${escapeHtml(lecture.title)}">${escapeHtml(lecture.title)}</h3>
-            <audio controls preload="none" class="mt-auto h-9" data-lecture-id="${lecture.id}">
-              <source src="${audioUrl}" type="audio/mpeg">
-            </audio>
-            ${downloadButtonHtml(audioUrl)}
+            <div class="flex items-center gap-2 mt-auto">
+              <audio controls preload="none" class="flex-1 min-w-0 h-9" data-lecture-id="${lecture.id}">
+                <source src="${audioUrl}" type="audio/mpeg">
+              </audio>
+              ${downloadIconLink(audioUrl, { label: 'Download audio' })}
+            </div>
           </div>
         </article>`;
     }

@@ -535,18 +535,19 @@ function archiveStreamUrl(base, path) {
   return base + encodeURI(path).replace(/%2F/g, '/');
 }
 
-function downloadButtonHtml(url, label = 'Download') {
+function downloadIconLink(url, { label = 'Download', className = '' } = {}) {
   if (!url) return '';
-  return `<a href="${url}" class="media-download-btn inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:border-gold/40 hover:text-gold text-xs font-medium transition w-fit" target="_blank" rel="noopener" download>
-    <i class="fas fa-download"></i> ${escapeHtml(label)}
+  return `<a href="${url}" class="media-download-link inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-500 hover:text-gold hover:bg-slate-800/80 transition flex-shrink-0 ${className}" target="_blank" rel="noopener" download title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">
+    <i class="fas fa-download text-sm"></i>
   </a>`;
 }
 
-function previewButtonHtml({ embedUrl, title = '', downloadUrl = '', detailsUrl = '', label = 'Preview' }) {
+function previewButtonHtml({ embedUrl, title = '', downloadUrl = '', detailsUrl = '', label = 'Read', fullWidth = false }) {
   if (!embedUrl) return '';
-  return `<button type="button" class="pdf-preview-btn inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-slate-700 text-slate-300 hover:border-gold/40 hover:text-gold text-xs font-medium transition w-fit"
+  const widthClass = fullWidth ? 'w-full justify-center' : 'w-fit';
+  return `<button type="button" class="pdf-preview-btn inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-gold/25 bg-gold/10 text-gold hover:bg-gold/20 hover:border-gold/40 text-xs font-medium transition ${widthClass}"
     data-title="${escapeHtml(title)}" data-embed="${escapeHtml(embedUrl)}" data-download="${escapeHtml(downloadUrl)}" data-details="${escapeHtml(detailsUrl)}">
-    <i class="fas fa-eye"></i> ${escapeHtml(label)}
+    <i class="fas fa-book-open"></i> ${escapeHtml(label)}
   </button>`;
 }
 
@@ -674,10 +675,12 @@ function pdfPartCard(data) {
       <div class="p-3 flex flex-col flex-1 min-w-0">
         <p class="text-[10px] uppercase tracking-wider text-gold/90 mb-1">${escapeHtml(partLabel)}</p>
         <h3 class="font-medium text-xs text-slate-100 leading-snug mb-2 line-clamp-3" title="${escapeHtml(subtitle)}">${escapeHtml(subtitle)}</h3>
-        <p class="text-[10px] text-slate-500 mb-2">${escapeHtml(sizeLabel || '')}</p>
-        <div class="flex flex-wrap gap-1.5 mt-auto">
-          ${previewButtonHtml({ embedUrl, title, downloadUrl, detailsUrl, label: 'Read' })}
-          ${downloadButtonHtml(downloadUrl)}
+        <div class="flex items-center justify-between gap-2 mb-2">
+          <p class="text-[10px] text-slate-500">${escapeHtml(sizeLabel || '')}</p>
+          ${downloadIconLink(downloadUrl, { label: 'Download PDF' })}
+        </div>
+        <div class="mt-auto">
+          ${previewButtonHtml({ embedUrl, title, downloadUrl, detailsUrl, label: 'Read', fullWidth: true })}
         </div>
       </div>
     </article>`;
@@ -768,19 +771,16 @@ function pdfCard({ id, title, sizeLabel, downloadUrl, embedUrl, detailsUrl, thum
         ${hasThumb ? `<img src="${thumbSrc(thumb)}" alt="" class="absolute inset-0 w-full h-full object-cover object-top" loading="lazy">` : '<i class="fas fa-file-pdf text-4xl text-red-400/70"></i>'}
       </div>`;
 
-  const actions = [
-    previewButtonHtml({ embedUrl, title, downloadUrl, detailsUrl }),
-    downloadButtonHtml(downloadUrl),
-  ].filter(Boolean).join('');
-
   return `
     <article id="${id || ''}" class="pdf-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5">
       ${previewBlock}
       <div class="p-4 flex flex-col flex-1 min-w-0">
         ${series ? `<p class="text-[10px] uppercase tracking-wider text-gold/80 mb-1 line-clamp-1">${escapeHtml(series)}${part ? ` · Part ${part}` : ''}</p>` : (categoryLabel ? `<p class="text-[10px] uppercase tracking-wider text-slate-500 mb-1 line-clamp-1">${escapeHtml(categoryLabel)}</p>` : '')}
         <h3 class="font-medium text-sm text-slate-100 leading-snug mb-2 line-clamp-3" title="${escapeHtml(title)}">${escapeHtml(title)}</h3>
-        <p class="text-xs text-slate-500 mb-3">${escapeHtml(sizeLabel || '')}</p>
-        <div class="flex flex-wrap gap-2 mt-auto">${actions}</div>
+        <div class="flex items-center justify-between gap-2 mt-auto pt-1">
+          <p class="text-xs text-slate-500">${escapeHtml(sizeLabel || '')}</p>
+          ${downloadIconLink(downloadUrl, { label: 'Download PDF' })}
+        </div>
       </div>
     </article>`;
 }
@@ -865,10 +865,17 @@ function mediaCard({ id, thumb, title, badge, stream, downloadUrl, posterOnly = 
     ? `<img src="${encThumb}" alt="" class="relative z-[1] max-w-full max-h-full object-contain" loading="lazy" onerror="this.style.display='none'">`
     : `<i class="fas fa-play-circle text-4xl text-gold/25"></i>`;
   const badgeHtml = badge ? `<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-md bg-slate-950/85 text-gold text-[10px] font-semibold uppercase tracking-wider">${escapeHtml(badge)}</span>` : '';
+  const downloadLink = downloadIconLink(downloadUrl || stream, {
+    label: 'Download video',
+    className: 'absolute top-2 right-2 z-10 bg-slate-950/75 backdrop-blur-sm border border-slate-700/80 hover:border-gold/40',
+  });
   const videoBlock = posterOnly ? '' : `
-    <video controls preload="none" playsinline class="w-full rounded-lg bg-black ${hideThumbImage ? 'aspect-video' : 'mt-auto'}" ${poster}>
-      <source src="${stream}" type="video/mp4">
-    </video>`;
+    <div class="relative mt-auto">
+      <video controls preload="none" playsinline class="w-full rounded-lg bg-black ${hideThumbImage ? 'aspect-video' : ''}" ${poster}>
+        <source src="${stream}" type="video/mp4">
+      </video>
+      ${downloadLink}
+    </div>`;
 
   const thumbSection = hideThumbImage ? '' : `
       <div class="media-thumb relative flex items-center justify-center p-3 overflow-hidden">
@@ -883,7 +890,6 @@ function mediaCard({ id, thumb, title, badge, stream, downloadUrl, posterOnly = 
       <div class="p-4 sm:p-4 flex flex-col flex-1 min-w-0">
         <h3 class="font-medium text-sm sm:text-sm text-slate-100 leading-snug ${hideThumbImage ? 'mb-3 sm:mb-4' : 'mb-3'} line-clamp-4 sm:line-clamp-3" title="${escapeHtml(title)}">${escapeHtml(title)}</h3>
         ${videoBlock}
-        ${downloadButtonHtml(downloadUrl || stream)}
       </div>
     </article>`;
 }
