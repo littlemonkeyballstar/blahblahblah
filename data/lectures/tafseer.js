@@ -517,7 +517,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafseer surah luqman",
     "subcategoryLabel": "Tafsir Luqman",
     "archive": "Tafseer/Tafseer surah luqman/Tafseer 031 Surah Luqman [Part 1] The Quran Is A Wise Book (07.14.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/ff8bd912edd44866.jpg",
     "id": 315
   },
   {
@@ -527,7 +527,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafseer surah luqman",
     "subcategoryLabel": "Tafsir Luqman",
     "archive": "Tafseer/Tafseer surah luqman/Tafseer 031 Surah Luqman [Part 2] Revisited (07.16.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/8743cc768cfa43c0.jpg",
     "id": 316
   },
   {
@@ -537,7 +537,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafseer surah luqman",
     "subcategoryLabel": "Tafsir Luqman",
     "archive": "Tafseer/Tafseer surah luqman/Tafseer 031 Surah Luqman [Part 3] Muslim, Mu'min and the Muhsin (07.17.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/d09fe1d4e559f923.jpg",
     "id": 317
   },
   {
@@ -547,7 +547,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafseer surah luqman",
     "subcategoryLabel": "Tafsir Luqman",
     "archive": "Tafseer/Tafseer surah luqman/Tafseer 031 Surah Luqman [Part 4] (07.25.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/15c9a7a1ce1089d8.jpg",
     "id": 318
   },
   {
@@ -667,7 +667,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "tafseer surah yasin",
     "subcategoryLabel": "Tafsir Ya-Sin",
     "archive": "Tafseer/tafseer surah yasin/Tafseer 036 Surah Yasin [Part 1] Islam Has A Brilliant Future (06.19.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/e54daa0ab71ea9af.jpg",
     "id": 330
   },
   {
@@ -677,7 +677,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "tafseer surah yasin",
     "subcategoryLabel": "Tafsir Ya-Sin",
     "archive": "Tafseer/tafseer surah yasin/Tafseer 036 Surah Yasin [Part 2] Omens, a Concoction of Human Folly (06.21.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/b9c5fbfb304d9ca9.jpg",
     "id": 331
   },
   {
@@ -687,7 +687,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "tafseer surah yasin",
     "subcategoryLabel": "Tafsir Ya-Sin",
     "archive": "Tafseer/tafseer surah yasin/Tafseer 036 Surah Yasin [Part 3] The Pagans Hate The Believers The Most (06.22.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/46852d58ef2fdf5c.jpg",
     "id": 332
   },
   {
@@ -697,7 +697,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "tafseer surah yasin",
     "subcategoryLabel": "Tafsir Ya-Sin",
     "archive": "Tafseer/tafseer surah yasin/Tafseer 036 Surah Yasin [Part 4] The Peak of Wisdom Is To Fear Allah (06.23.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/582d5be55bf019c4.jpg",
     "id": 333
   },
   {
@@ -898,7 +898,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafsir baqarah",
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Baqarah Pt2.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/e5e75c1321deb417.jpg",
     "id": 353
   },
   {
@@ -908,7 +908,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafsir baqarah",
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Baqarah Pt4.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/b426e1765412e94c.jpg",
     "id": 354
   },
   {
@@ -918,7 +918,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafsir baqarah",
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Baqarah pt6 will u give up better for worse.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/56de842189b2d55a.jpg",
     "id": 355
   },
   {
@@ -928,7 +928,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafsir baqarah",
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Baqarah Pt7 Then your Hearts Became Harder than Rocks.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/6e32cf02bd27cabb.jpg",
     "id": 356
   },
   {
@@ -938,7 +938,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah A'Araf - Part 1 -The Scale Of Justice.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/e4516027b20bcd03.jpg",
     "id": 357
   },
   {
@@ -948,7 +948,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah A'Araf - Part 2 - The Shaitan Is Waiting In Ambush.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/22b5c7de8cc23746.jpg",
     "id": 358
   },
   {
@@ -958,7 +958,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al 'Araf  - Part 16 - The 12 Sons Of Jacob (as).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/72b2782b88fcdc9f.jpg",
     "id": 359
   },
   {
@@ -968,7 +968,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 10 - When Good Comes To You Is From Allah SWT.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/f9aa66dde19d6027.jpg",
     "id": 360
   },
   {
@@ -978,7 +978,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 11 - Musa (as) and The Pharoah.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/0c01fbe18305472c.jpg",
     "id": 361
   },
   {
@@ -988,7 +988,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 12 - The Pharaoh Crucified His Magicians.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/439a4e6b293190b3.jpg",
     "id": 362
   },
   {
@@ -998,7 +998,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 13 - We Will Never See Allah (swt) In The Dunya.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/ad93e692b7be52c2.jpg",
     "id": 363
   },
   {
@@ -1008,7 +1008,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 14 - The Jews Worshipped The Golden Calf.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/de8e986ea83d3a6f.jpg",
     "id": 364
   },
   {
@@ -1018,7 +1018,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 15 - Musa (as) Threw Away The Tablets.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/0599d6244f4e32c7.jpg",
     "id": 365
   },
   {
@@ -1028,7 +1028,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 17 - The Importance Of Enjoining The Right And Forbidding The Wrong.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/cdd03bcf052bff5f.jpg",
     "id": 366
   },
   {
@@ -1038,7 +1038,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 18 - The Divine Covenant.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/24d28c36976b913a.jpg",
     "id": 367
   },
   {
@@ -1048,7 +1048,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 19 - The Wicked Scholars Are Like Dogs.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/5c95cf5469ca28da.jpg",
     "id": 368
   },
   {
@@ -1058,7 +1058,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 3 - The 13 Types Of Shirk.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/9f26464695f466f1.jpg",
     "id": 369
   },
   {
@@ -1068,7 +1068,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 4 - The 13 Reasons Why Nations Fail And Fall.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/41e60b8c11bbe3a0.jpg",
     "id": 370
   },
   {
@@ -1078,7 +1078,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 9 - The Story Of Prophet Shuaib (as).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/94330e60216811e4.jpg",
     "id": 371
   },
   {
@@ -1088,7 +1088,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al A'Araf - Part 7 - The Leaders of Kufr Plot Against The Haqq.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/bcbcf7c2c46d81a0.jpg",
     "id": 372
   },
   {
@@ -1098,7 +1098,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al A'Araf - Part 8 - The People Of Saleh (as) And Lut (as).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/bcf0192fc23a6544.jpg",
     "id": 373
   },
   {
@@ -1108,7 +1108,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 20 - Allah (swt) Has The Most Beautiful Names.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/bef7851adb6467fa.jpg",
     "id": 374
   },
   {
@@ -1118,7 +1118,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 21 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/1b5be64649898c1a.jpg",
     "id": 375
   },
   {
@@ -1128,7 +1128,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 21 - The Knowledge Of Ghaib Is With Allah (swt) Alone.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/01ed0bdc97dd2977.jpg",
     "id": 376
   },
   {
@@ -1138,7 +1138,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 22 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/581f78ec6b82ed35.jpg",
     "id": 377
   },
   {
@@ -1148,7 +1148,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 23 - Listen To The Quran When It Is Recited.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/fdf577bc2a3c85ce.jpg",
     "id": 378
   },
   {
@@ -1158,7 +1158,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al'Araf - Part 5 - Friends will be foes on Judgement day except the pious.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/6b0ed5c39084eafd.jpg",
     "id": 379
   },
   {
@@ -1168,7 +1168,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Al'Araf - Part 6 - The History Of Shirk.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/9c05c64597fa7186.jpg",
     "id": 380
   },
   {
@@ -1178,7 +1178,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Ar-rum - Be generous to your near relative 08-23-14 part 6.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/6bbe695706d8fa10.jpg",
     "id": 381
   },
   {
@@ -1188,7 +1188,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Ar-rum - Your spouse is a sign from Allah 20-8-14.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/0f399e711f98b34e.jpg",
     "id": 382
   },
   {
@@ -1198,7 +1198,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Ar-rum -Allah is the originator of the heavens and the earth 19-8-14 part 3.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/6e85403412becb49.jpg",
     "id": 383
   },
   {
@@ -1208,7 +1208,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Ar-rum -The spiritually dead will never hear  25-8-14 part 7.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/75d18374d295a69b.jpg",
     "id": 384
   },
   {
@@ -1218,7 +1218,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Ar-rum part 1-2.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/af555a39e18cf331.jpg",
     "id": 385
   },
   {
@@ -1228,7 +1228,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Ar-rum- Everyone was born on fitrah 22-8-14.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/64b91740479df410.jpg",
     "id": 386
   },
   {
@@ -1238,7 +1238,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafsir baqarah",
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqara - seek help in sabr n salah.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/551c44bee54f892c.jpg",
     "id": 387
   },
   {
@@ -1248,7 +1248,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafsir baqarah",
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah Pt1.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/71b031edec6f9f59.jpg",
     "id": 388
   },
   {
@@ -1258,7 +1258,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafsir baqarah",
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah Pt3.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/e5678b17f31b694a.jpg",
     "id": 389
   },
   {
@@ -1268,7 +1268,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafsir baqarah",
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah pt8  Wish for Death if u are truthful.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/f67099c741347630.jpg",
     "id": 390
   },
   {
@@ -1278,7 +1278,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafsir baqarah",
     "subcategoryLabel": "Tafsir Al-Baqarah",
     "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah Pt9 Magic.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/405fb940376c0a27.jpg",
     "id": 391
   },
   {
@@ -1288,7 +1288,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/TAFSIR SURAH FALAQ.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/43d9884774f2fbe4.jpg",
     "id": 392
   },
   {
@@ -1298,7 +1298,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Mudathhir - The 19 guardian angels 1-9-14 (part 2).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/ac8fbf8af80ae38e.jpg",
     "id": 393
   },
   {
@@ -1308,7 +1308,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah mudathir - You shall be dumped in saqqr 31-08-14 (part 1) .mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/6b49d8a4f82f60a6.jpg",
     "id": 394
   },
   {
@@ -1318,7 +1318,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah muddatthir - They run away from the haqq like donkeys run away from the lion (part 3).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/e6e0ae7a497bc098.jpg",
     "id": 395
   },
   {
@@ -1328,7 +1328,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/TAFSIR SURAH NAS 12-8-14.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/2f4312f80a4a8224.jpg",
     "id": 396
   },
   {
@@ -1338,7 +1338,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafseer surah Qasas",
     "subcategoryLabel": "Tafsir Al-Qasas",
     "archive": "Tafseer/Tafsir Surah Qasas - Allah (swt) spoke to Musa (as) Part 3.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/dc7705a9b90546bf.jpg",
     "id": 397
   },
   {
@@ -1348,7 +1348,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafseer surah Qasas",
     "subcategoryLabel": "Tafsir Al-Qasas",
     "archive": "Tafseer/Tafsir surah Qasas - Divide and rule- PART 1.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/e37d8ec82163283f.jpg",
     "id": 398
   },
   {
@@ -1358,7 +1358,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafseer surah Qasas",
     "subcategoryLabel": "Tafsir Al-Qasas",
     "archive": "Tafseer/Tafsir Surah Qasas - Makkah Is The Mother Of All Towns - Part 6.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/febea8987223e9bc.jpg",
     "id": 399
   },
   {
@@ -1368,7 +1368,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafseer surah Qasas",
     "subcategoryLabel": "Tafsir Al-Qasas",
     "archive": "Tafseer/Tafsir Surah Qasas - Paradise is for those who are humble - Part  9.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/79141ec77dfad10a.jpg",
     "id": 400
   },
   {
@@ -1378,7 +1378,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafseer surah Qasas",
     "subcategoryLabel": "Tafsir Al-Qasas",
     "archive": "Tafseer/TAFSIR SURAH QASAS - THE CHRISTIANS CRY WHEN THEY HEAR THE QURAN  - PART 5.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/59fdb96409d072e9.jpg",
     "id": 401
   },
   {
@@ -1388,7 +1388,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafseer surah Qasas",
     "subcategoryLabel": "Tafsir Al-Qasas",
     "archive": "Tafseer/Tafsir Surah Qasas - The escape of Musa (as) from darul harb part 2.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/28c27a3783a525d6.jpg",
     "id": 402
   },
   {
@@ -1398,7 +1398,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafseer surah Qasas",
     "subcategoryLabel": "Tafsir Al-Qasas",
     "archive": "Tafseer/Tafsir Surah Qasas - The Pharaoh asked for a tower to see Allah (swt).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/90edae5ac675de5f.jpg",
     "id": 403
   },
   {
@@ -1408,7 +1408,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafseer surah Qasas",
     "subcategoryLabel": "Tafsir Al-Qasas",
     "archive": "Tafseer/Tafsir Surah Qasas - There Is No Racism In Islam - Part 7.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/2a9cefcad1dd1997.jpg",
     "id": 404
   },
   {
@@ -1418,7 +1418,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": "Tafseer surah Qasas",
     "subcategoryLabel": "Tafsir Al-Qasas",
     "archive": "Tafseer/Tafsir Surah Qasas -The Story of  Musa (as) And Qaroon - Part 8.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/f772e7f8c901c7ff.jpg",
     "id": 405
   },
   {
@@ -1428,7 +1428,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Saff - Part 1 - Lying On Allah (swt).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/94e3402a18e80e76.jpg",
     "id": 406
   },
   {
@@ -1438,7 +1438,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Saff - Part 2 - Propaganda Warfare.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/f8f9ebbfb991a12d.jpg",
     "id": 407
   },
   {
@@ -1448,7 +1448,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/TAFSIR SURAH SAJDA .mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/9aec5a5009f3a279.jpg",
     "id": 408
   },
   {
@@ -1458,7 +1458,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/TAFSIR SURAH SAQDA .mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/e30b65350114ad6f.jpg",
     "id": 409
   },
   {
@@ -1468,7 +1468,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah Waqia - mankind will be divided into three on DOJ 08-27-14.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/ef1047149f3f7d8c.jpg",
     "id": 410
   },
   {
@@ -1478,7 +1478,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir surah waqia - The Tree of Zaquum 08-28-14.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/778d72f31b75a471.jpg",
     "id": 411
   },
   {
@@ -1488,7 +1488,7 @@ registerLectureChunk("Tafseer", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tafseer/Tafsir Surah Waqia -The Quran is a noble book (Part 3).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/7031e863252f19dc.jpg",
     "id": 412
   }
 ]);

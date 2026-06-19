@@ -17,7 +17,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Etiquettes Of Dawah.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/280f3f986a0be2eb.jpg",
     "id": 67
   },
   {
@@ -27,7 +27,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Foundations of the Islamic Brotherhood And Sisterhood.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/8a54b3342a10ea8b.jpg",
     "id": 74
   },
   {
@@ -37,7 +37,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Get Your Priorities Right (08.23.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/21efb8ca92c78396.jpg",
     "id": 79
   },
   {
@@ -57,7 +57,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "How to be Sincere to the Holy Qur'an (08.09.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/3bf97f4f773f05ca.jpg",
     "id": 82
   },
   {
@@ -77,7 +77,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "How to be Sincere to the Rasool (SAW) (08.08.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/5b5e1da2afe1ba7c.jpg",
     "id": 84
   },
   {
@@ -87,7 +87,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/ebb845f6c51bf1dd.jpg",
     "id": 85
   },
   {
@@ -107,7 +107,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Manhood in Islam.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/c542e74b2f56aebb.jpg",
     "id": 139
   },
   {
@@ -127,7 +127,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Etiquettes of Asking Questions.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/935b40ac88403572.jpg",
     "id": 447
   }
 ]);

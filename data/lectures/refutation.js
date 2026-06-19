@@ -147,7 +147,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_jews",
     "subcategoryLabel": "Jews",
     "archive": "NO PEACE WITH THE JEWS - Abdallah Al Faisal.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/811a7b066528d330.jpg",
     "id": 163
   },
   {
@@ -157,7 +157,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_general",
     "subcategoryLabel": "General Refutations",
     "archive": "Radical Islamic Terrorism.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/22fefa14310d387b.jpg",
     "id": 178
   },
   {
@@ -167,7 +167,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_general",
     "subcategoryLabel": "General Refutations",
     "archive": "Radical islamic terrorism2.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/2d9592098b7ed4e4.jpg",
     "id": 179
   },
   {
@@ -187,7 +187,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_general",
     "subcategoryLabel": "General Refutations",
     "archive": "Refutation/Refuting Geert Wilders (07.07.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/2fa1765b69a82116.jpg",
     "id": 196
   },
   {
@@ -197,7 +197,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_general",
     "subcategoryLabel": "General Refutations",
     "archive": "Refutation/Refuting The Lie Concerning Kufr Doona Kufr.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/020e99de760a2388.jpg",
     "id": 197
   },
   {
@@ -207,7 +207,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_general",
     "subcategoryLabel": "General Refutations",
     "archive": "Refutation/Refuting The Lie Concerning The Excuse of Ignorance.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/5b65c85303228c43.jpg",
     "id": 198
   },
   {
@@ -217,7 +217,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_general",
     "subcategoryLabel": "General Refutations",
     "archive": "REJECTING THE TAGHUT - Abdallah Al Faisal.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/4dba791870b9567d.jpg",
     "id": 199
   },
   {
@@ -227,7 +227,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_deviants",
     "subcategoryLabel": "Deviant Groups",
     "archive": "Removing the Doubts.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/aed13d1f06706a25.jpg",
     "id": 200
   },
   {
@@ -287,7 +287,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_general",
     "subcategoryLabel": "General Refutations",
     "archive": "Slander of Aisha (RA) (07.12.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/045c5175eabcff04.jpg",
     "id": 262
   },
   {
@@ -297,7 +297,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_general",
     "subcategoryLabel": "General Refutations",
     "archive": "Slander of Aisha (RA) [REVISITED] (08.14.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/f061b5e7ee838817.jpg",
     "id": 263
   },
   {
@@ -307,7 +307,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_general",
     "subcategoryLabel": "General Refutations",
     "archive": "THE DOMAIN OF APOSTASY.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/f961348a304d7286.jpg",
     "id": 445
   },
   {
@@ -317,7 +317,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_jews",
     "subcategoryLabel": "Jews",
     "archive": "THE REALITY OF THE JEWS.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/e234eae5dcc5d48a.jpg",
     "id": 467
   },
   {
@@ -347,7 +347,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_general",
     "subcategoryLabel": "General Refutations",
     "archive": "Towards Watering Down The Holy Quran.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/01f6e2c0ec58a4a7.jpg",
     "id": 507
   },
   {
@@ -357,7 +357,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_general",
     "subcategoryLabel": "General Refutations",
     "archive": "White Supremacy - A Cancer In The Body of Humanity.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/7730417dfb086b4c.jpg",
     "id": 520
   },
   {
@@ -367,7 +367,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_shia",
     "subcategoryLabel": "Shia",
     "archive": "Shia/Why we hate the shia.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/142472df5d84cd87.jpg",
     "id": 528
   }
 ]);

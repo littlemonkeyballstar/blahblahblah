@@ -17,7 +17,7 @@ registerLectureChunk("Radio_Show", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Challenges Facing the Youth Globally (08.06.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/5c0f3f34a0081c1d.jpg",
     "id": 181
   },
   {
@@ -67,7 +67,7 @@ registerLectureChunk("Radio_Show", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Natural Instincts (07.30.11).mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/5357505231a77006.jpg",
     "id": 187
   }
 ]);
