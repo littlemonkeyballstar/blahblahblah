@@ -37,6 +37,13 @@
     }
     .slide-track { transition: transform 1s cubic-bezier(0.4, 0, 0.2, 1); }
     .slide-dot.active { background-color: #d4a853; width: 1.75rem; }
+    #slideDotsMobile .slide-dot {
+      flex-shrink: 0;
+      min-height: 0.5rem;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
     .card-hover { transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease; }
     .card-hover:hover { transform: translateY(-3px); box-shadow: 0 12px 40px rgba(212,168,83,.08); border-color: rgba(212,168,83,.25); }
     .thumb-box { background: linear-gradient(180deg, #0f172a 0%, #1a2332 100%); }
@@ -388,12 +395,15 @@
     function updateSlide() {
       const track = document.getElementById('slideTrack');
       track.style.transform = `translateX(-${currentSlide * 100}%)`;
-      document.querySelectorAll('.slide-dot').forEach((d, i) => {
-        d.classList.toggle('active', i === currentSlide);
-        d.classList.toggle('bg-gold', i === currentSlide);
-        d.classList.toggle('w-7', i === currentSlide);
-        d.classList.toggle('bg-slate-600', i !== currentSlide);
-        d.classList.toggle('w-2', i !== currentSlide);
+      document.querySelectorAll('.slide-dot').forEach((dot) => {
+        const i = parseInt(dot.dataset.i, 10);
+        if (!Number.isFinite(i)) return;
+        const active = i === currentSlide;
+        dot.classList.toggle('active', active);
+        dot.classList.toggle('bg-gold', active);
+        dot.classList.toggle('w-7', active);
+        dot.classList.toggle('bg-slate-600', !active);
+        dot.classList.toggle('w-2', !active);
       });
     }
 
