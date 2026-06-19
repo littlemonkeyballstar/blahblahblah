@@ -93,8 +93,10 @@
           thumb: v.thumb,
           title: v.title,
           stream: v.stream,
+          shareUrl: pageItemShareUrl('videos.html', 'video', v.id),
           hideThumbImage: true,
         })).join('') || '<p class="text-slate-500 col-span-full text-center py-16">No videos found.</p>';
+        bindShareButtons(grid);
       });
 
       const pag = document.getElementById('pagination');

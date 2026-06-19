@@ -1183,6 +1183,77 @@ function archiveStreamUrl(base, path) {
   return base + encodeURI(path).replace(/%2F/g, '/');
 }
 
+function pageItemShareUrl(page, param, id) {
+  const url = new URL(page, location.href);
+  url.search = '';
+  url.searchParams.set(param, String(id));
+  return url.href;
+}
+
+async function copyTextToClipboard(text) {
+  try {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+      return true;
+    }
+  } catch { /* fallback below */ }
+  try {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.setAttribute('readonly', '');
+    ta.style.position = 'fixed';
+    ta.style.left = '-9999px';
+    document.body.appendChild(ta);
+    ta.select();
+    const ok = document.execCommand('copy');
+    document.body.removeChild(ta);
+    return ok;
+  } catch {
+    return false;
+  }
+}
+
+function showShareFeedback(btn, ok) {
+  const icon = btn.querySelector('i');
+  if (!icon) return;
+  const prev = icon.className;
+  icon.className = ok ? 'fas fa-check text-sm' : 'fas fa-xmark text-sm';
+  btn.classList.add(ok ? 'text-gold' : 'text-red-400');
+  window.setTimeout(() => {
+    icon.className = prev;
+    btn.classList.remove('text-gold', 'text-red-400');
+  }, 1800);
+}
+
+function bindShareButtons(root = document) {
+  root.querySelectorAll('.share-link-btn:not([data-share-bound])').forEach((btn) => {
+    btn.dataset.shareBound = '1';
+    btn.addEventListener('click', async (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      const url = btn.dataset.shareUrl;
+      if (!url) return;
+      showShareFeedback(btn, await copyTextToClipboard(url));
+    });
+  });
+}
+
+function shareIconButton(shareUrl, { label = 'Copy link', className = '' } = {}) {
+  if (!shareUrl) return '';
+  return `<button type="button" class="share-link-btn inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-500 hover:text-gold hover:bg-slate-800/80 transition flex-shrink-0 ${className}"
+    data-share-url="${escapeHtml(shareUrl)}" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">
+    <i class="fas fa-share-nodes text-sm"></i>
+  </button>`;
+}
+
+function shareGlassButton(shareUrl, { label = 'Copy link' } = {}) {
+  if (!shareUrl) return '';
+  return `<button type="button" class="share-link-btn lecture-share-glass"
+    data-share-url="${escapeHtml(shareUrl)}" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">
+    <i class="fas fa-share-nodes"></i>
+  </button>`;
+}
+
 function downloadIconLink(url, { label = 'Download', className = '' } = {}) {
   if (!url) return '';
   return `<a href="${url}" class="media-download-link inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-500 hover:text-gold hover:bg-slate-800/80 transition flex-shrink-0 ${className}" target="_blank" rel="noopener" download title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">
@@ -1597,22 +1668,28 @@ function enhanceGridThumbs(root, { priorityCount = 6 } = {}) {
   });
 }
 
-function mediaCard({ id, thumb, title, badge, stream, downloadUrl, posterOnly = false, hideThumbImage = false }) {
+function mediaCard({ id, thumb, title, badge, stream, downloadUrl, shareUrl, posterOnly = false, hideThumbImage = false }) {
   const encThumb = thumbSrc(thumb);
   const poster = encThumb ? `poster="${encThumb}"` : '';
   const imgBlock = encThumb
     ? `<img src="${encThumb}" alt="" class="relative z-[1] max-w-full max-h-full object-contain" loading="lazy" onerror="this.style.display='none'">`
     : `<i class="fas fa-play-circle text-4xl text-gold/25"></i>`;
   const badgeHtml = badge ? `<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-md bg-slate-950/85 text-gold text-[10px] font-semibold uppercase tracking-wider">${escapeHtml(badge)}</span>` : '';
+  const overlayBtnClass = 'absolute top-2 z-10 bg-slate-950/75 backdrop-blur-sm border border-slate-700/80 hover:border-gold/40';
+  const shareLink = shareUrl ? shareIconButton(shareUrl, {
+    label: 'Copy link to this video',
+    className: `${overlayBtnClass} right-11`,
+  }) : '';
   const downloadLink = downloadIconLink(downloadUrl || stream, {
     label: 'Download video',
-    className: 'absolute top-2 right-2 z-10 bg-slate-950/75 backdrop-blur-sm border border-slate-700/80 hover:border-gold/40',
+    className: `${overlayBtnClass} right-2`,
   });
   const videoBlock = posterOnly ? '' : `
     <div class="relative mt-auto">
       <video controls preload="none" playsinline class="w-full rounded-lg bg-black ${hideThumbImage ? 'aspect-video' : ''}" ${poster}>
         <source src="${stream}" type="video/mp4">
       </video>
+      ${shareLink}
       ${downloadLink}
     </div>`;
 
