@@ -8,6 +8,7 @@ Thumbnail resolution order:
   3. Category thumb/ subfolder (exact / fuzzy match)
   4. Root thumb/ folder (exact / fuzzy match)
   5. Embedded album art extracted from the MP3 ID3 tags
+  6. Auto-generated title card (category-themed) when no artwork is found
 
 Run after adding lectures or thumbnails:
     python3 generate-catalog.py
@@ -28,12 +29,19 @@ try:
 except ImportError:
     HAS_MUTAGEN = False
 
+try:
+    from PIL import Image, ImageDraw, ImageFont
+    HAS_PILLOW = True
+except ImportError:
+    HAS_PILLOW = False
+
 ROOT = Path(__file__).resolve().parent.parent / "www" / "SheikhFaisalAudioLectures"
 WEBSITE = Path(__file__).resolve().parent
 WEB_THUMB = WEBSITE / "thumb"
 SRC_CACHE = WEB_THUMB / "_src"
 ASSETS_OUT = WEB_THUMB / "assets"  # GitHub Pages-safe copy (no _src underscore folder)
 EXTRACTED = WEB_THUMB / "extracted"
+GENERATED = WEB_THUMB / "generated"
 ARCHIVE_URL = "https://archive.org/metadata/FaisalAudios"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 COVER_NAMES = {"cover.png", "cover.jpg", "cover.jpeg", "cover.webp",
@@ -946,6 +954,202 @@ class ThumbResolver:
         return extract_embedded_art(mp3_path, rel_key)
 
 
+CATEGORY_THUMB_THEMES = {
+    "Tafseer": {"from": "#081a16", "via": "#102820", "to": "#1a2332", "accent": "#6ee7b7"},
+    "Aqeedah": {"from": "#1a1424", "via": "#231a30", "to": "#1a2332", "accent": "#c4b5fd"},
+    "Iman_Afterlife": {"from": "#1a1810", "via": "#28220f", "to": "#1a2332", "accent": "#fde68a"},
+    "Islamic_Knowledge": {"from": "#141820", "via": "#1a2430", "to": "#1a2332", "accent": "#a5b4fc"},
+    "Fiqh_Worship": {"from": "#141f2e", "via": "#172338", "to": "#1a2332", "accent": "#93c5fd"},
+    "Prophets_Seerah": {"from": "#1a1810", "via": "#252015", "to": "#1a2332", "accent": "#fcd34d"},
+    "Tawheed": {"from": "#1a1520", "via": "#221828", "to": "#1a2332", "accent": "#f9a8d4"},
+    "Jihad": {"from": "#1f1414", "via": "#2a1818", "to": "#1a2332", "accent": "#fca5a5"},
+    "Khilafah": {"from": "#141a24", "via": "#182030", "to": "#1a2332", "accent": "#7dd3fc"},
+    "Refutation": {"from": "#1f1810", "via": "#2a2215", "to": "#1a2332", "accent": "#fdba74"},
+    "Jokers in the pack": {"from": "#1a1420", "via": "#241828", "to": "#1a2332", "accent": "#e879f9"},
+    "The 5 Desperate Zindeeq": {"from": "#241410", "via": "#301a14", "to": "#1a2332", "accent": "#fb923c"},
+    "The Devils Deception": {"from": "#141418", "via": "#1c1c24", "to": "#1a2332", "accent": "#a78bfa"},
+    "Wicked_Scholars": {"from": "#1a1414", "via": "#261818", "to": "#1a2332", "accent": "#f87171"},
+    "Science in the quran": {"from": "#101a22", "via": "#142430", "to": "#1a2332", "accent": "#67e8f9"},
+    "Nikah_Divorce": {"from": "#1a1420", "via": "#241a28", "to": "#1a2332", "accent": "#f9a8d4"},
+    "Ramadan": {"from": "#101428", "via": "#141c34", "to": "#1a2332", "accent": "#a5b4fc"},
+    "Diseases_of_the_Heart": {"from": "#1f1218", "via": "#2a1620", "to": "#1a2332", "accent": "#fb7185"},
+    "Personality Disorders (Series)": {"from": "#181428", "via": "#201830", "to": "#1a2332", "accent": "#d8b4fe"},
+    "Who Are You?": {"from": "#141820", "via": "#1a2030", "to": "#1a2332", "accent": "#bae6fd"},
+    "Radio_Show": {"from": "#101820", "via": "#142030", "to": "#1a2332", "accent": "#86efac"},
+    "Character_Dawah": {"from": "#101a18", "via": "#142820", "to": "#1a2332", "accent": "#86efac"},
+    "Ummah_Affairs": {"from": "#141820", "via": "#1a2230", "to": "#1a2332", "accent": "#7dd3fc"},
+    "The Sealed Nector (Series)": {"from": "#1a1810", "via": "#262015", "to": "#1a2332", "accent": "#d4a853"},
+    "General": {"from": "#1a2332", "via": "#121a28", "to": "#1c1910", "accent": "#d4a853"},
+}
+
+
+def hex_rgb(value: str) -> tuple[int, int, int]:
+    value = value.lstrip("#")
+    return tuple(int(value[i : i + 2], 16) for i in (0, 2, 4))
+
+
+def lerp_color(
+    left: tuple[int, int, int], right: tuple[int, int, int], amount: float
+) -> tuple[int, int, int]:
+    return tuple(int(left[i] + (right[i] - left[i]) * amount) for i in range(3))
+
+
+def load_thumb_font(size: int, bold: bool = True):
+    if not HAS_PILLOW:
+        return None
+    candidates = [
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+        "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+        "/usr/share/fonts/TTF/DejaVuSans-Bold.ttf",
+        "/usr/share/fonts/truetype/liberation/LiberationSans-Bold.ttf",
+    ]
+    if not bold:
+        candidates = [p.replace("-Bold", "") for p in candidates] + candidates
+    for path in candidates:
+        if Path(path).is_file():
+            return ImageFont.truetype(path, size)
+    return ImageFont.load_default()
+
+
+def text_width(draw: ImageDraw.ImageDraw, text: str, font) -> float:
+    if hasattr(draw, "textlength"):
+        return draw.textlength(text, font=font)
+    return draw.textsize(text, font=font)[0]
+
+
+def wrap_title_lines(
+    draw: ImageDraw.ImageDraw, title: str, font, max_width: int, max_lines: int = 4
+) -> list[str]:
+    words = title.split()
+    if not words:
+        return [title[:80]]
+    lines: list[str] = []
+    current: list[str] = []
+    for word in words:
+        trial = " ".join(current + [word])
+        if text_width(draw, trial, font) <= max_width:
+            current.append(word)
+            continue
+        if current:
+            lines.append(" ".join(current))
+        current = [word]
+        if len(lines) >= max_lines:
+            break
+    if current and len(lines) < max_lines:
+        lines.append(" ".join(current))
+    if len(lines) == max_lines:
+        used = sum(len(line.split()) for line in lines[:-1])
+        if used < len(words):
+            last = lines[-1]
+            if len(last) > 3:
+                lines[-1] = last.rstrip(".,;:") + "…"
+    return lines
+
+
+def generated_thumb_key(archive: str) -> str:
+    return hashlib.md5(archive.encode()).hexdigest()[:16]
+
+
+def render_lecture_thumbnail(
+    title: str,
+    category_label: str,
+    subcategory_label: str | None,
+    category: str,
+    dest: Path,
+) -> None:
+    theme = CATEGORY_THUMB_THEMES.get(category, CATEGORY_THUMB_THEMES["General"])
+    width, height = 480, 270
+    image = Image.new("RGB", (width, height))
+    draw = ImageDraw.Draw(image)
+
+    color_from = hex_rgb(theme["from"])
+    color_via = hex_rgb(theme["via"])
+    color_to = hex_rgb(theme["to"])
+    accent = hex_rgb(theme["accent"])
+    gold = hex_rgb("#d4a853")
+
+    for y in range(height):
+        ratio = y / max(height - 1, 1)
+        if ratio < 0.5:
+            color = lerp_color(color_from, color_via, ratio * 2)
+        else:
+            color = lerp_color(color_via, color_to, (ratio - 0.5) * 2)
+        draw.line([(0, y), (width, y)], fill=color)
+
+    draw.rectangle([(0, 0), (width, 4)], fill=gold)
+
+    badge_font = load_thumb_font(13)
+    title_font = load_thumb_font(21)
+    badge = (subcategory_label or category_label or "Audio Lecture").upper()
+    if len(badge) > 34:
+        badge = badge[:31] + "…"
+    draw.text((22, 16), badge, font=badge_font, fill=accent)
+
+    part = extract_part_number(title)
+    if part is not None:
+        part_text = f"PART {part}"
+        part_box = [(22, 38), (22 + text_width(draw, part_text, badge_font) + 14, 58)]
+        if hasattr(draw, "rounded_rectangle"):
+            draw.rounded_rectangle(part_box, radius=8, fill=accent)
+        else:
+            draw.rectangle(part_box, fill=accent)
+        draw.text((29, 41), part_text, font=badge_font, fill=(8, 13, 24))
+
+    lines = wrap_title_lines(draw, title, title_font, width - 44, max_lines=4)
+    y = 72 if part is not None else 48
+    for line in lines:
+        draw.text((22, y), line, font=title_font, fill=(236, 240, 245))
+        y += 30
+
+    draw.ellipse([(width - 58, height - 58), (width - 20, height - 20)], outline=accent, width=2)
+    draw.ellipse([(width - 50, height - 50), (width - 28, height - 28)], fill=accent)
+
+    dest.parent.mkdir(parents=True, exist_ok=True)
+    image.save(dest, "JPEG", quality=86, optimize=True)
+
+
+def get_or_create_generated_thumb(lecture: dict) -> str | None:
+    if not HAS_PILLOW:
+        return None
+    archive = lecture["archive"]
+    key = generated_thumb_key(archive)
+    dest = GENERATED / f"{key}.jpg"
+    meta = {
+        "title": norm(lecture["title"]),
+        "category": lecture["category"],
+        "subcategory": lecture.get("subcategory"),
+    }
+    meta_path = GENERATED / f"{key}.meta.json"
+    if dest.is_file() and meta_path.is_file():
+        try:
+            if json.loads(meta_path.read_text(encoding="utf-8")) == meta:
+                return web_path(dest)
+        except (json.JSONDecodeError, OSError):
+            pass
+
+    render_lecture_thumbnail(
+        lecture["title"],
+        lecture["categoryLabel"],
+        lecture.get("subcategoryLabel"),
+        lecture["category"],
+        dest,
+    )
+    meta_path.write_text(json.dumps(meta, ensure_ascii=False), encoding="utf-8")
+    return web_path(dest)
+
+
+def assign_generated_thumbnails(lectures: list[dict]) -> int:
+    created = 0
+    for lecture in lectures:
+        if lecture.get("thumb"):
+            continue
+        thumb = get_or_create_generated_thumb(lecture)
+        if thumb:
+            lecture["thumb"] = thumb
+            created += 1
+    return created
+
+
 def category_chunk_slug(cat_id: str) -> str:
     slug = re.sub(r"[^a-z0-9]+", "-", cat_id.lower()).strip("-")
     return slug or "general"
@@ -1066,6 +1270,8 @@ def write_catalog_outputs(
 def main():
     if not HAS_MUTAGEN:
         print("Warning: install mutagen for embedded cover extraction (pip install mutagen)")
+    if not HAS_PILLOW:
+        print("Warning: install Pillow to auto-generate lecture thumbnails (pip install Pillow)")
 
     mirrored = mirror_source_images()
     copied = sync_flat_thumbs()
@@ -1158,6 +1364,7 @@ def main():
             ],
         })
 
+    generated_count = assign_generated_thumbnails(lectures)
     featured_pool = build_featured_lectures(lectures)
     catalog_version = __import__("datetime").date.today().strftime("%Y%m%d")
     write_catalog_outputs(lectures, cat_meta, featured_pool, catalog_version)
@@ -1172,6 +1379,7 @@ def main():
         if lec["thumb"] and lec["thumb"].startswith("thumb/")
         and "/" not in lec["thumb"][len("thumb/"):]
     )
+    from_generated = sum(1 for lec in lectures if lec["thumb"] and "/generated/" in lec["thumb"])
 
     print(f"Mirrored {mirrored} source images to thumb/_src/")
     print(f"Copied {copied} images to flat thumb/")
@@ -1181,7 +1389,10 @@ def main():
     print(f"  - flat thumb/: {from_flat}")
     print(f"  - thumb/assets/ (series covers, inline): {from_assets}")
     print(f"  - thumb/extracted/ (embedded MP3 art): {from_embedded}")
+    print(f"  - thumb/generated/ (title cards): {from_generated}")
     print(f"  - no thumbnail: {len(lectures) - with_thumb}")
+    if generated_count:
+        print(f"Generated {generated_count} new lecture title-card thumbnails")
     print(f"Output: {out}")
 
 

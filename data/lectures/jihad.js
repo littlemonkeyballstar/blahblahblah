@@ -57,7 +57,7 @@ registerLectureChunk("Jihad", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The importance of Hijrah.mp3",
-    "thumb": null,
+    "thumb": "thumb/generated/2d7c1adf00100782.jpg",
     "id": 460
   }
 ]);
