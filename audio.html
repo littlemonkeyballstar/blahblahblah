@@ -712,7 +712,7 @@
           <div class="p-4 flex flex-col flex-1">
             ${subBadge}
             <h3 class="font-medium text-sm text-slate-100 leading-snug mt-1 mb-3 line-clamp-3" title="${escapeHtml(lecture.title)}">${escapeHtml(lecture.title)}</h3>
-            <audio controls preload="none" class="mt-auto h-9">
+            <audio controls preload="none" class="mt-auto h-9" data-lecture-id="${lecture.id}">
               <source src="${audioUrl}" type="audio/mpeg">
             </audio>
           </div>
@@ -764,6 +764,8 @@
     function bindLectureAudioPlayers() {
       const grid = document.getElementById('lectureGrid');
       grid.querySelectorAll('audio').forEach(audio => {
+        bindAudioProgress(audio);
+
         const card = audio.closest('.lecture-card');
         const placeholder = card?.querySelector('.lecture-placeholder');
         if (!placeholder) return;

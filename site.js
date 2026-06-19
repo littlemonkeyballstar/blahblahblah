@@ -6,6 +6,102 @@ const TELEGRAM_PDF_URL = 'https://t.me/Shaykh_faisal_pdf';
 /** Paste your Cloudflare Web Analytics token from the dashboard to enable stats. */
 const CLOUDFLARE_ANALYTICS_TOKEN = 'c26870c8f6414600ac3e8e0df17d47bb';
 
+const AUDIO_PROGRESS_KEY = 'shaf-audio-progress';
+const AUDIO_PROGRESS_MIN_SAVE_SEC = 3;
+const AUDIO_PROGRESS_END_MARGIN_SEC = 15;
+
+function readAudioProgressStore() {
+  try {
+    const raw = localStorage.getItem(AUDIO_PROGRESS_KEY);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function writeAudioProgressStore(store) {
+  try {
+    localStorage.setItem(AUDIO_PROGRESS_KEY, JSON.stringify(store));
+  } catch {}
+}
+
+function lectureIdFromAudio(audio) {
+  const fromData = audio.dataset.lectureId;
+  if (fromData) return parseInt(fromData, 10);
+  const card = audio.closest('[id^="lecture-"]');
+  if (!card) return null;
+  const match = card.id.match(/^lecture-(\d+)$/);
+  return match ? parseInt(match[1], 10) : null;
+}
+
+function saveAudioProgress(lectureId, currentTime, duration) {
+  if (!Number.isFinite(lectureId) || !Number.isFinite(currentTime)) return;
+  const store = readAudioProgressStore();
+  if (duration && currentTime >= duration - AUDIO_PROGRESS_END_MARGIN_SEC) {
+    delete store[lectureId];
+  } else if (currentTime < AUDIO_PROGRESS_MIN_SAVE_SEC) {
+    delete store[lectureId];
+  } else {
+    store[lectureId] = Math.round(currentTime * 10) / 10;
+  }
+  writeAudioProgressStore(store);
+}
+
+function loadAudioProgress(lectureId) {
+  const value = readAudioProgressStore()[lectureId];
+  return typeof value === 'number' && value > 0 ? value : 0;
+}
+
+function tryRestoreAudioProgress(audio, lectureId) {
+  const saved = loadAudioProgress(lectureId);
+  if (saved <= 0) return false;
+  const duration = audio.duration;
+  if (!Number.isFinite(duration) || duration <= 0) return false;
+  if (saved >= duration - AUDIO_PROGRESS_END_MARGIN_SEC) {
+    saveAudioProgress(lectureId, duration, duration);
+    return false;
+  }
+  if (Math.abs(audio.currentTime - saved) > 1) {
+    audio.currentTime = saved;
+  }
+  return true;
+}
+
+function bindAudioProgress(audio) {
+  const lectureId = lectureIdFromAudio(audio);
+  if (!Number.isFinite(lectureId)) return;
+
+  let saveTimer = null;
+  let restored = false;
+
+  const attemptRestore = () => {
+    if (restored) return;
+    if (tryRestoreAudioProgress(audio, lectureId)) restored = true;
+  };
+
+  const persist = () => saveAudioProgress(lectureId, audio.currentTime, audio.duration);
+
+  const scheduleSave = () => {
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => {
+      if (!audio.paused && !audio.ended) persist();
+    }, 2000);
+  };
+
+  audio.addEventListener('loadedmetadata', attemptRestore);
+  audio.addEventListener('durationchange', attemptRestore);
+  audio.addEventListener('play', attemptRestore);
+  audio.addEventListener('timeupdate', scheduleSave);
+  audio.addEventListener('pause', () => {
+    clearTimeout(saveTimer);
+    persist();
+  });
+  audio.addEventListener('ended', () => {
+    clearTimeout(saveTimer);
+    persist();
+  });
+}
+
 const _lectureChunks = new Map();
 const _lectureChunkLoads = new Map();
 const _loadedScripts = new Set();
