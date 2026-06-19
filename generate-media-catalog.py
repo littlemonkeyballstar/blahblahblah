@@ -127,6 +127,10 @@ EXCLUDED_CLIP_NORMS = {
 # Polished display title for every clip (keyed by normalized IA filename stem)
 _CLIP_TITLES_RAW = [
     ("0510", "Refusing to takfir Mushrikeen (polytheists) — Shaykh Abdullah Faisal"),
+    (
+        "4 Signs of a Munafiq (Hypocrite)",
+        "4 Signs of a Munafiq (Hypocrite) and how they cause fitna",
+    ),
     ("2 They Will Fight You Until You Leave Islam", "They will fight you until you leave Islam"),
     ("A Controversial Ruling  Seeking Help from Non(1)", "A controversial ruling: seeking help from non-Muslims"),
     ("A kaffir has no protecter!", "A kafir has no protector!"),
@@ -165,6 +169,10 @@ _CLIP_TITLES_RAW = [
     ),
     ("Hero or Killer  The Biased Criticism of Sadda", "Hero or killer: the biased criticism of Saddam"),
     ("How did ALI (ra) Deal with the Khawarij (Puritans)", "How did Ali (ra) deal with the Khawarij?"),
+    (
+        "How Allah Mocks Hypocrites Who Follow Wicked",
+        "How Allah Mocks Hypocrites Who Follow Wicked Scholars - Shaykh Abdullah Faisal",
+    ),
     ("How do we deal with those who reject dawla1", "How do we deal with people who reject the dawla?"),
     ("Hypocrites Rushing To Join The Kuffar", "Hypocrites rushing to join the kuffar"),
     ("Ideological Warfare  The Only Battle That Tru(1)", "Ideological warfare: the only battle that truly matters"),
@@ -177,6 +185,7 @@ _CLIP_TITLES_RAW = [
     ("Jews & Christians Will Never Be Pleased With You", "Jews and Christians will never be pleased with you"),
     ("Jokers in the Pack - Refuting the Ashaa", "Jokers in the pack — refuting the Ash'ari"),
     ("Living in humulation while ummah suffers (ptsd)", "Living in humiliation while the ummah suffers (PTSD)"),
+    ("Madakilah's were never a Muslims", "Madakilah's were never a Muslims"),
     ("Only a sincere beliver finds comfort in the truth!", "Only a sincere believer finds comfort in the truth"),
     (
         "Oppression causes apostasy(Forced Marriages as ex",
