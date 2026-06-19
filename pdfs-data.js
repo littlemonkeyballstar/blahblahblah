@@ -39,13 +39,13 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/Science%20Of%20Quran%20%E2%80%93%20Part%201.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/Science%20Of%20Quran%20%E2%80%93%20Part%201.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/Science%20Of%20Quran%20%E2%80%93%20Part%201.pdf",
-    "id": 17,
+    "id": 18,
     "category": "quran",
     "categoryLabel": "Quran & Tafsir",
     "series": "Science Of Quran",
     "part": 1,
     "sortOrder": 0,
-    "thumb": "thumb/pdfs/17.jpg"
+    "thumb": "thumb/pdfs/18.jpg"
   },
   {
     "title": "Science Of Quran – Part 2 – The Wahy",
@@ -55,13 +55,13 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/Science%20Of%20Quran%20%E2%80%93%20Part%202%20%E2%80%93%20The%20Wahy.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/Science%20Of%20Quran%20%E2%80%93%20Part%202%20%E2%80%93%20The%20Wahy.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/Science%20Of%20Quran%20%E2%80%93%20Part%202%20%E2%80%93%20The%20Wahy.pdf",
-    "id": 18,
+    "id": 19,
     "category": "quran",
     "categoryLabel": "Quran & Tafsir",
     "series": "Science Of Quran",
     "part": 2,
     "sortOrder": 1,
-    "thumb": "thumb/pdfs/18.jpg"
+    "thumb": "thumb/pdfs/19.jpg"
   },
   {
     "title": "Science Of Quran Part 3 The History Of The Quran's Descent",
@@ -71,13 +71,13 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/Science_Of_Quran_Part_3_The_History_Of_The_Quran%27s_Descent.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/Science_Of_Quran_Part_3_The_History_Of_The_Quran%27s_Descent.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/Science_Of_Quran_Part_3_The_History_Of_The_Quran%27s_Descent.pdf",
-    "id": 15,
+    "id": 16,
     "category": "quran",
     "categoryLabel": "Quran & Tafsir",
     "series": "Science Of Quran",
     "part": 3,
     "sortOrder": 2,
-    "thumb": "thumb/pdfs/15.jpg"
+    "thumb": "thumb/pdfs/16.jpg"
   },
   {
     "title": "Science Of Quran Part 4 The 20 Reasons Why The Quran Is A Wise Book",
@@ -87,13 +87,13 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/Science_Of_Quran_Part_4_The_20_Reasons_Why_The_Quran_Is_A_Wise_Book.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/Science_Of_Quran_Part_4_The_20_Reasons_Why_The_Quran_Is_A_Wise_Book.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/Science_Of_Quran_Part_4_The_20_Reasons_Why_The_Quran_Is_A_Wise_Book.pdf",
-    "id": 16,
+    "id": 17,
     "category": "quran",
     "categoryLabel": "Quran & Tafsir",
     "series": "Science Of Quran",
     "part": 4,
     "sortOrder": 3,
-    "thumb": "thumb/pdfs/16.jpg"
+    "thumb": "thumb/pdfs/17.jpg"
   },
   {
     "title": "Tafsir Surah Saff",
@@ -103,11 +103,11 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/Tafsir%20Surah%20Saff%20.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/Tafsir%20Surah%20Saff%20.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/Tafsir%20Surah%20Saff%20.pdf",
-    "id": 20,
+    "id": 21,
     "category": "quran",
     "categoryLabel": "Quran & Tafsir",
     "sortOrder": 4,
-    "thumb": "thumb/pdfs/20.jpg"
+    "thumb": "thumb/pdfs/21.jpg"
   },
   {
     "title": "Towards Watering Down The Holy Quran",
@@ -117,11 +117,11 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/Towards%20Watering%20Down%20The%20Holy%20Quran.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/Towards%20Watering%20Down%20The%20Holy%20Quran.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/Towards%20Watering%20Down%20The%20Holy%20Quran.pdf",
-    "id": 24,
+    "id": 26,
     "category": "quran",
     "categoryLabel": "Quran & Tafsir",
     "sortOrder": 5,
-    "thumb": "thumb/pdfs/24.jpg"
+    "thumb": "thumb/pdfs/26.jpg"
   },
   {
     "title": "Refuting The Lie Concerning Kufr Doona Kufr",
@@ -131,13 +131,13 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/Refuting%20The%20Lie%20Concerning%20Kufr%20Doona%20Kufr.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/Refuting%20The%20Lie%20Concerning%20Kufr%20Doona%20Kufr.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/Refuting%20The%20Lie%20Concerning%20Kufr%20Doona%20Kufr.pdf",
-    "id": 13,
+    "id": 14,
     "category": "aqeedah",
     "categoryLabel": "Aqeedah & Refutations",
     "series": "Refuting The Lie",
     "part": 1,
     "sortOrder": 6,
-    "thumb": "thumb/pdfs/13.jpg"
+    "thumb": "thumb/pdfs/14.jpg"
   },
   {
     "title": "Refuting The Lie Concerning The Excuse of Ignorance",
@@ -147,13 +147,13 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/Refuting%20The%20Lie%20Concerning%20The%20Excuse%20of%20Ignorance.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/Refuting%20The%20Lie%20Concerning%20The%20Excuse%20of%20Ignorance.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/Refuting%20The%20Lie%20Concerning%20The%20Excuse%20of%20Ignorance.pdf",
-    "id": 14,
+    "id": 15,
     "category": "aqeedah",
     "categoryLabel": "Aqeedah & Refutations",
     "series": "Refuting The Lie",
     "part": 2,
     "sortOrder": 7,
-    "thumb": "thumb/pdfs/14.jpg"
+    "thumb": "thumb/pdfs/15.jpg"
   },
   {
     "title": "100 Fabricated Hadiths (Shaikh Abdullah Faisal)",
@@ -205,11 +205,11 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/Murjiya%20Refutation%20by%20shaykh%20faisal.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/Murjiya%20Refutation%20by%20shaykh%20faisal.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/Murjiya%20Refutation%20by%20shaykh%20faisal.pdf",
-    "id": 9,
+    "id": 10,
     "category": "aqeedah",
     "categoryLabel": "Aqeedah & Refutations",
     "sortOrder": 11,
-    "thumb": "thumb/pdfs/9.jpg"
+    "thumb": "thumb/pdfs/10.jpg"
   },
   {
     "title": "Challenges Facing the Muslim Ummah",
@@ -251,11 +251,11 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/Islam%20Under%20Siege%20By%20Shaykh%20Faisal.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/Islam%20Under%20Siege%20By%20Shaykh%20Faisal.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/Islam%20Under%20Siege%20By%20Shaykh%20Faisal.pdf",
-    "id": 8,
+    "id": 9,
     "category": "ummah",
     "categoryLabel": "Ummah & Politics",
     "sortOrder": 14,
-    "thumb": "thumb/pdfs/8.jpg"
+    "thumb": "thumb/pdfs/9.jpg"
   },
   {
     "title": "SHARIAH VS MAN-MADE LAWS by Shaykh Abdullah Faisal",
@@ -265,11 +265,11 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/SHARIAH%20VS%20MAN-MADE%20LAWS%20by%20Shaykh%20Abdullah%20Faisal.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/SHARIAH%20VS%20MAN-MADE%20LAWS%20by%20Shaykh%20Abdullah%20Faisal.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/SHARIAH%20VS%20MAN-MADE%20LAWS%20by%20Shaykh%20Abdullah%20Faisal.pdf",
-    "id": 19,
+    "id": 20,
     "category": "ummah",
     "categoryLabel": "Ummah & Politics",
     "sortOrder": 15,
-    "thumb": "thumb/pdfs/19.jpg"
+    "thumb": "thumb/pdfs/20.jpg"
   },
   {
     "title": "The Evil Rulers Of The World",
@@ -279,11 +279,11 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/The%20Evil%20Rulers%20Of%20The%20World.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/The%20Evil%20Rulers%20Of%20The%20World.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/The%20Evil%20Rulers%20Of%20The%20World.pdf",
-    "id": 21,
+    "id": 23,
     "category": "ummah",
     "categoryLabel": "Ummah & Politics",
     "sortOrder": 16,
-    "thumb": "thumb/pdfs/21.jpg"
+    "thumb": "thumb/pdfs/23.jpg"
   },
   {
     "title": "THE OBLIGATION TO ESTABLISH THE KHILAFAH by shaykh faisal",
@@ -293,11 +293,11 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/THE%20OBLIGATION%20TO%20ESTABLISH%20THE%20KHILAFAH%20by%20shaykh%20faisal.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/THE%20OBLIGATION%20TO%20ESTABLISH%20THE%20KHILAFAH%20by%20shaykh%20faisal.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/THE%20OBLIGATION%20TO%20ESTABLISH%20THE%20KHILAFAH%20by%20shaykh%20faisal.pdf",
-    "id": 22,
+    "id": 24,
     "category": "ummah",
     "categoryLabel": "Ummah & Politics",
     "sortOrder": 17,
-    "thumb": "thumb/pdfs/22.jpg"
+    "thumb": "thumb/pdfs/24.jpg"
   },
   {
     "title": "Among Your Wives and Children Are Enemies to You By Shaykh Abdullah",
@@ -321,11 +321,11 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/Natural%20Instincts%20-%20By%20shaykh%20Abdullah%20Faisal.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/Natural%20Instincts%20-%20By%20shaykh%20Abdullah%20Faisal.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/Natural%20Instincts%20-%20By%20shaykh%20Abdullah%20Faisal.pdf",
-    "id": 11,
+    "id": 12,
     "category": "character",
     "categoryLabel": "Character & Family",
     "sortOrder": 19,
-    "thumb": "thumb/pdfs/11.jpg"
+    "thumb": "thumb/pdfs/12.jpg"
   },
   {
     "title": "PERSONALITY DISORDERS by Shaykh Abdullah Faisal",
@@ -335,11 +335,11 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/PERSONALITY%20DISORDERS%20by%20Shaykh%20Abdullah%20Faisal.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/PERSONALITY%20DISORDERS%20by%20Shaykh%20Abdullah%20Faisal.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/my%20pdfs/PERSONALITY%20DISORDERS%20by%20Shaykh%20Abdullah%20Faisal.pdf",
-    "id": 12,
+    "id": 13,
     "category": "character",
     "categoryLabel": "Character & Family",
     "sortOrder": 20,
-    "thumb": "thumb/pdfs/12.jpg"
+    "thumb": "thumb/pdfs/13.jpg"
   },
   {
     "title": "Their Hearts Are Alike",
@@ -349,11 +349,11 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/Their%20Hearts%20Are%20Alike.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/Their%20Hearts%20Are%20Alike.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/Their%20Hearts%20Are%20Alike.pdf",
-    "id": 23,
+    "id": 25,
     "category": "character",
     "categoryLabel": "Character & Family",
     "sortOrder": 21,
-    "thumb": "thumb/pdfs/23.jpg"
+    "thumb": "thumb/pdfs/25.jpg"
   },
   {
     "title": "Who Are You",
@@ -363,11 +363,11 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/Who%20Are%20You.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/Who%20Are%20You.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/Who%20Are%20You.pdf",
-    "id": 25,
+    "id": 27,
     "category": "character",
     "categoryLabel": "Character & Family",
     "sortOrder": 22,
-    "thumb": "thumb/pdfs/25.jpg"
+    "thumb": "thumb/pdfs/27.jpg"
   },
   {
     "title": "Adam and Shaitan - The eternal battle",
@@ -398,6 +398,19 @@ const PDFS = [
     "thumb": "thumb/pdfs/2.jpg"
   },
   {
+    "title": "Islam the Religion of the Future by Shaykh Faisal",
+    "archive": "Islam the Religion of the Future by Shaykh Faisal.pdf",
+    "size": 458909,
+    "sizeLabel": "448.2 KB",
+    "download": "https://archive.org/download/faisalPDF/Islam%20the%20Religion%20of%20the%20Future%20by%20Shaykh%20Faisal.pdf",
+    "embed": "https://archive.org/embed/faisalPDF/Islam%20the%20Religion%20of%20the%20Future%20by%20Shaykh%20Faisal.pdf#page/n1/mode/1up",
+    "details": "https://archive.org/details/faisalPDF/Islam%20the%20Religion%20of%20the%20Future%20by%20Shaykh%20Faisal.pdf",
+    "id": 8,
+    "category": "general",
+    "categoryLabel": "General",
+    "sortOrder": 25
+  },
+  {
     "title": "Natural Disasters - Why They Occur",
     "archive": "shatkh faisal pdfs/Natural Disasters - Why They Occur.pdf",
     "size": 183096,
@@ -405,10 +418,23 @@ const PDFS = [
     "download": "https://archive.org/download/faisalPDF/shatkh%20faisal%20pdfs/Natural%20Disasters%20-%20Why%20They%20Occur.pdf",
     "embed": "https://archive.org/embed/faisalPDF/shatkh%20faisal%20pdfs/Natural%20Disasters%20-%20Why%20They%20Occur.pdf#page/n1/mode/1up",
     "details": "https://archive.org/details/faisalPDF/shatkh%20faisal%20pdfs/Natural%20Disasters%20-%20Why%20They%20Occur.pdf",
-    "id": 10,
+    "id": 11,
     "category": "general",
     "categoryLabel": "General",
-    "sortOrder": 25,
-    "thumb": "thumb/pdfs/10.jpg"
+    "sortOrder": 26,
+    "thumb": "thumb/pdfs/11.jpg"
+  },
+  {
+    "title": "The 7 Conditions of Shahada by Shaykh Faisal",
+    "archive": "The 7 Conditions of Shahada by Shaykh Faisal.pdf",
+    "size": 400906,
+    "sizeLabel": "391.5 KB",
+    "download": "https://archive.org/download/faisalPDF/The%207%20Conditions%20of%20Shahada%20by%20Shaykh%20Faisal.pdf",
+    "embed": "https://archive.org/embed/faisalPDF/The%207%20Conditions%20of%20Shahada%20by%20Shaykh%20Faisal.pdf#page/n1/mode/1up",
+    "details": "https://archive.org/details/faisalPDF/The%207%20Conditions%20of%20Shahada%20by%20Shaykh%20Faisal.pdf",
+    "id": 22,
+    "category": "general",
+    "categoryLabel": "General",
+    "sortOrder": 27
   }
 ];
