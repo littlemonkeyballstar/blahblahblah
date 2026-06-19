@@ -111,6 +111,131 @@
       0% { background-position: 200% 0; }
       100% { background-position: -200% 0; }
     }
+
+    .site-header__actions {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      width: 100%;
+      min-width: 0;
+    }
+    @media (min-width: 640px) {
+      .site-header__actions { width: auto; margin-left: auto; }
+    }
+
+    .home-search { position: relative; flex-shrink: 0; }
+    .home-search__bar {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.375rem;
+    }
+    .home-search__toggle {
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #334155;
+      color: #94a3b8;
+      background: rgba(15, 23, 42, 0.65);
+      transition: border-color 0.25s ease, color 0.25s ease, background 0.25s ease, transform 0.15s ease;
+    }
+    .home-search__toggle:hover,
+    .home-search.is-open .home-search__toggle {
+      border-color: rgba(212, 168, 83, 0.45);
+      color: #d4a853;
+      background: rgba(212, 168, 83, 0.12);
+    }
+    .home-search__toggle:active { transform: scale(0.94); }
+
+    .home-search__field {
+      display: flex;
+      max-width: 0;
+      opacity: 0;
+      overflow: hidden;
+      pointer-events: none;
+      transition: max-width 0.38s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.28s ease;
+    }
+    .home-search.is-open .home-search__field {
+      max-width: min(18rem, 58vw);
+      opacity: 1;
+      pointer-events: auto;
+    }
+    @media (min-width: 640px) {
+      .home-search.is-open .home-search__field { max-width: 15rem; }
+    }
+    @media (min-width: 1024px) {
+      .home-search.is-open .home-search__field { max-width: 19rem; }
+    }
+
+    .home-search__inner {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      width: 100%;
+      min-width: 11.5rem;
+      border: 1px solid rgba(212, 168, 83, 0.35);
+      border-radius: 999px;
+      background: rgba(12, 18, 32, 0.96);
+      box-shadow: 0 8px 28px rgba(0, 0, 0, 0.35);
+      padding: 0.3rem 0.45rem 0.3rem 0.85rem;
+    }
+    .home-search__input {
+      flex: 1;
+      min-width: 0;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: #f1f5f9;
+      font-size: 0.875rem;
+      padding: 0.35rem 0;
+    }
+    .home-search__input::placeholder { color: #64748b; }
+    .home-search__close {
+      width: 1.65rem;
+      height: 1.65rem;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      color: #64748b;
+      transition: color 0.2s ease, background 0.2s ease;
+    }
+    .home-search__close:hover { color: #d4a853; background: rgba(212, 168, 83, 0.1); }
+
+    .home-search__results {
+      position: absolute;
+      right: 0;
+      top: calc(100% + 0.5rem);
+      width: min(22rem, calc(100vw - 2rem));
+      z-index: 60;
+      border-radius: 0.75rem;
+      border: 1px solid #334155;
+      background: #0c1220;
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+      max-height: min(24rem, 60vh);
+      overflow-y: auto;
+    }
+    .home-search__results:not(.hidden) {
+      animation: home-search-drop 0.28s cubic-bezier(0.22, 1, 0.36, 1) both;
+    }
+    @keyframes home-search-drop {
+      from { opacity: 0; transform: translateY(-6px) scale(0.98); }
+      to { opacity: 1; transform: none; }
+    }
+    .home-search-result:active { background: rgba(30, 41, 59, 0.9); }
+
+    @media (prefers-reduced-motion: reduce) {
+      .home-search__field,
+      .home-search__toggle,
+      .home-search__results:not(.hidden) {
+        transition: none !important;
+        animation: none !important;
+      }
+      .home-search.is-open .home-search__field { opacity: 1; }
+    }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-200 antialiased islamic-pattern min-h-screen flex flex-col">
@@ -127,14 +252,33 @@
   <header class="site-header bg-slate-925/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
     <div class="site-header__inner max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-5 flex flex-col sm:flex-row items-center sm:items-center justify-between gap-3 sm:gap-4">
       <a href="index.html" class="site-header__title font-display text-xl sm:text-3xl font-bold text-gold-gradient tracking-wide text-center sm:text-left shrink-0">Shaykh Abdullah Faisal</a>
-      <nav class="site-nav flex sm:flex-wrap items-center gap-1 sm:gap-2 text-sm font-medium justify-start sm:justify-end">
-        <a href="index.html" data-nav="home" class="px-4 py-2 rounded-full transition">Home</a>
-        <a href="biography.html" data-nav="biography" class="px-4 py-2 rounded-full transition"><span class="nav-long">Biography</span><span class="nav-short">Bio</span></a>
-        <a href="clips.html" data-nav="clips" class="px-4 py-2 rounded-full transition"><span class="nav-long">Clips/Shorts</span><span class="nav-short">Clips</span></a>
-        <a href="videos.html" data-nav="videos" class="px-4 py-2 rounded-full transition"><span class="nav-long">Video Lectures</span><span class="nav-short">Videos</span></a>
-        <a href="audio.html" data-nav="audio" class="px-4 py-2 rounded-full transition"><span class="nav-long">Audio Lectures</span><span class="nav-short">Audio</span></a>
-        <a href="pdfs.html" data-nav="pdfs" class="px-4 py-2 rounded-full transition"><span class="nav-long">PDF Books</span><span class="nav-short">PDFs</span></a>
-      </nav>
+      <div class="site-header__actions">
+        <nav class="site-nav flex sm:flex-wrap items-center gap-1 sm:gap-2 text-sm font-medium justify-start sm:justify-end flex-1 sm:flex-initial min-w-0">
+          <a href="index.html" data-nav="home" class="px-4 py-2 rounded-full transition">Home</a>
+          <a href="biography.html" data-nav="biography" class="px-4 py-2 rounded-full transition"><span class="nav-long">Biography</span><span class="nav-short">Bio</span></a>
+          <a href="clips.html" data-nav="clips" class="px-4 py-2 rounded-full transition"><span class="nav-long">Clips/Shorts</span><span class="nav-short">Clips</span></a>
+          <a href="videos.html" data-nav="videos" class="px-4 py-2 rounded-full transition"><span class="nav-long">Video Lectures</span><span class="nav-short">Videos</span></a>
+          <a href="audio.html" data-nav="audio" class="px-4 py-2 rounded-full transition"><span class="nav-long">Audio Lectures</span><span class="nav-short">Audio</span></a>
+          <a href="pdfs.html" data-nav="pdfs" class="px-4 py-2 rounded-full transition"><span class="nav-long">PDF Books</span><span class="nav-short">PDFs</span></a>
+        </nav>
+        <div id="homeSearch" class="home-search">
+          <div class="home-search__bar">
+            <div id="homeSearchField" class="home-search__field" aria-hidden="true">
+              <div class="home-search__inner">
+                <label for="globalSearch" class="sr-only">Search audio, videos, clips, and PDFs</label>
+                <input id="globalSearch" type="search" placeholder="Search archive…" autocomplete="off" class="home-search__input">
+                <button type="button" id="homeSearchClose" class="home-search__close" aria-label="Close search">
+                  <i class="fas fa-times text-xs"></i>
+                </button>
+              </div>
+            </div>
+            <button type="button" id="homeSearchToggle" class="home-search__toggle" aria-label="Open search" aria-expanded="false" aria-controls="homeSearchField">
+              <i class="fas fa-search text-sm"></i>
+            </button>
+          </div>
+          <div id="globalSearchResults" class="home-search__results hidden"></div>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -342,6 +486,7 @@
         document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
         mountTelegramLink();
         setActiveNav('home');
+        mountHomeGlobalSearch();
         showHomeSkeletons();
 
         await Promise.all([
