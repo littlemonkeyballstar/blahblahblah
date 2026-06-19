@@ -393,16 +393,6 @@ function mountMotionStyles() {
       transform: none;
     }
 
-    .global-search-section {
-      opacity: 0;
-      transform: translateY(6px);
-      transition: opacity 0.4s ease, transform 0.4s ease;
-    }
-    .global-search-section.site-search-enter--ready {
-      opacity: 1;
-      transform: none;
-    }
-
     .site-nav-pill {
       transition: background-color 0.22s ease, color 0.22s ease,
                   box-shadow 0.22s ease, transform 0.15s ease;
@@ -445,7 +435,6 @@ function mountMotionStyles() {
     @media (prefers-reduced-motion: reduce) {
       .page-transition-overlay,
       main.site-page,
-      .global-search-section,
       .content-swap,
       .stagger-item {
         transition: none !important;
@@ -616,39 +605,6 @@ function mountGlobalSearch({ inputId = 'globalSearch', resultsId = 'globalSearch
   document.addEventListener('click', (e) => {
     if (!results.contains(e.target) && e.target !== input) hideResults();
   });
-}
-
-function mountGlobalSearchShell() {
-  if (document.getElementById('globalSearch')) {
-    mountGlobalSearch();
-    return;
-  }
-  const header = document.querySelector('.site-header');
-  if (!header) return;
-
-  const section = document.createElement('section');
-  section.className = 'global-search-section max-w-7xl mx-auto px-4 sm:px-8 pt-4 sm:pt-5';
-  section.setAttribute('aria-label', 'Site search');
-  section.innerHTML = `
-    <div class="relative max-w-2xl mx-auto">
-      <label for="globalSearch" class="sr-only">Search audio, videos, clips, and PDFs</label>
-      <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-500 pointer-events-none"></i>
-      <input id="globalSearch" type="search" placeholder="Search lectures, videos, clips, and PDFs…" autocomplete="off"
-        class="w-full pl-11 pr-4 py-3 sm:py-3.5 rounded-xl bg-slate-900 border border-slate-700 focus:outline-none focus:border-gold/50 text-slate-100 placeholder:text-slate-500">
-      <div id="globalSearchResults" class="global-search-panel hidden absolute left-0 right-0 top-full mt-2 z-50 rounded-xl border border-slate-700 bg-slate-925 overflow-hidden max-h-[min(24rem,60vh)] overflow-y-auto"></div>
-    </div>`;
-
-  const main = document.querySelector('main');
-  if (main && main.parentNode) {
-    main.parentNode.insertBefore(section, main);
-  } else {
-    header.insertAdjacentElement('afterend', section);
-  }
-
-  section.classList.add('site-search-enter');
-  requestAnimationFrame(() => section.classList.add('site-search-enter--ready'));
-
-  mountGlobalSearch();
 }
 
 function buildAudioLookup(pool) {
@@ -1021,9 +977,6 @@ function mountMobileStyles() {
       background: rgba(30, 41, 59, 0.9);
     }
 
-    .global-search-section { position: relative; z-index: 45; }
-    .global-search-section + main { padding-top: 0.25rem; }
-
     .continue-listening-card .line-clamp-2 {
       display: -webkit-box;
       -webkit-line-clamp: 2;
@@ -1126,7 +1079,6 @@ function mountTopBar() {
       </div>
     </div>`;
 
-  mountGlobalSearchShell();
 }
 
 function mountTelegramLink(id = 'siteTelegram') {
