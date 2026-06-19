@@ -219,7 +219,7 @@ const HOME_FEATURED = [
   {
     "id": 155,
     "title": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal",
-    "categoryLabel": "General Lectures",
+    "categoryLabel": "Marriage & Family",
     "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png"
   },
   {
@@ -261,7 +261,7 @@ const HOME_FEATURED = [
   {
     "id": 167,
     "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal",
-    "categoryLabel": "Nikah & Divorce",
+    "categoryLabel": "Marriage & Family",
     "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg"
   },
   {
@@ -381,7 +381,7 @@ const HOME_FEATURED = [
   {
     "id": 532,
     "title": "WIVES & CHILDREN - Shaykh Faisal",
-    "categoryLabel": "Nikah & Divorce",
+    "categoryLabel": "Marriage & Family",
     "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png"
   }
 ];

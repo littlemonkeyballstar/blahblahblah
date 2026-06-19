@@ -90,7 +90,7 @@ DISPLAY_NAMES = {
     "The Devils Deception": "The Devil's Deception",
     "Wicked_Scholars": "Wicked Scholars",
     "Science in the quran": "Science in the Quran",
-    "Nikah_Divorce": "Nikah & Divorce",
+    "Nikah_Divorce": "Marriage & Family",
     "Ramadan": "Ramadan",
     "Diseases_of_the_Heart": "Diseases of the Heart",
     "Personality Disorders (Series)": "Personality Disorders",
@@ -123,6 +123,7 @@ SUB_DISPLAY = {
     "rules_of_nikah": "Rules of Nikah",
     "types_to_avoid": "Types to Avoid Marrying",
     "fiqh_of_divorce": "Fiqh of Divorce",
+    "fiqh_of_menses": "Fiqh of Menses",
     "Tafsir baqarah": "Tafsir Al-Baqarah",
     "Tafseer surah Taubah": "Tafsir At-Tawbah",
     "tafseer TaHa": "Tafsir Ta-Ha",
@@ -149,10 +150,11 @@ CATEGORY_SUB_ORDER: dict[str, list[str]] = {
         "refutation_general",
     ],
     "Nikah_Divorce": [
-        "rules_of_divorce",
         "rules_of_nikah",
+        "rules_of_divorce",
         "types_to_avoid",
         "fiqh_of_divorce",
+        "fiqh_of_menses",
     ],
 }
 
@@ -161,6 +163,7 @@ NIKAH_DIVORCE_SUB_PATTERNS: list[tuple[str, str]] = [
     (r"rules of nikah", "rules_of_nikah"),
     (r"types of (women|men) you should not marry", "types_to_avoid"),
     (r"fiqh of divorce", "fiqh_of_divorce"),
+    (r"fiqh of menses", "fiqh_of_menses"),
 ]
 
 CAT_ORDER = [
@@ -215,7 +218,8 @@ TITLE_SERIES_PATTERNS: list[tuple[str, str, str | None]] = [
     (r"^knowledge -|philosophy of the islamic jurisprudence|ijtihaad maslaha|5 ahkaam of shariah|"
      r"5 needs of mankind|importance of intention|dua - the weapon|role of the masjid", "Islamic_Knowledge", None),
     (r"people of the cave|sleepers in the cave", "Prophets_Seerah", None),
-    (r"women in islam|wives & children|parent child|marital discord|daughters are diamonds|muslim home|tainted love", "Nikah_Divorce", None),
+    (r"women in islam|wives & children|parent child|marital discord|daughters are diamonds|muslim home|tainted love|"
+     r"muslim marrying|fiqh of menses|money can't buy true love|^love - abdallah", "Nikah_Divorce", None),
     (r"importance of hijrah|declaration of war", "Jihad", None),
     (r"message from the calipha|manhaj for establishing shariah", "Khilafah", None),
     (r"refut|refuting", "Refutation", None),
@@ -230,7 +234,7 @@ TITLE_SERIES_PATTERNS: list[tuple[str, str, str | None]] = [
     (r"radical islamic terror|white supremacy|domain of apostasy", "Refutation", None),
     (r"insulting the prophet|slander of aisha|ifk", "Refutation", None),
     (r"kashf ush shubuhaat|removing the doubts", "Refutation", None),
-    (r"goofi soofis|barking dogs of jahann|muslim marrying non muslim|tawassul", "Refutation", None),
+    (r"goofi soofis|barking dogs of jahann|tawassul", "Refutation", None),
     (r"khilaf|khilaaf|caliphate", "Khilafah", None),
     (r"ramadan|ramadhan|laylatul qadr|virtues of ramadan", "Ramadan", None),
     (r"\bjihad\b", "Jihad", None),
@@ -253,7 +257,7 @@ TITLE_THEME_PATTERNS: list[tuple[str, str]] = [
     ),
     (
         r"salah|prayer|fasting|hajj|fiqh|paradise \[part|rules of |description of paradise|"
-        r"description of the prophet|merits of salah|how to make hajj|fiqhul waaqi|menses|clothing|"
+        r"description of the prophet|merits of salah|how to make hajj|fiqhul waaqi|clothing|"
         r"qadr|pillars of qadr|lailatul qadr explained|application of revelation|punishment of the grave|"
         r"virtues of makkah|virtues of dhikr|rules and merits of zakah",
         "Fiqh_Worship",
@@ -331,6 +335,10 @@ LECTURE_TITLE_OVERRIDES = {
 LECTURE_CATEGORY_OVERRIDES = {
     norm("Towards Watering Down The Holy Quran"): "Refutation",
     norm("Towards Watering Down The Holy Quran(1)"): "Refutation",
+    norm("MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal"): "Nikah_Divorce",
+    norm("The Fiqh of Menses"): "Nikah_Divorce",
+    norm("LOVE - Abdallah Al Faisal"): "Nikah_Divorce",
+    norm("Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal"): "Nikah_Divorce",
 }
 
 # Pin specific lectures to the top of their sub-series (lower = earlier).
@@ -364,10 +372,7 @@ GENERAL_LECTURE_TITLES = frozenset(
         "Jahiliyya Gives Everyone a Raw Deal (07.24.11)",
         "KNOWLEDGE - Abdallah Al Faisal",
         "Kufaar and the Fear Factor (07.03.11)",
-        "LOVE - Abdallah Al Faisal",
-        "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal",
         "Might Without Wisdom is a Recipe for Disaster (07.27.11)",
-        "Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal",
         "Our 6 Sacred Possessions",
         "Paradise is Exclusive to the Muslims (07.04.11)",
         "Power of Intercession (07.18.11)",
@@ -1100,7 +1105,11 @@ def main():
             category, subcategory = resolve_category(title, folder_category, folder_subcategory)
             if norm(stem) in LECTURE_CATEGORY_OVERRIDES:
                 category = LECTURE_CATEGORY_OVERRIDES[norm(stem)]
-                subcategory = None
+                subcategory = (
+                    detect_nikah_divorce_subcategory(title)
+                    if category == "Nikah_Divorce"
+                    else None
+                )
             if category == "Refutation" and not subcategory:
                 subcategory = detect_refutation_subcategory(title)
             thumb = resolver.resolve(full, title, folder)

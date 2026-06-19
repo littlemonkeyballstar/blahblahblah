@@ -99,13 +99,13 @@ const LECTURE_CATEGORIES = [
   {
     "id": "General",
     "label": "General Lectures",
-    "count": 78,
+    "count": 75,
     "subcategories": []
   },
   {
     "id": "Fiqh_Worship",
     "label": "Fiqh & Worship",
-    "count": 26,
+    "count": 25,
     "subcategories": []
   },
   {
@@ -194,18 +194,18 @@ const LECTURE_CATEGORIES = [
   },
   {
     "id": "Nikah_Divorce",
-    "label": "Nikah & Divorce",
-    "count": 19,
+    "label": "Marriage & Family",
+    "count": 23,
     "subcategories": [
-      {
-        "id": "rules_of_divorce",
-        "label": "Rules of Divorce",
-        "count": 2
-      },
       {
         "id": "rules_of_nikah",
         "label": "Rules of Nikah",
         "count": 4
+      },
+      {
+        "id": "rules_of_divorce",
+        "label": "Rules of Divorce",
+        "count": 2
       },
       {
         "id": "types_to_avoid",
@@ -215,6 +215,11 @@ const LECTURE_CATEGORIES = [
       {
         "id": "fiqh_of_divorce",
         "label": "Fiqh of Divorce",
+        "count": 1
+      },
+      {
+        "id": "fiqh_of_menses",
+        "label": "Fiqh of Menses",
         "count": 1
       }
     ]
@@ -651,7 +656,7 @@ const LECTURE_ID_INDEX = {
   "131": "Aqeedah",
   "132": "Aqeedah",
   "133": "Aqeedah",
-  "134": "General",
+  "134": "Nikah_Divorce",
   "135": "Ummah_Affairs",
   "136": "Refutation",
   "137": "Ummah_Affairs",
@@ -665,14 +670,14 @@ const LECTURE_ID_INDEX = {
   "145": "Khilafah",
   "146": "General",
   "147": "Prophets_Seerah",
-  "148": "General",
+  "148": "Nikah_Divorce",
   "149": "Refutation",
   "150": "Prophets_Seerah",
   "151": "Prophets_Seerah",
   "152": "Prophets_Seerah",
   "153": "Prophets_Seerah",
   "154": "Nikah_Divorce",
-  "155": "General",
+  "155": "Nikah_Divorce",
   "156": "Ummah_Affairs",
   "157": "Refutation",
   "158": "Ummah_Affairs",
@@ -973,7 +978,7 @@ const LECTURE_ID_INDEX = {
   "453": "Fiqh_Worship",
   "454": "Nikah_Divorce",
   "455": "Fiqh_Worship",
-  "456": "Fiqh_Worship",
+  "456": "Nikah_Divorce",
   "457": "Fiqh_Worship",
   "458": "General",
   "459": "General",

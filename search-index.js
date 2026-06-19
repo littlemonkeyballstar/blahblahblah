@@ -321,7 +321,7 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 44,
     "title": "Daughters Are Diamonds (06.30.11)",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=44"
   },
   {
@@ -996,7 +996,7 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 134,
     "title": "LOVE - Abdallah Al Faisal",
-    "sub": "General Lectures",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=134",
     "thumb": "thumb/extracted/6d7686edec03e1.jpg"
   },
@@ -1048,7 +1048,7 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 141,
     "title": "MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=141"
   },
   {
@@ -1100,7 +1100,7 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 148,
     "title": "Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal",
-    "sub": "General Lectures",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=148"
   },
   {
@@ -1145,7 +1145,7 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 154,
     "title": "Muslim Home (12.21.11 to 12.22.11)",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=154",
     "thumb": "thumb/extracted/8be0c03a517daa.jpg"
   },
@@ -1153,7 +1153,7 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 155,
     "title": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal",
-    "sub": "General Lectures",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=155",
     "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png"
   },
@@ -1243,7 +1243,7 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 167,
     "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=167",
     "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg"
   },
@@ -1536,14 +1536,14 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 206,
     "title": "Rules of Divorce [Part 1] (07.06.11)",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=206"
   },
   {
     "type": "audio",
     "id": 207,
     "title": "Rules of Divorce [Part 2] Revisited (07.08.11)",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=207"
   },
   {
@@ -1564,28 +1564,28 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 210,
     "title": "Rules of Nikah [Part 1] (06.30.11)",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=210"
   },
   {
     "type": "audio",
     "id": 211,
     "title": "Rules of Nikah [Part 2] (07.01.11)",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=211"
   },
   {
     "type": "audio",
     "id": 212,
     "title": "Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11)",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=212"
   },
   {
     "type": "audio",
     "id": 213,
     "title": "Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11)",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=213"
   },
   {
@@ -1871,7 +1871,7 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 253,
     "title": "Sheikh Abdullah Faisal - The Muslim Home",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=253"
   },
   {
@@ -3075,14 +3075,14 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 413,
     "title": "TAINTED LOVE - Abdallah Al Faisal",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=413"
   },
   {
     "type": "audio",
     "id": 414,
     "title": "tainted love 2013.04.20 (evening)",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=414"
   },
   {
@@ -3132,14 +3132,14 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 421,
     "title": "The 18 Types Of Women You Should Not Marry",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=421"
   },
   {
     "type": "audio",
     "id": 422,
     "title": "The 20 Types Of Men You Should Not Marry",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=422"
   },
   {
@@ -3368,7 +3368,7 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 454,
     "title": "the Fiqh of Divorce",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=454"
   },
   {
@@ -3382,7 +3382,7 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 456,
     "title": "The Fiqh of Menses",
-    "sub": "Fiqh & Worship",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=456"
   },
   {
@@ -3431,7 +3431,7 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 463,
     "title": "The Muslim Home (dars)",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=463"
   },
   {
@@ -3945,7 +3945,7 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 532,
     "title": "WIVES & CHILDREN - Shaykh Faisal",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=532",
     "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png"
   },
@@ -3953,7 +3953,7 @@ const SEARCH_INDEX = [
     "type": "audio",
     "id": 533,
     "title": "WOMEN IN ISLAM - Abdallah Al Faisal",
-    "sub": "Nikah & Divorce",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=533"
   },
   {

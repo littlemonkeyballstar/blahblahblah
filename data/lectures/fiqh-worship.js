@@ -211,16 +211,6 @@ registerLectureChunk("Fiqh_Worship", [
     "id": 455
   },
   {
-    "title": "The Fiqh of Menses",
-    "category": "Fiqh_Worship",
-    "categoryLabel": "Fiqh & Worship",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "The Fiqh of Menses.mp3",
-    "thumb": null,
-    "id": 456
-  },
-  {
     "title": "The Fiqh of Trading",
     "category": "Fiqh_Worship",
     "categoryLabel": "Fiqh & Worship",

@@ -221,16 +221,6 @@ registerLectureChunk("General", [
     "id": 124
   },
   {
-    "title": "LOVE - Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "LOVE - Abdallah Al Faisal.mp3",
-    "thumb": "thumb/extracted/6d7686edec03e1.jpg",
-    "id": 134
-  },
-  {
     "title": "Might Without Wisdom is a Recipe for Disaster (07.27.11)",
     "category": "General",
     "categoryLabel": "General Lectures",
@@ -239,26 +229,6 @@ registerLectureChunk("General", [
     "archive": "Might Without Wisdom is a Recipe for Disaster (07.27.11).mp3",
     "thumb": null,
     "id": 146
-  },
-  {
-    "title": "Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal.mp3",
-    "thumb": null,
-    "id": 148
-  },
-  {
-    "title": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.mp3",
-    "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png",
-    "id": 155
   },
   {
     "title": "Our 6 Sacred Possessions",
