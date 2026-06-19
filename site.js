@@ -1067,84 +1067,34 @@ function mountMobileStyles() {
       overflow: hidden;
     }
 
-    .media-card {
-      position: relative;
-      overflow: visible;
-    }
     .media-card__inner {
       display: flex;
       flex-direction: column;
       flex: 1 1 auto;
       min-width: 0;
+      padding: 0.75rem 0.875rem 0.875rem;
     }
     .media-card__head {
       display: flex;
-      align-items: center;
-      gap: 0.625rem;
-      min-height: 2.25rem;
-      margin-bottom: 0.75rem;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
     }
     .media-card__title-wrap {
       flex: 1 1 auto;
       min-width: 0;
     }
-    .media-card__title-viewport {
-      overflow: hidden;
-      height: 1.375rem;
-      min-width: 0;
-    }
-    .media-card__title-track {
-      font-size: 0.875rem;
-      line-height: 1.375rem;
+    .media-card__title {
+      margin: 0;
+      font-size: 0.8125rem;
+      line-height: 1.25rem;
       font-weight: 500;
       color: #f1f5f9;
-      white-space: nowrap;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
       overflow: hidden;
-      text-overflow: ellipsis;
-    }
-    .media-card__title-text--repeat {
-      display: none;
-    }
-    .media-card__title-wrap.is-overflow .media-card__title-text--repeat {
-      display: none;
-    }
-    .media-card__title-wrap.is-overflow.is-marquee-active .media-card__title-track {
-      display: inline-flex;
-      align-items: center;
-      gap: 2.5rem;
-      overflow: visible;
-      text-overflow: unset;
-      max-width: none;
-      will-change: transform;
-      animation: media-title-marquee var(--marquee-duration, 14s) linear infinite;
-    }
-    .media-card__title-wrap.is-overflow.is-marquee-active .media-card__title-text--repeat {
-      display: inline;
-    }
-    @keyframes media-title-marquee {
-      0% { transform: translateX(0); }
-      100% { transform: translateX(var(--marquee-distance, -50%)); }
-    }
-    @media (hover: none), (pointer: coarse) {
-      .media-card__title-wrap.is-overflow .media-card__title-track {
-        display: inline-flex;
-        align-items: center;
-        gap: 2.5rem;
-        overflow: visible;
-        text-overflow: unset;
-        max-width: none;
-        will-change: transform;
-        animation: media-title-marquee var(--marquee-duration, 14s) linear infinite;
-      }
-      .media-card__title-wrap.is-overflow .media-card__title-text--repeat {
-        display: inline;
-      }
-    }
-    @media (prefers-reduced-motion: reduce) {
-      .media-card__title-wrap.is-marquee-active .media-card__title-track,
-      .media-card__title-wrap.is-overflow .media-card__title-track {
-        animation: none;
-      }
+      max-height: 2.5rem;
     }
     .media-card__actions {
       display: inline-flex;
@@ -1183,9 +1133,6 @@ function mountMobileStyles() {
     }
     #grid .media-card {
       height: 100%;
-    }
-    .media-card:hover {
-      z-index: 8;
     }
   `;
   document.head.appendChild(style);
@@ -1386,49 +1333,6 @@ function downloadIconLink(url, { label = 'Download', className = '' } = {}) {
   return `<a href="${url}" class="${linkClass}" target="_blank" rel="noopener" download title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">
     <i class="fas fa-download text-sm"></i>
   </a>`;
-}
-
-function setMediaCardMarquee(wrap, on) {
-  if (!wrap?.classList.contains('is-overflow')) return;
-  wrap.classList.toggle('is-marquee-active', on);
-  if (!on) {
-    const track = wrap.querySelector('.media-card__title-track');
-    if (track) track.style.transform = '';
-  }
-}
-
-function bindMediaCardTitles(root = document) {
-  root.querySelectorAll('.media-card__title-wrap:not([data-title-bound])').forEach((wrap) => {
-    wrap.dataset.titleBound = '1';
-    const viewport = wrap.querySelector('.media-card__title-viewport');
-    const track = wrap.querySelector('.media-card__title-track');
-    const text = wrap.querySelector('.media-card__title-text');
-    if (!viewport || !track || !text) return;
-
-    const head = wrap.closest('.media-card__head');
-    const marqueeGap = 40;
-    const marqueeSpeed = 26;
-
-    requestAnimationFrame(() => {
-      if (text.scrollWidth <= viewport.clientWidth + 1) return;
-      wrap.classList.add('is-overflow');
-      text.setAttribute('title', text.textContent || '');
-
-      const textWidth = text.scrollWidth;
-      const distance = textWidth + marqueeGap;
-      const duration = Math.max(8, distance / marqueeSpeed);
-      wrap.style.setProperty('--marquee-distance', `-${distance}px`);
-      wrap.style.setProperty('--marquee-duration', `${duration}s`);
-
-      const activate = () => setMediaCardMarquee(wrap, true);
-      const deactivate = () => setMediaCardMarquee(wrap, false);
-      const hoverTarget = head || wrap;
-      hoverTarget.addEventListener('mouseenter', activate);
-      hoverTarget.addEventListener('mouseleave', deactivate);
-      hoverTarget.addEventListener('focusin', activate);
-      hoverTarget.addEventListener('focusout', deactivate);
-    });
-  });
 }
 
 function downloadGlassLink(url, { label = 'Download' } = {}) {
@@ -1878,17 +1782,12 @@ function mediaCard({
       </div>`;
 
   return `
-    <article id="${id || ''}" class="media-card bg-slate-900/70 border border-slate-800 rounded-2xl flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5 sm:hover:-translate-y-0.5">
+    <article id="${id || ''}" class="media-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5 sm:hover:-translate-y-0.5">
       ${thumbSection}
-      <div class="media-card__inner p-4 sm:p-4">
+      <div class="media-card__inner">
         <div class="media-card__head">
           <div class="media-card__title-wrap">
-            <div class="media-card__title-viewport">
-              <div class="media-card__title-track">
-                <span class="media-card__title-text">${escapeHtml(title)}</span>
-                <span class="media-card__title-text media-card__title-text--repeat" aria-hidden="true">${escapeHtml(title)}</span>
-              </div>
-            </div>
+            <p class="media-card__title" title="${escapeHtml(title)}">${escapeHtml(title)}</p>
           </div>
           ${actions}
         </div>
