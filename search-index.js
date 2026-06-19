@@ -5304,7 +5304,7 @@ const SEARCH_INDEX = [
     "title": "How Allah Mocks Hypocrites Who Follow Wicked Scholars - Shaykh Abdullah Faisal",
     "sub": "Short clip",
     "href": "clips.html?clip=21",
-    "thumb": "thumb/clips/How Allah Mocks Hypocrites Who Follow Wicked.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/How Allah Mocks Hypocrites Who Follow Wicked_000001.jpg"
   },
   {
     "type": "clip",
@@ -5392,7 +5392,7 @@ const SEARCH_INDEX = [
     "title": "Madakilah's were never a Muslims",
     "sub": "Short clip",
     "href": "clips.html?clip=32",
-    "thumb": "thumb/clips/Madakilah's were never a Muslims.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Madakilah's were never a Muslims_000001.jpg"
   },
   {
     "type": "clip",
