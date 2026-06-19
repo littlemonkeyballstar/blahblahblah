@@ -133,33 +133,6 @@
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
-    .lecture-placeholder__wave {
-      position: absolute;
-      bottom: 0.85rem;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      align-items: flex-end;
-      gap: 0.22rem;
-      height: 1.35rem;
-      opacity: 0.55;
-      z-index: 2;
-      transition: top 0.28s ease, bottom 0.28s ease, opacity 0.28s ease;
-    }
-    .lecture-placeholder.is-playing .lecture-placeholder__wave {
-      opacity: 0;
-    }
-    .lecture-placeholder__wave span {
-      display: block;
-      width: 3px;
-      border-radius: 9999px;
-      background: var(--ph-accent);
-      transform: scaleY(0.55);
-      opacity: 0.45;
-    }
-    .lecture-placeholder.is-playing .lecture-placeholder__wave span {
-      animation: ph-wave 1.35s ease-in-out infinite;
-    }
     .lecture-placeholder.is-playing .lecture-placeholder__glow {
       opacity: 1;
       transform: translate(-50%, -50%) scale(1.08);
@@ -169,11 +142,6 @@
       border-color: rgba(212, 168, 83, 0.35);
       box-shadow: 0 0 0 1px rgba(212, 168, 83, 0.12);
     }
-    .lecture-placeholder__wave span:nth-child(1) { height: 0.45rem; animation-delay: 0s; }
-    .lecture-placeholder__wave span:nth-child(2) { height: 0.85rem; animation-delay: 0.12s; }
-    .lecture-placeholder__wave span:nth-child(3) { height: 1.15rem; animation-delay: 0.24s; }
-    .lecture-placeholder__wave span:nth-child(4) { height: 0.75rem; animation-delay: 0.36s; }
-    .lecture-placeholder__wave span:nth-child(5) { height: 0.5rem; animation-delay: 0.48s; }
     @keyframes ph-wave {
       0%, 100% { transform: scaleY(0.55); opacity: 0.45; }
       50% { transform: scaleY(1); opacity: 0.95; }
@@ -761,7 +729,6 @@
           <div class="lecture-placeholder__icon-ring"><i class="fas ${theme.icon}"></i></div>
           ${sub ? `<p class="lecture-placeholder__sub">${escapeHtml(sub)}</p>` : `<p class="lecture-placeholder__sub">${escapeHtml(lecture.categoryLabel)}</p>`}
           <p class="lecture-placeholder__label">${escapeHtml(preview)}</p>
-          <div class="lecture-placeholder__wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
         </div>
       </div>`;
     }
