@@ -231,7 +231,7 @@
   <div id="siteTopBar"></div>
 
   <!-- Header -->
-  <header class="site-header bg-slate-925/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+  <header class="site-header bg-slate-925 border-b border-slate-800 sticky top-0 z-50">
     <div class="site-header__inner max-w-[90rem] mx-auto px-4 sm:px-8 py-3 sm:py-5 flex flex-col sm:flex-row items-center sm:items-center justify-between gap-3 sm:gap-4">
       <a href="index.html" class="site-header__title font-display text-xl sm:text-3xl font-bold text-gold-gradient tracking-wide text-center sm:text-left shrink-0">Shaykh Abdullah Faisal</a>
       <nav class="site-nav flex sm:flex-wrap items-center gap-1 sm:gap-2 text-sm font-medium justify-start sm:justify-end">
@@ -265,7 +265,7 @@
 
       <!-- Sidebar: categories -->
       <aside class="lg:w-64 flex-shrink-0 w-full">
-        <div class="audio-category-panel lg:sticky lg:top-28 bg-slate-900/60 border border-slate-800 rounded-2xl p-3 sm:p-4">
+        <div class="audio-category-panel lg:sticky lg:top-28 bg-slate-900 border border-slate-800 rounded-2xl p-3 sm:p-4">
           <div class="flex items-center justify-between gap-2 mb-3 px-1 sm:px-2">
             <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-500">Categories</h2>
             <button type="button" id="openCategoryPicker" class="lg:hidden text-xs font-medium text-gold border border-gold/30 rounded-lg px-3 py-2 min-h-[2.75rem] hover:bg-gold/10 transition">
@@ -282,7 +282,7 @@
 
       <!-- Mobile: full category picker -->
       <div id="categoryPicker" class="fixed inset-0 z-[70] hidden" role="dialog" aria-modal="true" aria-labelledby="categoryPickerTitle" aria-hidden="true">
-        <button type="button" id="categoryPickerBackdrop" class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm" aria-label="Close category list"></button>
+        <button type="button" id="categoryPickerBackdrop" class="absolute inset-0 bg-slate-950/90" aria-label="Close category list"></button>
         <div class="category-picker-sheet absolute inset-x-0 bottom-0 max-h-[88vh] flex flex-col rounded-t-2xl border border-slate-700 bg-slate-925 shadow-2xl">
           <div class="flex items-center justify-between gap-3 px-4 py-3 border-b border-slate-800 shrink-0">
             <h2 id="categoryPickerTitle" class="font-display text-lg text-gold-gradient">All categories</h2>
@@ -343,7 +343,7 @@
     </div>
   </main>
 
-  <footer class="border-t border-slate-800 bg-slate-925/50 py-10 px-4 text-center">
+  <footer class="border-t border-slate-800 bg-slate-925 py-10 px-4 text-center">
     <p class="text-slate-400 text-sm mb-3">May Allah reward Shaykh Abdullah Faisal and hasten his release. Ameen.</p>
     <p id="siteTelegram" class="mb-4"></p>
     <p id="siteDisclaimer" class="text-slate-500 text-sm max-w-2xl mx-auto leading-relaxed"></p>
@@ -695,19 +695,19 @@
             ${simplePlaceholderHtml(lecture.categoryLabel)}
             <img src="${thumbSrc(lecture.thumb)}" alt="" class="relative z-[1]" loading="lazy"
               onerror="this.style.display='none'">
-            <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950/80 text-gold text-[10px] font-semibold uppercase tracking-wider backdrop-blur-sm z-10">
+            <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950 text-gold text-[10px] font-semibold uppercase tracking-wider z-10">
               ${escapeHtml(lecture.categoryLabel)}
             </span>
           </div>`
         : `<div class="thumb-frame relative overflow-hidden">
             ${richPlaceholderHtml(lecture)}
-            <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950/80 text-gold text-[10px] font-semibold uppercase tracking-wider backdrop-blur-sm z-10">
+            <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950 text-gold text-[10px] font-semibold uppercase tracking-wider z-10">
               ${escapeHtml(lecture.categoryLabel)}
             </span>
           </div>`;
 
       return `
-        <article id="lecture-${lecture.id}" class="lecture-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col">
+        <article id="lecture-${lecture.id}" class="lecture-card bg-slate-900 border border-slate-800 rounded-2xl overflow-hidden flex flex-col">
           ${thumbSection}
           <div class="p-4 flex flex-col flex-1">
             ${subBadge}

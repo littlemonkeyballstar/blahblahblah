@@ -63,7 +63,7 @@
 
   <div id="siteTopBar"></div>
 
-  <header class="site-header bg-slate-925/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+  <header class="site-header bg-slate-925 border-b border-slate-800 sticky top-0 z-50">
     <div class="site-header__inner max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-5 flex flex-col sm:flex-row items-center sm:items-center justify-between gap-3 sm:gap-4">
       <a href="index.html" class="site-header__title font-display text-xl sm:text-3xl font-bold text-gold-gradient tracking-wide text-center sm:text-left shrink-0">Shaykh Abdullah Faisal</a>
       <nav class="site-nav flex sm:flex-wrap items-center gap-1 sm:gap-2 text-sm font-medium justify-start sm:justify-end">
@@ -84,8 +84,8 @@
         <label for="globalSearch" class="sr-only">Search audio, videos, and clips</label>
         <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-slate-500"></i>
         <input id="globalSearch" type="search" placeholder="Search all lectures, videos, and clips…" autocomplete="off"
-          class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-slate-900/80 border border-slate-700 focus:outline-none focus:border-gold/50 text-slate-100 placeholder:text-slate-500">
-        <div id="globalSearchResults" class="global-search-panel hidden absolute left-0 right-0 top-full mt-2 z-50 rounded-xl border border-slate-700 bg-slate-925/98 backdrop-blur overflow-hidden max-h-[min(24rem,60vh)] overflow-y-auto"></div>
+          class="w-full pl-11 pr-4 py-3.5 rounded-xl bg-slate-900 border border-slate-700 focus:outline-none focus:border-gold/50 text-slate-100 placeholder:text-slate-500">
+        <div id="globalSearchResults" class="global-search-panel hidden absolute left-0 right-0 top-full mt-2 z-50 rounded-xl border border-slate-700 bg-slate-925 overflow-hidden max-h-[min(24rem,60vh)] overflow-y-auto"></div>
       </div>
     </section>
 
@@ -98,7 +98,7 @@
         <div id="slideDots" class="hidden sm:flex items-center gap-2"></div>
       </div>
 
-      <div id="slideshow" class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/60 shadow-2xl shadow-black/40">
+      <div id="slideshow" class="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900 shadow-2xl shadow-black/40">
         <div class="overflow-hidden">
           <div id="slideTrack" class="slide-track flex"></div>
         </div>
@@ -145,7 +145,7 @@
 
   </main>
 
-  <footer class="border-t border-slate-800 bg-slate-925/50 py-10 px-4 text-center">
+  <footer class="border-t border-slate-800 bg-slate-925 py-10 px-4 text-center">
     <p class="font-display text-gold/70 text-lg mb-3">Shaykh Abdullah Faisal — Educational Archive</p>
     <p id="siteTelegram" class="mb-4"></p>
     <p id="siteDisclaimer" class="text-slate-500 text-sm max-w-2xl mx-auto leading-relaxed mb-4"></p>
@@ -243,7 +243,7 @@
 
     function previewCard(href, thumb, title, sub, icon) {
       return `
-        <a href="${href}" class="mobile-preview-card card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900/50 group active:bg-slate-800/80">
+        <a href="${href}" class="mobile-preview-card card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900 group active:bg-slate-800">
           <div class="preview-thumb w-24 h-14 rounded-lg overflow-hidden thumb-box flex items-center justify-center flex-shrink-0 p-1">
             ${thumb ? `<img src="${thumbSrc(thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="lazy" onerror="this.style.display='none'">` : `<i class="fas ${icon} text-gold/40"></i>`}
           </div>
