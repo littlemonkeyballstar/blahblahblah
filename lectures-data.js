@@ -449,7 +449,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Al-Wala wal-Bara by shaykh Abdullah Faisal.mp3",
-    "thumb": null,
+    "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png",
     "id": 18
   },
   {
@@ -5616,6 +5616,10 @@ const LECTURES = [
 ];
 
 const FEATURED_LECTURES = [
+  {
+    "id": 18,
+    "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png"
+  },
   {
     "id": 28,
     "thumb": "thumb/ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.png"

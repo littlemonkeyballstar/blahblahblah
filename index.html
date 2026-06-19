@@ -365,9 +365,13 @@
     let featured = [];
 
     function getFeaturedLectures() {
+      const pinned = typeof HOME_FEATURED_PINNED !== 'undefined' ? HOME_FEATURED_PINNED : [];
       const pool = typeof HOME_FEATURED !== 'undefined' ? HOME_FEATURED : [];
-      const count = Math.min(8, pool.length);
-      return count ? randomPick(pool, count) : [];
+      const pinnedIds = new Set(pinned.map((item) => item.id));
+      const rest = pool.filter((item) => !pinnedIds.has(item.id));
+      const maxSlides = 8;
+      const slots = Math.max(0, Math.min(maxSlides - pinned.length, rest.length));
+      return [...pinned, ...randomPick(rest, slots)];
     }
 
     function buildSlide(lec) {

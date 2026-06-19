@@ -27,7 +27,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Al-Wala wal-Bara by shaykh Abdullah Faisal.mp3",
-    "thumb": null,
+    "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png",
     "id": 18
   },
   {

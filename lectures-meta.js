@@ -264,6 +264,10 @@ const LECTURE_CATEGORIES = [
 
 const FEATURED_LECTURES = [
   {
+    "id": 18,
+    "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png"
+  },
+  {
     "id": 28,
     "thumb": "thumb/ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.png"
   },

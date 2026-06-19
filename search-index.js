@@ -135,7 +135,8 @@ const SEARCH_INDEX = [
     "id": 18,
     "title": "Al-Wala wal-Bara by shaykh Abdullah Faisal",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=18"
+    "href": "audio.html?lecture=18",
+    "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png"
   },
   {
     "type": "audio",
