@@ -27,8 +27,6 @@
     .text-gold-gradient { background: linear-gradient(135deg, #e8c97a, #d4a853, #c49a3c); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .islamic-pattern { background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d4a853' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E"); }
     .thumb-box { background: linear-gradient(180deg, #0f172a 0%, #1a2332 100%); }
-    .media-thumb { height: 12rem; }
-    @media (min-width: 640px) { .media-thumb { height: 13rem; } }
   </style>
 </head>
 <body class="bg-slate-950 text-slate-200 islamic-pattern min-h-screen flex flex-col">
@@ -94,9 +92,9 @@
           thumb: c.thumb,
           title: c.title,
           stream: c.stream,
+          hideThumbImage: true,
         })).join('') || '<p class="text-slate-500 col-span-full text-center py-16">No clips found.</p>';
         bindMediaVideos(grid);
-        enhanceGridThumbs(grid, { priorityCount: slice.length });
       });
 
       const pag = document.getElementById('pagination');
