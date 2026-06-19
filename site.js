@@ -873,19 +873,10 @@ function mountMobileStyles() {
       .mobile-preview-card {
         padding: 0.875rem !important;
         gap: 0.875rem !important;
-        min-height: 4.25rem;
       }
       .mobile-preview-card .preview-thumb {
         width: 5.5rem !important;
         height: 3.25rem !important;
-      }
-      .mobile-preview-card .preview-title {
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-        white-space: normal;
-        line-height: 1.35;
       }
 
       #slideshow .slide-slide-content { padding: 1rem 1rem 1.25rem !important; }

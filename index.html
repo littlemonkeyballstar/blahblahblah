@@ -441,15 +441,15 @@
         ? `<img src="${thumbDisplaySrc(thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="${eager ? 'eager' : 'lazy'}" decoding="async"${eager ? ' fetchpriority="high"' : ''} onerror="${thumbImgFallbackHandler(thumb)}">`
         : `<i class="fas ${icon} text-gold/40"></i>`;
       return `
-        <a href="${href}" class="mobile-preview-card card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900/50 group active:bg-slate-800/80">
+        <a href="${href}" title="${escapeHtml(title)}" class="mobile-preview-card card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900/50 group active:bg-slate-800/80 min-h-[4.25rem]">
           <div class="preview-thumb w-24 h-14 rounded-lg overflow-hidden thumb-box flex items-center justify-center flex-shrink-0 p-1">
             ${thumbImg}
           </div>
-          <div class="min-w-0 flex-1">
-            <p class="preview-title text-sm font-medium text-slate-100 group-hover:text-gold transition">${escapeHtml(title)}</p>
-            <p class="text-xs text-slate-500 mt-0.5">${escapeHtml(sub)}</p>
+          <div class="min-w-0 flex-1 self-center">
+            <p class="preview-title text-sm font-medium text-slate-100 group-hover:text-gold transition line-clamp-2 leading-snug break-words">${escapeHtml(title)}</p>
+            <p class="text-xs text-slate-500 mt-0.5 line-clamp-1">${escapeHtml(sub)}</p>
           </div>
-          <i class="fas fa-play text-gold/40 group-hover:text-gold text-sm"></i>
+          <i class="fas fa-play text-gold/40 group-hover:text-gold text-sm flex-shrink-0" aria-hidden="true"></i>
         </a>`;
     }
 
