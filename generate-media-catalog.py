@@ -334,8 +334,43 @@ def find_thumb(filename: str, local_index: dict[str, str], archive_map: dict[str
 
 
 def find_clip_thumb(filename: str, local_index: dict[str, str], archive_map: dict[str, str]) -> str | None:
-    """Prefer Internet Archive thumbs; use local thumb/clips/ only as fallback."""
-    return _thumb_lookup(filename, archive_map) or _thumb_lookup(filename, local_index)
+    """Prefer local thumb/clips/ (same-origin, mobile-safe); IA URL as fallback."""
+    return _thumb_lookup(filename, local_index) or _thumb_lookup(filename, archive_map)
+
+
+def clips_archive_download_url(relative_path: str) -> str:
+    parts = relative_path.split("/")
+    return f"https://archive.org/download/the-creed-of-the-shia/" + "/".join(
+        urllib.parse.quote(part, safe="") for part in parts
+    )
+
+
+def sync_clip_thumbs_from_archive(meta: dict) -> int:
+    """Mirror IA clip poster frames into thumb/clips/ for reliable mobile playback."""
+    CLIP_THUMB_OUT.mkdir(parents=True, exist_ok=True)
+    synced = 0
+    for item in meta.get("files", []):
+        name = item.get("name", "")
+        if "the-creed-of-the-shia.thumbs/" not in name or not name.endswith(".jpg"):
+            continue
+        if "_000001." not in name:
+            continue
+        dest = CLIP_THUMB_OUT / name.split("/")[-1]
+        if dest.exists() and dest.stat().st_size > 500:
+            continue
+        url = clips_archive_download_url(name)
+        try:
+            req = urllib.request.Request(url, headers={"User-Agent": "shaykhabdullahfaisal-catalog/1.0"})
+            with urllib.request.urlopen(req, timeout=90) as resp:
+                data = resp.read()
+            if len(data) < 500:
+                print(f"Warning: clip thumb too small: {dest.name}")
+                continue
+            dest.write_bytes(data)
+            synced += 1
+        except Exception as exc:
+            print(f"Warning: could not download clip thumb {dest.name}: {exc}")
+    return synced
 
 
 def build_clip_thumb_index() -> dict[str, str]:
@@ -359,7 +394,7 @@ def build_clips_archive_thumb_map(meta: dict) -> dict[str, str]:
         if "the-creed-of-the-shia.thumbs/" in name and name.endswith(".jpg") and "_000001." in name:
             base = name.split("/")[-1]
             stem = re.sub(r"_000001\.jpg$", "", base)
-            archive_thumb_map[norm(stem)] = f"https://archive.org/download/the-creed-of-the-shia/{name}"
+            archive_thumb_map[norm(stem)] = clips_archive_download_url(name)
     return archive_thumb_map
 
 
@@ -548,6 +583,9 @@ def write_search_index(videos: list[dict], clips: list[dict]) -> None:
 
 def main():
     clips_meta = fetch_metadata(CLIPS_ARCHIVE)
+    synced = sync_clip_thumbs_from_archive(clips_meta)
+    if synced:
+        print(f"Synced {synced} clip thumbnails to thumb/clips/")
     videos = append_promoted_videos(build_videos(), clips_meta)
     clips = build_clips(clips_meta)
     write_js("videos-data.js", "VIDEOS", "VIDEOS_ARCHIVE_BASE", "https://archive.org/download/FaisalVideos/", videos)

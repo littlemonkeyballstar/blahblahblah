@@ -1603,7 +1603,18 @@ function thumbCardRel(src) {
 
 function thumbSrc(src) {
   if (!isValidThumb(src)) return '';
-  if (src.startsWith('http://') || src.startsWith('https://')) return src;
+  if (src.startsWith('http://') || src.startsWith('https://')) {
+    try {
+      const url = new URL(src);
+      url.pathname = url.pathname
+        .split('/')
+        .map((part) => (part ? encodeURIComponent(decodeURIComponent(part)) : ''))
+        .join('/');
+      return url.toString();
+    } catch {
+      return src;
+    }
+  }
   return src.split('/').map((part, i) => (i === 0 ? part : encodeURIComponent(part))).join('/');
 }
 
