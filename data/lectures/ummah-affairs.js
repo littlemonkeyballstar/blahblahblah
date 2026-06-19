@@ -108,7 +108,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Human Soul (10.06.11).mp3",
     "thumb": "thumb/extracted/b5590561372303.jpg",
-    "id": 87
+    "id": 86
   },
   {
     "title": "ISLAM AND THE WEST - Abdallah Al Faisal",
@@ -118,7 +118,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "ISLAM AND THE WEST - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 97
+    "id": 96
   },
   {
     "title": "ISLAM UNDER SIEGE - Shaykh Faisal",
@@ -128,7 +128,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "ISLAM UNDER SIEGE - Shaykh Faisal.mp3",
     "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg",
-    "id": 100
+    "id": 99
   },
   {
     "title": "JUDGEMENT DAY - Abdallah Al Faisal",
@@ -138,7 +138,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "JUDGEMENT DAY - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 117
+    "id": 116
   },
   {
     "title": "Judgment Day (07.27.11)",
@@ -148,7 +148,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Judgment Day (07.27.11).mp3",
     "thumb": null,
-    "id": 118
+    "id": 117
   },
   {
     "title": "LEADERSHIP IN ISLAM",
@@ -158,7 +158,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "LEADERSHIP IN ISLAM.mp3",
     "thumb": null,
-    "id": 128
+    "id": 127
   },
   {
     "title": "Mad Dogs of the Middle East [REVISITED] (10.20.11)",
@@ -168,7 +168,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Mad Dogs of the Middle East [REVISITED] (10.20.11).mp3",
     "thumb": null,
-    "id": 135
+    "id": 134
   },
   {
     "title": "Magic (06.24.11)",
@@ -178,7 +178,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Magic (06.24.11).mp3",
     "thumb": null,
-    "id": 137
+    "id": 136
   },
   {
     "title": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal",
@@ -188,7 +188,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.mp3",
     "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png",
-    "id": 156
+    "id": 155
   },
   {
     "title": "Natural Disasters - Why They Occur",
@@ -198,7 +198,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Natural Disasters - Why They Occur.mp3",
     "thumb": null,
-    "id": 158
+    "id": 157
   },
   {
     "title": "NATURAL DISASTERS, WHY DO THEY OCCUR - Abdallah Al Faisal",
@@ -208,7 +208,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "NATURAL DISASTERS, WHY DO THEY OCCUR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 159
+    "id": 158
   },
   {
     "title": "Sheikh Abdullah Faisal - Cancers in the Body of The Ummah",
@@ -218,7 +218,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Cancers in the Body of The Ummah.mp3",
     "thumb": null,
-    "id": 240
+    "id": 239
   },
   {
     "title": "Sheikh Abdullah Faisal - Human Rights",
@@ -228,7 +228,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Human Rights.mp3",
     "thumb": null,
-    "id": 242
+    "id": 241
   },
   {
     "title": "Sheikh Abdullah Faisal - Ideological Warfare",
@@ -238,7 +238,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Ideological Warfare.mp3",
     "thumb": null,
-    "id": 243
+    "id": 242
   },
   {
     "title": "Sheikh Abdullah Faisal - Love and Hate for Allah's Sake",
@@ -248,7 +248,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Love and Hate for Allah's Sake.mp3",
     "thumb": null,
-    "id": 244
+    "id": 243
   },
   {
     "title": "Sheikh Abdullah Faisal - Muslim Character",
@@ -258,7 +258,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Muslim Character.mp3",
     "thumb": null,
-    "id": 245
+    "id": 244
   },
   {
     "title": "Sheikh Abdullah Faisal - Natural Instincts",
@@ -268,7 +268,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Natural Instincts.mp3",
     "thumb": null,
-    "id": 246
+    "id": 245
   },
   {
     "title": "Sheikh Abdullah Faisal - Signs Before The Day of Judgement",
@@ -278,7 +278,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Signs Before The Day of Judgement.mp3",
     "thumb": null,
-    "id": 247
+    "id": 246
   },
   {
     "title": "Sheikh Abdullah Faisal - Tawba",
@@ -288,7 +288,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Tawba.mp3",
     "thumb": null,
-    "id": 248
+    "id": 247
   },
   {
     "title": "Sheikh Abdullah Faisal - The Jinn",
@@ -298,7 +298,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - The Jinn.mp3",
     "thumb": null,
-    "id": 252
+    "id": 251
   },
   {
     "title": "Sheikh Abdullah Faisal - Them versus Us",
@@ -308,7 +308,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Them versus Us.mp3",
     "thumb": null,
-    "id": 254
+    "id": 253
   },
   {
     "title": "Sheikh Abdullah Faisal - Unity The Way Forward",
@@ -318,7 +318,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Unity The Way Forward.mp3",
     "thumb": null,
-    "id": 255
+    "id": 254
   },
   {
     "title": "Sheikh Abdullah Faisal - Unity The Way Forward copy",
@@ -328,7 +328,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Unity The Way Forward copy.mp3",
     "thumb": null,
-    "id": 256
+    "id": 255
   },
   {
     "title": "SIGNS BEFORE JUDGEMENT DAY - Shaykh Faisal",
@@ -338,6 +338,6 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "SIGNS BEFORE JUDGEMENT DAY - Shaykh Faisal.mp3",
     "thumb": null,
-    "id": 260
+    "id": 259
   }
 ]);

@@ -85,7 +85,7 @@ const HOME_FEATURED = [
     "thumb": "thumb/EXCUSE OF IGNORANCE - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 147,
+    "id": 146,
     "title": "MILLATU IBRAHIM - Shaykh Faisal",
     "categoryLabel": "Prophets & Seerah",
     "thumb": "thumb/f9c271ac07d98b.png"
@@ -97,289 +97,289 @@ const HOME_FEATURED = [
     "thumb": "thumb/FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 76,
+    "id": 75,
     "title": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal",
     "categoryLabel": "Aqeedah",
     "thumb": "thumb/FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 78,
+    "id": 77,
     "title": "GAY LESBIAN LGBT - Shaykh Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal.png"
   },
   {
-    "id": 88,
+    "id": 87,
     "title": "IFK  SLANDER OF AYSHA - Shaykh Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/IFK  SLANDER OF AYSHA - Shaykh Faisal.jpg"
   },
   {
-    "id": 90,
+    "id": 89,
     "title": "IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal",
     "categoryLabel": "Aqeedah",
     "thumb": "thumb/IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.png"
   },
   {
-    "id": 91,
+    "id": 90,
     "title": "IMPORTANCE OF HIJRAH - Abdallah Al Faisal",
     "categoryLabel": "Jihad",
     "thumb": "thumb/IMPORTANCE OF HIJRAH - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 92,
+    "id": 91,
     "title": "INSULTING THE PROPHET ﷺ  - Abdallah Al Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/INSULTING THE PROPHET ABDALLAH AL FAISAL.jpg"
   },
   {
-    "id": 100,
+    "id": 99,
     "title": "ISLAM UNDER SIEGE - Shaykh Faisal",
     "categoryLabel": "Ummah & Contemporary Issues",
     "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg"
   },
   {
-    "id": 104,
+    "id": 103,
     "title": "JIHAD AIMS & OBJECTIVES - Shaykh Faisal",
     "categoryLabel": "Jihad",
     "thumb": "thumb/JIHAD AIMS & OBJECTIVES - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 119,
+    "id": 118,
     "title": "KASHF USH SHUBUHAAT - Shaykh Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg"
   },
   {
-    "id": 120,
+    "id": 119,
     "title": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.png"
   },
   {
-    "id": 121,
+    "id": 120,
     "title": "KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal",
     "categoryLabel": "Khilafah",
     "thumb": "thumb/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.jpg"
   },
   {
-    "id": 122,
+    "id": 121,
     "title": "KHILAFAH SURVIVE & REVIVE - Shaykh Faisal",
     "categoryLabel": "Khilafah",
     "thumb": "thumb/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.jpg"
   },
   {
-    "id": 125,
+    "id": 124,
     "title": "KUFR DOONA KUFR - Abdallah Al Faisal",
     "categoryLabel": "Aqeedah",
     "thumb": "thumb/KUFR DOONA KUFR - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 136,
+    "id": 135,
     "title": "MADKHALIS - Shaykh Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/MADKHALIS - Shaykh Faisal.png"
   },
   {
-    "id": 138,
+    "id": 137,
     "title": "MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal",
     "categoryLabel": "Khilafah",
     "thumb": "thumb/MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.jpg"
   },
   {
-    "id": 142,
+    "id": 141,
     "title": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 142,
+    "id": 141,
     "title": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.png"
   },
   {
-    "id": 149,
+    "id": 148,
     "title": "MURJIA - Shaykh Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/MURJIA - Shaykh Faisal.jpg"
   },
   {
-    "id": 152,
+    "id": 151,
     "title": "MUSA AND KHIDR - Abdallah Al Faisal",
     "categoryLabel": "Prophets & Seerah",
     "thumb": "thumb/MUSA AND KHIDR - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 153,
+    "id": 152,
     "title": "MUSA AND QAROON - Abdallah Al Faisal",
     "categoryLabel": "Prophets & Seerah",
     "thumb": "thumb/MUSA AND QAROON - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 155,
+    "id": 154,
     "title": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal",
     "categoryLabel": "Marriage & Family",
     "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png"
   },
   {
-    "id": 156,
+    "id": 155,
     "title": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal",
     "categoryLabel": "Ummah & Contemporary Issues",
     "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png"
   },
   {
-    "id": 157,
+    "id": 156,
     "title": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 161,
+    "id": 160,
     "title": "NAWAQID AL ISLAM - Abdallah Al Faisal",
     "categoryLabel": "Aqeedah",
     "thumb": "thumb/NAWAQID AL ISLAM - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 162,
+    "id": 161,
     "title": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal",
     "categoryLabel": "Aqeedah",
     "thumb": "thumb/NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.png"
   },
   {
-    "id": 163,
+    "id": 162,
     "title": "NO PEACE WITH THE JEWS - Abdallah Al Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/NO PEACE WITH JEWS.jpg"
   },
   {
-    "id": 164,
+    "id": 163,
     "title": "OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal",
     "categoryLabel": "Khilafah",
     "thumb": "thumb/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 167,
+    "id": 166,
     "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal",
     "categoryLabel": "Marriage & Family",
     "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg"
   },
   {
-    "id": 168,
+    "id": 167,
     "title": "PEOPLE OF THE CAVE - Abdallah Al Faisal",
     "categoryLabel": "Prophets & Seerah",
     "thumb": "thumb/PEOPLE OF THE CAVE - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 175,
+    "id": 174,
     "title": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal",
     "categoryLabel": "Aqeedah",
     "thumb": "thumb/PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 195,
+    "id": 194,
     "title": "REALITY OF THE JEWS - Abdallah Al Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/REALITY OF THE JEWS - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 201,
+    "id": 200,
     "title": "REQUIREMENTS OF JIHAD - Abdallah Al Faisal",
     "categoryLabel": "Jihad",
     "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 201,
+    "id": 200,
     "title": "REQUIREMENTS OF JIHAD - Abdallah Al Faisal",
     "categoryLabel": "Jihad",
     "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.png"
   },
   {
-    "id": 214,
+    "id": 213,
     "title": "SALAFI JIHADI - Shaykh Faisal",
     "categoryLabel": "Jihad",
     "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png"
   },
   {
-    "id": 218,
+    "id": 217,
     "title": "SAUDI SALAFI - Shaykh Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal.jpg"
   },
   {
-    "id": 235,
+    "id": 234,
     "title": "SECULARISM - Shaykh Abdallah Al Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/SECULARISM - Shaykh Abdallah Al Faisal.png"
   },
   {
-    "id": 236,
+    "id": 235,
     "title": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal",
     "categoryLabel": "Aqeedah",
     "thumb": "thumb/SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.png"
   },
   {
-    "id": 238,
+    "id": 237,
     "title": "SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png"
   },
   {
-    "id": 257,
+    "id": 256,
     "title": "SHIA GREATEST ENEMY WITHIN - Shaykh Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.jpg"
   },
   {
-    "id": 258,
+    "id": 257,
     "title": "SHIA KNOW YOUR ENEMY - Shaykh Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/SHIA KNOW YOUR ENEMY - Shaykh Faisal.jpg"
   },
   {
-    "id": 261,
+    "id": 260,
     "title": "SIGNS OF HYPOCRITES - Shaykh Faisal",
     "categoryLabel": "Aqeedah",
     "thumb": "thumb/SIGNS OF HYPOCRITES - Shaykh Faisal.png"
   },
   {
-    "id": 501,
+    "id": 500,
     "title": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 506,
+    "id": 505,
     "title": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal",
     "categoryLabel": "Refutations",
     "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg"
   },
   {
-    "id": 508,
+    "id": 507,
     "title": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal",
     "categoryLabel": "General Lectures",
     "thumb": "thumb/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.png"
   },
   {
-    "id": 510,
+    "id": 509,
     "title": "VIRTUES OF MAKKAH - Shaykh Faisal",
     "categoryLabel": "Fiqh & Worship",
     "thumb": "thumb/VIRTUES OF MAKKAH - Shaykh Faisal.jpg"
   },
   {
-    "id": 518,
+    "id": 517,
     "title": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal",
     "categoryLabel": "Aqeedah",
     "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png"
   },
   {
-    "id": 530,
+    "id": 529,
     "title": "WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal",
     "categoryLabel": "Wicked Scholars",
     "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg"
   },
   {
-    "id": 532,
+    "id": 531,
     "title": "WIVES & CHILDREN - Shaykh Faisal",
     "categoryLabel": "Marriage & Family",
     "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png"

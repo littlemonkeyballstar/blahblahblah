@@ -47,6 +47,8 @@ EXCLUDED_VIDEOS = {
     "17.Sheikh Abdullah Faisal - Democracy   The Greatest Shirk.mp4",
     "18.Sheikh Abdullah Faisal - Cancers in the Body of The Ummah.mp4",
     "19.Sheikh Abdullah Faisal   Al Isra Wal Mira'aj.mp4",
+    # Duplicate of "47 Signs Of A Wicked Scholar - Sheikh Abdullah Faisal.mp4"
+    "FOURTY SEVEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal.mp4",
 }
 
 

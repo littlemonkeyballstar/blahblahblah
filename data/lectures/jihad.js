@@ -18,7 +18,7 @@ registerLectureChunk("Jihad", [
     "subcategoryLabel": null,
     "archive": "IMPORTANCE OF HIJRAH - Abdallah Al Faisal.mp3",
     "thumb": "thumb/IMPORTANCE OF HIJRAH - Abdallah Al Faisal.jpg",
-    "id": 91
+    "id": 90
   },
   {
     "title": "JIHAD AIMS & OBJECTIVES - Shaykh Faisal",
@@ -28,7 +28,7 @@ registerLectureChunk("Jihad", [
     "subcategoryLabel": null,
     "archive": "Jihad/JIHAD AIMS & OBJECTIVES - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/5943e51a1e4e99.jpg",
-    "id": 104
+    "id": 103
   },
   {
     "title": "REQUIREMENTS OF JIHAD - Abdallah Al Faisal",
@@ -38,7 +38,7 @@ registerLectureChunk("Jihad", [
     "subcategoryLabel": null,
     "archive": "Jihad/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.mp3",
     "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.png",
-    "id": 201
+    "id": 200
   },
   {
     "title": "SALAFI JIHADI - Shaykh Faisal",
@@ -48,7 +48,7 @@ registerLectureChunk("Jihad", [
     "subcategoryLabel": null,
     "archive": "Jihad/SALAFI JIHADI - Shaykh Faisal.mp3",
     "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png",
-    "id": 214
+    "id": 213
   },
   {
     "title": "The importance of Hijrah",
@@ -58,6 +58,6 @@ registerLectureChunk("Jihad", [
     "subcategoryLabel": null,
     "archive": "The importance of Hijrah.mp3",
     "thumb": null,
-    "id": 460
+    "id": 459
   }
 ]);

@@ -58,6 +58,8 @@ EXCLUDED_LECTURES = {
     # Duplicate split of The 4 Branches Of Tauheed (single file kept)
     "the 4 branches of tauheed part 1",
     "the 4 branches of tauheed part 2",
+    # Duplicate of "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-"
+    "fourty seven signs of the wicked scholar abdullah al faisal",
 }
 
 def is_blocked_thumb(path: Path) -> bool:

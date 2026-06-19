@@ -18,7 +18,7 @@ registerLectureChunk("Khilafah", [
     "subcategoryLabel": null,
     "archive": "Khilafah/Future of the Caliphate.mp3",
     "thumb": null,
-    "id": 77
+    "id": 76
   },
   {
     "title": "Is the caliphate valid",
@@ -28,7 +28,7 @@ registerLectureChunk("Khilafah", [
     "subcategoryLabel": null,
     "archive": "Khilafah/Is the caliphate valid.mp3",
     "thumb": null,
-    "id": 95
+    "id": 94
   },
   {
     "title": "Is the dawla khawarij?",
@@ -38,7 +38,7 @@ registerLectureChunk("Khilafah", [
     "subcategoryLabel": null,
     "archive": "Khilafah/is-the-dawla-khawarij.mp3",
     "thumb": null,
-    "id": 96
+    "id": 95
   },
   {
     "title": "KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal",
@@ -48,7 +48,7 @@ registerLectureChunk("Khilafah", [
     "subcategoryLabel": null,
     "archive": "Khilafah/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.mp3",
     "thumb": "thumb/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.jpg",
-    "id": 121
+    "id": 120
   },
   {
     "title": "KHILAFAH SURVIVE & REVIVE - Shaykh Faisal",
@@ -58,7 +58,7 @@ registerLectureChunk("Khilafah", [
     "subcategoryLabel": null,
     "archive": "Khilafah/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.mp3",
     "thumb": "thumb/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.jpg",
-    "id": 122
+    "id": 121
   },
   {
     "title": "MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal",
@@ -68,7 +68,7 @@ registerLectureChunk("Khilafah", [
     "subcategoryLabel": null,
     "archive": "MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.mp3",
     "thumb": "thumb/MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.jpg",
-    "id": 138
+    "id": 137
   },
   {
     "title": "Message from the Calipha (HA) to the Ummah",
@@ -78,7 +78,7 @@ registerLectureChunk("Khilafah", [
     "subcategoryLabel": null,
     "archive": "Message from the Calipha (HA) to the Ummah.mp3",
     "thumb": null,
-    "id": 145
+    "id": 144
   },
   {
     "title": "OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal",
@@ -88,7 +88,7 @@ registerLectureChunk("Khilafah", [
     "subcategoryLabel": null,
     "archive": "Khilafah/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.mp3",
     "thumb": "thumb/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.jpg",
-    "id": 164
+    "id": 163
   },
   {
     "title": "The Enemies of the Caliphate",
@@ -98,7 +98,7 @@ registerLectureChunk("Khilafah", [
     "subcategoryLabel": null,
     "archive": "Khilafah/The Enemies of the Caliphate.mp3",
     "thumb": null,
-    "id": 446
+    "id": 445
   },
   {
     "title": "THE IMPORTANCE OF SHARI`AH",
@@ -108,6 +108,6 @@ registerLectureChunk("Khilafah", [
     "subcategoryLabel": null,
     "archive": "Khilafah/THE IMPORTANCE OF SHARI`AH.mp3",
     "thumb": null,
-    "id": 462
+    "id": 461
   }
 ]);

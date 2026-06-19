@@ -38,7 +38,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategoryLabel": null,
     "archive": "Get Your Priorities Right (08.23.11).mp3",
     "thumb": null,
-    "id": 79
+    "id": 78
   },
   {
     "title": "How to be Sincere to Allah (08.04.11 to 08.07.11)",
@@ -48,7 +48,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to Allah (08.04.11 to 08.07.11).mp3",
     "thumb": "thumb/extracted/4cbffbbbd24ca8.jpg",
-    "id": 81
+    "id": 80
   },
   {
     "title": "How to be Sincere to the Holy Qur'an (08.09.11)",
@@ -58,7 +58,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to the Holy Qur'an (08.09.11).mp3",
     "thumb": null,
-    "id": 82
+    "id": 81
   },
   {
     "title": "How to be Sincere to the Leaders (12.06.11)",
@@ -68,7 +68,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to the Leaders (12.06.11).mp3",
     "thumb": "thumb/extracted/fd6728401a4f1a.jpg",
-    "id": 83
+    "id": 82
   },
   {
     "title": "How to be Sincere to the Rasool (SAW) (08.08.11)",
@@ -78,7 +78,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to the Rasool (SAW) (08.08.11).mp3",
     "thumb": null,
-    "id": 84
+    "id": 83
   },
   {
     "title": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11)",
@@ -88,7 +88,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11).mp3",
     "thumb": null,
-    "id": 85
+    "id": 84
   },
   {
     "title": "Islamic Etiquettes (11.26.11)",
@@ -98,7 +98,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategoryLabel": null,
     "archive": "Islamic Etiquettes (11.26.11).mp3",
     "thumb": "thumb/extracted/74a3ae70b699b0.jpg",
-    "id": 102
+    "id": 101
   },
   {
     "title": "Manhood in Islam",
@@ -108,7 +108,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategoryLabel": null,
     "archive": "Manhood in Islam.mp3",
     "thumb": null,
-    "id": 139
+    "id": 138
   },
   {
     "title": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12",
@@ -118,7 +118,7 @@ registerLectureChunk("Character_Dawah", [
     "subcategoryLabel": null,
     "archive": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12.mp3",
     "thumb": "thumb/extracted/78f1df9c3dffb9.jpg",
-    "id": 143
+    "id": 142
   },
   {
     "title": "The Etiquettes of Asking Questions",
@@ -128,6 +128,6 @@ registerLectureChunk("Character_Dawah", [
     "subcategoryLabel": null,
     "archive": "The Etiquettes of Asking Questions.mp3",
     "thumb": null,
-    "id": 447
+    "id": 446
   }
 ]);

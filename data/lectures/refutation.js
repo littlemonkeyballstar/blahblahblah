@@ -58,7 +58,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Deviant Groups",
     "archive": "GAY LESBIAN LGBT - Shaykh Faisal.mp3",
     "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal.png",
-    "id": 78
+    "id": 77
   },
   {
     "title": "IFK  SLANDER OF AYSHA - Shaykh Faisal",
@@ -68,7 +68,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "IFK  SLANDER OF AYSHA - Shaykh Faisal.mp3",
     "thumb": "thumb/IFK  SLANDER OF AYSHA - Shaykh Faisal.jpg",
-    "id": 88
+    "id": 87
   },
   {
     "title": "INSULTING THE PROPHET ﷺ  - Abdallah Al Faisal",
@@ -78,7 +78,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "INSULTING THE PROPHET ﷺ  - Abdallah Al Faisal.mp3",
     "thumb": "thumb/INSULTING THE PROPHET ABDALLAH AL FAISAL.jpg",
-    "id": 92
+    "id": 91
   },
   {
     "title": "KASHF USH SHUBUHAAT - Shaykh Faisal",
@@ -88,7 +88,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Deviant Groups",
     "archive": "KASHF USH SHUBUHAAT - Shaykh Faisal.mp3",
     "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg",
-    "id": 119
+    "id": 118
   },
   {
     "title": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal",
@@ -98,7 +98,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Khawarij",
     "archive": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.mp3",
     "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.png",
-    "id": 120
+    "id": 119
   },
   {
     "title": "MADKHALIS - Shaykh Faisal",
@@ -108,7 +108,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Madkhalis",
     "archive": "MADKHALIS - Shaykh Faisal.mp3",
     "thumb": "thumb/MADKHALIS - Shaykh Faisal.png",
-    "id": 136
+    "id": 135
   },
   {
     "title": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal",
@@ -118,7 +118,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Democracy & Secularism",
     "archive": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.mp3",
     "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.png",
-    "id": 142
+    "id": 141
   },
   {
     "title": "MURJIA - Shaykh Faisal",
@@ -128,7 +128,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Deviant Groups",
     "archive": "MURJIA - Shaykh Faisal.mp3",
     "thumb": "thumb/MURJIA - Shaykh Faisal.jpg",
-    "id": 149
+    "id": 148
   },
   {
     "title": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal",
@@ -138,7 +138,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Democracy & Secularism",
     "archive": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.mp3",
     "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg",
-    "id": 157
+    "id": 156
   },
   {
     "title": "NO PEACE WITH THE JEWS - Abdallah Al Faisal",
@@ -148,7 +148,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Jews",
     "archive": "NO PEACE WITH THE JEWS - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 163
+    "id": 162
   },
   {
     "title": "Radical Islamic Terrorism",
@@ -158,7 +158,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "Radical Islamic Terrorism.mp3",
     "thumb": null,
-    "id": 178
+    "id": 177
   },
   {
     "title": "Radical islamic terrorism2",
@@ -168,7 +168,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "Radical islamic terrorism2.mp3",
     "thumb": null,
-    "id": 179
+    "id": 178
   },
   {
     "title": "REALITY OF THE JEWS - Abdallah Al Faisal",
@@ -178,7 +178,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Jews",
     "archive": "REALITY OF THE JEWS - Abdallah Al Faisal.mp3",
     "thumb": "thumb/REALITY OF THE JEWS - Abdallah Al Faisal.jpg",
-    "id": 195
+    "id": 194
   },
   {
     "title": "Refuting Geert Wilders (07.07.11)",
@@ -188,7 +188,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "Refutation/Refuting Geert Wilders (07.07.11).mp3",
     "thumb": null,
-    "id": 196
+    "id": 195
   },
   {
     "title": "Refuting The Lie Concerning Kufr Doona Kufr",
@@ -198,7 +198,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "Refutation/Refuting The Lie Concerning Kufr Doona Kufr.mp3",
     "thumb": null,
-    "id": 197
+    "id": 196
   },
   {
     "title": "Refuting The Lie Concerning The Excuse of Ignorance",
@@ -208,7 +208,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "Refutation/Refuting The Lie Concerning The Excuse of Ignorance.mp3",
     "thumb": null,
-    "id": 198
+    "id": 197
   },
   {
     "title": "REJECTING THE TAGHUT - Abdallah Al Faisal",
@@ -218,7 +218,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "REJECTING THE TAGHUT - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 199
+    "id": 198
   },
   {
     "title": "Removing the Doubts",
@@ -228,7 +228,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Deviant Groups",
     "archive": "Removing the Doubts.mp3",
     "thumb": null,
-    "id": 200
+    "id": 199
   },
   {
     "title": "SAUDI SALAFI - Shaykh Faisal",
@@ -238,7 +238,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Madkhalis",
     "archive": "SAUDI SALAFI - Shaykh Faisal.mp3",
     "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal.jpg",
-    "id": 218
+    "id": 217
   },
   {
     "title": "SECULARISM - Shaykh Abdallah Al Faisal",
@@ -248,7 +248,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Democracy & Secularism",
     "archive": "SECULARISM - Shaykh Abdallah Al Faisal.mp3",
     "thumb": "thumb/SECULARISM - Shaykh Abdallah Al Faisal.png",
-    "id": 235
+    "id": 234
   },
   {
     "title": "SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal",
@@ -258,7 +258,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Democracy & Secularism",
     "archive": "SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.mp3",
     "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png",
-    "id": 238
+    "id": 237
   },
   {
     "title": "SHIA GREATEST ENEMY WITHIN - Shaykh Faisal",
@@ -268,7 +268,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Shia",
     "archive": "Shia/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.mp3",
     "thumb": "thumb/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.jpg",
-    "id": 257
+    "id": 256
   },
   {
     "title": "SHIA KNOW YOUR ENEMY - Shaykh Faisal",
@@ -278,7 +278,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Shia",
     "archive": "Shia/SHIA KNOW YOUR ENEMY - Shaykh Faisal.mp3",
     "thumb": "thumb/SHIA KNOW YOUR ENEMY - Shaykh Faisal.jpg",
-    "id": 258
+    "id": 257
   },
   {
     "title": "Slander of Aisha (RA) (07.12.11)",
@@ -288,7 +288,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "Slander of Aisha (RA) (07.12.11).mp3",
     "thumb": null,
-    "id": 262
+    "id": 261
   },
   {
     "title": "Slander of Aisha (RA) [REVISITED] (08.14.11)",
@@ -298,7 +298,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "Slander of Aisha (RA) [REVISITED] (08.14.11).mp3",
     "thumb": null,
-    "id": 263
+    "id": 262
   },
   {
     "title": "THE DOMAIN OF APOSTASY",
@@ -308,7 +308,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "THE DOMAIN OF APOSTASY.mp3",
     "thumb": null,
-    "id": 445
+    "id": 444
   },
   {
     "title": "THE REALITY OF THE JEWS",
@@ -318,7 +318,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Jews",
     "archive": "THE REALITY OF THE JEWS.mp3",
     "thumb": null,
-    "id": 467
+    "id": 466
   },
   {
     "title": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal",
@@ -328,7 +328,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.mp3",
     "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg",
-    "id": 501
+    "id": 500
   },
   {
     "title": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal",
@@ -338,7 +338,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.mp3",
     "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg",
-    "id": 506
+    "id": 505
   },
   {
     "title": "Towards Watering Down The Holy Quran",
@@ -348,7 +348,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "Towards Watering Down The Holy Quran.mp3",
     "thumb": null,
-    "id": 507
+    "id": 506
   },
   {
     "title": "White Supremacy - A Cancer In The Body of Humanity",
@@ -358,7 +358,7 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "General Refutations",
     "archive": "White Supremacy - A Cancer In The Body of Humanity.mp3",
     "thumb": null,
-    "id": 520
+    "id": 519
   },
   {
     "title": "Why we hate the shia",
@@ -368,6 +368,6 @@ registerLectureChunk("Refutation", [
     "subcategoryLabel": "Shia",
     "archive": "Shia/Why we hate the shia.mp3",
     "thumb": null,
-    "id": 528
+    "id": 527
   }
 ]);

@@ -38,7 +38,7 @@ registerLectureChunk("Diseases_of_the_Heart", [
     "subcategoryLabel": null,
     "archive": "Diseases_of_the_Heart/Radio Show - Diseases of the Heart (10.29.11).mp3",
     "thumb": "thumb/extracted/f5c36659976c9e.jpg",
-    "id": 182
+    "id": 181
   },
   {
     "title": "Reality of Sincerity (12.07.11)",
@@ -48,7 +48,7 @@ registerLectureChunk("Diseases_of_the_Heart", [
     "subcategoryLabel": null,
     "archive": "Reality of Sincerity (12.07.11).mp3",
     "thumb": "thumb/extracted/1e7db6b17401c6.jpg",
-    "id": 194
+    "id": 193
   },
   {
     "title": "Road to Sincerity (07.17.11)",
@@ -58,6 +58,6 @@ registerLectureChunk("Diseases_of_the_Heart", [
     "subcategoryLabel": null,
     "archive": "Road to Sincerity (07.17.11).mp3",
     "thumb": null,
-    "id": 203
+    "id": 202
   }
 ]);

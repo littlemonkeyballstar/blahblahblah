@@ -118,7 +118,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.mp3",
     "thumb": "thumb/FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.jpg",
-    "id": 76
+    "id": 75
   },
   {
     "title": "Hearts of the Kafirs Are Alike (07.11.11)",
@@ -128,7 +128,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Hearts of the Kafirs Are Alike (07.11.11).mp3",
     "thumb": null,
-    "id": 80
+    "id": 79
   },
   {
     "title": "IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal",
@@ -138,7 +138,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.mp3",
     "thumb": "thumb/IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.png",
-    "id": 90
+    "id": 89
   },
   {
     "title": "Invalidation Of Your Actions – Part 1",
@@ -148,7 +148,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Invalidation Of Your Actions – Part 1.mp3",
     "thumb": null,
-    "id": 93
+    "id": 92
   },
   {
     "title": "Invalidation Of Your Actions – Part 2",
@@ -158,7 +158,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Invalidation Of Your Actions – Part 2.mp3",
     "thumb": null,
-    "id": 94
+    "id": 93
   },
   {
     "title": "KUFR DOONA KUFR - Abdallah Al Faisal",
@@ -168,7 +168,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "KUFR DOONA KUFR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/KUFR DOONA KUFR - Abdallah Al Faisal.jpg",
-    "id": 125
+    "id": 124
   },
   {
     "title": "Let's Call A Spade A Spade - Part 2",
@@ -178,7 +178,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Let's Call A Spade A Spade - Part 2.mp3",
     "thumb": null,
-    "id": 130
+    "id": 129
   },
   {
     "title": "Let's Call A Spade A Spade - Part 3",
@@ -188,7 +188,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Let's Call A Spade A Spade - Part 3.mp3",
     "thumb": null,
-    "id": 131
+    "id": 130
   },
   {
     "title": "Let's Call A Spade A Spade - Part 4",
@@ -198,7 +198,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Let's Call A Spade A Spade - Part 4.mp3",
     "thumb": null,
-    "id": 132
+    "id": 131
   },
   {
     "title": "Let's Call A Spade A Spade Part 1",
@@ -208,7 +208,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Let's Call A Spade A Spade Part 1.mp3",
     "thumb": null,
-    "id": 133
+    "id": 132
   },
   {
     "title": "Nawaaqid al islam by Muhd ibn Abdul Wahhab",
@@ -218,7 +218,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Nawaaqid al islam by Muhd ibn Abdul Wahhab.mp3",
     "thumb": null,
-    "id": 160
+    "id": 159
   },
   {
     "title": "NAWAQID AL ISLAM - Abdallah Al Faisal",
@@ -228,7 +228,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "NAWAQID AL ISLAM - Abdallah Al Faisal.mp3",
     "thumb": "thumb/NAWAQID AL ISLAM - Abdallah Al Faisal.jpg",
-    "id": 161
+    "id": 160
   },
   {
     "title": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal",
@@ -238,7 +238,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.mp3",
     "thumb": "thumb/NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.png",
-    "id": 162
+    "id": 161
   },
   {
     "title": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal",
@@ -248,7 +248,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.mp3",
     "thumb": "thumb/PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.jpg",
-    "id": 175
+    "id": 174
   },
   {
     "title": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal",
@@ -258,7 +258,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.mp3",
     "thumb": "thumb/SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.png",
-    "id": 236
+    "id": 235
   },
   {
     "title": "Sheikh Abdullah Faisal - Democracy   The Greatest Shirk",
@@ -268,7 +268,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Democracy   The Greatest Shirk.mp3",
     "thumb": null,
-    "id": 241
+    "id": 240
   },
   {
     "title": "Shirk In Perspective (07.10.11)",
@@ -278,7 +278,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Shirk In Perspective (07.10.11).mp3",
     "thumb": null,
-    "id": 259
+    "id": 258
   },
   {
     "title": "SIGNS OF HYPOCRITES - Shaykh Faisal",
@@ -288,7 +288,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "SIGNS OF HYPOCRITES - Shaykh Faisal.mp3",
     "thumb": "thumb/SIGNS OF HYPOCRITES - Shaykh Faisal.png",
-    "id": 261
+    "id": 260
   },
   {
     "title": "The 13 Shades Of Kufr",
@@ -298,7 +298,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "The 13 Shades Of Kufr.mp3",
     "thumb": null,
-    "id": 418
+    "id": 417
   },
   {
     "title": "The 15 Shades of Kufr",
@@ -308,7 +308,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "The 15 Shades of Kufr.mp3",
     "thumb": null,
-    "id": 419
+    "id": 418
   },
   {
     "title": "The 17 Shades of Shirk (dars)",
@@ -318,7 +318,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "The 17 Shades of Shirk (dars).mp3",
     "thumb": null,
-    "id": 420
+    "id": 419
   },
   {
     "title": "The 57 Signs Of A Munafiq - Part 1",
@@ -328,7 +328,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "The 57 Signs Of A Munafiq - Part 1.mp3",
     "thumb": null,
-    "id": 435
+    "id": 434
   },
   {
     "title": "THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal",
@@ -338,7 +338,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 505
+    "id": 504
   },
   {
     "title": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR - Abdallah Al Faisal",
@@ -348,7 +348,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/extracted/40f8d0fb22e4b9.jpg",
-    "id": 509
+    "id": 508
   },
   {
     "title": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal",
@@ -358,7 +358,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png",
-    "id": 518
+    "id": 517
   },
   {
     "title": "Where Is Allah SWT (07.08.11)",
@@ -368,7 +368,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Where Is Allah SWT (07.08.11).mp3",
     "thumb": null,
-    "id": 519
+    "id": 518
   },
   {
     "title": "Why is takfir important",
@@ -378,6 +378,6 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "conf_imped_takfir.mp3",
     "thumb": null,
-    "id": 527
+    "id": 526
   }
 ]);

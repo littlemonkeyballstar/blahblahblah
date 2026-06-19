@@ -28,7 +28,7 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/09.Sheikh Abdullah Faisal - The Devil's Deception of The Murji.mp3",
     "thumb": null,
-    "id": 249
+    "id": 248
   },
   {
     "title": "Sheikh Abdullah Faisal - The Devil's Deception of The Qadiani",
@@ -38,7 +38,7 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/08.Sheikh Abdullah Faisal - The Devil's Deception of The Qadiani.mp3",
     "thumb": null,
-    "id": 250
+    "id": 249
   },
   {
     "title": "Sheikh Abdullah Faisal - The Devil's Deception of The Shia",
@@ -48,7 +48,7 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/06.Sheikh Abdullah Faisal - The Devil's Deception of The Shia.mp3",
     "thumb": null,
-    "id": 251
+    "id": 250
   },
   {
     "title": "The Devil's Deception of the Aathir",
@@ -58,7 +58,7 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/The Devil's Deception of the Aathir.mp3",
     "thumb": null,
-    "id": 443
+    "id": 442
   },
   {
     "title": "The Devil's Deception of the Murjia",
@@ -68,6 +68,6 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/The Devil's Deception of the Murjia.mp3",
     "thumb": null,
-    "id": 444
+    "id": 443
   }
 ]);
