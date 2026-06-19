@@ -639,6 +639,90 @@ function bindPdfPreviewControls(root = document) {
   });
 }
 
+function pdfPartSubtitle(title, series) {
+  if (!series) return title;
+  let sub = title;
+  const seriesLower = series.toLowerCase();
+  if (sub.toLowerCase().startsWith(seriesLower)) {
+    sub = sub.slice(series.length).replace(/^[\s–—-]+/, '').trim();
+  }
+  sub = sub.replace(/^part\s*\d+\s*[\s–—-]*/i, '').trim();
+  return sub || title;
+}
+
+function pdfPartCard(data) {
+  const {
+    id, title, sizeLabel, downloadUrl, embedUrl, detailsUrl, thumb, series, part,
+  } = data;
+  const partLabel = part ? `Part ${part}` : 'Part';
+  const subtitle = pdfPartSubtitle(title, series);
+  const hasThumb = isValidThumb(thumb);
+
+  const previewArea = embedUrl
+    ? `<button type="button" class="pdf-preview-open group relative w-full aspect-[3/4] bg-slate-950 overflow-hidden text-left"
+        data-title="${escapeHtml(title)}" data-embed="${escapeHtml(embedUrl)}" data-download="${escapeHtml(downloadUrl || '')}" data-details="${escapeHtml(detailsUrl || '')}" aria-label="Preview ${escapeHtml(partLabel)}">
+        <div class="absolute inset-0 bg-gradient-to-b from-slate-900 to-slate-950"></div>
+        ${hasThumb ? `<img src="${thumbSrc(thumb)}" alt="" class="absolute inset-0 w-full h-full object-cover object-top" loading="lazy" onerror="this.style.display='none'">` : ''}
+        <div class="absolute inset-0 bg-slate-950/10 group-hover:bg-slate-950/30 transition"></div>
+        <span class="absolute top-2 left-2 z-10 px-2 py-1 rounded-md bg-gold text-slate-950 text-xs font-bold">${escapeHtml(partLabel)}</span>
+      </button>`
+    : `<div class="w-full aspect-[3/4] bg-slate-950 flex items-center justify-center"><span class="text-gold font-bold">${escapeHtml(partLabel)}</span></div>`;
+
+  return `
+    <article id="${id || ''}" class="pdf-part-card w-[11.5rem] sm:w-[13rem] flex-shrink-0 snap-start bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col hover:border-gold/30 transition-all">
+      ${previewArea}
+      <div class="p-3 flex flex-col flex-1 min-w-0">
+        <p class="text-[10px] uppercase tracking-wider text-gold/90 mb-1">${escapeHtml(partLabel)}</p>
+        <h3 class="font-medium text-xs text-slate-100 leading-snug mb-2 line-clamp-3" title="${escapeHtml(subtitle)}">${escapeHtml(subtitle)}</h3>
+        <p class="text-[10px] text-slate-500 mb-2">${escapeHtml(sizeLabel || '')}</p>
+        <div class="flex flex-wrap gap-1.5 mt-auto">
+          ${previewButtonHtml({ embedUrl, title, downloadUrl, detailsUrl, label: 'Read' })}
+          ${downloadButtonHtml(downloadUrl)}
+        </div>
+      </div>
+    </article>`;
+}
+
+function pdfSeriesBlock({ name, items, categoryLabel, showCategory = false }) {
+  const cards = items.map((pdf, index) => {
+    const card = pdfPartCard({
+      id: 'pdf-' + pdf.id,
+      title: pdf.title,
+      sizeLabel: pdf.sizeLabel,
+      downloadUrl: pdf.download,
+      embedUrl: pdf.embed,
+      detailsUrl: pdf.details,
+      thumb: pdf.thumb,
+      series: pdf.series,
+      part: pdf.part,
+    });
+    const arrow = index < items.length - 1
+      ? `<span class="hidden sm:flex items-center text-gold/30 flex-shrink-0 px-0.5" aria-hidden="true"><i class="fas fa-chevron-right text-sm"></i></span>`
+      : '';
+    return card + arrow;
+  }).join('');
+
+  const meta = [
+    `${items.length} parts`,
+    'read in order',
+    showCategory && categoryLabel ? categoryLabel : '',
+  ].filter(Boolean).join(' · ');
+
+  return `
+    <div class="pdf-series-block rounded-2xl border border-slate-800 bg-slate-900/50 p-4 sm:p-5">
+      <div class="flex flex-wrap items-center justify-between gap-2 mb-4">
+        <h3 class="font-display text-lg sm:text-xl text-gold-gradient flex items-center gap-2">
+          <i class="fas fa-layer-group text-sm text-gold/80"></i>
+          ${escapeHtml(name)}
+        </h3>
+        <span class="text-xs text-slate-500">${escapeHtml(meta)}</span>
+      </div>
+      <div class="pdf-series-track flex items-stretch gap-3 sm:gap-2 overflow-x-auto pb-1 snap-x snap-mandatory scroll-smooth">
+        ${cards}
+      </div>
+    </div>`;
+}
+
 function pdfSeriesBadge({ series, part, categoryLabel }) {
   if (series && part) {
     return `<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-md bg-slate-950/85 text-gold text-[10px] font-semibold uppercase tracking-wider border border-gold/20">${escapeHtml(series)} · Part ${part}</span>`;
