@@ -5311,473 +5311,505 @@ const SEARCH_INDEX = [
   {
     "type": "clip",
     "id": 24,
-    "title": "Hypocrites rushing to join the kuffar",
+    "title": "How to spot a Munafiq (Hypocrite) by Shaykh Abdullah Faisal",
     "sub": "Short clip",
     "href": "clips.html?clip=24",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Hypocrites Rushing To Join The Kuffar_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/How to spot a Munafiq_000001.jpg"
   },
   {
     "type": "clip",
     "id": 25,
-    "title": "Ideological warfare: the only battle that truly matters",
+    "title": "Hypocrites rushing to join the kuffar",
     "sub": "Short clip",
     "href": "clips.html?clip=25",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Ideological Warfare  The Only Battle That Tru(1)_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Hypocrites Rushing To Join The Kuffar_000001.jpg"
   },
   {
     "type": "clip",
     "id": 26,
-    "title": "If they put the sun in my right hand and the moon in my left, I would not cease",
+    "title": "Ideological warfare: the only battle that truly matters",
     "sub": "Short clip",
     "href": "clips.html?clip=26",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/If They Put The Sun In My Right Hand & Moon In My_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Ideological Warfare  The Only Battle That Tru(1)_000001.jpg"
   },
   {
     "type": "clip",
     "id": 27,
-    "title": "Ignoring invasion, fixating on women driving",
+    "title": "If they put the sun in my right hand and the moon in my left, I would not cease",
     "sub": "Short clip",
     "href": "clips.html?clip=27",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Ignoring Invasion, Fixating on Women Driving_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/If They Put The Sun In My Right Hand & Moon In My_000001.jpg"
   },
   {
     "type": "clip",
     "id": 28,
-    "title": "Is it necessary to takfir Muslims by name?",
+    "title": "Ignoring invasion, fixating on women driving",
     "sub": "Short clip",
     "href": "clips.html?clip=28",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Is it nessesery to takfir (muslims by name)_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Ignoring Invasion, Fixating on Women Driving_000001.jpg"
   },
   {
     "type": "clip",
     "id": 29,
-    "title": "Jews and Christians will never be pleased with you",
+    "title": "Is it necessary to takfir Muslims by name?",
     "sub": "Short clip",
     "href": "clips.html?clip=29",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Jews & Christians Will Never Be Pleased With You_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Is it nessesery to takfir (muslims by name)_000001.jpg"
   },
   {
     "type": "clip",
     "id": 30,
-    "title": "Jokers in the pack — refuting the Ash'ari",
+    "title": "Jews and Christians will never be pleased with you",
     "sub": "Short clip",
     "href": "clips.html?clip=30",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Jokers in the Pack - Refuting the Ashaa_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Jews & Christians Will Never Be Pleased With You_000001.jpg"
   },
   {
     "type": "clip",
     "id": 31,
-    "title": "Living in humiliation while the ummah suffers (PTSD)",
+    "title": "Jokers in the pack — refuting the Ash'ari",
     "sub": "Short clip",
     "href": "clips.html?clip=31",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Living in humulation while ummah suffers (ptsd)_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Jokers in the Pack - Refuting the Ashaa_000001.jpg"
   },
   {
     "type": "clip",
     "id": 32,
-    "title": "Madakilah's were never a Muslims",
+    "title": "Living in humiliation while the ummah suffers (PTSD)",
     "sub": "Short clip",
     "href": "clips.html?clip=32",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Madakilah's were never a Muslims_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Living in humulation while ummah suffers (ptsd)_000001.jpg"
   },
   {
     "type": "clip",
     "id": 33,
-    "title": "Only a sincere believer finds comfort in the truth",
+    "title": "Madakilah's were never a Muslims",
     "sub": "Short clip",
     "href": "clips.html?clip=33",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Only a sincere beliver finds comfort in the truth!_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Madakilah's were never a Muslims_000001.jpg"
   },
   {
     "type": "clip",
     "id": 34,
-    "title": "Oppression causes apostasy (forced marriages as an example)",
+    "title": "Only a sincere believer finds comfort in the truth",
     "sub": "Short clip",
     "href": "clips.html?clip=34",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Oppression causes apostasy(Forced Marriages as ex_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Only a sincere beliver finds comfort in the truth!_000001.jpg"
   },
   {
     "type": "clip",
     "id": 35,
-    "title": "Shamsi's teacher Abu Khadeeja exposed",
+    "title": "Oppression causes apostasy (forced marriages as an example)",
     "sub": "Short clip",
     "href": "clips.html?clip=35",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Shamsis_teacher_Abu_Khadeeja_exposed_as_a_homosexual_pedophile_i0zSl3gpFog_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Oppression causes apostasy(Forced Marriages as ex_000001.jpg"
   },
   {
     "type": "clip",
     "id": 36,
-    "title": "Shaykh Faisal (humorous clip)",
+    "title": "Shamsi's teacher Abu Khadeeja exposed",
     "sub": "Short clip",
     "href": "clips.html?clip=36",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Shaykh faisal funny_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Shamsis_teacher_Abu_Khadeeja_exposed_as_a_homosexual_pedophile_i0zSl3gpFog_000001.jpg"
   },
   {
     "type": "clip",
     "id": 37,
-    "title": "The headless chicken mentality of modern extremists",
+    "title": "Shaykh Faisal (humorous clip)",
     "sub": "Short clip",
     "href": "clips.html?clip=37",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The 'Headless Chicken' Mentality of Modern Ex_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Shaykh faisal funny_000001.jpg"
   },
   {
     "type": "clip",
     "id": 38,
-    "title": "The battle between truth and falsehood never ends",
+    "title": "The headless chicken mentality of modern extremists",
     "sub": "Short clip",
     "href": "clips.html?clip=38",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Battle Between Truth & Falsehood Never Ends_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The 'Headless Chicken' Mentality of Modern Ex_000001.jpg"
   },
   {
     "type": "clip",
     "id": 39,
-    "title": "The evil scholar is a lizard — Shaykh Abdullah Faisal",
+    "title": "The battle between truth and falsehood never ends",
     "sub": "Short clip",
     "href": "clips.html?clip=39",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Evil Scholar is a lizard - Shaykh Abdullah Faisal_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Battle Between Truth & Falsehood Never Ends_000001.jpg"
   },
   {
     "type": "clip",
     "id": 40,
-    "title": "The importance of hijra — Shaykh Abdullah Faisal",
+    "title": "The Betrayal of the Mujahideenby Saudi Salafis in",
     "sub": "Short clip",
     "href": "clips.html?clip=40",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Importance of hijra - shaykh abdullah faisal_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Betrayal of the Mujahideenby Saudi Salafis in_000001.jpg"
   },
   {
     "type": "clip",
     "id": 41,
-    "title": "The sin of refusing to call a kafir a kafir",
+    "title": "The evil scholar is a lizard — Shaykh Abdullah Faisal",
     "sub": "Short clip",
     "href": "clips.html?clip=41",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Sin of Refusing to Call a Kafir a Kafir_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Evil Scholar is a lizard - Shaykh Abdullah Faisal_000001.jpg"
   },
   {
     "type": "clip",
     "id": 42,
-    "title": "The ummah is sick and the scholars are to blame",
+    "title": "The importance of hijra — Shaykh Abdullah Faisal",
     "sub": "Short clip",
     "href": "clips.html?clip=42",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Ummah is Sick & The Scholars are to Blame_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Importance of hijra - shaykh abdullah faisal_000001.jpg"
   },
   {
     "type": "clip",
     "id": 43,
-    "title": "The killing of journalists",
+    "title": "The sin of refusing to call a kafir a kafir",
     "sub": "Short clip",
     "href": "clips.html?clip=43",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The killing of journalists_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Sin of Refusing to Call a Kafir a Kafir_000001.jpg"
   },
   {
     "type": "clip",
     "id": 44,
-    "title": "The lie about jihad",
+    "title": "The ummah is sick and the scholars are to blame",
     "sub": "Short clip",
     "href": "clips.html?clip=44",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The lie about Jihad_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Ummah is Sick & The Scholars are to Blame_000001.jpg"
   },
   {
     "type": "clip",
     "id": 45,
-    "title": "The man who goes out for jihad",
+    "title": "The killing of journalists",
     "sub": "Short clip",
     "href": "clips.html?clip=45",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The man who goes out in Jihad_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The killing of journalists_000001.jpg"
   },
   {
     "type": "clip",
     "id": 46,
-    "title": "They control what you learn about Islam",
+    "title": "The lie about jihad",
     "sub": "Short clip",
     "href": "clips.html?clip=46",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/They Control what you learn about isllam_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The lie about Jihad_000001.jpg"
   },
   {
     "type": "clip",
     "id": 47,
-    "title": "They will fight you until you leave Islam (Surah Baqarah)",
+    "title": "The man who goes out for jihad",
     "sub": "Short clip",
     "href": "clips.html?clip=47",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/They Will Fight You Until You Leave Islam (Baqara_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The man who goes out in Jihad_000001.jpg"
   },
   {
     "type": "clip",
     "id": 48,
-    "title": "Those who label the mujahideen as khawarij — Shaykh Abdullah Faisal",
+    "title": "They control what you learn about Islam",
     "sub": "Short clip",
     "href": "clips.html?clip=48",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/They Control what you learn about isllam_000001.jpg"
   },
   {
     "type": "clip",
     "id": 49,
-    "title": "Those who follow their evil and corrupted desires",
+    "title": "They will fight you until you leave Islam (Surah Baqarah)",
     "sub": "Short clip",
     "href": "clips.html?clip=49",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Those who follow their evil and corrupted desires_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/They Will Fight You Until You Leave Islam (Baqara_000001.jpg"
   },
   {
     "type": "clip",
     "id": 50,
-    "title": "Why does Allah bless the kuffar?",
+    "title": "Those who label the mujahideen as khawarij — Shaykh Abdullah Faisal",
     "sub": "Short clip",
     "href": "clips.html?clip=50",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/WHY ALLAH BLESS THE KUFFAR1 - Trim_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal_000001.jpg"
   },
   {
     "type": "clip",
     "id": 51,
-    "title": "Who is 'the other'? Defining 'the excuser' in Islam",
+    "title": "Those who follow their evil and corrupted desires",
     "sub": "Short clip",
     "href": "clips.html?clip=51",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Who Is 'The Other'  Defining 'The Excuser' In(1)_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Those who follow their evil and corrupted desires_000001.jpg"
   },
   {
     "type": "clip",
     "id": 52,
-    "title": "Why do Christians love Jews and hate Muslims?",
+    "title": "Why does Allah bless the kuffar?",
     "sub": "Short clip",
     "href": "clips.html?clip=52",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Why do christians love jews and hate muslims_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/WHY ALLAH BLESS THE KUFFAR1 - Trim_000001.jpg"
   },
   {
     "type": "clip",
     "id": 53,
-    "title": "Your choice of spouse reveals your true faith",
+    "title": "Who is 'the other'? Defining 'the excuser' in Islam",
     "sub": "Short clip",
     "href": "clips.html?clip=53",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Your Choice of Spouse Reveals Your True Faith_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Who Is 'The Other'  Defining 'The Excuser' In(1)_000001.jpg"
   },
   {
     "type": "clip",
     "id": 54,
-    "title": "Al-wala wal-bara",
+    "title": "Why Being Ignorant in Islam Can Lead to Being a 22",
     "sub": "Short clip",
     "href": "clips.html?clip=54",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/al wala al bara_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Why Being Ignorant in Islam Can Lead to Being a 22_000001.jpg"
   },
   {
     "type": "clip",
     "id": 55,
-    "title": "Allah will dump you and your wicked scholar in the Hellfire",
+    "title": "Why Believing in Allah Doesn'tMake You Special",
     "sub": "Short clip",
     "href": "clips.html?clip=55",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/allah wil dump you and your wicked schohler in the hellfire_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Why Believing in Allah Doesn'tMake You Special_000001.jpg"
   },
   {
     "type": "clip",
     "id": 56,
-    "title": "AMJ and Faisal refuting Hazami",
+    "title": "Why do Christians love Jews and hate Muslims?",
     "sub": "Short clip",
     "href": "clips.html?clip=56",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/amj and faisal refuting hazami's_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Why do christians love jews and hate muslims_000001.jpg"
   },
   {
     "type": "clip",
     "id": 57,
-    "title": "Surah al-Baqarah 216",
+    "title": "Your choice of spouse reveals your true faith",
     "sub": "Short clip",
     "href": "clips.html?clip=57",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/baqara 216_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Your Choice of Spouse Reveals Your True Faith_000001.jpg"
   },
   {
     "type": "clip",
     "id": 58,
-    "title": "Blind following wicked scholars will dump you in the Hellfire",
+    "title": "Al-wala wal-bara",
     "sub": "Short clip",
     "href": "clips.html?clip=58",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/blind follwing wickeed schohlers_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/al wala al bara_000001.jpg"
   },
   {
     "type": "clip",
     "id": 59,
-    "title": "Refuting al-Bouti",
+    "title": "Allah will dump you and your wicked scholar in the Hellfire",
     "sub": "Short clip",
     "href": "clips.html?clip=59",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/booti_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/allah wil dump you and your wicked schohler in the hellfire_000001.jpg"
   },
   {
     "type": "clip",
     "id": 60,
-    "title": "How do we deal with people who reject the dawla? (2)",
+    "title": "AMJ and Faisal refuting Hazami",
     "sub": "Short clip",
     "href": "clips.html?clip=60",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/dealing with thise who reject dawla_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/amj and faisal refuting hazami's_000001.jpg"
   },
   {
     "type": "clip",
     "id": 61,
-    "title": "Demanding the implementation of sharia",
+    "title": "Surah al-Baqarah 216",
     "sub": "Short clip",
     "href": "clips.html?clip=61",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/demanding shariya_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/baqara 216_000001.jpg"
   },
   {
     "type": "clip",
     "id": 62,
-    "title": "Falling into the vicious web of the shaytan",
+    "title": "Blind following wicked scholars will dump you in the Hellfire",
     "sub": "Short clip",
     "href": "clips.html?clip=62",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/falling into the vicous webb of the shaytan_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/blind follwing wickeed schohlers_000001.jpg"
   },
   {
     "type": "clip",
     "id": 63,
-    "title": "Giving up the better for the worse",
+    "title": "Refuting al-Bouti",
     "sub": "Short clip",
     "href": "clips.html?clip=63",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/giving up better for worse_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/booti_000001.jpg"
   },
   {
     "type": "clip",
     "id": 64,
-    "title": "Why is ibn Baz a kaffir?",
+    "title": "How do we deal with people who reject the dawla? (2)",
     "sub": "Short clip",
     "href": "clips.html?clip=64",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/ibn baz_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/dealing with thise who reject dawla_000001.jpg"
   },
   {
     "type": "clip",
     "id": 65,
-    "title": "If you are not practicing, you will develop a personality disorder",
+    "title": "Demanding the implementation of sharia",
     "sub": "Short clip",
     "href": "clips.html?clip=65",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/if you are mot practicing u will get a personality_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/demanding shariya_000001.jpg"
   },
   {
     "type": "clip",
     "id": 66,
-    "title": "If you don't do jihad, it will come to your door",
+    "title": "Falling into the vicious web of the shaytan",
     "sub": "Short clip",
     "href": "clips.html?clip=66",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/if you dont do jihad it will come to your door!!_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/falling into the vicous webb of the shaytan_000001.jpg"
   },
   {
     "type": "clip",
     "id": 67,
-    "title": "Never Argue with a Jahiloon",
+    "title": "Giving up the better for the worse",
     "sub": "Short clip",
     "href": "clips.html?clip=67",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/ignore the jailoom_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/giving up better for worse_000001.jpg"
   },
   {
     "type": "clip",
     "id": 68,
-    "title": "The importance of hijra (part 2)",
+    "title": "Why is ibn Baz a kaffir?",
     "sub": "Short clip",
     "href": "clips.html?clip=68",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/importance of hijra 2_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/ibn baz_000001.jpg"
   },
   {
     "type": "clip",
     "id": 69,
-    "title": "Is the dawla khawarij?",
+    "title": "If you are not practicing, you will develop a personality disorder",
     "sub": "Short clip",
     "href": "clips.html?clip=69",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/is dawla khawarij_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/if you are mot practicing u will get a personality_000001.jpg"
   },
   {
     "type": "clip",
     "id": 70,
-    "title": "The shame of man-made law",
+    "title": "If you don't do jihad, it will come to your door",
     "sub": "Short clip",
     "href": "clips.html?clip=70",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/man made izims skizims_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/if you dont do jihad it will come to your door!!_000001.jpg"
   },
   {
     "type": "clip",
     "id": 71,
-    "title": "The mufti of the taghut",
+    "title": "Never Argue with a Jahiloon",
     "sub": "Short clip",
     "href": "clips.html?clip=71",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/murfti of the taghut_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/ignore the jailoom_000001.jpg"
   },
   {
     "type": "clip",
     "id": 72,
-    "title": "Narcissist personality disorder",
+    "title": "The importance of hijra (part 2)",
     "sub": "Short clip",
     "href": "clips.html?clip=72",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/narrsasit_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/importance of hijra 2_000001.jpg"
   },
   {
     "type": "clip",
     "id": 73,
-    "title": "The reality of truth (part 12)",
+    "title": "Is the dawla khawarij?",
     "sub": "Short clip",
     "href": "clips.html?clip=73",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/reality of truth 12_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/is dawla khawarij_000001.jpg"
   },
   {
     "type": "clip",
     "id": 74,
-    "title": "Reject the taghut",
+    "title": "The shame of man-made law",
     "sub": "Short clip",
     "href": "clips.html?clip=74",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/reject taghut_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/man made izims skizims_000001.jpg"
   },
   {
     "type": "clip",
     "id": 75,
-    "title": "Refuting those who put false conditions on jihad",
+    "title": "The mufti of the taghut",
     "sub": "Short clip",
     "href": "clips.html?clip=75",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/sdadwf_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/murfti of the taghut_000001.jpg"
   },
   {
     "type": "clip",
     "id": 76,
-    "title": "Signs of the khawarij",
+    "title": "Narcissist personality disorder",
     "sub": "Short clip",
     "href": "clips.html?clip=76",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/sign of a khawarij_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/narrsasit_000001.jpg"
   },
   {
     "type": "clip",
     "id": 77,
-    "title": "Signs of a hypocrite",
+    "title": "The reality of truth (part 12)",
     "sub": "Short clip",
     "href": "clips.html?clip=77",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/signs of a hypocrite clip_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/reality of truth 12_000001.jpg"
   },
   {
     "type": "clip",
     "id": 78,
-    "title": "The solution is living in dar al-Islam",
+    "title": "Reject the taghut",
     "sub": "Short clip",
     "href": "clips.html?clip=78",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/solution is living at dar al islam_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/reject taghut_000001.jpg"
   },
   {
     "type": "clip",
     "id": 79,
-    "title": "Tahakum — ruling by other than what Allah revealed",
+    "title": "Refuting those who put false conditions on jihad",
     "sub": "Short clip",
     "href": "clips.html?clip=79",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/tahakum_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/sdadwf_000001.jpg"
   },
   {
     "type": "clip",
     "id": 80,
-    "title": "The Taliban destroys the Buddha statues",
+    "title": "Signs of the khawarij",
     "sub": "Short clip",
     "href": "clips.html?clip=80",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/taliban breaks buddah _000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/sign of a khawarij_000001.jpg"
   },
   {
     "type": "clip",
     "id": 81,
-    "title": "The spy who killed Imam Anwar al-Awlaki",
+    "title": "Signs of a hypocrite",
     "sub": "Short clip",
     "href": "clips.html?clip=81",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/the spy who killed imam al awlaki_000001.jpg"
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/signs of a hypocrite clip_000001.jpg"
   },
   {
     "type": "clip",
     "id": 82,
-    "title": "Wicked scholars — Shaykh Abdullah Faisal",
+    "title": "The solution is living in dar al-Islam",
     "sub": "Short clip",
     "href": "clips.html?clip=82",
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/solution is living at dar al islam_000001.jpg"
+  },
+  {
+    "type": "clip",
+    "id": 83,
+    "title": "Tahakum — ruling by other than what Allah revealed",
+    "sub": "Short clip",
+    "href": "clips.html?clip=83",
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/tahakum_000001.jpg"
+  },
+  {
+    "type": "clip",
+    "id": 84,
+    "title": "The Taliban destroys the Buddha statues",
+    "sub": "Short clip",
+    "href": "clips.html?clip=84",
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/taliban breaks buddah _000001.jpg"
+  },
+  {
+    "type": "clip",
+    "id": 85,
+    "title": "The spy who killed Imam Anwar al-Awlaki",
+    "sub": "Short clip",
+    "href": "clips.html?clip=85",
+    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/the spy who killed imam al awlaki_000001.jpg"
+  },
+  {
+    "type": "clip",
+    "id": 86,
+    "title": "Wicked scholars — Shaykh Abdullah Faisal",
+    "sub": "Short clip",
+    "href": "clips.html?clip=86",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/wicked scholars Abdullah faisal shaykh_000001.jpg"
   },
   {

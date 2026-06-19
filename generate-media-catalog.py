@@ -176,6 +176,10 @@ _CLIP_TITLES_RAW = [
         "How Allah Mocks Hypocrites Who Follow Wicked",
         "How Allah Mocks Hypocrites Who Follow Wicked Scholars - Shaykh Abdullah Faisal",
     ),
+    (
+        "How to spot a Munafiq",
+        "How to spot a Munafiq (Hypocrite) by Shaykh Abdullah Faisal",
+    ),
     ("How do we deal with those who reject dawla1", "How do we deal with people who reject the dawla?"),
     ("Hypocrites Rushing To Join The Kuffar", "Hypocrites rushing to join the kuffar"),
     ("Ideological Warfare  The Only Battle That Tru(1)", "Ideological warfare: the only battle that truly matters"),
