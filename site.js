@@ -1125,8 +1125,24 @@ function mountMobileStyles() {
       0% { transform: translateX(0); }
       100% { transform: translateX(var(--marquee-distance, -50%)); }
     }
+    @media (hover: none), (pointer: coarse) {
+      .media-card__title-wrap.is-overflow .media-card__title-track {
+        display: inline-flex;
+        align-items: center;
+        gap: 2.5rem;
+        overflow: visible;
+        text-overflow: unset;
+        max-width: none;
+        will-change: transform;
+        animation: media-title-marquee var(--marquee-duration, 14s) linear infinite;
+      }
+      .media-card__title-wrap.is-overflow .media-card__title-text--repeat {
+        display: inline;
+      }
+    }
     @media (prefers-reduced-motion: reduce) {
-      .media-card__title-wrap.is-marquee-active .media-card__title-track {
+      .media-card__title-wrap.is-marquee-active .media-card__title-track,
+      .media-card__title-wrap.is-overflow .media-card__title-track {
         animation: none;
       }
     }
