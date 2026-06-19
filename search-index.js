@@ -5772,224 +5772,226 @@ const SEARCH_INDEX = [
   },
   {
     "type": "pdf",
-    "id": 18,
+    "id": 0,
     "title": "Science Of Quran – Part 1",
     "sub": "Quran & Tafsir · Science Of Quran · Part 1",
-    "href": "pdfs.html?pdf=18",
-    "thumb": "thumb/pdfs/18.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 19,
-    "title": "Science Of Quran – Part 2 – The Wahy",
-    "sub": "Quran & Tafsir · Science Of Quran · Part 2",
-    "href": "pdfs.html?pdf=19",
-    "thumb": "thumb/pdfs/19.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 16,
-    "title": "Science Of Quran Part 3 The History Of The Quran's Descent",
-    "sub": "Quran & Tafsir · Science Of Quran · Part 3",
-    "href": "pdfs.html?pdf=16",
-    "thumb": "thumb/pdfs/16.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 17,
-    "title": "Science Of Quran Part 4 The 20 Reasons Why The Quran Is A Wise Book",
-    "sub": "Quran & Tafsir · Science Of Quran · Part 4",
-    "href": "pdfs.html?pdf=17",
-    "thumb": "thumb/pdfs/17.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 21,
-    "title": "Tafsir Surah Saff",
-    "sub": "Quran & Tafsir",
-    "href": "pdfs.html?pdf=21",
-    "thumb": "thumb/pdfs/21.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 26,
-    "title": "Towards Watering Down The Holy Quran",
-    "sub": "Quran & Tafsir",
-    "href": "pdfs.html?pdf=26",
-    "thumb": "thumb/pdfs/26.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 14,
-    "title": "Refuting The Lie Concerning Kufr Doona Kufr",
-    "sub": "Aqeedah & Refutations · Refuting The Lie · Part 1",
-    "href": "pdfs.html?pdf=14",
-    "thumb": "thumb/pdfs/14.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 15,
-    "title": "Refuting The Lie Concerning The Excuse of Ignorance",
-    "sub": "Aqeedah & Refutations · Refuting The Lie · Part 2",
-    "href": "pdfs.html?pdf=15",
-    "thumb": "thumb/pdfs/15.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 0,
-    "title": "100 Fabricated Hadiths (Shaikh Abdullah Faisal)",
-    "sub": "Aqeedah & Refutations",
     "href": "pdfs.html?pdf=0",
-    "thumb": "thumb/pdfs/0.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 4,
-    "title": "Are You A Takfiri - Shaykh Abdullah Faisal",
-    "sub": "Aqeedah & Refutations",
-    "href": "pdfs.html?pdf=4",
-    "thumb": "thumb/pdfs/4.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 7,
-    "title": "Debunking The Letter Of The Wicked Scholars To Amirul Muhmineen",
-    "sub": "Aqeedah & Refutations",
-    "href": "pdfs.html?pdf=7",
-    "thumb": "thumb/pdfs/7.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 10,
-    "title": "Murjiya Refutation by shaykh faisal",
-    "sub": "Aqeedah & Refutations",
-    "href": "pdfs.html?pdf=10",
-    "thumb": "thumb/pdfs/10.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 5,
-    "title": "Challenges Facing the Muslim Ummah",
-    "sub": "Ummah & Politics · Challenges Facing the Muslim Ummah · Part 1",
-    "href": "pdfs.html?pdf=5",
-    "thumb": "thumb/pdfs/5.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 6,
-    "title": "Challenges Facing the Muslim Ummah Part II",
-    "sub": "Ummah & Politics · Challenges Facing the Muslim Ummah · Part 2",
-    "href": "pdfs.html?pdf=6",
-    "thumb": "thumb/pdfs/6.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 9,
-    "title": "Islam Under Siege By Shaykh Faisal",
-    "sub": "Ummah & Politics",
-    "href": "pdfs.html?pdf=9",
-    "thumb": "thumb/pdfs/9.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 20,
-    "title": "SHARIAH VS MAN-MADE LAWS by Shaykh Abdullah Faisal",
-    "sub": "Ummah & Politics",
-    "href": "pdfs.html?pdf=20",
-    "thumb": "thumb/pdfs/20.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 23,
-    "title": "The Evil Rulers Of The World",
-    "sub": "Ummah & Politics",
-    "href": "pdfs.html?pdf=23",
-    "thumb": "thumb/pdfs/23.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 24,
-    "title": "THE OBLIGATION TO ESTABLISH THE KHILAFAH by shaykh faisal",
-    "sub": "Ummah & Politics",
-    "href": "pdfs.html?pdf=24",
-    "thumb": "thumb/pdfs/24.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 3,
-    "title": "Among Your Wives and Children Are Enemies to You By Shaykh Abdullah",
-    "sub": "Character & Family",
-    "href": "pdfs.html?pdf=3",
-    "thumb": "thumb/pdfs/3.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 12,
-    "title": "Natural Instincts - By shaykh Abdullah Faisal",
-    "sub": "Character & Family",
-    "href": "pdfs.html?pdf=12",
-    "thumb": "thumb/pdfs/12.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 13,
-    "title": "PERSONALITY DISORDERS by Shaykh Abdullah Faisal",
-    "sub": "Character & Family",
-    "href": "pdfs.html?pdf=13",
-    "thumb": "thumb/pdfs/13.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 25,
-    "title": "Their Hearts Are Alike",
-    "sub": "Character & Family",
-    "href": "pdfs.html?pdf=25",
-    "thumb": "thumb/pdfs/25.jpg"
-  },
-  {
-    "type": "pdf",
-    "id": 27,
-    "title": "Who Are You",
-    "sub": "Character & Family",
-    "href": "pdfs.html?pdf=27",
-    "thumb": "thumb/pdfs/27.jpg"
+    "thumb": "thumb/pdfs/753ab1ff324bc145.jpg"
   },
   {
     "type": "pdf",
     "id": 1,
-    "title": "Adam and Shaitan - The eternal battle",
-    "sub": "General",
+    "title": "Science Of Quran – Part 2 – The Wahy",
+    "sub": "Quran & Tafsir · Science Of Quran · Part 2",
     "href": "pdfs.html?pdf=1",
-    "thumb": "thumb/pdfs/1.jpg"
+    "thumb": "thumb/pdfs/09936b05dc2fe7ac.jpg"
   },
   {
     "type": "pdf",
     "id": 2,
-    "title": "Allah (SWT) Has Honored Bani Adam - Mankind",
-    "sub": "General",
+    "title": "Science Of Quran Part 3 The History Of The Quran's Descent",
+    "sub": "Quran & Tafsir · Science Of Quran · Part 3",
     "href": "pdfs.html?pdf=2",
-    "thumb": "thumb/pdfs/2.jpg"
+    "thumb": "thumb/pdfs/44998012f9f5746b.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 3,
+    "title": "Science Of Quran Part 4 The 20 Reasons Why The Quran Is A Wise Book",
+    "sub": "Quran & Tafsir · Science Of Quran · Part 4",
+    "href": "pdfs.html?pdf=3",
+    "thumb": "thumb/pdfs/33fb247bc9817956.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 4,
+    "title": "Tafsir Surah Saff",
+    "sub": "Quran & Tafsir",
+    "href": "pdfs.html?pdf=4",
+    "thumb": "thumb/pdfs/92962688dc0e6dc7.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 5,
+    "title": "Towards Watering Down The Holy Quran",
+    "sub": "Quran & Tafsir",
+    "href": "pdfs.html?pdf=5",
+    "thumb": "thumb/pdfs/6f0a9be9e02c0719.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 6,
+    "title": "Refuting The Lie Concerning Kufr Doona Kufr",
+    "sub": "Aqeedah & Refutations · Refuting The Lie · Part 1",
+    "href": "pdfs.html?pdf=6",
+    "thumb": "thumb/pdfs/e5ed75c78c05f31a.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 7,
+    "title": "Refuting The Lie Concerning The Excuse of Ignorance",
+    "sub": "Aqeedah & Refutations · Refuting The Lie · Part 2",
+    "href": "pdfs.html?pdf=7",
+    "thumb": "thumb/pdfs/216157047749a7ba.jpg"
   },
   {
     "type": "pdf",
     "id": 8,
-    "title": "Islam the Religion of the Future by Shaykh Faisal",
-    "sub": "General",
-    "href": "pdfs.html?pdf=8"
+    "title": "100 Fabricated Hadiths (Shaikh Abdullah Faisal)",
+    "sub": "Aqeedah & Refutations",
+    "href": "pdfs.html?pdf=8",
+    "thumb": "thumb/pdfs/1fcd89de9634cc98.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 9,
+    "title": "Are You A Takfiri - Shaykh Abdullah Faisal",
+    "sub": "Aqeedah & Refutations",
+    "href": "pdfs.html?pdf=9",
+    "thumb": "thumb/pdfs/5420953904608948.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 10,
+    "title": "Debunking The Letter Of The Wicked Scholars To Amirul Muhmineen",
+    "sub": "Aqeedah & Refutations",
+    "href": "pdfs.html?pdf=10",
+    "thumb": "thumb/pdfs/84883e59d0f97544.jpg"
   },
   {
     "type": "pdf",
     "id": 11,
-    "title": "Natural Disasters - Why They Occur",
-    "sub": "General",
+    "title": "Islam the Religion of the Future by Shaykh Faisal",
+    "sub": "Aqeedah & Refutations",
     "href": "pdfs.html?pdf=11",
-    "thumb": "thumb/pdfs/11.jpg"
+    "thumb": "thumb/pdfs/2ae41500243224f5.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 12,
+    "title": "Murjiya Refutation by shaykh faisal",
+    "sub": "Aqeedah & Refutations",
+    "href": "pdfs.html?pdf=12",
+    "thumb": "thumb/pdfs/c61256c570bb83bb.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 13,
+    "title": "The 7 Conditions of Shahada by Shaykh Faisal",
+    "sub": "Aqeedah & Refutations",
+    "href": "pdfs.html?pdf=13",
+    "thumb": "thumb/pdfs/fadd7098aa7af237.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 14,
+    "title": "Challenges Facing the Muslim Ummah",
+    "sub": "Ummah & Politics · Challenges Facing the Muslim Ummah · Part 1",
+    "href": "pdfs.html?pdf=14",
+    "thumb": "thumb/pdfs/7d10725d429f18ad.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 15,
+    "title": "Challenges Facing the Muslim Ummah Part II",
+    "sub": "Ummah & Politics · Challenges Facing the Muslim Ummah · Part 2",
+    "href": "pdfs.html?pdf=15",
+    "thumb": "thumb/pdfs/aee24fa09de87c0b.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 16,
+    "title": "Islam Under Siege By Shaykh Faisal",
+    "sub": "Ummah & Politics",
+    "href": "pdfs.html?pdf=16",
+    "thumb": "thumb/pdfs/faea68c4e350eb7c.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 17,
+    "title": "SHARIAH VS MAN-MADE LAWS by Shaykh Abdullah Faisal",
+    "sub": "Ummah & Politics",
+    "href": "pdfs.html?pdf=17",
+    "thumb": "thumb/pdfs/7855459d21ee158b.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 18,
+    "title": "The Evil Rulers Of The World",
+    "sub": "Ummah & Politics",
+    "href": "pdfs.html?pdf=18",
+    "thumb": "thumb/pdfs/f0ebca2ba5dec39b.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 19,
+    "title": "THE OBLIGATION TO ESTABLISH THE KHILAFAH by shaykh faisal",
+    "sub": "Ummah & Politics",
+    "href": "pdfs.html?pdf=19",
+    "thumb": "thumb/pdfs/c7dc311c72b160cc.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 20,
+    "title": "Among Your Wives and Children Are Enemies to You By Shaykh Abdullah",
+    "sub": "Character & Family",
+    "href": "pdfs.html?pdf=20",
+    "thumb": "thumb/pdfs/b1e7aca68883b464.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 21,
+    "title": "Natural Instincts - By shaykh Abdullah Faisal",
+    "sub": "Character & Family",
+    "href": "pdfs.html?pdf=21",
+    "thumb": "thumb/pdfs/272478623bd26d74.jpg"
   },
   {
     "type": "pdf",
     "id": 22,
-    "title": "The 7 Conditions of Shahada by Shaykh Faisal",
+    "title": "PERSONALITY DISORDERS by Shaykh Abdullah Faisal",
+    "sub": "Character & Family",
+    "href": "pdfs.html?pdf=22",
+    "thumb": "thumb/pdfs/c28febf7a074c8e6.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 23,
+    "title": "Their Hearts Are Alike",
+    "sub": "Character & Family",
+    "href": "pdfs.html?pdf=23",
+    "thumb": "thumb/pdfs/86bf16de006c1697.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 24,
+    "title": "Who Are You",
+    "sub": "Character & Family",
+    "href": "pdfs.html?pdf=24",
+    "thumb": "thumb/pdfs/cb14bf43f0e6afe3.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 25,
+    "title": "Adam and Shaitan - The eternal battle",
     "sub": "General",
-    "href": "pdfs.html?pdf=22"
+    "href": "pdfs.html?pdf=25",
+    "thumb": "thumb/pdfs/9b88a4c64aabd379.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 26,
+    "title": "Allah (SWT) Has Honored Bani Adam - Mankind",
+    "sub": "General",
+    "href": "pdfs.html?pdf=26",
+    "thumb": "thumb/pdfs/3f0035c542ee5ead.jpg"
+  },
+  {
+    "type": "pdf",
+    "id": 27,
+    "title": "Natural Disasters - Why They Occur",
+    "sub": "General",
+    "href": "pdfs.html?pdf=27",
+    "thumb": "thumb/pdfs/448559792f81ca5c.jpg"
   }
 ];

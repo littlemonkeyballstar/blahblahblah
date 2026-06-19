@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """Generate pdfs-data.js from Internet Archive collection faisalPDF."""
+import hashlib
 import json
 import re
 import subprocess
@@ -30,6 +31,14 @@ def norm(text: str) -> str:
     text = re.sub(r"\.pdf$", "", text, flags=re.I)
     text = re.sub(r"[^a-z0-9]+", " ", text)
     return re.sub(r"\s+", " ", text).strip()
+
+
+def thumb_slug(archive: str) -> str:
+    return hashlib.sha1(archive.encode("utf-8")).hexdigest()[:16]
+
+
+def thumb_rel(archive: str) -> str:
+    return f"thumb/pdfs/{thumb_slug(archive)}.jpg"
 
 
 def display_title(archive_path: str) -> str:
@@ -86,8 +95,6 @@ def fetch_pdfs() -> list[dict]:
             best[key] = entry
 
     pdfs = sorted(best.values(), key=lambda x: x["title"].lower())
-    for index, pdf in enumerate(pdfs):
-        pdf["id"] = index
     organize_pdfs(pdfs)
     attach_thumbs(pdfs)
     return pdfs
@@ -146,6 +153,9 @@ def classify_pdf(pdf: dict) -> None:
         "debunking the letter of the wicked scholars": ("aqeedah", "Aqeedah & Refutations", None, None),
         "murjiya refutation": ("aqeedah", "Aqeedah & Refutations", None, None),
         "are you a takfiri": ("aqeedah", "Aqeedah & Refutations", None, None),
+        "7 conditions of shahada": ("aqeedah", "Aqeedah & Refutations", None, None),
+        "conditions of shahada": ("aqeedah", "Aqeedah & Refutations", None, None),
+        "islam the religion of the future": ("aqeedah", "Aqeedah & Refutations", None, None),
         "islam under siege": ("ummah", "Ummah & Politics", None, None),
         "the obligation to establish the khilafah": ("ummah", "Ummah & Politics", None, None),
         "shariah vs man-made laws": ("ummah", "Ummah & Politics", None, None),
@@ -196,6 +206,7 @@ def organize_pdfs(pdfs: list[dict]) -> None:
     ordered = sorted(pdfs, key=pdf_sort_key)
     for index, pdf in enumerate(ordered):
         pdf["sortOrder"] = index
+        pdf["id"] = index
 
     series_count = sum(1 for pdf in pdfs if pdf.get("series"))
     print(f"Organized {len(pdfs)} PDFs into {len(PDF_CATEGORIES)} categories ({series_count} in multi-part series)")
@@ -232,6 +243,29 @@ def extract_pdf_thumb(local_pdf: Path, dest: Path) -> bool:
         return False
 
 
+def ensure_local_pdf(pdf: dict) -> Path | None:
+    local = PDF_LOCAL_ROOT / pdf["archive"]
+    if local.is_file():
+        return local
+
+    cache_dir = WEBSITE / ".pdf-cache"
+    cache_dir.mkdir(exist_ok=True)
+    cache_name = pdf["archive"].replace("/", "__")
+    cache = cache_dir / cache_name
+    if cache.is_file() and cache.stat().st_size > 500:
+        return cache
+
+    try:
+        with urllib.request.urlopen(pdf["download"], timeout=120) as resp:
+            data = resp.read()
+        if len(data) < 500:
+            return None
+        cache.write_bytes(data)
+        return cache
+    except OSError:
+        return None
+
+
 def attach_thumbs(pdfs: list[dict]) -> None:
     if not has_pdftoppm():
         print("pdftoppm not found — skipping PDF thumbnail generation")
@@ -239,16 +273,16 @@ def attach_thumbs(pdfs: list[dict]) -> None:
 
     created = 0
     for pdf in pdfs:
-        local_pdf = PDF_LOCAL_ROOT / pdf["archive"]
-        if not local_pdf.is_file():
+        local_pdf = ensure_local_pdf(pdf)
+        if not local_pdf:
             continue
-        thumb_rel = f"thumb/pdfs/{pdf['id']}.jpg"
-        thumb_path = WEBSITE / thumb_rel
+        rel = thumb_rel(pdf["archive"])
+        thumb_path = WEBSITE / rel
         if thumb_path.exists() and thumb_path.stat().st_mtime >= local_pdf.stat().st_mtime:
-            pdf["thumb"] = thumb_rel
+            pdf["thumb"] = rel
             continue
         if extract_pdf_thumb(local_pdf, thumb_path):
-            pdf["thumb"] = thumb_rel
+            pdf["thumb"] = rel
             created += 1
     print(f"PDF thumbnails: {sum(1 for pdf in pdfs if pdf.get('thumb'))} ready ({created} regenerated)")
 

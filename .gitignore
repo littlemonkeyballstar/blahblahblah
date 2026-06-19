@@ -1,4 +1,5 @@
 node_modules/
 .tools/
+.pdf-cache/
 __pycache__/
 *.pyc
