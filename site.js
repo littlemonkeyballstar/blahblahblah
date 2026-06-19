@@ -204,38 +204,6 @@ function initCloudflareAnalytics() {
   document.head.appendChild(script);
 }
 
-let searchIndexLoadPromise = null;
-
-function loadScriptOnce(src) {
-  if (document.querySelector(`script[src="${src}"]`)) {
-    return typeof SEARCH_INDEX !== 'undefined'
-      ? Promise.resolve()
-      : new Promise((resolve) => {
-          const check = () => {
-            if (typeof SEARCH_INDEX !== 'undefined') resolve();
-            else setTimeout(check, 40);
-          };
-          check();
-        });
-  }
-  return new Promise((resolve, reject) => {
-    const script = document.createElement('script');
-    script.src = src;
-    script.async = true;
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error(`Failed to load ${src}`));
-    document.head.appendChild(script);
-  });
-}
-
-function ensureSearchIndexLoaded() {
-  if (typeof SEARCH_INDEX !== 'undefined') return Promise.resolve();
-  if (!searchIndexLoadPromise) {
-    searchIndexLoadPromise = loadScriptOnce('search-index.js');
-  }
-  return searchIndexLoadPromise;
-}
-
 const externalScriptPromises = new Map();
 
 function loadExternalScript(src) {
@@ -492,118 +460,6 @@ function staggerRevealChildren(container) {
     el.style.setProperty('--stagger-i', String(i));
     void el.offsetWidth;
     el.classList.add('stagger-item');
-  });
-}
-
-function searchIndexHaystack(item) {
-  return normalizeForSearch([item.title, item.sub || '', item.type || ''].join(' '));
-}
-
-function searchGlobalIndex(query, limit = 20) {
-  if (typeof SEARCH_INDEX === 'undefined') return [];
-  const words = normalizeForSearch(query).split(' ').filter(Boolean);
-  if (!words.length) return [];
-  const results = [];
-  for (const item of SEARCH_INDEX) {
-    const haystack = searchIndexHaystack(item);
-    if (words.every(word => haystack.includes(word))) results.push(item);
-    if (results.length >= limit) break;
-  }
-  return results;
-}
-
-const SEARCH_TYPE_META = {
-  audio: { label: 'Audio', icon: 'fa-headphones', page: 'audio.html' },
-  video: { label: 'Video', icon: 'fa-video', page: 'videos.html' },
-  clip: { label: 'Clip', icon: 'fa-film', page: 'clips.html' },
-  pdf: { label: 'PDF', icon: 'fa-file-pdf', page: 'pdfs.html' },
-};
-
-function searchResultThumb(item, meta) {
-  if (isValidThumb(item.thumb)) {
-    return `<div class="global-search-thumb w-14 h-10 rounded-lg overflow-hidden thumb-box flex items-center justify-center flex-shrink-0 p-0.5">
-      <img src="${thumbSrc(item.thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="lazy"
-        onerror="this.parentElement.outerHTML='<span class=\\'global-search-thumb w-9 h-9 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0\\'><i class=\\'fas ${meta.icon} text-gold text-sm\\'></i></span>'">
-    </div>`;
-  }
-  return `<span class="global-search-thumb w-9 h-9 rounded-lg bg-gold/10 border border-gold/20 flex items-center justify-center flex-shrink-0">
-    <i class="fas ${meta.icon} text-gold text-sm"></i>
-  </span>`;
-}
-
-function mountGlobalSearch({ inputId = 'globalSearch', resultsId = 'globalSearchResults' } = {}) {
-  const input = document.getElementById(inputId);
-  const results = document.getElementById(resultsId);
-  if (!input || !results) return;
-
-  let debounceTimer = null;
-  let indexLoadPromise = null;
-
-  const hideResults = () => {
-    results.classList.add('hidden');
-    results.innerHTML = '';
-  };
-
-  const renderResults = (items) => {
-    if (!items.length) {
-      results.innerHTML = '<p class="px-4 py-3 text-sm text-slate-500">No results found.</p>';
-      results.classList.remove('hidden');
-      return;
-    }
-    results.innerHTML = items.map(item => {
-      const meta = SEARCH_TYPE_META[item.type] || SEARCH_TYPE_META.audio;
-      return `
-        <a href="${item.href}" class="global-search-result flex items-center gap-3 px-4 py-3 hover:bg-slate-800 transition border-b border-slate-800 last:border-0">
-          ${searchResultThumb(item, meta)}
-          <span class="min-w-0 flex-1">
-            <span class="block text-sm text-slate-100 leading-snug line-clamp-2">${escapeHtml(item.title)}</span>
-            <span class="block text-xs text-slate-500 mt-0.5">${escapeHtml(meta.label)}${item.sub ? ` · ${escapeHtml(item.sub)}` : ''}</span>
-          </span>
-          <i class="fas fa-arrow-right text-gold/40 text-xs flex-shrink-0"></i>
-        </a>`;
-    }).join('');
-    results.classList.remove('hidden');
-  };
-
-  const loadIndex = () => {
-    if (typeof SEARCH_INDEX !== 'undefined') return Promise.resolve();
-    if (!indexLoadPromise) {
-      results.innerHTML = '<p class="px-4 py-3 text-sm text-slate-500">Loading search…</p>';
-      results.classList.remove('hidden');
-      indexLoadPromise = ensureSearchIndexLoaded().catch(() => {
-        indexLoadPromise = null;
-        results.innerHTML = '<p class="px-4 py-3 text-sm text-slate-500">Search unavailable. Try again.</p>';
-        throw new Error('search-index load failed');
-      });
-    }
-    return indexLoadPromise;
-  };
-
-  input.addEventListener('focus', () => { loadIndex(); });
-
-  input.addEventListener('input', () => {
-    clearTimeout(debounceTimer);
-    debounceTimer = setTimeout(() => {
-      const query = input.value.trim();
-      if (!query) {
-        hideResults();
-        return;
-      }
-      loadIndex().then(() => {
-        if (typeof SEARCH_INDEX !== 'undefined') renderResults(searchGlobalIndex(query));
-      }).catch(() => {});
-    }, 180);
-  });
-
-  input.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      input.blur();
-      hideResults();
-    }
-  });
-
-  document.addEventListener('click', (e) => {
-    if (!results.contains(e.target) && e.target !== input) hideResults();
   });
 }
 
@@ -968,13 +824,6 @@ function mountMobileStyles() {
       .card-hover:hover, .lecture-card:hover, .media-card:hover {
         transform: none !important;
       }
-    }
-
-    .global-search-panel {
-      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
-    }
-    .global-search-result:active {
-      background: rgba(30, 41, 59, 0.9);
     }
 
     .continue-listening-card .line-clamp-2 {
