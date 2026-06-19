@@ -143,6 +143,14 @@
       gap: 0.22rem;
       height: 1.35rem;
       opacity: 0.55;
+      z-index: 2;
+      transition: top 0.28s ease, bottom 0.28s ease, opacity 0.28s ease;
+    }
+    .lecture-placeholder.is-playing .lecture-placeholder__wave {
+      bottom: auto;
+      top: 0.72rem;
+      opacity: 0.95;
+      z-index: 25;
     }
     .lecture-placeholder__wave span {
       display: block;
@@ -280,6 +288,35 @@
       padding-left: 0.62rem;
       margin-left: 0.05rem;
     }
+    .audio-playing-wave {
+      position: absolute;
+      top: 0.72rem;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 25;
+      display: flex;
+      align-items: flex-end;
+      gap: 0.22rem;
+      height: 1.35rem;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.28s ease;
+    }
+    .lecture-card.is-playing-audio .audio-playing-wave {
+      opacity: 0.95;
+    }
+    .lecture-card.is-playing-audio .audio-playing-wave span {
+      display: block;
+      width: 3px;
+      border-radius: 9999px;
+      background: #d4a853;
+      animation: ph-wave 1.35s ease-in-out infinite;
+    }
+    .audio-playing-wave span:nth-child(1) { height: 0.45rem; animation-delay: 0s; }
+    .audio-playing-wave span:nth-child(2) { height: 0.85rem; animation-delay: 0.12s; }
+    .audio-playing-wave span:nth-child(3) { height: 1.15rem; animation-delay: 0.24s; }
+    .audio-playing-wave span:nth-child(4) { height: 0.75rem; animation-delay: 0.36s; }
+    .audio-playing-wave span:nth-child(5) { height: 0.5rem; animation-delay: 0.48s; }
     .scrollbar-thin::-webkit-scrollbar { height: 6px; }
     .scrollbar-thin::-webkit-scrollbar-thumb { background: #334155; border-radius: 3px; }
     audio { width: 100%; border-radius: .5rem; }
@@ -771,6 +808,7 @@
 
       const downloadOverlay = downloadGlassLink(audioUrl, { label: 'Download audio' });
       const skipControls = audioSkipControlsHtml();
+      const playingWave = `<div class="audio-playing-wave" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>`;
 
       const thumbSection = hasThumb
         ? `<div class="thumb-frame relative flex items-center justify-center p-3 overflow-hidden">
@@ -780,6 +818,7 @@
             <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950/80 text-gold text-[10px] font-semibold uppercase tracking-wider backdrop-blur-sm z-10">
               ${escapeHtml(lecture.categoryLabel)}
             </span>
+            ${playingWave}
             ${skipControls}
             ${downloadOverlay}
           </div>`
