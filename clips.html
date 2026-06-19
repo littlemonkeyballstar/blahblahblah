@@ -92,8 +92,13 @@
           thumb: c.thumb,
           title: c.title,
           stream: c.stream,
+          shareUrl: pageItemShareUrl('clips.html', 'clip', c.id),
+          shareLabel: 'Copy link to this clip',
+          downloadLabel: 'Download clip',
           hideThumbImage: true,
         })).join('') || '<p class="text-slate-500 col-span-full text-center py-16">No clips found.</p>';
+        bindShareButtons(grid);
+        bindMediaCardTitles(grid);
       });
 
       const pag = document.getElementById('pagination');

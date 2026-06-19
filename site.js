@@ -1066,6 +1066,88 @@ function mountMobileStyles() {
       -webkit-box-orient: vertical;
       overflow: hidden;
     }
+
+    .media-card__inner {
+      display: flex;
+      flex-direction: column;
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+    .media-card__head {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      min-height: 2.875rem;
+      margin-bottom: 0.75rem;
+    }
+    .media-card__title-wrap {
+      flex: 1 1 auto;
+      min-width: 0;
+      height: 2.875rem;
+      overflow: hidden;
+    }
+    .media-card__title-track {
+      font-size: 0.875rem;
+      line-height: 1.4375rem;
+      font-weight: 500;
+      color: #f1f5f9;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      word-break: break-word;
+    }
+    .media-card__actions {
+      display: flex;
+      align-items: center;
+      gap: 0.375rem;
+      flex-shrink: 0;
+      padding-top: 0.0625rem;
+    }
+    .media-card__action-btn {
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.5rem;
+      border: 1px solid rgba(51, 65, 85, 0.85);
+      background: rgba(2, 6, 23, 0.55);
+      color: #94a3b8;
+      transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+    .media-card__action-btn:hover {
+      color: #d4a853;
+      border-color: rgba(212, 168, 83, 0.45);
+      background: rgba(15, 23, 42, 0.85);
+    }
+    .media-card__action-btn.share-link-btn {
+      cursor: pointer;
+      padding: 0;
+      font: inherit;
+    }
+    .media-card__video {
+      margin-top: auto;
+    }
+    #grid .media-card,
+    #grid > .media-card {
+      height: 100%;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .media-card__title-wrap.is-overflow:hover .media-card__title-track {
+        display: inline-block;
+        -webkit-line-clamp: unset;
+        white-space: nowrap;
+        max-width: none;
+        animation: media-card-title-scroll 12s linear infinite;
+      }
+    }
+    @keyframes media-card-title-scroll {
+      0%, 18% { transform: translateX(0); }
+      82%, 100% { transform: translateX(var(--title-scroll, -40%)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .media-card__title-wrap.is-overflow:hover .media-card__title-track {
+        animation: none;
+      }
+    }
   `;
   document.head.appendChild(style);
 }
@@ -1240,7 +1322,10 @@ function bindShareButtons(root = document) {
 
 function shareIconButton(shareUrl, { label = 'Copy link', className = '' } = {}) {
   if (!shareUrl) return '';
-  return `<button type="button" class="share-link-btn inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-500 hover:text-gold hover:bg-slate-800/80 transition flex-shrink-0 ${className}"
+  const btnClass = className
+    ? `share-link-btn ${className}`
+    : 'share-link-btn inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-500 hover:text-gold hover:bg-slate-800/80 transition flex-shrink-0';
+  return `<button type="button" class="${btnClass}"
     data-share-url="${escapeHtml(shareUrl)}" title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">
     <i class="fas fa-share-nodes text-sm"></i>
   </button>`;
@@ -1256,9 +1341,34 @@ function shareGlassButton(shareUrl, { label = 'Copy link' } = {}) {
 
 function downloadIconLink(url, { label = 'Download', className = '' } = {}) {
   if (!url) return '';
-  return `<a href="${url}" class="media-download-link inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-500 hover:text-gold hover:bg-slate-800/80 transition flex-shrink-0 ${className}" target="_blank" rel="noopener" download title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">
+  const linkClass = className
+    ? `media-download-link ${className}`
+    : 'media-download-link inline-flex items-center justify-center w-8 h-8 rounded-lg text-slate-500 hover:text-gold hover:bg-slate-800/80 transition flex-shrink-0';
+  return `<a href="${url}" class="${linkClass}" target="_blank" rel="noopener" download title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">
     <i class="fas fa-download text-sm"></i>
   </a>`;
+}
+
+function bindMediaCardTitles(root = document) {
+  root.querySelectorAll('.media-card__title-wrap:not([data-title-bound])').forEach((wrap) => {
+    wrap.dataset.titleBound = '1';
+    const track = wrap.querySelector('.media-card__title-track');
+    if (!track) return;
+    requestAnimationFrame(() => {
+      const overflowsVertically = track.scrollHeight > wrap.clientHeight + 1;
+      const probe = track.cloneNode(true);
+      probe.style.cssText = 'position:absolute;visibility:hidden;pointer-events:none;display:inline-block;white-space:nowrap;width:auto;max-width:none;-webkit-line-clamp:unset;';
+      wrap.appendChild(probe);
+      const fullWidth = probe.scrollWidth;
+      const viewWidth = wrap.clientWidth;
+      probe.remove();
+      if (!overflowsVertically && fullWidth <= viewWidth + 1) return;
+      wrap.classList.add('is-overflow');
+      if (fullWidth > viewWidth + 1) {
+        wrap.style.setProperty('--title-scroll', `-${fullWidth - viewWidth}px`);
+      }
+    });
+  });
 }
 
 function downloadGlassLink(url, { label = 'Download' } = {}) {
@@ -1668,30 +1778,37 @@ function enhanceGridThumbs(root, { priorityCount = 6 } = {}) {
   });
 }
 
-function mediaCard({ id, thumb, title, badge, stream, downloadUrl, shareUrl, posterOnly = false, hideThumbImage = false }) {
+function mediaCard({
+  id,
+  thumb,
+  title,
+  badge,
+  stream,
+  downloadUrl,
+  shareUrl,
+  shareLabel = 'Copy link',
+  downloadLabel = 'Download video',
+  posterOnly = false,
+  hideThumbImage = false,
+}) {
   const encThumb = thumbSrc(thumb);
   const poster = encThumb ? `poster="${encThumb}"` : '';
   const imgBlock = encThumb
     ? `<img src="${encThumb}" alt="" class="relative z-[1] max-w-full max-h-full object-contain" loading="lazy" onerror="this.style.display='none'">`
     : `<i class="fas fa-play-circle text-4xl text-gold/25"></i>`;
   const badgeHtml = badge ? `<span class="absolute top-2 left-2 z-10 px-2 py-0.5 rounded-md bg-slate-950/85 text-gold text-[10px] font-semibold uppercase tracking-wider">${escapeHtml(badge)}</span>` : '';
-  const overlayBtnClass = 'absolute top-2 z-10 bg-slate-950/75 backdrop-blur-sm border border-slate-700/80 hover:border-gold/40';
-  const shareLink = shareUrl ? shareIconButton(shareUrl, {
-    label: 'Copy link to this video',
-    className: `${overlayBtnClass} right-11`,
-  }) : '';
-  const downloadLink = downloadIconLink(downloadUrl || stream, {
-    label: 'Download video',
-    className: `${overlayBtnClass} right-2`,
-  });
+  const actionBtnClass = 'media-card__action-btn inline-flex items-center justify-center flex-shrink-0';
+  const actions = (shareUrl || downloadUrl || stream) ? `
+        <div class="media-card__actions">
+          ${shareUrl ? shareIconButton(shareUrl, { label: shareLabel, className: actionBtnClass }) : ''}
+          ${downloadIconLink(downloadUrl || stream, { label: downloadLabel, className: actionBtnClass })}
+        </div>` : '';
   const videoBlock = posterOnly ? '' : `
-    <div class="relative mt-auto">
-      <video controls preload="none" playsinline class="w-full rounded-lg bg-black ${hideThumbImage ? 'aspect-video' : ''}" ${poster}>
-        <source src="${stream}" type="video/mp4">
-      </video>
-      ${shareLink}
-      ${downloadLink}
-    </div>`;
+        <div class="media-card__video relative">
+          <video controls preload="none" playsinline class="w-full rounded-lg bg-black ${hideThumbImage ? 'aspect-video' : ''}" ${poster}>
+            <source src="${stream}" type="video/mp4">
+          </video>
+        </div>`;
 
   const thumbSection = hideThumbImage ? '' : `
       <div class="media-thumb relative flex items-center justify-center p-3 overflow-hidden">
@@ -1703,8 +1820,13 @@ function mediaCard({ id, thumb, title, badge, stream, downloadUrl, shareUrl, pos
   return `
     <article id="${id || ''}" class="media-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5 sm:hover:-translate-y-0.5">
       ${thumbSection}
-      <div class="p-4 sm:p-4 flex flex-col flex-1 min-w-0">
-        <h3 class="font-medium text-sm sm:text-sm text-slate-100 leading-snug ${hideThumbImage ? 'mb-3 sm:mb-4' : 'mb-3'} line-clamp-4 sm:line-clamp-3" title="${escapeHtml(title)}">${escapeHtml(title)}</h3>
+      <div class="media-card__inner p-4 sm:p-4">
+        <div class="media-card__head">
+          <div class="media-card__title-wrap" title="${escapeHtml(title)}">
+            <div class="media-card__title-track"><span class="media-card__title-text">${escapeHtml(title)}</span></div>
+          </div>
+          ${actions}
+        </div>
         ${videoBlock}
       </div>
     </article>`;
