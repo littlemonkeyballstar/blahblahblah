@@ -175,7 +175,7 @@ const CLIPS = [
     "title": "How Allah Mocks Hypocrites Who Follow Wicked Scholars - Shaykh Abdullah Faisal",
     "file": "How Allah Mocks Hypocrites Who Follow Wicked.mp4",
     "archive": "How Allah Mocks Hypocrites Who Follow Wicked.mp4",
-    "thumb": null,
+    "thumb": "thumb/clips/How Allah Mocks Hypocrites Who Follow Wicked.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/How%20Allah%20Mocks%20Hypocrites%20Who%20Follow%20Wicked.mp4"
   },
   {
@@ -263,7 +263,7 @@ const CLIPS = [
     "title": "Madakilah's were never a Muslims",
     "file": "Madakilah's were never a Muslims.mp4",
     "archive": "Madakilah's were never a Muslims.mp4",
-    "thumb": null,
+    "thumb": "thumb/clips/Madakilah's were never a Muslims.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/Madakilah%27s%20were%20never%20a%20Muslims.mp4"
   },
   {

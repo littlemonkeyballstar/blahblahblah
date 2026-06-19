@@ -5303,7 +5303,8 @@ const SEARCH_INDEX = [
     "id": 21,
     "title": "How Allah Mocks Hypocrites Who Follow Wicked Scholars - Shaykh Abdullah Faisal",
     "sub": "Short clip",
-    "href": "clips.html?clip=21"
+    "href": "clips.html?clip=21",
+    "thumb": "thumb/clips/How Allah Mocks Hypocrites Who Follow Wicked.jpg"
   },
   {
     "type": "clip",
@@ -5390,7 +5391,8 @@ const SEARCH_INDEX = [
     "id": 32,
     "title": "Madakilah's were never a Muslims",
     "sub": "Short clip",
-    "href": "clips.html?clip=32"
+    "href": "clips.html?clip=32",
+    "thumb": "thumb/clips/Madakilah's were never a Muslims.jpg"
   },
   {
     "type": "clip",
