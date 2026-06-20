@@ -591,7 +591,10 @@ function mountMotionStyles() {
       view-transition-name: site-main;
     }
 
-    .site-top-bar { min-height: 2.85rem; }
+    .site-top-bar { min-height: 2rem; }
+    @media (min-width: 640px) {
+      .site-top-bar { min-height: 2.85rem; }
+    }
     .site-header { min-height: 3.65rem; }
     @media (min-width: 640px) {
       .site-header { min-height: 4.75rem; }
@@ -1181,7 +1184,7 @@ function mountMobileStyles() {
       }
       .audio-category-panel {
         position: sticky;
-        top: 4.25rem;
+        top: 4rem;
         z-index: 30;
         background: rgba(12, 18, 32, 0.96) !important;
         backdrop-filter: blur(10px);
@@ -1448,7 +1451,7 @@ function mountTopBar() {
       .site-top-bar__inner {
         max-width: 80rem;
         margin: 0 auto;
-        padding: 0.625rem 1rem;
+        padding: 0.3rem 0.5rem;
         text-align: center;
       }
       @media (min-width: 640px) {
@@ -1456,29 +1459,46 @@ function mountTopBar() {
       }
       .site-top-bar__grid {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: 0.5rem;
+        gap: 0.4rem;
       }
       @media (min-width: 768px) {
-        .site-top-bar__grid {
-          flex-direction: row;
-          gap: 1.25rem;
-        }
+        .site-top-bar__grid { gap: 1.25rem; }
       }
-      .site-top-bar__block { line-height: 1.35; }
+      .site-top-bar__block {
+        line-height: 1.2;
+        flex: 1 1 0;
+        min-width: 0;
+      }
       .site-top-bar__ar {
         color: rgba(252, 211, 140, 0.92);
-        font-size: 0.8125rem;
+        font-size: 0.625rem;
         font-weight: 500;
-        letter-spacing: 0.02em;
+        letter-spacing: 0.01em;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      @media (min-width: 640px) {
+        .site-top-bar__ar {
+          font-size: 0.8125rem;
+          letter-spacing: 0.02em;
+          white-space: normal;
+          overflow: visible;
+          text-overflow: clip;
+        }
       }
       .site-top-bar__en {
+        display: none;
         color: rgba(148, 163, 184, 0.85);
         font-size: 0.6875rem;
         letter-spacing: 0.05em;
         margin-top: 0.1rem;
+      }
+      @media (min-width: 640px) {
+        .site-top-bar__en { display: block; }
       }
       .site-top-bar__block:first-child .site-top-bar__en {
         text-transform: uppercase;
@@ -1489,18 +1509,16 @@ function mountTopBar() {
         font-size: 0.7rem;
       }
       .site-top-bar__divider {
-        color: rgba(212, 168, 83, 0.35);
-        font-size: 0.75rem;
+        flex-shrink: 0;
+        width: 1px;
+        height: 1.15rem;
+        background: linear-gradient(180deg, transparent, rgba(212,168,83,0.25), transparent);
+        font-size: 0;
         line-height: 1;
         user-select: none;
       }
       @media (min-width: 768px) {
-        .site-top-bar__divider {
-          width: 1px;
-          height: 2rem;
-          background: linear-gradient(180deg, transparent, rgba(212,168,83,0.25), transparent);
-          font-size: 0;
-        }
+        .site-top-bar__divider { height: 2rem; }
       }
     `;
     document.head.appendChild(style);
