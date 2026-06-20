@@ -3960,7 +3960,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 1,
-    "title": "Eidul Fitr 2017",
+    "title": "Eid ul Fitr 2017",
     "sub": "Video lecture",
     "href": "videos.html?video=1",
     "thumb": "thumb/videos/03.Eidul Fitr 2017 - Shaikh Faisal.jpg"
@@ -3976,7 +3976,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 3,
-    "title": "signs of a Munafiq",
+    "title": "35 Signs of a Munafiq",
     "sub": "Video lecture",
     "href": "videos.html?video=3",
     "thumb": "thumb/videos/06.35 signs of a Munafiq by Sheikh Abdullah Faisal.jpg"
@@ -3984,15 +3984,15 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 4,
-    "title": "Tafsir Surah Hujuraat",
+    "title": "Tafsir Surah Hujurat (Part 8)",
     "sub": "Video lecture",
     "href": "videos.html?video=4",
-    "thumb": "thumb/videos/Tafsir Surah Hujuraat by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/08.Tafsir Surah Hujuraat by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 5,
-    "title": "17 Signs Of The Wicked Scholars",
+    "title": "17 Signs of the Wicked Scholars",
     "sub": "Video lecture",
     "href": "videos.html?video=5",
     "thumb": "thumb/videos/17 Signs Of The Wicked Scholars - Shaykh Abdullah Faisal.jpg"
@@ -4000,7 +4000,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 6,
-    "title": "47 Signs Of A Wicked Scholar",
+    "title": "47 Signs of a Wicked Scholar",
     "sub": "Video lecture",
     "href": "videos.html?video=6",
     "thumb": "thumb/videos/47 Signs Of A Wicked Scholar - Sheikh Abdullah Faisal.jpg"
@@ -4008,7 +4008,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 7,
-    "title": "AUTHENTIC TAWHEED",
+    "title": "Authentic Tawheed",
     "sub": "Video lecture",
     "href": "videos.html?video=7",
     "thumb": "thumb/videos/AUTHENTIC TAWHEED - Abdallah Al Faisal.jpg"
@@ -4016,7 +4016,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 8,
-    "title": "Ahkaam Ghusl",
+    "title": "Ahkaam of Ghusl",
     "sub": "Video lecture",
     "href": "videos.html?video=8",
     "thumb": "thumb/videos/Ahkaam Ghusl by Shaikh Faisal.jpg"
@@ -4024,7 +4024,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 9,
-    "title": "Ahkaam Wudu [Bulugh al Maram]",
+    "title": "Ahkaam of Wudu [Bulugh al-Maram]",
     "sub": "Video lecture",
     "href": "videos.html?video=9",
     "thumb": "thumb/videos/Ahkaam Wudu [Bulugh al Maram] by Shaikh Faisal.jpg"
@@ -4032,7 +4032,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 10,
-    "title": "Ahkam Vinegar, Donkey Meat, Saliva, Gelatin and Semen",
+    "title": "Ahkaam of Vinegar, Donkey Meat, Saliva, Gelatin and Semen",
     "sub": "Video lecture",
     "href": "videos.html?video=10",
     "thumb": "thumb/videos/Ahkam  Vinegar, Donkey Meat, Saliva, Gelatin and Semen by Shaikh Faisal.jpg"
@@ -4040,7 +4040,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 11,
-    "title": "Al-Wala wal-Bara",
+    "title": "What is Al-Wala wal-Bara Explained",
     "sub": "Video lecture",
     "href": "videos.html?video=11",
     "thumb": "thumb/videos/Al-Wala wal-Bara by shaykh Abdullah Faisal.jpg"
@@ -4056,7 +4056,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 13,
-    "title": "Allah s Blessings to Mankind",
+    "title": "Allah's Blessings to Mankind",
     "sub": "Video lecture",
     "href": "videos.html?video=13",
     "thumb": "thumb/videos/Allah s Blessings to Mankind by Shaikh Faisal.jpg"
@@ -4072,7 +4072,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 15,
-    "title": "Application of Revelation The 11 Shariah Hujjah",
+    "title": "Application of Revelation — The 11 Shariah Hujjah",
     "sub": "Video lecture",
     "href": "videos.html?video=15",
     "thumb": "thumb/videos/Application of Revelation   The 11 Shariah Hujjah by Shaikh Faisal.jpg"
@@ -4104,7 +4104,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 19,
-    "title": "CANCERS IN THE BODY OF THE UMMAH",
+    "title": "Cancers in the Body of the Ummah",
     "sub": "Video lecture",
     "href": "videos.html?video=19",
     "thumb": "thumb/videos/CANCERS IN THE BODY OF THE UMMAH - Abdallah Al Faisal.jpg"
@@ -4120,7 +4120,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 21,
-    "title": "DEFINITION OF A SCHOLAR",
+    "title": "Definition of a Scholar",
     "sub": "Video lecture",
     "href": "videos.html?video=21",
     "thumb": "thumb/videos/DEFINITION OF A SCHOLAR - Abdallah Al Faisal.jpg"
@@ -4128,7 +4128,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 22,
-    "title": "DISEASES OF THE HEART",
+    "title": "Diseases of the Heart",
     "sub": "Video lecture",
     "href": "videos.html?video=22",
     "thumb": "thumb/videos/DISEASES OF THE HEART - Abdallah Al Faisal.jpg"
@@ -4136,7 +4136,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 23,
-    "title": "DISMANTLE THE SHARIAH IS MAJOR KUFR",
+    "title": "Dismantling the Shariah Is Major Kufr",
     "sub": "Video lecture",
     "href": "videos.html?video=23",
     "thumb": "thumb/videos/DISMANTLE THE SHARIAH IS MAJOR KUFR - Abdallah Al Faisal.jpg"
@@ -4152,7 +4152,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 25,
-    "title": "EID (AL FITR & AL ADHA) MESSAGE TO THE UMMAH",
+    "title": "Eid Message to the Ummah (Al-Fitr & Al-Adha)",
     "sub": "Video lecture",
     "href": "videos.html?video=25",
     "thumb": "thumb/videos/EID (AL FITR & AL ADHA) MESSAGE TO THE UMMAH - Shaykh Faisal.jpg"
@@ -4160,7 +4160,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 26,
-    "title": "EXPOSING THE HYPOCRITE",
+    "title": "Exposing the Hypocrite",
     "sub": "Video lecture",
     "href": "videos.html?video=26",
     "thumb": "thumb/videos/EXPOSING THE HYPOCRITE - Abdallah Al Faisal.jpg"
@@ -4168,7 +4168,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 27,
-    "title": "Eidul Adha Khutbah 2016",
+    "title": "Eid ul Adha Khutbah 2016",
     "sub": "Video lecture",
     "href": "videos.html?video=27",
     "thumb": "thumb/videos/Eidul Adha Khutbah 2016 - Shaikh Faisal.jpg"
@@ -4200,7 +4200,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 31,
-    "title": "How did ALI (ra) Deal with the Khawarij (Puritans)",
+    "title": "How did Ali (ra) Deal with the Khawarij (Puritans)",
     "sub": "Video lecture",
     "href": "videos.html?video=31",
     "thumb": "thumb/videos/How did ALI (ra) Deal with the Khawarij (Puritans) by Shaikh Faisal.jpg"
@@ -4232,7 +4232,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 35,
-    "title": "IMPORTANCE OF MARRIAGE",
+    "title": "Importance of Marriage",
     "sub": "Video lecture",
     "href": "videos.html?video=35",
     "thumb": "thumb/videos/IMPORTANCE OF MARRIAGE - Abdallah Al Faisal.jpg"
@@ -4240,7 +4240,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 36,
-    "title": "IS CHRISTIANITY PAGANISM (DEBATE) VS Gospel Minister Bishop Joseph Ade Gold",
+    "title": "Is Christianity Paganism? (Debate vs Bishop Joseph Ade Gold)",
     "sub": "Video lecture",
     "href": "videos.html?video=36",
     "thumb": "thumb/videos/IS CHRISTIANITY PAGANISM (DEBATE) - Abdallah Al Faisal VS Gospel Minister Bishop Joseph Ade Gold.jpg"
@@ -4248,7 +4248,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 37,
-    "title": "ISLAM AND THE WEST",
+    "title": "Islam and the West",
     "sub": "Video lecture",
     "href": "videos.html?video=37",
     "thumb": "thumb/videos/ISLAM AND THE WEST - Abdallah Al Faisal.jpg"
@@ -4256,7 +4256,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 38,
-    "title": "ISLAM THE MOST HYGIENIC RELIGION",
+    "title": "Islam — the Most Hygienic Religion",
     "sub": "Video lecture",
     "href": "videos.html?video=38",
     "thumb": "thumb/videos/ISLAM THE MOST HYGIENIC RELIGION - Abdallah Al Faisal.jpg"
@@ -4264,7 +4264,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 39,
-    "title": "JIHAD AIMS & OBJECTIVES",
+    "title": "Jihad — Aims and Objectives",
     "sub": "Video lecture",
     "href": "videos.html?video=39",
     "thumb": "thumb/videos/JIHAD AIMS & OBJECTIVES - Abdallah Al Faisal.jpg"
@@ -4304,7 +4304,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 44,
-    "title": "Jumuah — - Refuting Atheism Project Iblis",
+    "title": "Jumuah — Refuting Atheism (Project Iblis)",
     "sub": "Video lecture",
     "href": "videos.html?video=44",
     "thumb": "thumb/videos/Jumuah with Shaikh Faisal - Refuting Atheism   Project Iblis.jpg"
@@ -4312,7 +4312,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 45,
-    "title": "KNOWLEDGE",
+    "title": "Knowledge",
     "sub": "Video lecture",
     "href": "videos.html?video=45",
     "thumb": "thumb/videos/KNOWLEDGE - Shaikh Faisal 2008.jpg"
@@ -4320,7 +4320,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 46,
-    "title": "LET THE SCHOLARS BEWARE",
+    "title": "Let the Scholars Beware",
     "sub": "Video lecture",
     "href": "videos.html?video=46",
     "thumb": "thumb/videos/LET THE SCHOLARS BEWARE - Abdullah El Faisal.ia.jpg"
@@ -4336,745 +4336,761 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 48,
-    "title": "Live Islam",
+    "title": "Let the Scholars Beware (Khutbah)",
     "sub": "Video lecture",
     "href": "videos.html?video=48",
-    "thumb": "thumb/videos/Live Islam - Shaikh Faisal 2008.jpg"
+    "thumb": "thumb/videos/Let the Scholars Beware by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 49,
-    "title": "MANHOOD",
+    "title": "Live Islam",
     "sub": "Video lecture",
     "href": "videos.html?video=49",
-    "thumb": "thumb/videos/MANHOOD - Shaikh Faisal 2008.jpg"
+    "thumb": "thumb/videos/Live Islam - Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
     "id": 50,
-    "title": "MARITAL DISCORD (NUSHOOZ)",
+    "title": "Manhood",
     "sub": "Video lecture",
     "href": "videos.html?video=50",
-    "thumb": "thumb/videos/MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/MANHOOD - Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
     "id": 51,
-    "title": "MERITS OF THE PROPHET MUHAMMAD (saw)",
+    "title": "Marital Discord (Nushooz)",
     "sub": "Video lecture",
     "href": "videos.html?video=51",
-    "thumb": "thumb/videos/MERITS OF THE PROPHET MUHAMMAD (saw) - Shaikh Faisal 2009.jpg"
+    "thumb": "thumb/videos/MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 52,
-    "title": "MUSLIM HOME",
+    "title": "Merits of the Prophet Muhammad (saw)",
     "sub": "Video lecture",
     "href": "videos.html?video=52",
-    "thumb": "thumb/videos/MUSLIM HOME - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/MERITS OF THE PROPHET MUHAMMAD (saw) - Shaikh Faisal 2009.jpg"
   },
   {
     "type": "video",
     "id": 53,
-    "title": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL)",
+    "title": "The Muslim Home",
     "sub": "Video lecture",
     "href": "videos.html?video=53",
-    "thumb": "thumb/videos/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/MUSLIM HOME - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 54,
-    "title": "Muhammad ibn Abdul Wahhab - The 10 Nullifiers of Islam",
+    "title": "Mysteries of the Soul (Human Soul)",
     "sub": "Video lecture",
     "href": "videos.html?video=54",
-    "thumb": "thumb/videos/Muhammad ibn Abdul Wahhab - The 10 Nullifiers of Islam.jpg"
+    "thumb": "thumb/videos/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 55,
-    "title": "NATURAL DISASTERS, WHY DO THEY OCCUR",
+    "title": "Muhammad ibn Abdul Wahhab - The 10 Nullifiers of Islam",
     "sub": "Video lecture",
     "href": "videos.html?video=55",
-    "thumb": "thumb/videos/NATURAL DISASTERS, WHY DO THEY OCCUR - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/Muhammad ibn Abdul Wahhab - The 10 Nullifiers of Islam.jpg"
   },
   {
     "type": "video",
     "id": 56,
-    "title": "NO PEACE WITH THE JEWS",
+    "title": "Natural Disasters — Why Do They Occur?",
     "sub": "Video lecture",
     "href": "videos.html?video=56",
-    "thumb": "thumb/videos/NO PEACE WITH THE JEWS - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/NATURAL DISASTERS, WHY DO THEY OCCUR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 57,
-    "title": "Natural Instincts",
+    "title": "No Peace with the Jews",
     "sub": "Video lecture",
     "href": "videos.html?video=57",
-    "thumb": "thumb/videos/Natural Instincts  Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/NO PEACE WITH THE JEWS - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 58,
-    "title": "Nushooz [Marital Discord]",
+    "title": "What Are Natural Instincts Explained",
     "sub": "Video lecture",
     "href": "videos.html?video=58",
-    "thumb": "thumb/videos/Nushooz [Marital Discord] - Shaikh Faisal 1998.jpg"
+    "thumb": "thumb/videos/Natural Instincts  Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 59,
-    "title": "PUNISHMENT OF THE GRAVE",
+    "title": "Nushooz [Marital Discord]",
     "sub": "Video lecture",
     "href": "videos.html?video=59",
-    "thumb": "thumb/videos/PUNISHMENT OF THE GRAVE - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/Nushooz [Marital Discord] - Shaikh Faisal 1998.jpg"
   },
   {
     "type": "video",
     "id": 60,
-    "title": "Philosophy of the Islamic Creed",
+    "title": "Punishment of the Grave",
     "sub": "Video lecture",
     "href": "videos.html?video=60",
-    "thumb": "thumb/videos/Philosophy of the Islamic Creed by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/PUNISHMENT OF THE GRAVE - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 61,
-    "title": "REALITY OF EMAAN",
+    "title": "Philosophy of the Islamic Creed",
     "sub": "Video lecture",
     "href": "videos.html?video=61",
-    "thumb": "thumb/videos/REALITY OF EMAAN - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/Philosophy of the Islamic Creed by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 62,
-    "title": "Ramadan - Our Blessed Guest",
+    "title": "Reality of Iman",
     "sub": "Video lecture",
     "href": "videos.html?video=62",
-    "thumb": "thumb/videos/Ramadan - Our Blessed Guest by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/REALITY OF EMAAN - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 63,
-    "title": "Rejecting the Taghut",
+    "title": "Ramadan - Our Blessed Guest",
     "sub": "Video lecture",
     "href": "videos.html?video=63",
-    "thumb": "thumb/videos/Rejecting the Taghut by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/Ramadan - Our Blessed Guest by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 64,
-    "title": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION)",
+    "title": "Rejecting the Taghut Explained",
     "sub": "Video lecture",
     "href": "videos.html?video=64",
-    "thumb": "thumb/videos/SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/Rejecting the Taghut by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 65,
-    "title": "SEVEN CONDITIONS OF SHAHADA",
+    "title": "Seven Conditions of Shahada (Classic)",
     "sub": "Video lecture",
     "href": "videos.html?video=65",
-    "thumb": "thumb/videos/SEVEN CONDITIONS OF SHAHADA - Shaikh Faisal 2008.jpg"
+    "thumb": "thumb/videos/SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 66,
-    "title": "SEVENTEEN SIGNS OF THE WICKED SCHOLAR",
+    "title": "Seven Conditions of Shahada",
     "sub": "Video lecture",
     "href": "videos.html?video=66",
-    "thumb": "thumb/videos/SEVENTEEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal.jpg"
+    "thumb": "thumb/videos/SEVEN CONDITIONS OF SHAHADA - Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
     "id": 67,
-    "title": "SHIA DEBATE COMING SOON...",
+    "title": "17 Signs of the Wicked Scholar",
     "sub": "Video lecture",
     "href": "videos.html?video=67",
-    "thumb": "thumb/videos/SHIA DEBATE COMING SOON....jpg"
+    "thumb": "thumb/videos/SEVENTEEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 68,
-    "title": "SHIA KNOW YOUR ENEMY",
+    "title": "Shia Debate (Coming Soon)",
     "sub": "Video lecture",
     "href": "videos.html?video=68",
-    "thumb": "thumb/videos/SHIA KNOW YOUR ENEMY - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/SHIA DEBATE COMING SOON....jpg"
   },
   {
     "type": "video",
     "id": 69,
-    "title": "SIGNS BEFORE JUDGEMENT DAY",
+    "title": "Shia — Know Your Enemy",
     "sub": "Video lecture",
     "href": "videos.html?video=69",
-    "thumb": "thumb/videos/SIGNS BEFORE JUDGEMENT DAY - Shaykh Faisal.jpg"
+    "thumb": "thumb/videos/SHIA KNOW YOUR ENEMY - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 70,
-    "title": "SIX TYPES OF LOVE",
+    "title": "Signs Before Judgement Day",
     "sub": "Video lecture",
     "href": "videos.html?video=70",
-    "thumb": "thumb/videos/SIX TYPES OF LOVE - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/SIGNS BEFORE JUDGEMENT DAY - Shaykh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 71,
-    "title": "STORY OF ABRAHAM",
+    "title": "Six Types of Love",
     "sub": "Video lecture",
     "href": "videos.html?video=71",
-    "thumb": "thumb/videos/STORY OF ABRAHAM - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/SIX TYPES OF LOVE - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 72,
-    "title": "Satan s Web",
+    "title": "Story of Abraham",
     "sub": "Video lecture",
     "href": "videos.html?video=72",
-    "thumb": "thumb/videos/Satan s Web by Shaikh Faisal 2008.jpg"
+    "thumb": "thumb/videos/STORY OF ABRAHAM - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 73,
-    "title": "Shariah vs Man Made Laws",
+    "title": "Satan's Web",
     "sub": "Video lecture",
     "href": "videos.html?video=73",
-    "thumb": "thumb/videos/Shariah vs Man Made Laws by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/Satan s Web by Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
     "id": 74,
-    "title": "Tells a story of two rasta s in Africa - Funny!",
+    "title": "Shariah vs Man Made Laws",
     "sub": "Video lecture",
     "href": "videos.html?video=74",
-    "thumb": "thumb/videos/Shaykh Faisal tells a story of two rasta s in Africa - Funny!.jpg"
+    "thumb": "thumb/videos/Shariah vs Man Made Laws by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 75,
-    "title": "Devils Deception of Saudi Salafi 1990s",
+    "title": "Tells a Story of Two Rastas in Africa (Funny)",
     "sub": "Video lecture",
     "href": "videos.html?video=75",
-    "thumb": "thumb/videos/Sheikh Faisal - Devils Deception of Saudi Salafi 1990s.jpg"
+    "thumb": "thumb/videos/Shaykh Faisal tells a story of two rasta s in Africa - Funny!.jpg"
   },
   {
     "type": "video",
     "id": 76,
-    "title": "Shirk in Perspective",
+    "title": "The Devil's Deception of the Saudi Salafis (1990s)",
     "sub": "Video lecture",
     "href": "videos.html?video=76",
-    "thumb": "thumb/videos/Shirk in Perspective by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/Sheikh Faisal - Devils Deception of Saudi Salafi 1990s.jpg"
   },
   {
     "type": "video",
     "id": 77,
-    "title": "Signs Of The Wicked Scholar",
+    "title": "Shirk in Perspective Explained",
     "sub": "Video lecture",
     "href": "videos.html?video=77",
-    "thumb": "thumb/videos/Signs Of The Wicked Scholar - Shaykh Abdullah Faisal.jpg"
+    "thumb": "thumb/videos/Shirk in Perspective by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 78,
-    "title": "TAFSEER (001) SURAH FATIHA",
+    "title": "Signs of the Wicked Scholar",
     "sub": "Video lecture",
     "href": "videos.html?video=78",
-    "thumb": "thumb/videos/TAFSEER (001) SURAH FATIHA - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/Signs Of The Wicked Scholar - Shaykh Abdullah Faisal.jpg"
   },
   {
     "type": "video",
     "id": 79,
-    "title": "TAFSEER (067) SURAH AL MULK",
+    "title": "Tafsir Surah Al-Fatiha (Full Lecture)",
     "sub": "Video lecture",
     "href": "videos.html?video=79",
-    "thumb": "thumb/videos/TAFSEER (067) SURAH AL MULK - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/TAFSEER (001) SURAH FATIHA - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 80,
-    "title": "TAFSEER (102) SURAH AT TAKAATHUR",
+    "title": "Tafsir Surah AL Mulk",
     "sub": "Video lecture",
     "href": "videos.html?video=80",
-    "thumb": "thumb/videos/TAFSEER (102) SURAH AT TAKAATHUR - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/TAFSEER (067) SURAH AL MULK - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 81,
-    "title": "TAFSEER (103) SURAH AL ASR",
+    "title": "Tafsir Surah At Takaathur",
     "sub": "Video lecture",
     "href": "videos.html?video=81",
-    "thumb": "thumb/videos/TAFSEER (103) SURAH AL ASR - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/TAFSEER (102) SURAH AT TAKAATHUR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 82,
-    "title": "TAFSEER (108) SURAH AL KAWTHAR",
+    "title": "Tafsir Surah AL Asr",
     "sub": "Video lecture",
     "href": "videos.html?video=82",
-    "thumb": "thumb/videos/TAFSEER (108) SURAH AL KAWTHAR - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/TAFSEER (103) SURAH AL ASR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 83,
-    "title": "TAFSEER (110) SURAH AN NASR",
+    "title": "Tafsir Surah AL Kawthar",
     "sub": "Video lecture",
     "href": "videos.html?video=83",
-    "thumb": "thumb/videos/TAFSEER (110) SURAH AN NASR - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/TAFSEER (108) SURAH AL KAWTHAR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 84,
-    "title": "TAFSEER (111) SURAH AL MASAD",
+    "title": "Tafsir Surah An Nasr",
     "sub": "Video lecture",
     "href": "videos.html?video=84",
-    "thumb": "thumb/videos/TAFSEER (111) SURAH AL MASAD - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/TAFSEER (110) SURAH AN NASR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 85,
-    "title": "TAWBAH",
+    "title": "Tafsir Surah AL Masad",
     "sub": "Video lecture",
     "href": "videos.html?video=85",
-    "thumb": "thumb/videos/TAWBAH - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/TAFSEER (111) SURAH AL MASAD - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 86,
-    "title": "TEN NULLIFIERS OF ISLAM",
+    "title": "Tawbah (Repentance)",
     "sub": "Video lecture",
     "href": "videos.html?video=86",
-    "thumb": "thumb/videos/TEN NULLIFIERS OF ISLAM - Abdullah El Faisal.jpg"
+    "thumb": "thumb/videos/TAWBAH - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 87,
-    "title": "THE HUMAN SOUL",
+    "title": "Ten Nullifiers of Islam",
     "sub": "Video lecture",
     "href": "videos.html?video=87",
-    "thumb": "thumb/videos/THE HUMAN SOUL  Shaikh Faisal 2008.jpg"
+    "thumb": "thumb/videos/TEN NULLIFIERS OF ISLAM - Abdullah El Faisal.jpg"
   },
   {
     "type": "video",
     "id": 88,
-    "title": "THE MUSLIM HOME",
+    "title": "The Human Soul",
     "sub": "Video lecture",
     "href": "videos.html?video=88",
-    "thumb": "thumb/videos/THE MUSLIM HOME  Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/THE HUMAN SOUL  Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
     "id": 89,
-    "title": "THE SIGNS BEFORE JUDGEMENT DAY",
+    "title": "The Muslim Home (Khutbah)",
     "sub": "Video lecture",
     "href": "videos.html?video=89",
-    "thumb": "thumb/videos/THE SIGNS BEFORE JUDGEMENT DAY  Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/THE MUSLIM HOME  Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 90,
-    "title": "THE SIX SACRED POSSESSIONS",
+    "title": "The Signs Before Judgement Day",
     "sub": "Video lecture",
     "href": "videos.html?video=90",
-    "thumb": "thumb/videos/THE SIX SACRED POSSESSIONS  Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/THE SIGNS BEFORE JUDGEMENT DAY  Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 91,
-    "title": "THEY DO NOT LOVE ALLAH",
+    "title": "The Six Sacred Possessions",
     "sub": "Video lecture",
     "href": "videos.html?video=91",
-    "thumb": "thumb/videos/THEY DO NOT LOVE ALLAH - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/THE SIX SACRED POSSESSIONS  Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 92,
-    "title": "THIRTY FIVE SIGNS OF A HYPOCRITE",
+    "title": "They Do Not Love Allah",
     "sub": "Video lecture",
     "href": "videos.html?video=92",
-    "thumb": "thumb/videos/THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/THEY DO NOT LOVE ALLAH - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 93,
-    "title": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT",
+    "title": "35 Signs of a Hypocrite",
     "sub": "Video lecture",
     "href": "videos.html?video=93",
-    "thumb": "thumb/videos/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 94,
-    "title": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT",
+    "title": "Those Who Disbelieve Fight in the Cause of Taghut",
     "sub": "Video lecture",
     "href": "videos.html?video=94",
-    "thumb": "thumb/videos/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 95,
-    "title": "Tafsir Surah Al-Asr — Aug 22nd, 2014",
+    "title": "Trade That Saves One from Painful Torment",
     "sub": "Video lecture",
     "href": "videos.html?video=95",
-    "thumb": "thumb/videos/Tafsir Surah Al-Asr - Shaikh Faisal - Aug 22nd, 2014.jpg"
+    "thumb": "thumb/videos/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 96,
-    "title": "Tafsir Surah At-Takathur",
+    "title": "Tafsir Surah Al-Asr — Aug 22nd, 2014",
     "sub": "Video lecture",
     "href": "videos.html?video=96",
-    "thumb": "thumb/videos/Tafsir Surah At-Takathur by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/Tafsir Surah Al-Asr - Shaikh Faisal - Aug 22nd, 2014.jpg"
   },
   {
     "type": "video",
     "id": 97,
-    "title": "Tafsir Surah Fatiha",
+    "title": "Tafsir Surah At-Takathur",
     "sub": "Video lecture",
     "href": "videos.html?video=97",
-    "thumb": "thumb/videos/Tafsir Surah Fatiha by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/Tafsir Surah At-Takathur by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 98,
-    "title": "Tafsir Surah Iklaas — Aug 23rd 2014",
+    "title": "Tafsir Surah Al-Fatiha",
     "sub": "Video lecture",
     "href": "videos.html?video=98",
-    "thumb": "thumb/videos/Tafsir Surah Iklaas - Shaikh Faisal - Aug 23rd 2014.jpg"
+    "thumb": "thumb/videos/Tafsir Surah Fatiha by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 99,
-    "title": "Tafsir Surah Kawthar",
+    "title": "Tafsir Surah Hujurat",
     "sub": "Video lecture",
     "href": "videos.html?video=99",
-    "thumb": "thumb/videos/Tafsir Surah Kawthar by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/Tafsir Surah Hujuraat by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 100,
-    "title": "Tafsir Surah Masad",
+    "title": "Tafsir Surah Ikhlas — Aug 23rd 2014",
     "sub": "Video lecture",
     "href": "videos.html?video=100",
-    "thumb": "thumb/videos/Tafsir Surah Masad by Shaikh Faisal Dec 2014.jpg"
+    "thumb": "thumb/videos/Tafsir Surah Iklaas - Shaikh Faisal - Aug 23rd 2014.jpg"
   },
   {
     "type": "video",
     "id": 101,
-    "title": "Tafsir Surah Mulk",
+    "title": "Tafsir Surah Kawthar",
     "sub": "Video lecture",
     "href": "videos.html?video=101",
-    "thumb": "thumb/videos/Tafsir Surah Mulk by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/Tafsir Surah Kawthar by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 102,
-    "title": "Tafsir Surah Nasr",
+    "title": "Tafsir Surah Masad",
     "sub": "Video lecture",
     "href": "videos.html?video=102",
-    "thumb": "thumb/videos/Tafsir Surah Nasr by Shaikh Faisal Dec 2014.jpg"
+    "thumb": "thumb/videos/Tafsir Surah Masad by Shaikh Faisal Dec 2014.jpg"
   },
   {
     "type": "video",
     "id": 103,
-    "title": "Tafsir Surah Zalzala",
+    "title": "Tafsir Surah Mulk",
     "sub": "Video lecture",
     "href": "videos.html?video=103",
-    "thumb": "thumb/videos/Tafsir Surah Zalzala - Shaikh Faisal Dec 2014.jpg"
+    "thumb": "thumb/videos/Tafsir Surah Mulk by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 104,
-    "title": "Taharah [Bulugh Al-Maram]",
+    "title": "Tafsir Surah Nasr",
     "sub": "Video lecture",
     "href": "videos.html?video=104",
-    "thumb": "thumb/videos/Taharah [Bulugh Al-Maram] by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/Tafsir Surah Nasr by Shaikh Faisal Dec 2014.jpg"
   },
   {
     "type": "video",
     "id": 105,
-    "title": "The 16 Shades of Kufr",
+    "title": "Tafsir Surah Zalzala",
     "sub": "Video lecture",
     "href": "videos.html?video=105",
-    "thumb": "thumb/videos/The 16 Shades of Kufr by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/Tafsir Surah Zalzala - Shaikh Faisal Dec 2014.jpg"
   },
   {
     "type": "video",
     "id": 106,
-    "title": "The 19 Realities of the Truth",
+    "title": "Taharah [Bulugh Al-Maram]",
     "sub": "Video lecture",
     "href": "videos.html?video=106",
-    "thumb": "thumb/videos/The 19 Realities of the Truth by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/Taharah [Bulugh Al-Maram] by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 107,
-    "title": "The 30 Scholastic Questions",
+    "title": "The 16 Shades of Kufr",
     "sub": "Video lecture",
     "href": "videos.html?video=107",
-    "thumb": "thumb/videos/The 30 Scholastic Questions by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The 16 Shades of Kufr by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 108,
-    "title": "The 35 Signs of a Hypocrite",
+    "title": "The 19 Realities of the Truth",
     "sub": "Video lecture",
     "href": "videos.html?video=108",
-    "thumb": "thumb/videos/The 35 Signs of a Hypocrite by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The 19 Realities of the Truth by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 109,
-    "title": "The Barking Dogs of Jahannam (Refuting the Khawarij)",
+    "title": "The 30 Scholastic Questions",
     "sub": "Video lecture",
     "href": "videos.html?video=109",
-    "thumb": "thumb/videos/The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The 30 Scholastic Questions by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 110,
-    "title": "The Best Generation",
+    "title": "The 35 Signs of a Hypocrite",
     "sub": "Video lecture",
     "href": "videos.html?video=110",
-    "thumb": "thumb/videos/The Best Generation - Shaikh Faisal 2008.jpg"
+    "thumb": "thumb/videos/The 35 Signs of a Hypocrite by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 111,
-    "title": "The Devil s Deception of the Aathir",
+    "title": "The Barking Dogs of Jahannam (Refuting the Khawarij)",
     "sub": "Video lecture",
     "href": "videos.html?video=111",
-    "thumb": "thumb/videos/The Devil s Deception of the Aathir by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 112,
-    "title": "The Devils Deception of the Quraniyoon",
+    "title": "The Best Generation",
     "sub": "Video lecture",
     "href": "videos.html?video=112",
-    "thumb": "thumb/videos/The Devils Deception of the Quraniyoon by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Best Generation - Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
     "id": 113,
-    "title": "The Eight Gates of Paradise",
+    "title": "The Devil's Deception of the Aathir",
     "sub": "Video lecture",
     "href": "videos.html?video=113",
-    "thumb": "thumb/videos/The Eight Gates of Paradise - Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Devil s Deception of the Aathir by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 114,
-    "title": "The Fiqh of Marriage",
+    "title": "The Devils Deception of the Quraniyoon",
     "sub": "Video lecture",
     "href": "videos.html?video=114",
-    "thumb": "thumb/videos/The Fiqh of Marriage by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Devils Deception of the Quraniyoon by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 115,
-    "title": "The Five Ahkaam of the Shariah",
+    "title": "The Eight Gates of Paradise",
     "sub": "Video lecture",
     "href": "videos.html?video=115",
-    "thumb": "thumb/videos/The Five Ahkaam of the Shariah by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Eight Gates of Paradise - Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 116,
-    "title": "The Five Needs of Mankind",
+    "title": "The Fiqh of Marriage",
     "sub": "Video lecture",
     "href": "videos.html?video=116",
-    "thumb": "thumb/videos/The Five Needs of Mankind by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Fiqh of Marriage by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 117,
-    "title": "The Four Branches of Tawheed (aka Authentic Tawheed) 2001",
+    "title": "The Five Ahkaam of the Shariah",
     "sub": "Video lecture",
     "href": "videos.html?video=117",
-    "thumb": "thumb/videos/The Four Branches of Tawheed (aka Authentic Tawheed) 2001.jpg"
+    "thumb": "thumb/videos/The Five Ahkaam of the Shariah by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 118,
-    "title": "The Four Pillars of Qadr",
+    "title": "The Five Needs of Mankind",
     "sub": "Video lecture",
     "href": "videos.html?video=118",
-    "thumb": "thumb/videos/The Four Pillars of Qadr by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Five Needs of Mankind by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 119,
-    "title": "The Importance of Marriage",
+    "title": "The Four Branches of Tawheed (aka Authentic Tawheed) 2001",
     "sub": "Video lecture",
     "href": "videos.html?video=119",
-    "thumb": "thumb/videos/The Importance of Marriage - Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Four Branches of Tawheed (aka Authentic Tawheed) 2001.jpg"
   },
   {
     "type": "video",
     "id": 120,
-    "title": "The Laws of Nature",
+    "title": "The Four Pillars of Qadr",
     "sub": "Video lecture",
     "href": "videos.html?video=120",
-    "thumb": "thumb/videos/The Laws of Nature by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Four Pillars of Qadr by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 121,
-    "title": "The Making of an Ummah",
+    "title": "The Importance of Marriage",
     "sub": "Video lecture",
     "href": "videos.html?video=121",
-    "thumb": "thumb/videos/The Making of an Ummah by Shaikh Faisal 2008.jpg"
+    "thumb": "thumb/videos/The Importance of Marriage - Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 122,
-    "title": "The Manhaj for Establishing the Shariah",
+    "title": "The Laws of Nature",
     "sub": "Video lecture",
     "href": "videos.html?video=122",
-    "thumb": "thumb/videos/The Manhaj for Establishing the Shariah by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Laws of Nature by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 123,
-    "title": "The Philosophy of Islamic Jurisprudence",
+    "title": "The Making of an Ummah",
     "sub": "Video lecture",
     "href": "videos.html?video=123",
-    "thumb": "thumb/videos/The Philosophy of Islamic Jurisprudence by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Making of an Ummah by Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
     "id": 124,
-    "title": "The Predictions of the Quran",
+    "title": "The Manhaj for Establishing the Shariah",
     "sub": "Video lecture",
     "href": "videos.html?video=124",
-    "thumb": "thumb/videos/The Predictions of the Quran by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Manhaj for Establishing the Shariah by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 125,
-    "title": "The Prophet Muhammad s (saw) Last Sermon",
+    "title": "The Philosophy of Islamic Jurisprudence",
     "sub": "Video lecture",
     "href": "videos.html?video=125",
-    "thumb": "thumb/videos/The Prophet Muhammad s (saw) Last Sermon by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Philosophy of Islamic Jurisprudence by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 126,
-    "title": "The Quran has no flaws",
+    "title": "The Predictions of the Quran",
     "sub": "Video lecture",
     "href": "videos.html?video=126",
-    "thumb": "thumb/videos/The Quran has no flaws by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Predictions of the Quran by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 127,
-    "title": "The Reality Of Iman (Video)",
+    "title": "The Prophet Muhammad's (saw) Last Sermon",
     "sub": "Video lecture",
     "href": "videos.html?video=127",
-    "thumb": "thumb/videos/The Reality Of Iman (Video).jpg"
+    "thumb": "thumb/videos/The Prophet Muhammad s (saw) Last Sermon by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 128,
-    "title": "The Reality Of The Truth",
+    "title": "The Quran has no flaws",
     "sub": "Video lecture",
     "href": "videos.html?video=128",
-    "thumb": "thumb/videos/The Reality Of The Truth.jpg"
+    "thumb": "thumb/videos/The Quran has no flaws by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 129,
-    "title": "The Rules of Fasting",
+    "title": "The Reality of Iman",
     "sub": "Video lecture",
     "href": "videos.html?video=129",
-    "thumb": "thumb/videos/The Rules of Fasting   Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Reality Of Iman (Video).jpg"
   },
   {
     "type": "video",
     "id": 130,
-    "title": "The Six Types of Love",
+    "title": "The Reality of the Truth",
     "sub": "Video lecture",
     "href": "videos.html?video=130",
-    "thumb": "thumb/videos/The Six Types of Love by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Reality Of The Truth.jpg"
   },
   {
     "type": "video",
     "id": 131,
-    "title": "The State of the Ummah",
+    "title": "The Rules of Fasting",
     "sub": "Video lecture",
     "href": "videos.html?video=131",
-    "thumb": "thumb/videos/The State of the Ummah by Shaikh Faisal (2).jpg"
+    "thumb": "thumb/videos/The Rules of Fasting   Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 132,
-    "title": "The Story of Abraham",
+    "title": "The Six Types of Love",
     "sub": "Video lecture",
     "href": "videos.html?video=132",
-    "thumb": "thumb/videos/The Story of Abraham by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Six Types of Love by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 133,
-    "title": "The Three Principles of Muhammad ibn Abdul Wahhab",
+    "title": "The State of the Ummah",
     "sub": "Video lecture",
     "href": "videos.html?video=133",
-    "thumb": "thumb/videos/The Three Principles of Muhammad ibn Abdul Wahhab by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The State of the Ummah by Shaikh Faisal (2).jpg"
   },
   {
     "type": "video",
     "id": 134,
-    "title": "VIRTUES OF TAQWA",
+    "title": "The Story of Abraham",
     "sub": "Video lecture",
     "href": "videos.html?video=134",
-    "thumb": "thumb/videos/VIRTUES OF TAQWA - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/The Story of Abraham by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 135,
-    "title": "Virtues Of Charity (Video)",
+    "title": "The Three Principles of Muhammad ibn Abdul Wahhab",
     "sub": "Video lecture",
     "href": "videos.html?video=135",
-    "thumb": "thumb/videos/Virtues Of Charity (Video).jpg"
+    "thumb": "thumb/videos/The Three Principles of Muhammad ibn Abdul Wahhab by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 136,
-    "title": "Virtues of Ramadan",
+    "title": "Virtues of Taqwa",
     "sub": "Video lecture",
     "href": "videos.html?video=136",
-    "thumb": "thumb/videos/Virtues of Ramadan by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/VIRTUES OF TAQWA - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 137,
-    "title": "WICKED SCHOLAR",
+    "title": "Virtues of Charity",
     "sub": "Video lecture",
     "href": "videos.html?video=137",
-    "thumb": "thumb/videos/WICKED SCHOLAR - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/Virtues Of Charity (Video).jpg"
   },
   {
     "type": "video",
     "id": 138,
-    "title": "Why the Quran is a Wise Book",
+    "title": "Virtues of Ramadan",
     "sub": "Video lecture",
     "href": "videos.html?video=138",
-    "thumb": "thumb/videos/Why the Quran is a Wise Book   Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/Virtues of Ramadan by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 139,
-    "title": "Women in Islam",
+    "title": "The Wicked Scholar",
     "sub": "Video lecture",
     "href": "videos.html?video=139",
-    "thumb": "thumb/videos/Women in Islam.jpg"
+    "thumb": "thumb/videos/WICKED SCHOLAR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 140,
-    "title": "The creed of the Shia",
+    "title": "Why the Quran is a Wise Book",
     "sub": "Video lecture",
     "href": "videos.html?video=140",
+    "thumb": "thumb/videos/Why the Quran is a Wise Book   Shaikh Faisal.jpg"
+  },
+  {
+    "type": "video",
+    "id": 141,
+    "title": "Women in Islam Explained",
+    "sub": "Video lecture",
+    "href": "videos.html?video=141",
+    "thumb": "thumb/videos/Women in Islam.jpg"
+  },
+  {
+    "type": "video",
+    "id": 142,
+    "title": "The creed of the Shia",
+    "sub": "Video lecture",
+    "href": "videos.html?video=142",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Creed Of the shia _000001.jpg"
   },
   {

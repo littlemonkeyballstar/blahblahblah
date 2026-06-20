@@ -119,8 +119,193 @@ def strip_speaker_from_title(title: str) -> str:
     return text
 
 
+_VIDEO_SMALL_WORDS = {
+    "a", "an", "the", "of", "in", "on", "at", "to", "for", "and", "or", "vs", "by",
+    "with", "from", "as", "al", "ar", "an", "wal", "ibn", "is", "it", "be", "do",
+}
+_VIDEO_KEEP_UPPER = {"VS", "AL", "AR", "IBN", "SAW", "RA", "SWT", "ADHA", "FITR", "EID"}
+
+
+def _video_mostly_uppercase(text: str) -> bool:
+    letters = [char for char in text if char.isalpha()]
+    if len(letters) < 5:
+        return False
+    return sum(char.isupper() for char in letters) / len(letters) >= 0.8
+
+
+def _video_title_case_word(word: str, *, first: bool) -> str:
+    core = word.strip("()[]\"'")
+    if not core:
+        return word
+    if core.upper() in _VIDEO_KEEP_UPPER:
+        return word.upper()
+    if not first and core.lower() in _VIDEO_SMALL_WORDS:
+        return word.lower()
+    if word[:1].isupper() and word[1:].islower():
+        return word
+    lower = word.lower()
+    return lower[:1].upper() + lower[1:]
+
+
+def _video_smart_title_case(text: str) -> str:
+    parts = re.split(r"(\s+)", text)
+    words = [part for part in parts if part and not part.isspace()]
+    spaces = [part for part in parts if part.isspace()]
+    if not words:
+        return text
+    cased = []
+    word_index = 0
+    for part in parts:
+        if part.isspace():
+            cased.append(part)
+            continue
+        cased.append(_video_title_case_word(part, first=word_index == 0))
+        word_index += 1
+    return "".join(cased)
+
+
+def _video_normalize_tafsir(title: str) -> str:
+    match = re.match(r"^TAFSEER\s*\((\d+)\)\s*SURAH\s+(.+)$", title, flags=re.I)
+    if not match:
+        return title
+    surah = _video_smart_title_case(match.group(2).strip())
+    return f"Tafsir Surah {surah}"
+
+
+def polish_video_title(title: str, *, stem: str = "") -> str:
+    text = title.strip()
+    text = re.sub(r"\s*-\s*YouTube\s*$", "", text, flags=re.I)
+    text = re.sub(r"\s*\(Video\)\s*$", "", text, flags=re.I)
+    text = re.sub(r"\s*\(\d+\)\s*$", "", text)
+    text = re.sub(r"\s+", " ", text)
+    text = re.sub(r"\s*—\s*-\s*", " — ", text)
+    text = re.sub(r"\s*—\s*", " — ", text)
+
+    for name in ("Allah", "Satan", "Devil", "Prophet Muhammad", "Muhammad", "Quran"):
+        text = re.sub(rf"\b{re.escape(name)}\s+s\b", f"{name}'s", text, flags=re.I)
+    text = re.sub(r"\brasta\s+s\b", "rastas", text, flags=re.I)
+    text = re.sub(r"\bALI\s*\(ra\)", "Ali (ra)", text, flags=re.I)
+
+    episode = re.match(r"^\d+\.(\d+)\s+", stem)
+    if episode and not re.match(r"^\d+", text):
+        number = str(int(episode.group(1)))
+        text = f"{number} {text[:1].upper() + text[1:]}"
+
+    text = _video_normalize_tafsir(text)
+    if _video_mostly_uppercase(text):
+        text = _video_smart_title_case(text)
+    elif text[:1].islower():
+        text = text[:1].upper() + text[1:]
+
+    text = re.sub(r"\bEidul\b", "Eid ul", text)
+    text = re.sub(r"\bIklaas\b", "Ikhlas", text, flags=re.I)
+    text = re.sub(r"\bHujuraat\b", "Hujurat", text, flags=re.I)
+    text = re.sub(r"\bFatiha\b", "Al-Fatiha", text, flags=re.I)
+    text = re.sub(r"\bAt-Takathur\b", "At-Takathur", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
+
+
+_VIDEO_TITLE_OVERRIDES_RAW = [
+    ("Al-Wala wal-Bara by shaykh Abdullah Faisal", "What is Al-Wala wal-Bara Explained"),
+    ("06.35 signs of a Munafiq by Sheikh Abdullah Faisal", "35 Signs of a Munafiq"),
+    ("AUTHENTIC TAWHEED - Abdallah Al Faisal", "Authentic Tawheed"),
+    ("Application of Revelation   The 11 Shariah Hujjah by Shaikh Faisal", "Application of Revelation — The 11 Shariah Hujjah"),
+    ("CANCERS IN THE BODY OF THE UMMAH - Abdallah Al Faisal", "Cancers in the Body of the Ummah"),
+    ("DEFINITION OF A SCHOLAR - Abdallah Al Faisal", "Definition of a Scholar"),
+    ("DISEASES OF THE HEART - Abdallah Al Faisal", "Diseases of the Heart"),
+    ("DISMANTLE THE SHARIAH IS MAJOR KUFR - Abdallah Al Faisal", "Dismantling the Shariah Is Major Kufr"),
+    ("EID (AL FITR & AL ADHA) MESSAGE TO THE UMMAH - Shaykh Faisal", "Eid Message to the Ummah (Al-Fitr & Al-Adha)"),
+    ("EXPOSING THE HYPOCRITE - Abdallah Al Faisal", "Exposing the Hypocrite"),
+    ("IMPORTANCE OF MARRIAGE - Abdallah Al Faisal", "Importance of Marriage"),
+    (
+        "IS CHRISTIANITY PAGANISM (DEBATE) - Abdallah Al Faisal VS Gospel Minister Bishop Joseph Ade Gold",
+        "Is Christianity Paganism? (Debate vs Bishop Joseph Ade Gold)",
+    ),
+    ("ISLAM AND THE WEST - Abdallah Al Faisal", "Islam and the West"),
+    ("ISLAM THE MOST HYGIENIC RELIGION - Abdallah Al Faisal", "Islam — the Most Hygienic Religion"),
+    ("JIHAD AIMS & OBJECTIVES - Abdallah Al Faisal", "Jihad — Aims and Objectives"),
+    ("Jumuah with Shaikh Faisal  God in Islam", "Jumuah — God in Islam"),
+    ("Jumuah with Shaikh Faisal  Importance of Charity", "Jumuah — Importance of Charity"),
+    ("Jumuah with Shaikh Faisal  The World of Angels", "Jumuah — The World of Angels"),
+    ("Jumuah with Shaikh Faisal - Refuting Atheism   Project Iblis", "Jumuah — Refuting Atheism (Project Iblis)"),
+    ("KNOWLEDGE - Shaikh Faisal 2008", "Knowledge"),
+    ("LET THE SCHOLARS BEWARE - Abdullah El Faisal.ia", "Let the Scholars Beware"),
+    ("Live Islam - Shaikh Faisal 2008", "Live Islam"),
+    ("MANHOOD - Shaikh Faisal 2008", "Manhood"),
+    ("MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal", "Marital Discord (Nushooz)"),
+    ("MERITS OF THE PROPHET MUHAMMAD (saw) - Shaikh Faisal 2009", "Merits of the Prophet Muhammad (saw)"),
+    ("MUSLIM HOME - Abdallah Al Faisal", "The Muslim Home"),
+    ("MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal", "Mysteries of the Soul (Human Soul)"),
+    ("NATURAL DISASTERS, WHY DO THEY OCCUR - Abdallah Al Faisal", "Natural Disasters — Why Do They Occur?"),
+    ("NO PEACE WITH THE JEWS - Abdallah Al Faisal", "No Peace with the Jews"),
+    ("Natural Instincts  Shaikh Faisal", "What Are Natural Instincts Explained"),
+    ("PUNISHMENT OF THE GRAVE - Abdallah Al Faisal", "Punishment of the Grave"),
+    ("REALITY OF EMAAN - Abdallah Al Faisal", "Reality of Iman"),
+    ("SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal", "Seven Conditions of Shahada (Classic)"),
+    ("SEVEN CONDITIONS OF SHAHADA - Shaikh Faisal 2008", "Seven Conditions of Shahada"),
+    ("SEVENTEEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal", "17 Signs of the Wicked Scholar"),
+    ("SHIA DEBATE COMING SOON...", "Shia Debate (Coming Soon)"),
+    ("SHIA KNOW YOUR ENEMY - Abdallah Al Faisal", "Shia — Know Your Enemy"),
+    ("SIGNS BEFORE JUDGEMENT DAY - Shaykh Faisal", "Signs Before Judgement Day"),
+    ("SIX TYPES OF LOVE - Abdallah Al Faisal", "Six Types of Love"),
+    ("STORY OF ABRAHAM - Abdallah Al Faisal", "Story of Abraham"),
+    ("Shaykh Faisal tells a story of two rasta s in Africa - Funny!", "Tells a Story of Two Rastas in Africa (Funny)"),
+    ("Sheikh Faisal - Devils Deception of Saudi Salafi 1990s", "The Devil's Deception of the Saudi Salafis (1990s)"),
+    ("Signs Of The Wicked Scholar - Shaykh Abdullah Faisal", "Signs of the Wicked Scholar"),
+    ("TAWBAH - Abdallah Al Faisal", "Tawbah (Repentance)"),
+    ("TEN NULLIFIERS OF ISLAM - Abdullah El Faisal", "Ten Nullifiers of Islam"),
+    ("THE HUMAN SOUL  Shaikh Faisal 2008", "The Human Soul"),
+
+    ("THE SIGNS BEFORE JUDGEMENT DAY  Shaikh Faisal", "The Signs Before Judgement Day"),
+    ("THE SIX SACRED POSSESSIONS  Shaikh Faisal", "The Six Sacred Possessions"),
+    ("THEY DO NOT LOVE ALLAH - Abdallah Al Faisal", "They Do Not Love Allah"),
+    ("THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal", "35 Signs of a Hypocrite"),
+    (
+        "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal",
+        "Those Who Disbelieve Fight in the Cause of Taghut",
+    ),
+    ("TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal", "Trade That Saves One from Painful Torment"),
+    ("The Reality Of Iman (Video)", "The Reality of Iman"),
+    ("The Reality Of The Truth", "The Reality of the Truth"),
+    ("Virtues Of Charity (Video)", "Virtues of Charity"),
+    ("VIRTUES OF TAQWA - Abdallah Al Faisal", "Virtues of Taqwa"),
+    ("WICKED SCHOLAR - Abdallah Al Faisal", "The Wicked Scholar"),
+    ("Women in Islam", "Women in Islam Explained"),
+    ("The Creed Of the shia ", "The Creed of the Shia"),
+    ("17 Signs Of The Wicked Scholars - Shaykh Abdullah Faisal", "17 Signs of the Wicked Scholars"),
+    ("47 Signs Of A Wicked Scholar - Sheikh Abdullah Faisal", "47 Signs of a Wicked Scholar"),
+    ("08.Tafsir Surah Hujuraat by Shaikh Faisal", "Tafsir Surah Hujurat (Part 8)"),
+    ("Tafsir Surah Hujuraat by Shaikh Faisal", "Tafsir Surah Hujurat"),
+    ("TAFSEER (001) SURAH FATIHA - Abdallah Al Faisal", "Tafsir Surah Al-Fatiha (Full Lecture)"),
+    ("Tafsir Surah Fatiha by Shaikh Faisal", "Tafsir Surah Al-Fatiha"),
+    ("Let the Scholars Beware by Shaikh Faisal", "Let the Scholars Beware (Khutbah)"),
+    ("THE MUSLIM HOME  Shaikh Faisal", "The Muslim Home (Khutbah)"),
+    ("The State of the Ummah by Shaikh Faisal (2)", "The State of the Ummah (Part 2)"),
+    ("The State of the Ummah by Shaikh Faisal", "The State of the Ummah"),
+    ("Ahkaam Ghusl by Shaikh Faisal", "Ahkaam of Ghusl"),
+    ("Ahkaam Wudu [Bulugh al Maram] by Shaikh Faisal", "Ahkaam of Wudu [Bulugh al-Maram]"),
+    (
+        "Ahkam  Vinegar, Donkey Meat, Saliva, Gelatin and Semen by Shaikh Faisal",
+        "Ahkaam of Vinegar, Donkey Meat, Saliva, Gelatin and Semen",
+    ),
+    ("Shirk in Perspective by Shaikh Faisal", "Shirk in Perspective Explained"),
+    ("Rejecting the Taghut by Shaikh Faisal", "Rejecting the Taghut Explained"),
+]
+VIDEO_TITLE_OVERRIDES = {norm(stem): title for stem, title in _VIDEO_TITLE_OVERRIDES_RAW}
+
+
 def display_video_title(filename: str) -> str:
-    return strip_speaker_from_title(strip_video_number_prefix(Path(filename).stem))
+    stem = Path(filename).stem
+    stem_key = norm(stem)
+    if stem_key in VIDEO_TITLE_OVERRIDES:
+        return VIDEO_TITLE_OVERRIDES[stem_key]
+    stripped = strip_video_number_prefix(stem)
+    stripped_key = norm(stripped)
+    if stripped_key in VIDEO_TITLE_OVERRIDES:
+        return VIDEO_TITLE_OVERRIDES[stripped_key]
+    title = strip_speaker_from_title(stripped)
+    return polish_video_title(title, stem=stem)
 
 
 def has_video_number_prefix(stem: str) -> bool:
