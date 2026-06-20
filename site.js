@@ -1083,69 +1083,53 @@ function mountMobileStyles() {
     .media-card__title-wrap {
       flex: 1 1 auto;
       min-width: 0;
+      position: relative;
     }
     .media-card__title-viewport {
       overflow: hidden;
-      height: 1.25rem;
       min-width: 0;
     }
-    .media-card__title-marquee {
+    .media-card__title-text {
+      display: block;
       font-size: 0.875rem;
       line-height: 1.25rem;
       font-weight: 500;
       color: #e2e8f0;
       white-space: nowrap;
-    }
-    .media-card__title-wrap:not(.is-overflow) .media-card__title-marquee,
-    .media-card__title-wrap.is-overflow:not(.is-scrolling) .media-card__title-marquee,
-    .media-card--title-hover .media-card__title-wrap.is-overflow .media-card__title-marquee {
-      display: block;
       overflow: hidden;
       text-overflow: ellipsis;
-      max-width: 100%;
     }
-    .media-card__title-wrap.is-overflow:not(.is-scrolling) .media-card__title-text--dup,
-    .media-card--title-hover .media-card__title-wrap.is-overflow .media-card__title-text--dup {
+    .media-card__title-tip {
       display: none;
-    }
-    .media-card__title-wrap.is-overflow.is-scrolling .media-card__title-marquee,
-    .media-card--title-hover.is-title-active .media-card__title-wrap.is-overflow .media-card__title-marquee {
-      display: inline-flex;
-      align-items: center;
-      gap: 2rem;
-      width: max-content;
-      will-change: transform;
-      animation: media-title-ticker var(--ticker-duration, 18s) linear infinite;
-    }
-    .media-card--title-hover.is-title-active .media-card__title-wrap.is-overflow .media-card__title-text--dup {
-      display: inline;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: calc(100% + 0.35rem);
+      z-index: 30;
+      padding: 0.5rem 0.65rem;
+      border-radius: 0.5rem;
+      background: #1e293b;
+      border: 1px solid rgba(212, 168, 83, 0.35);
+      font-size: 0.8125rem;
+      line-height: 1.4;
+      font-weight: 500;
+      color: #e2e8f0;
+      white-space: normal;
+      word-break: break-word;
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+      pointer-events: none;
     }
     @media (hover: hover) and (pointer: fine) {
-      .media-card--title-hover:hover .media-card__title-wrap.is-overflow .media-card__title-marquee {
-        display: inline-flex;
-        align-items: center;
-        gap: 2rem;
-        width: max-content;
-        will-change: transform;
-        animation: media-title-ticker var(--ticker-duration, 18s) linear infinite;
-      }
-      .media-card--title-hover:hover .media-card__title-wrap.is-overflow .media-card__title-text--dup {
-        display: inline;
+      .media-card__title-wrap.is-overflow:hover .media-card__title-tip {
+        display: block;
       }
     }
-    @keyframes media-title-ticker {
-      from { transform: translateX(0); }
-      to { transform: translateX(var(--ticker-distance, -50%)); }
+    .media-card__title-wrap.is-overflow.is-title-expanded .media-card__title-tip {
+      display: block;
     }
-    @media (prefers-reduced-motion: reduce) {
-      .media-card__title-wrap.is-overflow.is-scrolling .media-card__title-marquee,
-      .media-card--title-hover.is-title-active .media-card__title-wrap.is-overflow .media-card__title-marquee {
-        animation: none;
-      }
-      @media (hover: hover) and (pointer: fine) {
-        .media-card--title-hover:hover .media-card__title-wrap.is-overflow .media-card__title-marquee {
-          animation: none;
-        }
+    @media (hover: none), (pointer: coarse) {
+      .media-card__title-wrap.is-overflow {
+        cursor: pointer;
       }
     }
     .media-card__actions {
@@ -1381,43 +1365,55 @@ function downloadIconLink(url, { label = 'Download', className = '' } = {}) {
   </a>`;
 }
 
-function bindMediaCardTitles(root = document, { onDemand = true } = {}) {
-  const gap = 32;
-  const speed = 28;
-
+function bindMediaCardTitles(root = document) {
   root.querySelectorAll('.media-card__title-wrap:not([data-title-bound])').forEach((wrap) => {
     wrap.dataset.titleBound = '1';
-    const card = wrap.closest('.media-card');
     const viewport = wrap.querySelector('.media-card__title-viewport');
     const text = wrap.querySelector('.media-card__title-text');
     if (!viewport || !text) return;
 
-    if (onDemand && card) card.classList.add('media-card--title-hover');
-
-    const markOverflow = () => {
-      if (text.scrollWidth <= viewport.clientWidth + 1) return;
-      wrap.classList.add('is-overflow');
-      text.setAttribute('title', text.textContent || '');
-      const distance = text.offsetWidth + gap;
-      wrap.style.setProperty('--ticker-distance', `-${distance}px`);
-      wrap.style.setProperty('--ticker-duration', `${Math.max(12, distance / speed)}s`);
-
-      if (!onDemand) wrap.classList.add('is-scrolling');
+    const syncOverflow = () => {
+      const overflows = text.scrollWidth > viewport.clientWidth + 1;
+      wrap.classList.toggle('is-overflow', overflows);
+      if (!overflows) wrap.classList.remove('is-title-expanded');
     };
 
-    requestAnimationFrame(markOverflow);
+    const scheduleSync = () => requestAnimationFrame(() => requestAnimationFrame(syncOverflow));
+    scheduleSync();
 
-    if (!onDemand || !card) return;
+    if ('ResizeObserver' in window) {
+      const observer = new ResizeObserver(scheduleSync);
+      observer.observe(viewport);
+      observer.observe(text);
+    } else {
+      window.addEventListener('resize', scheduleSync);
+    }
 
-    const startTouchScroll = () => {
-      if (wrap.classList.contains('is-overflow')) card.classList.add('is-title-active');
-    };
-    const stopTouchScroll = () => card.classList.remove('is-title-active');
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(scheduleSync);
+    }
 
-    card.addEventListener('touchstart', startTouchScroll, { passive: true });
-    card.addEventListener('touchend', stopTouchScroll);
-    card.addEventListener('touchcancel', stopTouchScroll);
+    wrap.addEventListener('click', (event) => {
+      if (!wrap.classList.contains('is-overflow')) return;
+      if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+      event.stopPropagation();
+      const wasExpanded = wrap.classList.contains('is-title-expanded');
+      document.querySelectorAll('.media-card__title-wrap.is-title-expanded').forEach((other) => {
+        other.classList.remove('is-title-expanded');
+      });
+      if (!wasExpanded) wrap.classList.add('is-title-expanded');
+    });
   });
+
+  if (!document.documentElement.dataset.mediaTitleOutsideBound) {
+    document.documentElement.dataset.mediaTitleOutsideBound = '1';
+    document.addEventListener('click', () => {
+      if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
+      document.querySelectorAll('.media-card__title-wrap.is-title-expanded').forEach((wrap) => {
+        wrap.classList.remove('is-title-expanded');
+      });
+    });
+  }
 }
 
 function downloadGlassLink(url, { label = 'Download' } = {}) {
@@ -1873,11 +1869,9 @@ function mediaCard({
         <div class="media-card__head">
           <div class="media-card__title-wrap">
             <div class="media-card__title-viewport">
-              <div class="media-card__title-marquee">
-                <span class="media-card__title-text">${escapeHtml(title)}</span>
-                <span class="media-card__title-text media-card__title-text--dup" aria-hidden="true">${escapeHtml(title)}</span>
-              </div>
+              <span class="media-card__title-text">${escapeHtml(title)}</span>
             </div>
+            <span class="media-card__title-tip" aria-hidden="true">${escapeHtml(title)}</span>
           </div>
           ${actions}
         </div>
