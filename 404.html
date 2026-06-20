@@ -6,6 +6,17 @@
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" href="/chrome.css">
+  <script>
+    (function () {
+      try {
+        if (sessionStorage.getItem('shaf-internal-nav') === '1') {
+          document.documentElement.classList.add('site-internal-nav');
+        }
+      } catch (e) {}
+    })();
+  </script>
+
   <meta name="robots" content="noindex">
   <title>Page not found • Shaykh Abdullah Faisal</title>
   <link rel="stylesheet" href="/site.css" onerror="document.documentElement.classList.add('no-tailwind')">
@@ -25,9 +36,23 @@
 </head>
 <body class="bg-slate-950 text-slate-200 islamic-pattern min-h-screen flex flex-col">
 
-  <div id="siteTopBar"></div>
+    <div id="siteTopBar" class="site-top-bar site-chrome">
+    <div class="site-top-bar__inner">
+      <div class="site-top-bar__grid">
+        <div class="site-top-bar__block">
+          <p class="site-top-bar__ar" dir="rtl" lang="ar">الموقع الأرشيفي</p>
+          <p class="site-top-bar__en">Educational Archive</p>
+        </div>
+        <div class="site-top-bar__divider" aria-hidden="true">·</div>
+        <div class="site-top-bar__block site-top-bar__block--dua">
+          <p class="site-top-bar__ar" dir="rtl" lang="ar">اللهم حرر شيخنا الحبيب</p>
+          <p class="site-top-bar__en">May Allah free our beloved Shaykh</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <header class="site-header bg-slate-925/90 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
+  <header class="site-header site-chrome bg-slate-925/90 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
     <div class="site-header__inner max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-5 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
       <a href="/index.html" class="site-header__title font-display text-xl sm:text-3xl font-bold text-gold-gradient text-center sm:text-left shrink-0">Shaykh Abdullah Faisal</a>
       <nav class="site-nav flex sm:flex-wrap gap-1 text-sm font-medium justify-start sm:justify-end">

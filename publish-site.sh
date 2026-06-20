@@ -14,6 +14,7 @@ printf '%s\n' \
   index.html \
   audio.html \
   site.js \
+  chrome.css \
   site.css \
   lectures-home.js \
   lectures-meta.js \

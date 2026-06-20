@@ -1,0 +1,127 @@
+/* Persistent site chrome — load in <head> so the top banner renders before site.js */
+.site-chrome {
+  view-transition-name: site-chrome;
+}
+
+.site-top-bar {
+  min-height: 2.35rem;
+  background: linear-gradient(135deg, #0a1628 0%, #131b2a 50%, #0d1612 100%);
+  border-bottom: 1px solid rgba(180, 130, 50, 0.12);
+}
+
+@media (min-width: 640px) {
+  .site-top-bar { min-height: 2.85rem; }
+}
+
+.site-top-bar__inner {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0.35rem 0.5rem;
+  text-align: center;
+}
+
+@media (min-width: 640px) {
+  .site-top-bar__inner { padding: 0.5rem 2rem; }
+}
+
+.site-top-bar__grid {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+@media (min-width: 768px) {
+  .site-top-bar__grid { gap: 1.25rem; }
+}
+
+.site-top-bar__block {
+  line-height: 1.15;
+  flex: 1 1 0;
+  min-width: 0;
+}
+
+.site-top-bar__ar {
+  color: rgba(252, 211, 140, 0.92);
+  font-size: 0.625rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 640px) {
+  .site-top-bar__ar {
+    font-size: 0.8125rem;
+    letter-spacing: 0.02em;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+}
+
+.site-top-bar__en {
+  color: rgba(148, 163, 184, 0.85);
+  font-size: 0.5625rem;
+  letter-spacing: 0.03em;
+  margin-top: 0.05rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (min-width: 640px) {
+  .site-top-bar__en {
+    font-size: 0.6875rem;
+    letter-spacing: 0.05em;
+    margin-top: 0.1rem;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+  }
+}
+
+.site-top-bar__block:first-child .site-top-bar__en {
+  text-transform: uppercase;
+}
+
+.site-top-bar__block--dua .site-top-bar__en {
+  font-style: italic;
+  letter-spacing: 0.01em;
+  font-size: 0.7rem;
+}
+
+.site-top-bar__divider {
+  flex-shrink: 0;
+  width: 1px;
+  height: 1.65rem;
+  background: linear-gradient(180deg, transparent, rgba(212, 168, 83, 0.25), transparent);
+  font-size: 0;
+  line-height: 1;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .site-top-bar__divider { height: 2rem; }
+}
+
+/* Keep chrome visible during in-site tab switches */
+html.site-internal-nav .site-chrome {
+  opacity: 1 !important;
+  transition: none !important;
+}
+
+html.site-internal-nav main,
+html.site-internal-nav main.site-page,
+html.site-internal-nav #homeMain {
+  opacity: 1 !important;
+  transform: none !important;
+  transition: none !important;
+}
+
+::view-transition-old(site-chrome),
+::view-transition-new(site-chrome) {
+  animation: none !important;
+}

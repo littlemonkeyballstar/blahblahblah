@@ -523,40 +523,26 @@ function handlePageHide() {
   resetPageTransitionState();
 }
 
-function navigateWithTransition(href, link) {
-  markInternalNavigation();
-  if (link?.dataset?.nav) setActiveNav(link.dataset.nav);
-  if (prefersReducedMotion()) {
-    location.href = href;
-    return;
-  }
-  const overlay = getPageTransitionOverlay();
-  document.documentElement.classList.add('is-exiting');
-  overlay.classList.add('page-transition-overlay--active');
-  window.setTimeout(() => {
-    resetPageTransitionState();
-    location.href = href;
-  }, SITE_NAV_EXIT_MS);
-}
-
 function bindPageExitTransitions() {
   document.addEventListener('click', (e) => {
     const link = e.target.closest('a[href]');
     if (!link || e.defaultPrevented || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
     if (!isInternalPageLink(link)) return;
-    e.preventDefault();
-    navigateWithTransition(link.href, link);
+    markInternalNavigation();
   }, true);
 }
 
 function preparePageEnter() {
   const main = document.getElementById('homeMain') || document.querySelector('main');
-  if (!main || main.id === 'homeMain') return;
-  main.classList.add('site-page');
+  if (!main) return;
+  if (main.id !== 'homeMain') {
+    main.classList.add('site-page');
+  }
   if (document.documentElement.classList.contains('site-internal-nav')) {
     main.classList.add('site-page-ready', 'site-page-instant');
     return;
   }
+  if (main.id === 'homeMain') return;
   requestAnimationFrame(() => main.classList.add('site-page-ready'));
 }
 
@@ -576,8 +562,7 @@ function mountMotionStyles() {
     }
     ::view-transition-old(site-chrome),
     ::view-transition-new(site-chrome) {
-      animation-duration: 0.28s;
-      animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      animation: none !important;
     }
     ::view-transition-old(site-main),
     ::view-transition-new(site-main) {
@@ -614,10 +599,6 @@ function mountMotionStyles() {
       opacity: 1;
       pointer-events: auto;
     }
-    html.is-exiting .site-chrome {
-      transition: opacity 0.22s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-
     main.site-page {
       opacity: 0;
       transform: translateY(3px);
@@ -703,7 +684,8 @@ function mountMotionStyles() {
 function initSiteMotion() {
   if (document.documentElement.dataset.motionInit) return;
   document.documentElement.dataset.motionInit = '1';
-  const internalNav = skipHomeBootForInternalNav();
+  const internalNav = skipHomeBootForInternalNav()
+    || document.documentElement.classList.contains('site-internal-nav');
   if (internalNav) {
     document.documentElement.classList.add('site-internal-nav');
   }
@@ -1440,99 +1422,6 @@ function mountTopBar() {
   initSiteMotion();
   mountLayoutFallback();
   mountMobileStyles();
-  if (!document.getElementById('top-bar-styles')) {
-    const style = document.createElement('style');
-    style.id = 'top-bar-styles';
-    style.textContent = `
-      .site-top-bar {
-        background: linear-gradient(135deg, #0a1628 0%, #131b2a 50%, #0d1612 100%);
-        border-bottom: 1px solid rgba(180, 130, 50, 0.12);
-      }
-      .site-top-bar__inner {
-        max-width: 80rem;
-        margin: 0 auto;
-        padding: 0.35rem 0.5rem;
-        text-align: center;
-      }
-      @media (min-width: 640px) {
-        .site-top-bar__inner { padding: 0.5rem 2rem; }
-      }
-      .site-top-bar__grid {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 0.4rem;
-      }
-      @media (min-width: 768px) {
-        .site-top-bar__grid { gap: 1.25rem; }
-      }
-      .site-top-bar__block {
-        line-height: 1.15;
-        flex: 1 1 0;
-        min-width: 0;
-      }
-      .site-top-bar__ar {
-        color: rgba(252, 211, 140, 0.92);
-        font-size: 0.625rem;
-        font-weight: 500;
-        letter-spacing: 0.01em;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      @media (min-width: 640px) {
-        .site-top-bar__ar {
-          font-size: 0.8125rem;
-          letter-spacing: 0.02em;
-          white-space: normal;
-          overflow: visible;
-          text-overflow: clip;
-        }
-      }
-      .site-top-bar__en {
-        color: rgba(148, 163, 184, 0.85);
-        font-size: 0.5625rem;
-        letter-spacing: 0.03em;
-        margin-top: 0.05rem;
-        white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
-      }
-      @media (min-width: 640px) {
-        .site-top-bar__en {
-          font-size: 0.6875rem;
-          letter-spacing: 0.05em;
-          margin-top: 0.1rem;
-          white-space: normal;
-          overflow: visible;
-          text-overflow: clip;
-        }
-      }
-      .site-top-bar__block:first-child .site-top-bar__en {
-        text-transform: uppercase;
-      }
-      .site-top-bar__block--dua .site-top-bar__en {
-        font-style: italic;
-        letter-spacing: 0.01em;
-        font-size: 0.7rem;
-      }
-      .site-top-bar__divider {
-        flex-shrink: 0;
-        width: 1px;
-        height: 1.65rem;
-        background: linear-gradient(180deg, transparent, rgba(212,168,83,0.25), transparent);
-        font-size: 0;
-        line-height: 1;
-        user-select: none;
-      }
-      @media (min-width: 768px) {
-        .site-top-bar__divider { height: 2rem; }
-      }
-    `;
-    document.head.appendChild(style);
-  }
-
   const el = document.getElementById('siteTopBar');
   if (!el) return;
   if (el.querySelector('.site-top-bar__grid')) {
