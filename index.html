@@ -366,6 +366,13 @@
     let slideTimer = null;
     let featured = [];
 
+    function featuredAudioHref(lec) {
+      if (!lec) return 'audio.html';
+      if (lec.archive) return `audio.html?archive=${encodeURIComponent(lec.archive)}`;
+      if (lec.id != null) return `audio.html?lecture=${lec.id}`;
+      return 'audio.html';
+    }
+
     function getFeaturedLectures() {
       const guaranteed = typeof HOME_FEATURED_GUARANTEED !== 'undefined' ? HOME_FEATURED_GUARANTEED : [];
       const pool = typeof HOME_FEATURED !== 'undefined' ? HOME_FEATURED : [];
@@ -377,7 +384,7 @@
     }
 
     function buildSlide(lec) {
-      const link = `audio.html?lecture=${lec.id}`;
+      const link = featuredAudioHref(lec);
       return `
         <div class="flex-shrink-0 w-full" data-slide>
           <div class="flex flex-col sm:flex-row min-h-[18rem]">
@@ -428,7 +435,8 @@
       featured = getFeaturedLectures();
       const slideshow = document.getElementById('slideshow');
       if (!featured.length) {
-        slideshow.closest('section').style.display = 'none';
+        document.getElementById('slideTrack').innerHTML =
+          '<p class="p-10 text-center text-slate-500 text-sm">Featured lectures are loading… refresh if this stays empty.</p>';
         return;
       }
       slideshow.classList.add('home-fade-in');
@@ -483,7 +491,7 @@
       ).join('');
 
       document.getElementById('audioPreview').innerHTML = randomPick(audioPool, 4).map((l, i) =>
-        previewCard(`audio.html?lecture=${l.id}`, l.thumb, l.title, l.categoryLabel, 'fa-headphones', { eager: i === 0 })
+        previewCard(featuredAudioHref(l), l.thumb, l.title, l.categoryLabel, 'fa-headphones', { eager: i === 0 })
       ).join('');
 
       document.querySelectorAll('#clipsPreview, #videosPreview, #audioPreview').forEach((el, i) => {
@@ -519,6 +527,8 @@
         revealHomeContent();
       } catch (err) {
         console.error('Homepage init failed:', err);
+        try { initSlideshow(); } catch (_) {}
+        try { initPreviews(); } catch (_) {}
         revealHomeContent();
       }
     }

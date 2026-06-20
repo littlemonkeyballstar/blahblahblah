@@ -693,7 +693,7 @@
     const CATEGORY_PLACEHOLDER_THEMES = {
       Tafseer: { icon: 'fa-book-open', from: '#081a16', via: '#102820', to: '#1a2332', accent: '#6ee7b7' },
       Aqeedah: { icon: 'fa-star-and-crescent', from: '#1a1424', via: '#231a30', to: '#1a2332', accent: '#c4b5fd' },
-      Iman_Afterlife: { icon: 'fa-cloud-sun', from: '#1a1810', via: '#28220f', to: '#1a2332', accent: '#fde68a' },
+
       Islamic_Knowledge: { icon: 'fa-graduation-cap', from: '#141820', via: '#1a2430', to: '#1a2332', accent: '#a5b4fc' },
       Fiqh_Worship: { icon: 'fa-hands-praying', from: '#141f2e', via: '#172338', to: '#1a2332', accent: '#93c5fd' },
       Prophets_Seerah: { icon: 'fa-mosque', from: '#1a1810', via: '#252015', to: '#1a2332', accent: '#fcd34d' },
@@ -759,7 +759,10 @@
         : '';
 
       const downloadOverlay = downloadGlassLink(audioUrl, { label: 'Download audio' });
-      const shareOverlay = shareGlassButton(pageItemShareUrl('audio.html', 'lecture', lecture.id), {
+      const shareUrl = lecture.archive
+        ? `audio.html?archive=${encodeURIComponent(lecture.archive)}`
+        : pageItemShareUrl('audio.html', 'lecture', lecture.id);
+      const shareOverlay = shareGlassButton(shareUrl, {
         label: 'Copy link to this lecture',
       });
       const transportStrip = audioTransportStripHtml();
@@ -948,13 +951,22 @@
     });
 
     async function applyDeepLink() {
-      const param = new URLSearchParams(location.search).get('lecture');
-      if (param === null) return;
-      const id = parseInt(param, 10);
-      const catId = typeof LECTURE_ID_INDEX !== 'undefined' ? LECTURE_ID_INDEX[String(id)] : null;
-      if (catId) await loadLectureChunk(catId);
-      else await loadAllLectureChunks();
-      const lec = getLoadedLectures().find(l => l.id === id);
+      const params = new URLSearchParams(location.search);
+      const archive = params.get('archive');
+      const idParam = params.get('lecture');
+      if (!archive && idParam === null) return;
+
+      let lec = null;
+      if (archive) {
+        await loadAllLectureChunks();
+        lec = getLoadedLectures().find((l) => l.archive === archive);
+      } else {
+        const id = parseInt(idParam, 10);
+        const catId = typeof LECTURE_ID_INDEX !== 'undefined' ? LECTURE_ID_INDEX[String(id)] : null;
+        if (catId) await loadLectureChunk(catId);
+        else await loadAllLectureChunks();
+        lec = getLoadedLectures().find((l) => l.id === id);
+      }
       if (!lec) return;
       state.category = lec.category;
       state.subcategory = lec.subcategory || 'all';
@@ -974,14 +986,25 @@
     }
 
     /* ── Init ── */
-    mountTopBar();
-    document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
-    mountTelegramLink();
-    setActiveNav('audio');
-    document.getElementById('totalCount').textContent = LECTURE_TOTAL;
-    renderCategories();
-    renderSubcategories();
-    refreshLectures().then(() => applyDeepLink());
+    try {
+      if (typeof LECTURE_TOTAL === 'undefined' || typeof LECTURE_CHUNK_URLS === 'undefined') {
+        throw new Error('lectures-meta.js did not load');
+      }
+      mountTopBar();
+      document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
+      mountTelegramLink();
+      setActiveNav('audio');
+      document.getElementById('totalCount').textContent = LECTURE_TOTAL;
+      renderCategories();
+      renderSubcategories();
+      refreshLectures().then(() => applyDeepLink()).catch((err) => console.error('Audio deep link failed:', err));
+    } catch (err) {
+      console.error('Audio page init failed:', err);
+      const grid = document.getElementById('lectureGrid');
+      if (grid) {
+        grid.innerHTML = '<p class="col-span-full text-center py-16 text-red-400/90">Audio library failed to load. Hard-refresh the page (Ctrl+Shift+R). If it persists, clear cache.</p>';
+      }
+    }
   </script>
 
 </body>

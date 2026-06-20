@@ -20,6 +20,8 @@ def compact_audio_from_search(entries: list[dict]) -> list[dict]:
             "title": item["title"],
             "categoryLabel": item.get("sub", ""),
         }
+        if item.get("archive"):
+            entry["archive"] = item["archive"]
         if item.get("thumb"):
             entry["thumb"] = item["thumb"]
         pool.append(entry)

@@ -738,7 +738,9 @@ function mountContinueListening(audioLookup) {
     const title = meta?.title || `Lecture #${entry.id}`;
     const sub = meta?.categoryLabel || 'Audio lecture';
     const thumb = meta?.thumb;
-    const href = `audio.html?lecture=${entry.id}`;
+    const href = meta?.archive
+      ? `audio.html?archive=${encodeURIComponent(meta.archive)}`
+      : `audio.html?lecture=${entry.id}`;
     const thumbHtml = thumb && isValidThumb(thumb)
       ? `<img src="${thumbDisplaySrc(thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="lazy" decoding="async" onerror="${thumbImgFallbackHandler(thumb)}">`
       : `<i class="fas fa-headphones text-gold/50 text-lg"></i>`;
@@ -1333,10 +1335,36 @@ function archiveStreamUrl(base, path) {
   return base + encodeURI(path).replace(/%2F/g, '/');
 }
 
-function pageItemShareUrl(page, param, id) {
+function audioLectureHref(lecture) {
+  if (!lecture) return 'audio.html';
+  const params = new URLSearchParams();
+  if (lecture.archive) params.set('archive', lecture.archive);
+  else if (lecture.id != null) params.set('lecture', String(lecture.id));
+  const qs = params.toString();
+  return qs ? `audio.html?${qs}` : 'audio.html';
+}
+
+async function resolveAudioLectureFromParams(params = new URLSearchParams(location.search)) {
+  const archive = params.get('archive');
+  if (archive) {
+    await loadAllLectureChunks();
+    return getLoadedLectures().find((lec) => lec.archive === archive) || null;
+  }
+  const idParam = params.get('lecture');
+  if (idParam === null) return null;
+  const id = parseInt(idParam, 10);
+  if (!Number.isFinite(id)) return null;
+  const catId = typeof LECTURE_ID_INDEX !== 'undefined' ? LECTURE_ID_INDEX[String(id)] : null;
+  if (catId) await loadLectureChunk(catId);
+  else await loadAllLectureChunks();
+  return getLoadedLectures().find((lec) => lec.id === id) || null;
+}
+
+function pageItemShareUrl(page, param, id, options = {}) {
   const url = new URL(page, location.href);
   url.search = '';
-  url.searchParams.set(param, String(id));
+  if (options.archive) url.searchParams.set('archive', options.archive);
+  else url.searchParams.set(param, String(id));
   return url.href;
 }
 

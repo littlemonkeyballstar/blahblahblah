@@ -251,6 +251,16 @@ registerLectureChunk("Aqeedah", [
     "id": 178
   },
   {
+    "title": "REALITY OF EMAAN",
+    "category": "Aqeedah",
+    "categoryLabel": "Aqeedah",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "REALITY OF EMAAN - Abdallah Al Faisal.mp3",
+    "thumb": null,
+    "id": 193
+  },
+  {
     "title": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION)",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
@@ -321,6 +331,16 @@ registerLectureChunk("Aqeedah", [
     "id": 423
   },
   {
+    "title": "THEY DO NOT LOVE ALLAH",
+    "category": "Aqeedah",
+    "categoryLabel": "Aqeedah",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "THEY DO NOT LOVE ALLAH - Abdallah Al Faisal.mp3",
+    "thumb": null,
+    "id": 496
+  },
+  {
     "title": "THIRTY FIVE SIGNS OF A HYPOCRITE",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
@@ -329,6 +349,16 @@ registerLectureChunk("Aqeedah", [
     "archive": "THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal.mp3",
     "thumb": null,
     "id": 499
+  },
+  {
+    "title": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT",
+    "category": "Aqeedah",
+    "categoryLabel": "Aqeedah",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.mp3",
+    "thumb": "thumb/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.png",
+    "id": 502
   },
   {
     "title": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR",

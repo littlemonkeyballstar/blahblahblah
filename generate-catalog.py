@@ -20,6 +20,7 @@ import shutil
 import subprocess
 import sys
 import urllib.request
+from urllib.parse import quote
 from difflib import SequenceMatcher
 from pathlib import Path
 
@@ -67,6 +68,7 @@ EXCLUDED_LECTURES = {
 # Always included in the homepage featured slideshow, but order is shuffled (MP3 stem).
 GUARANTEED_HOME_FEATURED_STEMS = [
     "Al-Wala wal-Bara by shaykh Abdullah Faisal",
+    "the Barking dogs of jahannam",
 ]
 
 def is_blocked_thumb(path: Path) -> bool:
@@ -108,7 +110,6 @@ DISPLAY_NAMES = {
     "Character_Dawah": "Character & Dawah",
     "Ummah_Affairs": "Ummah & Contemporary Issues",
     "The 5 Desperate Zindeeq": "The 5 Desperate Zindeeq",
-    "Iman_Afterlife": "Iman & the Hereafter",
     "Islamic_Knowledge": "Islamic Knowledge",
 }
 
@@ -181,7 +182,6 @@ CAT_ORDER = [
     "Prophets_Seerah",
     "Tawheed",
     "Aqeedah",
-    "Iman_Afterlife",
     "Islamic_Knowledge",
     "Ummah_Affairs",
     "General",
@@ -223,7 +223,7 @@ TITLE_SERIES_PATTERNS: list[tuple[str, str, str | None]] = [
      r"our 6 sacred|quran is a wise|abrogated evidences", "Refutation", None),
     (r"reality of emaan|paradise is exclusive|8 gates of paradise|35 people|36 people|"
      r"power of intercession|they do not love allah|trade that saves|painful torment|wish for death|"
-     r"\bworst sins\b|evil effects of sins|evil consequences.*rasool|they shall reap", "Iman_Afterlife", None),
+     r"\bworst sins\b|evil effects of sins|evil consequences.*rasool|they shall reap", "Aqeedah", None),
     (r"^knowledge -|philosophy of the islamic jurisprudence|ijtihaad maslaha|5 ahkaam of shariah|"
      r"5 needs of mankind|importance of intention|dua - the weapon|role of the masjid", "Islamic_Knowledge", None),
     (r"people of the cave|sleepers in the cave", "Prophets_Seerah", None),
@@ -304,7 +304,7 @@ REFUTATION_SUB_PATTERNS: list[tuple[str, str]] = [
     (r"khawarij", "refutation_khawarij"),
     (r"jew", "refutation_jews"),
     (r"murjia|lizard hole|gay lesbian|lgbt|kashf ush shubuhaat|removing the doubts", "refutation_deviants"),
-    (r"goofi soofis|barking dogs|tawassul", "refutation_sufism"),
+    (r"goofi soofis|tawassul", "refutation_sufism"),
     (r"do not take the kuffar|do not take my enemy|rejecting the taghut|fight in the cause of taghut|"
      r"worst of creatures|insulting the prophet|slander of aisha|ifk|radical islamic terror|"
      r"white supremacy|domain of apostasy|refut", "refutation_general"),
@@ -342,6 +342,8 @@ LECTURE_TITLE_OVERRIDES = {
     norm("Al-Wala wal-Bara by shaykh Abdullah Faisal"): "What is Al-Wala wal-Bara — Explanation of core Islamic fundamentals",
     norm("47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-"): "47 Signs of the Wicked Scholar",
     norm("47 signs of the wicked scholer"): "47 Signs of the Wicked Scholar",
+    norm("the Barking dogs of jahannam"): "The Barking Dogs of Jahannam (Refuting the modern day Khawarij)",
+    norm("DEVIL'S DECEPTION OF SAUDI SALAFIS - Abdallah Al Faisal"): "DEVIL'S DECEPTION OF SAUDI SALAFIS (1990s)",
 }
 
 LECTURE_CATEGORY_OVERRIDES = {
@@ -351,6 +353,10 @@ LECTURE_CATEGORY_OVERRIDES = {
     norm("The Fiqh of Menses"): "Nikah_Divorce",
     norm("LOVE - Abdallah Al Faisal"): "Nikah_Divorce",
     norm("Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal"): "Nikah_Divorce",
+    norm("the Barking dogs of jahannam"): "Refutation",
+    norm("REALITY OF EMAAN - Abdallah Al Faisal"): "Aqeedah",
+    norm("THEY DO NOT LOVE ALLAH - Abdallah Al Faisal"): "Aqeedah",
+    norm("TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal"): "Aqeedah",
 }
 
 # Pin specific lectures to the top of their sub-series (lower = earlier).
@@ -388,7 +394,7 @@ GENERAL_LECTURE_TITLES = frozenset(
         "Our 6 Sacred Possessions",
         "Paradise is Exclusive to the Muslims (07.04.11)",
         "Power of Intercession (07.18.11)",
-        "REALITY OF EMAAN - Abdallah Al Faisal",
+
         "REALITY OF POVERTY - Abdallah Al Faisal",
         "ROLE OF THE MASJID - Shaykh Faisal",
         "Reality of FGM (08.25.11)",
@@ -396,8 +402,7 @@ GENERAL_LECTURE_TITLES = frozenset(
         "Resist To Exist (07.07.11)",
         "Satan's Web (dars)",
         "Satans Web (12.17.11)",
-        "THEY DO NOT LOVE ALLAH - Abdallah Al Faisal",
-        "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal",
+
         "Tawassul",
         "The 10 things Muslims Cannot Doubt",
         "The 21 Reasons Why The Quran Is A Wise Book",
@@ -433,7 +438,6 @@ GENERAL_LECTURE_TITLES = frozenset(
         "Worst Con Artist is the Man Who Cons Himself (08.03.11)",
         "You Can't Have Your Cake & Eat It Too (07.20.11)",
         "the 9 reasons kuffaar hate us",
-        "the Barking dogs of jahannam",
         "the Siege of al Aqsa",
         "the Weaknesses of Mankind2",
         "the usa Bombing of Assad, a Muslim perspective",
@@ -637,6 +641,9 @@ def flat_thumb_lookup_key(path: Path) -> str:
 
 THUMB_MATCH_ALIASES = {
     norm("NO PEACE WITH JEWS"): norm("NO PEACE WITH THE JEWS - Abdallah Al Faisal"),
+    norm("The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal"): norm(
+        "the Barking dogs of jahannam"
+    ),
 }
 
 
@@ -644,9 +651,19 @@ def is_digest_thumb_key(key: str) -> bool:
     return bool(re.fullmatch(r"[a-f0-9]{12,}", key))
 
 
-def find_lecture_for_flat_thumb(key: str, lectures: list[dict]) -> dict | None:
+def find_lecture_for_flat_thumb(key: str, lectures: list[dict], *, thumb_path: str | None = None) -> dict | None:
     """Resolve a thumb/ filename stem to the best matching lecture."""
     key = THUMB_MATCH_ALIASES.get(key, key)
+
+    if thumb_path:
+        for lecture in lectures:
+            if lecture.get("thumb") == thumb_path:
+                return lecture
+        thumb_name = Path(thumb_path).name.casefold()
+        for lecture in lectures:
+            lec_thumb = lecture.get("thumb") or ""
+            if lec_thumb and Path(lec_thumb).name.casefold() == thumb_name:
+                return lecture
 
     if is_digest_thumb_key(key):
         for lecture in lectures:
@@ -694,10 +711,11 @@ def build_featured_lectures(lectures: list[dict]) -> list[dict]:
         if len(key) < 4:
             continue
 
-        lecture = find_lecture_for_flat_thumb(key, lectures)
+        thumb_web = web_path(path)
+        lecture = find_lecture_for_flat_thumb(key, lectures, thumb_path=thumb_web)
         if lecture is None:
             continue
-        featured.append({"id": lecture["id"], "thumb": web_path(path)})
+        featured.append({"id": lecture["id"], "thumb": thumb_web, "archive": lecture["archive"]})
 
     return featured
 
@@ -716,6 +734,7 @@ def build_guaranteed_home_featured(lectures: list[dict]) -> list[dict]:
             "title": lec["title"],
             "categoryLabel": lec["categoryLabel"],
             "thumb": lec.get("thumb"),
+            "archive": lec["archive"],
         })
     return guaranteed
 
@@ -1059,6 +1078,7 @@ def write_catalog_outputs(
             "title": lec["title"],
             "categoryLabel": lec["categoryLabel"],
             "thumb": entry.get("thumb") or lec.get("thumb"),
+            "archive": lec["archive"],
         })
 
     home_lectures = []
@@ -1080,7 +1100,8 @@ def write_catalog_outputs(
             "id": lec["id"],
             "title": lec["title"],
             "sub": lec["categoryLabel"],
-            "href": f"audio.html?lecture={lec['id']}",
+            "archive": lec["archive"],
+            "href": f"audio.html?archive={quote(lec['archive'], safe='')}",
         }
         if lec.get("thumb"):
             entry["thumb"] = lec["thumb"]
@@ -1119,6 +1140,11 @@ def write_catalog_outputs(
         handle.write(";\n\nconst LECTURE_CHUNK_URLS = ")
         json.dump(chunk_urls, handle, ensure_ascii=False, indent=2)
         handle.write(";\n")
+
+    version_path = WEBSITE / "catalog-version.js"
+    with open(version_path, "w", encoding="utf-8") as handle:
+        handle.write("/* Auto-generated — run generate-catalog.py to refresh */\n")
+        handle.write(f'const CATALOG_VERSION = "{version}";\n')
 
     home_path = WEBSITE / "lectures-home.js"
     with open(home_path, "w", encoding="utf-8") as handle:

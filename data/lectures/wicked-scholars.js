@@ -1,6 +1,16 @@
 /* Auto-generated chunk: Wicked_Scholars */
 registerLectureChunk("Wicked_Scholars", [
   {
+    "title": "47 Signs of the Wicked Scholar",
+    "category": "Wicked_Scholars",
+    "categoryLabel": "Wicked Scholars",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3",
+    "thumb": null,
+    "id": 8
+  },
+  {
     "title": "BEWARE OF THE WICKED SCHOLARS",
     "category": "Wicked_Scholars",
     "categoryLabel": "Wicked Scholars",
@@ -8,7 +18,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.mp3",
     "thumb": "thumb/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.jpg",
-    "id": 36
+    "id": 35
   },
   {
     "title": "DEFINITION OF A SCHOLAR",
@@ -18,7 +28,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "DEFINITION OF A SCHOLAR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 46
+    "id": 45
   },
   {
     "title": "EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN",
@@ -28,7 +38,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.mp3",
     "thumb": "thumb/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.jpg",
-    "id": 68
+    "id": 67
   },
   {
     "title": "LET THE SCHOLARS BEWARE",
@@ -38,7 +48,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "LET THE SCHOLARS BEWARE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 130
+    "id": 129
   },
   {
     "title": "SEVENTEEN SIGNS OF THE WICKED SCHOLAR",
@@ -48,7 +58,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/SEVENTEEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal.mp3",
     "thumb": null,
-    "id": 241
+    "id": 240
   },
   {
     "title": "WICKED SCHOLAR",

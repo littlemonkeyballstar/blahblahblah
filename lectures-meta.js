@@ -87,13 +87,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "Aqeedah",
     "label": "Aqeedah",
-    "count": 38,
-    "subcategories": []
-  },
-  {
-    "id": "Iman_Afterlife",
-    "label": "Iman & the Hereafter",
-    "count": 3,
+    "count": 41,
     "subcategories": []
   },
   {
@@ -111,7 +105,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "General",
     "label": "General Lectures",
-    "count": 71,
+    "count": 69,
     "subcategories": []
   },
   {
@@ -135,7 +129,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "Refutation",
     "label": "Refutations",
-    "count": 36,
+    "count": 37,
     "subcategories": [
       {
         "id": "refutation_shia",
@@ -155,7 +149,7 @@ const LECTURE_CATEGORIES = [
       {
         "id": "refutation_khawarij",
         "label": "Khawarij",
-        "count": 1
+        "count": 2
       },
       {
         "id": "refutation_jews",
@@ -195,7 +189,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "Wicked_Scholars",
     "label": "Wicked Scholars",
-    "count": 7,
+    "count": 8,
     "subcategories": []
   },
   {
@@ -276,264 +270,334 @@ const LECTURE_CATEGORIES = [
 
 const FEATURED_LECTURES = [
   {
-    "id": 18,
-    "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png"
+    "id": 514,
+    "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png",
+    "archive": "Al-Wala wal-Bara by shaykh Abdullah Faisal.mp3"
   },
   {
-    "id": 28,
-    "thumb": "thumb/ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.png"
+    "id": 27,
+    "thumb": "thumb/ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.png",
+    "archive": "ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.mp3"
   },
   {
-    "id": 36,
-    "thumb": "thumb/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.jpg"
+    "id": 35,
+    "thumb": "thumb/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.jpg",
+    "archive": "Wicked_Scholars/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 38,
-    "thumb": "thumb/BOY AND THE KING - Shaykh Faisal.jpg"
+    "id": 37,
+    "thumb": "thumb/BOY AND THE KING - Shaykh Faisal.jpg",
+    "archive": "BOY AND THE KING - Shaykh Faisal.mp3"
   },
   {
-    "id": 45,
-    "thumb": "thumb/DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.jpg"
+    "id": 44,
+    "thumb": "thumb/DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.jpg",
+    "archive": "DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.mp3"
+  },
+  {
+    "id": 46,
+    "thumb": "thumb/DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal.png",
+    "archive": "DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal.mp3"
   },
   {
     "id": 47,
-    "thumb": "thumb/DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal.png"
+    "thumb": "thumb/DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.png",
+    "archive": "DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 48,
-    "thumb": "thumb/DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.png"
+    "id": 49,
+    "thumb": "thumb/DEMOCRATES - Those Who Participate In Democratic Election.png",
+    "archive": "DEMOCRATES - Those Who Participate In Democratic Election.mp3"
   },
   {
-    "id": 50,
-    "thumb": "thumb/DEMOCRATES - Those Who Participate In Democratic Election.png"
+    "id": 55,
+    "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png",
+    "archive": "Diseases_of_the_Heart/DISEASES OF THE HEART - Shaykh Faisal.mp3"
   },
   {
-    "id": 56,
-    "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png"
+    "id": 59,
+    "thumb": "thumb/DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.png",
+    "archive": "DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.mp3"
   },
   {
     "id": 60,
-    "thumb": "thumb/DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.png"
+    "thumb": "thumb/DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.png",
+    "archive": "DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.mp3"
   },
   {
     "id": 61,
-    "thumb": "thumb/DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.png"
+    "thumb": "thumb/DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.jpg",
+    "archive": "DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 62,
-    "thumb": "thumb/DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.jpg"
+    "id": 65,
+    "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal.png",
+    "archive": "Entering the Lizard Hole.mp3"
   },
   {
-    "id": 66,
-    "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal.png"
+    "id": 67,
+    "thumb": "thumb/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.jpg",
+    "archive": "Wicked_Scholars/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.mp3"
   },
   {
     "id": 68,
-    "thumb": "thumb/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/EXCUSE OF IGNORANCE - Abdallah Al Faisal.jpg",
+    "archive": "EXCUSE OF IGNORANCE - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 69,
-    "thumb": "thumb/EXCUSE OF IGNORANCE - Abdallah Al Faisal.jpg"
+    "id": 148,
+    "thumb": "thumb/f9c271ac07d98b.png",
+    "archive": "MILLATU IBRAHIM - Shaykh Faisal.mp3"
   },
   {
-    "id": 149,
-    "thumb": "thumb/f9c271ac07d98b.png"
+    "id": 71,
+    "thumb": "thumb/FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.jpg",
+    "archive": "FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 72,
-    "thumb": "thumb/FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.jpg"
+    "id": 74,
+    "thumb": "thumb/FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.jpg",
+    "archive": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 75,
-    "thumb": "thumb/FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.jpg"
+    "id": 76,
+    "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal.png",
+    "archive": "GAY LESBIAN LGBT - Shaykh Faisal.mp3"
   },
   {
-    "id": 77,
-    "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal.png"
+    "id": 88,
+    "thumb": "thumb/IFK  SLANDER OF AYSHA - Shaykh Faisal.jpg",
+    "archive": "IFK  SLANDER OF AYSHA - Shaykh Faisal.mp3"
   },
   {
-    "id": 89,
-    "thumb": "thumb/IFK  SLANDER OF AYSHA - Shaykh Faisal.jpg"
+    "id": 90,
+    "thumb": "thumb/IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.png",
+    "archive": "IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.mp3"
   },
   {
     "id": 91,
-    "thumb": "thumb/IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.png"
+    "thumb": "thumb/IMPORTANCE OF HIJRAH - Abdallah Al Faisal.jpg",
+    "archive": "IMPORTANCE OF HIJRAH - Abdallah Al Faisal.mp3"
   },
   {
     "id": 92,
-    "thumb": "thumb/IMPORTANCE OF HIJRAH - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/INSULTING THE PROPHET ABDALLAH AL FAISAL.jpg",
+    "archive": "INSULTING THE PROPHET ﷺ  - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 93,
-    "thumb": "thumb/INSULTING THE PROPHET ABDALLAH AL FAISAL.jpg"
+    "id": 100,
+    "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg",
+    "archive": "ISLAM UNDER SIEGE - Shaykh Faisal.mp3"
   },
   {
-    "id": 101,
-    "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg"
+    "id": 104,
+    "thumb": "thumb/JIHAD AIMS & OBJECTIVES - Abdallah Al Faisal.jpg",
+    "archive": "Jihad/JIHAD AIMS & OBJECTIVES - Shaykh Faisal.mp3"
   },
   {
-    "id": 105,
-    "thumb": "thumb/JIHAD AIMS & OBJECTIVES - Abdallah Al Faisal.jpg"
+    "id": 119,
+    "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg",
+    "archive": "KASHF USH SHUBUHAAT - Shaykh Faisal.mp3"
   },
   {
     "id": 120,
-    "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg"
+    "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.png",
+    "archive": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.mp3"
   },
   {
     "id": 121,
-    "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.png"
+    "thumb": "thumb/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.jpg",
+    "archive": "Khilafah/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.mp3"
   },
   {
     "id": 122,
-    "thumb": "thumb/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.jpg"
+    "thumb": "thumb/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.jpg",
+    "archive": "Khilafah/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.mp3"
   },
   {
-    "id": 123,
-    "thumb": "thumb/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.jpg"
+    "id": 125,
+    "thumb": "thumb/KUFR DOONA KUFR - Abdallah Al Faisal.jpg",
+    "archive": "KUFR DOONA KUFR - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 126,
-    "thumb": "thumb/KUFR DOONA KUFR - Abdallah Al Faisal.jpg"
+    "id": 137,
+    "thumb": "thumb/MADKHALIS - Shaykh Faisal.png",
+    "archive": "MADKHALIS - Shaykh Faisal.mp3"
   },
   {
-    "id": 138,
-    "thumb": "thumb/MADKHALIS - Shaykh Faisal.png"
+    "id": 139,
+    "thumb": "thumb/MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.jpg",
+    "archive": "MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.mp3"
   },
   {
-    "id": 140,
-    "thumb": "thumb/MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.jpg"
+    "id": 143,
+    "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.jpg",
+    "archive": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 144,
-    "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.jpg"
+    "id": 143,
+    "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.png",
+    "archive": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 144,
-    "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.png"
+    "id": 150,
+    "thumb": "thumb/MURJIA - Shaykh Faisal.jpg",
+    "archive": "MURJIA - Shaykh Faisal.mp3"
   },
   {
-    "id": 151,
-    "thumb": "thumb/MURJIA - Shaykh Faisal.jpg"
+    "id": 153,
+    "thumb": "thumb/MUSA AND KHIDR - Abdallah Al Faisal.jpg",
+    "archive": "MUSA AND KHIDR - Abdallah Al Faisal.mp3"
   },
   {
     "id": 154,
-    "thumb": "thumb/MUSA AND KHIDR - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/MUSA AND QAROON - Abdallah Al Faisal.jpg",
+    "archive": "MUSA AND QAROON - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 155,
-    "thumb": "thumb/MUSA AND QAROON - Abdallah Al Faisal.jpg"
+    "id": 157,
+    "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png",
+    "archive": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.mp3"
   },
   {
     "id": 158,
-    "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png"
+    "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png",
+    "archive": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.mp3"
   },
   {
     "id": 159,
-    "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png"
+    "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg",
+    "archive": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 160,
-    "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg"
+    "id": 164,
+    "thumb": "thumb/NAWAQID AL ISLAM - Abdallah Al Faisal.jpg",
+    "archive": "NAWAQID AL ISLAM - Abdallah Al Faisal.mp3"
   },
   {
     "id": 165,
-    "thumb": "thumb/NAWAQID AL ISLAM - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.png",
+    "archive": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.mp3"
   },
   {
     "id": 166,
-    "thumb": "thumb/NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.png"
+    "thumb": "thumb/NO PEACE WITH JEWS.jpg",
+    "archive": "NO PEACE WITH THE JEWS - Abdallah Al Faisal.mp3"
   },
   {
     "id": 167,
-    "thumb": "thumb/NO PEACE WITH JEWS.jpg"
+    "thumb": "thumb/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.jpg",
+    "archive": "Khilafah/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 168,
-    "thumb": "thumb/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.jpg"
+    "id": 170,
+    "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg",
+    "archive": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.mp3"
   },
   {
     "id": 171,
-    "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg"
+    "thumb": "thumb/PEOPLE OF THE CAVE - Abdallah Al Faisal.jpg",
+    "archive": "PEOPLE OF THE CAVE - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 172,
-    "thumb": "thumb/PEOPLE OF THE CAVE - Abdallah Al Faisal.jpg"
+    "id": 178,
+    "thumb": "thumb/PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.jpg",
+    "archive": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 179,
-    "thumb": "thumb/PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.jpg"
+    "id": 198,
+    "thumb": "thumb/REALITY OF THE JEWS - Abdallah Al Faisal.jpg",
+    "archive": "REALITY OF THE JEWS - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 199,
-    "thumb": "thumb/REALITY OF THE JEWS - Abdallah Al Faisal.jpg"
+    "id": 204,
+    "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.jpg",
+    "archive": "Jihad/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 205,
-    "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.jpg"
+    "id": 204,
+    "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.png",
+    "archive": "Jihad/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 205,
-    "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.png"
+    "id": 217,
+    "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png",
+    "archive": "Jihad/SALAFI JIHADI - Shaykh Faisal.mp3"
   },
   {
-    "id": 218,
-    "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png"
+    "id": 221,
+    "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal.jpg",
+    "archive": "SAUDI SALAFI - Shaykh Faisal.mp3"
   },
   {
-    "id": 222,
-    "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal.jpg"
+    "id": 238,
+    "thumb": "thumb/SECULARISM - Shaykh Abdallah Al Faisal.png",
+    "archive": "SECULARISM - Shaykh Abdallah Al Faisal.mp3"
   },
   {
     "id": 239,
-    "thumb": "thumb/SECULARISM - Shaykh Abdallah Al Faisal.png"
+    "thumb": "thumb/SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.png",
+    "archive": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 240,
-    "thumb": "thumb/SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.png"
+    "id": 241,
+    "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png",
+    "archive": "SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 242,
-    "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png"
+    "id": 243,
+    "thumb": "thumb/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.jpg",
+    "archive": "Shia/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.mp3"
   },
   {
     "id": 244,
-    "thumb": "thumb/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.jpg"
+    "thumb": "thumb/SHIA KNOW YOUR ENEMY - Shaykh Faisal.jpg",
+    "archive": "Shia/SHIA KNOW YOUR ENEMY - Shaykh Faisal.mp3"
   },
   {
-    "id": 245,
-    "thumb": "thumb/SHIA KNOW YOUR ENEMY - Shaykh Faisal.jpg"
+    "id": 248,
+    "thumb": "thumb/SIGNS OF HYPOCRITES - Shaykh Faisal.png",
+    "archive": "SIGNS OF HYPOCRITES - Shaykh Faisal.mp3"
   },
   {
-    "id": 249,
-    "thumb": "thumb/SIGNS OF HYPOCRITES - Shaykh Faisal.png"
+    "id": 429,
+    "thumb": "thumb/The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.jpg",
+    "archive": "the Barking dogs of jahannam.mp3"
   },
   {
-    "id": 496,
-    "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg"
+    "id": 495,
+    "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg",
+    "archive": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 501,
-    "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg"
+    "id": 500,
+    "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg",
+    "archive": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 503,
-    "thumb": "thumb/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.png"
+    "id": 502,
+    "thumb": "thumb/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.png",
+    "archive": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 507,
-    "thumb": "thumb/VIRTUES OF MAKKAH - Shaykh Faisal.jpg"
+    "id": 506,
+    "thumb": "thumb/VIRTUES OF MAKKAH - Shaykh Faisal.jpg",
+    "archive": "VIRTUES OF MAKKAH - Shaykh Faisal.mp3"
   },
   {
     "id": 515,
-    "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png"
+    "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png",
+    "archive": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.mp3"
   },
   {
     "id": 527,
-    "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg"
+    "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg",
+    "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3"
   },
   {
     "id": 529,
-    "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png"
+    "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png",
+    "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3"
   }
 ];
 
@@ -546,7 +610,7 @@ const LECTURE_ID_INDEX = {
   "5": "Aqeedah",
   "6": "General",
   "7": "Fiqh_Worship",
-  "8": "General",
+  "8": "Wicked_Scholars",
   "9": "General",
   "10": "General",
   "11": "General",
@@ -556,94 +620,94 @@ const LECTURE_ID_INDEX = {
   "15": "Prophets_Seerah",
   "16": "Prophets_Seerah",
   "17": "Prophets_Seerah",
-  "18": "Aqeedah",
-  "19": "Prophets_Seerah",
-  "20": "General",
-  "21": "Aqeedah",
-  "22": "General",
-  "23": "Prophets_Seerah",
-  "24": "General",
+  "18": "Prophets_Seerah",
+  "19": "General",
+  "20": "Aqeedah",
+  "21": "General",
+  "22": "Prophets_Seerah",
+  "23": "General",
+  "24": "Fiqh_Worship",
   "25": "Fiqh_Worship",
   "26": "Fiqh_Worship",
-  "27": "Fiqh_Worship",
-  "28": "Aqeedah",
+  "27": "Aqeedah",
+  "28": "Ummah_Affairs",
   "29": "Ummah_Affairs",
   "30": "Ummah_Affairs",
-  "31": "Ummah_Affairs",
-  "32": "Character_Dawah",
+  "31": "Character_Dawah",
+  "32": "General",
   "33": "General",
-  "34": "General",
-  "35": "Prophets_Seerah",
-  "36": "Wicked_Scholars",
-  "37": "Ummah_Affairs",
-  "38": "Prophets_Seerah",
-  "39": "Khilafah",
+  "34": "Prophets_Seerah",
+  "35": "Wicked_Scholars",
+  "36": "Ummah_Affairs",
+  "37": "Prophets_Seerah",
+  "38": "Khilafah",
+  "39": "Ummah_Affairs",
   "40": "Ummah_Affairs",
   "41": "Ummah_Affairs",
   "42": "Ummah_Affairs",
-  "43": "Ummah_Affairs",
-  "44": "Nikah_Divorce",
-  "45": "Jihad",
-  "46": "Wicked_Scholars",
+  "43": "Nikah_Divorce",
+  "44": "Jihad",
+  "45": "Wicked_Scholars",
+  "46": "Aqeedah",
   "47": "Aqeedah",
   "48": "Aqeedah",
-  "49": "Aqeedah",
-  "50": "Refutation",
+  "49": "Refutation",
+  "50": "Fiqh_Worship",
   "51": "Fiqh_Worship",
   "52": "Fiqh_Worship",
-  "53": "Fiqh_Worship",
+  "53": "The Devils Deception",
   "54": "The Devils Deception",
-  "55": "The Devils Deception",
+  "55": "Diseases_of_the_Heart",
   "56": "Diseases_of_the_Heart",
   "57": "Diseases_of_the_Heart",
-  "58": "Diseases_of_the_Heart",
+  "58": "Aqeedah",
   "59": "Aqeedah",
-  "60": "Aqeedah",
+  "60": "Refutation",
   "61": "Refutation",
-  "62": "Refutation",
-  "63": "General",
-  "64": "Ummah_Affairs",
-  "65": "General",
-  "66": "Refutation",
-  "67": "Character_Dawah",
-  "68": "Wicked_Scholars",
-  "69": "Aqeedah",
-  "70": "General",
-  "71": "Fiqh_Worship",
-  "72": "Aqeedah",
-  "73": "Fiqh_Worship",
-  "74": "Character_Dawah",
-  "75": "Aqeedah",
-  "76": "Khilafah",
-  "77": "Refutation",
-  "78": "Character_Dawah",
-  "79": "Aqeedah",
+  "62": "General",
+  "63": "Ummah_Affairs",
+  "64": "General",
+  "65": "Refutation",
+  "66": "Character_Dawah",
+  "67": "Wicked_Scholars",
+  "68": "Aqeedah",
+  "69": "General",
+  "70": "Fiqh_Worship",
+  "71": "Aqeedah",
+  "72": "Fiqh_Worship",
+  "73": "Character_Dawah",
+  "74": "Aqeedah",
+  "75": "Khilafah",
+  "76": "Refutation",
+  "77": "Character_Dawah",
+  "78": "Aqeedah",
+  "79": "Character_Dawah",
   "80": "Character_Dawah",
   "81": "Character_Dawah",
   "82": "Character_Dawah",
   "83": "Character_Dawah",
-  "84": "Character_Dawah",
-  "85": "Fiqh_Worship",
+  "84": "Fiqh_Worship",
+  "85": "Ummah_Affairs",
   "86": "Ummah_Affairs",
   "87": "Ummah_Affairs",
-  "88": "Ummah_Affairs",
-  "89": "Refutation",
-  "90": "Islamic_Knowledge",
-  "91": "Aqeedah",
-  "92": "Jihad",
-  "93": "Refutation",
+  "88": "Refutation",
+  "89": "Islamic_Knowledge",
+  "90": "Aqeedah",
+  "91": "Jihad",
+  "92": "Refutation",
+  "93": "Aqeedah",
   "94": "Aqeedah",
-  "95": "Aqeedah",
+  "95": "Khilafah",
   "96": "Khilafah",
-  "97": "Khilafah",
-  "98": "Ummah_Affairs",
-  "99": "Prophets_Seerah",
+  "97": "Ummah_Affairs",
+  "98": "Prophets_Seerah",
+  "99": "Ummah_Affairs",
   "100": "Ummah_Affairs",
-  "101": "Ummah_Affairs",
-  "102": "General",
-  "103": "Character_Dawah",
-  "104": "General",
-  "105": "Jihad",
+  "101": "General",
+  "102": "Character_Dawah",
+  "103": "General",
+  "104": "Jihad",
+  "105": "Jokers in the pack",
   "106": "Jokers in the pack",
   "107": "Jokers in the pack",
   "108": "Jokers in the pack",
@@ -655,112 +719,112 @@ const LECTURE_ID_INDEX = {
   "114": "Jokers in the pack",
   "115": "Jokers in the pack",
   "116": "Jokers in the pack",
-  "117": "Jokers in the pack",
+  "117": "Ummah_Affairs",
   "118": "Ummah_Affairs",
-  "119": "Ummah_Affairs",
+  "119": "Refutation",
   "120": "Refutation",
-  "121": "Refutation",
+  "121": "Khilafah",
   "122": "Khilafah",
-  "123": "Khilafah",
+  "123": "General",
   "124": "General",
-  "125": "General",
-  "126": "Aqeedah",
-  "127": "Fiqh_Worship",
-  "128": "Ramadan",
-  "129": "Ummah_Affairs",
-  "130": "Wicked_Scholars",
+  "125": "Aqeedah",
+  "126": "Fiqh_Worship",
+  "127": "Ramadan",
+  "128": "Ummah_Affairs",
+  "129": "Wicked_Scholars",
+  "130": "Aqeedah",
   "131": "Aqeedah",
   "132": "Aqeedah",
   "133": "Aqeedah",
-  "134": "Aqeedah",
-  "135": "Nikah_Divorce",
-  "136": "General",
-  "137": "Ummah_Affairs",
-  "138": "Refutation",
-  "139": "Ummah_Affairs",
-  "140": "Khilafah",
-  "141": "Character_Dawah",
-  "142": "Prophets_Seerah",
-  "143": "Nikah_Divorce",
-  "144": "Refutation",
-  "145": "Character_Dawah",
-  "146": "Fiqh_Worship",
-  "147": "Khilafah",
-  "148": "General",
-  "149": "Prophets_Seerah",
-  "150": "Nikah_Divorce",
-  "151": "Refutation",
+  "134": "Nikah_Divorce",
+  "135": "General",
+  "136": "Ummah_Affairs",
+  "137": "Refutation",
+  "138": "Ummah_Affairs",
+  "139": "Khilafah",
+  "140": "Character_Dawah",
+  "141": "Prophets_Seerah",
+  "142": "Nikah_Divorce",
+  "143": "Refutation",
+  "144": "Character_Dawah",
+  "145": "Fiqh_Worship",
+  "146": "Khilafah",
+  "147": "General",
+  "148": "Prophets_Seerah",
+  "149": "Nikah_Divorce",
+  "150": "Refutation",
+  "151": "Prophets_Seerah",
   "152": "Prophets_Seerah",
   "153": "Prophets_Seerah",
   "154": "Prophets_Seerah",
-  "155": "Prophets_Seerah",
-  "156": "Ummah_Affairs",
+  "155": "Ummah_Affairs",
+  "156": "Nikah_Divorce",
   "157": "Nikah_Divorce",
-  "158": "Nikah_Divorce",
-  "159": "Ummah_Affairs",
-  "160": "Refutation",
+  "158": "Ummah_Affairs",
+  "159": "Refutation",
+  "160": "Ummah_Affairs",
   "161": "Ummah_Affairs",
   "162": "Ummah_Affairs",
-  "163": "Ummah_Affairs",
+  "163": "Aqeedah",
   "164": "Aqeedah",
   "165": "Aqeedah",
-  "166": "Aqeedah",
-  "167": "Refutation",
-  "168": "Khilafah",
+  "166": "Refutation",
+  "167": "Khilafah",
+  "168": "General",
   "169": "General",
-  "170": "General",
-  "171": "Nikah_Divorce",
-  "172": "Prophets_Seerah",
+  "170": "Nikah_Divorce",
+  "171": "Prophets_Seerah",
+  "172": "Personality Disorders (Series)",
   "173": "Personality Disorders (Series)",
   "174": "Personality Disorders (Series)",
   "175": "Personality Disorders (Series)",
   "176": "Personality Disorders (Series)",
-  "177": "Personality Disorders (Series)",
-  "178": "General",
-  "179": "Aqeedah",
-  "180": "Science in the quran",
-  "181": "Fiqh_Worship",
+  "177": "General",
+  "178": "Aqeedah",
+  "179": "Science in the quran",
+  "180": "Fiqh_Worship",
+  "181": "Refutation",
   "182": "Refutation",
-  "183": "Refutation",
+  "183": "Radio_Show",
   "184": "Radio_Show",
-  "185": "Radio_Show",
-  "186": "Diseases_of_the_Heart",
+  "185": "Diseases_of_the_Heart",
+  "186": "Radio_Show",
   "187": "Radio_Show",
   "188": "Radio_Show",
   "189": "Radio_Show",
   "190": "Radio_Show",
-  "191": "Radio_Show",
+  "191": "Ramadan",
   "192": "Ramadan",
-  "193": "Ramadan",
-  "194": "Iman_Afterlife",
-  "195": "General",
-  "196": "Ummah_Affairs",
-  "197": "General",
-  "198": "Diseases_of_the_Heart",
+  "193": "Aqeedah",
+  "194": "General",
+  "195": "Ummah_Affairs",
+  "196": "General",
+  "197": "Diseases_of_the_Heart",
+  "198": "Refutation",
   "199": "Refutation",
   "200": "Refutation",
   "201": "Refutation",
   "202": "Refutation",
   "203": "Refutation",
-  "204": "Refutation",
-  "205": "Jihad",
-  "206": "General",
-  "207": "Diseases_of_the_Heart",
-  "208": "Islamic_Knowledge",
-  "209": "Fiqh_Worship",
+  "204": "Jihad",
+  "205": "General",
+  "206": "Diseases_of_the_Heart",
+  "207": "Islamic_Knowledge",
+  "208": "Fiqh_Worship",
+  "209": "Nikah_Divorce",
   "210": "Nikah_Divorce",
-  "211": "Nikah_Divorce",
+  "211": "Fiqh_Worship",
   "212": "Fiqh_Worship",
-  "213": "Fiqh_Worship",
+  "213": "Nikah_Divorce",
   "214": "Nikah_Divorce",
   "215": "Nikah_Divorce",
   "216": "Nikah_Divorce",
-  "217": "Nikah_Divorce",
-  "218": "Jihad",
-  "219": "Fiqh_Worship",
+  "217": "Jihad",
+  "218": "Fiqh_Worship",
+  "219": "General",
   "220": "General",
-  "221": "General",
-  "222": "Refutation",
+  "221": "Refutation",
+  "222": "Science in the quran",
   "223": "Science in the quran",
   "224": "Science in the quran",
   "225": "Science in the quran",
@@ -776,20 +840,20 @@ const LECTURE_ID_INDEX = {
   "235": "Science in the quran",
   "236": "Science in the quran",
   "237": "Science in the quran",
-  "238": "Science in the quran",
-  "239": "Refutation",
-  "240": "Aqeedah",
-  "241": "Wicked_Scholars",
-  "242": "Refutation",
-  "243": "Prophets_Seerah",
+  "238": "Refutation",
+  "239": "Aqeedah",
+  "240": "Wicked_Scholars",
+  "241": "Refutation",
+  "242": "Prophets_Seerah",
+  "243": "Refutation",
   "244": "Refutation",
-  "245": "Refutation",
-  "246": "Aqeedah",
+  "245": "Aqeedah",
+  "246": "Ummah_Affairs",
   "247": "Ummah_Affairs",
-  "248": "Ummah_Affairs",
-  "249": "Aqeedah",
+  "248": "Aqeedah",
+  "249": "Refutation",
   "250": "Refutation",
-  "251": "Refutation",
+  "251": "Tafseer",
   "252": "Tafseer",
   "253": "Tafseer",
   "254": "Tafseer",
@@ -938,69 +1002,69 @@ const LECTURE_ID_INDEX = {
   "397": "Tafseer",
   "398": "Tafseer",
   "399": "Tafseer",
-  "400": "Tafseer",
+  "400": "Nikah_Divorce",
   "401": "Nikah_Divorce",
-  "402": "Nikah_Divorce",
-  "403": "General",
-  "404": "Ummah_Affairs",
-  "405": "Tawheed",
-  "406": "General",
+  "402": "General",
+  "403": "Ummah_Affairs",
+  "404": "Tawheed",
+  "405": "General",
+  "406": "Aqeedah",
   "407": "Aqeedah",
   "408": "Aqeedah",
-  "409": "Aqeedah",
+  "409": "Nikah_Divorce",
   "410": "Nikah_Divorce",
-  "411": "Nikah_Divorce",
+  "411": "General",
   "412": "General",
   "413": "General",
-  "414": "General",
-  "415": "Tawheed",
-  "416": "Fiqh_Worship",
-  "417": "General",
+  "414": "Tawheed",
+  "415": "Fiqh_Worship",
+  "416": "General",
+  "417": "The 5 Desperate Zindeeq",
   "418": "The 5 Desperate Zindeeq",
   "419": "The 5 Desperate Zindeeq",
   "420": "The 5 Desperate Zindeeq",
   "421": "The 5 Desperate Zindeeq",
-  "422": "The 5 Desperate Zindeeq",
-  "423": "General",
-  "424": "Aqeedah",
+  "422": "General",
+  "423": "Aqeedah",
+  "424": "General",
   "425": "General",
   "426": "General",
-  "427": "General",
+  "427": "Science in the quran",
   "428": "Science in the quran",
-  "429": "Science in the quran",
+  "429": "Refutation",
   "430": "General",
-  "431": "General",
+  "431": "The Devils Deception",
   "432": "The Devils Deception",
   "433": "The Devils Deception",
   "434": "The Devils Deception",
   "435": "The Devils Deception",
-  "436": "The Devils Deception",
-  "437": "Refutation",
-  "438": "Khilafah",
-  "439": "Character_Dawah",
+  "436": "Refutation",
+  "437": "Khilafah",
+  "438": "Character_Dawah",
+  "439": "General",
   "440": "General",
   "441": "General",
   "442": "General",
-  "443": "General",
+  "443": "Fiqh_Worship",
   "444": "Fiqh_Worship",
-  "445": "Fiqh_Worship",
-  "446": "Nikah_Divorce",
-  "447": "Fiqh_Worship",
-  "448": "Nikah_Divorce",
-  "449": "Fiqh_Worship",
+  "445": "Nikah_Divorce",
+  "446": "Fiqh_Worship",
+  "447": "Nikah_Divorce",
+  "448": "Fiqh_Worship",
+  "449": "General",
   "450": "General",
-  "451": "General",
-  "452": "Jihad",
-  "453": "General",
-  "454": "Khilafah",
-  "455": "Ummah_Affairs",
+  "451": "Jihad",
+  "452": "General",
+  "453": "Khilafah",
+  "454": "Ummah_Affairs",
+  "455": "Nikah_Divorce",
   "456": "Nikah_Divorce",
-  "457": "Nikah_Divorce",
+  "457": "General",
   "458": "General",
   "459": "General",
-  "460": "General",
-  "461": "Refutation",
-  "462": "Fiqh_Worship",
+  "460": "Refutation",
+  "461": "Fiqh_Worship",
+  "462": "The Sealed Nector (Series)",
   "463": "The Sealed Nector (Series)",
   "464": "The Sealed Nector (Series)",
   "465": "The Sealed Nector (Series)",
@@ -1024,35 +1088,35 @@ const LECTURE_ID_INDEX = {
   "483": "The Sealed Nector (Series)",
   "484": "The Sealed Nector (Series)",
   "485": "The Sealed Nector (Series)",
-  "486": "The Sealed Nector (Series)",
+  "486": "General",
   "487": "General",
-  "488": "General",
-  "489": "Prophets_Seerah",
-  "490": "General",
-  "491": "Fiqh_Worship",
+  "488": "Prophets_Seerah",
+  "489": "General",
+  "490": "Fiqh_Worship",
+  "491": "General",
   "492": "General",
   "493": "General",
   "494": "General",
-  "495": "General",
-  "496": "Refutation",
-  "497": "Iman_Afterlife",
+  "495": "Refutation",
+  "496": "Aqeedah",
+  "497": "General",
   "498": "General",
-  "499": "General",
-  "500": "Aqeedah",
+  "499": "Aqeedah",
+  "500": "Refutation",
   "501": "Refutation",
-  "502": "Refutation",
-  "503": "Iman_Afterlife",
-  "504": "Aqeedah",
+  "502": "Aqeedah",
+  "503": "Aqeedah",
+  "504": "Ummah_Affairs",
   "505": "Ummah_Affairs",
-  "506": "Ummah_Affairs",
-  "507": "Fiqh_Worship",
-  "508": "Ramadan",
+  "506": "Fiqh_Worship",
+  "507": "Ramadan",
+  "508": "General",
   "509": "General",
   "510": "General",
   "511": "General",
   "512": "General",
   "513": "General",
-  "514": "General",
+  "514": "Aqeedah",
   "515": "Aqeedah",
   "516": "Aqeedah",
   "517": "Refutation",
@@ -1079,7 +1143,6 @@ const LECTURE_CHUNK_URLS = {
   "Prophets_Seerah": "data/lectures/prophets-seerah.js?v=20260620",
   "Tawheed": "data/lectures/tawheed.js?v=20260620",
   "Aqeedah": "data/lectures/aqeedah.js?v=20260620",
-  "Iman_Afterlife": "data/lectures/iman-afterlife.js?v=20260620",
   "Islamic_Knowledge": "data/lectures/islamic-knowledge.js?v=20260620",
   "Ummah_Affairs": "data/lectures/ummah-affairs.js?v=20260620",
   "General": "data/lectures/general.js?v=20260620",
