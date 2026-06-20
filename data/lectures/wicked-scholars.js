@@ -8,7 +8,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3",
     "thumb": null,
-    "id": 8
+    "id": 440
   },
   {
     "title": "BEWARE OF THE WICKED SCHOLARS",
@@ -18,7 +18,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.mp3",
     "thumb": "thumb/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.jpg",
-    "id": 35
+    "id": 441
   },
   {
     "title": "DEFINITION OF A SCHOLAR",
@@ -28,7 +28,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "DEFINITION OF A SCHOLAR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 45
+    "id": 442
   },
   {
     "title": "EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN",
@@ -38,7 +38,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.mp3",
     "thumb": "thumb/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.jpg",
-    "id": 67
+    "id": 443
   },
   {
     "title": "LET THE SCHOLARS BEWARE",
@@ -48,7 +48,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "LET THE SCHOLARS BEWARE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 129
+    "id": 444
   },
   {
     "title": "SEVENTEEN SIGNS OF THE WICKED SCHOLAR",
@@ -58,7 +58,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/SEVENTEEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal.mp3",
     "thumb": null,
-    "id": 240
+    "id": 445
   },
   {
     "title": "WICKED SCHOLAR",
@@ -68,7 +68,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/WICKED SCHOLAR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 526
+    "id": 446
   },
   {
     "title": "WICKED SCHOLARS ARE LIKE A DOG",
@@ -78,6 +78,6 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3",
     "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg",
-    "id": 527
+    "id": 447
   }
 ]);

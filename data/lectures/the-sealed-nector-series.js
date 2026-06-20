@@ -8,7 +8,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 01] Arabia Before Islam (03.31.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 462
+    "part": 1,
+    "series": "The Sealed Nectar",
+    "id": 149
   },
   {
     "title": "The Sealed Nectar [Part 02] Replacing the Blackstone (04.01.12)",
@@ -18,7 +20,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 02] Replacing the Blackstone (04.01.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 463
+    "part": 2,
+    "series": "The Sealed Nectar",
+    "id": 150
   },
   {
     "title": "The Sealed Nectar [Part 03] The Cave of Hira (04.02.12)",
@@ -28,7 +32,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 03] The Cave of Hira (04.02.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 464
+    "part": 3,
+    "series": "The Sealed Nectar",
+    "id": 151
   },
   {
     "title": "The Sealed Nectar [Part 04] The Hijrah to Abyssinia (04.03.12)",
@@ -38,7 +44,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 04] The Hijrah to Abyssinia (04.03.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 465
+    "part": 4,
+    "series": "The Sealed Nectar",
+    "id": 152
   },
   {
     "title": "The Sealed Nectar [Part 05] The Conversion of Umar A Glory for Islam (04.04.12)",
@@ -48,7 +56,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 05] The Conversion of Umar A Glory for Islam (04.04.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 466
+    "part": 5,
+    "series": "The Sealed Nectar",
+    "id": 153
   },
   {
     "title": "The Sealed Nectar [Part 06] Al-Isra Wal-Miraj (04.05.12)",
@@ -58,7 +68,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 06] Al-Isra Wal-Miraj (04.05.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 467
+    "part": 6,
+    "series": "The Sealed Nectar",
+    "id": 154
   },
   {
     "title": "The Sealed Nectar [Part 07] The Pledge of Aqabah (04.07.12)",
@@ -68,7 +80,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 07] The Pledge of Aqabah (04.07.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 468
+    "part": 7,
+    "series": "The Sealed Nectar",
+    "id": 155
   },
   {
     "title": "The Sealed Nectar [Part 08] The Hijrah from Makkah to Madina (04.08.12)",
@@ -78,7 +92,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 08] The Hijrah from Makkah to Madina (04.08.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 469
+    "part": 8,
+    "series": "The Sealed Nectar",
+    "id": 156
   },
   {
     "title": "The Sealed Nectar [Part 09] The Battle of Badr (04.09.12)",
@@ -88,7 +104,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 09] The Battle of Badr (04.09.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 470
+    "part": 9,
+    "series": "The Sealed Nectar",
+    "id": 157
   },
   {
     "title": "The Sealed Nectar [Part 10] The Treachery of Banu Qainuqa (04.11.12)",
@@ -98,7 +116,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 10] The Treachery of Banu Qainuqa (04.11.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 471
+    "part": 10,
+    "series": "The Sealed Nectar",
+    "id": 158
   },
   {
     "title": "The Sealed Nectar [Part 11] The Battle of Uhud (04.12.12)",
@@ -108,7 +128,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 11] The Battle of Uhud (04.12.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 472
+    "part": 11,
+    "series": "The Sealed Nectar",
+    "id": 159
   },
   {
     "title": "The Sealed Nectar [Part 12] The Treachery of Banu Nadir (04.14.12)",
@@ -118,7 +140,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 12] The Treachery of Banu Nadir (04.14.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 473
+    "part": 12,
+    "series": "The Sealed Nectar",
+    "id": 160
   },
   {
     "title": "The Sealed Nectar [Part 13] The Battle of the Ditch (04.15.12)",
@@ -128,7 +152,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 13] The Battle of the Ditch (04.15.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 474
+    "part": 13,
+    "series": "The Sealed Nectar",
+    "id": 161
   },
   {
     "title": "The Sealed Nectar [Part 14] The Slander of Aisha [RA] (04.16.12)",
@@ -138,7 +164,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 14] The Slander of Aisha [RA] (04.16.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 475
+    "part": 14,
+    "series": "The Sealed Nectar",
+    "id": 162
   },
   {
     "title": "The Sealed Nectar [Part 15] 42 Lessons From The Slander of Aisha [RA] (04.17.12)",
@@ -148,7 +176,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 15] 42 Lessons From The Slander of Aisha [RA] (04.17.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 476
+    "part": 15,
+    "series": "The Sealed Nectar",
+    "id": 163
   },
   {
     "title": "The Sealed Nectar [Part 16] The Treaty of Hudaibiya (04.19.12)",
@@ -158,7 +188,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 16] The Treaty of Hudaibiya (04.19.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 477
+    "part": 16,
+    "series": "The Sealed Nectar",
+    "id": 164
   },
   {
     "title": "The Sealed Nectar [Part 17] The Conquest of Khaibar (04.21.12)",
@@ -168,7 +200,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 17] The Conquest of Khaibar (04.21.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 478
+    "part": 17,
+    "series": "The Sealed Nectar",
+    "id": 165
   },
   {
     "title": "The Sealed Nectar [Part 18] The Battle of Mu'tah (04.22.12)",
@@ -178,7 +212,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 18] The Battle of Mu'tah (04.22.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 479
+    "part": 18,
+    "series": "The Sealed Nectar",
+    "id": 166
   },
   {
     "title": "The Sealed Nectar [Part 19] The Conquest of Makkah (04.23.12)",
@@ -188,7 +224,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 19] The Conquest of Makkah (04.23.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 480
+    "part": 19,
+    "series": "The Sealed Nectar",
+    "id": 167
   },
   {
     "title": "The Sealed Nectar [Part 20] The Battle of Hunain (04.24.12)",
@@ -198,7 +236,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 20] The Battle of Hunain (04.24.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 481
+    "part": 20,
+    "series": "The Sealed Nectar",
+    "id": 168
   },
   {
     "title": "The Sealed Nectar [Part 21] The Tabuk Expedition (04.25.12)",
@@ -208,7 +248,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 21] The Tabuk Expedition (04.25.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 482
+    "part": 21,
+    "series": "The Sealed Nectar",
+    "id": 169
   },
   {
     "title": "The Sealed Nectar [Part 22] Abu Bakr Performs the Pilgrimage (04.26.12)",
@@ -218,7 +260,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 22] Abu Bakr Performs the Pilgrimage (04.26.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 483
+    "part": 22,
+    "series": "The Sealed Nectar",
+    "id": 170
   },
   {
     "title": "The Sealed Nectar [Part 23] The Pilgrimage of the Prophet (04.28.12)",
@@ -228,7 +272,9 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 23] The Pilgrimage of the Prophet (04.28.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 484
+    "part": 23,
+    "series": "The Sealed Nectar",
+    "id": 171
   },
   {
     "title": "The Sealed Nectar [Part 24] The Farewell Sermon (04.29.12)",
@@ -238,6 +284,8 @@ registerLectureChunk("The Sealed Nector (Series)", [
     "subcategoryLabel": null,
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 24] The Farewell Sermon (04.29.12).mp3",
     "thumb": "thumb/assets/The Sealed Nector (Series)/cover.png",
-    "id": 485
+    "part": 24,
+    "series": "The Sealed Nectar",
+    "id": 172
   }
 ]);

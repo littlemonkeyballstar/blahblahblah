@@ -16,6 +16,7 @@ import hashlib
 import json
 import os
 import re
+from collections import defaultdict
 import shutil
 import subprocess
 import sys
@@ -63,6 +64,8 @@ EXCLUDED_LECTURES = {
     "fourty seven signs of the wicked scholar abdullah al faisal",
     # 9-byte corrupt stub on IA; real audio is Towards Watering Down The Holy Quran(1).mp3
     "towards watering down the holy quran",
+    # Duplicate of IMPORTANCE OF HIJRAH - Abdallah Al Faisal.mp3
+    "the importance of hijrah",
 }
 
 # Always included in the homepage featured slideshow, but order is shuffled (MP3 stem).
@@ -91,8 +94,7 @@ DISPLAY_NAMES = {
     "Tafseer": "Tafseer",
     "The Sealed Nector (Series)": "The Sealed Nectar",
     "Prophets_Seerah": "Prophets & Seerah",
-    "Tawheed": "Tawheed",
-    "Aqeedah": "Aqeedah",
+    "Aqeedah": "Aqeedah & Tawheed",
     "Fiqh_Worship": "Fiqh & Worship",
     "Jihad": "Jihad",
     "Khilafah": "Khilafah",
@@ -118,6 +120,7 @@ CATEGORY_MERGE = {
     "Madkhali": "Refutation",
     "Shia": "Refutation",
     "Conference": "Ummah_Affairs",
+    "Tawheed": "Aqeedah",
 }
 
 SUB_DISPLAY = {
@@ -180,7 +183,6 @@ CAT_ORDER = [
     "Tafseer",
     "The Sealed Nector (Series)",
     "Prophets_Seerah",
-    "Tawheed",
     "Aqeedah",
     "Islamic_Knowledge",
     "Ummah_Affairs",
@@ -247,7 +249,7 @@ TITLE_SERIES_PATTERNS: list[tuple[str, str, str | None]] = [
     (r"khilaf|khilaaf|caliphate", "Khilafah", None),
     (r"ramadan|ramadhan|laylatul qadr|virtues of ramadan", "Ramadan", None),
     (r"\bjihad\b", "Jihad", None),
-    (r"tawheed|tauheed|branches of tauheed", "Tawheed", None),
+    (r"tawheed|tauheed|branches of tauheed", "Aqeedah", None),
 ]
 
 # Thematic buckets for miscellaneous root-level lectures
@@ -508,6 +510,9 @@ def resolve_category(title: str, folder_category: str, folder_subcategory: str |
     if norm(title) in GENERAL_LECTURE_TITLES:
         return "General", None
 
+    if category == "Tawheed":
+        category = "Aqeedah"
+
     return category, subcategory
 
 
@@ -517,8 +522,132 @@ def category_sort_key(cat_id: str) -> tuple[int, int | str]:
     return (1, label_for_category(cat_id).lower())
 
 
-def lecture_sort_key(lecture: dict) -> str:
-    return lecture["title"].lower()
+PART_PREFIX_PATTERNS = [
+    r"^(.*?)\s*\[Part\s*\d+",
+    r"^(.*?)\s*[-–—]\s*Part\s*\d+",
+    r"^(.*?)\s+Part\s*\d+",
+    r"^(.*?)\s*\(part\s*\d+\)",
+    r"^(.*?)\s+part\s*\d+",
+]
+
+
+def strip_recording_dates(title: str) -> str:
+    text = re.sub(r"\s*\[\s*REVISITED\s*\]", "", title, flags=re.I)
+    text = re.sub(
+        r"\s*\(\d{2}\.\d{2}\.\d{2}(?:\s+to\s+\d{2}\.\d{2}\.\d{2})?\)\s*$",
+        "",
+        text,
+    )
+    return text.strip()
+
+
+def extract_part_number(title: str) -> int | None:
+    title_l = title.lower()
+    if re.search(r"part\s*viii\b", title_l):
+        return 8
+    if re.search(r"part\s*vii\b", title_l):
+        return 7
+    if re.search(r"part\s*vi\b", title_l):
+        return 6
+    if re.search(r"part\s*iv\b", title_l):
+        return 4
+    if re.search(r"part\s*iii\b", title_l):
+        return 3
+    if re.search(r"part\s*ii\b", title_l):
+        return 2
+    patterns = [
+        r"\[Part\s*0*(\d+)\]",
+        r"[-–—]\s*Part\s*0*(\d+)\s*[-–—]",
+        r"[-–—]\s*Part\s*0*(\d+)\b",
+        r"\bPart\s*0*(\d+)\b",
+        r"\bPt\s*0*(\d+)\b",
+        r"\(part\s*0*(\d+)\)",
+        r"\bpart\s*0*(\d+)\b",
+    ]
+    for pattern in patterns:
+        match = re.search(pattern, title, re.I)
+        if match:
+            return int(match.group(1))
+    return None
+
+
+def series_prefix_from_title(title: str) -> str | None:
+    """Text before the first part marker — used to group multi-part lectures."""
+    if extract_part_number(title) is None:
+        return None
+
+    tafseer = re.match(r"^(Tafseer\s+\d{3}\s+Surah\s+\S+)", title, re.I)
+    if tafseer:
+        return tafseer.group(1).strip()
+
+    text = strip_recording_dates(title)
+    for pattern in PART_PREFIX_PATTERNS:
+        match = re.search(pattern, text, re.I)
+        if match:
+            prefix = match.group(1).strip(" -–—")
+            if prefix:
+                return prefix
+    return None
+
+
+def series_display_from_prefix(prefix: str) -> str:
+    text = re.sub(r"\s+", " ", prefix).strip(" -–—")
+    return text
+
+
+def subcategory_sort_rank(category: str, subcategory: str | None) -> int:
+    sub_order = CATEGORY_SUB_ORDER.get(category)
+    if not sub_order:
+        return 0
+    if not subcategory:
+        return len(sub_order)
+    try:
+        return sub_order.index(subcategory)
+    except ValueError:
+        return len(sub_order)
+
+
+def assign_series_metadata(lectures: list[dict]) -> None:
+    """Tag lectures that belong to the same multi-part series."""
+    groups: dict[tuple[str, str | None, str], list[dict]] = defaultdict(list)
+
+    for lecture in lectures:
+        part = extract_part_number(lecture["title"])
+        prefix = series_prefix_from_title(lecture["title"])
+        if part is None or not prefix:
+            continue
+        key = (lecture["category"], lecture.get("subcategory"), norm(prefix))
+        groups[key].append(lecture)
+        lecture["_part"] = part
+
+    for items in groups.values():
+        if len(items) < 2:
+            continue
+        anchor = min(items, key=lambda lec: lec["_part"])
+        prefix = series_prefix_from_title(anchor["title"]) or anchor["title"]
+        display = series_display_from_prefix(prefix)
+        for lecture in items:
+            lecture["part"] = lecture.pop("_part")
+            lecture["series"] = display
+
+    for lecture in lectures:
+        lecture.pop("_part", None)
+
+
+def lecture_catalog_sort_key(lecture: dict) -> tuple:
+    part = lecture.get("part")
+    if part is None:
+        part = extract_part_number(lecture["title"]) or 9999
+    series = (lecture.get("series") or "").lower()
+    return (
+        category_sort_key(lecture["category"]),
+        subcategory_sort_rank(lecture["category"], lecture.get("subcategory")),
+        lecture.get("sortPriority", 9999),
+        0 if series else 1,
+        series,
+        part,
+        lecture["title"].lower(),
+    )
 
 
 def lecture_dedupe_rank(lecture: dict) -> tuple[int, int, int, int]:
@@ -544,21 +673,6 @@ def dedupe_lectures(lectures: list[dict]) -> list[dict]:
         if existing is None or lecture_dedupe_rank(lecture) > lecture_dedupe_rank(existing):
             best[key] = lecture
     return list(best.values())
-
-
-def extract_part_number(title: str) -> int | None:
-    patterns = [
-        r"\[Part\s*0*(\d+)\]",
-        r"-\s*Part\s*0*(\d+)\s*-",
-        r"\bPart\s*0*(\d+)\b",
-        r"\bPt\s*0*(\d+)\b",
-        r"\bPART\s*0*(\d+)\b",
-    ]
-    for pattern in patterns:
-        match = re.search(pattern, title, re.I)
-        if match:
-            return int(match.group(1))
-    return None
 
 
 def is_canonical_tafseer_title(title: str) -> bool:
@@ -1125,6 +1239,12 @@ def write_catalog_outputs(
             json.dump(by_cat[cat_id], handle, ensure_ascii=False, indent=2)
             handle.write(");\n")
 
+    expected_slugs = {category_chunk_slug(cat_id) for cat_id in by_cat}
+    for stale in chunk_dir.glob("*.js"):
+        if stale.stem not in expected_slugs:
+            stale.unlink()
+            print(f"Removed stale lecture chunk: {stale.name}")
+
     meta_path = WEBSITE / "lectures-meta.js"
     with open(meta_path, "w", encoding="utf-8") as handle:
         handle.write("/* Auto-generated — run generate-catalog.py to refresh */\n")
@@ -1242,7 +1362,8 @@ def main():
     lectures = dedupe_lectures(lectures)
     lectures = drop_tafseer_duplicates(lectures)
     lectures = drop_copy_suffix_duplicates(lectures)
-    lectures.sort(key=lecture_sort_key)
+    assign_series_metadata(lectures)
+    lectures.sort(key=lecture_catalog_sort_key)
     for index, lecture in enumerate(lectures):
         lecture["id"] = index
 
@@ -1300,7 +1421,8 @@ def main():
 
     print(f"Mirrored {mirrored} source images to thumb/_src/")
     print(f"Copied {copied} images to flat thumb/")
-    print(f"Generated {len(lectures)} lectures across {len(cat_meta)} categories")
+    series_count = sum(1 for lec in lectures if lec.get("series"))
+    print(f"Generated {len(lectures)} lectures across {len(cat_meta)} categories ({series_count} in multi-part series)")
     print(f"Featured slideshow pool: {len(featured_pool)} lectures (thumb/ folder artwork)")
     print(f"Thumbnails resolved: {with_thumb} / {len(lectures)} ({100*with_thumb/len(lectures):.1f}%)")
     print(f"  - flat thumb/: {from_flat}")

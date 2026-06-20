@@ -429,10 +429,19 @@
 
     /** Pull part/episode number from titles like "Part 1", "Pt3", "[Part 01]". */
     function extractPartNumber(title) {
+      const lower = title.toLowerCase();
+      if (/\bpart\s*viii\b/.test(lower)) return 8;
+      if (/\bpart\s*vii\b/.test(lower)) return 7;
+      if (/\bpart\s*vi\b/.test(lower)) return 6;
+      if (/\bpart\s*iv\b/.test(lower)) return 4;
+      if (/\bpart\s*iii\b/.test(lower)) return 3;
+      if (/\bpart\s*ii\b/.test(lower)) return 2;
       const patterns = [
         /\[Part\s*0*(\d+)\]/i,
+        /[-–—]\s*Part\s*0*(\d+)\b/i,
         /\bPart\s*0*(\d+)\b/i,
         /\bPt\s*0*(\d+)\b/i,
+        /\(part\s*0*(\d+)\)/i,
       ];
       for (const pattern of patterns) {
         const match = title.match(pattern);
@@ -441,12 +450,8 @@
       return null;
     }
 
-    /** Part order for a single part-based series or one selected sub-series. */
-    function shouldSortByParts() {
-      if (state.category === 'all') return false;
-      if (state.subcategory !== 'all') return true;
-      const cat = LECTURE_CATEGORIES.find(c => c.id === state.category);
-      return !!(cat && !cat.subcategories.length);
+    function lecturePartNumber(lecture) {
+      return lecture.part ?? extractPartNumber(lecture.title);
     }
 
     function subcategoryRank(catId, subId) {
@@ -457,9 +462,16 @@
       return index >= 0 ? index : cat.subcategories.length;
     }
 
-    function compareParts(a, b) {
-      const partA = extractPartNumber(a.title);
-      const partB = extractPartNumber(b.title);
+    function compareSeriesAndParts(a, b) {
+      const seriesA = (a.series || '').toLowerCase();
+      const seriesB = (b.series || '').toLowerCase();
+      if (seriesA && seriesB && seriesA !== seriesB) {
+        return seriesA.localeCompare(seriesB, undefined, { sensitivity: 'base' });
+      }
+      if (seriesA && !seriesB) return -1;
+      if (!seriesA && seriesB) return 1;
+      const partA = lecturePartNumber(a);
+      const partB = lecturePartNumber(b);
       if (partA !== null && partB !== null && partA !== partB) return partA - partB;
       if (partA !== null && partB === null) return -1;
       if (partA === null && partB !== null) return 1;
@@ -478,21 +490,17 @@
         );
       }
 
-      const byParts = shouldSortByParts();
       const useSubOrder = state.category !== 'all' && state.subcategory === 'all';
       return [...list].sort((a, b) => {
         const prioCmp = lectureSortPriority(a) - lectureSortPriority(b);
         if (prioCmp !== 0) return prioCmp;
-        if (byParts) {
-          const partCmp = compareParts(a, b);
-          if (partCmp !== 0) return partCmp;
-        } else if (useSubOrder) {
+        if (useSubOrder) {
           const rankA = subcategoryRank(state.category, a.subcategory);
           const rankB = subcategoryRank(state.category, b.subcategory);
           if (rankA !== rankB) return rankA - rankB;
-          const partCmp = compareParts(a, b);
-          if (partCmp !== 0) return partCmp;
         }
+        const seriesPartCmp = compareSeriesAndParts(a, b);
+        if (seriesPartCmp !== 0) return seriesPartCmp;
         return a.title.localeCompare(b.title, undefined, { sensitivity: 'base' });
       });
     }
@@ -697,7 +705,6 @@
       Islamic_Knowledge: { icon: 'fa-graduation-cap', from: '#141820', via: '#1a2430', to: '#1a2332', accent: '#a5b4fc' },
       Fiqh_Worship: { icon: 'fa-hands-praying', from: '#141f2e', via: '#172338', to: '#1a2332', accent: '#93c5fd' },
       Prophets_Seerah: { icon: 'fa-mosque', from: '#1a1810', via: '#252015', to: '#1a2332', accent: '#fcd34d' },
-      Tawheed: { icon: 'fa-hand-holding-heart', from: '#1a1520', via: '#221828', to: '#1a2332', accent: '#f9a8d4' },
       Jihad: { icon: 'fa-shield-halved', from: '#1f1414', via: '#2a1818', to: '#1a2332', accent: '#fca5a5' },
       Khilafah: { icon: 'fa-landmark', from: '#141a24', via: '#182030', to: '#1a2332', accent: '#7dd3fc' },
       Refutation: { icon: 'fa-gavel', from: '#1f1810', via: '#2a2215', to: '#1a2332', accent: '#fdba74' },
@@ -731,7 +738,7 @@
 
     function richPlaceholderHtml(lecture) {
       const theme = categoryPlaceholderTheme(lecture.category);
-      const part = extractPartNumber(lecture.title);
+      const part = lecturePartNumber(lecture);
       const sub = lecture.subcategoryLabel;
       const preview = lecture.title.length > 78 ? `${lecture.title.slice(0, 75)}…` : lecture.title;
       return `<div class="lecture-placeholder absolute inset-0" style="--ph-from:${theme.from};--ph-via:${theme.via};--ph-to:${theme.to};--ph-accent:${theme.accent}">

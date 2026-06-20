@@ -3,2896 +3,6 @@ const SEARCH_INDEX = [
   {
     "type": "audio",
     "id": 0,
-    "title": "18 Merits of Ramadan [Revisited] (07.31.11)",
-    "sub": "Ramadan",
-    "archive": "Ramadan/18 Merits of Ramadan [Revisited] (07.31.11).mp3",
-    "href": "audio.html?archive=Ramadan%2F18%20Merits%20of%20Ramadan%20%5BRevisited%5D%20%2807.31.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 1,
-    "title": "20 Du'as of Ibrahim (08.17.11 to 08.18.11)",
-    "sub": "Prophets & Seerah",
-    "archive": "20 Du'as of Ibrahim (08.17.11 to 08.18.11).mp3",
-    "href": "audio.html?archive=20%20Du%27as%20of%20Ibrahim%20%2808.17.11%20to%2008.18.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 2,
-    "title": "20 Laws of Nature",
-    "sub": "General Lectures",
-    "archive": "20 Laws of Nature.mp3",
-    "href": "audio.html?archive=20%20Laws%20of%20Nature.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 3,
-    "title": "25 promises of Allah (swt) to the believer",
-    "sub": "General Lectures",
-    "archive": "25 promises of Allah (swt) to the believer.mp3",
-    "href": "audio.html?archive=25%20promises%20of%20Allah%20%28swt%29%20to%20the%20believer.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 4,
-    "title": "25 Things That Makes You A Kaafir (12.31.11 to 01.03.12)",
-    "sub": "Aqeedah",
-    "archive": "25 Things That Makes You A Kaafir (12.31.11 to 01.03.12).mp3",
-    "href": "audio.html?archive=25%20Things%20That%20Makes%20You%20A%20Kaafir%20%2812.31.11%20to%2001.03.12%29.mp3",
-    "thumb": "thumb/extracted/84a689044caef9.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 5,
-    "title": "29 Principles of Ahlus Sunnah Wal Jama'ah (01.12.12 to 01.19.12)",
-    "sub": "Aqeedah",
-    "archive": "29 Principles of Ahlus Sunnah Wal Jama'ah (01.12.12 to 01.19.12).mp3",
-    "href": "audio.html?archive=29%20Principles%20of%20Ahlus%20Sunnah%20Wal%20Jama%27ah%20%2801.12.12%20to%2001.19.12%29.mp3",
-    "thumb": "thumb/extracted/19db6ea7cc8c46.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 6,
-    "title": "4 Crucial Tests from Allah (06.27.11)",
-    "sub": "General Lectures",
-    "archive": "4 Crucial Tests from Allah (06.27.11).mp3",
-    "href": "audio.html?archive=4%20Crucial%20Tests%20from%20Allah%20%2806.27.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 7,
-    "title": "4 Pillars of Qadr (12.24.11)",
-    "sub": "Fiqh & Worship",
-    "archive": "4 Pillars of Qadr (12.24.11).mp3",
-    "href": "audio.html?archive=4%20Pillars%20of%20Qadr%20%2812.24.11%29.mp3",
-    "thumb": "thumb/extracted/dba37ed1feed4a.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 8,
-    "title": "47 Signs of the Wicked Scholar",
-    "sub": "Wicked Scholars",
-    "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3",
-    "href": "audio.html?archive=47%20signs%20of%20the%20wicked%20scholer%20by%20Sheikh%20Abdullah%20Faisal%20-Full-.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 9,
-    "title": "6 Gifts from Allah to Muhammad (SAW) (06.29.11)",
-    "sub": "General Lectures",
-    "archive": "6 Gifts from Allah to Muhammad (SAW) (06.29.11).mp3",
-    "href": "audio.html?archive=6%20Gifts%20from%20Allah%20to%20Muhammad%20%28SAW%29%20%2806.29.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 10,
-    "title": "6 Special Favors of Allah to Muhammad [SAW] (12.20.11)",
-    "sub": "General Lectures",
-    "archive": "6 Special Favors of Allah to Muhammad [SAW] (12.20.11).mp3",
-    "href": "audio.html?archive=6%20Special%20Favors%20of%20Allah%20to%20Muhammad%20%5BSAW%5D%20%2812.20.11%29.mp3",
-    "thumb": "thumb/extracted/bdca466316cd4b.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 11,
-    "title": "7 Worst Sins (07.11.11)",
-    "sub": "General Lectures",
-    "archive": "7 Worst Sins (07.11.11).mp3",
-    "href": "audio.html?archive=7%20Worst%20Sins%20%2807.11.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 12,
-    "title": "9 Reasons They Hate Us",
-    "sub": "General Lectures",
-    "archive": "9 Reasons They Hate Us.mp3",
-    "href": "audio.html?archive=9%20Reasons%20They%20Hate%20Us.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 13,
-    "title": "9 Signs of Musa to the Pharoah (06.22.11)",
-    "sub": "Prophets & Seerah",
-    "archive": "9 Signs of Musa to the Pharoah (06.22.11).mp3",
-    "href": "audio.html?archive=9%20Signs%20of%20Musa%20to%20the%20Pharoah%20%2806.22.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 14,
-    "title": "Abrogated Evidences (06.29.11)",
-    "sub": "General Lectures",
-    "archive": "Abrogated Evidences (06.29.11).mp3",
-    "href": "audio.html?archive=Abrogated%20Evidences%20%2806.29.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 15,
-    "title": "Adam Alayhi Salam And The Satan The Eternal Battle Part 1",
-    "sub": "Prophets & Seerah",
-    "archive": "Adam_Alayhi_Salam_And_The_Satan_The_Eternal_Battle_Part_1.mp3",
-    "href": "audio.html?archive=Adam_Alayhi_Salam_And_The_Satan_The_Eternal_Battle_Part_1.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 16,
-    "title": "Adam Alayhi Salam And The Satan The Eternal Battle – Part 2",
-    "sub": "Prophets & Seerah",
-    "archive": "Adam_Alayhi_Salam_And_The_Satan_The_Eternal_Battle_–_Part_2.mp3",
-    "href": "audio.html?archive=Adam_Alayhi_Salam_And_The_Satan_The_Eternal_Battle_%E2%80%93_Part_2.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 17,
-    "title": "al Israa wal Mi'raaj",
-    "sub": "Prophets & Seerah",
-    "archive": "al Israa wal Mi'raaj.mp3",
-    "href": "audio.html?archive=al%20Israa%20wal%20Mi%27raaj.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 18,
-    "title": "Allah (SWT) Has Honored Bani Adam - Mankind",
-    "sub": "Prophets & Seerah",
-    "archive": "Allah (SWT) Has Honored Bani Adam - Mankind.mp3",
-    "href": "audio.html?archive=Allah%20%28SWT%29%20Has%20Honored%20Bani%20Adam%20-%20Mankind.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 19,
-    "title": "Allah Blesses Whom He Wills (06.28.11)",
-    "sub": "General Lectures",
-    "archive": "Allah Blesses Whom He Wills (06.28.11).mp3",
-    "href": "audio.html?archive=Allah%20Blesses%20Whom%20He%20Wills%20%2806.28.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 20,
-    "title": "Allah Blesses Whom He Wills (06.28.11)(1)",
-    "sub": "Aqeedah",
-    "archive": "Allah Blesses Whom He Wills (06.28.11)(1).mp3",
-    "href": "audio.html?archive=Allah%20Blesses%20Whom%20He%20Wills%20%2806.28.11%29%281%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 21,
-    "title": "Allah is Sufficient to Take Revenge Against Them (08.24.11)",
-    "sub": "General Lectures",
-    "archive": "Allah is Sufficient to Take Revenge Against Them (08.24.11).mp3",
-    "href": "audio.html?archive=Allah%20is%20Sufficient%20to%20Take%20Revenge%20Against%20Them%20%2808.24.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 22,
-    "title": "Allah's Commandments to Ibrahim (AS) (07.21.11)",
-    "sub": "Prophets & Seerah",
-    "archive": "Allah's Commandments to Ibrahim (AS) (07.21.11).mp3",
-    "href": "audio.html?archive=Allah%27s%20Commandments%20to%20Ibrahim%20%28AS%29%20%2807.21.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 23,
-    "title": "Allah's Sunnah Will Never Change (11.15.11 to 11.16.11)",
-    "sub": "General Lectures",
-    "archive": "Allah's Sunnah Will Never Change (11.15.11 to 11.16.11).mp3",
-    "href": "audio.html?archive=Allah%27s%20Sunnah%20Will%20Never%20Change%20%2811.15.11%20to%2011.16.11%29.mp3",
-    "thumb": "thumb/extracted/e15c7f8eb0f20c.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 24,
-    "title": "Application of Revelation - Quran, Sunnah, ijmaa and Qiyas",
-    "sub": "Fiqh & Worship",
-    "archive": "Application of Revelation - Quran, Sunnah, ijmaa and Qiyas.mp3",
-    "href": "audio.html?archive=Application%20of%20Revelation%20-%20Quran%2C%20Sunnah%2C%20ijmaa%20and%20Qiyas.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 25,
-    "title": "Application of Revelation Daroora Mafhoom Qawl Sahaba Urf Amal of Madina",
-    "sub": "Fiqh & Worship",
-    "archive": "Application_of_Revelation_Daroora_Mafhoom_Qawl_Sahaba_Urf_Amal_of_Madina_mp3.mp3",
-    "href": "audio.html?archive=Application_of_Revelation_Daroora_Mafhoom_Qawl_Sahaba_Urf_Amal_of_Madina_mp3.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 26,
-    "title": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan",
-    "sub": "Fiqh & Worship",
-    "archive": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan.mp3",
-    "href": "audio.html?archive=Application%20of%20Revelation-ijtihaad%2C%20Maslaha%2C%20istishaab%20%26%20istihsaan.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 27,
-    "title": "ARE YOU A TAKFIRI",
-    "sub": "Aqeedah",
-    "archive": "ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=ARE%20YOU%20A%20TAKFIRI%20-%20Shaykh%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 28,
-    "title": "AT Conference — Every Ummah Needs A State",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Conference/AT Conference - Shaikh Abdullah Faisal - Every Ummah Needs A State.mp3",
-    "href": "audio.html?archive=Conference%2FAT%20Conference%20-%20Shaikh%20Abdullah%20Faisal%20-%20Every%20Ummah%20Needs%20A%20State.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 29,
-    "title": "AT Conference — Ideological Warfare",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Conference/AT Conference - Shaikh Abdullah Faisal - Ideological Warfare.mp3",
-    "href": "audio.html?archive=Conference%2FAT%20Conference%20-%20Shaikh%20Abdullah%20Faisal%20-%20Ideological%20Warfare.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 30,
-    "title": "AT Conference — The Barking Dogs Of Jahannum",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Conference/AT Conference - Shaikh Abdillah Faisal - The Barking Dogs Of Jahannum.mp3",
-    "href": "audio.html?archive=Conference%2FAT%20Conference%20-%20Shaikh%20Abdillah%20Faisal%20-%20The%20Barking%20Dogs%20Of%20Jahannum.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 31,
-    "title": "Balanced Nation (12.19.11)",
-    "sub": "Character & Dawah",
-    "archive": "Balanced Nation (12.19.11).mp3",
-    "href": "audio.html?archive=Balanced%20Nation%20%2812.19.11%29.mp3",
-    "thumb": "thumb/extracted/8dcb3b088624c3.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 32,
-    "title": "Be And It Is (07.12.11)",
-    "sub": "General Lectures",
-    "archive": "Be And It Is (07.12.11).mp3",
-    "href": "audio.html?archive=Be%20And%20It%20Is%20%2807.12.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 33,
-    "title": "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11)",
-    "sub": "General Lectures",
-    "archive": "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11).mp3",
-    "href": "audio.html?archive=Beware%20of%20Going%20Against%20the%20Ijmaa3%20of%20the%20Ummah%20%2808.02.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 34,
-    "title": "Beware of Invading the Land of Ibrahim (07.28.11)",
-    "sub": "Prophets & Seerah",
-    "archive": "Beware of Invading the Land of Ibrahim (07.28.11).mp3",
-    "href": "audio.html?archive=Beware%20of%20Invading%20the%20Land%20of%20Ibrahim%20%2807.28.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 35,
-    "title": "BEWARE OF THE WICKED SCHOLARS",
-    "sub": "Wicked Scholars",
-    "archive": "Wicked_Scholars/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=Wicked_Scholars%2FBEWARE%20OF%20THE%20WICKED%20SCHOLARS%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 36,
-    "title": "Black Magic (06.29.11)",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Black Magic (06.29.11).mp3",
-    "href": "audio.html?archive=Black%20Magic%20%2806.29.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 37,
-    "title": "BOY AND THE KING",
-    "sub": "Prophets & Seerah",
-    "archive": "BOY AND THE KING - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=BOY%20AND%20THE%20KING%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/BOY AND THE KING - Shaykh Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 38,
-    "title": "Can the Khilaafa survive",
-    "sub": "Khilafah",
-    "archive": "Can the Khilaafa survive.mp3",
-    "href": "audio.html?archive=Can%20the%20Khilaafa%20survive.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 39,
-    "title": "CANCERS IN THE BODY OF THE UMMAH",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "CANCERS IN THE BODY OF THE UMMAH - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=CANCERS%20IN%20THE%20BODY%20OF%20THE%20UMMAH%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 40,
-    "title": "Challenges Facing the Muslim Ummah - Part 2",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Challenges Facing the Muslim Ummah - Part 2.mp3",
-    "href": "audio.html?archive=Challenges%20Facing%20the%20Muslim%20Ummah%20-%20Part%202.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 41,
-    "title": "Challenges Facing the Ummah",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Challenges Facing the Ummah.mp3",
-    "href": "audio.html?archive=Challenges%20Facing%20the%20Ummah.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 42,
-    "title": "Changing the Goalpost",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Changing the Goalpost.mp3",
-    "href": "audio.html?archive=Changing%20the%20Goalpost.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 43,
-    "title": "Daughters Are Diamonds (06.30.11)",
-    "sub": "Marriage & Family",
-    "archive": "Daughters Are Diamonds (06.30.11).mp3",
-    "href": "audio.html?archive=Daughters%20Are%20Diamonds%20%2806.30.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 44,
-    "title": "DECLARATION OF WAR - Osama Bin Laden",
-    "sub": "Jihad",
-    "archive": "DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=DECLARATION%20OF%20WAR%20-%20Osama%20Bin%20Laden%20Translated%20by%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 45,
-    "title": "DEFINITION OF A SCHOLAR",
-    "sub": "Wicked Scholars",
-    "archive": "DEFINITION OF A SCHOLAR - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=DEFINITION%20OF%20A%20SCHOLAR%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 46,
-    "title": "DEMOCRACY IS A RELIGION",
-    "sub": "Aqeedah",
-    "archive": "DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=DEMOCRACY%20IS%20A%20RELIGION%20-%20Shaykh%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 47,
-    "title": "DEMOCRACY IS THE GREATEST SHIRK",
-    "sub": "Aqeedah",
-    "archive": "DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=DEMOCRACY%20IS%20THE%20GREATEST%20SHIRK%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 48,
-    "title": "Democracy The Greatest Shirk",
-    "sub": "Aqeedah",
-    "archive": "Sheikh Abdullah Faisal - Democracy   The Greatest Shirk.mp3",
-    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Democracy%20%20%20The%20Greatest%20Shirk.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 49,
-    "title": "DEMOCRATES - Those Who Participate In Democratic Election",
-    "sub": "Refutations",
-    "archive": "DEMOCRATES - Those Who Participate In Democratic Election.mp3",
-    "href": "audio.html?archive=DEMOCRATES%20-%20Those%20Who%20Participate%20In%20Democratic%20Election.mp3",
-    "thumb": "thumb/DEMOCRATES - Those Who Participate In Democratic Election.png"
-  },
-  {
-    "type": "audio",
-    "id": 50,
-    "title": "Description of Paradise [Part 1] (07.04.11)",
-    "sub": "Fiqh & Worship",
-    "archive": "Description of Paradise [Part 1] (07.04.11).mp3",
-    "href": "audio.html?archive=Description%20of%20Paradise%20%5BPart%201%5D%20%2807.04.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 51,
-    "title": "Description of Paradise [Part 2] (07.05.11)",
-    "sub": "Fiqh & Worship",
-    "archive": "Description of Paradise [Part 2] (07.05.11).mp3",
-    "href": "audio.html?archive=Description%20of%20Paradise%20%5BPart%202%5D%20%2807.05.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 52,
-    "title": "Description of the Prophet's Prayer (06.19.11)",
-    "sub": "Fiqh & Worship",
-    "archive": "Description of the Prophet's Prayer (06.19.11).mp3",
-    "href": "audio.html?archive=Description%20of%20the%20Prophet%27s%20Prayer%20%2806.19.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 53,
-    "title": "DEVIL'S DECEPTION OF SAUDI SALAFIS (1990s)",
-    "sub": "The Devil's Deception",
-    "archive": "The Devils Deception/DEVIL'S DECEPTION OF SAUDI SALAFIS - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=The%20Devils%20Deception%2FDEVIL%27S%20DECEPTION%20OF%20SAUDI%20SALAFIS%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 54,
-    "title": "Devils Deception of the Saudi Salafis (07.13.11)",
-    "sub": "The Devil's Deception",
-    "archive": "The Devils Deception/Devils Deception of the Saudi Salafis (07.13.11).mp3",
-    "href": "audio.html?archive=The%20Devils%20Deception%2FDevils%20Deception%20of%20the%20Saudi%20Salafis%20%2807.13.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 55,
-    "title": "DISEASES OF THE HEART",
-    "sub": "Diseases of the Heart",
-    "archive": "Diseases_of_the_Heart/DISEASES OF THE HEART - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=Diseases_of_the_Heart%2FDISEASES%20OF%20THE%20HEART%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 56,
-    "title": "Diseases of the Heart (12.26.11 to 12.29.11)",
-    "sub": "Diseases of the Heart",
-    "archive": "Diseases_of_the_Heart/Diseases of the Heart (12.26.11 to 12.29.11).mp3",
-    "href": "audio.html?archive=Diseases_of_the_Heart%2FDiseases%20of%20the%20Heart%20%2812.26.11%20to%2012.29.11%29.mp3",
-    "thumb": "thumb/extracted/076fb5be36c654.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 57,
-    "title": "Diseases of the Heart [Lust]",
-    "sub": "Diseases of the Heart",
-    "archive": "Diseases_of_the_Heart/Diseases of the Heart [Lust]- Shaikh Faisal 2.12.2011 PT Dars.mp3",
-    "href": "audio.html?archive=Diseases_of_the_Heart%2FDiseases%20of%20the%20Heart%20%5BLust%5D-%20Shaikh%20Faisal%202.12.2011%20PT%20Dars.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 58,
-    "title": "DISMANTLE THE SHARIAH IS MAJOR KUFR",
-    "sub": "Aqeedah",
-    "archive": "DISMANTLE THE SHARIAH IS MAJOR KUFR - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=DISMANTLE%20THE%20SHARIAH%20IS%20MAJOR%20KUFR%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 59,
-    "title": "DO NOT OBEY THE KUFFAR & THE MUNAFIQUN",
-    "sub": "Aqeedah",
-    "archive": "DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=DO%20NOT%20OBEY%20THE%20KUFFAR%20%26%20THE%20MUNAFIQUN%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 60,
-    "title": "DO NOT TAKE MY ENEMY AS YOUR FRIEND",
-    "sub": "Refutations",
-    "archive": "DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=DO%20NOT%20TAKE%20MY%20ENEMY%20AS%20YOUR%20FRIEND%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 61,
-    "title": "DO NOT TAKE THE KUFFAR AS ALLIES",
-    "sub": "Refutations",
-    "archive": "DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=DO%20NOT%20TAKE%20THE%20KUFFAR%20AS%20ALLIES%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 62,
-    "title": "Don't Envy the Kuffaar for their Jahiliyya (07.26.11)",
-    "sub": "General Lectures",
-    "archive": "Don't Envy the Kuffaar for their Jahiliyya (07.26.11).mp3",
-    "href": "audio.html?archive=Don%27t%20Envy%20the%20Kuffaar%20for%20their%20Jahiliyya%20%2807.26.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 63,
-    "title": "Dreams -Their Significance And Meanings – Part 1",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Dreams  -Their Significance And Meanings – Part 1.mp3",
-    "href": "audio.html?archive=Dreams%20%20-Their%20Significance%20And%20Meanings%20%E2%80%93%20Part%201.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 64,
-    "title": "Dua - The weapon of a believer",
-    "sub": "General Lectures",
-    "archive": "Dua - The weapon of a believer.mp3",
-    "href": "audio.html?archive=Dua%20-%20The%20weapon%20of%20a%20believer.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 65,
-    "title": "Entering the Lizard Hole",
-    "sub": "Refutations",
-    "archive": "Entering the Lizard Hole.mp3",
-    "href": "audio.html?archive=Entering%20the%20Lizard%20Hole.mp3",
-    "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 66,
-    "title": "Etiquettes Of Dawah",
-    "sub": "Character & Dawah",
-    "archive": "Etiquettes Of Dawah.mp3",
-    "href": "audio.html?archive=Etiquettes%20Of%20Dawah.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 67,
-    "title": "EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN",
-    "sub": "Wicked Scholars",
-    "archive": "Wicked_Scholars/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=Wicked_Scholars%2FEVIL%20WICKED%20SCHOLARS%20LETTER%20TO%20AMEER%20AL%20MUMENEEN%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 68,
-    "title": "EXCUSE OF IGNORANCE",
-    "sub": "Aqeedah",
-    "archive": "EXCUSE OF IGNORANCE - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=EXCUSE%20OF%20IGNORANCE%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/EXCUSE OF IGNORANCE - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 69,
-    "title": "Exposing Those Who Insult Allah (07.10.11)",
-    "sub": "General Lectures",
-    "archive": "Exposing Those Who Insult Allah (07.10.11).mp3",
-    "href": "audio.html?archive=Exposing%20Those%20Who%20Insult%20Allah%20%2807.10.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 70,
-    "title": "Fasting - What You Need To Know (08.01.11)",
-    "sub": "Fiqh & Worship",
-    "archive": "Fasting - What You Need To Know (08.01.11).mp3",
-    "href": "audio.html?archive=Fasting%20-%20What%20You%20Need%20To%20Know%20%2808.01.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 71,
-    "title": "FIFTY SEVEN SIGNS OF A MUNAFIQ",
-    "sub": "Aqeedah",
-    "archive": "FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=FIFTY%20SEVEN%20SIGNS%20OF%20A%20MUNAFIQ%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 72,
-    "title": "Fiqhul Waaqi (04.30.12)",
-    "sub": "Fiqh & Worship",
-    "archive": "Fiqhul Waaqi (04.30.12).mp3",
-    "href": "audio.html?archive=Fiqhul%20Waaqi%20%2804.30.12%29.mp3",
-    "thumb": "thumb/extracted/077f32b6dc714f.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 73,
-    "title": "Foundations of the Islamic Brotherhood And Sisterhood",
-    "sub": "Character & Dawah",
-    "archive": "Foundations of the Islamic Brotherhood And Sisterhood.mp3",
-    "href": "audio.html?archive=Foundations%20of%20the%20Islamic%20Brotherhood%20And%20Sisterhood.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 74,
-    "title": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN",
-    "sub": "Aqeedah",
-    "archive": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=FRIENDS%20OF%20ALLAH%20%26%20THE%20FRIENDS%20OF%20SHAYTAN%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 75,
-    "title": "Future of the Caliphate",
-    "sub": "Khilafah",
-    "archive": "Khilafah/Future of the Caliphate.mp3",
-    "href": "audio.html?archive=Khilafah%2FFuture%20of%20the%20Caliphate.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 76,
-    "title": "GAY LESBIAN LGBT",
-    "sub": "Refutations",
-    "archive": "GAY LESBIAN LGBT - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=GAY%20LESBIAN%20LGBT%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 77,
-    "title": "Get Your Priorities Right (08.23.11)",
-    "sub": "Character & Dawah",
-    "archive": "Get Your Priorities Right (08.23.11).mp3",
-    "href": "audio.html?archive=Get%20Your%20Priorities%20Right%20%2808.23.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 78,
-    "title": "Hearts of the Kafirs Are Alike (07.11.11)",
-    "sub": "Aqeedah",
-    "archive": "Hearts of the Kafirs Are Alike (07.11.11).mp3",
-    "href": "audio.html?archive=Hearts%20of%20the%20Kafirs%20Are%20Alike%20%2807.11.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 79,
-    "title": "How to be Sincere to Allah (08.04.11 to 08.07.11)",
-    "sub": "Character & Dawah",
-    "archive": "How to be Sincere to Allah (08.04.11 to 08.07.11).mp3",
-    "href": "audio.html?archive=How%20to%20be%20Sincere%20to%20Allah%20%2808.04.11%20to%2008.07.11%29.mp3",
-    "thumb": "thumb/extracted/4cbffbbbd24ca8.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 80,
-    "title": "How to be Sincere to the Holy Qur'an (08.09.11)",
-    "sub": "Character & Dawah",
-    "archive": "How to be Sincere to the Holy Qur'an (08.09.11).mp3",
-    "href": "audio.html?archive=How%20to%20be%20Sincere%20to%20the%20Holy%20Qur%27an%20%2808.09.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 81,
-    "title": "How to be Sincere to the Leaders (12.06.11)",
-    "sub": "Character & Dawah",
-    "archive": "How to be Sincere to the Leaders (12.06.11).mp3",
-    "href": "audio.html?archive=How%20to%20be%20Sincere%20to%20the%20Leaders%20%2812.06.11%29.mp3",
-    "thumb": "thumb/extracted/fd6728401a4f1a.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 82,
-    "title": "How to be Sincere to the Rasool (SAW) (08.08.11)",
-    "sub": "Character & Dawah",
-    "archive": "How to be Sincere to the Rasool (SAW) (08.08.11).mp3",
-    "href": "audio.html?archive=How%20to%20be%20Sincere%20to%20the%20Rasool%20%28SAW%29%20%2808.08.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 83,
-    "title": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11)",
-    "sub": "Character & Dawah",
-    "archive": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11).mp3",
-    "href": "audio.html?archive=How%20to%20be%20Sincere%20to%20Your%20Muslim%20Brothers%20%26%20Sisters%20%2808.11.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 84,
-    "title": "How To Make Hajj (10.25.11)[v2]",
-    "sub": "Fiqh & Worship",
-    "archive": "How To Make Hajj (10.25.11)[v2].mp3",
-    "href": "audio.html?archive=How%20To%20Make%20Hajj%20%2810.25.11%29%5Bv2%5D.mp3",
-    "thumb": "thumb/extracted/3e8344b2f72015.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 85,
-    "title": "Human Rights",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Sheikh Abdullah Faisal - Human Rights.mp3",
-    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Human%20Rights.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 86,
-    "title": "Human Soul (10.06.11)",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Human Soul (10.06.11).mp3",
-    "href": "audio.html?archive=Human%20Soul%20%2810.06.11%29.mp3",
-    "thumb": "thumb/extracted/b5590561372303.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 87,
-    "title": "Ideological Warfare",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Sheikh Abdullah Faisal - Ideological Warfare.mp3",
-    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Ideological%20Warfare.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 88,
-    "title": "IFK SLANDER OF AYSHA",
-    "sub": "Refutations",
-    "archive": "IFK  SLANDER OF AYSHA - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=IFK%20%20SLANDER%20OF%20AYSHA%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/IFK  SLANDER OF AYSHA - Shaykh Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 89,
-    "title": "IJTIHAAD MASLAHA",
-    "sub": "Islamic Knowledge",
-    "archive": "IJTIHAAD MASLAHA - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=IJTIHAAD%20MASLAHA%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 90,
-    "title": "IMPEDIMENTS OF TAKFIR",
-    "sub": "Aqeedah",
-    "archive": "IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=IMPEDIMENTS%20OF%20TAKFIR%20-%20Shaykh%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 91,
-    "title": "IMPORTANCE OF HIJRAH",
-    "sub": "Jihad",
-    "archive": "IMPORTANCE OF HIJRAH - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=IMPORTANCE%20OF%20HIJRAH%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/IMPORTANCE OF HIJRAH - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 92,
-    "title": "INSULTING THE PROPHET ﷺ",
-    "sub": "Refutations",
-    "archive": "INSULTING THE PROPHET ﷺ  - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=INSULTING%20THE%20PROPHET%20%EF%B7%BA%20%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/INSULTING THE PROPHET ABDALLAH AL FAISAL.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 93,
-    "title": "Invalidation Of Your Actions – Part 1",
-    "sub": "Aqeedah",
-    "archive": "Invalidation Of Your Actions – Part 1.mp3",
-    "href": "audio.html?archive=Invalidation%20Of%20Your%20Actions%20%E2%80%93%20Part%201.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 94,
-    "title": "Invalidation Of Your Actions – Part 2",
-    "sub": "Aqeedah",
-    "archive": "Invalidation Of Your Actions – Part 2.mp3",
-    "href": "audio.html?archive=Invalidation%20Of%20Your%20Actions%20%E2%80%93%20Part%202.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 95,
-    "title": "Is the caliphate valid",
-    "sub": "Khilafah",
-    "archive": "Khilafah/Is the caliphate valid.mp3",
-    "href": "audio.html?archive=Khilafah%2FIs%20the%20caliphate%20valid.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 96,
-    "title": "Is the dawla khawarij?",
-    "sub": "Khilafah",
-    "archive": "Khilafah/is-the-dawla-khawarij.mp3",
-    "href": "audio.html?archive=Khilafah%2Fis-the-dawla-khawarij.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 97,
-    "title": "ISLAM AND THE WEST",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "ISLAM AND THE WEST - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=ISLAM%20AND%20THE%20WEST%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 98,
-    "title": "Islam of Umar (RA) (07.09.11)",
-    "sub": "Prophets & Seerah",
-    "archive": "Islam of Umar (RA) (07.09.11).mp3",
-    "href": "audio.html?archive=Islam%20of%20Umar%20%28RA%29%20%2807.09.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 99,
-    "title": "ISLAM THE MOST HYGIENIC RELIGION",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "ISLAM THE MOST HYGIENIC RELIGION - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=ISLAM%20THE%20MOST%20HYGIENIC%20RELIGION%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 100,
-    "title": "ISLAM UNDER SIEGE",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "ISLAM UNDER SIEGE - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=ISLAM%20UNDER%20SIEGE%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 101,
-    "title": "Islam was Revealed in Stages (08.28.11)",
-    "sub": "General Lectures",
-    "archive": "Islam was Revealed in Stages (08.28.11).mp3",
-    "href": "audio.html?archive=Islam%20was%20Revealed%20in%20Stages%20%2808.28.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 102,
-    "title": "Islamic Etiquettes (11.26.11)",
-    "sub": "Character & Dawah",
-    "archive": "Islamic Etiquettes (11.26.11).mp3",
-    "href": "audio.html?archive=Islamic%20Etiquettes%20%2811.26.11%29.mp3",
-    "thumb": "thumb/extracted/74a3ae70b699b0.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 103,
-    "title": "Jahiliyya Gives Everyone a Raw Deal (07.24.11)",
-    "sub": "General Lectures",
-    "archive": "Jahiliyya Gives Everyone a Raw Deal (07.24.11).mp3",
-    "href": "audio.html?archive=Jahiliyya%20Gives%20Everyone%20a%20Raw%20Deal%20%2807.24.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 104,
-    "title": "JIHAD AIMS & OBJECTIVES",
-    "sub": "Jihad",
-    "archive": "Jihad/JIHAD AIMS & OBJECTIVES - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=Jihad%2FJIHAD%20AIMS%20%26%20OBJECTIVES%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/extracted/5943e51a1e4e99.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 105,
-    "title": "Jokers in the Pack - Refuting the Ashaa'ira (09.22.11)",
-    "sub": "Jokers in the Pack",
-    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Ashaa'ira (09.22.11).mp3",
-    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Ashaa%27ira%20%2809.22.11%29.mp3",
-    "thumb": "thumb/extracted/787a2e39c0a084.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 106,
-    "title": "Jokers in the Pack - Refuting the Barelvis (09.15.11)",
-    "sub": "Jokers in the Pack",
-    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Barelvis (09.15.11).mp3",
-    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Barelvis%20%2809.15.11%29.mp3",
-    "thumb": "thumb/extracted/aa33845bb947d5.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 107,
-    "title": "Jokers in the Pack - Refuting the Democrats (09.25.11)",
-    "sub": "Jokers in the Pack",
-    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Democrats (09.25.11).mp3",
-    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Democrats%20%2809.25.11%29.mp3",
-    "thumb": "thumb/extracted/6fc2d99d26e86c.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 108,
-    "title": "Jokers in the Pack - Refuting the Goofy Sufi (09.07.11 to 09.08.11)",
-    "sub": "Jokers in the Pack",
-    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Goofy Sufi (09.07.11 to 09.08.11).mp3",
-    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Goofy%20Sufi%20%2809.07.11%20to%2009.08.11%29.mp3",
-    "thumb": "thumb/extracted/7ec1dd62855308.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 109,
-    "title": "Jokers in the Pack - Refuting the Hizb ut Tahrir (09.17.11 to 09.18.11)",
-    "sub": "Jokers in the Pack",
-    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Hizb ut Tahrir (09.17.11 to 09.18.11).mp3",
-    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Hizb%20ut%20Tahrir%20%2809.17.11%20to%2009.18.11%29.mp3",
-    "thumb": "thumb/extracted/e82be5cea574d4.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 110,
-    "title": "Jokers in the Pack - Refuting the Khawarij (09.04.11)[v2]",
-    "sub": "Jokers in the Pack",
-    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Khawarij (09.04.11)[v2].mp3",
-    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Khawarij%20%2809.04.11%29%5Bv2%5D.mp3",
-    "thumb": "thumb/extracted/c7cb6d95434762.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 111,
-    "title": "Jokers in the Pack - Refuting the Murjia (09.05.11)",
-    "sub": "Jokers in the Pack",
-    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Murjia (09.05.11).mp3",
-    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Murjia%20%2809.05.11%29.mp3",
-    "thumb": "thumb/extracted/fc48e24075122d.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 112,
-    "title": "Jokers in the Pack - Refuting the Mutazila (09.06.11)",
-    "sub": "Jokers in the Pack",
-    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Mutazila (09.06.11).mp3",
-    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Mutazila%20%2809.06.11%29.mp3",
-    "thumb": "thumb/extracted/0d0b3abc5b8d23.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 113,
-    "title": "Jokers in the Pack - Refuting the Parvezis (09.20.11)",
-    "sub": "Jokers in the Pack",
-    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Parvezis (09.20.11).mp3",
-    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Parvezis%20%2809.20.11%29.mp3",
-    "thumb": "thumb/extracted/d7425d6a8787a3.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 114,
-    "title": "Jokers in the Pack - Refuting the Qadiyaani (09.21.11)",
-    "sub": "Jokers in the Pack",
-    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Qadiyaani (09.21.11).mp3",
-    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Qadiyaani%20%2809.21.11%29.mp3",
-    "thumb": "thumb/extracted/09d526bcf4824f.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 115,
-    "title": "Jokers in the Pack - Refuting the Saudi Salafi (09.10.11 to 09.11.11)",
-    "sub": "Jokers in the Pack",
-    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Saudi Salafi (09.10.11 to 09.11.11).mp3",
-    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Saudi%20Salafi%20%2809.10.11%20to%2009.11.11%29.mp3",
-    "thumb": "thumb/extracted/7624621f770187.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 116,
-    "title": "Jokers in the Pack - Refuting the Shia (09.12.11 to 09.14.11)",
-    "sub": "Jokers in the Pack",
-    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Shia (09.12.11 to 09.14.11).mp3",
-    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Shia%20%2809.12.11%20to%2009.14.11%29.mp3",
-    "thumb": "thumb/extracted/01d0797b9f6e26.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 117,
-    "title": "JUDGEMENT DAY",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "JUDGEMENT DAY - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=JUDGEMENT%20DAY%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 118,
-    "title": "Judgment Day (07.27.11)",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Judgment Day (07.27.11).mp3",
-    "href": "audio.html?archive=Judgment%20Day%20%2807.27.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 119,
-    "title": "KASHF USH SHUBUHAAT",
-    "sub": "Refutations",
-    "archive": "KASHF USH SHUBUHAAT - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=KASHF%20USH%20SHUBUHAAT%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 120,
-    "title": "KHAWARIJ AND THEIR AQEEDAH",
-    "sub": "Refutations",
-    "archive": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=KHAWARIJ%20AND%20THEIR%20AQEEDAH%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 121,
-    "title": "KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED",
-    "sub": "Khilafah",
-    "archive": "Khilafah/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=Khilafah%2FKHILAFAH%20GREATEST%20PROPHESIES%20THIS%20UMMAH%20WITNESSED%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 122,
-    "title": "KHILAFAH SURVIVE & REVIVE",
-    "sub": "Khilafah",
-    "archive": "Khilafah/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=Khilafah%2FKHILAFAH%20SURVIVE%20%26%20REVIVE%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 123,
-    "title": "KNOWLEDGE",
-    "sub": "General Lectures",
-    "archive": "KNOWLEDGE - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=KNOWLEDGE%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 124,
-    "title": "Kufaar and the Fear Factor (07.03.11)",
-    "sub": "General Lectures",
-    "archive": "Kufaar and the Fear Factor (07.03.11).mp3",
-    "href": "audio.html?archive=Kufaar%20and%20the%20Fear%20Factor%20%2807.03.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 125,
-    "title": "KUFR DOONA KUFR",
-    "sub": "Aqeedah",
-    "archive": "KUFR DOONA KUFR - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=KUFR%20DOONA%20KUFR%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/KUFR DOONA KUFR - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 126,
-    "title": "Lailatul Qadr explained (dars)",
-    "sub": "Fiqh & Worship",
-    "archive": "Lailatul Qadr explained (dars).mp3",
-    "href": "audio.html?archive=Lailatul%20Qadr%20explained%20%28dars%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 127,
-    "title": "LAYLATUL QADR",
-    "sub": "Ramadan",
-    "archive": "Ramadan/LAYLATUL QADR - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=Ramadan%2FLAYLATUL%20QADR%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 128,
-    "title": "LEADERSHIP IN ISLAM",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "LEADERSHIP IN ISLAM.mp3",
-    "href": "audio.html?archive=LEADERSHIP%20IN%20ISLAM.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 129,
-    "title": "LET THE SCHOLARS BEWARE",
-    "sub": "Wicked Scholars",
-    "archive": "LET THE SCHOLARS BEWARE - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=LET%20THE%20SCHOLARS%20BEWARE%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 130,
-    "title": "Let's Call A Spade A Spade - Part 2",
-    "sub": "Aqeedah",
-    "archive": "Let's Call A Spade A Spade - Part 2.mp3",
-    "href": "audio.html?archive=Let%27s%20Call%20A%20Spade%20A%20Spade%20-%20Part%202.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 131,
-    "title": "Let's Call A Spade A Spade - Part 3",
-    "sub": "Aqeedah",
-    "archive": "Let's Call A Spade A Spade - Part 3.mp3",
-    "href": "audio.html?archive=Let%27s%20Call%20A%20Spade%20A%20Spade%20-%20Part%203.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 132,
-    "title": "Let's Call A Spade A Spade - Part 4",
-    "sub": "Aqeedah",
-    "archive": "Let's Call A Spade A Spade - Part 4.mp3",
-    "href": "audio.html?archive=Let%27s%20Call%20A%20Spade%20A%20Spade%20-%20Part%204.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 133,
-    "title": "Let's Call A Spade A Spade Part 1",
-    "sub": "Aqeedah",
-    "archive": "Let's Call A Spade A Spade Part 1.mp3",
-    "href": "audio.html?archive=Let%27s%20Call%20A%20Spade%20A%20Spade%20Part%201.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 134,
-    "title": "LOVE",
-    "sub": "Marriage & Family",
-    "archive": "LOVE - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=LOVE%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/extracted/6d7686edec03e1.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 135,
-    "title": "Love and Hate for Allah's Sake",
-    "sub": "General Lectures",
-    "archive": "Sheikh Abdullah Faisal - Love and Hate for Allah's Sake.mp3",
-    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Love%20and%20Hate%20for%20Allah%27s%20Sake.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 136,
-    "title": "Mad Dogs of the Middle East [REVISITED] (10.20.11)",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Mad Dogs of the Middle East [REVISITED] (10.20.11).mp3",
-    "href": "audio.html?archive=Mad%20Dogs%20of%20the%20Middle%20East%20%5BREVISITED%5D%20%2810.20.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 137,
-    "title": "MADKHALIS",
-    "sub": "Refutations",
-    "archive": "MADKHALIS - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=MADKHALIS%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/MADKHALIS - Shaykh Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 138,
-    "title": "Magic (06.24.11)",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Magic (06.24.11).mp3",
-    "href": "audio.html?archive=Magic%20%2806.24.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 139,
-    "title": "MANHAJ FOR ESTABLISHING SHARIAH",
-    "sub": "Khilafah",
-    "archive": "MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=MANHAJ%20FOR%20ESTABLISHING%20SHARIAH%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 140,
-    "title": "Manhood in Islam",
-    "sub": "Character & Dawah",
-    "archive": "Manhood in Islam.mp3",
-    "href": "audio.html?archive=Manhood%20in%20Islam.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 141,
-    "title": "Many Miracles of the Prophet Muhammad (SAW) (07.20.11)",
-    "sub": "Prophets & Seerah",
-    "archive": "Many Miracles of the Prophet Muhammad (SAW) (07.20.11).mp3",
-    "href": "audio.html?archive=Many%20Miracles%20of%20the%20Prophet%20Muhammad%20%28SAW%29%20%2807.20.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 142,
-    "title": "MARITAL DISCORD (NUSHOOZ)",
-    "sub": "Marriage & Family",
-    "archive": "MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=MARITAL%20DISCORD%20%28NUSHOOZ%29%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 143,
-    "title": "MELTDOWN OF DEMOCRACY",
-    "sub": "Refutations",
-    "archive": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=MELTDOWN%20OF%20DEMOCRACY%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 144,
-    "title": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12",
-    "sub": "Character & Dawah",
-    "archive": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12.mp3",
-    "href": "audio.html?archive=Merits%20and%20Etiquettes%20of%20Dawah%20%2802.04.12%20to%2002.09.12.mp3",
-    "thumb": "thumb/extracted/78f1df9c3dffb9.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 145,
-    "title": "Merits of Salah (06.23.11)",
-    "sub": "Fiqh & Worship",
-    "archive": "Merits of Salah (06.23.11).mp3",
-    "href": "audio.html?archive=Merits%20of%20Salah%20%2806.23.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 146,
-    "title": "Message from the Calipha (HA) to the Ummah",
-    "sub": "Khilafah",
-    "archive": "Message from the Calipha (HA) to the Ummah.mp3",
-    "href": "audio.html?archive=Message%20from%20the%20Calipha%20%28HA%29%20to%20the%20Ummah.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 147,
-    "title": "Might Without Wisdom is a Recipe for Disaster (07.27.11)",
-    "sub": "General Lectures",
-    "archive": "Might Without Wisdom is a Recipe for Disaster (07.27.11).mp3",
-    "href": "audio.html?archive=Might%20Without%20Wisdom%20is%20a%20Recipe%20for%20Disaster%20%2807.27.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 148,
-    "title": "MILLATU IBRAHIM",
-    "sub": "Prophets & Seerah",
-    "archive": "MILLATU IBRAHIM - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=MILLATU%20IBRAHIM%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/extracted/f9c271ac07d98b.png"
-  },
-  {
-    "type": "audio",
-    "id": 149,
-    "title": "Money Can't Buy True Love (07.02.11)",
-    "sub": "Marriage & Family",
-    "archive": "Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal.mp3",
-    "href": "audio.html?archive=Money%20Can%27t%20Buy%20True%20Love%20%2807.02.11%29%20Shaikh%20Abdullah%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 150,
-    "title": "MURJIA",
-    "sub": "Refutations",
-    "archive": "MURJIA - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=MURJIA%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/MURJIA - Shaykh Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 151,
-    "title": "Musa & al Khidr (dars)",
-    "sub": "Prophets & Seerah",
-    "archive": "Musa & al Khidr (dars).mp3",
-    "href": "audio.html?archive=Musa%20%26%20al%20Khidr%20%28dars%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 152,
-    "title": "Musa & Al-Khidr (07.09.11)",
-    "sub": "Prophets & Seerah",
-    "archive": "Musa & Al-Khidr (07.09.11).mp3",
-    "href": "audio.html?archive=Musa%20%26%20Al-Khidr%20%2807.09.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 153,
-    "title": "MUSA AND KHIDR",
-    "sub": "Prophets & Seerah",
-    "archive": "MUSA AND KHIDR - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=MUSA%20AND%20KHIDR%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/MUSA AND KHIDR - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 154,
-    "title": "MUSA AND QAROON",
-    "sub": "Prophets & Seerah",
-    "archive": "MUSA AND QAROON - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=MUSA%20AND%20QAROON%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/MUSA AND QAROON - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 155,
-    "title": "Muslim Character",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Sheikh Abdullah Faisal - Muslim Character.mp3",
-    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Muslim%20Character.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 156,
-    "title": "Muslim Home (12.21.11 to 12.22.11)",
-    "sub": "Marriage & Family",
-    "archive": "Muslim Home (12.21.11 to 12.22.11).mp3",
-    "href": "audio.html?archive=Muslim%20Home%20%2812.21.11%20to%2012.22.11%29.mp3",
-    "thumb": "thumb/extracted/8be0c03a517daa.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 157,
-    "title": "MUSLIM MARRYING NON MUSLIM",
-    "sub": "Marriage & Family",
-    "archive": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=MUSLIM%20MARRYING%20NON%20MUSLIM%20-%20Shaykh%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 158,
-    "title": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL)",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=MYSTERIES%20OF%20THE%20SOUL%20EXPOUNDED%20%28HUMAN%20SOUL%29%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 159,
-    "title": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM",
-    "sub": "Refutations",
-    "archive": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=NATIONALISM%20SECULARISM%20DEMOCRACY%20OR%20ISLAM%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 160,
-    "title": "Natural Disasters - Why They Occur",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Natural Disasters - Why They Occur.mp3",
-    "href": "audio.html?archive=Natural%20Disasters%20-%20Why%20They%20Occur.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 161,
-    "title": "NATURAL DISASTERS, WHY DO THEY OCCUR",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "NATURAL DISASTERS, WHY DO THEY OCCUR - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=NATURAL%20DISASTERS%2C%20WHY%20DO%20THEY%20OCCUR%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 162,
-    "title": "Natural Instincts",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Sheikh Abdullah Faisal - Natural Instincts.mp3",
-    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Natural%20Instincts.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 163,
-    "title": "Nawaaqid al islam by Muhd ibn Abdul Wahhab",
-    "sub": "Aqeedah",
-    "archive": "Nawaaqid al islam by Muhd ibn Abdul Wahhab.mp3",
-    "href": "audio.html?archive=Nawaaqid%20al%20islam%20by%20Muhd%20ibn%20Abdul%20Wahhab.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 164,
-    "title": "NAWAQID AL ISLAM",
-    "sub": "Aqeedah",
-    "archive": "NAWAQID AL ISLAM - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=NAWAQID%20AL%20ISLAM%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/NAWAQID AL ISLAM - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 165,
-    "title": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE",
-    "sub": "Aqeedah",
-    "archive": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=NEVER%20PRAY%20JANAZAH%20FOR%20ANY%20HYPOCRITE%20NOR%20STAND%20FOR%20THEIR%20GRAVE%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 166,
-    "title": "NO PEACE WITH THE JEWS",
-    "sub": "Refutations",
-    "archive": "NO PEACE WITH THE JEWS - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=NO%20PEACE%20WITH%20THE%20JEWS%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 167,
-    "title": "OBLIGATION TO ESTABLISH KHILAFAH",
-    "sub": "Khilafah",
-    "archive": "Khilafah/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=Khilafah%2FOBLIGATION%20TO%20ESTABLISH%20KHILAFAH%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 168,
-    "title": "Our 6 Sacred Possessions",
-    "sub": "General Lectures",
-    "archive": "Our 6 Sacred Possessions.mp3",
-    "href": "audio.html?archive=Our%206%20Sacred%20Possessions.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 169,
-    "title": "Paradise is Exclusive to the Muslims (07.04.11)",
-    "sub": "General Lectures",
-    "archive": "Paradise is Exclusive to the Muslims (07.04.11).mp3",
-    "href": "audio.html?archive=Paradise%20is%20Exclusive%20to%20the%20Muslims%20%2807.04.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 170,
-    "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE",
-    "sub": "Marriage & Family",
-    "archive": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=PARENT%20CHILD%20RELATIONSHIP%20%26%20THE%20WESTERN%20CULTURE%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 171,
-    "title": "PEOPLE OF THE CAVE",
-    "sub": "Prophets & Seerah",
-    "archive": "PEOPLE OF THE CAVE - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=PEOPLE%20OF%20THE%20CAVE%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/PEOPLE OF THE CAVE - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 172,
-    "title": "Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12)",
-    "sub": "Personality Disorders",
-    "archive": "Personality Disorders (Series)/Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12).mp3",
-    "href": "audio.html?archive=Personality%20Disorders%20%28Series%29%2FPersonality%20Disorders%20%5BPart%201%5D%20Paranoia%20and%20Schizophrenia%20%2805.02.12%29.mp3",
-    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
-  },
-  {
-    "type": "audio",
-    "id": 173,
-    "title": "Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12)",
-    "sub": "Personality Disorders",
-    "archive": "Personality Disorders (Series)/Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12).mp3",
-    "href": "audio.html?archive=Personality%20Disorders%20%28Series%29%2FPersonality%20Disorders%20%5BPart%202%5D%20ADHD%2C%20OCD%20and%20Bipolar%20%2805.03.12%29.mp3",
-    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
-  },
-  {
-    "type": "audio",
-    "id": 174,
-    "title": "Personality Disorders [Part 3] Narcissistic (05.06.12)",
-    "sub": "Personality Disorders",
-    "archive": "Personality Disorders (Series)/Personality Disorders [Part 3] Narcissistic (05.06.12).mp3",
-    "href": "audio.html?archive=Personality%20Disorders%20%28Series%29%2FPersonality%20Disorders%20%5BPart%203%5D%20Narcissistic%20%2805.06.12%29.mp3",
-    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
-  },
-  {
-    "type": "audio",
-    "id": 175,
-    "title": "Personality Disorders [Part 4] PTSD (05.07.12)",
-    "sub": "Personality Disorders",
-    "archive": "Personality Disorders (Series)/Personality Disorders [Part 4] PTSD (05.07.12).mp3",
-    "href": "audio.html?archive=Personality%20Disorders%20%28Series%29%2FPersonality%20Disorders%20%5BPart%204%5D%20PTSD%20%2805.07.12%29.mp3",
-    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
-  },
-  {
-    "type": "audio",
-    "id": 176,
-    "title": "Personality Disorders [Part 5] Anti-Social (05.08.12)",
-    "sub": "Personality Disorders",
-    "archive": "Personality Disorders (Series)/Personality Disorders [Part 5] Anti-Social (05.08.12).mp3",
-    "href": "audio.html?archive=Personality%20Disorders%20%28Series%29%2FPersonality%20Disorders%20%5BPart%205%5D%20Anti-Social%20%2805.08.12%29.mp3",
-    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
-  },
-  {
-    "type": "audio",
-    "id": 177,
-    "title": "Power of Intercession (07.18.11)",
-    "sub": "General Lectures",
-    "archive": "Power of Intercession (07.18.11).mp3",
-    "href": "audio.html?archive=Power%20of%20Intercession%20%2807.18.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 178,
-    "title": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH",
-    "sub": "Aqeedah",
-    "archive": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=PRINCIPLES%20OF%20AHLUS%20SUNNAH%20WAL%20JAMA%27AH%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 179,
-    "title": "Prophesies of the Holy Quran (11.22.11 to 11.23.11)",
-    "sub": "Science in the Quran",
-    "archive": "Prophesies of the Holy Quran (11.22.11 to 11.23.11).mp3",
-    "href": "audio.html?archive=Prophesies%20of%20the%20Holy%20Quran%20%2811.22.11%20to%2011.23.11%29.mp3",
-    "thumb": "thumb/extracted/d6ec668de41ae1.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 180,
-    "title": "PUNISHMENT OF THE GRAVE",
-    "sub": "Fiqh & Worship",
-    "archive": "PUNISHMENT OF THE GRAVE - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=PUNISHMENT%20OF%20THE%20GRAVE%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 181,
-    "title": "Radical Islamic Terrorism",
-    "sub": "Refutations",
-    "archive": "Radical Islamic Terrorism.mp3",
-    "href": "audio.html?archive=Radical%20Islamic%20Terrorism.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 182,
-    "title": "Radical islamic terrorism2",
-    "sub": "Refutations",
-    "archive": "Radical islamic terrorism2.mp3",
-    "href": "audio.html?archive=Radical%20islamic%20terrorism2.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 183,
-    "title": "Radio Show - Allah's Blessings to Mankind (08.20.11)",
-    "sub": "Radio Show",
-    "archive": "Radio_Show/Radio Show - Allah's Blessings to Mankind (08.20.11).mp3",
-    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20Allah%27s%20Blessings%20to%20Mankind%20%2808.20.11%29.mp3",
-    "thumb": "thumb/extracted/2676a8f4838e99.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 184,
-    "title": "Radio Show - Challenges Facing the Youth Globally (08.06.11)",
-    "sub": "Radio Show",
-    "archive": "Radio_Show/Radio Show - Challenges Facing the Youth Globally (08.06.11).mp3",
-    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20Challenges%20Facing%20the%20Youth%20Globally%20%2808.06.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 185,
-    "title": "Radio Show - Diseases of the Heart (10.29.11)",
-    "sub": "Diseases of the Heart",
-    "archive": "Diseases_of_the_Heart/Radio Show - Diseases of the Heart (10.29.11).mp3",
-    "href": "audio.html?archive=Diseases_of_the_Heart%2FRadio%20Show%20-%20Diseases%20of%20the%20Heart%20%2810.29.11%29.mp3",
-    "thumb": "thumb/extracted/f5c36659976c9e.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 186,
-    "title": "Radio Show - God In Islam (11.19.11)",
-    "sub": "Radio Show",
-    "archive": "Radio_Show/Radio Show - God In Islam (11.19.11).mp3",
-    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20God%20In%20Islam%20%2811.19.11%29.mp3",
-    "thumb": "thumb/extracted/b1693094c8ce71.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 187,
-    "title": "Radio Show - Judgment Day (11.26.11)",
-    "sub": "Radio Show",
-    "archive": "Radio_Show/Radio Show - Judgment Day (11.26.11).mp3",
-    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20Judgment%20Day%20%2811.26.11%29.mp3",
-    "thumb": "thumb/extracted/6862f6ca95768a.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 188,
-    "title": "Radio Show - Manhood (10.22.11)",
-    "sub": "Radio Show",
-    "archive": "Radio_Show/Radio Show - Manhood (10.22.11).mp3",
-    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20Manhood%20%2810.22.11%29.mp3",
-    "thumb": "thumb/extracted/e38b5240266f79.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 189,
-    "title": "Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11)",
-    "sub": "Radio Show",
-    "archive": "Radio_Show/Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11).mp3",
-    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20Muhammad%20%28PBUH%29%20the%20Man%20%26%20the%20Mission%20%2809.03.11%29.mp3",
-    "thumb": "thumb/extracted/f30bbb19eb83af.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 190,
-    "title": "Radio Show - Natural Instincts (07.30.11)",
-    "sub": "Radio Show",
-    "archive": "Radio_Show/Radio Show - Natural Instincts (07.30.11).mp3",
-    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20Natural%20Instincts%20%2807.30.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 191,
-    "title": "RAMADAN OUR BLESSED GUEST",
-    "sub": "Ramadan",
-    "archive": "Ramadan/RAMADAN OUR BLESSED GUEST - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=Ramadan%2FRAMADAN%20OUR%20BLESSED%20GUEST%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 192,
-    "title": "Ramadhan - The Month of Glory (07.30.11)",
-    "sub": "Ramadan",
-    "archive": "Ramadan/Ramadhan - The Month of Glory (07.30.11).mp3",
-    "href": "audio.html?archive=Ramadan%2FRamadhan%20-%20The%20Month%20of%20Glory%20%2807.30.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 193,
-    "title": "REALITY OF EMAAN",
-    "sub": "Aqeedah",
-    "archive": "REALITY OF EMAAN - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=REALITY%20OF%20EMAAN%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 194,
-    "title": "Reality of FGM (08.25.11)",
-    "sub": "General Lectures",
-    "archive": "Reality of FGM (08.25.11).mp3",
-    "href": "audio.html?archive=Reality%20of%20FGM%20%2808.25.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 195,
-    "title": "REALITY OF POVERTY",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "REALITY OF POVERTY - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=REALITY%20OF%20POVERTY%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/extracted/4e609eaf7de4d7.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 196,
-    "title": "Reality of Poverty (02.27.12)",
-    "sub": "General Lectures",
-    "archive": "Reality of Poverty (02.27.12).mp3",
-    "href": "audio.html?archive=Reality%20of%20Poverty%20%2802.27.12%29.mp3",
-    "thumb": "thumb/extracted/290cda89069668.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 197,
-    "title": "Reality of Sincerity (12.07.11)",
-    "sub": "Diseases of the Heart",
-    "archive": "Reality of Sincerity (12.07.11).mp3",
-    "href": "audio.html?archive=Reality%20of%20Sincerity%20%2812.07.11%29.mp3",
-    "thumb": "thumb/extracted/1e7db6b17401c6.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 198,
-    "title": "REALITY OF THE JEWS",
-    "sub": "Refutations",
-    "archive": "REALITY OF THE JEWS - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=REALITY%20OF%20THE%20JEWS%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/REALITY OF THE JEWS - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 199,
-    "title": "Refuting Geert Wilders (07.07.11)",
-    "sub": "Refutations",
-    "archive": "Refutation/Refuting Geert Wilders (07.07.11).mp3",
-    "href": "audio.html?archive=Refutation%2FRefuting%20Geert%20Wilders%20%2807.07.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 200,
-    "title": "Refuting The Lie Concerning Kufr Doona Kufr",
-    "sub": "Refutations",
-    "archive": "Refutation/Refuting The Lie Concerning Kufr Doona Kufr.mp3",
-    "href": "audio.html?archive=Refutation%2FRefuting%20The%20Lie%20Concerning%20Kufr%20Doona%20Kufr.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 201,
-    "title": "Refuting The Lie Concerning The Excuse of Ignorance",
-    "sub": "Refutations",
-    "archive": "Refutation/Refuting The Lie Concerning The Excuse of Ignorance.mp3",
-    "href": "audio.html?archive=Refutation%2FRefuting%20The%20Lie%20Concerning%20The%20Excuse%20of%20Ignorance.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 202,
-    "title": "REJECTING THE TAGHUT",
-    "sub": "Refutations",
-    "archive": "REJECTING THE TAGHUT - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=REJECTING%20THE%20TAGHUT%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 203,
-    "title": "Removing the Doubts",
-    "sub": "Refutations",
-    "archive": "Removing the Doubts.mp3",
-    "href": "audio.html?archive=Removing%20the%20Doubts.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 204,
-    "title": "REQUIREMENTS OF JIHAD",
-    "sub": "Jihad",
-    "archive": "Jihad/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=Jihad%2FREQUIREMENTS%20OF%20JIHAD%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 205,
-    "title": "Resist To Exist (07.07.11)",
-    "sub": "General Lectures",
-    "archive": "Resist To Exist (07.07.11).mp3",
-    "href": "audio.html?archive=Resist%20To%20Exist%20%2807.07.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 206,
-    "title": "Road to Sincerity (07.17.11)",
-    "sub": "Diseases of the Heart",
-    "archive": "Road to Sincerity (07.17.11).mp3",
-    "href": "audio.html?archive=Road%20to%20Sincerity%20%2807.17.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 207,
-    "title": "ROLE OF THE MASJID",
-    "sub": "Islamic Knowledge",
-    "archive": "ROLE OF THE MASJID - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=ROLE%20OF%20THE%20MASJID%20-%20Shaykh%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 208,
-    "title": "Rules and Merits of Zakah (09.01.11)",
-    "sub": "Fiqh & Worship",
-    "archive": "Rules and Merits of Zakah (09.01.11).mp3",
-    "href": "audio.html?archive=Rules%20and%20Merits%20of%20Zakah%20%2809.01.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 209,
-    "title": "Rules of Divorce [Part 1] (07.06.11)",
-    "sub": "Marriage & Family",
-    "archive": "Nikah_Divorce/Rules of Divorce [Part 1] (07.06.11).mp3",
-    "href": "audio.html?archive=Nikah_Divorce%2FRules%20of%20Divorce%20%5BPart%201%5D%20%2807.06.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 210,
-    "title": "Rules of Divorce [Part 2] Revisited (07.08.11)",
-    "sub": "Marriage & Family",
-    "archive": "Nikah_Divorce/Rules of Divorce [Part 2] Revisited (07.08.11).mp3",
-    "href": "audio.html?archive=Nikah_Divorce%2FRules%20of%20Divorce%20%5BPart%202%5D%20Revisited%20%2807.08.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 211,
-    "title": "Rules Of Fasting",
-    "sub": "Fiqh & Worship",
-    "archive": "Rules Of Fasting.mp3",
-    "href": "audio.html?archive=Rules%20Of%20Fasting.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 212,
-    "title": "Rules of Fasting (07.31.11)",
-    "sub": "Fiqh & Worship",
-    "archive": "Rules of Fasting (07.31.11).mp3",
-    "href": "audio.html?archive=Rules%20of%20Fasting%20%2807.31.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 213,
-    "title": "Rules of Nikah [Part 1] (06.30.11)",
-    "sub": "Marriage & Family",
-    "archive": "Nikah_Divorce/Rules of Nikah [Part 1] (06.30.11).mp3",
-    "href": "audio.html?archive=Nikah_Divorce%2FRules%20of%20Nikah%20%5BPart%201%5D%20%2806.30.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 214,
-    "title": "Rules of Nikah [Part 2] (07.01.11)",
-    "sub": "Marriage & Family",
-    "archive": "Nikah_Divorce/Rules of Nikah [Part 2] (07.01.11).mp3",
-    "href": "audio.html?archive=Nikah_Divorce%2FRules%20of%20Nikah%20%5BPart%202%5D%20%2807.01.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 215,
-    "title": "Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11)",
-    "sub": "Marriage & Family",
-    "archive": "Nikah_Divorce/Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11).mp3",
-    "href": "audio.html?archive=Nikah_Divorce%2FRules%20of%20Nikah%20%5BPart%203%5D%20Bedroom%20Etiquettes%20In%20Islam%20%2807.02.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 216,
-    "title": "Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11)",
-    "sub": "Marriage & Family",
-    "archive": "Nikah_Divorce/Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11).mp3",
-    "href": "audio.html?archive=Nikah_Divorce%2FRules%20of%20Nikah%20%5BPart%204%5D%20Rights%20of%20the%20Wife%20%26%20Husband%20%2807.03.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 217,
-    "title": "SALAFI JIHADI",
-    "sub": "Jihad",
-    "archive": "Jihad/SALAFI JIHADI - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=Jihad%2FSALAFI%20JIHADI%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 218,
-    "title": "Salah of the Rasool described",
-    "sub": "Fiqh & Worship",
-    "archive": "Salah of the Rasool described.mp3",
-    "href": "audio.html?archive=Salah%20of%20the%20Rasool%20described.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 219,
-    "title": "Satan's Web (dars)",
-    "sub": "General Lectures",
-    "archive": "Satan's Web (dars).mp3",
-    "href": "audio.html?archive=Satan%27s%20Web%20%28dars%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 220,
-    "title": "Satans Web (12.17.11)",
-    "sub": "General Lectures",
-    "archive": "Satans Web (12.17.11).mp3",
-    "href": "audio.html?archive=Satans%20Web%20%2812.17.11%29.mp3",
-    "thumb": "thumb/extracted/63ebe64c1fee50.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 221,
-    "title": "SAUDI SALAFI",
-    "sub": "Refutations",
-    "archive": "SAUDI SALAFI - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=SAUDI%20SALAFI%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 222,
-    "title": "Science of Quran - Part 1",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science of Quran - Part 1.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%201.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 223,
-    "title": "Science of Quran - Part 10 - The Causes of Revelation – Al Imraan",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science of Quran - Part 10 - The Causes of Revelation – Al Imraan.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2010%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Al%20Imraan.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 224,
-    "title": "Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2011%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Al%20Ma%27idah%202.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 225,
-    "title": "Science of Quran - Part 12 - The Causes of Revelation – Al An’am",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science of Quran - Part 12 - The Causes of Revelation – Al An’am.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2012%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Al%20An%E2%80%99am.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 226,
-    "title": "Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2013%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Al%20%E2%80%98Araf.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 227,
-    "title": "Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2014%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Al%20Anfal%20-%20Part%201.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 228,
-    "title": "Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2015%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Tawbah%20%E2%80%93%20Part%201.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 229,
-    "title": "Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2016%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Tawbah%20%E2%80%93%20Part%202.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 230,
-    "title": "Science of Quran - Part 2 - The History of the Quran's Descent",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science of Quran - Part 2 - The History of the Quran's Descent.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%202%20-%20The%20History%20of%20the%20Quran%27s%20Descent.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 231,
-    "title": "Science of Quran - Part 2 - The Wahy",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science of Quran - Part 2 - The Wahy.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%202%20-%20The%20Wahy.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 232,
-    "title": "Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%204%20-%20The%2020%20Reasons%20Why%20The%20Quran%20Is%20A%20Wise%20Book.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 233,
-    "title": "Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20Of%20Quran%20-%20Part%205%20-%20The%20Characteristics%20Of%20The%20Makkan%20And%20Madinan%20Surahs.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 234,
-    "title": "Science Of Quran - Part 6 - The causes Of Revelation I",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science Of Quran - Part 6 - The causes Of Revelation I.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20Of%20Quran%20-%20Part%206%20-%20The%20causes%20Of%20Revelation%20I.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 235,
-    "title": "Science Of Quran - Part 7 - The causes Of Revelation II",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science Of Quran - Part 7 - The causes Of Revelation II.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20Of%20Quran%20-%20Part%207%20-%20The%20causes%20Of%20Revelation%20II.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 236,
-    "title": "Science of Quran - Part 8 - The Causes of Revelation – An Nisa",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science of Quran - Part 8 - The Causes of Revelation – An Nisa.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%208%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20An%20Nisa.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 237,
-    "title": "Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah",
-    "sub": "Science in the Quran",
-    "archive": "Science in the quran/Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah.mp3",
-    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%209%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Al%20Ma%27idah.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 238,
-    "title": "SECULARISM",
-    "sub": "Refutations",
-    "archive": "SECULARISM - Shaykh Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=SECULARISM%20-%20Shaykh%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/SECULARISM - Shaykh Abdallah Al Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 239,
-    "title": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION)",
-    "sub": "Aqeedah",
-    "archive": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=SEVEN%20CONDITIONS%20OF%20SHAHADA%20%28CLASSIC%20VERSION%29%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 240,
-    "title": "SEVENTEEN SIGNS OF THE WICKED SCHOLAR",
-    "sub": "Wicked Scholars",
-    "archive": "Wicked_Scholars/SEVENTEEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal.mp3",
-    "href": "audio.html?archive=Wicked_Scholars%2FSEVENTEEN%20SIGNS%20OF%20THE%20WICKED%20SCHOLAR%20-%20Abdullah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 241,
-    "title": "SHARIAH VS MAN MADE LAWS",
-    "sub": "Refutations",
-    "archive": "SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=SHARIAH%20VS%20MAN%20MADE%20LAWS%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 242,
-    "title": "Sheikh Abdullah Faisal Al Isra Wal Mira'aj",
-    "sub": "Prophets & Seerah",
-    "archive": "Sheikh Abdullah Faisal   Al Isra Wal Mira'aj.mp3",
-    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20%20%20Al%20Isra%20Wal%20Mira%27aj.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 243,
-    "title": "SHIA GREATEST ENEMY WITHIN",
-    "sub": "Refutations",
-    "archive": "Shia/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=Shia%2FSHIA%20GREATEST%20ENEMY%20WITHIN%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 244,
-    "title": "SHIA KNOW YOUR ENEMY",
-    "sub": "Refutations",
-    "archive": "Shia/SHIA KNOW YOUR ENEMY - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=Shia%2FSHIA%20KNOW%20YOUR%20ENEMY%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/SHIA KNOW YOUR ENEMY - Shaykh Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 245,
-    "title": "Shirk In Perspective (07.10.11)",
-    "sub": "Aqeedah",
-    "archive": "Shirk In Perspective (07.10.11).mp3",
-    "href": "audio.html?archive=Shirk%20In%20Perspective%20%2807.10.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 246,
-    "title": "SIGNS BEFORE JUDGEMENT DAY",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "SIGNS BEFORE JUDGEMENT DAY - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=SIGNS%20BEFORE%20JUDGEMENT%20DAY%20-%20Shaykh%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 247,
-    "title": "Signs Before The Day of Judgement",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Sheikh Abdullah Faisal - Signs Before The Day of Judgement.mp3",
-    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Signs%20Before%20The%20Day%20of%20Judgement.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 248,
-    "title": "SIGNS OF HYPOCRITES",
-    "sub": "Aqeedah",
-    "archive": "SIGNS OF HYPOCRITES - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=SIGNS%20OF%20HYPOCRITES%20-%20Shaykh%20Faisal.mp3",
-    "thumb": "thumb/SIGNS OF HYPOCRITES - Shaykh Faisal.png"
-  },
-  {
-    "type": "audio",
-    "id": 249,
-    "title": "Slander of Aisha (RA) (07.12.11)",
-    "sub": "Refutations",
-    "archive": "Slander of Aisha (RA) (07.12.11).mp3",
-    "href": "audio.html?archive=Slander%20of%20Aisha%20%28RA%29%20%2807.12.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 250,
-    "title": "Slander of Aisha (RA) [REVISITED] (08.14.11)",
-    "sub": "Refutations",
-    "archive": "Slander of Aisha (RA) [REVISITED] (08.14.11).mp3",
-    "href": "audio.html?archive=Slander%20of%20Aisha%20%28RA%29%20%5BREVISITED%5D%20%2808.14.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 251,
-    "title": "Tafseer 002.255 Ayat Al-Kursi (10.23.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 002.255 Ayat Al-Kursi (10.23.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20002.255%20Ayat%20Al-Kursi%20%2810.23.11%29.mp3",
-    "thumb": "thumb/extracted/842d02122759fc.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 252,
-    "title": "Tafseer 009 Surah Taubah (001-014) [Part 1] The Verse of the Sword (03.05.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (001-014) [Part 1] The Verse of the Sword (03.05.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28001-014%29%20%5BPart%201%5D%20The%20Verse%20of%20the%20Sword%20%2803.05.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 253,
-    "title": "Tafseer 009 Surah Taubah (014-021) [Part 2] Allah Shall Punish the Kuffaar With Your Hands (03.06.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (014-021) [Part 2] Allah Shall Punish the Kuffaar With Your Hands (03.06.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28014-021%29%20%5BPart%202%5D%20Allah%20Shall%20Punish%20the%20Kuffaar%20With%20Your%20Hands%20%2803.06.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 254,
-    "title": "Tafseer 009 Surah Taubah (022-027) [Part 3] The Battle of Hunain (03.07.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (022-027) [Part 3] The Battle of Hunain (03.07.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28022-027%29%20%5BPart%203%5D%20The%20Battle%20of%20Hunain%20%2803.07.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 255,
-    "title": "Tafseer 009 Surah Taubah (028-030) [Part 4] Accept Islam, Pay the Jizya Or Prepare to Fight (03.08.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (028-030) [Part 4] Accept Islam, Pay the Jizya Or Prepare to Fight (03.08.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28028-030%29%20%5BPart%204%5D%20Accept%20Islam%2C%20Pay%20the%20Jizya%20Or%20Prepare%20to%20Fight%20%2803.08.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 256,
-    "title": "Tafseer 009 Surah Taubah (031-034) [Part 5] None Has the Right to be Worshiped Except Allah (03.10.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (031-034) [Part 5] None Has the Right to be Worshiped Except Allah (03.10.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28031-034%29%20%5BPart%205%5D%20None%20Has%20the%20Right%20to%20be%20Worshiped%20Except%20Allah%20%2803.10.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 257,
-    "title": "Tafseer 009 Surah Taubah (034-039) [Part 6] Iblis Has Beautified For Them Their Evil Deeds (03.12.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (034-039) [Part 6] Iblis Has Beautified For Them Their Evil Deeds (03.12.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28034-039%29%20%5BPart%206%5D%20Iblis%20Has%20Beautified%20For%20Them%20Their%20Evil%20Deeds%20%2803.12.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 258,
-    "title": "Tafseer 009 Surah Taubah (039-054) [Part 7] Beware of the Murjif (03.13.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (039-054) [Part 7] Beware of the Murjif (03.13.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28039-054%29%20%5BPart%207%5D%20Beware%20of%20the%20Murjif%20%2803.13.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 259,
-    "title": "Tafseer 009 Surah Taubah (055-066) [Part 8] Mocking An Aspect of the Deen Makes You Become a Kaafir (03.14.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (055-066) [Part 8] Mocking An Aspect of the Deen Makes You Become a Kaafir (03.14.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28055-066%29%20%5BPart%208%5D%20Mocking%20An%20Aspect%20of%20the%20Deen%20Makes%20You%20Become%20a%20Kaafir%20%2803.14.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 260,
-    "title": "Tafseer 009 Surah Taubah (064-067) [Part 9] The Hypocrites Live in Fear of Being Exposed (03.15.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (064-067) [Part 9] The Hypocrites Live in Fear of Being Exposed (03.15.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28064-067%29%20%5BPart%209%5D%20The%20Hypocrites%20Live%20in%20Fear%20of%20Being%20Exposed%20%2803.15.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 261,
-    "title": "Tafseer 009 Surah Taubah (067-073) [Part 10] Strive Hard Against the Disbelievers and the Hypocrites (03.17.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (067-073) [Part 10] Strive Hard Against the Disbelievers and the Hypocrites (03.17.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28067-073%29%20%5BPart%2010%5D%20Strive%20Hard%20Against%20the%20Disbelievers%20and%20the%20Hypocrites%20%2803.17.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 262,
-    "title": "Tafseer 009 Surah Taubah (073-080) [Part 11] The Evil Triangle (03.19.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (073-080) [Part 11] The Evil Triangle (03.19.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28073-080%29%20%5BPart%2011%5D%20The%20Evil%20Triangle%20%2803.19.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 263,
-    "title": "Tafseer 009 Surah Taubah (080-084) [Part 12] 15 People You Are Not Allowed to Pray Janazah Over (03.20.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (080-084) [Part 12] 15 People You Are Not Allowed to Pray Janazah Over (03.20.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28080-084%29%20%5BPart%2012%5D%2015%20People%20You%20Are%20Not%20Allowed%20to%20Pray%20Janazah%20Over%20%2803.20.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 264,
-    "title": "Tafseer 009 Surah Taubah (084-097) [Part 13] The Hypocrites Will Always Hide Behind Wallahi (03.21.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (084-097) [Part 13] The Hypocrites Will Always Hide Behind Wallahi (03.21.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28084-097%29%20%5BPart%2013%5D%20The%20Hypocrites%20Will%20Always%20Hide%20Behind%20Wallahi%20%2803.21.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 265,
-    "title": "Tafseer 009 Surah Taubah (097-105) [Part 14] The Munafiqeen See Zakah As A Fine Unleashed Against Them (03.22.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (097-105) [Part 14] The Munafiqeen See Zakah As A Fine Unleashed Against Them (03.22.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28097-105%29%20%5BPart%2014%5D%20The%20Munafiqeen%20See%20Zakah%20As%20A%20Fine%20Unleashed%20Against%20Them%20%2803.22.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 266,
-    "title": "Tafseer 009 Surah Taubah (105-111) [Part 15] The Dangers of Masjid Dirar (03.24.12)[v2]",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (105-111) [Part 15] The Dangers of Masjid Dirar (03.24.12)[v2].mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28105-111%29%20%5BPart%2015%5D%20The%20Dangers%20of%20Masjid%20Dirar%20%2803.24.12%29%5Bv2%5D.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 267,
-    "title": "Tafseer 009 Surah Taubah (111-118) [Part 16] Allah Desires the Soul of the Believers in Exchange for Jannah (03.26.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (111-118) [Part 16] Allah Desires the Soul of the Believers in Exchange for Jannah (03.26.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28111-118%29%20%5BPart%2016%5D%20Allah%20Desires%20the%20Soul%20of%20the%20Believers%20in%20Exchange%20for%20Jannah%20%2803.26.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 268,
-    "title": "Tafseer 009 Surah Taubah (119-129) [Part 17] Be in the Company of the Righteous (03.27.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (119-129) [Part 17] Be in the Company of the Righteous (03.27.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28119-129%29%20%5BPart%2017%5D%20Be%20in%20the%20Company%20of%20the%20Righteous%20%2803.27.12%29.mp3",
-    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
-  },
-  {
-    "type": "audio",
-    "id": 269,
-    "title": "Tafseer 018 Surah Al-Kahf [Part 1] The Quran Is Free From Crookedness (11.10.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer al kahf/Tafseer 018 Surah Al-Kahf [Part 1] The Quran Is Free From Crookedness (11.10.11).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20al%20kahf%2FTafseer%20018%20Surah%20Al-Kahf%20%5BPart%201%5D%20The%20Quran%20Is%20Free%20From%20Crookedness%20%2811.10.11%29.mp3",
-    "thumb": "thumb/extracted/256748f09575bc.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 270,
-    "title": "Tafseer 018 Surah Al-Kahf [Part 2] The People of the Cave (11.12.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer al kahf/Tafseer 018 Surah Al-Kahf [Part 2] The People of the Cave (11.12.11).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20al%20kahf%2FTafseer%20018%20Surah%20Al-Kahf%20%5BPart%202%5D%20The%20People%20of%20the%20Cave%20%2811.12.11%29.mp3",
-    "thumb": "thumb/extracted/5358e5634bc34e.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 271,
-    "title": "Tafseer 020 Surah TaHa (001-008) [Part 1] Unto Allah Belongs the Most Beautiful Names (07.01.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (001-008) [Part 1] Unto Allah Belongs the Most Beautiful Names (07.01.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28001-008%29%20%5BPart%201%5D%20Unto%20Allah%20Belongs%20the%20Most%20Beautiful%20Names%20%2807.01.12%29.mp3",
-    "thumb": "thumb/extracted/8ec53eb8d167ad.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 272,
-    "title": "Tafseer 020 Surah TaHa (005-023) [Part 2] The Hour Is Coming (07.02.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (005-023) [Part 2] The Hour Is Coming (07.02.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28005-023%29%20%5BPart%202%5D%20The%20Hour%20Is%20Coming%20%2807.02.12%29.mp3",
-    "thumb": "thumb/extracted/4fd75a19b79012.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 273,
-    "title": "Tafseer 020 Surah TaHa (023-047) [Part 3] Be Gentle With Your Dawah (07.03.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (023-047) [Part 3] Be Gentle With Your Dawah (07.03.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28023-047%29%20%5BPart%203%5D%20Be%20Gentle%20With%20Your%20Dawah%20%2807.03.12%29.mp3",
-    "thumb": "thumb/extracted/c47f507aa49ed7.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 274,
-    "title": "Tafseer 020 Surah TaHa (043-073) [Part 4] The Pharaoh's Magicians Embraced Islam (07.04.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (043-073) [Part 4] The Pharaoh's Magicians Embraced Islam (07.04.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28043-073%29%20%5BPart%204%5D%20The%20Pharaoh%27s%20Magicians%20Embraced%20Islam%20%2807.04.12%29.mp3",
-    "thumb": "thumb/extracted/206202462d7bbf.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 275,
-    "title": "Tafseer 020 Surah TaHa (071-073) [Part 5] The Rules of Ikraah (07.09.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (071-073) [Part 5] The Rules of Ikraah (07.09.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28071-073%29%20%5BPart%205%5D%20The%20Rules%20of%20Ikraah%20%2807.09.12%29.mp3",
-    "thumb": "thumb/extracted/02712cadc4c131.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 276,
-    "title": "Tafseer 020 Surah TaHa (072-079) [Part 6] Pharaoh, the Opportunist (07.10.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (072-079) [Part 6] Pharaoh, the Opportunist (07.10.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28072-079%29%20%5BPart%206%5D%20Pharaoh%2C%20the%20Opportunist%20%2807.10.12%29.mp3",
-    "thumb": "thumb/extracted/ffe447b21900a1.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 277,
-    "title": "Tafseer 020 Surah TaHa (080-097) [Part 7] The Jews Worshipped the Golden Calf (07.11.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (080-097) [Part 7] The Jews Worshipped the Golden Calf (07.11.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28080-097%29%20%5BPart%207%5D%20The%20Jews%20Worshipped%20the%20Golden%20Calf%20%2807.11.12%29.mp3",
-    "thumb": "thumb/extracted/984b1d76d948c3.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 278,
-    "title": "Tafseer 023 Surah Mu'minun [1-11] (02.26.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 023 Surah Mu'minun [1-11] (02.26.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20023%20Surah%20Mu%27minun%20%5B1-11%5D%20%2802.26.12%29.mp3",
-    "thumb": "thumb/extracted/4bba8bf656d2d4.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 279,
-    "title": "Tafseer 025 Surah Al-Furqan (01-10) [Part 1] The Qur'an is the Ultimate Furqan (06.03.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (01-10) [Part 1] The Qur'an is the Ultimate Furqan (06.03.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2801-10%29%20%5BPart%201%5D%20The%20Qur%27an%20is%20the%20Ultimate%20Furqan%20%2806.03.12%29.mp3",
-    "thumb": "thumb/extracted/fb0b6d011a4ec9.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 280,
-    "title": "Tafseer 025 Surah Al-Furqan (10-21) [Part 2] The Roaring of the Hellfire (06.04.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (10-21) [Part 2] The Roaring of the Hellfire (06.04.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2810-21%29%20%5BPart%202%5D%20The%20Roaring%20of%20the%20Hellfire%20%2806.04.12%29.mp3",
-    "thumb": "thumb/extracted/c7a1baf5918dbc.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 281,
-    "title": "Tafseer 025 Surah Al-Furqan (21-31) [Part 3] Every Prophet Has An Enemy (06.05.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (21-31) [Part 3] Every Prophet Has An Enemy (06.05.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2821-31%29%20%5BPart%203%5D%20Every%20Prophet%20Has%20An%20Enemy%20%2806.05.12%29.mp3",
-    "thumb": "thumb/extracted/ff57ca0b05212b.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 282,
-    "title": "Tafseer 025 Surah Al-Furqan (30-32) [Part 4] Why Did Allah Reveal the Quran in Stages (06.06.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (30-32) [Part 4] Why Did Allah Reveal the Quran in Stages (06.06.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2830-32%29%20%5BPart%204%5D%20Why%20Did%20Allah%20Reveal%20the%20Quran%20in%20Stages%20%2806.06.12%29.mp3",
-    "thumb": "thumb/extracted/3c324270201cf0.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 283,
-    "title": "Tafseer 025 Surah Al-Furqan (32-51) [Part 5] The Barakah of Islam Are For Those Whom Allah Loves (06.07.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (32-51) [Part 5] The Barakah of Islam Are For Those Whom Allah Loves (06.07.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2832-51%29%20%5BPart%205%5D%20The%20Barakah%20of%20Islam%20Are%20For%20Those%20Whom%20Allah%20Loves%20%2806.07.12%29.mp3",
-    "thumb": "thumb/extracted/a682358e2382a6.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 284,
-    "title": "Tafseer 025 Surah Al-Furqan (50-57) [Part 6] The Kuffaar Takes Sides With Shaitan Against Allah (06.09.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (50-57) [Part 6] The Kuffaar Takes Sides With Shaitan Against Allah (06.09.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2850-57%29%20%5BPart%206%5D%20The%20Kuffaar%20Takes%20Sides%20With%20Shaitan%20Against%20Allah%20%2806.09.12%29.mp3",
-    "thumb": "thumb/extracted/cd4d1d134083a5.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 285,
-    "title": "Tafseer 025 Surah Al-Furqan (57-64) [Part 7] Only Allah is Al-Hayy (The Ever-Living) (06.10.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (57-64) [Part 7] Only Allah is Al-Hayy (The Ever-Living) (06.10.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2857-64%29%20%5BPart%207%5D%20Only%20Allah%20is%20Al-Hayy%20%28The%20Ever-Living%29%20%2806.10.12%29.mp3",
-    "thumb": "thumb/extracted/62236a9f114dd2.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 286,
-    "title": "Tafseer 025 Surah Al-Furqan (63-69) [Part 8] Zina Causes Murder (06.11.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (63-69) [Part 8] Zina Causes Murder (06.11.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2863-69%29%20%5BPart%208%5D%20Zina%20Causes%20Murder%20%2806.11.12%29.mp3",
-    "thumb": "thumb/extracted/a360ef604c7979.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 287,
-    "title": "Tafseer 025 Surah Al-Furqan (68-77) [Part 9] Make Duaa To Allah For A Pious Family (06.12.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (68-77) [Part 9] Make Duaa To Allah For A Pious Family (06.12.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2868-77%29%20%5BPart%209%5D%20Make%20Duaa%20To%20Allah%20For%20A%20Pious%20Family%20%2806.12.12%29.mp3",
-    "thumb": "thumb/extracted/847ae3f2af4c74.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 288,
-    "title": "Tafseer 027 Surah An-Naml [Part 1] The 3 Dimensions Of Eeman (11.01.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer an-naml/Tafseer 027 Surah An-Naml [Part 1] The 3 Dimensions Of Eeman (11.01.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20an-naml%2FTafseer%20027%20Surah%20An-Naml%20%5BPart%201%5D%20The%203%20Dimensions%20Of%20Eeman%20%2811.01.11%29.mp3",
-    "thumb": "thumb/extracted/3b01fb82bb895f.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 289,
-    "title": "Tafseer 027 Surah An-Naml [Part 2] Sulaiman (AS) and the Ant (11.02.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer an-naml/Tafseer 027 Surah An-Naml [Part 2] Sulaiman (AS) and the Ant (11.02.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20an-naml%2FTafseer%20027%20Surah%20An-Naml%20%5BPart%202%5D%20Sulaiman%20%28AS%29%20and%20the%20Ant%20%2811.02.11%29.mp3",
-    "thumb": "thumb/extracted/e12cd5a6d078d9.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 290,
-    "title": "Tafseer 027 Surah An-Naml [Part 3] The Wisdom of the Hudhud (11.03.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer an-naml/Tafseer 027 Surah An-Naml [Part 3] The Wisdom of the Hudhud (11.03.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20an-naml%2FTafseer%20027%20Surah%20An-Naml%20%5BPart%203%5D%20The%20Wisdom%20of%20the%20Hudhud%20%2811.03.11%29.mp3",
-    "thumb": "thumb/extracted/eb85bcf2e0e14d.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 291,
-    "title": "Tafseer 027 Surah An-Naml [Part 4] The Islamic Ruling on Gifts [i] (11.08.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer an-naml/Tafseer 027 Surah An-Naml [Part 4] The Islamic Ruling on Gifts [i] (11.08.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20an-naml%2FTafseer%20027%20Surah%20An-Naml%20%5BPart%204%5D%20The%20Islamic%20Ruling%20on%20Gifts%20%5Bi%5D%20%2811.08.11%29.mp3",
-    "thumb": "thumb/extracted/d591c5720efb7b.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 292,
-    "title": "Tafseer 027 Surah An-Naml [Part 5] The Islamic Ruling on Gifts [ii] (11.09.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer an-naml/Tafseer 027 Surah An-Naml [Part 5] The Islamic Ruling on Gifts [ii] (11.09.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20an-naml%2FTafseer%20027%20Surah%20An-Naml%20%5BPart%205%5D%20The%20Islamic%20Ruling%20on%20Gifts%20%5Bii%5D%20%2811.09.11%29.mp3",
-    "thumb": "thumb/extracted/36526e11248a40.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 293,
-    "title": "Tafseer 029 Surah Al-Ankabut (01-10) [Part 1] We Shall All Be Tested (05.22.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (01-10) [Part 1] We Shall All Be Tested (05.22.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2801-10%29%20%5BPart%201%5D%20We%20Shall%20All%20Be%20Tested%20%2805.22.12%29.mp3",
-    "thumb": "thumb/extracted/94733af9bd733f.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 294,
-    "title": "Tafseer 029 Surah Al-Ankabut (11-18) [Part 2] You Shall Carry the Sins of Others on Day Judgment (05.23.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (11-18) [Part 2] You Shall Carry the Sins of Others on Day Judgment (05.23.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2811-18%29%20%5BPart%202%5D%20You%20Shall%20Carry%20the%20Sins%20of%20Others%20on%20Day%20Judgment%20%2805.23.12%29.mp3",
-    "thumb": "thumb/extracted/95b4e2598bd8d4.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 295,
-    "title": "Tafseer 029 Surah Al-Ankabut (19-35) [Part 3] The Kaafir Has No Hope (05.24.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (19-35) [Part 3] The Kaafir Has No Hope (05.24.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2819-35%29%20%5BPart%203%5D%20The%20Kaafir%20Has%20No%20Hope%20%2805.24.12%29.mp3",
-    "thumb": "thumb/extracted/2ff31b4f87764e.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 296,
-    "title": "Tafseer 029 Surah Al-Ankabut (34-38) [Part 4] The People of Ad and Thamud (05.27.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (34-38) [Part 4] The People of Ad and Thamud (05.27.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2834-38%29%20%5BPart%204%5D%20The%20People%20of%20Ad%20and%20Thamud%20%2805.27.12%29.mp3",
-    "thumb": "thumb/extracted/ea44577712be6b.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 297,
-    "title": "Tafseer 029 Surah Al-Ankabut (38-44) [Part 5] The Perished Nations Are Lessons (05.28.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (38-44) [Part 5] The Perished Nations Are Lessons (05.28.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2838-44%29%20%5BPart%205%5D%20The%20Perished%20Nations%20Are%20Lessons%20%2805.28.12%29.mp3",
-    "thumb": "thumb/extracted/4bb3649b1d034f.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 298,
-    "title": "Tafseer 029 Surah Al-Ankabut (44-45) [Part 6] The Virtues of Dhikr (05.29.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (44-45) [Part 6] The Virtues of Dhikr (05.29.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2844-45%29%20%5BPart%206%5D%20The%20Virtues%20of%20Dhikr%20%2805.29.12%29.mp3",
-    "thumb": "thumb/extracted/f20b939edcc3a6.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 299,
-    "title": "Tafseer 029 Surah Al-Ankabut (45-50) [Part 7] The Ummah of Hafidh and Isnad (05.30.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (45-50) [Part 7] The Ummah of Hafidh and Isnad (05.30.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2845-50%29%20%5BPart%207%5D%20The%20Ummah%20of%20Hafidh%20and%20Isnad%20%2805.30.12%29.mp3",
-    "thumb": "thumb/extracted/5feb89eedef831.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 300,
-    "title": "Tafseer 029 Surah Al-Ankabut (46-58) [Part 8] Reason with the People of the Book in a Better Way (05.31.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (46-58) [Part 8] Reason with the People of the Book in a Better Way (05.31.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2846-58%29%20%5BPart%208%5D%20Reason%20with%20the%20People%20of%20the%20Book%20in%20a%20Better%20Way%20%2805.31.12%29.mp3",
-    "thumb": "thumb/extracted/15f8db8fce9016.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 301,
-    "title": "Tafseer 029 Surah Al-Ankabut (56-69) [Part 9] Breaking A Promise Made To Allah (06.02.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (56-69) [Part 9] Breaking A Promise Made To Allah (06.02.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2856-69%29%20%5BPart%209%5D%20Breaking%20A%20Promise%20Made%20To%20Allah%20%2806.02.12%29.mp3",
-    "thumb": "thumb/extracted/ba291f29ea8c9f.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 302,
-    "title": "Tafseer 031 Surah Luqman [Part 1] The Quran Is A Wise Book (07.14.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah luqman/Tafseer 031 Surah Luqman [Part 1] The Quran Is A Wise Book (07.14.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20luqman%2FTafseer%20031%20Surah%20Luqman%20%5BPart%201%5D%20The%20Quran%20Is%20A%20Wise%20Book%20%2807.14.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 303,
-    "title": "Tafseer 031 Surah Luqman [Part 2] Revisited (07.16.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah luqman/Tafseer 031 Surah Luqman [Part 2] Revisited (07.16.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20luqman%2FTafseer%20031%20Surah%20Luqman%20%5BPart%202%5D%20Revisited%20%2807.16.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 304,
-    "title": "Tafseer 031 Surah Luqman [Part 3] Muslim, Mu'min and the Muhsin (07.17.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah luqman/Tafseer 031 Surah Luqman [Part 3] Muslim, Mu'min and the Muhsin (07.17.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20luqman%2FTafseer%20031%20Surah%20Luqman%20%5BPart%203%5D%20Muslim%2C%20Mu%27min%20and%20the%20Muhsin%20%2807.17.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 305,
-    "title": "Tafseer 031 Surah Luqman [Part 4] (07.25.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer surah luqman/Tafseer 031 Surah Luqman [Part 4] (07.25.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20luqman%2FTafseer%20031%20Surah%20Luqman%20%5BPart%204%5D%20%2807.25.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 306,
-    "title": "Tafseer 033 Surah Al-Ahzab (01-05) [Part 1] Do Not Consult the Kuffaar in Regard to Your Deen (06.13.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (01-05) [Part 1] Do Not Consult the Kuffaar in Regard to Your Deen (06.13.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2801-05%29%20%5BPart%201%5D%20Do%20Not%20Consult%20the%20Kuffaar%20in%20Regard%20to%20Your%20Deen%20%2806.13.12%29.mp3",
-    "thumb": "thumb/extracted/4eb04daabca660.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 307,
-    "title": "Tafseer 033 Surah Al-Ahzab (06-22) [Part 2] Muhammad (SAW) is Closer to the Believers than Themselves (06.14.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (06-22) [Part 2] Muhammad (SAW) is Closer to the Believers than Themselves (06.14.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2806-22%29%20%5BPart%202%5D%20Muhammad%20%28SAW%29%20is%20Closer%20to%20the%20Believers%20than%20Themselves%20%2806.14.12%29.mp3",
-    "thumb": "thumb/extracted/947df72eaa7f81.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 308,
-    "title": "Tafseer 033 Surah Al-Ahzab (22-31) [Part 3] Fulfill Your Covenant With Allah (06.16.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (22-31) [Part 3] Fulfill Your Covenant With Allah (06.16.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2822-31%29%20%5BPart%203%5D%20Fulfill%20Your%20Covenant%20With%20Allah%20%2806.16.12%29.mp3",
-    "thumb": "thumb/extracted/a0b201390a9a7d.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 309,
-    "title": "Tafseer 033 Surah Al-Ahzab (32-35) [Part 4] The Wives of the Prophet Belong to his Household (06.17.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (32-35) [Part 4] The Wives of the Prophet Belong to his Household (06.17.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2832-35%29%20%5BPart%204%5D%20The%20Wives%20of%20the%20Prophet%20Belong%20to%20his%20Household%20%2806.17.12%29.mp3",
-    "thumb": "thumb/extracted/aba9d5f7b154c5.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 310,
-    "title": "Tafseer 033 Surah Al-Ahzab (36-37) [Part 5] The Story of Julaybib (06.18.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (36-37) [Part 5] The Story of Julaybib (06.18.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2836-37%29%20%5BPart%205%5D%20The%20Story%20of%20Julaybib%20%2806.18.12%29.mp3",
-    "thumb": "thumb/extracted/941084cb6f5791.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 311,
-    "title": "Tafseer 033 Surah Al-Ahzab (38-48) [Part 6] Do Not Obey the Kuffaar and the Munafiqeen (06.19.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (38-48) [Part 6] Do Not Obey the Kuffaar and the Munafiqeen (06.19.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2838-48%29%20%5BPart%206%5D%20Do%20Not%20Obey%20the%20Kuffaar%20and%20the%20Munafiqeen%20%2806.19.12%29.mp3",
-    "thumb": "thumb/extracted/1848c515e5c059.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 312,
-    "title": "Tafseer 033 Surah Al-Ahzab (49-52) [Part 7] Marriage to Your 1st Cousin Is Allowed In Islam (06.20.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (49-52) [Part 7] Marriage to Your 1st Cousin Is Allowed In Islam (06.20.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2849-52%29%20%5BPart%207%5D%20Marriage%20to%20Your%201st%20Cousin%20Is%20Allowed%20In%20Islam%20%2806.20.12%29.mp3",
-    "thumb": "thumb/extracted/50f8070c5b9df3.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 313,
-    "title": "Tafseer 033 Surah Al-Ahzab (53-56) [Part 8] The Importance of Giving Salaams to the Prophet (SAW) (06.21.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (53-56) [Part 8] The Importance of Giving Salaams to the Prophet (SAW) (06.21.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2853-56%29%20%5BPart%208%5D%20The%20Importance%20of%20Giving%20Salaams%20to%20the%20Prophet%20%28SAW%29%20%2806.21.12%29.mp3",
-    "thumb": "thumb/extracted/cf5a4598d72eef.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 314,
-    "title": "Tafseer 033 Surah Al-Ahzab (57-58) [Part 9] Beware of Annoying Allah and His Messenger (06.25.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (57-58) [Part 9] Beware of Annoying Allah and His Messenger (06.25.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2857-58%29%20%5BPart%209%5D%20Beware%20of%20Annoying%20Allah%20and%20His%20Messenger%20%2806.25.12%29.mp3",
-    "thumb": "thumb/extracted/6eab7bfcc08e20.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 315,
-    "title": "Tafseer 033 Surah Al-Ahzab (59-68) [Part 10] The Importance of Hijab (06.26.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (59-68) [Part 10] The Importance of Hijab (06.26.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2859-68%29%20%5BPart%2010%5D%20The%20Importance%20of%20Hijab%20%2806.26.12%29.mp3",
-    "thumb": "thumb/extracted/4775aae1b21180.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 316,
-    "title": "Tafseer 033 Surah Al-Ahzab (69-73) [Part 11] Fear Allah and Speak Straight to the Point (06.27.12 to 06.28.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (69-73) [Part 11] Fear Allah and Speak Straight to the Point (06.27.12 to 06.28.12).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2869-73%29%20%5BPart%2011%5D%20Fear%20Allah%20and%20Speak%20Straight%20to%20the%20Point%20%2806.27.12%20to%2006.28.12%29.mp3",
-    "thumb": "thumb/extracted/d4ec0b4ca5db6b.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 317,
-    "title": "Tafseer 036 Surah Yasin [Part 1] Islam Has A Brilliant Future (06.19.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah yasin/Tafseer 036 Surah Yasin [Part 1] Islam Has A Brilliant Future (06.19.11).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20yasin%2FTafseer%20036%20Surah%20Yasin%20%5BPart%201%5D%20Islam%20Has%20A%20Brilliant%20Future%20%2806.19.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 318,
-    "title": "Tafseer 036 Surah Yasin [Part 2] Omens, a Concoction of Human Folly (06.21.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah yasin/Tafseer 036 Surah Yasin [Part 2] Omens, a Concoction of Human Folly (06.21.11).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20yasin%2FTafseer%20036%20Surah%20Yasin%20%5BPart%202%5D%20Omens%2C%20a%20Concoction%20of%20Human%20Folly%20%2806.21.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 319,
-    "title": "Tafseer 036 Surah Yasin [Part 3] The Pagans Hate The Believers The Most (06.22.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah yasin/Tafseer 036 Surah Yasin [Part 3] The Pagans Hate The Believers The Most (06.22.11).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20yasin%2FTafseer%20036%20Surah%20Yasin%20%5BPart%203%5D%20The%20Pagans%20Hate%20The%20Believers%20The%20Most%20%2806.22.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 320,
-    "title": "Tafseer 036 Surah Yasin [Part 4] The Peak of Wisdom Is To Fear Allah (06.23.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/tafseer surah yasin/Tafseer 036 Surah Yasin [Part 4] The Peak of Wisdom Is To Fear Allah (06.23.11).mp3",
-    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20yasin%2FTafseer%20036%20Surah%20Yasin%20%5BPart%204%5D%20The%20Peak%20of%20Wisdom%20Is%20To%20Fear%20Allah%20%2806.23.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 321,
-    "title": "Tafseer 047 Surah Muhammad (09.27.11 to 09.28.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 047 Surah Muhammad (09.27.11 to 09.28.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20047%20Surah%20Muhammad%20%2809.27.11%20to%2009.28.11%29.mp3",
-    "thumb": "thumb/extracted/bc2bc01243b8a6.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 322,
-    "title": "Tafseer 057 Surah Hadid (02.22.12 to 02.25.12)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 057 Surah Hadid (02.22.12 to 02.25.12).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20057%20Surah%20Hadid%20%2802.22.12%20to%2002.25.12%29.mp3",
-    "thumb": "thumb/extracted/d66c64ad8181aa.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 323,
-    "title": "Tafseer 067 Surah Al-Mulk (10.26.11 to 10.31.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 067 Surah Al-Mulk (10.26.11 to 10.31.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20067%20Surah%20Al-Mulk%20%2810.26.11%20to%2010.31.11%29.mp3",
-    "thumb": "thumb/extracted/60a35008070536.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 324,
-    "title": "Tafseer 090 Surah Al-Balad (10.09.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 090 Surah Al-Balad (10.09.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20090%20Surah%20Al-Balad%20%2810.09.11%29.mp3",
-    "thumb": "thumb/extracted/4cc48a3d891feb.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 325,
-    "title": "Tafseer 095 Surah At-Tin (12.11.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 095 Surah At-Tin (12.11.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20095%20Surah%20At-Tin%20%2812.11.11%29.mp3",
-    "thumb": "thumb/extracted/36b1241210ac10.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 326,
-    "title": "Tafseer 098 Surah Al-Baiyinah (10.10.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 098 Surah Al-Baiyinah (10.10.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20098%20Surah%20Al-Baiyinah%20%2810.10.11%29.mp3",
-    "thumb": "thumb/extracted/3726f72e14c466.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 327,
-    "title": "Tafseer 101 Surah Al-Qari'ah (10.08.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 101 Surah Al-Qari'ah (10.08.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20101%20Surah%20Al-Qari%27ah%20%2810.08.11%29.mp3",
-    "thumb": "thumb/extracted/739c165e697d8a.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 328,
-    "title": "Tafseer 102 Surah At-Takathur (10.12.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 102 Surah At-Takathur (10.12.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20102%20Surah%20At-Takathur%20%2810.12.11%29.mp3",
-    "thumb": "thumb/extracted/1ff69cdd478a5e.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 329,
-    "title": "Tafseer 103 Surah Al-Asr (10.17.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 103 Surah Al-Asr (10.17.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20103%20Surah%20Al-Asr%20%2810.17.11%29.mp3",
-    "thumb": "thumb/extracted/679706d5cd76a7.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 330,
-    "title": "Tafseer 104 Surah Al-Humazah (10.07.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 104 Surah Al-Humazah (10.07.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20104%20Surah%20Al-Humazah%20%2810.07.11%29.mp3",
-    "thumb": "thumb/extracted/1438fba286fa5a.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 331,
-    "title": "Tafseer 105 Surah Al-Feel (10.13.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 105 Surah Al-Feel (10.13.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20105%20Surah%20Al-Feel%20%2810.13.11%29.mp3",
-    "thumb": "thumb/extracted/b610fb20d28306.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 332,
-    "title": "Tafseer 106 Surah Quraish (10.15.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 106 Surah Quraish (10.15.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20106%20Surah%20Quraish%20%2810.15.11%29.mp3",
-    "thumb": "thumb/extracted/28bedcd2e71cad.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 333,
-    "title": "Tafseer 107 Surah Al-Ma'um (10.18.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 107 Surah Al-Ma'um (10.18.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20107%20Surah%20Al-Ma%27um%20%2810.18.11%29.mp3",
-    "thumb": "thumb/extracted/e3fda8f4b46f82.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 334,
-    "title": "Tafseer 108 Surah Al-Kawthar (10.16.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 108 Surah Al-Kawthar (10.16.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20108%20Surah%20Al-Kawthar%20%2810.16.11%29.mp3",
-    "thumb": "thumb/extracted/651fa9c538124f.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 335,
-    "title": "Tafseer 109 Surah Al-Kafiroon (10.22.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 109 Surah Al-Kafiroon (10.22.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20109%20Surah%20Al-Kafiroon%20%2810.22.11%29.mp3",
-    "thumb": "thumb/extracted/22cdc6a0d8053b.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 336,
-    "title": "Tafseer 110 Surah An-Nasr (10.19.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 110 Surah An-Nasr (10.19.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20110%20Surah%20An-Nasr%20%2810.19.11%29.mp3",
-    "thumb": "thumb/extracted/6ce57ee0d36f26.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 337,
-    "title": "Tafseer 111 Surah Al-Masad (10.11.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 111 Surah Al-Masad (10.11.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20111%20Surah%20Al-Masad%20%2810.11.11%29.mp3",
-    "thumb": "thumb/extracted/7cd9fdafd55192.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 338,
-    "title": "Tafseer 113 Surah Al-Falaq (10.24.11)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafseer 113 Surah Al-Falaq (10.24.11).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafseer%20113%20Surah%20Al-Falaq%20%2810.24.11%29.mp3",
-    "thumb": "thumb/extracted/c932246fec57cf.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 339,
     "title": "Tafsir At-Tawbah (Whole 25h lecture)",
     "sub": "Tafseer",
     "archive": "Tafseer/Tafseer surah Taubah/TAFSEER OF SURAH AT TAWBAH - Abdallah Al Faisal.mp3",
@@ -2901,39 +11,611 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 340,
-    "title": "Tafsir Baqarah Pt2",
+    "id": 1,
+    "title": "Tafseer 009 Surah Taubah (001-014) [Part 1] The Verse of the Sword (03.05.12)",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir baqarah/Tafsir Baqarah Pt2.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Baqarah%20Pt2.mp3"
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (001-014) [Part 1] The Verse of the Sword (03.05.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28001-014%29%20%5BPart%201%5D%20The%20Verse%20of%20the%20Sword%20%2803.05.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "type": "audio",
-    "id": 341,
-    "title": "Tafsir Baqarah Pt4",
+    "id": 2,
+    "title": "Tafseer 009 Surah Taubah (014-021) [Part 2] Allah Shall Punish the Kuffaar With Your Hands (03.06.12)",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir baqarah/Tafsir Baqarah Pt4.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Baqarah%20Pt4.mp3"
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (014-021) [Part 2] Allah Shall Punish the Kuffaar With Your Hands (03.06.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28014-021%29%20%5BPart%202%5D%20Allah%20Shall%20Punish%20the%20Kuffaar%20With%20Your%20Hands%20%2803.06.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "type": "audio",
-    "id": 342,
-    "title": "Tafsir Baqarah pt6 will u give up better for worse",
+    "id": 3,
+    "title": "Tafseer 009 Surah Taubah (022-027) [Part 3] The Battle of Hunain (03.07.12)",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir baqarah/Tafsir Baqarah pt6 will u give up better for worse.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Baqarah%20pt6%20will%20u%20give%20up%20better%20for%20worse.mp3"
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (022-027) [Part 3] The Battle of Hunain (03.07.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28022-027%29%20%5BPart%203%5D%20The%20Battle%20of%20Hunain%20%2803.07.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "type": "audio",
-    "id": 343,
-    "title": "Tafsir Baqarah Pt7 Then your Hearts Became Harder than Rocks",
+    "id": 4,
+    "title": "Tafseer 009 Surah Taubah (028-030) [Part 4] Accept Islam, Pay the Jizya Or Prepare to Fight (03.08.12)",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir baqarah/Tafsir Baqarah Pt7 Then your Hearts Became Harder than Rocks.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Baqarah%20Pt7%20Then%20your%20Hearts%20Became%20Harder%20than%20Rocks.mp3"
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (028-030) [Part 4] Accept Islam, Pay the Jizya Or Prepare to Fight (03.08.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28028-030%29%20%5BPart%204%5D%20Accept%20Islam%2C%20Pay%20the%20Jizya%20Or%20Prepare%20to%20Fight%20%2803.08.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
   },
   {
     "type": "audio",
-    "id": 344,
+    "id": 5,
+    "title": "Tafseer 009 Surah Taubah (031-034) [Part 5] None Has the Right to be Worshiped Except Allah (03.10.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (031-034) [Part 5] None Has the Right to be Worshiped Except Allah (03.10.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28031-034%29%20%5BPart%205%5D%20None%20Has%20the%20Right%20to%20be%20Worshiped%20Except%20Allah%20%2803.10.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
+  },
+  {
+    "type": "audio",
+    "id": 6,
+    "title": "Tafseer 009 Surah Taubah (034-039) [Part 6] Iblis Has Beautified For Them Their Evil Deeds (03.12.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (034-039) [Part 6] Iblis Has Beautified For Them Their Evil Deeds (03.12.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28034-039%29%20%5BPart%206%5D%20Iblis%20Has%20Beautified%20For%20Them%20Their%20Evil%20Deeds%20%2803.12.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
+  },
+  {
+    "type": "audio",
+    "id": 7,
+    "title": "Tafseer 009 Surah Taubah (039-054) [Part 7] Beware of the Murjif (03.13.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (039-054) [Part 7] Beware of the Murjif (03.13.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28039-054%29%20%5BPart%207%5D%20Beware%20of%20the%20Murjif%20%2803.13.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
+  },
+  {
+    "type": "audio",
+    "id": 8,
+    "title": "Tafseer 009 Surah Taubah (055-066) [Part 8] Mocking An Aspect of the Deen Makes You Become a Kaafir (03.14.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (055-066) [Part 8] Mocking An Aspect of the Deen Makes You Become a Kaafir (03.14.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28055-066%29%20%5BPart%208%5D%20Mocking%20An%20Aspect%20of%20the%20Deen%20Makes%20You%20Become%20a%20Kaafir%20%2803.14.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
+  },
+  {
+    "type": "audio",
+    "id": 9,
+    "title": "Tafseer 009 Surah Taubah (064-067) [Part 9] The Hypocrites Live in Fear of Being Exposed (03.15.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (064-067) [Part 9] The Hypocrites Live in Fear of Being Exposed (03.15.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28064-067%29%20%5BPart%209%5D%20The%20Hypocrites%20Live%20in%20Fear%20of%20Being%20Exposed%20%2803.15.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
+  },
+  {
+    "type": "audio",
+    "id": 10,
+    "title": "Tafseer 009 Surah Taubah (067-073) [Part 10] Strive Hard Against the Disbelievers and the Hypocrites (03.17.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (067-073) [Part 10] Strive Hard Against the Disbelievers and the Hypocrites (03.17.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28067-073%29%20%5BPart%2010%5D%20Strive%20Hard%20Against%20the%20Disbelievers%20and%20the%20Hypocrites%20%2803.17.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
+  },
+  {
+    "type": "audio",
+    "id": 11,
+    "title": "Tafseer 009 Surah Taubah (073-080) [Part 11] The Evil Triangle (03.19.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (073-080) [Part 11] The Evil Triangle (03.19.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28073-080%29%20%5BPart%2011%5D%20The%20Evil%20Triangle%20%2803.19.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
+  },
+  {
+    "type": "audio",
+    "id": 12,
+    "title": "Tafseer 009 Surah Taubah (080-084) [Part 12] 15 People You Are Not Allowed to Pray Janazah Over (03.20.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (080-084) [Part 12] 15 People You Are Not Allowed to Pray Janazah Over (03.20.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28080-084%29%20%5BPart%2012%5D%2015%20People%20You%20Are%20Not%20Allowed%20to%20Pray%20Janazah%20Over%20%2803.20.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
+  },
+  {
+    "type": "audio",
+    "id": 13,
+    "title": "Tafseer 009 Surah Taubah (084-097) [Part 13] The Hypocrites Will Always Hide Behind Wallahi (03.21.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (084-097) [Part 13] The Hypocrites Will Always Hide Behind Wallahi (03.21.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28084-097%29%20%5BPart%2013%5D%20The%20Hypocrites%20Will%20Always%20Hide%20Behind%20Wallahi%20%2803.21.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
+  },
+  {
+    "type": "audio",
+    "id": 14,
+    "title": "Tafseer 009 Surah Taubah (097-105) [Part 14] The Munafiqeen See Zakah As A Fine Unleashed Against Them (03.22.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (097-105) [Part 14] The Munafiqeen See Zakah As A Fine Unleashed Against Them (03.22.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28097-105%29%20%5BPart%2014%5D%20The%20Munafiqeen%20See%20Zakah%20As%20A%20Fine%20Unleashed%20Against%20Them%20%2803.22.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
+  },
+  {
+    "type": "audio",
+    "id": 15,
+    "title": "Tafseer 009 Surah Taubah (105-111) [Part 15] The Dangers of Masjid Dirar (03.24.12)[v2]",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (105-111) [Part 15] The Dangers of Masjid Dirar (03.24.12)[v2].mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28105-111%29%20%5BPart%2015%5D%20The%20Dangers%20of%20Masjid%20Dirar%20%2803.24.12%29%5Bv2%5D.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
+  },
+  {
+    "type": "audio",
+    "id": 16,
+    "title": "Tafseer 009 Surah Taubah (111-118) [Part 16] Allah Desires the Soul of the Believers in Exchange for Jannah (03.26.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (111-118) [Part 16] Allah Desires the Soul of the Believers in Exchange for Jannah (03.26.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28111-118%29%20%5BPart%2016%5D%20Allah%20Desires%20the%20Soul%20of%20the%20Believers%20in%20Exchange%20for%20Jannah%20%2803.26.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
+  },
+  {
+    "type": "audio",
+    "id": 17,
+    "title": "Tafseer 009 Surah Taubah (119-129) [Part 17] Be in the Company of the Righteous (03.27.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah Taubah/Tafseer 009 Surah Taubah (119-129) [Part 17] Be in the Company of the Righteous (03.27.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20Taubah%2FTafseer%20009%20Surah%20Taubah%20%28119-129%29%20%5BPart%2017%5D%20Be%20in%20the%20Company%20of%20the%20Righteous%20%2803.27.12%29.mp3",
+    "thumb": "thumb/assets/Tafseer/Tafseer surah Taubah/cover.png"
+  },
+  {
+    "type": "audio",
+    "id": 18,
+    "title": "Tafseer 018 Surah Al-Kahf [Part 1] The Quran Is Free From Crookedness (11.10.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer al kahf/Tafseer 018 Surah Al-Kahf [Part 1] The Quran Is Free From Crookedness (11.10.11).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20al%20kahf%2FTafseer%20018%20Surah%20Al-Kahf%20%5BPart%201%5D%20The%20Quran%20Is%20Free%20From%20Crookedness%20%2811.10.11%29.mp3",
+    "thumb": "thumb/extracted/256748f09575bc.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 19,
+    "title": "Tafseer 018 Surah Al-Kahf [Part 2] The People of the Cave (11.12.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer al kahf/Tafseer 018 Surah Al-Kahf [Part 2] The People of the Cave (11.12.11).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20al%20kahf%2FTafseer%20018%20Surah%20Al-Kahf%20%5BPart%202%5D%20The%20People%20of%20the%20Cave%20%2811.12.11%29.mp3",
+    "thumb": "thumb/extracted/5358e5634bc34e.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 20,
+    "title": "Tafseer 020 Surah TaHa (001-008) [Part 1] Unto Allah Belongs the Most Beautiful Names (07.01.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (001-008) [Part 1] Unto Allah Belongs the Most Beautiful Names (07.01.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28001-008%29%20%5BPart%201%5D%20Unto%20Allah%20Belongs%20the%20Most%20Beautiful%20Names%20%2807.01.12%29.mp3",
+    "thumb": "thumb/extracted/8ec53eb8d167ad.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 21,
+    "title": "Tafseer 020 Surah TaHa (005-023) [Part 2] The Hour Is Coming (07.02.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (005-023) [Part 2] The Hour Is Coming (07.02.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28005-023%29%20%5BPart%202%5D%20The%20Hour%20Is%20Coming%20%2807.02.12%29.mp3",
+    "thumb": "thumb/extracted/4fd75a19b79012.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 22,
+    "title": "Tafseer 020 Surah TaHa (023-047) [Part 3] Be Gentle With Your Dawah (07.03.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (023-047) [Part 3] Be Gentle With Your Dawah (07.03.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28023-047%29%20%5BPart%203%5D%20Be%20Gentle%20With%20Your%20Dawah%20%2807.03.12%29.mp3",
+    "thumb": "thumb/extracted/c47f507aa49ed7.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 23,
+    "title": "Tafseer 020 Surah TaHa (043-073) [Part 4] The Pharaoh's Magicians Embraced Islam (07.04.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (043-073) [Part 4] The Pharaoh's Magicians Embraced Islam (07.04.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28043-073%29%20%5BPart%204%5D%20The%20Pharaoh%27s%20Magicians%20Embraced%20Islam%20%2807.04.12%29.mp3",
+    "thumb": "thumb/extracted/206202462d7bbf.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 24,
+    "title": "Tafseer 020 Surah TaHa (071-073) [Part 5] The Rules of Ikraah (07.09.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (071-073) [Part 5] The Rules of Ikraah (07.09.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28071-073%29%20%5BPart%205%5D%20The%20Rules%20of%20Ikraah%20%2807.09.12%29.mp3",
+    "thumb": "thumb/extracted/02712cadc4c131.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 25,
+    "title": "Tafseer 020 Surah TaHa (072-079) [Part 6] Pharaoh, the Opportunist (07.10.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (072-079) [Part 6] Pharaoh, the Opportunist (07.10.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28072-079%29%20%5BPart%206%5D%20Pharaoh%2C%20the%20Opportunist%20%2807.10.12%29.mp3",
+    "thumb": "thumb/extracted/ffe447b21900a1.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 26,
+    "title": "Tafseer 020 Surah TaHa (080-097) [Part 7] The Jews Worshipped the Golden Calf (07.11.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer TaHa/Tafseer 020 Surah TaHa (080-097) [Part 7] The Jews Worshipped the Golden Calf (07.11.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20TaHa%2FTafseer%20020%20Surah%20TaHa%20%28080-097%29%20%5BPart%207%5D%20The%20Jews%20Worshipped%20the%20Golden%20Calf%20%2807.11.12%29.mp3",
+    "thumb": "thumb/extracted/984b1d76d948c3.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 27,
+    "title": "Tafseer 025 Surah Al-Furqan (01-10) [Part 1] The Qur'an is the Ultimate Furqan (06.03.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (01-10) [Part 1] The Qur'an is the Ultimate Furqan (06.03.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2801-10%29%20%5BPart%201%5D%20The%20Qur%27an%20is%20the%20Ultimate%20Furqan%20%2806.03.12%29.mp3",
+    "thumb": "thumb/extracted/fb0b6d011a4ec9.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 28,
+    "title": "Tafseer 025 Surah Al-Furqan (10-21) [Part 2] The Roaring of the Hellfire (06.04.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (10-21) [Part 2] The Roaring of the Hellfire (06.04.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2810-21%29%20%5BPart%202%5D%20The%20Roaring%20of%20the%20Hellfire%20%2806.04.12%29.mp3",
+    "thumb": "thumb/extracted/c7a1baf5918dbc.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 29,
+    "title": "Tafseer 025 Surah Al-Furqan (21-31) [Part 3] Every Prophet Has An Enemy (06.05.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (21-31) [Part 3] Every Prophet Has An Enemy (06.05.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2821-31%29%20%5BPart%203%5D%20Every%20Prophet%20Has%20An%20Enemy%20%2806.05.12%29.mp3",
+    "thumb": "thumb/extracted/ff57ca0b05212b.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 30,
+    "title": "Tafseer 025 Surah Al-Furqan (30-32) [Part 4] Why Did Allah Reveal the Quran in Stages (06.06.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (30-32) [Part 4] Why Did Allah Reveal the Quran in Stages (06.06.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2830-32%29%20%5BPart%204%5D%20Why%20Did%20Allah%20Reveal%20the%20Quran%20in%20Stages%20%2806.06.12%29.mp3",
+    "thumb": "thumb/extracted/3c324270201cf0.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 31,
+    "title": "Tafseer 025 Surah Al-Furqan (32-51) [Part 5] The Barakah of Islam Are For Those Whom Allah Loves (06.07.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (32-51) [Part 5] The Barakah of Islam Are For Those Whom Allah Loves (06.07.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2832-51%29%20%5BPart%205%5D%20The%20Barakah%20of%20Islam%20Are%20For%20Those%20Whom%20Allah%20Loves%20%2806.07.12%29.mp3",
+    "thumb": "thumb/extracted/a682358e2382a6.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 32,
+    "title": "Tafseer 025 Surah Al-Furqan (50-57) [Part 6] The Kuffaar Takes Sides With Shaitan Against Allah (06.09.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (50-57) [Part 6] The Kuffaar Takes Sides With Shaitan Against Allah (06.09.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2850-57%29%20%5BPart%206%5D%20The%20Kuffaar%20Takes%20Sides%20With%20Shaitan%20Against%20Allah%20%2806.09.12%29.mp3",
+    "thumb": "thumb/extracted/cd4d1d134083a5.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 33,
+    "title": "Tafseer 025 Surah Al-Furqan (57-64) [Part 7] Only Allah is Al-Hayy (The Ever-Living) (06.10.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (57-64) [Part 7] Only Allah is Al-Hayy (The Ever-Living) (06.10.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2857-64%29%20%5BPart%207%5D%20Only%20Allah%20is%20Al-Hayy%20%28The%20Ever-Living%29%20%2806.10.12%29.mp3",
+    "thumb": "thumb/extracted/62236a9f114dd2.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 34,
+    "title": "Tafseer 025 Surah Al-Furqan (63-69) [Part 8] Zina Causes Murder (06.11.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (63-69) [Part 8] Zina Causes Murder (06.11.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2863-69%29%20%5BPart%208%5D%20Zina%20Causes%20Murder%20%2806.11.12%29.mp3",
+    "thumb": "thumb/extracted/a360ef604c7979.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 35,
+    "title": "Tafseer 025 Surah Al-Furqan (68-77) [Part 9] Make Duaa To Allah For A Pious Family (06.12.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al Furqan/Tafseer 025 Surah Al-Furqan (68-77) [Part 9] Make Duaa To Allah For A Pious Family (06.12.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20Furqan%2FTafseer%20025%20Surah%20Al-Furqan%20%2868-77%29%20%5BPart%209%5D%20Make%20Duaa%20To%20Allah%20For%20A%20Pious%20Family%20%2806.12.12%29.mp3",
+    "thumb": "thumb/extracted/847ae3f2af4c74.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 36,
+    "title": "Tafseer 027 Surah An-Naml [Part 1] The 3 Dimensions Of Eeman (11.01.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer an-naml/Tafseer 027 Surah An-Naml [Part 1] The 3 Dimensions Of Eeman (11.01.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20an-naml%2FTafseer%20027%20Surah%20An-Naml%20%5BPart%201%5D%20The%203%20Dimensions%20Of%20Eeman%20%2811.01.11%29.mp3",
+    "thumb": "thumb/extracted/3b01fb82bb895f.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 37,
+    "title": "Tafseer 027 Surah An-Naml [Part 2] Sulaiman (AS) and the Ant (11.02.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer an-naml/Tafseer 027 Surah An-Naml [Part 2] Sulaiman (AS) and the Ant (11.02.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20an-naml%2FTafseer%20027%20Surah%20An-Naml%20%5BPart%202%5D%20Sulaiman%20%28AS%29%20and%20the%20Ant%20%2811.02.11%29.mp3",
+    "thumb": "thumb/extracted/e12cd5a6d078d9.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 38,
+    "title": "Tafseer 027 Surah An-Naml [Part 3] The Wisdom of the Hudhud (11.03.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer an-naml/Tafseer 027 Surah An-Naml [Part 3] The Wisdom of the Hudhud (11.03.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20an-naml%2FTafseer%20027%20Surah%20An-Naml%20%5BPart%203%5D%20The%20Wisdom%20of%20the%20Hudhud%20%2811.03.11%29.mp3",
+    "thumb": "thumb/extracted/eb85bcf2e0e14d.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 39,
+    "title": "Tafseer 027 Surah An-Naml [Part 4] The Islamic Ruling on Gifts [i] (11.08.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer an-naml/Tafseer 027 Surah An-Naml [Part 4] The Islamic Ruling on Gifts [i] (11.08.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20an-naml%2FTafseer%20027%20Surah%20An-Naml%20%5BPart%204%5D%20The%20Islamic%20Ruling%20on%20Gifts%20%5Bi%5D%20%2811.08.11%29.mp3",
+    "thumb": "thumb/extracted/d591c5720efb7b.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 40,
+    "title": "Tafseer 027 Surah An-Naml [Part 5] The Islamic Ruling on Gifts [ii] (11.09.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer an-naml/Tafseer 027 Surah An-Naml [Part 5] The Islamic Ruling on Gifts [ii] (11.09.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20an-naml%2FTafseer%20027%20Surah%20An-Naml%20%5BPart%205%5D%20The%20Islamic%20Ruling%20on%20Gifts%20%5Bii%5D%20%2811.09.11%29.mp3",
+    "thumb": "thumb/extracted/36526e11248a40.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 41,
+    "title": "Tafseer 029 Surah Al-Ankabut (01-10) [Part 1] We Shall All Be Tested (05.22.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (01-10) [Part 1] We Shall All Be Tested (05.22.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2801-10%29%20%5BPart%201%5D%20We%20Shall%20All%20Be%20Tested%20%2805.22.12%29.mp3",
+    "thumb": "thumb/extracted/94733af9bd733f.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 42,
+    "title": "Tafseer 029 Surah Al-Ankabut (11-18) [Part 2] You Shall Carry the Sins of Others on Day Judgment (05.23.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (11-18) [Part 2] You Shall Carry the Sins of Others on Day Judgment (05.23.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2811-18%29%20%5BPart%202%5D%20You%20Shall%20Carry%20the%20Sins%20of%20Others%20on%20Day%20Judgment%20%2805.23.12%29.mp3",
+    "thumb": "thumb/extracted/95b4e2598bd8d4.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 43,
+    "title": "Tafseer 029 Surah Al-Ankabut (19-35) [Part 3] The Kaafir Has No Hope (05.24.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (19-35) [Part 3] The Kaafir Has No Hope (05.24.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2819-35%29%20%5BPart%203%5D%20The%20Kaafir%20Has%20No%20Hope%20%2805.24.12%29.mp3",
+    "thumb": "thumb/extracted/2ff31b4f87764e.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 44,
+    "title": "Tafseer 029 Surah Al-Ankabut (34-38) [Part 4] The People of Ad and Thamud (05.27.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (34-38) [Part 4] The People of Ad and Thamud (05.27.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2834-38%29%20%5BPart%204%5D%20The%20People%20of%20Ad%20and%20Thamud%20%2805.27.12%29.mp3",
+    "thumb": "thumb/extracted/ea44577712be6b.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 45,
+    "title": "Tafseer 029 Surah Al-Ankabut (38-44) [Part 5] The Perished Nations Are Lessons (05.28.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (38-44) [Part 5] The Perished Nations Are Lessons (05.28.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2838-44%29%20%5BPart%205%5D%20The%20Perished%20Nations%20Are%20Lessons%20%2805.28.12%29.mp3",
+    "thumb": "thumb/extracted/4bb3649b1d034f.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 46,
+    "title": "Tafseer 029 Surah Al-Ankabut (44-45) [Part 6] The Virtues of Dhikr (05.29.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (44-45) [Part 6] The Virtues of Dhikr (05.29.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2844-45%29%20%5BPart%206%5D%20The%20Virtues%20of%20Dhikr%20%2805.29.12%29.mp3",
+    "thumb": "thumb/extracted/f20b939edcc3a6.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 47,
+    "title": "Tafseer 029 Surah Al-Ankabut (45-50) [Part 7] The Ummah of Hafidh and Isnad (05.30.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (45-50) [Part 7] The Ummah of Hafidh and Isnad (05.30.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2845-50%29%20%5BPart%207%5D%20The%20Ummah%20of%20Hafidh%20and%20Isnad%20%2805.30.12%29.mp3",
+    "thumb": "thumb/extracted/5feb89eedef831.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 48,
+    "title": "Tafseer 029 Surah Al-Ankabut (46-58) [Part 8] Reason with the People of the Book in a Better Way (05.31.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (46-58) [Part 8] Reason with the People of the Book in a Better Way (05.31.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2846-58%29%20%5BPart%208%5D%20Reason%20with%20the%20People%20of%20the%20Book%20in%20a%20Better%20Way%20%2805.31.12%29.mp3",
+    "thumb": "thumb/extracted/15f8db8fce9016.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 49,
+    "title": "Tafseer 029 Surah Al-Ankabut (56-69) [Part 9] Breaking A Promise Made To Allah (06.02.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer Al - ankabut/Tafseer 029 Surah Al-Ankabut (56-69) [Part 9] Breaking A Promise Made To Allah (06.02.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20Al%20-%20ankabut%2FTafseer%20029%20Surah%20Al-Ankabut%20%2856-69%29%20%5BPart%209%5D%20Breaking%20A%20Promise%20Made%20To%20Allah%20%2806.02.12%29.mp3",
+    "thumb": "thumb/extracted/ba291f29ea8c9f.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 50,
+    "title": "Tafseer 031 Surah Luqman [Part 1] The Quran Is A Wise Book (07.14.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah luqman/Tafseer 031 Surah Luqman [Part 1] The Quran Is A Wise Book (07.14.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20luqman%2FTafseer%20031%20Surah%20Luqman%20%5BPart%201%5D%20The%20Quran%20Is%20A%20Wise%20Book%20%2807.14.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 51,
+    "title": "Tafseer 031 Surah Luqman [Part 2] Revisited (07.16.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah luqman/Tafseer 031 Surah Luqman [Part 2] Revisited (07.16.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20luqman%2FTafseer%20031%20Surah%20Luqman%20%5BPart%202%5D%20Revisited%20%2807.16.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 52,
+    "title": "Tafseer 031 Surah Luqman [Part 3] Muslim, Mu'min and the Muhsin (07.17.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah luqman/Tafseer 031 Surah Luqman [Part 3] Muslim, Mu'min and the Muhsin (07.17.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20luqman%2FTafseer%20031%20Surah%20Luqman%20%5BPart%203%5D%20Muslim%2C%20Mu%27min%20and%20the%20Muhsin%20%2807.17.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 53,
+    "title": "Tafseer 031 Surah Luqman [Part 4] (07.25.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer surah luqman/Tafseer 031 Surah Luqman [Part 4] (07.25.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20surah%20luqman%2FTafseer%20031%20Surah%20Luqman%20%5BPart%204%5D%20%2807.25.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 54,
+    "title": "Tafseer 033 Surah Al-Ahzab (01-05) [Part 1] Do Not Consult the Kuffaar in Regard to Your Deen (06.13.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (01-05) [Part 1] Do Not Consult the Kuffaar in Regard to Your Deen (06.13.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2801-05%29%20%5BPart%201%5D%20Do%20Not%20Consult%20the%20Kuffaar%20in%20Regard%20to%20Your%20Deen%20%2806.13.12%29.mp3",
+    "thumb": "thumb/extracted/4eb04daabca660.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 55,
+    "title": "Tafseer 033 Surah Al-Ahzab (06-22) [Part 2] Muhammad (SAW) is Closer to the Believers than Themselves (06.14.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (06-22) [Part 2] Muhammad (SAW) is Closer to the Believers than Themselves (06.14.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2806-22%29%20%5BPart%202%5D%20Muhammad%20%28SAW%29%20is%20Closer%20to%20the%20Believers%20than%20Themselves%20%2806.14.12%29.mp3",
+    "thumb": "thumb/extracted/947df72eaa7f81.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 56,
+    "title": "Tafseer 033 Surah Al-Ahzab (22-31) [Part 3] Fulfill Your Covenant With Allah (06.16.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (22-31) [Part 3] Fulfill Your Covenant With Allah (06.16.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2822-31%29%20%5BPart%203%5D%20Fulfill%20Your%20Covenant%20With%20Allah%20%2806.16.12%29.mp3",
+    "thumb": "thumb/extracted/a0b201390a9a7d.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 57,
+    "title": "Tafseer 033 Surah Al-Ahzab (32-35) [Part 4] The Wives of the Prophet Belong to his Household (06.17.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (32-35) [Part 4] The Wives of the Prophet Belong to his Household (06.17.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2832-35%29%20%5BPart%204%5D%20The%20Wives%20of%20the%20Prophet%20Belong%20to%20his%20Household%20%2806.17.12%29.mp3",
+    "thumb": "thumb/extracted/aba9d5f7b154c5.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 58,
+    "title": "Tafseer 033 Surah Al-Ahzab (36-37) [Part 5] The Story of Julaybib (06.18.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (36-37) [Part 5] The Story of Julaybib (06.18.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2836-37%29%20%5BPart%205%5D%20The%20Story%20of%20Julaybib%20%2806.18.12%29.mp3",
+    "thumb": "thumb/extracted/941084cb6f5791.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 59,
+    "title": "Tafseer 033 Surah Al-Ahzab (38-48) [Part 6] Do Not Obey the Kuffaar and the Munafiqeen (06.19.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (38-48) [Part 6] Do Not Obey the Kuffaar and the Munafiqeen (06.19.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2838-48%29%20%5BPart%206%5D%20Do%20Not%20Obey%20the%20Kuffaar%20and%20the%20Munafiqeen%20%2806.19.12%29.mp3",
+    "thumb": "thumb/extracted/1848c515e5c059.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 60,
+    "title": "Tafseer 033 Surah Al-Ahzab (49-52) [Part 7] Marriage to Your 1st Cousin Is Allowed In Islam (06.20.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (49-52) [Part 7] Marriage to Your 1st Cousin Is Allowed In Islam (06.20.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2849-52%29%20%5BPart%207%5D%20Marriage%20to%20Your%201st%20Cousin%20Is%20Allowed%20In%20Islam%20%2806.20.12%29.mp3",
+    "thumb": "thumb/extracted/50f8070c5b9df3.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 61,
+    "title": "Tafseer 033 Surah Al-Ahzab (53-56) [Part 8] The Importance of Giving Salaams to the Prophet (SAW) (06.21.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (53-56) [Part 8] The Importance of Giving Salaams to the Prophet (SAW) (06.21.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2853-56%29%20%5BPart%208%5D%20The%20Importance%20of%20Giving%20Salaams%20to%20the%20Prophet%20%28SAW%29%20%2806.21.12%29.mp3",
+    "thumb": "thumb/extracted/cf5a4598d72eef.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 62,
+    "title": "Tafseer 033 Surah Al-Ahzab (57-58) [Part 9] Beware of Annoying Allah and His Messenger (06.25.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (57-58) [Part 9] Beware of Annoying Allah and His Messenger (06.25.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2857-58%29%20%5BPart%209%5D%20Beware%20of%20Annoying%20Allah%20and%20His%20Messenger%20%2806.25.12%29.mp3",
+    "thumb": "thumb/extracted/6eab7bfcc08e20.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 63,
+    "title": "Tafseer 033 Surah Al-Ahzab (59-68) [Part 10] The Importance of Hijab (06.26.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (59-68) [Part 10] The Importance of Hijab (06.26.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2859-68%29%20%5BPart%2010%5D%20The%20Importance%20of%20Hijab%20%2806.26.12%29.mp3",
+    "thumb": "thumb/extracted/4775aae1b21180.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 64,
+    "title": "Tafseer 033 Surah Al-Ahzab (69-73) [Part 11] Fear Allah and Speak Straight to the Point (06.27.12 to 06.28.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah al ahzab/Tafseer 033 Surah Al-Ahzab (69-73) [Part 11] Fear Allah and Speak Straight to the Point (06.27.12 to 06.28.12).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20al%20ahzab%2FTafseer%20033%20Surah%20Al-Ahzab%20%2869-73%29%20%5BPart%2011%5D%20Fear%20Allah%20and%20Speak%20Straight%20to%20the%20Point%20%2806.27.12%20to%2006.28.12%29.mp3",
+    "thumb": "thumb/extracted/d4ec0b4ca5db6b.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 65,
+    "title": "Tafseer 036 Surah Yasin [Part 1] Islam Has A Brilliant Future (06.19.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah yasin/Tafseer 036 Surah Yasin [Part 1] Islam Has A Brilliant Future (06.19.11).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20yasin%2FTafseer%20036%20Surah%20Yasin%20%5BPart%201%5D%20Islam%20Has%20A%20Brilliant%20Future%20%2806.19.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 66,
+    "title": "Tafseer 036 Surah Yasin [Part 2] Omens, a Concoction of Human Folly (06.21.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah yasin/Tafseer 036 Surah Yasin [Part 2] Omens, a Concoction of Human Folly (06.21.11).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20yasin%2FTafseer%20036%20Surah%20Yasin%20%5BPart%202%5D%20Omens%2C%20a%20Concoction%20of%20Human%20Folly%20%2806.21.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 67,
+    "title": "Tafseer 036 Surah Yasin [Part 3] The Pagans Hate The Believers The Most (06.22.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah yasin/Tafseer 036 Surah Yasin [Part 3] The Pagans Hate The Believers The Most (06.22.11).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20yasin%2FTafseer%20036%20Surah%20Yasin%20%5BPart%203%5D%20The%20Pagans%20Hate%20The%20Believers%20The%20Most%20%2806.22.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 68,
+    "title": "Tafseer 036 Surah Yasin [Part 4] The Peak of Wisdom Is To Fear Allah (06.23.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/tafseer surah yasin/Tafseer 036 Surah Yasin [Part 4] The Peak of Wisdom Is To Fear Allah (06.23.11).mp3",
+    "href": "audio.html?archive=Tafseer%2Ftafseer%20surah%20yasin%2FTafseer%20036%20Surah%20Yasin%20%5BPart%204%5D%20The%20Peak%20of%20Wisdom%20Is%20To%20Fear%20Allah%20%2806.23.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 69,
     "title": "Tafsir Surah A'Araf - Part 1 -The Scale Of Justice",
     "sub": "Tafseer",
     "archive": "Tafseer/Tafsir Surah A'Araf - Part 1 -The Scale Of Justice.mp3",
@@ -2941,7 +623,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 345,
+    "id": 70,
     "title": "Tafsir Surah A'Araf - Part 2 - The Shaitan Is Waiting In Ambush",
     "sub": "Tafseer",
     "archive": "Tafseer/Tafsir Surah A'Araf - Part 2 - The Shaitan Is Waiting In Ambush.mp3",
@@ -2949,87 +631,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 346,
-    "title": "Tafsir Surah Al 'Araf - Part 10 - When Good Comes To You Is From Allah SWT",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 10 - When Good Comes To You Is From Allah SWT.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2010%20-%20When%20Good%20Comes%20To%20You%20Is%20From%20Allah%20SWT.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 347,
-    "title": "Tafsir Surah Al 'Araf - Part 11 - Musa (as) and The Pharoah",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 11 - Musa (as) and The Pharoah.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2011%20-%20Musa%20%28as%29%20and%20The%20Pharoah.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 348,
-    "title": "Tafsir Surah Al 'Araf - Part 12 - The Pharaoh Crucified His Magicians",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 12 - The Pharaoh Crucified His Magicians.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2012%20-%20The%20Pharaoh%20Crucified%20His%20Magicians.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 349,
-    "title": "Tafsir Surah Al 'Araf - Part 13 - We Will Never See Allah (swt) In The Dunya",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 13 - We Will Never See Allah (swt) In The Dunya.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2013%20-%20We%20Will%20Never%20See%20Allah%20%28swt%29%20In%20The%20Dunya.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 350,
-    "title": "Tafsir Surah Al 'Araf - Part 14 - The Jews Worshipped The Golden Calf",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 14 - The Jews Worshipped The Golden Calf.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2014%20-%20The%20Jews%20Worshipped%20The%20Golden%20Calf.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 351,
-    "title": "Tafsir Surah Al 'Araf - Part 15 - Musa (as) Threw Away The Tablets",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 15 - Musa (as) Threw Away The Tablets.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2015%20-%20Musa%20%28as%29%20Threw%20Away%20The%20Tablets.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 352,
-    "title": "Tafsir Surah Al 'Araf - Part 16 - The 12 Sons Of Jacob (as)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al 'Araf  - Part 16 - The 12 Sons Of Jacob (as).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20%20-%20Part%2016%20-%20The%2012%20Sons%20Of%20Jacob%20%28as%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 353,
-    "title": "Tafsir Surah Al 'Araf - Part 17 - The Importance Of Enjoining The Right And Forbidding The Wrong",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 17 - The Importance Of Enjoining The Right And Forbidding The Wrong.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2017%20-%20The%20Importance%20Of%20Enjoining%20The%20Right%20And%20Forbidding%20The%20Wrong.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 354,
-    "title": "Tafsir Surah Al 'Araf - Part 18 - The Divine Covenant",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 18 - The Divine Covenant.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2018%20-%20The%20Divine%20Covenant.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 355,
-    "title": "Tafsir Surah Al 'Araf - Part 19 - The Wicked Scholars Are Like Dogs",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 19 - The Wicked Scholars Are Like Dogs.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2019%20-%20The%20Wicked%20Scholars%20Are%20Like%20Dogs.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 356,
+    "id": 71,
     "title": "Tafsir Surah Al 'Araf - Part 3 - The 13 Types Of Shirk",
     "sub": "Tafseer",
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 3 - The 13 Types Of Shirk.mp3",
@@ -3037,7 +639,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 357,
+    "id": 72,
     "title": "Tafsir Surah Al 'Araf - Part 4 - The 13 Reasons Why Nations Fail And Fall",
     "sub": "Tafseer",
     "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 4 - The 13 Reasons Why Nations Fail And Fall.mp3",
@@ -3045,71 +647,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 358,
-    "title": "Tafsir Surah Al 'Araf - Part 9 - The Story Of Prophet Shuaib (as)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 9 - The Story Of Prophet Shuaib (as).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%209%20-%20The%20Story%20Of%20Prophet%20Shuaib%20%28as%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 359,
-    "title": "Tafsir Surah Al A'Araf - Part 7 - The Leaders of Kufr Plot Against The Haqq",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al A'Araf - Part 7 - The Leaders of Kufr Plot Against The Haqq.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20A%27Araf%20-%20Part%207%20-%20The%20Leaders%20of%20Kufr%20Plot%20Against%20The%20Haqq.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 360,
-    "title": "Tafsir Surah Al A'Araf - Part 8 - The People Of Saleh (as) And Lut (as)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al A'Araf - Part 8 - The People Of Saleh (as) And Lut (as).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20A%27Araf%20-%20Part%208%20-%20The%20People%20Of%20Saleh%20%28as%29%20And%20Lut%20%28as%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 361,
-    "title": "Tafsir Surah Al ‘Araf - Part 20 - Allah (swt) Has The Most Beautiful Names",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 20 - Allah (swt) Has The Most Beautiful Names.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%E2%80%98Araf%20-%20Part%2020%20-%20Allah%20%28swt%29%20Has%20The%20Most%20Beautiful%20Names.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 362,
-    "title": "Tafsir Surah Al ‘Araf - Part 21 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 21 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%E2%80%98Araf%20-%20Part%2021%20-%20Seek%20Refuge%20In%20Allah%20%28swt%29%20From%20The%20Shayateen%20Of%20Human%20And%20Jinn.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 363,
-    "title": "Tafsir Surah Al ‘Araf - Part 21 - The Knowledge Of Ghaib Is With Allah (swt) Alone",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 21 - The Knowledge Of Ghaib Is With Allah (swt) Alone.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%E2%80%98Araf%20-%20Part%2021%20-%20The%20Knowledge%20Of%20Ghaib%20Is%20With%20Allah%20%28swt%29%20Alone.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 364,
-    "title": "Tafsir Surah Al ‘Araf - Part 22 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 22 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%E2%80%98Araf%20-%20Part%2022%20-%20Seek%20Refuge%20In%20Allah%20%28swt%29%20From%20The%20Shayateen%20Of%20Human%20And%20Jinn.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 365,
-    "title": "Tafsir Surah Al ‘Araf - Part 23 - Listen To The Quran When It Is Recited",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 23 - Listen To The Quran When It Is Recited.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%E2%80%98Araf%20-%20Part%2023%20-%20Listen%20To%20The%20Quran%20When%20It%20Is%20Recited.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 366,
+    "id": 73,
     "title": "Tafsir Surah Al'Araf - Part 5 - Friends will be foes on Judgement day except the pious",
     "sub": "Tafseer",
     "archive": "Tafseer/Tafsir Surah Al'Araf - Part 5 - Friends will be foes on Judgement day except the pious.mp3",
@@ -3117,7 +655,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 367,
+    "id": 74,
     "title": "Tafsir Surah Al'Araf - Part 6 - The History Of Shirk",
     "sub": "Tafseer",
     "archive": "Tafseer/Tafsir Surah Al'Araf - Part 6 - The History Of Shirk.mp3",
@@ -3125,207 +663,151 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 368,
-    "title": "Tafsir surah Ar-rum - Be generous to your near relative 08-23-14 part 6",
+    "id": 75,
+    "title": "Tafsir Surah Al 'Araf - Part 9 - The Story Of Prophet Shuaib (as)",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir surah Ar-rum - Be generous to your near relative 08-23-14 part 6.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Ar-rum%20-%20Be%20generous%20to%20your%20near%20relative%2008-23-14%20part%206.mp3"
+    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 9 - The Story Of Prophet Shuaib (as).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%209%20-%20The%20Story%20Of%20Prophet%20Shuaib%20%28as%29.mp3"
   },
   {
     "type": "audio",
-    "id": 369,
-    "title": "Tafsir surah Ar-rum - Your spouse is a sign from Allah 20-8-14",
+    "id": 76,
+    "title": "Tafsir Surah Al 'Araf - Part 10 - When Good Comes To You Is From Allah SWT",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir surah Ar-rum - Your spouse is a sign from Allah 20-8-14.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Ar-rum%20-%20Your%20spouse%20is%20a%20sign%20from%20Allah%2020-8-14.mp3"
+    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 10 - When Good Comes To You Is From Allah SWT.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2010%20-%20When%20Good%20Comes%20To%20You%20Is%20From%20Allah%20SWT.mp3"
   },
   {
     "type": "audio",
-    "id": 370,
-    "title": "Tafsir surah Ar-rum -Allah is the originator of the heavens and the earth 19-8-14 part 3",
+    "id": 77,
+    "title": "Tafsir Surah Al 'Araf - Part 11 - Musa (as) and The Pharoah",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir surah Ar-rum -Allah is the originator of the heavens and the earth 19-8-14 part 3.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Ar-rum%20-Allah%20is%20the%20originator%20of%20the%20heavens%20and%20the%20earth%2019-8-14%20part%203.mp3"
+    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 11 - Musa (as) and The Pharoah.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2011%20-%20Musa%20%28as%29%20and%20The%20Pharoah.mp3"
   },
   {
     "type": "audio",
-    "id": 371,
-    "title": "Tafsir surah Ar-rum -The spiritually dead will never hear 25-8-14 part 7",
+    "id": 78,
+    "title": "Tafsir Surah Al 'Araf - Part 12 - The Pharaoh Crucified His Magicians",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir surah Ar-rum -The spiritually dead will never hear  25-8-14 part 7.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Ar-rum%20-The%20spiritually%20dead%20will%20never%20hear%20%2025-8-14%20part%207.mp3"
+    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 12 - The Pharaoh Crucified His Magicians.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2012%20-%20The%20Pharaoh%20Crucified%20His%20Magicians.mp3"
   },
   {
     "type": "audio",
-    "id": 372,
-    "title": "Tafsir surah Ar-rum part 1-2",
+    "id": 79,
+    "title": "Tafsir Surah Al 'Araf - Part 13 - We Will Never See Allah (swt) In The Dunya",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir surah Ar-rum part 1-2.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Ar-rum%20part%201-2.mp3"
+    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 13 - We Will Never See Allah (swt) In The Dunya.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2013%20-%20We%20Will%20Never%20See%20Allah%20%28swt%29%20In%20The%20Dunya.mp3"
   },
   {
     "type": "audio",
-    "id": 373,
-    "title": "Tafsir surah Ar-rum- Everyone was born on fitrah 22-8-14",
+    "id": 80,
+    "title": "Tafsir Surah Al 'Araf - Part 14 - The Jews Worshipped The Golden Calf",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir surah Ar-rum- Everyone was born on fitrah 22-8-14.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Ar-rum-%20Everyone%20was%20born%20on%20fitrah%2022-8-14.mp3"
+    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 14 - The Jews Worshipped The Golden Calf.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2014%20-%20The%20Jews%20Worshipped%20The%20Golden%20Calf.mp3"
   },
   {
     "type": "audio",
-    "id": 374,
-    "title": "Tafsir Surah Baqara - seek help in sabr n salah",
+    "id": 81,
+    "title": "Tafsir Surah Al 'Araf - Part 15 - Musa (as) Threw Away The Tablets",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqara - seek help in sabr n salah.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Surah%20Baqara%20-%20seek%20help%20in%20sabr%20n%20salah.mp3"
+    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 15 - Musa (as) Threw Away The Tablets.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2015%20-%20Musa%20%28as%29%20Threw%20Away%20The%20Tablets.mp3"
   },
   {
     "type": "audio",
-    "id": 375,
-    "title": "Tafsir Surah Baqarah Pt1",
+    "id": 82,
+    "title": "Tafsir Surah Al 'Araf - Part 16 - The 12 Sons Of Jacob (as)",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah Pt1.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Surah%20Baqarah%20Pt1.mp3"
+    "archive": "Tafseer/Tafsir Surah Al 'Araf  - Part 16 - The 12 Sons Of Jacob (as).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20%20-%20Part%2016%20-%20The%2012%20Sons%20Of%20Jacob%20%28as%29.mp3"
   },
   {
     "type": "audio",
-    "id": 376,
-    "title": "Tafsir Surah Baqarah Pt3",
+    "id": 83,
+    "title": "Tafsir Surah Al 'Araf - Part 17 - The Importance Of Enjoining The Right And Forbidding The Wrong",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah Pt3.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Surah%20Baqarah%20Pt3.mp3"
+    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 17 - The Importance Of Enjoining The Right And Forbidding The Wrong.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2017%20-%20The%20Importance%20Of%20Enjoining%20The%20Right%20And%20Forbidding%20The%20Wrong.mp3"
   },
   {
     "type": "audio",
-    "id": 377,
-    "title": "Tafsir Surah Baqarah pt8 Wish for Death if u are truthful",
+    "id": 84,
+    "title": "Tafsir Surah Al 'Araf - Part 18 - The Divine Covenant",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah pt8  Wish for Death if u are truthful.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Surah%20Baqarah%20pt8%20%20Wish%20for%20Death%20if%20u%20are%20truthful.mp3"
+    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 18 - The Divine Covenant.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2018%20-%20The%20Divine%20Covenant.mp3"
   },
   {
     "type": "audio",
-    "id": 378,
-    "title": "Tafsir Surah Baqarah Pt9 Magic",
+    "id": 85,
+    "title": "Tafsir Surah Al 'Araf - Part 19 - The Wicked Scholars Are Like Dogs",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah Pt9 Magic.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Surah%20Baqarah%20Pt9%20Magic.mp3"
+    "archive": "Tafseer/Tafsir Surah Al 'Araf - Part 19 - The Wicked Scholars Are Like Dogs.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%27Araf%20-%20Part%2019%20-%20The%20Wicked%20Scholars%20Are%20Like%20Dogs.mp3"
   },
   {
     "type": "audio",
-    "id": 379,
-    "title": "TAFSIR SURAH FALAQ",
+    "id": 86,
+    "title": "Tafsir Surah Al ‘Araf - Part 20 - Allah (swt) Has The Most Beautiful Names",
     "sub": "Tafseer",
-    "archive": "Tafseer/TAFSIR SURAH FALAQ.mp3",
-    "href": "audio.html?archive=Tafseer%2FTAFSIR%20SURAH%20FALAQ.mp3"
+    "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 20 - Allah (swt) Has The Most Beautiful Names.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%E2%80%98Araf%20-%20Part%2020%20-%20Allah%20%28swt%29%20Has%20The%20Most%20Beautiful%20Names.mp3"
   },
   {
     "type": "audio",
-    "id": 380,
-    "title": "Tafsir Surah Mudathhir - The 19 guardian angels 1-9-14 (part 2)",
+    "id": 87,
+    "title": "Tafsir Surah Al ‘Araf - Part 21 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Mudathhir - The 19 guardian angels 1-9-14 (part 2).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Mudathhir%20-%20The%2019%20guardian%20angels%201-9-14%20%28part%202%29.mp3"
+    "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 21 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%E2%80%98Araf%20-%20Part%2021%20-%20Seek%20Refuge%20In%20Allah%20%28swt%29%20From%20The%20Shayateen%20Of%20Human%20And%20Jinn.mp3"
   },
   {
     "type": "audio",
-    "id": 381,
-    "title": "Tafsir surah mudathir - You shall be dumped in saqqr 31-08-14 (part 1)",
+    "id": 88,
+    "title": "Tafsir Surah Al ‘Araf - Part 21 - The Knowledge Of Ghaib Is With Allah (swt) Alone",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir surah mudathir - You shall be dumped in saqqr 31-08-14 (part 1) .mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20mudathir%20-%20You%20shall%20be%20dumped%20in%20saqqr%2031-08-14%20%28part%201%29%20.mp3"
+    "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 21 - The Knowledge Of Ghaib Is With Allah (swt) Alone.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%E2%80%98Araf%20-%20Part%2021%20-%20The%20Knowledge%20Of%20Ghaib%20Is%20With%20Allah%20%28swt%29%20Alone.mp3"
   },
   {
     "type": "audio",
-    "id": 382,
-    "title": "Tafsir surah muddatthir - They run away from the haqq like donkeys run away from the lion (part 3)",
+    "id": 89,
+    "title": "Tafsir Surah Al ‘Araf - Part 22 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir surah muddatthir - They run away from the haqq like donkeys run away from the lion (part 3).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20muddatthir%20-%20They%20run%20away%20from%20the%20haqq%20like%20donkeys%20run%20away%20from%20the%20lion%20%28part%203%29.mp3"
+    "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 22 - Seek Refuge In Allah (swt) From The Shayateen Of Human And Jinn.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%E2%80%98Araf%20-%20Part%2022%20-%20Seek%20Refuge%20In%20Allah%20%28swt%29%20From%20The%20Shayateen%20Of%20Human%20And%20Jinn.mp3"
   },
   {
     "type": "audio",
-    "id": 383,
-    "title": "TAFSIR SURAH NAS 12-8-14",
+    "id": 90,
+    "title": "Tafsir Surah Al ‘Araf - Part 23 - Listen To The Quran When It Is Recited",
     "sub": "Tafseer",
-    "archive": "Tafseer/TAFSIR SURAH NAS 12-8-14.mp3",
-    "href": "audio.html?archive=Tafseer%2FTAFSIR%20SURAH%20NAS%2012-8-14.mp3"
+    "archive": "Tafseer/Tafsir Surah Al ‘Araf - Part 23 - Listen To The Quran When It Is Recited.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20%E2%80%98Araf%20-%20Part%2023%20-%20Listen%20To%20The%20Quran%20When%20It%20Is%20Recited.mp3"
   },
   {
     "type": "audio",
-    "id": 384,
-    "title": "Tafsir Surah Qasas - Allah (swt) spoke to Musa (as) Part 3",
+    "id": 91,
+    "title": "Tafsir Surah Al A'Araf - Part 7 - The Leaders of Kufr Plot Against The Haqq",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Qasas - Allah (swt) spoke to Musa (as) Part 3.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-%20Allah%20%28swt%29%20spoke%20to%20Musa%20%28as%29%20Part%203.mp3"
+    "archive": "Tafseer/Tafsir Surah Al A'Araf - Part 7 - The Leaders of Kufr Plot Against The Haqq.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20A%27Araf%20-%20Part%207%20-%20The%20Leaders%20of%20Kufr%20Plot%20Against%20The%20Haqq.mp3"
   },
   {
     "type": "audio",
-    "id": 385,
-    "title": "Tafsir surah Qasas - Divide and rule- PART 1",
+    "id": 92,
+    "title": "Tafsir Surah Al A'Araf - Part 8 - The People Of Saleh (as) And Lut (as)",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir surah Qasas - Divide and rule- PART 1.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Qasas%20-%20Divide%20and%20rule-%20PART%201.mp3"
+    "archive": "Tafseer/Tafsir Surah Al A'Araf - Part 8 - The People Of Saleh (as) And Lut (as).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Al%20A%27Araf%20-%20Part%208%20-%20The%20People%20Of%20Saleh%20%28as%29%20And%20Lut%20%28as%29.mp3"
   },
   {
     "type": "audio",
-    "id": 386,
-    "title": "Tafsir Surah Qasas - Makkah Is The Mother Of All Towns - Part 6",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Qasas - Makkah Is The Mother Of All Towns - Part 6.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-%20Makkah%20Is%20The%20Mother%20Of%20All%20Towns%20-%20Part%206.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 387,
-    "title": "Tafsir Surah Qasas - Paradise is for those who are humble - Part 9",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Qasas - Paradise is for those who are humble - Part  9.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-%20Paradise%20is%20for%20those%20who%20are%20humble%20-%20Part%20%209.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 388,
-    "title": "TAFSIR SURAH QASAS - THE CHRISTIANS CRY WHEN THEY HEAR THE QURAN - PART 5",
-    "sub": "Tafseer",
-    "archive": "Tafseer/TAFSIR SURAH QASAS - THE CHRISTIANS CRY WHEN THEY HEAR THE QURAN  - PART 5.mp3",
-    "href": "audio.html?archive=Tafseer%2FTAFSIR%20SURAH%20QASAS%20-%20THE%20CHRISTIANS%20CRY%20WHEN%20THEY%20HEAR%20THE%20QURAN%20%20-%20PART%205.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 389,
-    "title": "Tafsir Surah Qasas - The escape of Musa (as) from darul harb part 2",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Qasas - The escape of Musa (as) from darul harb part 2.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-%20The%20escape%20of%20Musa%20%28as%29%20from%20darul%20harb%20part%202.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 390,
-    "title": "Tafsir Surah Qasas - The Pharaoh asked for a tower to see Allah (swt)",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Qasas - The Pharaoh asked for a tower to see Allah (swt).mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-%20The%20Pharaoh%20asked%20for%20a%20tower%20to%20see%20Allah%20%28swt%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 391,
-    "title": "Tafsir Surah Qasas - There Is No Racism In Islam - Part 7",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Qasas - There Is No Racism In Islam - Part 7.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-%20There%20Is%20No%20Racism%20In%20Islam%20-%20Part%207.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 392,
-    "title": "Tafsir Surah Qasas -The Story of Musa (as) And Qaroon - Part 8",
-    "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir Surah Qasas -The Story of  Musa (as) And Qaroon - Part 8.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-The%20Story%20of%20%20Musa%20%28as%29%20And%20Qaroon%20-%20Part%208.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 393,
+    "id": 93,
     "title": "Tafsir Surah Saff - Part 1 - Lying On Allah (swt)",
     "sub": "Tafseer",
     "archive": "Tafseer/Tafsir Surah Saff - Part 1 - Lying On Allah (swt).mp3",
@@ -3333,7 +815,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 394,
+    "id": 94,
     "title": "Tafsir Surah Saff - Part 2 - Propaganda Warfare",
     "sub": "Tafseer",
     "archive": "Tafseer/Tafsir Surah Saff - Part 2 - Propaganda Warfare.mp3",
@@ -3341,39 +823,95 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 395,
-    "title": "TAFSIR SURAH SAJDA",
+    "id": 95,
+    "title": "Tafsir surah Ar-rum part 1-2",
     "sub": "Tafseer",
-    "archive": "Tafseer/TAFSIR SURAH SAJDA .mp3",
-    "href": "audio.html?archive=Tafseer%2FTAFSIR%20SURAH%20SAJDA%20.mp3"
+    "archive": "Tafseer/Tafsir surah Ar-rum part 1-2.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Ar-rum%20part%201-2.mp3"
   },
   {
     "type": "audio",
-    "id": 396,
-    "title": "TAFSIR SURAH SAQDA",
+    "id": 96,
+    "title": "Tafsir Surah Baqarah Pt1",
     "sub": "Tafseer",
-    "archive": "Tafseer/TAFSIR SURAH SAQDA .mp3",
-    "href": "audio.html?archive=Tafseer%2FTAFSIR%20SURAH%20SAQDA%20.mp3"
+    "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah Pt1.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Surah%20Baqarah%20Pt1.mp3"
   },
   {
     "type": "audio",
-    "id": 397,
-    "title": "Tafsir surah Waqia - mankind will be divided into three on DOJ 08-27-14",
+    "id": 97,
+    "title": "Tafsir surah mudathir - You shall be dumped in saqqr 31-08-14 (part 1)",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir surah Waqia - mankind will be divided into three on DOJ 08-27-14.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Waqia%20-%20mankind%20will%20be%20divided%20into%20three%20on%20DOJ%2008-27-14.mp3"
+    "archive": "Tafseer/Tafsir surah mudathir - You shall be dumped in saqqr 31-08-14 (part 1) .mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20mudathir%20-%20You%20shall%20be%20dumped%20in%20saqqr%2031-08-14%20%28part%201%29%20.mp3"
   },
   {
     "type": "audio",
-    "id": 398,
-    "title": "Tafsir surah waqia - The Tree of Zaquum 08-28-14",
+    "id": 98,
+    "title": "Tafsir surah Qasas - Divide and rule- PART 1",
     "sub": "Tafseer",
-    "archive": "Tafseer/Tafsir surah waqia - The Tree of Zaquum 08-28-14.mp3",
-    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20waqia%20-%20The%20Tree%20of%20Zaquum%2008-28-14.mp3"
+    "archive": "Tafseer/Tafsir surah Qasas - Divide and rule- PART 1.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Qasas%20-%20Divide%20and%20rule-%20PART%201.mp3"
   },
   {
     "type": "audio",
-    "id": 399,
+    "id": 99,
+    "title": "Tafsir Baqarah Pt2",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir baqarah/Tafsir Baqarah Pt2.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Baqarah%20Pt2.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 100,
+    "title": "Tafsir Surah Mudathhir - The 19 guardian angels 1-9-14 (part 2)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir Surah Mudathhir - The 19 guardian angels 1-9-14 (part 2).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Mudathhir%20-%20The%2019%20guardian%20angels%201-9-14%20%28part%202%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 101,
+    "title": "Tafsir Surah Qasas - The escape of Musa (as) from darul harb part 2",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir Surah Qasas - The escape of Musa (as) from darul harb part 2.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-%20The%20escape%20of%20Musa%20%28as%29%20from%20darul%20harb%20part%202.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 102,
+    "title": "Tafsir surah Ar-rum -Allah is the originator of the heavens and the earth 19-8-14 part 3",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir surah Ar-rum -Allah is the originator of the heavens and the earth 19-8-14 part 3.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Ar-rum%20-Allah%20is%20the%20originator%20of%20the%20heavens%20and%20the%20earth%2019-8-14%20part%203.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 103,
+    "title": "Tafsir Surah Baqarah Pt3",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah Pt3.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Surah%20Baqarah%20Pt3.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 104,
+    "title": "Tafsir surah muddatthir - They run away from the haqq like donkeys run away from the lion (part 3)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir surah muddatthir - They run away from the haqq like donkeys run away from the lion (part 3).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20muddatthir%20-%20They%20run%20away%20from%20the%20haqq%20like%20donkeys%20run%20away%20from%20the%20lion%20%28part%203%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 105,
+    "title": "Tafsir Surah Qasas - Allah (swt) spoke to Musa (as) Part 3",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir Surah Qasas - Allah (swt) spoke to Musa (as) Part 3.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-%20Allah%20%28swt%29%20spoke%20to%20Musa%20%28as%29%20Part%203.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 106,
     "title": "Tafsir Surah Waqia -The Quran is a noble book (Part 3)",
     "sub": "Tafseer",
     "archive": "Tafseer/Tafsir Surah Waqia -The Quran is a noble book (Part 3).mp3",
@@ -3381,510 +919,363 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 400,
-    "title": "TAINTED LOVE",
-    "sub": "Marriage & Family",
-    "archive": "TAINTED LOVE - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=TAINTED%20LOVE%20-%20Abdallah%20Al%20Faisal.mp3"
+    "id": 107,
+    "title": "Tafsir Baqarah Pt4",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir baqarah/Tafsir Baqarah Pt4.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Baqarah%20Pt4.mp3"
   },
   {
     "type": "audio",
-    "id": 401,
-    "title": "tainted love 2013.04.20 (evening)",
-    "sub": "Marriage & Family",
-    "archive": "tainted love 2013.04.20 (evening).mp3",
-    "href": "audio.html?archive=tainted%20love%202013.04.20%20%28evening%29.mp3"
+    "id": 108,
+    "title": "TAFSIR SURAH QASAS - THE CHRISTIANS CRY WHEN THEY HEAR THE QURAN - PART 5",
+    "sub": "Tafseer",
+    "archive": "Tafseer/TAFSIR SURAH QASAS - THE CHRISTIANS CRY WHEN THEY HEAR THE QURAN  - PART 5.mp3",
+    "href": "audio.html?archive=Tafseer%2FTAFSIR%20SURAH%20QASAS%20-%20THE%20CHRISTIANS%20CRY%20WHEN%20THEY%20HEAR%20THE%20QURAN%20%20-%20PART%205.mp3"
   },
   {
     "type": "audio",
-    "id": 402,
-    "title": "Tawassul",
-    "sub": "General Lectures",
-    "archive": "Tawassul.mp3",
-    "href": "audio.html?archive=Tawassul.mp3"
+    "id": 109,
+    "title": "Tafsir Baqarah pt6 will u give up better for worse",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir baqarah/Tafsir Baqarah pt6 will u give up better for worse.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Baqarah%20pt6%20will%20u%20give%20up%20better%20for%20worse.mp3"
   },
   {
     "type": "audio",
-    "id": 403,
-    "title": "Tawba",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Sheikh Abdullah Faisal - Tawba.mp3",
-    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Tawba.mp3"
+    "id": 110,
+    "title": "Tafsir surah Ar-rum - Be generous to your near relative 08-23-14 part 6",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir surah Ar-rum - Be generous to your near relative 08-23-14 part 6.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Ar-rum%20-%20Be%20generous%20to%20your%20near%20relative%2008-23-14%20part%206.mp3"
   },
   {
     "type": "audio",
-    "id": 404,
-    "title": "TAWHEED AL HAKEEMIYAH ONLY WAY TO IMPLEMENT SHARIAH",
-    "sub": "Tawheed",
-    "archive": "Tawheed/TAWHEED AL HAKEEMIYAH ONLY WAY TO IMPLEMENT SHARIAH - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=Tawheed%2FTAWHEED%20AL%20HAKEEMIYAH%20ONLY%20WAY%20TO%20IMPLEMENT%20SHARIAH%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/extracted/d17f4338067f7f.png"
+    "id": 111,
+    "title": "Tafsir Surah Qasas - Makkah Is The Mother Of All Towns - Part 6",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir Surah Qasas - Makkah Is The Mother Of All Towns - Part 6.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-%20Makkah%20Is%20The%20Mother%20Of%20All%20Towns%20-%20Part%206.mp3"
   },
   {
     "type": "audio",
-    "id": 405,
-    "title": "The 10 things Muslims Cannot Doubt",
-    "sub": "General Lectures",
-    "archive": "The 10 things Muslims Cannot Doubt.mp3",
-    "href": "audio.html?archive=The%2010%20things%20Muslims%20Cannot%20Doubt.mp3"
+    "id": 112,
+    "title": "Tafsir Baqarah Pt7 Then your Hearts Became Harder than Rocks",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir baqarah/Tafsir Baqarah Pt7 Then your Hearts Became Harder than Rocks.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Baqarah%20Pt7%20Then%20your%20Hearts%20Became%20Harder%20than%20Rocks.mp3"
   },
   {
     "type": "audio",
-    "id": 406,
-    "title": "The 13 Shades Of Kufr",
-    "sub": "Aqeedah",
-    "archive": "The 13 Shades Of Kufr.mp3",
-    "href": "audio.html?archive=The%2013%20Shades%20Of%20Kufr.mp3"
+    "id": 113,
+    "title": "Tafsir surah Ar-rum -The spiritually dead will never hear 25-8-14 part 7",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir surah Ar-rum -The spiritually dead will never hear  25-8-14 part 7.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Ar-rum%20-The%20spiritually%20dead%20will%20never%20hear%20%2025-8-14%20part%207.mp3"
   },
   {
     "type": "audio",
-    "id": 407,
-    "title": "The 15 Shades of Kufr",
-    "sub": "Aqeedah",
-    "archive": "The 15 Shades of Kufr.mp3",
-    "href": "audio.html?archive=The%2015%20Shades%20of%20Kufr.mp3"
+    "id": 114,
+    "title": "Tafsir Surah Qasas - There Is No Racism In Islam - Part 7",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir Surah Qasas - There Is No Racism In Islam - Part 7.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-%20There%20Is%20No%20Racism%20In%20Islam%20-%20Part%207.mp3"
   },
   {
     "type": "audio",
-    "id": 408,
-    "title": "The 17 Shades of Shirk (dars)",
-    "sub": "Aqeedah",
-    "archive": "The 17 Shades of Shirk (dars).mp3",
-    "href": "audio.html?archive=The%2017%20Shades%20of%20Shirk%20%28dars%29.mp3"
+    "id": 115,
+    "title": "Tafsir Surah Baqarah pt8 Wish for Death if u are truthful",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah pt8  Wish for Death if u are truthful.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Surah%20Baqarah%20pt8%20%20Wish%20for%20Death%20if%20u%20are%20truthful.mp3"
   },
   {
     "type": "audio",
-    "id": 409,
-    "title": "The 18 Types Of Women You Should Not Marry",
-    "sub": "Marriage & Family",
-    "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3",
-    "href": "audio.html?archive=Nikah_Divorce%2FThe%2018%20Types%20Of%20Women%20You%20Should%20Not%20Marry.mp3"
+    "id": 116,
+    "title": "Tafsir Surah Qasas -The Story of Musa (as) And Qaroon - Part 8",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir Surah Qasas -The Story of  Musa (as) And Qaroon - Part 8.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-The%20Story%20of%20%20Musa%20%28as%29%20And%20Qaroon%20-%20Part%208.mp3"
   },
   {
     "type": "audio",
-    "id": 410,
-    "title": "The 20 Types Of Men You Should Not Marry",
-    "sub": "Marriage & Family",
-    "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3",
-    "href": "audio.html?archive=Nikah_Divorce%2FThe%2020%20Types%20Of%20Men%20You%20Should%20Not%20Marry.mp3"
+    "id": 117,
+    "title": "Tafsir Surah Baqarah Pt9 Magic",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqarah Pt9 Magic.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Surah%20Baqarah%20Pt9%20Magic.mp3"
   },
   {
     "type": "audio",
-    "id": 411,
-    "title": "The 21 Reasons Why The Quran Is A Wise Book",
-    "sub": "General Lectures",
-    "archive": "The 21 Reasons Why The Quran Is A Wise Book.mp3",
-    "href": "audio.html?archive=The%2021%20Reasons%20Why%20The%20Quran%20Is%20A%20Wise%20Book.mp3"
+    "id": 118,
+    "title": "Tafsir Surah Qasas - Paradise is for those who are humble - Part 9",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir Surah Qasas - Paradise is for those who are humble - Part  9.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-%20Paradise%20is%20for%20those%20who%20are%20humble%20-%20Part%20%209.mp3"
   },
   {
     "type": "audio",
-    "id": 412,
-    "title": "The 35 People Allah SWT Abhors",
-    "sub": "General Lectures",
-    "archive": "The 35 People Allah SWT Abhors.mp3",
-    "href": "audio.html?archive=The%2035%20People%20Allah%20SWT%20Abhors.mp3"
+    "id": 119,
+    "title": "Tafseer 002.255 Ayat Al-Kursi (10.23.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 002.255 Ayat Al-Kursi (10.23.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20002.255%20Ayat%20Al-Kursi%20%2810.23.11%29.mp3",
+    "thumb": "thumb/extracted/842d02122759fc.jpg"
   },
   {
     "type": "audio",
-    "id": 413,
-    "title": "The 36 People Allah SWT Loves",
-    "sub": "General Lectures",
-    "archive": "The 36 People Allah SWT Loves.mp3",
-    "href": "audio.html?archive=The%2036%20People%20Allah%20SWT%20Loves.mp3"
+    "id": 120,
+    "title": "Tafseer 023 Surah Mu'minun [1-11] (02.26.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 023 Surah Mu'minun [1-11] (02.26.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20023%20Surah%20Mu%27minun%20%5B1-11%5D%20%2802.26.12%29.mp3",
+    "thumb": "thumb/extracted/4bba8bf656d2d4.jpg"
   },
   {
     "type": "audio",
-    "id": 414,
-    "title": "The 4 Branches Of Tauheed",
-    "sub": "Tawheed",
-    "archive": "Tawheed/The 4 Branches Of Tauheed.mp3",
-    "href": "audio.html?archive=Tawheed%2FThe%204%20Branches%20Of%20Tauheed.mp3"
+    "id": 121,
+    "title": "Tafseer 047 Surah Muhammad (09.27.11 to 09.28.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 047 Surah Muhammad (09.27.11 to 09.28.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20047%20Surah%20Muhammad%20%2809.27.11%20to%2009.28.11%29.mp3",
+    "thumb": "thumb/extracted/bc2bc01243b8a6.jpg"
   },
   {
     "type": "audio",
-    "id": 415,
-    "title": "The 4 Pillars Of Qadr",
-    "sub": "Fiqh & Worship",
-    "archive": "The 4 Pillars Of Qadr.mp3",
-    "href": "audio.html?archive=The%204%20Pillars%20Of%20Qadr.mp3"
+    "id": 122,
+    "title": "Tafseer 057 Surah Hadid (02.22.12 to 02.25.12)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 057 Surah Hadid (02.22.12 to 02.25.12).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20057%20Surah%20Hadid%20%2802.22.12%20to%2002.25.12%29.mp3",
+    "thumb": "thumb/extracted/d66c64ad8181aa.jpg"
   },
   {
     "type": "audio",
-    "id": 416,
-    "title": "The 5 Ahkaam of Shariah",
-    "sub": "General Lectures",
-    "archive": "The 5 Ahkaam of Shariah.mp3",
-    "href": "audio.html?archive=The%205%20Ahkaam%20of%20Shariah.mp3"
+    "id": 123,
+    "title": "Tafseer 067 Surah Al-Mulk (10.26.11 to 10.31.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 067 Surah Al-Mulk (10.26.11 to 10.31.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20067%20Surah%20Al-Mulk%20%2810.26.11%20to%2010.31.11%29.mp3",
+    "thumb": "thumb/extracted/60a35008070536.jpg"
   },
   {
     "type": "audio",
-    "id": 417,
-    "title": "The 5 Desperate Zindeeq - Brelvis (02.16.12)",
-    "sub": "The 5 Desperate Zindeeq",
-    "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Brelvis (02.16.12).mp3",
-    "href": "audio.html?archive=The%205%20Desperate%20Zindeeq%2FThe%205%20Desperate%20Zindeeq%20-%20Brelvis%20%2802.16.12%29.mp3",
-    "thumb": "thumb/extracted/b04fec2582151f.jpg"
+    "id": 124,
+    "title": "Tafseer 090 Surah Al-Balad (10.09.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 090 Surah Al-Balad (10.09.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20090%20Surah%20Al-Balad%20%2810.09.11%29.mp3",
+    "thumb": "thumb/extracted/4cc48a3d891feb.jpg"
   },
   {
     "type": "audio",
-    "id": 418,
-    "title": "The 5 Desperate Zindeeq - Democrats (evening dars 02.18.12)",
-    "sub": "The 5 Desperate Zindeeq",
-    "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Democrats (evening dars 02.18.12).mp3",
-    "href": "audio.html?archive=The%205%20Desperate%20Zindeeq%2FThe%205%20Desperate%20Zindeeq%20-%20Democrats%20%28evening%20dars%2002.18.12%29.mp3",
-    "thumb": "thumb/extracted/41b5aff9acda6a.jpg"
+    "id": 125,
+    "title": "Tafseer 095 Surah At-Tin (12.11.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 095 Surah At-Tin (12.11.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20095%20Surah%20At-Tin%20%2812.11.11%29.mp3",
+    "thumb": "thumb/extracted/36b1241210ac10.jpg"
   },
   {
     "type": "audio",
-    "id": 419,
-    "title": "The 5 Desperate Zindeeq - Goofy Sufi (02.11.12)",
-    "sub": "The 5 Desperate Zindeeq",
-    "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Goofy Sufi (02.11.12).mp3",
-    "href": "audio.html?archive=The%205%20Desperate%20Zindeeq%2FThe%205%20Desperate%20Zindeeq%20-%20Goofy%20Sufi%20%2802.11.12%29.mp3",
-    "thumb": "thumb/extracted/b8aa5601d8bc82.jpg"
+    "id": 126,
+    "title": "Tafseer 098 Surah Al-Baiyinah (10.10.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 098 Surah Al-Baiyinah (10.10.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20098%20Surah%20Al-Baiyinah%20%2810.10.11%29.mp3",
+    "thumb": "thumb/extracted/3726f72e14c466.jpg"
   },
   {
     "type": "audio",
-    "id": 420,
-    "title": "The 5 Desperate Zindeeq - MADkhalis (02.14.12 to 02.15.12)",
-    "sub": "The 5 Desperate Zindeeq",
-    "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - MADkhalis (02.14.12 to 02.15.12).mp3",
-    "href": "audio.html?archive=The%205%20Desperate%20Zindeeq%2FThe%205%20Desperate%20Zindeeq%20-%20MADkhalis%20%2802.14.12%20to%2002.15.12%29.mp3",
-    "thumb": "thumb/extracted/136b8efb67a320.jpg"
+    "id": 127,
+    "title": "Tafseer 101 Surah Al-Qari'ah (10.08.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 101 Surah Al-Qari'ah (10.08.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20101%20Surah%20Al-Qari%27ah%20%2810.08.11%29.mp3",
+    "thumb": "thumb/extracted/739c165e697d8a.jpg"
   },
   {
     "type": "audio",
-    "id": 421,
-    "title": "The 5 Desperate Zindeeq - Shady Shia (02.12.12 to 02.13.12)",
-    "sub": "The 5 Desperate Zindeeq",
-    "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Shady Shia (02.12.12 to 02.13.12).mp3",
-    "href": "audio.html?archive=The%205%20Desperate%20Zindeeq%2FThe%205%20Desperate%20Zindeeq%20-%20Shady%20Shia%20%2802.12.12%20to%2002.13.12%29.mp3",
-    "thumb": "thumb/extracted/b44b317b263042.jpg"
+    "id": 128,
+    "title": "Tafseer 102 Surah At-Takathur (10.12.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 102 Surah At-Takathur (10.12.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20102%20Surah%20At-Takathur%20%2810.12.11%29.mp3",
+    "thumb": "thumb/extracted/1ff69cdd478a5e.jpg"
   },
   {
     "type": "audio",
-    "id": 422,
-    "title": "The 5 Needs of Mankind2",
-    "sub": "General Lectures",
-    "archive": "The 5 Needs of Mankind2.mp3",
-    "href": "audio.html?archive=The%205%20Needs%20of%20Mankind2.mp3"
+    "id": 129,
+    "title": "Tafseer 103 Surah Al-Asr (10.17.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 103 Surah Al-Asr (10.17.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20103%20Surah%20Al-Asr%20%2810.17.11%29.mp3",
+    "thumb": "thumb/extracted/679706d5cd76a7.jpg"
   },
   {
     "type": "audio",
-    "id": 423,
-    "title": "The 57 Signs Of A Munafiq - Part 1",
-    "sub": "Aqeedah",
-    "archive": "The 57 Signs Of A Munafiq - Part 1.mp3",
-    "href": "audio.html?archive=The%2057%20Signs%20Of%20A%20Munafiq%20-%20Part%201.mp3"
+    "id": 130,
+    "title": "Tafseer 104 Surah Al-Humazah (10.07.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 104 Surah Al-Humazah (10.07.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20104%20Surah%20Al-Humazah%20%2810.07.11%29.mp3",
+    "thumb": "thumb/extracted/1438fba286fa5a.jpg"
   },
   {
     "type": "audio",
-    "id": 424,
-    "title": "The 8 Gates of Paradise",
-    "sub": "General Lectures",
-    "archive": "the_8_Gates_of_Paradise_mp3.mp3",
-    "href": "audio.html?archive=the_8_Gates_of_Paradise_mp3.mp3"
+    "id": 131,
+    "title": "Tafseer 105 Surah Al-Feel (10.13.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 105 Surah Al-Feel (10.13.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20105%20Surah%20Al-Feel%20%2810.13.11%29.mp3",
+    "thumb": "thumb/extracted/b610fb20d28306.jpg"
   },
   {
     "type": "audio",
-    "id": 425,
-    "title": "the 9 reasons kuffaar hate us",
-    "sub": "General Lectures",
-    "archive": "the 9 reasons kuffaar hate us.mp3",
-    "href": "audio.html?archive=the%209%20reasons%20kuffaar%20hate%20us.mp3"
+    "id": 132,
+    "title": "Tafseer 106 Surah Quraish (10.15.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 106 Surah Quraish (10.15.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20106%20Surah%20Quraish%20%2810.15.11%29.mp3",
+    "thumb": "thumb/extracted/28bedcd2e71cad.jpg"
   },
   {
     "type": "audio",
-    "id": 426,
-    "title": "The American Ban on Muslims",
-    "sub": "General Lectures",
-    "archive": "The American Ban on Muslims.mp3",
-    "href": "audio.html?archive=The%20American%20Ban%20on%20Muslims.mp3"
+    "id": 133,
+    "title": "Tafseer 107 Surah Al-Ma'um (10.18.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 107 Surah Al-Ma'um (10.18.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20107%20Surah%20Al-Ma%27um%20%2810.18.11%29.mp3",
+    "thumb": "thumb/extracted/e3fda8f4b46f82.jpg"
   },
   {
     "type": "audio",
-    "id": 427,
-    "title": "The Animals Of The Holy Quran - Part 1",
-    "sub": "Science in the Quran",
-    "archive": "The Animals Of The Holy Quran - Part 1.mp3",
-    "href": "audio.html?archive=The%20Animals%20Of%20The%20Holy%20Quran%20-%20Part%201.mp3"
+    "id": 134,
+    "title": "Tafseer 108 Surah Al-Kawthar (10.16.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 108 Surah Al-Kawthar (10.16.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20108%20Surah%20Al-Kawthar%20%2810.16.11%29.mp3",
+    "thumb": "thumb/extracted/651fa9c538124f.jpg"
   },
   {
     "type": "audio",
-    "id": 428,
-    "title": "The Animals Of The Holy Quran - Part 2",
-    "sub": "Science in the Quran",
-    "archive": "The Animals Of The Holy Quran - Part 2.mp3",
-    "href": "audio.html?archive=The%20Animals%20Of%20The%20Holy%20Quran%20-%20Part%202.mp3"
+    "id": 135,
+    "title": "Tafseer 109 Surah Al-Kafiroon (10.22.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 109 Surah Al-Kafiroon (10.22.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20109%20Surah%20Al-Kafiroon%20%2810.22.11%29.mp3",
+    "thumb": "thumb/extracted/22cdc6a0d8053b.jpg"
   },
   {
     "type": "audio",
-    "id": 429,
-    "title": "The Barking Dogs of Jahannam (Refuting the modern day Khawarij)",
-    "sub": "Refutations",
-    "archive": "the Barking dogs of jahannam.mp3",
-    "href": "audio.html?archive=the%20Barking%20dogs%20of%20jahannam.mp3",
-    "thumb": "thumb/The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.jpg"
+    "id": 136,
+    "title": "Tafseer 110 Surah An-Nasr (10.19.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 110 Surah An-Nasr (10.19.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20110%20Surah%20An-Nasr%20%2810.19.11%29.mp3",
+    "thumb": "thumb/extracted/6ce57ee0d36f26.jpg"
   },
   {
     "type": "audio",
-    "id": 430,
-    "title": "The Bombing of the Goofi Soofis",
-    "sub": "General Lectures",
-    "archive": "The Bombing of the Goofi Soofis.mp3",
-    "href": "audio.html?archive=The%20Bombing%20of%20the%20Goofi%20Soofis.mp3"
+    "id": 137,
+    "title": "Tafseer 111 Surah Al-Masad (10.11.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 111 Surah Al-Masad (10.11.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20111%20Surah%20Al-Masad%20%2810.11.11%29.mp3",
+    "thumb": "thumb/extracted/7cd9fdafd55192.jpg"
   },
   {
     "type": "audio",
-    "id": 431,
-    "title": "The Devil's Deception of the Aathir",
-    "sub": "The Devil's Deception",
-    "archive": "The Devils Deception/The Devil's Deception of the Aathir.mp3",
-    "href": "audio.html?archive=The%20Devils%20Deception%2FThe%20Devil%27s%20Deception%20of%20the%20Aathir.mp3"
+    "id": 138,
+    "title": "Tafseer 113 Surah Al-Falaq (10.24.11)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafseer 113 Surah Al-Falaq (10.24.11).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafseer%20113%20Surah%20Al-Falaq%20%2810.24.11%29.mp3",
+    "thumb": "thumb/extracted/c932246fec57cf.jpg"
   },
   {
     "type": "audio",
-    "id": 432,
-    "title": "The Devil's Deception of The Murji",
-    "sub": "The Devil's Deception",
-    "archive": "The Devils Deception/09.Sheikh Abdullah Faisal - The Devil's Deception of The Murji.mp3",
-    "href": "audio.html?archive=The%20Devils%20Deception%2F09.Sheikh%20Abdullah%20Faisal%20-%20The%20Devil%27s%20Deception%20of%20The%20Murji.mp3"
+    "id": 139,
+    "title": "Tafsir surah Ar-rum - Your spouse is a sign from Allah 20-8-14",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir surah Ar-rum - Your spouse is a sign from Allah 20-8-14.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Ar-rum%20-%20Your%20spouse%20is%20a%20sign%20from%20Allah%2020-8-14.mp3"
   },
   {
     "type": "audio",
-    "id": 433,
-    "title": "The Devil's Deception of the Murjia",
-    "sub": "The Devil's Deception",
-    "archive": "The Devils Deception/The Devil's Deception of the Murjia.mp3",
-    "href": "audio.html?archive=The%20Devils%20Deception%2FThe%20Devil%27s%20Deception%20of%20the%20Murjia.mp3"
+    "id": 140,
+    "title": "Tafsir surah Ar-rum- Everyone was born on fitrah 22-8-14",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir surah Ar-rum- Everyone was born on fitrah 22-8-14.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Ar-rum-%20Everyone%20was%20born%20on%20fitrah%2022-8-14.mp3"
   },
   {
     "type": "audio",
-    "id": 434,
-    "title": "The Devil's Deception of The Qadiani",
-    "sub": "The Devil's Deception",
-    "archive": "The Devils Deception/08.Sheikh Abdullah Faisal - The Devil's Deception of The Qadiani.mp3",
-    "href": "audio.html?archive=The%20Devils%20Deception%2F08.Sheikh%20Abdullah%20Faisal%20-%20The%20Devil%27s%20Deception%20of%20The%20Qadiani.mp3"
+    "id": 141,
+    "title": "Tafsir Surah Baqara - seek help in sabr n salah",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir baqarah/Tafsir Surah Baqara - seek help in sabr n salah.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20baqarah%2FTafsir%20Surah%20Baqara%20-%20seek%20help%20in%20sabr%20n%20salah.mp3"
   },
   {
     "type": "audio",
-    "id": 435,
-    "title": "The Devil's Deception of The Shia",
-    "sub": "The Devil's Deception",
-    "archive": "The Devils Deception/06.Sheikh Abdullah Faisal - The Devil's Deception of The Shia.mp3",
-    "href": "audio.html?archive=The%20Devils%20Deception%2F06.Sheikh%20Abdullah%20Faisal%20-%20The%20Devil%27s%20Deception%20of%20The%20Shia.mp3"
+    "id": 142,
+    "title": "TAFSIR SURAH FALAQ",
+    "sub": "Tafseer",
+    "archive": "Tafseer/TAFSIR SURAH FALAQ.mp3",
+    "href": "audio.html?archive=Tafseer%2FTAFSIR%20SURAH%20FALAQ.mp3"
   },
   {
     "type": "audio",
-    "id": 436,
-    "title": "THE DOMAIN OF APOSTASY",
-    "sub": "Refutations",
-    "archive": "THE DOMAIN OF APOSTASY.mp3",
-    "href": "audio.html?archive=THE%20DOMAIN%20OF%20APOSTASY.mp3"
+    "id": 143,
+    "title": "TAFSIR SURAH NAS 12-8-14",
+    "sub": "Tafseer",
+    "archive": "Tafseer/TAFSIR SURAH NAS 12-8-14.mp3",
+    "href": "audio.html?archive=Tafseer%2FTAFSIR%20SURAH%20NAS%2012-8-14.mp3"
   },
   {
     "type": "audio",
-    "id": 437,
-    "title": "The Enemies of the Caliphate",
-    "sub": "Khilafah",
-    "archive": "Khilafah/The Enemies of the Caliphate.mp3",
-    "href": "audio.html?archive=Khilafah%2FThe%20Enemies%20of%20the%20Caliphate.mp3"
+    "id": 144,
+    "title": "Tafsir Surah Qasas - The Pharaoh asked for a tower to see Allah (swt)",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir Surah Qasas - The Pharaoh asked for a tower to see Allah (swt).mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20Surah%20Qasas%20-%20The%20Pharaoh%20asked%20for%20a%20tower%20to%20see%20Allah%20%28swt%29.mp3"
   },
   {
     "type": "audio",
-    "id": 438,
-    "title": "The Etiquettes of Asking Questions",
-    "sub": "Character & Dawah",
-    "archive": "The Etiquettes of Asking Questions.mp3",
-    "href": "audio.html?archive=The%20Etiquettes%20of%20Asking%20Questions.mp3"
+    "id": 145,
+    "title": "TAFSIR SURAH SAJDA",
+    "sub": "Tafseer",
+    "archive": "Tafseer/TAFSIR SURAH SAJDA .mp3",
+    "href": "audio.html?archive=Tafseer%2FTAFSIR%20SURAH%20SAJDA%20.mp3"
   },
   {
     "type": "audio",
-    "id": 439,
-    "title": "The Evil Consequences Of Insulting The Rasool (Saw)",
-    "sub": "General Lectures",
-    "archive": "The Evil Consequences Of Insulting The Rasool (Saw).mp3",
-    "href": "audio.html?archive=The%20Evil%20Consequences%20Of%20Insulting%20The%20Rasool%20%28Saw%29.mp3"
+    "id": 146,
+    "title": "TAFSIR SURAH SAQDA",
+    "sub": "Tafseer",
+    "archive": "Tafseer/TAFSIR SURAH SAQDA .mp3",
+    "href": "audio.html?archive=Tafseer%2FTAFSIR%20SURAH%20SAQDA%20.mp3"
   },
   {
     "type": "audio",
-    "id": 440,
-    "title": "The Evil Effects of Sins",
-    "sub": "General Lectures",
-    "archive": "The Evil Effects of Sins.mp3",
-    "href": "audio.html?archive=The%20Evil%20Effects%20of%20Sins.mp3"
+    "id": 147,
+    "title": "Tafsir surah Waqia - mankind will be divided into three on DOJ 08-27-14",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir surah Waqia - mankind will be divided into three on DOJ 08-27-14.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20Waqia%20-%20mankind%20will%20be%20divided%20into%20three%20on%20DOJ%2008-27-14.mp3"
   },
   {
     "type": "audio",
-    "id": 441,
-    "title": "The Evil Rulers Of The World",
-    "sub": "General Lectures",
-    "archive": "The Evil Rulers Of The World.mp3",
-    "href": "audio.html?archive=The%20Evil%20Rulers%20Of%20The%20World.mp3"
+    "id": 148,
+    "title": "Tafsir surah waqia - The Tree of Zaquum 08-28-14",
+    "sub": "Tafseer",
+    "archive": "Tafseer/Tafsir surah waqia - The Tree of Zaquum 08-28-14.mp3",
+    "href": "audio.html?archive=Tafseer%2FTafsir%20surah%20waqia%20-%20The%20Tree%20of%20Zaquum%2008-28-14.mp3"
   },
   {
     "type": "audio",
-    "id": 442,
-    "title": "The farewell khutbah 14-07-14",
-    "sub": "General Lectures",
-    "archive": "The farewell khutbah 14-07-14.mp3",
-    "href": "audio.html?archive=The%20farewell%20khutbah%2014-07-14.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 443,
-    "title": "The Fiqh of Asking Questions",
-    "sub": "Fiqh & Worship",
-    "archive": "The_Fiqh_of_Asking_Questions_mp3.mp3",
-    "href": "audio.html?archive=The_Fiqh_of_Asking_Questions_mp3.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 444,
-    "title": "The Fiqh of Clothing",
-    "sub": "Fiqh & Worship",
-    "archive": "The Fiqh of Clothing.mp3",
-    "href": "audio.html?archive=The%20Fiqh%20of%20Clothing.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 445,
-    "title": "the Fiqh of Divorce",
-    "sub": "Marriage & Family",
-    "archive": "Nikah_Divorce/the Fiqh of Divorce.mp3",
-    "href": "audio.html?archive=Nikah_Divorce%2Fthe%20Fiqh%20of%20Divorce.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 446,
-    "title": "the Fiqh of Food-1",
-    "sub": "Fiqh & Worship",
-    "archive": "the Fiqh of Food-1.mp3",
-    "href": "audio.html?archive=the%20Fiqh%20of%20Food-1.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 447,
-    "title": "The Fiqh of Menses",
-    "sub": "Marriage & Family",
-    "archive": "The Fiqh of Menses.mp3",
-    "href": "audio.html?archive=The%20Fiqh%20of%20Menses.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 448,
-    "title": "The Fiqh of Trading",
-    "sub": "Fiqh & Worship",
-    "archive": "The Fiqh of Trading.mp3",
-    "href": "audio.html?archive=The%20Fiqh%20of%20Trading.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 449,
-    "title": "The Holy Spirit (06.18.11)",
-    "sub": "General Lectures",
-    "archive": "The Holy Spirit (06.18.11).mp3",
-    "href": "audio.html?archive=The%20Holy%20Spirit%20%2806.18.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 450,
-    "title": "The Hyenas Of The Ummah",
-    "sub": "General Lectures",
-    "archive": "The Hyenas Of The Ummah.mp3",
-    "href": "audio.html?archive=The%20Hyenas%20Of%20The%20Ummah.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 451,
-    "title": "The importance of Hijrah",
-    "sub": "Jihad",
-    "archive": "The importance of Hijrah.mp3",
-    "href": "audio.html?archive=The%20importance%20of%20Hijrah.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 452,
-    "title": "The Importance of Intention",
-    "sub": "General Lectures",
-    "archive": "The Importance of Intention.mp3",
-    "href": "audio.html?archive=The%20Importance%20of%20Intention.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 453,
-    "title": "THE IMPORTANCE OF SHARI`AH",
-    "sub": "Khilafah",
-    "archive": "Khilafah/THE IMPORTANCE OF SHARI`AH.mp3",
-    "href": "audio.html?archive=Khilafah%2FTHE%20IMPORTANCE%20OF%20SHARI%60AH.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 454,
-    "title": "The Jinn",
-    "sub": "Ummah & Contemporary Issues",
-    "archive": "Sheikh Abdullah Faisal - The Jinn.mp3",
-    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20The%20Jinn.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 455,
-    "title": "The Muslim Home",
-    "sub": "Marriage & Family",
-    "archive": "Sheikh Abdullah Faisal - The Muslim Home.mp3",
-    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20The%20Muslim%20Home.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 456,
-    "title": "The Muslim Home (dars)",
-    "sub": "Marriage & Family",
-    "archive": "The Muslim Home (dars).mp3",
-    "href": "audio.html?archive=The%20Muslim%20Home%20%28dars%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 457,
-    "title": "The Philosophy of the islamic Jurisprudence",
-    "sub": "General Lectures",
-    "archive": "The Philosophy of the islamic Jurisprudence.mp3",
-    "href": "audio.html?archive=The%20Philosophy%20of%20the%20islamic%20Jurisprudence.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 458,
-    "title": "The Reality of Fitnah",
-    "sub": "General Lectures",
-    "archive": "The Reality of Fitnah.mp3",
-    "href": "audio.html?archive=The%20Reality%20of%20Fitnah.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 459,
-    "title": "The Reality of Racism",
-    "sub": "General Lectures",
-    "archive": "The Reality of Racism.mp3",
-    "href": "audio.html?archive=The%20Reality%20of%20Racism.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 460,
-    "title": "THE REALITY OF THE JEWS",
-    "sub": "Refutations",
-    "archive": "THE REALITY OF THE JEWS.mp3",
-    "href": "audio.html?archive=THE%20REALITY%20OF%20THE%20JEWS.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 461,
-    "title": "The Rules of Fasting",
-    "sub": "Fiqh & Worship",
-    "archive": "The Rules of Fasting.mp3",
-    "href": "audio.html?archive=The%20Rules%20of%20Fasting.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 462,
+    "id": 149,
     "title": "The Sealed Nectar [Part 01] Arabia Before Islam (03.31.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 01] Arabia Before Islam (03.31.12).mp3",
@@ -3893,7 +1284,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 463,
+    "id": 150,
     "title": "The Sealed Nectar [Part 02] Replacing the Blackstone (04.01.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 02] Replacing the Blackstone (04.01.12).mp3",
@@ -3902,7 +1293,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 464,
+    "id": 151,
     "title": "The Sealed Nectar [Part 03] The Cave of Hira (04.02.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 03] The Cave of Hira (04.02.12).mp3",
@@ -3911,7 +1302,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 465,
+    "id": 152,
     "title": "The Sealed Nectar [Part 04] The Hijrah to Abyssinia (04.03.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 04] The Hijrah to Abyssinia (04.03.12).mp3",
@@ -3920,7 +1311,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 466,
+    "id": 153,
     "title": "The Sealed Nectar [Part 05] The Conversion of Umar A Glory for Islam (04.04.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 05] The Conversion of Umar A Glory for Islam (04.04.12).mp3",
@@ -3929,7 +1320,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 467,
+    "id": 154,
     "title": "The Sealed Nectar [Part 06] Al-Isra Wal-Miraj (04.05.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 06] Al-Isra Wal-Miraj (04.05.12).mp3",
@@ -3938,7 +1329,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 468,
+    "id": 155,
     "title": "The Sealed Nectar [Part 07] The Pledge of Aqabah (04.07.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 07] The Pledge of Aqabah (04.07.12).mp3",
@@ -3947,7 +1338,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 469,
+    "id": 156,
     "title": "The Sealed Nectar [Part 08] The Hijrah from Makkah to Madina (04.08.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 08] The Hijrah from Makkah to Madina (04.08.12).mp3",
@@ -3956,7 +1347,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 470,
+    "id": 157,
     "title": "The Sealed Nectar [Part 09] The Battle of Badr (04.09.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 09] The Battle of Badr (04.09.12).mp3",
@@ -3965,7 +1356,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 471,
+    "id": 158,
     "title": "The Sealed Nectar [Part 10] The Treachery of Banu Qainuqa (04.11.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 10] The Treachery of Banu Qainuqa (04.11.12).mp3",
@@ -3974,7 +1365,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 472,
+    "id": 159,
     "title": "The Sealed Nectar [Part 11] The Battle of Uhud (04.12.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 11] The Battle of Uhud (04.12.12).mp3",
@@ -3983,7 +1374,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 473,
+    "id": 160,
     "title": "The Sealed Nectar [Part 12] The Treachery of Banu Nadir (04.14.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 12] The Treachery of Banu Nadir (04.14.12).mp3",
@@ -3992,7 +1383,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 474,
+    "id": 161,
     "title": "The Sealed Nectar [Part 13] The Battle of the Ditch (04.15.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 13] The Battle of the Ditch (04.15.12).mp3",
@@ -4001,7 +1392,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 475,
+    "id": 162,
     "title": "The Sealed Nectar [Part 14] The Slander of Aisha [RA] (04.16.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 14] The Slander of Aisha [RA] (04.16.12).mp3",
@@ -4010,7 +1401,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 476,
+    "id": 163,
     "title": "The Sealed Nectar [Part 15] 42 Lessons From The Slander of Aisha [RA] (04.17.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 15] 42 Lessons From The Slander of Aisha [RA] (04.17.12).mp3",
@@ -4019,7 +1410,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 477,
+    "id": 164,
     "title": "The Sealed Nectar [Part 16] The Treaty of Hudaibiya (04.19.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 16] The Treaty of Hudaibiya (04.19.12).mp3",
@@ -4028,7 +1419,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 478,
+    "id": 165,
     "title": "The Sealed Nectar [Part 17] The Conquest of Khaibar (04.21.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 17] The Conquest of Khaibar (04.21.12).mp3",
@@ -4037,7 +1428,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 479,
+    "id": 166,
     "title": "The Sealed Nectar [Part 18] The Battle of Mu'tah (04.22.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 18] The Battle of Mu'tah (04.22.12).mp3",
@@ -4046,7 +1437,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 480,
+    "id": 167,
     "title": "The Sealed Nectar [Part 19] The Conquest of Makkah (04.23.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 19] The Conquest of Makkah (04.23.12).mp3",
@@ -4055,7 +1446,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 481,
+    "id": 168,
     "title": "The Sealed Nectar [Part 20] The Battle of Hunain (04.24.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 20] The Battle of Hunain (04.24.12).mp3",
@@ -4064,7 +1455,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 482,
+    "id": 169,
     "title": "The Sealed Nectar [Part 21] The Tabuk Expedition (04.25.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 21] The Tabuk Expedition (04.25.12).mp3",
@@ -4073,7 +1464,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 483,
+    "id": 170,
     "title": "The Sealed Nectar [Part 22] Abu Bakr Performs the Pilgrimage (04.26.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 22] Abu Bakr Performs the Pilgrimage (04.26.12).mp3",
@@ -4082,7 +1473,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 484,
+    "id": 171,
     "title": "The Sealed Nectar [Part 23] The Pilgrimage of the Prophet (04.28.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 23] The Pilgrimage of the Prophet (04.28.12).mp3",
@@ -4091,7 +1482,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 485,
+    "id": 172,
     "title": "The Sealed Nectar [Part 24] The Farewell Sermon (04.29.12)",
     "sub": "The Sealed Nectar",
     "archive": "The Sealed Nector (Series)/The Sealed Nectar [Part 24] The Farewell Sermon (04.29.12).mp3",
@@ -4100,23 +1491,156 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 486,
-    "title": "The Ship Is Sinking (07.13.11)",
-    "sub": "General Lectures",
-    "archive": "The Ship Is Sinking (07.13.11).mp3",
-    "href": "audio.html?archive=The%20Ship%20Is%20Sinking%20%2807.13.11%29.mp3"
+    "id": 173,
+    "title": "Adam Alayhi Salam And The Satan The Eternal Battle Part 1",
+    "sub": "Prophets & Seerah",
+    "archive": "Adam_Alayhi_Salam_And_The_Satan_The_Eternal_Battle_Part_1.mp3",
+    "href": "audio.html?archive=Adam_Alayhi_Salam_And_The_Satan_The_Eternal_Battle_Part_1.mp3"
   },
   {
     "type": "audio",
-    "id": 487,
-    "title": "the Siege of al Aqsa",
-    "sub": "General Lectures",
-    "archive": "the Siege of al Aqsa.mp3",
-    "href": "audio.html?archive=the%20Siege%20of%20al%20Aqsa.mp3"
+    "id": 174,
+    "title": "Adam Alayhi Salam And The Satan The Eternal Battle – Part 2",
+    "sub": "Prophets & Seerah",
+    "archive": "Adam_Alayhi_Salam_And_The_Satan_The_Eternal_Battle_–_Part_2.mp3",
+    "href": "audio.html?archive=Adam_Alayhi_Salam_And_The_Satan_The_Eternal_Battle_%E2%80%93_Part_2.mp3"
   },
   {
     "type": "audio",
-    "id": 488,
+    "id": 175,
+    "title": "20 Du'as of Ibrahim (08.17.11 to 08.18.11)",
+    "sub": "Prophets & Seerah",
+    "archive": "20 Du'as of Ibrahim (08.17.11 to 08.18.11).mp3",
+    "href": "audio.html?archive=20%20Du%27as%20of%20Ibrahim%20%2808.17.11%20to%2008.18.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 176,
+    "title": "9 Signs of Musa to the Pharoah (06.22.11)",
+    "sub": "Prophets & Seerah",
+    "archive": "9 Signs of Musa to the Pharoah (06.22.11).mp3",
+    "href": "audio.html?archive=9%20Signs%20of%20Musa%20to%20the%20Pharoah%20%2806.22.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 177,
+    "title": "al Israa wal Mi'raaj",
+    "sub": "Prophets & Seerah",
+    "archive": "al Israa wal Mi'raaj.mp3",
+    "href": "audio.html?archive=al%20Israa%20wal%20Mi%27raaj.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 178,
+    "title": "Allah (SWT) Has Honored Bani Adam - Mankind",
+    "sub": "Prophets & Seerah",
+    "archive": "Allah (SWT) Has Honored Bani Adam - Mankind.mp3",
+    "href": "audio.html?archive=Allah%20%28SWT%29%20Has%20Honored%20Bani%20Adam%20-%20Mankind.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 179,
+    "title": "Allah's Commandments to Ibrahim (AS) (07.21.11)",
+    "sub": "Prophets & Seerah",
+    "archive": "Allah's Commandments to Ibrahim (AS) (07.21.11).mp3",
+    "href": "audio.html?archive=Allah%27s%20Commandments%20to%20Ibrahim%20%28AS%29%20%2807.21.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 180,
+    "title": "Beware of Invading the Land of Ibrahim (07.28.11)",
+    "sub": "Prophets & Seerah",
+    "archive": "Beware of Invading the Land of Ibrahim (07.28.11).mp3",
+    "href": "audio.html?archive=Beware%20of%20Invading%20the%20Land%20of%20Ibrahim%20%2807.28.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 181,
+    "title": "BOY AND THE KING",
+    "sub": "Prophets & Seerah",
+    "archive": "BOY AND THE KING - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=BOY%20AND%20THE%20KING%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/BOY AND THE KING - Shaykh Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 182,
+    "title": "Islam of Umar (RA) (07.09.11)",
+    "sub": "Prophets & Seerah",
+    "archive": "Islam of Umar (RA) (07.09.11).mp3",
+    "href": "audio.html?archive=Islam%20of%20Umar%20%28RA%29%20%2807.09.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 183,
+    "title": "Many Miracles of the Prophet Muhammad (SAW) (07.20.11)",
+    "sub": "Prophets & Seerah",
+    "archive": "Many Miracles of the Prophet Muhammad (SAW) (07.20.11).mp3",
+    "href": "audio.html?archive=Many%20Miracles%20of%20the%20Prophet%20Muhammad%20%28SAW%29%20%2807.20.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 184,
+    "title": "MILLATU IBRAHIM",
+    "sub": "Prophets & Seerah",
+    "archive": "MILLATU IBRAHIM - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=MILLATU%20IBRAHIM%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/extracted/f9c271ac07d98b.png"
+  },
+  {
+    "type": "audio",
+    "id": 185,
+    "title": "Musa & al Khidr (dars)",
+    "sub": "Prophets & Seerah",
+    "archive": "Musa & al Khidr (dars).mp3",
+    "href": "audio.html?archive=Musa%20%26%20al%20Khidr%20%28dars%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 186,
+    "title": "Musa & Al-Khidr (07.09.11)",
+    "sub": "Prophets & Seerah",
+    "archive": "Musa & Al-Khidr (07.09.11).mp3",
+    "href": "audio.html?archive=Musa%20%26%20Al-Khidr%20%2807.09.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 187,
+    "title": "MUSA AND KHIDR",
+    "sub": "Prophets & Seerah",
+    "archive": "MUSA AND KHIDR - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=MUSA%20AND%20KHIDR%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/MUSA AND KHIDR - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 188,
+    "title": "MUSA AND QAROON",
+    "sub": "Prophets & Seerah",
+    "archive": "MUSA AND QAROON - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=MUSA%20AND%20QAROON%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/MUSA AND QAROON - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 189,
+    "title": "PEOPLE OF THE CAVE",
+    "sub": "Prophets & Seerah",
+    "archive": "PEOPLE OF THE CAVE - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=PEOPLE%20OF%20THE%20CAVE%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/PEOPLE OF THE CAVE - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 190,
+    "title": "Sheikh Abdullah Faisal Al Isra Wal Mira'aj",
+    "sub": "Prophets & Seerah",
+    "archive": "Sheikh Abdullah Faisal   Al Isra Wal Mira'aj.mp3",
+    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20%20%20Al%20Isra%20Wal%20Mira%27aj.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 191,
     "title": "the Sleepers in the Cave",
     "sub": "Prophets & Seerah",
     "archive": "the Sleepers in the Cave.mp3",
@@ -4124,131 +1648,632 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 489,
-    "title": "the usa Bombing of Assad, a Muslim perspective",
-    "sub": "General Lectures",
-    "archive": "the usa Bombing of Assad, a Muslim perspective.mp3",
-    "href": "audio.html?archive=the%20usa%20Bombing%20of%20Assad%2C%20a%20Muslim%20perspective.mp3"
+    "id": 192,
+    "title": "Invalidation Of Your Actions – Part 1",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Invalidation Of Your Actions – Part 1.mp3",
+    "href": "audio.html?archive=Invalidation%20Of%20Your%20Actions%20%E2%80%93%20Part%201.mp3"
   },
   {
     "type": "audio",
-    "id": 490,
-    "title": "The virtues of Dhikr",
-    "sub": "Fiqh & Worship",
-    "archive": "The virtues of Dhikr.mp3",
-    "href": "audio.html?archive=The%20virtues%20of%20Dhikr.mp3"
+    "id": 193,
+    "title": "Invalidation Of Your Actions – Part 2",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Invalidation Of Your Actions – Part 2.mp3",
+    "href": "audio.html?archive=Invalidation%20Of%20Your%20Actions%20%E2%80%93%20Part%202.mp3"
   },
   {
     "type": "audio",
-    "id": 491,
-    "title": "the Weaknesses of Mankind2",
-    "sub": "General Lectures",
-    "archive": "the Weaknesses of Mankind2.mp3",
-    "href": "audio.html?archive=the%20Weaknesses%20of%20Mankind2.mp3"
+    "id": 194,
+    "title": "Let's Call A Spade A Spade Part 1",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Let's Call A Spade A Spade Part 1.mp3",
+    "href": "audio.html?archive=Let%27s%20Call%20A%20Spade%20A%20Spade%20Part%201.mp3"
   },
   {
     "type": "audio",
-    "id": 492,
-    "title": "The wisdom of the Prophet (saw) 07-15-14",
-    "sub": "General Lectures",
-    "archive": "The wisdom of the Prophet (saw) 07-15-14.mp3",
-    "href": "audio.html?archive=The%20wisdom%20of%20the%20Prophet%20%28saw%29%2007-15-14.mp3"
+    "id": 195,
+    "title": "Let's Call A Spade A Spade - Part 2",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Let's Call A Spade A Spade - Part 2.mp3",
+    "href": "audio.html?archive=Let%27s%20Call%20A%20Spade%20A%20Spade%20-%20Part%202.mp3"
   },
   {
     "type": "audio",
-    "id": 493,
-    "title": "Their hearts Are Alike",
-    "sub": "General Lectures",
-    "archive": "Their hearts Are Alike.mp3",
-    "href": "audio.html?archive=Their%20hearts%20Are%20Alike.mp3"
+    "id": 196,
+    "title": "Let's Call A Spade A Spade - Part 3",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Let's Call A Spade A Spade - Part 3.mp3",
+    "href": "audio.html?archive=Let%27s%20Call%20A%20Spade%20A%20Spade%20-%20Part%203.mp3"
   },
   {
     "type": "audio",
-    "id": 494,
-    "title": "Them versus Us",
-    "sub": "General Lectures",
-    "archive": "Sheikh Abdullah Faisal - Them versus Us.mp3",
-    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Them%20versus%20Us.mp3"
+    "id": 197,
+    "title": "Let's Call A Spade A Spade - Part 4",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Let's Call A Spade A Spade - Part 4.mp3",
+    "href": "audio.html?archive=Let%27s%20Call%20A%20Spade%20A%20Spade%20-%20Part%204.mp3"
   },
   {
     "type": "audio",
-    "id": 495,
-    "title": "THEY ARE THE WORST OF CREATURES",
-    "sub": "Refutations",
-    "archive": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=THEY%20ARE%20THE%20WORST%20OF%20CREATURES%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg"
+    "id": 198,
+    "title": "The 57 Signs Of A Munafiq - Part 1",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "The 57 Signs Of A Munafiq - Part 1.mp3",
+    "href": "audio.html?archive=The%2057%20Signs%20Of%20A%20Munafiq%20-%20Part%201.mp3"
   },
   {
     "type": "audio",
-    "id": 496,
+    "id": 199,
+    "title": "25 Things That Makes You A Kaafir (12.31.11 to 01.03.12)",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "25 Things That Makes You A Kaafir (12.31.11 to 01.03.12).mp3",
+    "href": "audio.html?archive=25%20Things%20That%20Makes%20You%20A%20Kaafir%20%2812.31.11%20to%2001.03.12%29.mp3",
+    "thumb": "thumb/extracted/84a689044caef9.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 200,
+    "title": "29 Principles of Ahlus Sunnah Wal Jama'ah (01.12.12 to 01.19.12)",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "29 Principles of Ahlus Sunnah Wal Jama'ah (01.12.12 to 01.19.12).mp3",
+    "href": "audio.html?archive=29%20Principles%20of%20Ahlus%20Sunnah%20Wal%20Jama%27ah%20%2801.12.12%20to%2001.19.12%29.mp3",
+    "thumb": "thumb/extracted/19db6ea7cc8c46.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 201,
+    "title": "Allah Blesses Whom He Wills (06.28.11)(1)",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Allah Blesses Whom He Wills (06.28.11)(1).mp3",
+    "href": "audio.html?archive=Allah%20Blesses%20Whom%20He%20Wills%20%2806.28.11%29%281%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 202,
+    "title": "ARE YOU A TAKFIRI",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=ARE%20YOU%20A%20TAKFIRI%20-%20Shaykh%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 203,
+    "title": "DEMOCRACY IS A RELIGION",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=DEMOCRACY%20IS%20A%20RELIGION%20-%20Shaykh%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 204,
+    "title": "DEMOCRACY IS THE GREATEST SHIRK",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=DEMOCRACY%20IS%20THE%20GREATEST%20SHIRK%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 205,
+    "title": "Democracy The Greatest Shirk",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Sheikh Abdullah Faisal - Democracy   The Greatest Shirk.mp3",
+    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Democracy%20%20%20The%20Greatest%20Shirk.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 206,
+    "title": "DISMANTLE THE SHARIAH IS MAJOR KUFR",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "DISMANTLE THE SHARIAH IS MAJOR KUFR - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=DISMANTLE%20THE%20SHARIAH%20IS%20MAJOR%20KUFR%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 207,
+    "title": "DO NOT OBEY THE KUFFAR & THE MUNAFIQUN",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=DO%20NOT%20OBEY%20THE%20KUFFAR%20%26%20THE%20MUNAFIQUN%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 208,
+    "title": "EXCUSE OF IGNORANCE",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "EXCUSE OF IGNORANCE - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=EXCUSE%20OF%20IGNORANCE%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/EXCUSE OF IGNORANCE - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 209,
+    "title": "FIFTY SEVEN SIGNS OF A MUNAFIQ",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=FIFTY%20SEVEN%20SIGNS%20OF%20A%20MUNAFIQ%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 210,
+    "title": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=FRIENDS%20OF%20ALLAH%20%26%20THE%20FRIENDS%20OF%20SHAYTAN%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 211,
+    "title": "Hearts of the Kafirs Are Alike (07.11.11)",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Hearts of the Kafirs Are Alike (07.11.11).mp3",
+    "href": "audio.html?archive=Hearts%20of%20the%20Kafirs%20Are%20Alike%20%2807.11.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 212,
+    "title": "IMPEDIMENTS OF TAKFIR",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=IMPEDIMENTS%20OF%20TAKFIR%20-%20Shaykh%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 213,
+    "title": "KUFR DOONA KUFR",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "KUFR DOONA KUFR - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=KUFR%20DOONA%20KUFR%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/KUFR DOONA KUFR - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 214,
+    "title": "Nawaaqid al islam by Muhd ibn Abdul Wahhab",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Nawaaqid al islam by Muhd ibn Abdul Wahhab.mp3",
+    "href": "audio.html?archive=Nawaaqid%20al%20islam%20by%20Muhd%20ibn%20Abdul%20Wahhab.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 215,
+    "title": "NAWAQID AL ISLAM",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "NAWAQID AL ISLAM - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=NAWAQID%20AL%20ISLAM%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/NAWAQID AL ISLAM - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 216,
+    "title": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=NEVER%20PRAY%20JANAZAH%20FOR%20ANY%20HYPOCRITE%20NOR%20STAND%20FOR%20THEIR%20GRAVE%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 217,
+    "title": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=PRINCIPLES%20OF%20AHLUS%20SUNNAH%20WAL%20JAMA%27AH%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 218,
+    "title": "REALITY OF EMAAN",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "REALITY OF EMAAN - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=REALITY%20OF%20EMAAN%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 219,
+    "title": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION)",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=SEVEN%20CONDITIONS%20OF%20SHAHADA%20%28CLASSIC%20VERSION%29%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 220,
+    "title": "Shirk In Perspective (07.10.11)",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Shirk In Perspective (07.10.11).mp3",
+    "href": "audio.html?archive=Shirk%20In%20Perspective%20%2807.10.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 221,
+    "title": "SIGNS OF HYPOCRITES",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "SIGNS OF HYPOCRITES - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=SIGNS%20OF%20HYPOCRITES%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/SIGNS OF HYPOCRITES - Shaykh Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 222,
+    "title": "TAWHEED AL HAKEEMIYAH ONLY WAY TO IMPLEMENT SHARIAH",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Tawheed/TAWHEED AL HAKEEMIYAH ONLY WAY TO IMPLEMENT SHARIAH - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=Tawheed%2FTAWHEED%20AL%20HAKEEMIYAH%20ONLY%20WAY%20TO%20IMPLEMENT%20SHARIAH%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/extracted/d17f4338067f7f.png"
+  },
+  {
+    "type": "audio",
+    "id": 223,
+    "title": "The 13 Shades Of Kufr",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "The 13 Shades Of Kufr.mp3",
+    "href": "audio.html?archive=The%2013%20Shades%20Of%20Kufr.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 224,
+    "title": "The 15 Shades of Kufr",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "The 15 Shades of Kufr.mp3",
+    "href": "audio.html?archive=The%2015%20Shades%20of%20Kufr.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 225,
+    "title": "The 17 Shades of Shirk (dars)",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "The 17 Shades of Shirk (dars).mp3",
+    "href": "audio.html?archive=The%2017%20Shades%20of%20Shirk%20%28dars%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 226,
+    "title": "The 4 Branches Of Tauheed",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Tawheed/The 4 Branches Of Tauheed.mp3",
+    "href": "audio.html?archive=Tawheed%2FThe%204%20Branches%20Of%20Tauheed.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 227,
     "title": "THEY DO NOT LOVE ALLAH",
-    "sub": "Aqeedah",
+    "sub": "Aqeedah & Tawheed",
     "archive": "THEY DO NOT LOVE ALLAH - Abdallah Al Faisal.mp3",
     "href": "audio.html?archive=THEY%20DO%20NOT%20LOVE%20ALLAH%20-%20Abdallah%20Al%20Faisal.mp3"
   },
   {
     "type": "audio",
-    "id": 497,
-    "title": "They Shall Reap What They Sow and You Shall Reap What You Sow (08.22.11)",
-    "sub": "General Lectures",
-    "archive": "They Shall Reap What They Sow and You Shall Reap What You Sow (08.22.11).mp3",
-    "href": "audio.html?archive=They%20Shall%20Reap%20What%20They%20Sow%20and%20You%20Shall%20Reap%20What%20You%20Sow%20%2808.22.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 498,
-    "title": "They Shall Reap What They Sow and You Shall Reap What You Sow 08",
-    "sub": "General Lectures",
-    "archive": "They_Shall_Reap_What_They_Sow_and_You_Shall_Reap_What_You_Sow_08.mp3",
-    "href": "audio.html?archive=They_Shall_Reap_What_They_Sow_and_You_Shall_Reap_What_You_Sow_08.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 499,
+    "id": 228,
     "title": "THIRTY FIVE SIGNS OF A HYPOCRITE",
-    "sub": "Aqeedah",
+    "sub": "Aqeedah & Tawheed",
     "archive": "THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal.mp3",
     "href": "audio.html?archive=THIRTY%20FIVE%20SIGNS%20OF%20A%20HYPOCRITE%20-%20Abdallah%20Al%20Faisal.mp3"
   },
   {
     "type": "audio",
-    "id": 500,
-    "title": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT",
-    "sub": "Refutations",
-    "archive": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=THOSE%20WHO%20DISBELIEVE%20FIGHT%20IN%20THE%20CAUSE%20OF%20TAGHUT%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg"
-  },
-  {
-    "type": "audio",
-    "id": 501,
-    "title": "Towards Watering Down The Holy Quran",
-    "sub": "Refutations",
-    "archive": "Towards Watering Down The Holy Quran(1).mp3",
-    "href": "audio.html?archive=Towards%20Watering%20Down%20The%20Holy%20Quran%281%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 502,
+    "id": 229,
     "title": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT",
-    "sub": "Aqeedah",
+    "sub": "Aqeedah & Tawheed",
     "archive": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.mp3",
     "href": "audio.html?archive=TRADE%20THAT%20SAVES%20ONE%20FROM%20PAINFUL%20TORMENT%20-%20Abdallah%20Al%20Faisal.mp3",
     "thumb": "thumb/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
-    "id": 503,
+    "id": 230,
     "title": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR",
-    "sub": "Aqeedah",
+    "sub": "Aqeedah & Tawheed",
     "archive": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR - Abdallah Al Faisal.mp3",
     "href": "audio.html?archive=TWENTY%20FIVE%20THINGS%20THAT%20MAKES%20YOU%20A%20KAAFIR%20-%20Abdallah%20Al%20Faisal.mp3",
     "thumb": "thumb/extracted/40f8d0fb22e4b9.jpg"
   },
   {
     "type": "audio",
-    "id": 504,
+    "id": 231,
+    "title": "What is Al-Wala wal-Bara — Explanation of core Islamic fundamentals",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Al-Wala wal-Bara by shaykh Abdullah Faisal.mp3",
+    "href": "audio.html?archive=Al-Wala%20wal-Bara%20by%20shaykh%20Abdullah%20Faisal.mp3",
+    "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 232,
+    "title": "WHAT MAKES YOU A KAFIR",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=WHAT%20MAKES%20YOU%20A%20KAFIR%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 233,
+    "title": "Where Is Allah SWT (07.08.11)",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "Where Is Allah SWT (07.08.11).mp3",
+    "href": "audio.html?archive=Where%20Is%20Allah%20SWT%20%2807.08.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 234,
+    "title": "Why is takfir important",
+    "sub": "Aqeedah & Tawheed",
+    "archive": "conf_imped_takfir.mp3",
+    "href": "audio.html?archive=conf_imped_takfir.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 235,
+    "title": "IJTIHAAD MASLAHA",
+    "sub": "Islamic Knowledge",
+    "archive": "IJTIHAAD MASLAHA - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=IJTIHAAD%20MASLAHA%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 236,
+    "title": "ROLE OF THE MASJID",
+    "sub": "Islamic Knowledge",
+    "archive": "ROLE OF THE MASJID - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=ROLE%20OF%20THE%20MASJID%20-%20Shaykh%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 237,
+    "title": "Dreams -Their Significance And Meanings – Part 1",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Dreams  -Their Significance And Meanings – Part 1.mp3",
+    "href": "audio.html?archive=Dreams%20%20-Their%20Significance%20And%20Meanings%20%E2%80%93%20Part%201.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 238,
+    "title": "Challenges Facing the Muslim Ummah - Part 2",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Challenges Facing the Muslim Ummah - Part 2.mp3",
+    "href": "audio.html?archive=Challenges%20Facing%20the%20Muslim%20Ummah%20-%20Part%202.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 239,
+    "title": "AT Conference — Every Ummah Needs A State",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Conference/AT Conference - Shaikh Abdullah Faisal - Every Ummah Needs A State.mp3",
+    "href": "audio.html?archive=Conference%2FAT%20Conference%20-%20Shaikh%20Abdullah%20Faisal%20-%20Every%20Ummah%20Needs%20A%20State.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 240,
+    "title": "AT Conference — Ideological Warfare",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Conference/AT Conference - Shaikh Abdullah Faisal - Ideological Warfare.mp3",
+    "href": "audio.html?archive=Conference%2FAT%20Conference%20-%20Shaikh%20Abdullah%20Faisal%20-%20Ideological%20Warfare.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 241,
+    "title": "AT Conference — The Barking Dogs Of Jahannum",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Conference/AT Conference - Shaikh Abdillah Faisal - The Barking Dogs Of Jahannum.mp3",
+    "href": "audio.html?archive=Conference%2FAT%20Conference%20-%20Shaikh%20Abdillah%20Faisal%20-%20The%20Barking%20Dogs%20Of%20Jahannum.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 242,
+    "title": "Black Magic (06.29.11)",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Black Magic (06.29.11).mp3",
+    "href": "audio.html?archive=Black%20Magic%20%2806.29.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 243,
+    "title": "CANCERS IN THE BODY OF THE UMMAH",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "CANCERS IN THE BODY OF THE UMMAH - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=CANCERS%20IN%20THE%20BODY%20OF%20THE%20UMMAH%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 244,
+    "title": "Challenges Facing the Ummah",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Challenges Facing the Ummah.mp3",
+    "href": "audio.html?archive=Challenges%20Facing%20the%20Ummah.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 245,
+    "title": "Changing the Goalpost",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Changing the Goalpost.mp3",
+    "href": "audio.html?archive=Changing%20the%20Goalpost.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 246,
+    "title": "Human Rights",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Sheikh Abdullah Faisal - Human Rights.mp3",
+    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Human%20Rights.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 247,
+    "title": "Human Soul (10.06.11)",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Human Soul (10.06.11).mp3",
+    "href": "audio.html?archive=Human%20Soul%20%2810.06.11%29.mp3",
+    "thumb": "thumb/extracted/b5590561372303.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 248,
+    "title": "Ideological Warfare",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Sheikh Abdullah Faisal - Ideological Warfare.mp3",
+    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Ideological%20Warfare.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 249,
+    "title": "ISLAM AND THE WEST",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "ISLAM AND THE WEST - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=ISLAM%20AND%20THE%20WEST%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 250,
+    "title": "ISLAM THE MOST HYGIENIC RELIGION",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "ISLAM THE MOST HYGIENIC RELIGION - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=ISLAM%20THE%20MOST%20HYGIENIC%20RELIGION%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 251,
+    "title": "ISLAM UNDER SIEGE",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "ISLAM UNDER SIEGE - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=ISLAM%20UNDER%20SIEGE%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 252,
+    "title": "JUDGEMENT DAY",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "JUDGEMENT DAY - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=JUDGEMENT%20DAY%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 253,
+    "title": "Judgment Day (07.27.11)",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Judgment Day (07.27.11).mp3",
+    "href": "audio.html?archive=Judgment%20Day%20%2807.27.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 254,
+    "title": "LEADERSHIP IN ISLAM",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "LEADERSHIP IN ISLAM.mp3",
+    "href": "audio.html?archive=LEADERSHIP%20IN%20ISLAM.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 255,
+    "title": "Mad Dogs of the Middle East [REVISITED] (10.20.11)",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Mad Dogs of the Middle East [REVISITED] (10.20.11).mp3",
+    "href": "audio.html?archive=Mad%20Dogs%20of%20the%20Middle%20East%20%5BREVISITED%5D%20%2810.20.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 256,
+    "title": "Magic (06.24.11)",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Magic (06.24.11).mp3",
+    "href": "audio.html?archive=Magic%20%2806.24.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 257,
+    "title": "Muslim Character",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Sheikh Abdullah Faisal - Muslim Character.mp3",
+    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Muslim%20Character.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 258,
+    "title": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL)",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=MYSTERIES%20OF%20THE%20SOUL%20EXPOUNDED%20%28HUMAN%20SOUL%29%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 259,
+    "title": "Natural Disasters - Why They Occur",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Natural Disasters - Why They Occur.mp3",
+    "href": "audio.html?archive=Natural%20Disasters%20-%20Why%20They%20Occur.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 260,
+    "title": "NATURAL DISASTERS, WHY DO THEY OCCUR",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "NATURAL DISASTERS, WHY DO THEY OCCUR - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=NATURAL%20DISASTERS%2C%20WHY%20DO%20THEY%20OCCUR%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 261,
+    "title": "Natural Instincts",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Sheikh Abdullah Faisal - Natural Instincts.mp3",
+    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Natural%20Instincts.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 262,
+    "title": "REALITY OF POVERTY",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "REALITY OF POVERTY - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=REALITY%20OF%20POVERTY%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/extracted/4e609eaf7de4d7.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 263,
+    "title": "SIGNS BEFORE JUDGEMENT DAY",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "SIGNS BEFORE JUDGEMENT DAY - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=SIGNS%20BEFORE%20JUDGEMENT%20DAY%20-%20Shaykh%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 264,
+    "title": "Signs Before The Day of Judgement",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Sheikh Abdullah Faisal - Signs Before The Day of Judgement.mp3",
+    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Signs%20Before%20The%20Day%20of%20Judgement.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 265,
+    "title": "Tawba",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Sheikh Abdullah Faisal - Tawba.mp3",
+    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Tawba.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 266,
+    "title": "The Jinn",
+    "sub": "Ummah & Contemporary Issues",
+    "archive": "Sheikh Abdullah Faisal - The Jinn.mp3",
+    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20The%20Jinn.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 267,
     "title": "Unity The Way Forward",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Sheikh Abdullah Faisal - Unity The Way Forward.mp3",
@@ -4256,7 +2281,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 505,
+    "id": 268,
     "title": "Unity The Way Forward copy",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Sheikh Abdullah Faisal - Unity The Way Forward copy.mp3",
@@ -4264,7 +2289,758 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 506,
+    "id": 269,
+    "title": "Weakness of Mankind [Part 1] (06.25.11)",
+    "sub": "General Lectures",
+    "archive": "Weakness of Mankind [Part 1] (06.25.11).mp3",
+    "href": "audio.html?archive=Weakness%20of%20Mankind%20%5BPart%201%5D%20%2806.25.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 270,
+    "title": "Weakness of Mankind [Part 2] (06.26.11)",
+    "sub": "General Lectures",
+    "archive": "Weakness of Mankind [Part 2] (06.26.11).mp3",
+    "href": "audio.html?archive=Weakness%20of%20Mankind%20%5BPart%202%5D%20%2806.26.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 271,
+    "title": "Weakness of Mankind [Part 3] (06.27.11)",
+    "sub": "General Lectures",
+    "archive": "Weakness of Mankind [Part 3] (06.27.11).mp3",
+    "href": "audio.html?archive=Weakness%20of%20Mankind%20%5BPart%203%5D%20%2806.27.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 272,
+    "title": "20 Laws of Nature",
+    "sub": "General Lectures",
+    "archive": "20 Laws of Nature.mp3",
+    "href": "audio.html?archive=20%20Laws%20of%20Nature.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 273,
+    "title": "25 promises of Allah (swt) to the believer",
+    "sub": "General Lectures",
+    "archive": "25 promises of Allah (swt) to the believer.mp3",
+    "href": "audio.html?archive=25%20promises%20of%20Allah%20%28swt%29%20to%20the%20believer.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 274,
+    "title": "4 Crucial Tests from Allah (06.27.11)",
+    "sub": "General Lectures",
+    "archive": "4 Crucial Tests from Allah (06.27.11).mp3",
+    "href": "audio.html?archive=4%20Crucial%20Tests%20from%20Allah%20%2806.27.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 275,
+    "title": "6 Gifts from Allah to Muhammad (SAW) (06.29.11)",
+    "sub": "General Lectures",
+    "archive": "6 Gifts from Allah to Muhammad (SAW) (06.29.11).mp3",
+    "href": "audio.html?archive=6%20Gifts%20from%20Allah%20to%20Muhammad%20%28SAW%29%20%2806.29.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 276,
+    "title": "6 Special Favors of Allah to Muhammad [SAW] (12.20.11)",
+    "sub": "General Lectures",
+    "archive": "6 Special Favors of Allah to Muhammad [SAW] (12.20.11).mp3",
+    "href": "audio.html?archive=6%20Special%20Favors%20of%20Allah%20to%20Muhammad%20%5BSAW%5D%20%2812.20.11%29.mp3",
+    "thumb": "thumb/extracted/bdca466316cd4b.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 277,
+    "title": "7 Worst Sins (07.11.11)",
+    "sub": "General Lectures",
+    "archive": "7 Worst Sins (07.11.11).mp3",
+    "href": "audio.html?archive=7%20Worst%20Sins%20%2807.11.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 278,
+    "title": "9 Reasons They Hate Us",
+    "sub": "General Lectures",
+    "archive": "9 Reasons They Hate Us.mp3",
+    "href": "audio.html?archive=9%20Reasons%20They%20Hate%20Us.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 279,
+    "title": "Abrogated Evidences (06.29.11)",
+    "sub": "General Lectures",
+    "archive": "Abrogated Evidences (06.29.11).mp3",
+    "href": "audio.html?archive=Abrogated%20Evidences%20%2806.29.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 280,
+    "title": "Allah Blesses Whom He Wills (06.28.11)",
+    "sub": "General Lectures",
+    "archive": "Allah Blesses Whom He Wills (06.28.11).mp3",
+    "href": "audio.html?archive=Allah%20Blesses%20Whom%20He%20Wills%20%2806.28.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 281,
+    "title": "Allah is Sufficient to Take Revenge Against Them (08.24.11)",
+    "sub": "General Lectures",
+    "archive": "Allah is Sufficient to Take Revenge Against Them (08.24.11).mp3",
+    "href": "audio.html?archive=Allah%20is%20Sufficient%20to%20Take%20Revenge%20Against%20Them%20%2808.24.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 282,
+    "title": "Allah's Sunnah Will Never Change (11.15.11 to 11.16.11)",
+    "sub": "General Lectures",
+    "archive": "Allah's Sunnah Will Never Change (11.15.11 to 11.16.11).mp3",
+    "href": "audio.html?archive=Allah%27s%20Sunnah%20Will%20Never%20Change%20%2811.15.11%20to%2011.16.11%29.mp3",
+    "thumb": "thumb/extracted/e15c7f8eb0f20c.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 283,
+    "title": "Be And It Is (07.12.11)",
+    "sub": "General Lectures",
+    "archive": "Be And It Is (07.12.11).mp3",
+    "href": "audio.html?archive=Be%20And%20It%20Is%20%2807.12.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 284,
+    "title": "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11)",
+    "sub": "General Lectures",
+    "archive": "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11).mp3",
+    "href": "audio.html?archive=Beware%20of%20Going%20Against%20the%20Ijmaa3%20of%20the%20Ummah%20%2808.02.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 285,
+    "title": "Don't Envy the Kuffaar for their Jahiliyya (07.26.11)",
+    "sub": "General Lectures",
+    "archive": "Don't Envy the Kuffaar for their Jahiliyya (07.26.11).mp3",
+    "href": "audio.html?archive=Don%27t%20Envy%20the%20Kuffaar%20for%20their%20Jahiliyya%20%2807.26.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 286,
+    "title": "Dua - The weapon of a believer",
+    "sub": "General Lectures",
+    "archive": "Dua - The weapon of a believer.mp3",
+    "href": "audio.html?archive=Dua%20-%20The%20weapon%20of%20a%20believer.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 287,
+    "title": "Exposing Those Who Insult Allah (07.10.11)",
+    "sub": "General Lectures",
+    "archive": "Exposing Those Who Insult Allah (07.10.11).mp3",
+    "href": "audio.html?archive=Exposing%20Those%20Who%20Insult%20Allah%20%2807.10.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 288,
+    "title": "Islam was Revealed in Stages (08.28.11)",
+    "sub": "General Lectures",
+    "archive": "Islam was Revealed in Stages (08.28.11).mp3",
+    "href": "audio.html?archive=Islam%20was%20Revealed%20in%20Stages%20%2808.28.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 289,
+    "title": "Jahiliyya Gives Everyone a Raw Deal (07.24.11)",
+    "sub": "General Lectures",
+    "archive": "Jahiliyya Gives Everyone a Raw Deal (07.24.11).mp3",
+    "href": "audio.html?archive=Jahiliyya%20Gives%20Everyone%20a%20Raw%20Deal%20%2807.24.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 290,
+    "title": "KNOWLEDGE",
+    "sub": "General Lectures",
+    "archive": "KNOWLEDGE - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=KNOWLEDGE%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 291,
+    "title": "Kufaar and the Fear Factor (07.03.11)",
+    "sub": "General Lectures",
+    "archive": "Kufaar and the Fear Factor (07.03.11).mp3",
+    "href": "audio.html?archive=Kufaar%20and%20the%20Fear%20Factor%20%2807.03.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 292,
+    "title": "Love and Hate for Allah's Sake",
+    "sub": "General Lectures",
+    "archive": "Sheikh Abdullah Faisal - Love and Hate for Allah's Sake.mp3",
+    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Love%20and%20Hate%20for%20Allah%27s%20Sake.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 293,
+    "title": "Might Without Wisdom is a Recipe for Disaster (07.27.11)",
+    "sub": "General Lectures",
+    "archive": "Might Without Wisdom is a Recipe for Disaster (07.27.11).mp3",
+    "href": "audio.html?archive=Might%20Without%20Wisdom%20is%20a%20Recipe%20for%20Disaster%20%2807.27.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 294,
+    "title": "Our 6 Sacred Possessions",
+    "sub": "General Lectures",
+    "archive": "Our 6 Sacred Possessions.mp3",
+    "href": "audio.html?archive=Our%206%20Sacred%20Possessions.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 295,
+    "title": "Paradise is Exclusive to the Muslims (07.04.11)",
+    "sub": "General Lectures",
+    "archive": "Paradise is Exclusive to the Muslims (07.04.11).mp3",
+    "href": "audio.html?archive=Paradise%20is%20Exclusive%20to%20the%20Muslims%20%2807.04.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 296,
+    "title": "Power of Intercession (07.18.11)",
+    "sub": "General Lectures",
+    "archive": "Power of Intercession (07.18.11).mp3",
+    "href": "audio.html?archive=Power%20of%20Intercession%20%2807.18.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 297,
+    "title": "Reality of FGM (08.25.11)",
+    "sub": "General Lectures",
+    "archive": "Reality of FGM (08.25.11).mp3",
+    "href": "audio.html?archive=Reality%20of%20FGM%20%2808.25.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 298,
+    "title": "Reality of Poverty (02.27.12)",
+    "sub": "General Lectures",
+    "archive": "Reality of Poverty (02.27.12).mp3",
+    "href": "audio.html?archive=Reality%20of%20Poverty%20%2802.27.12%29.mp3",
+    "thumb": "thumb/extracted/290cda89069668.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 299,
+    "title": "Resist To Exist (07.07.11)",
+    "sub": "General Lectures",
+    "archive": "Resist To Exist (07.07.11).mp3",
+    "href": "audio.html?archive=Resist%20To%20Exist%20%2807.07.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 300,
+    "title": "Satan's Web (dars)",
+    "sub": "General Lectures",
+    "archive": "Satan's Web (dars).mp3",
+    "href": "audio.html?archive=Satan%27s%20Web%20%28dars%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 301,
+    "title": "Satans Web (12.17.11)",
+    "sub": "General Lectures",
+    "archive": "Satans Web (12.17.11).mp3",
+    "href": "audio.html?archive=Satans%20Web%20%2812.17.11%29.mp3",
+    "thumb": "thumb/extracted/63ebe64c1fee50.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 302,
+    "title": "Tawassul",
+    "sub": "General Lectures",
+    "archive": "Tawassul.mp3",
+    "href": "audio.html?archive=Tawassul.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 303,
+    "title": "The 10 things Muslims Cannot Doubt",
+    "sub": "General Lectures",
+    "archive": "The 10 things Muslims Cannot Doubt.mp3",
+    "href": "audio.html?archive=The%2010%20things%20Muslims%20Cannot%20Doubt.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 304,
+    "title": "The 21 Reasons Why The Quran Is A Wise Book",
+    "sub": "General Lectures",
+    "archive": "The 21 Reasons Why The Quran Is A Wise Book.mp3",
+    "href": "audio.html?archive=The%2021%20Reasons%20Why%20The%20Quran%20Is%20A%20Wise%20Book.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 305,
+    "title": "The 35 People Allah SWT Abhors",
+    "sub": "General Lectures",
+    "archive": "The 35 People Allah SWT Abhors.mp3",
+    "href": "audio.html?archive=The%2035%20People%20Allah%20SWT%20Abhors.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 306,
+    "title": "The 36 People Allah SWT Loves",
+    "sub": "General Lectures",
+    "archive": "The 36 People Allah SWT Loves.mp3",
+    "href": "audio.html?archive=The%2036%20People%20Allah%20SWT%20Loves.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 307,
+    "title": "The 5 Ahkaam of Shariah",
+    "sub": "General Lectures",
+    "archive": "The 5 Ahkaam of Shariah.mp3",
+    "href": "audio.html?archive=The%205%20Ahkaam%20of%20Shariah.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 308,
+    "title": "The 5 Needs of Mankind2",
+    "sub": "General Lectures",
+    "archive": "The 5 Needs of Mankind2.mp3",
+    "href": "audio.html?archive=The%205%20Needs%20of%20Mankind2.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 309,
+    "title": "The 8 Gates of Paradise",
+    "sub": "General Lectures",
+    "archive": "the_8_Gates_of_Paradise_mp3.mp3",
+    "href": "audio.html?archive=the_8_Gates_of_Paradise_mp3.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 310,
+    "title": "the 9 reasons kuffaar hate us",
+    "sub": "General Lectures",
+    "archive": "the 9 reasons kuffaar hate us.mp3",
+    "href": "audio.html?archive=the%209%20reasons%20kuffaar%20hate%20us.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 311,
+    "title": "The American Ban on Muslims",
+    "sub": "General Lectures",
+    "archive": "The American Ban on Muslims.mp3",
+    "href": "audio.html?archive=The%20American%20Ban%20on%20Muslims.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 312,
+    "title": "The Bombing of the Goofi Soofis",
+    "sub": "General Lectures",
+    "archive": "The Bombing of the Goofi Soofis.mp3",
+    "href": "audio.html?archive=The%20Bombing%20of%20the%20Goofi%20Soofis.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 313,
+    "title": "The Evil Consequences Of Insulting The Rasool (Saw)",
+    "sub": "General Lectures",
+    "archive": "The Evil Consequences Of Insulting The Rasool (Saw).mp3",
+    "href": "audio.html?archive=The%20Evil%20Consequences%20Of%20Insulting%20The%20Rasool%20%28Saw%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 314,
+    "title": "The Evil Effects of Sins",
+    "sub": "General Lectures",
+    "archive": "The Evil Effects of Sins.mp3",
+    "href": "audio.html?archive=The%20Evil%20Effects%20of%20Sins.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 315,
+    "title": "The Evil Rulers Of The World",
+    "sub": "General Lectures",
+    "archive": "The Evil Rulers Of The World.mp3",
+    "href": "audio.html?archive=The%20Evil%20Rulers%20Of%20The%20World.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 316,
+    "title": "The farewell khutbah 14-07-14",
+    "sub": "General Lectures",
+    "archive": "The farewell khutbah 14-07-14.mp3",
+    "href": "audio.html?archive=The%20farewell%20khutbah%2014-07-14.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 317,
+    "title": "The Holy Spirit (06.18.11)",
+    "sub": "General Lectures",
+    "archive": "The Holy Spirit (06.18.11).mp3",
+    "href": "audio.html?archive=The%20Holy%20Spirit%20%2806.18.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 318,
+    "title": "The Hyenas Of The Ummah",
+    "sub": "General Lectures",
+    "archive": "The Hyenas Of The Ummah.mp3",
+    "href": "audio.html?archive=The%20Hyenas%20Of%20The%20Ummah.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 319,
+    "title": "The Importance of Intention",
+    "sub": "General Lectures",
+    "archive": "The Importance of Intention.mp3",
+    "href": "audio.html?archive=The%20Importance%20of%20Intention.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 320,
+    "title": "The Philosophy of the islamic Jurisprudence",
+    "sub": "General Lectures",
+    "archive": "The Philosophy of the islamic Jurisprudence.mp3",
+    "href": "audio.html?archive=The%20Philosophy%20of%20the%20islamic%20Jurisprudence.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 321,
+    "title": "The Reality of Fitnah",
+    "sub": "General Lectures",
+    "archive": "The Reality of Fitnah.mp3",
+    "href": "audio.html?archive=The%20Reality%20of%20Fitnah.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 322,
+    "title": "The Reality of Racism",
+    "sub": "General Lectures",
+    "archive": "The Reality of Racism.mp3",
+    "href": "audio.html?archive=The%20Reality%20of%20Racism.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 323,
+    "title": "The Ship Is Sinking (07.13.11)",
+    "sub": "General Lectures",
+    "archive": "The Ship Is Sinking (07.13.11).mp3",
+    "href": "audio.html?archive=The%20Ship%20Is%20Sinking%20%2807.13.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 324,
+    "title": "the Siege of al Aqsa",
+    "sub": "General Lectures",
+    "archive": "the Siege of al Aqsa.mp3",
+    "href": "audio.html?archive=the%20Siege%20of%20al%20Aqsa.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 325,
+    "title": "the usa Bombing of Assad, a Muslim perspective",
+    "sub": "General Lectures",
+    "archive": "the usa Bombing of Assad, a Muslim perspective.mp3",
+    "href": "audio.html?archive=the%20usa%20Bombing%20of%20Assad%2C%20a%20Muslim%20perspective.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 326,
+    "title": "the Weaknesses of Mankind2",
+    "sub": "General Lectures",
+    "archive": "the Weaknesses of Mankind2.mp3",
+    "href": "audio.html?archive=the%20Weaknesses%20of%20Mankind2.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 327,
+    "title": "The wisdom of the Prophet (saw) 07-15-14",
+    "sub": "General Lectures",
+    "archive": "The wisdom of the Prophet (saw) 07-15-14.mp3",
+    "href": "audio.html?archive=The%20wisdom%20of%20the%20Prophet%20%28saw%29%2007-15-14.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 328,
+    "title": "Their hearts Are Alike",
+    "sub": "General Lectures",
+    "archive": "Their hearts Are Alike.mp3",
+    "href": "audio.html?archive=Their%20hearts%20Are%20Alike.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 329,
+    "title": "Them versus Us",
+    "sub": "General Lectures",
+    "archive": "Sheikh Abdullah Faisal - Them versus Us.mp3",
+    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20Them%20versus%20Us.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 330,
+    "title": "They Shall Reap What They Sow and You Shall Reap What You Sow (08.22.11)",
+    "sub": "General Lectures",
+    "archive": "They Shall Reap What They Sow and You Shall Reap What You Sow (08.22.11).mp3",
+    "href": "audio.html?archive=They%20Shall%20Reap%20What%20They%20Sow%20and%20You%20Shall%20Reap%20What%20You%20Sow%20%2808.22.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 331,
+    "title": "They Shall Reap What They Sow and You Shall Reap What You Sow 08",
+    "sub": "General Lectures",
+    "archive": "They_Shall_Reap_What_They_Sow_and_You_Shall_Reap_What_You_Sow_08.mp3",
+    "href": "audio.html?archive=They_Shall_Reap_What_They_Sow_and_You_Shall_Reap_What_You_Sow_08.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 332,
+    "title": "We Hear & We Obey (06.23.11)",
+    "sub": "General Lectures",
+    "archive": "We Hear & We Obey (06.23.11).mp3",
+    "href": "audio.html?archive=We%20Hear%20%26%20We%20Obey%20%2806.23.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 333,
+    "title": "We Shall Never Follow the Jews & the Christians (07.14.11)",
+    "sub": "General Lectures",
+    "archive": "We Shall Never Follow the Jews & the Christians (07.14.11).mp3",
+    "href": "audio.html?archive=We%20Shall%20Never%20Follow%20the%20Jews%20%26%20the%20Christians%20%2807.14.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 334,
+    "title": "We Shall Never give up Better For Worse (07.16.11)",
+    "sub": "General Lectures",
+    "archive": "We Shall Never give up Better For Worse (07.16.11).mp3",
+    "href": "audio.html?archive=We%20Shall%20Never%20give%20up%20Better%20For%20Worse%20%2807.16.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 335,
+    "title": "Wish For Death If Your Claim Is The Truth (06.25.11)",
+    "sub": "General Lectures",
+    "archive": "Wish For Death If Your Claim Is The Truth (06.25.11).mp3",
+    "href": "audio.html?archive=Wish%20For%20Death%20If%20Your%20Claim%20Is%20The%20Truth%20%2806.25.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 336,
+    "title": "Worst Con Artist is the Man Who Cons Himself (08.03.11)",
+    "sub": "General Lectures",
+    "archive": "Worst Con Artist is the Man Who Cons Himself (08.03.11).mp3",
+    "href": "audio.html?archive=Worst%20Con%20Artist%20is%20the%20Man%20Who%20Cons%20Himself%20%2808.03.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 337,
+    "title": "You Can't Have Your Cake & Eat It Too (07.20.11)",
+    "sub": "General Lectures",
+    "archive": "You Can't Have Your Cake & Eat It Too (07.20.11).mp3",
+    "href": "audio.html?archive=You%20Can%27t%20Have%20Your%20Cake%20%26%20Eat%20It%20Too%20%2807.20.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 338,
+    "title": "Description of Paradise [Part 1] (07.04.11)",
+    "sub": "Fiqh & Worship",
+    "archive": "Description of Paradise [Part 1] (07.04.11).mp3",
+    "href": "audio.html?archive=Description%20of%20Paradise%20%5BPart%201%5D%20%2807.04.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 339,
+    "title": "Description of Paradise [Part 2] (07.05.11)",
+    "sub": "Fiqh & Worship",
+    "archive": "Description of Paradise [Part 2] (07.05.11).mp3",
+    "href": "audio.html?archive=Description%20of%20Paradise%20%5BPart%202%5D%20%2807.05.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 340,
+    "title": "4 Pillars of Qadr (12.24.11)",
+    "sub": "Fiqh & Worship",
+    "archive": "4 Pillars of Qadr (12.24.11).mp3",
+    "href": "audio.html?archive=4%20Pillars%20of%20Qadr%20%2812.24.11%29.mp3",
+    "thumb": "thumb/extracted/dba37ed1feed4a.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 341,
+    "title": "Application of Revelation - Quran, Sunnah, ijmaa and Qiyas",
+    "sub": "Fiqh & Worship",
+    "archive": "Application of Revelation - Quran, Sunnah, ijmaa and Qiyas.mp3",
+    "href": "audio.html?archive=Application%20of%20Revelation%20-%20Quran%2C%20Sunnah%2C%20ijmaa%20and%20Qiyas.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 342,
+    "title": "Application of Revelation Daroora Mafhoom Qawl Sahaba Urf Amal of Madina",
+    "sub": "Fiqh & Worship",
+    "archive": "Application_of_Revelation_Daroora_Mafhoom_Qawl_Sahaba_Urf_Amal_of_Madina_mp3.mp3",
+    "href": "audio.html?archive=Application_of_Revelation_Daroora_Mafhoom_Qawl_Sahaba_Urf_Amal_of_Madina_mp3.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 343,
+    "title": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan",
+    "sub": "Fiqh & Worship",
+    "archive": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan.mp3",
+    "href": "audio.html?archive=Application%20of%20Revelation-ijtihaad%2C%20Maslaha%2C%20istishaab%20%26%20istihsaan.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 344,
+    "title": "Description of the Prophet's Prayer (06.19.11)",
+    "sub": "Fiqh & Worship",
+    "archive": "Description of the Prophet's Prayer (06.19.11).mp3",
+    "href": "audio.html?archive=Description%20of%20the%20Prophet%27s%20Prayer%20%2806.19.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 345,
+    "title": "Fasting - What You Need To Know (08.01.11)",
+    "sub": "Fiqh & Worship",
+    "archive": "Fasting - What You Need To Know (08.01.11).mp3",
+    "href": "audio.html?archive=Fasting%20-%20What%20You%20Need%20To%20Know%20%2808.01.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 346,
+    "title": "Fiqhul Waaqi (04.30.12)",
+    "sub": "Fiqh & Worship",
+    "archive": "Fiqhul Waaqi (04.30.12).mp3",
+    "href": "audio.html?archive=Fiqhul%20Waaqi%20%2804.30.12%29.mp3",
+    "thumb": "thumb/extracted/077f32b6dc714f.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 347,
+    "title": "How To Make Hajj (10.25.11)[v2]",
+    "sub": "Fiqh & Worship",
+    "archive": "How To Make Hajj (10.25.11)[v2].mp3",
+    "href": "audio.html?archive=How%20To%20Make%20Hajj%20%2810.25.11%29%5Bv2%5D.mp3",
+    "thumb": "thumb/extracted/3e8344b2f72015.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 348,
+    "title": "Lailatul Qadr explained (dars)",
+    "sub": "Fiqh & Worship",
+    "archive": "Lailatul Qadr explained (dars).mp3",
+    "href": "audio.html?archive=Lailatul%20Qadr%20explained%20%28dars%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 349,
+    "title": "Merits of Salah (06.23.11)",
+    "sub": "Fiqh & Worship",
+    "archive": "Merits of Salah (06.23.11).mp3",
+    "href": "audio.html?archive=Merits%20of%20Salah%20%2806.23.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 350,
+    "title": "PUNISHMENT OF THE GRAVE",
+    "sub": "Fiqh & Worship",
+    "archive": "PUNISHMENT OF THE GRAVE - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=PUNISHMENT%20OF%20THE%20GRAVE%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 351,
+    "title": "Rules and Merits of Zakah (09.01.11)",
+    "sub": "Fiqh & Worship",
+    "archive": "Rules and Merits of Zakah (09.01.11).mp3",
+    "href": "audio.html?archive=Rules%20and%20Merits%20of%20Zakah%20%2809.01.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 352,
+    "title": "Rules Of Fasting",
+    "sub": "Fiqh & Worship",
+    "archive": "Rules Of Fasting.mp3",
+    "href": "audio.html?archive=Rules%20Of%20Fasting.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 353,
+    "title": "Rules of Fasting (07.31.11)",
+    "sub": "Fiqh & Worship",
+    "archive": "Rules of Fasting (07.31.11).mp3",
+    "href": "audio.html?archive=Rules%20of%20Fasting%20%2807.31.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 354,
+    "title": "Salah of the Rasool described",
+    "sub": "Fiqh & Worship",
+    "archive": "Salah of the Rasool described.mp3",
+    "href": "audio.html?archive=Salah%20of%20the%20Rasool%20described.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 355,
+    "title": "The 4 Pillars Of Qadr",
+    "sub": "Fiqh & Worship",
+    "archive": "The 4 Pillars Of Qadr.mp3",
+    "href": "audio.html?archive=The%204%20Pillars%20Of%20Qadr.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 356,
+    "title": "The Fiqh of Asking Questions",
+    "sub": "Fiqh & Worship",
+    "archive": "The_Fiqh_of_Asking_Questions_mp3.mp3",
+    "href": "audio.html?archive=The_Fiqh_of_Asking_Questions_mp3.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 357,
+    "title": "The Fiqh of Clothing",
+    "sub": "Fiqh & Worship",
+    "archive": "The Fiqh of Clothing.mp3",
+    "href": "audio.html?archive=The%20Fiqh%20of%20Clothing.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 358,
+    "title": "the Fiqh of Food-1",
+    "sub": "Fiqh & Worship",
+    "archive": "the Fiqh of Food-1.mp3",
+    "href": "audio.html?archive=the%20Fiqh%20of%20Food-1.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 359,
+    "title": "The Fiqh of Trading",
+    "sub": "Fiqh & Worship",
+    "archive": "The Fiqh of Trading.mp3",
+    "href": "audio.html?archive=The%20Fiqh%20of%20Trading.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 360,
+    "title": "The Rules of Fasting",
+    "sub": "Fiqh & Worship",
+    "archive": "The Rules of Fasting.mp3",
+    "href": "audio.html?archive=The%20Rules%20of%20Fasting.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 361,
+    "title": "The virtues of Dhikr",
+    "sub": "Fiqh & Worship",
+    "archive": "The virtues of Dhikr.mp3",
+    "href": "audio.html?archive=The%20virtues%20of%20Dhikr.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 362,
     "title": "VIRTUES OF MAKKAH",
     "sub": "Fiqh & Worship",
     "archive": "VIRTUES OF MAKKAH - Shaykh Faisal.mp3",
@@ -4273,153 +3049,162 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 507,
-    "title": "VIRTUES OF RAMADAN",
-    "sub": "Ramadan",
-    "archive": "Ramadan/VIRTUES OF RAMADAN - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=Ramadan%2FVIRTUES%20OF%20RAMADAN%20-%20Abdallah%20Al%20Faisal.mp3"
+    "id": 363,
+    "title": "DECLARATION OF WAR - Osama Bin Laden",
+    "sub": "Jihad",
+    "archive": "DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=DECLARATION%20OF%20WAR%20-%20Osama%20Bin%20Laden%20Translated%20by%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 508,
-    "title": "We Hear & We Obey (06.23.11)",
-    "sub": "General Lectures",
-    "archive": "We Hear & We Obey (06.23.11).mp3",
-    "href": "audio.html?archive=We%20Hear%20%26%20We%20Obey%20%2806.23.11%29.mp3"
+    "id": 364,
+    "title": "IMPORTANCE OF HIJRAH",
+    "sub": "Jihad",
+    "archive": "IMPORTANCE OF HIJRAH - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=IMPORTANCE%20OF%20HIJRAH%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/IMPORTANCE OF HIJRAH - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 509,
-    "title": "We Shall Never Follow the Jews & the Christians (07.14.11)",
-    "sub": "General Lectures",
-    "archive": "We Shall Never Follow the Jews & the Christians (07.14.11).mp3",
-    "href": "audio.html?archive=We%20Shall%20Never%20Follow%20the%20Jews%20%26%20the%20Christians%20%2807.14.11%29.mp3"
+    "id": 365,
+    "title": "JIHAD AIMS & OBJECTIVES",
+    "sub": "Jihad",
+    "archive": "Jihad/JIHAD AIMS & OBJECTIVES - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=Jihad%2FJIHAD%20AIMS%20%26%20OBJECTIVES%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/extracted/5943e51a1e4e99.jpg"
   },
   {
     "type": "audio",
-    "id": 510,
-    "title": "We Shall Never give up Better For Worse (07.16.11)",
-    "sub": "General Lectures",
-    "archive": "We Shall Never give up Better For Worse (07.16.11).mp3",
-    "href": "audio.html?archive=We%20Shall%20Never%20give%20up%20Better%20For%20Worse%20%2807.16.11%29.mp3"
+    "id": 366,
+    "title": "REQUIREMENTS OF JIHAD",
+    "sub": "Jihad",
+    "archive": "Jihad/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=Jihad%2FREQUIREMENTS%20OF%20JIHAD%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
-    "id": 511,
-    "title": "Weakness of Mankind [Part 1] (06.25.11)",
-    "sub": "General Lectures",
-    "archive": "Weakness of Mankind [Part 1] (06.25.11).mp3",
-    "href": "audio.html?archive=Weakness%20of%20Mankind%20%5BPart%201%5D%20%2806.25.11%29.mp3"
+    "id": 367,
+    "title": "SALAFI JIHADI",
+    "sub": "Jihad",
+    "archive": "Jihad/SALAFI JIHADI - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=Jihad%2FSALAFI%20JIHADI%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png"
   },
   {
     "type": "audio",
-    "id": 512,
-    "title": "Weakness of Mankind [Part 2] (06.26.11)",
-    "sub": "General Lectures",
-    "archive": "Weakness of Mankind [Part 2] (06.26.11).mp3",
-    "href": "audio.html?archive=Weakness%20of%20Mankind%20%5BPart%202%5D%20%2806.26.11%29.mp3"
+    "id": 368,
+    "title": "Can the Khilaafa survive",
+    "sub": "Khilafah",
+    "archive": "Can the Khilaafa survive.mp3",
+    "href": "audio.html?archive=Can%20the%20Khilaafa%20survive.mp3"
   },
   {
     "type": "audio",
-    "id": 513,
-    "title": "Weakness of Mankind [Part 3] (06.27.11)",
-    "sub": "General Lectures",
-    "archive": "Weakness of Mankind [Part 3] (06.27.11).mp3",
-    "href": "audio.html?archive=Weakness%20of%20Mankind%20%5BPart%203%5D%20%2806.27.11%29.mp3"
+    "id": 369,
+    "title": "Future of the Caliphate",
+    "sub": "Khilafah",
+    "archive": "Khilafah/Future of the Caliphate.mp3",
+    "href": "audio.html?archive=Khilafah%2FFuture%20of%20the%20Caliphate.mp3"
   },
   {
     "type": "audio",
-    "id": 514,
-    "title": "What is Al-Wala wal-Bara — Explanation of core Islamic fundamentals",
-    "sub": "Aqeedah",
-    "archive": "Al-Wala wal-Bara by shaykh Abdullah Faisal.mp3",
-    "href": "audio.html?archive=Al-Wala%20wal-Bara%20by%20shaykh%20Abdullah%20Faisal.mp3",
-    "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png"
+    "id": 370,
+    "title": "Is the caliphate valid",
+    "sub": "Khilafah",
+    "archive": "Khilafah/Is the caliphate valid.mp3",
+    "href": "audio.html?archive=Khilafah%2FIs%20the%20caliphate%20valid.mp3"
   },
   {
     "type": "audio",
-    "id": 515,
-    "title": "WHAT MAKES YOU A KAFIR",
-    "sub": "Aqeedah",
-    "archive": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=WHAT%20MAKES%20YOU%20A%20KAFIR%20-%20Abdallah%20Al%20Faisal.mp3",
-    "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png"
+    "id": 371,
+    "title": "Is the dawla khawarij?",
+    "sub": "Khilafah",
+    "archive": "Khilafah/is-the-dawla-khawarij.mp3",
+    "href": "audio.html?archive=Khilafah%2Fis-the-dawla-khawarij.mp3"
   },
   {
     "type": "audio",
-    "id": 516,
-    "title": "Where Is Allah SWT (07.08.11)",
-    "sub": "Aqeedah",
-    "archive": "Where Is Allah SWT (07.08.11).mp3",
-    "href": "audio.html?archive=Where%20Is%20Allah%20SWT%20%2807.08.11%29.mp3"
+    "id": 372,
+    "title": "KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED",
+    "sub": "Khilafah",
+    "archive": "Khilafah/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=Khilafah%2FKHILAFAH%20GREATEST%20PROPHESIES%20THIS%20UMMAH%20WITNESSED%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 517,
-    "title": "White Supremacy - A Cancer In The Body of Humanity",
+    "id": 373,
+    "title": "KHILAFAH SURVIVE & REVIVE",
+    "sub": "Khilafah",
+    "archive": "Khilafah/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=Khilafah%2FKHILAFAH%20SURVIVE%20%26%20REVIVE%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 374,
+    "title": "MANHAJ FOR ESTABLISHING SHARIAH",
+    "sub": "Khilafah",
+    "archive": "MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=MANHAJ%20FOR%20ESTABLISHING%20SHARIAH%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 375,
+    "title": "Message from the Calipha (HA) to the Ummah",
+    "sub": "Khilafah",
+    "archive": "Message from the Calipha (HA) to the Ummah.mp3",
+    "href": "audio.html?archive=Message%20from%20the%20Calipha%20%28HA%29%20to%20the%20Ummah.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 376,
+    "title": "OBLIGATION TO ESTABLISH KHILAFAH",
+    "sub": "Khilafah",
+    "archive": "Khilafah/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=Khilafah%2FOBLIGATION%20TO%20ESTABLISH%20KHILAFAH%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 377,
+    "title": "The Enemies of the Caliphate",
+    "sub": "Khilafah",
+    "archive": "Khilafah/The Enemies of the Caliphate.mp3",
+    "href": "audio.html?archive=Khilafah%2FThe%20Enemies%20of%20the%20Caliphate.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 378,
+    "title": "THE IMPORTANCE OF SHARI`AH",
+    "sub": "Khilafah",
+    "archive": "Khilafah/THE IMPORTANCE OF SHARI`AH.mp3",
+    "href": "audio.html?archive=Khilafah%2FTHE%20IMPORTANCE%20OF%20SHARI%60AH.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 379,
+    "title": "SHIA GREATEST ENEMY WITHIN",
     "sub": "Refutations",
-    "archive": "White Supremacy - A Cancer In The Body of Humanity.mp3",
-    "href": "audio.html?archive=White%20Supremacy%20-%20A%20Cancer%20In%20The%20Body%20of%20Humanity.mp3"
+    "archive": "Shia/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=Shia%2FSHIA%20GREATEST%20ENEMY%20WITHIN%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 518,
-    "title": "Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11)",
-    "sub": "Who Are You?",
-    "archive": "Who Are You?/Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11).mp3",
-    "href": "audio.html?archive=Who%20Are%20You%3F%2FWho%20Are%20You%20%5BPart%201%5D%20You%20Are%20Witnesses%20Over%20Mankind%20%2807.21.11%29.mp3"
+    "id": 380,
+    "title": "SHIA KNOW YOUR ENEMY",
+    "sub": "Refutations",
+    "archive": "Shia/SHIA KNOW YOUR ENEMY - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=Shia%2FSHIA%20KNOW%20YOUR%20ENEMY%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/SHIA KNOW YOUR ENEMY - Shaykh Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 519,
-    "title": "Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11)",
-    "sub": "Who Are You?",
-    "archive": "Who Are You?/Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11).mp3",
-    "href": "audio.html?archive=Who%20Are%20You%3F%2FWho%20Are%20You%20%5BPart%202%5D%20Succesful%20Indeed%20Are%20The%20Believers%20%2807.23.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 520,
-    "title": "Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11)",
-    "sub": "Who Are You?",
-    "archive": "Who Are You?/Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11).mp3",
-    "href": "audio.html?archive=Who%20Are%20You%3F%2FWho%20Are%20You%20%5BPart%203%5D%20You%20Are%20the%20Righteous%20Servants%20of%20Ar-Rahman%20%2807.24.11%29.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 521,
-    "title": "Who Are You – Part 1",
-    "sub": "Who Are You?",
-    "archive": "Who Are You?/Who Are You – Part 1.mp3",
-    "href": "audio.html?archive=Who%20Are%20You%3F%2FWho%20Are%20You%20%E2%80%93%20Part%201.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 522,
-    "title": "Who Are You – Part 2",
-    "sub": "Who Are You?",
-    "archive": "Who Are You?/Who Are You – Part 2.mp3",
-    "href": "audio.html?archive=Who%20Are%20You%3F%2FWho%20Are%20You%20%E2%80%93%20Part%202.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 523,
-    "title": "Who are You2",
-    "sub": "Who Are You?",
-    "archive": "Who Are You?/Who are You2.mp3",
-    "href": "audio.html?archive=Who%20Are%20You%3F%2FWho%20are%20You2.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 524,
-    "title": "Why is takfir important",
-    "sub": "Aqeedah",
-    "archive": "conf_imped_takfir.mp3",
-    "href": "audio.html?archive=conf_imped_takfir.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 525,
+    "id": 381,
     "title": "Why we hate the shia",
     "sub": "Refutations",
     "archive": "Shia/Why we hate the shia.mp3",
@@ -4427,7 +3212,558 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 526,
+    "id": 382,
+    "title": "MADKHALIS",
+    "sub": "Refutations",
+    "archive": "MADKHALIS - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=MADKHALIS%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/MADKHALIS - Shaykh Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 383,
+    "title": "SAUDI SALAFI",
+    "sub": "Refutations",
+    "archive": "SAUDI SALAFI - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=SAUDI%20SALAFI%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 384,
+    "title": "DEMOCRATES - Those Who Participate In Democratic Election",
+    "sub": "Refutations",
+    "archive": "DEMOCRATES - Those Who Participate In Democratic Election.mp3",
+    "href": "audio.html?archive=DEMOCRATES%20-%20Those%20Who%20Participate%20In%20Democratic%20Election.mp3",
+    "thumb": "thumb/DEMOCRATES - Those Who Participate In Democratic Election.png"
+  },
+  {
+    "type": "audio",
+    "id": 385,
+    "title": "MELTDOWN OF DEMOCRACY",
+    "sub": "Refutations",
+    "archive": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=MELTDOWN%20OF%20DEMOCRACY%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 386,
+    "title": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM",
+    "sub": "Refutations",
+    "archive": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=NATIONALISM%20SECULARISM%20DEMOCRACY%20OR%20ISLAM%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 387,
+    "title": "SECULARISM",
+    "sub": "Refutations",
+    "archive": "SECULARISM - Shaykh Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=SECULARISM%20-%20Shaykh%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/SECULARISM - Shaykh Abdallah Al Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 388,
+    "title": "SHARIAH VS MAN MADE LAWS",
+    "sub": "Refutations",
+    "archive": "SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=SHARIAH%20VS%20MAN%20MADE%20LAWS%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 389,
+    "title": "KHAWARIJ AND THEIR AQEEDAH",
+    "sub": "Refutations",
+    "archive": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=KHAWARIJ%20AND%20THEIR%20AQEEDAH%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 390,
+    "title": "The Barking Dogs of Jahannam (Refuting the modern day Khawarij)",
+    "sub": "Refutations",
+    "archive": "the Barking dogs of jahannam.mp3",
+    "href": "audio.html?archive=the%20Barking%20dogs%20of%20jahannam.mp3",
+    "thumb": "thumb/The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 391,
+    "title": "NO PEACE WITH THE JEWS",
+    "sub": "Refutations",
+    "archive": "NO PEACE WITH THE JEWS - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=NO%20PEACE%20WITH%20THE%20JEWS%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 392,
+    "title": "REALITY OF THE JEWS",
+    "sub": "Refutations",
+    "archive": "REALITY OF THE JEWS - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=REALITY%20OF%20THE%20JEWS%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/REALITY OF THE JEWS - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 393,
+    "title": "THE REALITY OF THE JEWS",
+    "sub": "Refutations",
+    "archive": "THE REALITY OF THE JEWS.mp3",
+    "href": "audio.html?archive=THE%20REALITY%20OF%20THE%20JEWS.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 394,
+    "title": "Entering the Lizard Hole",
+    "sub": "Refutations",
+    "archive": "Entering the Lizard Hole.mp3",
+    "href": "audio.html?archive=Entering%20the%20Lizard%20Hole.mp3",
+    "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 395,
+    "title": "GAY LESBIAN LGBT",
+    "sub": "Refutations",
+    "archive": "GAY LESBIAN LGBT - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=GAY%20LESBIAN%20LGBT%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 396,
+    "title": "KASHF USH SHUBUHAAT",
+    "sub": "Refutations",
+    "archive": "KASHF USH SHUBUHAAT - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=KASHF%20USH%20SHUBUHAAT%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 397,
+    "title": "MURJIA",
+    "sub": "Refutations",
+    "archive": "MURJIA - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=MURJIA%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/MURJIA - Shaykh Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 398,
+    "title": "Removing the Doubts",
+    "sub": "Refutations",
+    "archive": "Removing the Doubts.mp3",
+    "href": "audio.html?archive=Removing%20the%20Doubts.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 399,
+    "title": "DO NOT TAKE MY ENEMY AS YOUR FRIEND",
+    "sub": "Refutations",
+    "archive": "DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=DO%20NOT%20TAKE%20MY%20ENEMY%20AS%20YOUR%20FRIEND%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 400,
+    "title": "DO NOT TAKE THE KUFFAR AS ALLIES",
+    "sub": "Refutations",
+    "archive": "DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=DO%20NOT%20TAKE%20THE%20KUFFAR%20AS%20ALLIES%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 401,
+    "title": "IFK SLANDER OF AYSHA",
+    "sub": "Refutations",
+    "archive": "IFK  SLANDER OF AYSHA - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=IFK%20%20SLANDER%20OF%20AYSHA%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/IFK  SLANDER OF AYSHA - Shaykh Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 402,
+    "title": "INSULTING THE PROPHET ﷺ",
+    "sub": "Refutations",
+    "archive": "INSULTING THE PROPHET ﷺ  - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=INSULTING%20THE%20PROPHET%20%EF%B7%BA%20%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/INSULTING THE PROPHET ABDALLAH AL FAISAL.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 403,
+    "title": "Radical Islamic Terrorism",
+    "sub": "Refutations",
+    "archive": "Radical Islamic Terrorism.mp3",
+    "href": "audio.html?archive=Radical%20Islamic%20Terrorism.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 404,
+    "title": "Radical islamic terrorism2",
+    "sub": "Refutations",
+    "archive": "Radical islamic terrorism2.mp3",
+    "href": "audio.html?archive=Radical%20islamic%20terrorism2.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 405,
+    "title": "Refuting Geert Wilders (07.07.11)",
+    "sub": "Refutations",
+    "archive": "Refutation/Refuting Geert Wilders (07.07.11).mp3",
+    "href": "audio.html?archive=Refutation%2FRefuting%20Geert%20Wilders%20%2807.07.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 406,
+    "title": "Refuting The Lie Concerning Kufr Doona Kufr",
+    "sub": "Refutations",
+    "archive": "Refutation/Refuting The Lie Concerning Kufr Doona Kufr.mp3",
+    "href": "audio.html?archive=Refutation%2FRefuting%20The%20Lie%20Concerning%20Kufr%20Doona%20Kufr.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 407,
+    "title": "Refuting The Lie Concerning The Excuse of Ignorance",
+    "sub": "Refutations",
+    "archive": "Refutation/Refuting The Lie Concerning The Excuse of Ignorance.mp3",
+    "href": "audio.html?archive=Refutation%2FRefuting%20The%20Lie%20Concerning%20The%20Excuse%20of%20Ignorance.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 408,
+    "title": "REJECTING THE TAGHUT",
+    "sub": "Refutations",
+    "archive": "REJECTING THE TAGHUT - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=REJECTING%20THE%20TAGHUT%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 409,
+    "title": "Slander of Aisha (RA) (07.12.11)",
+    "sub": "Refutations",
+    "archive": "Slander of Aisha (RA) (07.12.11).mp3",
+    "href": "audio.html?archive=Slander%20of%20Aisha%20%28RA%29%20%2807.12.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 410,
+    "title": "Slander of Aisha (RA) [REVISITED] (08.14.11)",
+    "sub": "Refutations",
+    "archive": "Slander of Aisha (RA) [REVISITED] (08.14.11).mp3",
+    "href": "audio.html?archive=Slander%20of%20Aisha%20%28RA%29%20%5BREVISITED%5D%20%2808.14.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 411,
+    "title": "THE DOMAIN OF APOSTASY",
+    "sub": "Refutations",
+    "archive": "THE DOMAIN OF APOSTASY.mp3",
+    "href": "audio.html?archive=THE%20DOMAIN%20OF%20APOSTASY.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 412,
+    "title": "THEY ARE THE WORST OF CREATURES",
+    "sub": "Refutations",
+    "archive": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=THEY%20ARE%20THE%20WORST%20OF%20CREATURES%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 413,
+    "title": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT",
+    "sub": "Refutations",
+    "archive": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=THOSE%20WHO%20DISBELIEVE%20FIGHT%20IN%20THE%20CAUSE%20OF%20TAGHUT%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 414,
+    "title": "Towards Watering Down The Holy Quran",
+    "sub": "Refutations",
+    "archive": "Towards Watering Down The Holy Quran(1).mp3",
+    "href": "audio.html?archive=Towards%20Watering%20Down%20The%20Holy%20Quran%281%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 415,
+    "title": "White Supremacy - A Cancer In The Body of Humanity",
+    "sub": "Refutations",
+    "archive": "White Supremacy - A Cancer In The Body of Humanity.mp3",
+    "href": "audio.html?archive=White%20Supremacy%20-%20A%20Cancer%20In%20The%20Body%20of%20Humanity.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 416,
+    "title": "Jokers in the Pack - Refuting the Ashaa'ira (09.22.11)",
+    "sub": "Jokers in the Pack",
+    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Ashaa'ira (09.22.11).mp3",
+    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Ashaa%27ira%20%2809.22.11%29.mp3",
+    "thumb": "thumb/extracted/787a2e39c0a084.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 417,
+    "title": "Jokers in the Pack - Refuting the Barelvis (09.15.11)",
+    "sub": "Jokers in the Pack",
+    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Barelvis (09.15.11).mp3",
+    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Barelvis%20%2809.15.11%29.mp3",
+    "thumb": "thumb/extracted/aa33845bb947d5.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 418,
+    "title": "Jokers in the Pack - Refuting the Democrats (09.25.11)",
+    "sub": "Jokers in the Pack",
+    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Democrats (09.25.11).mp3",
+    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Democrats%20%2809.25.11%29.mp3",
+    "thumb": "thumb/extracted/6fc2d99d26e86c.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 419,
+    "title": "Jokers in the Pack - Refuting the Goofy Sufi (09.07.11 to 09.08.11)",
+    "sub": "Jokers in the Pack",
+    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Goofy Sufi (09.07.11 to 09.08.11).mp3",
+    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Goofy%20Sufi%20%2809.07.11%20to%2009.08.11%29.mp3",
+    "thumb": "thumb/extracted/7ec1dd62855308.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 420,
+    "title": "Jokers in the Pack - Refuting the Hizb ut Tahrir (09.17.11 to 09.18.11)",
+    "sub": "Jokers in the Pack",
+    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Hizb ut Tahrir (09.17.11 to 09.18.11).mp3",
+    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Hizb%20ut%20Tahrir%20%2809.17.11%20to%2009.18.11%29.mp3",
+    "thumb": "thumb/extracted/e82be5cea574d4.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 421,
+    "title": "Jokers in the Pack - Refuting the Khawarij (09.04.11)[v2]",
+    "sub": "Jokers in the Pack",
+    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Khawarij (09.04.11)[v2].mp3",
+    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Khawarij%20%2809.04.11%29%5Bv2%5D.mp3",
+    "thumb": "thumb/extracted/c7cb6d95434762.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 422,
+    "title": "Jokers in the Pack - Refuting the Murjia (09.05.11)",
+    "sub": "Jokers in the Pack",
+    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Murjia (09.05.11).mp3",
+    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Murjia%20%2809.05.11%29.mp3",
+    "thumb": "thumb/extracted/fc48e24075122d.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 423,
+    "title": "Jokers in the Pack - Refuting the Mutazila (09.06.11)",
+    "sub": "Jokers in the Pack",
+    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Mutazila (09.06.11).mp3",
+    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Mutazila%20%2809.06.11%29.mp3",
+    "thumb": "thumb/extracted/0d0b3abc5b8d23.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 424,
+    "title": "Jokers in the Pack - Refuting the Parvezis (09.20.11)",
+    "sub": "Jokers in the Pack",
+    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Parvezis (09.20.11).mp3",
+    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Parvezis%20%2809.20.11%29.mp3",
+    "thumb": "thumb/extracted/d7425d6a8787a3.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 425,
+    "title": "Jokers in the Pack - Refuting the Qadiyaani (09.21.11)",
+    "sub": "Jokers in the Pack",
+    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Qadiyaani (09.21.11).mp3",
+    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Qadiyaani%20%2809.21.11%29.mp3",
+    "thumb": "thumb/extracted/09d526bcf4824f.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 426,
+    "title": "Jokers in the Pack - Refuting the Saudi Salafi (09.10.11 to 09.11.11)",
+    "sub": "Jokers in the Pack",
+    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Saudi Salafi (09.10.11 to 09.11.11).mp3",
+    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Saudi%20Salafi%20%2809.10.11%20to%2009.11.11%29.mp3",
+    "thumb": "thumb/extracted/7624621f770187.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 427,
+    "title": "Jokers in the Pack - Refuting the Shia (09.12.11 to 09.14.11)",
+    "sub": "Jokers in the Pack",
+    "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Shia (09.12.11 to 09.14.11).mp3",
+    "href": "audio.html?archive=Jokers%20in%20the%20pack%2FJokers%20in%20the%20Pack%20-%20Refuting%20the%20Shia%20%2809.12.11%20to%2009.14.11%29.mp3",
+    "thumb": "thumb/extracted/01d0797b9f6e26.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 428,
+    "title": "The 5 Desperate Zindeeq - Brelvis (02.16.12)",
+    "sub": "The 5 Desperate Zindeeq",
+    "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Brelvis (02.16.12).mp3",
+    "href": "audio.html?archive=The%205%20Desperate%20Zindeeq%2FThe%205%20Desperate%20Zindeeq%20-%20Brelvis%20%2802.16.12%29.mp3",
+    "thumb": "thumb/extracted/b04fec2582151f.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 429,
+    "title": "The 5 Desperate Zindeeq - Democrats (evening dars 02.18.12)",
+    "sub": "The 5 Desperate Zindeeq",
+    "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Democrats (evening dars 02.18.12).mp3",
+    "href": "audio.html?archive=The%205%20Desperate%20Zindeeq%2FThe%205%20Desperate%20Zindeeq%20-%20Democrats%20%28evening%20dars%2002.18.12%29.mp3",
+    "thumb": "thumb/extracted/41b5aff9acda6a.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 430,
+    "title": "The 5 Desperate Zindeeq - Goofy Sufi (02.11.12)",
+    "sub": "The 5 Desperate Zindeeq",
+    "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Goofy Sufi (02.11.12).mp3",
+    "href": "audio.html?archive=The%205%20Desperate%20Zindeeq%2FThe%205%20Desperate%20Zindeeq%20-%20Goofy%20Sufi%20%2802.11.12%29.mp3",
+    "thumb": "thumb/extracted/b8aa5601d8bc82.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 431,
+    "title": "The 5 Desperate Zindeeq - MADkhalis (02.14.12 to 02.15.12)",
+    "sub": "The 5 Desperate Zindeeq",
+    "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - MADkhalis (02.14.12 to 02.15.12).mp3",
+    "href": "audio.html?archive=The%205%20Desperate%20Zindeeq%2FThe%205%20Desperate%20Zindeeq%20-%20MADkhalis%20%2802.14.12%20to%2002.15.12%29.mp3",
+    "thumb": "thumb/extracted/136b8efb67a320.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 432,
+    "title": "The 5 Desperate Zindeeq - Shady Shia (02.12.12 to 02.13.12)",
+    "sub": "The 5 Desperate Zindeeq",
+    "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Shady Shia (02.12.12 to 02.13.12).mp3",
+    "href": "audio.html?archive=The%205%20Desperate%20Zindeeq%2FThe%205%20Desperate%20Zindeeq%20-%20Shady%20Shia%20%2802.12.12%20to%2002.13.12%29.mp3",
+    "thumb": "thumb/extracted/b44b317b263042.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 433,
+    "title": "DEVIL'S DECEPTION OF SAUDI SALAFIS (1990s)",
+    "sub": "The Devil's Deception",
+    "archive": "The Devils Deception/DEVIL'S DECEPTION OF SAUDI SALAFIS - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=The%20Devils%20Deception%2FDEVIL%27S%20DECEPTION%20OF%20SAUDI%20SALAFIS%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 434,
+    "title": "Devils Deception of the Saudi Salafis (07.13.11)",
+    "sub": "The Devil's Deception",
+    "archive": "The Devils Deception/Devils Deception of the Saudi Salafis (07.13.11).mp3",
+    "href": "audio.html?archive=The%20Devils%20Deception%2FDevils%20Deception%20of%20the%20Saudi%20Salafis%20%2807.13.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 435,
+    "title": "The Devil's Deception of the Aathir",
+    "sub": "The Devil's Deception",
+    "archive": "The Devils Deception/The Devil's Deception of the Aathir.mp3",
+    "href": "audio.html?archive=The%20Devils%20Deception%2FThe%20Devil%27s%20Deception%20of%20the%20Aathir.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 436,
+    "title": "The Devil's Deception of The Murji",
+    "sub": "The Devil's Deception",
+    "archive": "The Devils Deception/09.Sheikh Abdullah Faisal - The Devil's Deception of The Murji.mp3",
+    "href": "audio.html?archive=The%20Devils%20Deception%2F09.Sheikh%20Abdullah%20Faisal%20-%20The%20Devil%27s%20Deception%20of%20The%20Murji.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 437,
+    "title": "The Devil's Deception of the Murjia",
+    "sub": "The Devil's Deception",
+    "archive": "The Devils Deception/The Devil's Deception of the Murjia.mp3",
+    "href": "audio.html?archive=The%20Devils%20Deception%2FThe%20Devil%27s%20Deception%20of%20the%20Murjia.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 438,
+    "title": "The Devil's Deception of The Qadiani",
+    "sub": "The Devil's Deception",
+    "archive": "The Devils Deception/08.Sheikh Abdullah Faisal - The Devil's Deception of The Qadiani.mp3",
+    "href": "audio.html?archive=The%20Devils%20Deception%2F08.Sheikh%20Abdullah%20Faisal%20-%20The%20Devil%27s%20Deception%20of%20The%20Qadiani.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 439,
+    "title": "The Devil's Deception of The Shia",
+    "sub": "The Devil's Deception",
+    "archive": "The Devils Deception/06.Sheikh Abdullah Faisal - The Devil's Deception of The Shia.mp3",
+    "href": "audio.html?archive=The%20Devils%20Deception%2F06.Sheikh%20Abdullah%20Faisal%20-%20The%20Devil%27s%20Deception%20of%20The%20Shia.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 440,
+    "title": "47 Signs of the Wicked Scholar",
+    "sub": "Wicked Scholars",
+    "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3",
+    "href": "audio.html?archive=47%20signs%20of%20the%20wicked%20scholer%20by%20Sheikh%20Abdullah%20Faisal%20-Full-.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 441,
+    "title": "BEWARE OF THE WICKED SCHOLARS",
+    "sub": "Wicked Scholars",
+    "archive": "Wicked_Scholars/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=Wicked_Scholars%2FBEWARE%20OF%20THE%20WICKED%20SCHOLARS%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 442,
+    "title": "DEFINITION OF A SCHOLAR",
+    "sub": "Wicked Scholars",
+    "archive": "DEFINITION OF A SCHOLAR - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=DEFINITION%20OF%20A%20SCHOLAR%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 443,
+    "title": "EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN",
+    "sub": "Wicked Scholars",
+    "archive": "Wicked_Scholars/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=Wicked_Scholars%2FEVIL%20WICKED%20SCHOLARS%20LETTER%20TO%20AMEER%20AL%20MUMENEEN%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 444,
+    "title": "LET THE SCHOLARS BEWARE",
+    "sub": "Wicked Scholars",
+    "archive": "LET THE SCHOLARS BEWARE - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=LET%20THE%20SCHOLARS%20BEWARE%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 445,
+    "title": "SEVENTEEN SIGNS OF THE WICKED SCHOLAR",
+    "sub": "Wicked Scholars",
+    "archive": "Wicked_Scholars/SEVENTEEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal.mp3",
+    "href": "audio.html?archive=Wicked_Scholars%2FSEVENTEEN%20SIGNS%20OF%20THE%20WICKED%20SCHOLAR%20-%20Abdullah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 446,
     "title": "WICKED SCHOLAR",
     "sub": "Wicked Scholars",
     "archive": "Wicked_Scholars/WICKED SCHOLAR - Abdallah Al Faisal.mp3",
@@ -4435,7 +3771,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 527,
+    "id": 447,
     "title": "WICKED SCHOLARS ARE LIKE A DOG",
     "sub": "Wicked Scholars",
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3",
@@ -4444,15 +3780,332 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 528,
-    "title": "Wish For Death If Your Claim Is The Truth (06.25.11)",
-    "sub": "General Lectures",
-    "archive": "Wish For Death If Your Claim Is The Truth (06.25.11).mp3",
-    "href": "audio.html?archive=Wish%20For%20Death%20If%20Your%20Claim%20Is%20The%20Truth%20%2806.25.11%29.mp3"
+    "id": 448,
+    "title": "Science of Quran - Part 1",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science of Quran - Part 1.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%201.mp3"
   },
   {
     "type": "audio",
-    "id": 529,
+    "id": 449,
+    "title": "Science of Quran - Part 2 - The History of the Quran's Descent",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science of Quran - Part 2 - The History of the Quran's Descent.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%202%20-%20The%20History%20of%20the%20Quran%27s%20Descent.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 450,
+    "title": "Science of Quran - Part 2 - The Wahy",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science of Quran - Part 2 - The Wahy.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%202%20-%20The%20Wahy.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 451,
+    "title": "Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%204%20-%20The%2020%20Reasons%20Why%20The%20Quran%20Is%20A%20Wise%20Book.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 452,
+    "title": "Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20Of%20Quran%20-%20Part%205%20-%20The%20Characteristics%20Of%20The%20Makkan%20And%20Madinan%20Surahs.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 453,
+    "title": "Science Of Quran - Part 6 - The causes Of Revelation I",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science Of Quran - Part 6 - The causes Of Revelation I.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20Of%20Quran%20-%20Part%206%20-%20The%20causes%20Of%20Revelation%20I.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 454,
+    "title": "Science Of Quran - Part 7 - The causes Of Revelation II",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science Of Quran - Part 7 - The causes Of Revelation II.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20Of%20Quran%20-%20Part%207%20-%20The%20causes%20Of%20Revelation%20II.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 455,
+    "title": "Science of Quran - Part 8 - The Causes of Revelation – An Nisa",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science of Quran - Part 8 - The Causes of Revelation – An Nisa.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%208%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20An%20Nisa.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 456,
+    "title": "Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%209%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Al%20Ma%27idah.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 457,
+    "title": "Science of Quran - Part 10 - The Causes of Revelation – Al Imraan",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science of Quran - Part 10 - The Causes of Revelation – Al Imraan.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2010%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Al%20Imraan.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 458,
+    "title": "Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2011%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Al%20Ma%27idah%202.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 459,
+    "title": "Science of Quran - Part 12 - The Causes of Revelation – Al An’am",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science of Quran - Part 12 - The Causes of Revelation – Al An’am.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2012%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Al%20An%E2%80%99am.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 460,
+    "title": "Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2013%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Al%20%E2%80%98Araf.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 461,
+    "title": "Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2014%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Al%20Anfal%20-%20Part%201.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 462,
+    "title": "Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2015%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Tawbah%20%E2%80%93%20Part%201.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 463,
+    "title": "Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2",
+    "sub": "Science in the Quran",
+    "archive": "Science in the quran/Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2.mp3",
+    "href": "audio.html?archive=Science%20in%20the%20quran%2FScience%20of%20Quran%20-%20Part%2016%20-%20The%20Causes%20of%20Revelation%20%E2%80%93%20Tawbah%20%E2%80%93%20Part%202.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 464,
+    "title": "The Animals Of The Holy Quran - Part 1",
+    "sub": "Science in the Quran",
+    "archive": "The Animals Of The Holy Quran - Part 1.mp3",
+    "href": "audio.html?archive=The%20Animals%20Of%20The%20Holy%20Quran%20-%20Part%201.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 465,
+    "title": "The Animals Of The Holy Quran - Part 2",
+    "sub": "Science in the Quran",
+    "archive": "The Animals Of The Holy Quran - Part 2.mp3",
+    "href": "audio.html?archive=The%20Animals%20Of%20The%20Holy%20Quran%20-%20Part%202.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 466,
+    "title": "Prophesies of the Holy Quran (11.22.11 to 11.23.11)",
+    "sub": "Science in the Quran",
+    "archive": "Prophesies of the Holy Quran (11.22.11 to 11.23.11).mp3",
+    "href": "audio.html?archive=Prophesies%20of%20the%20Holy%20Quran%20%2811.22.11%20to%2011.23.11%29.mp3",
+    "thumb": "thumb/extracted/d6ec668de41ae1.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 467,
+    "title": "Rules of Nikah [Part 1] (06.30.11)",
+    "sub": "Marriage & Family",
+    "archive": "Nikah_Divorce/Rules of Nikah [Part 1] (06.30.11).mp3",
+    "href": "audio.html?archive=Nikah_Divorce%2FRules%20of%20Nikah%20%5BPart%201%5D%20%2806.30.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 468,
+    "title": "Rules of Nikah [Part 2] (07.01.11)",
+    "sub": "Marriage & Family",
+    "archive": "Nikah_Divorce/Rules of Nikah [Part 2] (07.01.11).mp3",
+    "href": "audio.html?archive=Nikah_Divorce%2FRules%20of%20Nikah%20%5BPart%202%5D%20%2807.01.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 469,
+    "title": "Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11)",
+    "sub": "Marriage & Family",
+    "archive": "Nikah_Divorce/Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11).mp3",
+    "href": "audio.html?archive=Nikah_Divorce%2FRules%20of%20Nikah%20%5BPart%203%5D%20Bedroom%20Etiquettes%20In%20Islam%20%2807.02.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 470,
+    "title": "Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11)",
+    "sub": "Marriage & Family",
+    "archive": "Nikah_Divorce/Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11).mp3",
+    "href": "audio.html?archive=Nikah_Divorce%2FRules%20of%20Nikah%20%5BPart%204%5D%20Rights%20of%20the%20Wife%20%26%20Husband%20%2807.03.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 471,
+    "title": "Rules of Divorce [Part 1] (07.06.11)",
+    "sub": "Marriage & Family",
+    "archive": "Nikah_Divorce/Rules of Divorce [Part 1] (07.06.11).mp3",
+    "href": "audio.html?archive=Nikah_Divorce%2FRules%20of%20Divorce%20%5BPart%201%5D%20%2807.06.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 472,
+    "title": "Rules of Divorce [Part 2] Revisited (07.08.11)",
+    "sub": "Marriage & Family",
+    "archive": "Nikah_Divorce/Rules of Divorce [Part 2] Revisited (07.08.11).mp3",
+    "href": "audio.html?archive=Nikah_Divorce%2FRules%20of%20Divorce%20%5BPart%202%5D%20Revisited%20%2807.08.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 473,
+    "title": "The 18 Types Of Women You Should Not Marry",
+    "sub": "Marriage & Family",
+    "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3",
+    "href": "audio.html?archive=Nikah_Divorce%2FThe%2018%20Types%20Of%20Women%20You%20Should%20Not%20Marry.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 474,
+    "title": "The 20 Types Of Men You Should Not Marry",
+    "sub": "Marriage & Family",
+    "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3",
+    "href": "audio.html?archive=Nikah_Divorce%2FThe%2020%20Types%20Of%20Men%20You%20Should%20Not%20Marry.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 475,
+    "title": "the Fiqh of Divorce",
+    "sub": "Marriage & Family",
+    "archive": "Nikah_Divorce/the Fiqh of Divorce.mp3",
+    "href": "audio.html?archive=Nikah_Divorce%2Fthe%20Fiqh%20of%20Divorce.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 476,
+    "title": "The Fiqh of Menses",
+    "sub": "Marriage & Family",
+    "archive": "The Fiqh of Menses.mp3",
+    "href": "audio.html?archive=The%20Fiqh%20of%20Menses.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 477,
+    "title": "Daughters Are Diamonds (06.30.11)",
+    "sub": "Marriage & Family",
+    "archive": "Daughters Are Diamonds (06.30.11).mp3",
+    "href": "audio.html?archive=Daughters%20Are%20Diamonds%20%2806.30.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 478,
+    "title": "LOVE",
+    "sub": "Marriage & Family",
+    "archive": "LOVE - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=LOVE%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/extracted/6d7686edec03e1.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 479,
+    "title": "MARITAL DISCORD (NUSHOOZ)",
+    "sub": "Marriage & Family",
+    "archive": "MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=MARITAL%20DISCORD%20%28NUSHOOZ%29%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 480,
+    "title": "Money Can't Buy True Love (07.02.11)",
+    "sub": "Marriage & Family",
+    "archive": "Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal.mp3",
+    "href": "audio.html?archive=Money%20Can%27t%20Buy%20True%20Love%20%2807.02.11%29%20Shaikh%20Abdullah%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 481,
+    "title": "Muslim Home (12.21.11 to 12.22.11)",
+    "sub": "Marriage & Family",
+    "archive": "Muslim Home (12.21.11 to 12.22.11).mp3",
+    "href": "audio.html?archive=Muslim%20Home%20%2812.21.11%20to%2012.22.11%29.mp3",
+    "thumb": "thumb/extracted/8be0c03a517daa.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 482,
+    "title": "MUSLIM MARRYING NON MUSLIM",
+    "sub": "Marriage & Family",
+    "archive": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=MUSLIM%20MARRYING%20NON%20MUSLIM%20-%20Shaykh%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 483,
+    "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE",
+    "sub": "Marriage & Family",
+    "archive": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=PARENT%20CHILD%20RELATIONSHIP%20%26%20THE%20WESTERN%20CULTURE%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 484,
+    "title": "TAINTED LOVE",
+    "sub": "Marriage & Family",
+    "archive": "TAINTED LOVE - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=TAINTED%20LOVE%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 485,
+    "title": "tainted love 2013.04.20 (evening)",
+    "sub": "Marriage & Family",
+    "archive": "tainted love 2013.04.20 (evening).mp3",
+    "href": "audio.html?archive=tainted%20love%202013.04.20%20%28evening%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 486,
+    "title": "The Muslim Home",
+    "sub": "Marriage & Family",
+    "archive": "Sheikh Abdullah Faisal - The Muslim Home.mp3",
+    "href": "audio.html?archive=Sheikh%20Abdullah%20Faisal%20-%20The%20Muslim%20Home.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 487,
+    "title": "The Muslim Home (dars)",
+    "sub": "Marriage & Family",
+    "archive": "The Muslim Home (dars).mp3",
+    "href": "audio.html?archive=The%20Muslim%20Home%20%28dars%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 488,
     "title": "WIVES & CHILDREN",
     "sub": "Marriage & Family",
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3",
@@ -4461,7 +4114,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 530,
+    "id": 489,
     "title": "WOMEN IN ISLAM",
     "sub": "Marriage & Family",
     "archive": "WOMEN IN ISLAM - Abdallah Al Faisal.mp3",
@@ -4469,19 +4122,358 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 531,
-    "title": "Worst Con Artist is the Man Who Cons Himself (08.03.11)",
-    "sub": "General Lectures",
-    "archive": "Worst Con Artist is the Man Who Cons Himself (08.03.11).mp3",
-    "href": "audio.html?archive=Worst%20Con%20Artist%20is%20the%20Man%20Who%20Cons%20Himself%20%2808.03.11%29.mp3"
+    "id": 490,
+    "title": "18 Merits of Ramadan [Revisited] (07.31.11)",
+    "sub": "Ramadan",
+    "archive": "Ramadan/18 Merits of Ramadan [Revisited] (07.31.11).mp3",
+    "href": "audio.html?archive=Ramadan%2F18%20Merits%20of%20Ramadan%20%5BRevisited%5D%20%2807.31.11%29.mp3"
   },
   {
     "type": "audio",
-    "id": 532,
-    "title": "You Can't Have Your Cake & Eat It Too (07.20.11)",
-    "sub": "General Lectures",
-    "archive": "You Can't Have Your Cake & Eat It Too (07.20.11).mp3",
-    "href": "audio.html?archive=You%20Can%27t%20Have%20Your%20Cake%20%26%20Eat%20It%20Too%20%2807.20.11%29.mp3"
+    "id": 491,
+    "title": "LAYLATUL QADR",
+    "sub": "Ramadan",
+    "archive": "Ramadan/LAYLATUL QADR - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=Ramadan%2FLAYLATUL%20QADR%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 492,
+    "title": "RAMADAN OUR BLESSED GUEST",
+    "sub": "Ramadan",
+    "archive": "Ramadan/RAMADAN OUR BLESSED GUEST - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=Ramadan%2FRAMADAN%20OUR%20BLESSED%20GUEST%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 493,
+    "title": "Ramadhan - The Month of Glory (07.30.11)",
+    "sub": "Ramadan",
+    "archive": "Ramadan/Ramadhan - The Month of Glory (07.30.11).mp3",
+    "href": "audio.html?archive=Ramadan%2FRamadhan%20-%20The%20Month%20of%20Glory%20%2807.30.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 494,
+    "title": "VIRTUES OF RAMADAN",
+    "sub": "Ramadan",
+    "archive": "Ramadan/VIRTUES OF RAMADAN - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=Ramadan%2FVIRTUES%20OF%20RAMADAN%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 495,
+    "title": "DISEASES OF THE HEART",
+    "sub": "Diseases of the Heart",
+    "archive": "Diseases_of_the_Heart/DISEASES OF THE HEART - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=Diseases_of_the_Heart%2FDISEASES%20OF%20THE%20HEART%20-%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png"
+  },
+  {
+    "type": "audio",
+    "id": 496,
+    "title": "Diseases of the Heart (12.26.11 to 12.29.11)",
+    "sub": "Diseases of the Heart",
+    "archive": "Diseases_of_the_Heart/Diseases of the Heart (12.26.11 to 12.29.11).mp3",
+    "href": "audio.html?archive=Diseases_of_the_Heart%2FDiseases%20of%20the%20Heart%20%2812.26.11%20to%2012.29.11%29.mp3",
+    "thumb": "thumb/extracted/076fb5be36c654.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 497,
+    "title": "Diseases of the Heart [Lust]",
+    "sub": "Diseases of the Heart",
+    "archive": "Diseases_of_the_Heart/Diseases of the Heart [Lust]- Shaikh Faisal 2.12.2011 PT Dars.mp3",
+    "href": "audio.html?archive=Diseases_of_the_Heart%2FDiseases%20of%20the%20Heart%20%5BLust%5D-%20Shaikh%20Faisal%202.12.2011%20PT%20Dars.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 498,
+    "title": "Radio Show - Diseases of the Heart (10.29.11)",
+    "sub": "Diseases of the Heart",
+    "archive": "Diseases_of_the_Heart/Radio Show - Diseases of the Heart (10.29.11).mp3",
+    "href": "audio.html?archive=Diseases_of_the_Heart%2FRadio%20Show%20-%20Diseases%20of%20the%20Heart%20%2810.29.11%29.mp3",
+    "thumb": "thumb/extracted/f5c36659976c9e.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 499,
+    "title": "Reality of Sincerity (12.07.11)",
+    "sub": "Diseases of the Heart",
+    "archive": "Reality of Sincerity (12.07.11).mp3",
+    "href": "audio.html?archive=Reality%20of%20Sincerity%20%2812.07.11%29.mp3",
+    "thumb": "thumb/extracted/1e7db6b17401c6.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 500,
+    "title": "Road to Sincerity (07.17.11)",
+    "sub": "Diseases of the Heart",
+    "archive": "Road to Sincerity (07.17.11).mp3",
+    "href": "audio.html?archive=Road%20to%20Sincerity%20%2807.17.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 501,
+    "title": "Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12)",
+    "sub": "Personality Disorders",
+    "archive": "Personality Disorders (Series)/Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12).mp3",
+    "href": "audio.html?archive=Personality%20Disorders%20%28Series%29%2FPersonality%20Disorders%20%5BPart%201%5D%20Paranoia%20and%20Schizophrenia%20%2805.02.12%29.mp3",
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
+  },
+  {
+    "type": "audio",
+    "id": 502,
+    "title": "Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12)",
+    "sub": "Personality Disorders",
+    "archive": "Personality Disorders (Series)/Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12).mp3",
+    "href": "audio.html?archive=Personality%20Disorders%20%28Series%29%2FPersonality%20Disorders%20%5BPart%202%5D%20ADHD%2C%20OCD%20and%20Bipolar%20%2805.03.12%29.mp3",
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
+  },
+  {
+    "type": "audio",
+    "id": 503,
+    "title": "Personality Disorders [Part 3] Narcissistic (05.06.12)",
+    "sub": "Personality Disorders",
+    "archive": "Personality Disorders (Series)/Personality Disorders [Part 3] Narcissistic (05.06.12).mp3",
+    "href": "audio.html?archive=Personality%20Disorders%20%28Series%29%2FPersonality%20Disorders%20%5BPart%203%5D%20Narcissistic%20%2805.06.12%29.mp3",
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
+  },
+  {
+    "type": "audio",
+    "id": 504,
+    "title": "Personality Disorders [Part 4] PTSD (05.07.12)",
+    "sub": "Personality Disorders",
+    "archive": "Personality Disorders (Series)/Personality Disorders [Part 4] PTSD (05.07.12).mp3",
+    "href": "audio.html?archive=Personality%20Disorders%20%28Series%29%2FPersonality%20Disorders%20%5BPart%204%5D%20PTSD%20%2805.07.12%29.mp3",
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
+  },
+  {
+    "type": "audio",
+    "id": 505,
+    "title": "Personality Disorders [Part 5] Anti-Social (05.08.12)",
+    "sub": "Personality Disorders",
+    "archive": "Personality Disorders (Series)/Personality Disorders [Part 5] Anti-Social (05.08.12).mp3",
+    "href": "audio.html?archive=Personality%20Disorders%20%28Series%29%2FPersonality%20Disorders%20%5BPart%205%5D%20Anti-Social%20%2805.08.12%29.mp3",
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
+  },
+  {
+    "type": "audio",
+    "id": 506,
+    "title": "Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11)",
+    "sub": "Who Are You?",
+    "archive": "Who Are You?/Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11).mp3",
+    "href": "audio.html?archive=Who%20Are%20You%3F%2FWho%20Are%20You%20%5BPart%201%5D%20You%20Are%20Witnesses%20Over%20Mankind%20%2807.21.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 507,
+    "title": "Who Are You – Part 1",
+    "sub": "Who Are You?",
+    "archive": "Who Are You?/Who Are You – Part 1.mp3",
+    "href": "audio.html?archive=Who%20Are%20You%3F%2FWho%20Are%20You%20%E2%80%93%20Part%201.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 508,
+    "title": "Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11)",
+    "sub": "Who Are You?",
+    "archive": "Who Are You?/Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11).mp3",
+    "href": "audio.html?archive=Who%20Are%20You%3F%2FWho%20Are%20You%20%5BPart%202%5D%20Succesful%20Indeed%20Are%20The%20Believers%20%2807.23.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 509,
+    "title": "Who Are You – Part 2",
+    "sub": "Who Are You?",
+    "archive": "Who Are You?/Who Are You – Part 2.mp3",
+    "href": "audio.html?archive=Who%20Are%20You%3F%2FWho%20Are%20You%20%E2%80%93%20Part%202.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 510,
+    "title": "Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11)",
+    "sub": "Who Are You?",
+    "archive": "Who Are You?/Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11).mp3",
+    "href": "audio.html?archive=Who%20Are%20You%3F%2FWho%20Are%20You%20%5BPart%203%5D%20You%20Are%20the%20Righteous%20Servants%20of%20Ar-Rahman%20%2807.24.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 511,
+    "title": "Who are You2",
+    "sub": "Who Are You?",
+    "archive": "Who Are You?/Who are You2.mp3",
+    "href": "audio.html?archive=Who%20Are%20You%3F%2FWho%20are%20You2.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 512,
+    "title": "Radio Show - Allah's Blessings to Mankind (08.20.11)",
+    "sub": "Radio Show",
+    "archive": "Radio_Show/Radio Show - Allah's Blessings to Mankind (08.20.11).mp3",
+    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20Allah%27s%20Blessings%20to%20Mankind%20%2808.20.11%29.mp3",
+    "thumb": "thumb/extracted/2676a8f4838e99.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 513,
+    "title": "Radio Show - Challenges Facing the Youth Globally (08.06.11)",
+    "sub": "Radio Show",
+    "archive": "Radio_Show/Radio Show - Challenges Facing the Youth Globally (08.06.11).mp3",
+    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20Challenges%20Facing%20the%20Youth%20Globally%20%2808.06.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 514,
+    "title": "Radio Show - God In Islam (11.19.11)",
+    "sub": "Radio Show",
+    "archive": "Radio_Show/Radio Show - God In Islam (11.19.11).mp3",
+    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20God%20In%20Islam%20%2811.19.11%29.mp3",
+    "thumb": "thumb/extracted/b1693094c8ce71.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 515,
+    "title": "Radio Show - Judgment Day (11.26.11)",
+    "sub": "Radio Show",
+    "archive": "Radio_Show/Radio Show - Judgment Day (11.26.11).mp3",
+    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20Judgment%20Day%20%2811.26.11%29.mp3",
+    "thumb": "thumb/extracted/6862f6ca95768a.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 516,
+    "title": "Radio Show - Manhood (10.22.11)",
+    "sub": "Radio Show",
+    "archive": "Radio_Show/Radio Show - Manhood (10.22.11).mp3",
+    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20Manhood%20%2810.22.11%29.mp3",
+    "thumb": "thumb/extracted/e38b5240266f79.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 517,
+    "title": "Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11)",
+    "sub": "Radio Show",
+    "archive": "Radio_Show/Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11).mp3",
+    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20Muhammad%20%28PBUH%29%20the%20Man%20%26%20the%20Mission%20%2809.03.11%29.mp3",
+    "thumb": "thumb/extracted/f30bbb19eb83af.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 518,
+    "title": "Radio Show - Natural Instincts (07.30.11)",
+    "sub": "Radio Show",
+    "archive": "Radio_Show/Radio Show - Natural Instincts (07.30.11).mp3",
+    "href": "audio.html?archive=Radio_Show%2FRadio%20Show%20-%20Natural%20Instincts%20%2807.30.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 519,
+    "title": "Balanced Nation (12.19.11)",
+    "sub": "Character & Dawah",
+    "archive": "Balanced Nation (12.19.11).mp3",
+    "href": "audio.html?archive=Balanced%20Nation%20%2812.19.11%29.mp3",
+    "thumb": "thumb/extracted/8dcb3b088624c3.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 520,
+    "title": "Etiquettes Of Dawah",
+    "sub": "Character & Dawah",
+    "archive": "Etiquettes Of Dawah.mp3",
+    "href": "audio.html?archive=Etiquettes%20Of%20Dawah.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 521,
+    "title": "Foundations of the Islamic Brotherhood And Sisterhood",
+    "sub": "Character & Dawah",
+    "archive": "Foundations of the Islamic Brotherhood And Sisterhood.mp3",
+    "href": "audio.html?archive=Foundations%20of%20the%20Islamic%20Brotherhood%20And%20Sisterhood.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 522,
+    "title": "Get Your Priorities Right (08.23.11)",
+    "sub": "Character & Dawah",
+    "archive": "Get Your Priorities Right (08.23.11).mp3",
+    "href": "audio.html?archive=Get%20Your%20Priorities%20Right%20%2808.23.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 523,
+    "title": "How to be Sincere to Allah (08.04.11 to 08.07.11)",
+    "sub": "Character & Dawah",
+    "archive": "How to be Sincere to Allah (08.04.11 to 08.07.11).mp3",
+    "href": "audio.html?archive=How%20to%20be%20Sincere%20to%20Allah%20%2808.04.11%20to%2008.07.11%29.mp3",
+    "thumb": "thumb/extracted/4cbffbbbd24ca8.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 524,
+    "title": "How to be Sincere to the Holy Qur'an (08.09.11)",
+    "sub": "Character & Dawah",
+    "archive": "How to be Sincere to the Holy Qur'an (08.09.11).mp3",
+    "href": "audio.html?archive=How%20to%20be%20Sincere%20to%20the%20Holy%20Qur%27an%20%2808.09.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 525,
+    "title": "How to be Sincere to the Leaders (12.06.11)",
+    "sub": "Character & Dawah",
+    "archive": "How to be Sincere to the Leaders (12.06.11).mp3",
+    "href": "audio.html?archive=How%20to%20be%20Sincere%20to%20the%20Leaders%20%2812.06.11%29.mp3",
+    "thumb": "thumb/extracted/fd6728401a4f1a.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 526,
+    "title": "How to be Sincere to the Rasool (SAW) (08.08.11)",
+    "sub": "Character & Dawah",
+    "archive": "How to be Sincere to the Rasool (SAW) (08.08.11).mp3",
+    "href": "audio.html?archive=How%20to%20be%20Sincere%20to%20the%20Rasool%20%28SAW%29%20%2808.08.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 527,
+    "title": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11)",
+    "sub": "Character & Dawah",
+    "archive": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11).mp3",
+    "href": "audio.html?archive=How%20to%20be%20Sincere%20to%20Your%20Muslim%20Brothers%20%26%20Sisters%20%2808.11.11%29.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 528,
+    "title": "Islamic Etiquettes (11.26.11)",
+    "sub": "Character & Dawah",
+    "archive": "Islamic Etiquettes (11.26.11).mp3",
+    "href": "audio.html?archive=Islamic%20Etiquettes%20%2811.26.11%29.mp3",
+    "thumb": "thumb/extracted/74a3ae70b699b0.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 529,
+    "title": "Manhood in Islam",
+    "sub": "Character & Dawah",
+    "archive": "Manhood in Islam.mp3",
+    "href": "audio.html?archive=Manhood%20in%20Islam.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 530,
+    "title": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12",
+    "sub": "Character & Dawah",
+    "archive": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12.mp3",
+    "href": "audio.html?archive=Merits%20and%20Etiquettes%20of%20Dawah%20%2802.04.12%20to%2002.09.12.mp3",
+    "thumb": "thumb/extracted/78f1df9c3dffb9.jpg"
+  },
+  {
+    "type": "audio",
+    "id": 531,
+    "title": "The Etiquettes of Asking Questions",
+    "sub": "Character & Dawah",
+    "archive": "The Etiquettes of Asking Questions.mp3",
+    "href": "audio.html?archive=The%20Etiquettes%20of%20Asking%20Questions.mp3"
   },
   {
     "type": "video",

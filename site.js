@@ -1849,6 +1849,8 @@ function lectureSearchHaystack(lecture) {
     lecture.categoryLabel,
     lecture.subcategoryLabel || '',
     lecture.category || '',
+    lecture.series || '',
+    lecture.part ? `part ${lecture.part}` : '',
   ].join(' '));
 }
 

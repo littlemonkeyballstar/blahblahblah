@@ -1,26 +1,6 @@
 /* Auto-generated chunk: Prophets_Seerah */
 registerLectureChunk("Prophets_Seerah", [
   {
-    "title": "20 Du'as of Ibrahim (08.17.11 to 08.18.11)",
-    "category": "Prophets_Seerah",
-    "categoryLabel": "Prophets & Seerah",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "20 Du'as of Ibrahim (08.17.11 to 08.18.11).mp3",
-    "thumb": null,
-    "id": 1
-  },
-  {
-    "title": "9 Signs of Musa to the Pharoah (06.22.11)",
-    "category": "Prophets_Seerah",
-    "categoryLabel": "Prophets & Seerah",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "9 Signs of Musa to the Pharoah (06.22.11).mp3",
-    "thumb": null,
-    "id": 13
-  },
-  {
     "title": "Adam Alayhi Salam And The Satan The Eternal Battle Part 1",
     "category": "Prophets_Seerah",
     "categoryLabel": "Prophets & Seerah",
@@ -28,7 +8,9 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Adam_Alayhi_Salam_And_The_Satan_The_Eternal_Battle_Part_1.mp3",
     "thumb": null,
-    "id": 15
+    "part": 1,
+    "series": "Adam Alayhi Salam And The Satan The Eternal Battle",
+    "id": 173
   },
   {
     "title": "Adam Alayhi Salam And The Satan The Eternal Battle – Part 2",
@@ -38,7 +20,29 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Adam_Alayhi_Salam_And_The_Satan_The_Eternal_Battle_–_Part_2.mp3",
     "thumb": null,
-    "id": 16
+    "part": 2,
+    "series": "Adam Alayhi Salam And The Satan The Eternal Battle",
+    "id": 174
+  },
+  {
+    "title": "20 Du'as of Ibrahim (08.17.11 to 08.18.11)",
+    "category": "Prophets_Seerah",
+    "categoryLabel": "Prophets & Seerah",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "20 Du'as of Ibrahim (08.17.11 to 08.18.11).mp3",
+    "thumb": null,
+    "id": 175
+  },
+  {
+    "title": "9 Signs of Musa to the Pharoah (06.22.11)",
+    "category": "Prophets_Seerah",
+    "categoryLabel": "Prophets & Seerah",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "9 Signs of Musa to the Pharoah (06.22.11).mp3",
+    "thumb": null,
+    "id": 176
   },
   {
     "title": "al Israa wal Mi'raaj",
@@ -48,7 +52,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "al Israa wal Mi'raaj.mp3",
     "thumb": null,
-    "id": 17
+    "id": 177
   },
   {
     "title": "Allah (SWT) Has Honored Bani Adam - Mankind",
@@ -58,7 +62,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Allah (SWT) Has Honored Bani Adam - Mankind.mp3",
     "thumb": null,
-    "id": 18
+    "id": 178
   },
   {
     "title": "Allah's Commandments to Ibrahim (AS) (07.21.11)",
@@ -68,7 +72,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Allah's Commandments to Ibrahim (AS) (07.21.11).mp3",
     "thumb": null,
-    "id": 22
+    "id": 179
   },
   {
     "title": "Beware of Invading the Land of Ibrahim (07.28.11)",
@@ -78,7 +82,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Beware of Invading the Land of Ibrahim (07.28.11).mp3",
     "thumb": null,
-    "id": 34
+    "id": 180
   },
   {
     "title": "BOY AND THE KING",
@@ -88,7 +92,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "BOY AND THE KING - Shaykh Faisal.mp3",
     "thumb": "thumb/BOY AND THE KING - Shaykh Faisal.jpg",
-    "id": 37
+    "id": 181
   },
   {
     "title": "Islam of Umar (RA) (07.09.11)",
@@ -98,7 +102,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Islam of Umar (RA) (07.09.11).mp3",
     "thumb": null,
-    "id": 98
+    "id": 182
   },
   {
     "title": "Many Miracles of the Prophet Muhammad (SAW) (07.20.11)",
@@ -108,7 +112,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Many Miracles of the Prophet Muhammad (SAW) (07.20.11).mp3",
     "thumb": null,
-    "id": 141
+    "id": 183
   },
   {
     "title": "MILLATU IBRAHIM",
@@ -118,7 +122,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "MILLATU IBRAHIM - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/f9c271ac07d98b.png",
-    "id": 148
+    "id": 184
   },
   {
     "title": "Musa & al Khidr (dars)",
@@ -128,7 +132,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Musa & al Khidr (dars).mp3",
     "thumb": null,
-    "id": 151
+    "id": 185
   },
   {
     "title": "Musa & Al-Khidr (07.09.11)",
@@ -138,7 +142,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Musa & Al-Khidr (07.09.11).mp3",
     "thumb": null,
-    "id": 152
+    "id": 186
   },
   {
     "title": "MUSA AND KHIDR",
@@ -148,7 +152,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "MUSA AND KHIDR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/MUSA AND KHIDR - Abdallah Al Faisal.jpg",
-    "id": 153
+    "id": 187
   },
   {
     "title": "MUSA AND QAROON",
@@ -158,7 +162,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "MUSA AND QAROON - Abdallah Al Faisal.mp3",
     "thumb": "thumb/MUSA AND QAROON - Abdallah Al Faisal.jpg",
-    "id": 154
+    "id": 188
   },
   {
     "title": "PEOPLE OF THE CAVE",
@@ -168,7 +172,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "PEOPLE OF THE CAVE - Abdallah Al Faisal.mp3",
     "thumb": "thumb/PEOPLE OF THE CAVE - Abdallah Al Faisal.jpg",
-    "id": 171
+    "id": 189
   },
   {
     "title": "Sheikh Abdullah Faisal Al Isra Wal Mira'aj",
@@ -178,7 +182,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal   Al Isra Wal Mira'aj.mp3",
     "thumb": null,
-    "id": 242
+    "id": 190
   },
   {
     "title": "the Sleepers in the Cave",
@@ -188,6 +192,6 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "the Sleepers in the Cave.mp3",
     "thumb": null,
-    "id": 488
+    "id": 191
   }
 ]);

@@ -1,54 +1,14 @@
 /* Auto-generated chunk: Ummah_Affairs */
 registerLectureChunk("Ummah_Affairs", [
   {
-    "title": "AT Conference — Every Ummah Needs A State",
+    "title": "Dreams -Their Significance And Meanings – Part 1",
     "category": "Ummah_Affairs",
     "categoryLabel": "Ummah & Contemporary Issues",
     "subcategory": null,
     "subcategoryLabel": null,
-    "archive": "Conference/AT Conference - Shaikh Abdullah Faisal - Every Ummah Needs A State.mp3",
+    "archive": "Dreams  -Their Significance And Meanings – Part 1.mp3",
     "thumb": null,
-    "id": 28
-  },
-  {
-    "title": "AT Conference — Ideological Warfare",
-    "category": "Ummah_Affairs",
-    "categoryLabel": "Ummah & Contemporary Issues",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "Conference/AT Conference - Shaikh Abdullah Faisal - Ideological Warfare.mp3",
-    "thumb": null,
-    "id": 29
-  },
-  {
-    "title": "AT Conference — The Barking Dogs Of Jahannum",
-    "category": "Ummah_Affairs",
-    "categoryLabel": "Ummah & Contemporary Issues",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "Conference/AT Conference - Shaikh Abdillah Faisal - The Barking Dogs Of Jahannum.mp3",
-    "thumb": null,
-    "id": 30
-  },
-  {
-    "title": "Black Magic (06.29.11)",
-    "category": "Ummah_Affairs",
-    "categoryLabel": "Ummah & Contemporary Issues",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "Black Magic (06.29.11).mp3",
-    "thumb": null,
-    "id": 36
-  },
-  {
-    "title": "CANCERS IN THE BODY OF THE UMMAH",
-    "category": "Ummah_Affairs",
-    "categoryLabel": "Ummah & Contemporary Issues",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "CANCERS IN THE BODY OF THE UMMAH - Abdallah Al Faisal.mp3",
-    "thumb": null,
-    "id": 39
+    "id": 237
   },
   {
     "title": "Challenges Facing the Muslim Ummah - Part 2",
@@ -58,7 +18,57 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Challenges Facing the Muslim Ummah - Part 2.mp3",
     "thumb": null,
-    "id": 40
+    "id": 238
+  },
+  {
+    "title": "AT Conference — Every Ummah Needs A State",
+    "category": "Ummah_Affairs",
+    "categoryLabel": "Ummah & Contemporary Issues",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "Conference/AT Conference - Shaikh Abdullah Faisal - Every Ummah Needs A State.mp3",
+    "thumb": null,
+    "id": 239
+  },
+  {
+    "title": "AT Conference — Ideological Warfare",
+    "category": "Ummah_Affairs",
+    "categoryLabel": "Ummah & Contemporary Issues",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "Conference/AT Conference - Shaikh Abdullah Faisal - Ideological Warfare.mp3",
+    "thumb": null,
+    "id": 240
+  },
+  {
+    "title": "AT Conference — The Barking Dogs Of Jahannum",
+    "category": "Ummah_Affairs",
+    "categoryLabel": "Ummah & Contemporary Issues",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "Conference/AT Conference - Shaikh Abdillah Faisal - The Barking Dogs Of Jahannum.mp3",
+    "thumb": null,
+    "id": 241
+  },
+  {
+    "title": "Black Magic (06.29.11)",
+    "category": "Ummah_Affairs",
+    "categoryLabel": "Ummah & Contemporary Issues",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "Black Magic (06.29.11).mp3",
+    "thumb": null,
+    "id": 242
+  },
+  {
+    "title": "CANCERS IN THE BODY OF THE UMMAH",
+    "category": "Ummah_Affairs",
+    "categoryLabel": "Ummah & Contemporary Issues",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "CANCERS IN THE BODY OF THE UMMAH - Abdallah Al Faisal.mp3",
+    "thumb": null,
+    "id": 243
   },
   {
     "title": "Challenges Facing the Ummah",
@@ -68,7 +78,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Challenges Facing the Ummah.mp3",
     "thumb": null,
-    "id": 41
+    "id": 244
   },
   {
     "title": "Changing the Goalpost",
@@ -78,17 +88,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Changing the Goalpost.mp3",
     "thumb": null,
-    "id": 42
-  },
-  {
-    "title": "Dreams -Their Significance And Meanings – Part 1",
-    "category": "Ummah_Affairs",
-    "categoryLabel": "Ummah & Contemporary Issues",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "Dreams  -Their Significance And Meanings – Part 1.mp3",
-    "thumb": null,
-    "id": 63
+    "id": 245
   },
   {
     "title": "Human Rights",
@@ -98,7 +98,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Human Rights.mp3",
     "thumb": null,
-    "id": 85
+    "id": 246
   },
   {
     "title": "Human Soul (10.06.11)",
@@ -108,7 +108,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Human Soul (10.06.11).mp3",
     "thumb": "thumb/extracted/b5590561372303.jpg",
-    "id": 86
+    "id": 247
   },
   {
     "title": "Ideological Warfare",
@@ -118,7 +118,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Ideological Warfare.mp3",
     "thumb": null,
-    "id": 87
+    "id": 248
   },
   {
     "title": "ISLAM AND THE WEST",
@@ -128,7 +128,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "ISLAM AND THE WEST - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 97
+    "id": 249
   },
   {
     "title": "ISLAM THE MOST HYGIENIC RELIGION",
@@ -138,7 +138,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "ISLAM THE MOST HYGIENIC RELIGION - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 99
+    "id": 250
   },
   {
     "title": "ISLAM UNDER SIEGE",
@@ -148,7 +148,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "ISLAM UNDER SIEGE - Shaykh Faisal.mp3",
     "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg",
-    "id": 100
+    "id": 251
   },
   {
     "title": "JUDGEMENT DAY",
@@ -158,7 +158,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "JUDGEMENT DAY - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 117
+    "id": 252
   },
   {
     "title": "Judgment Day (07.27.11)",
@@ -168,7 +168,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Judgment Day (07.27.11).mp3",
     "thumb": null,
-    "id": 118
+    "id": 253
   },
   {
     "title": "LEADERSHIP IN ISLAM",
@@ -178,7 +178,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "LEADERSHIP IN ISLAM.mp3",
     "thumb": null,
-    "id": 128
+    "id": 254
   },
   {
     "title": "Mad Dogs of the Middle East [REVISITED] (10.20.11)",
@@ -188,7 +188,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Mad Dogs of the Middle East [REVISITED] (10.20.11).mp3",
     "thumb": null,
-    "id": 136
+    "id": 255
   },
   {
     "title": "Magic (06.24.11)",
@@ -198,7 +198,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Magic (06.24.11).mp3",
     "thumb": null,
-    "id": 138
+    "id": 256
   },
   {
     "title": "Muslim Character",
@@ -208,7 +208,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Muslim Character.mp3",
     "thumb": null,
-    "id": 155
+    "id": 257
   },
   {
     "title": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL)",
@@ -218,7 +218,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.mp3",
     "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png",
-    "id": 158
+    "id": 258
   },
   {
     "title": "Natural Disasters - Why They Occur",
@@ -228,7 +228,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Natural Disasters - Why They Occur.mp3",
     "thumb": null,
-    "id": 160
+    "id": 259
   },
   {
     "title": "NATURAL DISASTERS, WHY DO THEY OCCUR",
@@ -238,7 +238,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "NATURAL DISASTERS, WHY DO THEY OCCUR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 161
+    "id": 260
   },
   {
     "title": "Natural Instincts",
@@ -248,7 +248,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Natural Instincts.mp3",
     "thumb": null,
-    "id": 162
+    "id": 261
   },
   {
     "title": "REALITY OF POVERTY",
@@ -258,7 +258,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "REALITY OF POVERTY - Abdallah Al Faisal.mp3",
     "thumb": "thumb/extracted/4e609eaf7de4d7.jpg",
-    "id": 195
+    "id": 262
   },
   {
     "title": "SIGNS BEFORE JUDGEMENT DAY",
@@ -268,7 +268,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "SIGNS BEFORE JUDGEMENT DAY - Shaykh Faisal.mp3",
     "thumb": null,
-    "id": 246
+    "id": 263
   },
   {
     "title": "Signs Before The Day of Judgement",
@@ -278,7 +278,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Signs Before The Day of Judgement.mp3",
     "thumb": null,
-    "id": 247
+    "id": 264
   },
   {
     "title": "Tawba",
@@ -288,7 +288,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Tawba.mp3",
     "thumb": null,
-    "id": 403
+    "id": 265
   },
   {
     "title": "The Jinn",
@@ -298,7 +298,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - The Jinn.mp3",
     "thumb": null,
-    "id": 454
+    "id": 266
   },
   {
     "title": "Unity The Way Forward",
@@ -308,7 +308,7 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Unity The Way Forward.mp3",
     "thumb": null,
-    "id": 504
+    "id": 267
   },
   {
     "title": "Unity The Way Forward copy",
@@ -318,6 +318,6 @@ registerLectureChunk("Ummah_Affairs", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Unity The Way Forward copy.mp3",
     "thumb": null,
-    "id": 505
+    "id": 268
   }
 ]);
