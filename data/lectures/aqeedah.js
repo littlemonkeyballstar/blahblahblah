@@ -359,7 +359,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tawheed/The 4 Branches Of Tauheed.mp3",
-    "thumb": null,
+    "thumb": "thumb/The 4 Branches Of Tauheed.png",
     "id": 226
   },
   {

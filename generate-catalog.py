@@ -75,6 +75,9 @@ GUARANTEED_HOME_FEATURED_STEMS = [
     "Al-Wala wal-Bara by shaykh Abdullah Faisal",
     "the Barking dogs of jahannam",
     "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-",
+    "The 4 Branches Of Tauheed",
+    "The 18 Types Of Women You Should Not Marry",
+    "The 20 Types Of Men You Should Not Marry",
 ]
 
 def is_blocked_thumb(path: Path) -> bool:

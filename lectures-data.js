@@ -2776,7 +2776,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Tawheed/The 4 Branches Of Tauheed.mp3",
-    "thumb": null,
+    "thumb": "thumb/The 4 Branches Of Tauheed.png",
     "id": 226
   },
   {
@@ -5254,7 +5254,7 @@ const LECTURES = [
     "subcategory": "types_to_avoid",
     "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3",
-    "thumb": null,
+    "thumb": "thumb/The 18 Types Of Women You Should Not Marry.png",
     "id": 468
   },
   {
@@ -5264,7 +5264,7 @@ const LECTURES = [
     "subcategory": "types_to_avoid",
     "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3",
-    "thumb": null,
+    "thumb": "thumb/The 20 Types Of Men You Should Not Marry.png",
     "id": 469
   },
   {
@@ -6194,6 +6194,21 @@ const FEATURED_LECTURES = [
     "id": 221,
     "thumb": "thumb/SIGNS OF HYPOCRITES - Shaykh Faisal.png",
     "archive": "SIGNS OF HYPOCRITES - Shaykh Faisal.mp3"
+  },
+  {
+    "id": 468,
+    "thumb": "thumb/The 18 Types Of Women You Should Not Marry.png",
+    "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3"
+  },
+  {
+    "id": 469,
+    "thumb": "thumb/The 20 Types Of Men You Should Not Marry.png",
+    "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3"
+  },
+  {
+    "id": 226,
+    "thumb": "thumb/The 4 Branches Of Tauheed.png",
+    "archive": "Tawheed/The 4 Branches Of Tauheed.mp3"
   },
   {
     "id": 386,

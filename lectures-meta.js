@@ -553,6 +553,21 @@ const FEATURED_LECTURES = [
     "archive": "SIGNS OF HYPOCRITES - Shaykh Faisal.mp3"
   },
   {
+    "id": 468,
+    "thumb": "thumb/The 18 Types Of Women You Should Not Marry.png",
+    "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3"
+  },
+  {
+    "id": 469,
+    "thumb": "thumb/The 20 Types Of Men You Should Not Marry.png",
+    "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3"
+  },
+  {
+    "id": 226,
+    "thumb": "thumb/The 4 Branches Of Tauheed.png",
+    "archive": "Tawheed/The 4 Branches Of Tauheed.mp3"
+  },
+  {
     "id": 386,
     "thumb": "thumb/The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.jpg",
     "archive": "the Barking dogs of jahannam.mp3"

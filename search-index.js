@@ -3732,14 +3732,6 @@ const SEARCH_INDEX = [
   {
     "type": "audio",
     "id": 442,
-    "title": "WICKED SCHOLAR",
-    "sub": "Wicked Scholars",
-    "archive": "Wicked_Scholars/WICKED SCHOLAR - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=Wicked_Scholars%2FWICKED%20SCHOLAR%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 443,
     "title": "WICKED SCHOLARS ARE LIKE A DOG",
     "sub": "Wicked Scholars",
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3",
@@ -3748,7 +3740,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 444,
+    "id": 443,
     "title": "Science of Quran - Part 1",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 1.mp3",
@@ -3756,7 +3748,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 445,
+    "id": 444,
     "title": "Science of Quran - Part 2 - The History of the Quran's Descent",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 2 - The History of the Quran's Descent.mp3",
@@ -3764,7 +3756,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 446,
+    "id": 445,
     "title": "Science of Quran - Part 2 - The Wahy",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 2 - The Wahy.mp3",
@@ -3772,7 +3764,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 447,
+    "id": 446,
     "title": "Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book.mp3",
@@ -3780,7 +3772,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 448,
+    "id": 447,
     "title": "Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs.mp3",
@@ -3788,7 +3780,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 449,
+    "id": 448,
     "title": "Science Of Quran - Part 6 - The causes Of Revelation I",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science Of Quran - Part 6 - The causes Of Revelation I.mp3",
@@ -3796,7 +3788,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 450,
+    "id": 449,
     "title": "Science Of Quran - Part 7 - The causes Of Revelation II",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science Of Quran - Part 7 - The causes Of Revelation II.mp3",
@@ -3804,7 +3796,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 451,
+    "id": 450,
     "title": "Science of Quran - Part 8 - The Causes of Revelation – An Nisa",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 8 - The Causes of Revelation – An Nisa.mp3",
@@ -3812,7 +3804,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 452,
+    "id": 451,
     "title": "Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah.mp3",
@@ -3820,7 +3812,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 453,
+    "id": 452,
     "title": "Science of Quran - Part 10 - The Causes of Revelation – Al Imraan",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 10 - The Causes of Revelation – Al Imraan.mp3",
@@ -3828,7 +3820,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 454,
+    "id": 453,
     "title": "Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2.mp3",
@@ -3836,7 +3828,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 455,
+    "id": 454,
     "title": "Science of Quran - Part 12 - The Causes of Revelation – Al An’am",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 12 - The Causes of Revelation – Al An’am.mp3",
@@ -3844,7 +3836,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 456,
+    "id": 455,
     "title": "Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf.mp3",
@@ -3852,7 +3844,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 457,
+    "id": 456,
     "title": "Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1.mp3",
@@ -3860,7 +3852,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 458,
+    "id": 457,
     "title": "Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1.mp3",
@@ -3868,7 +3860,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 459,
+    "id": 458,
     "title": "Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2.mp3",
@@ -3876,7 +3868,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 460,
+    "id": 459,
     "title": "The Animals Of The Holy Quran - Part 1",
     "sub": "Science in the Quran",
     "archive": "The Animals Of The Holy Quran - Part 1.mp3",
@@ -3884,7 +3876,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 461,
+    "id": 460,
     "title": "The Animals Of The Holy Quran - Part 2",
     "sub": "Science in the Quran",
     "archive": "The Animals Of The Holy Quran - Part 2.mp3",
@@ -3892,7 +3884,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 462,
+    "id": 461,
     "title": "Prophesies of the Holy Quran (11.22.11 to 11.23.11)",
     "sub": "Science in the Quran",
     "archive": "Prophesies of the Holy Quran (11.22.11 to 11.23.11).mp3",
@@ -3901,7 +3893,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 463,
+    "id": 462,
     "title": "Rules of Nikah [Part 1] (06.30.11)",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 1] (06.30.11).mp3",
@@ -3909,7 +3901,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 464,
+    "id": 463,
     "title": "Rules of Nikah [Part 2] (07.01.11)",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 2] (07.01.11).mp3",
@@ -3917,7 +3909,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 465,
+    "id": 464,
     "title": "Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11)",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11).mp3",
@@ -3925,7 +3917,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 466,
+    "id": 465,
     "title": "Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11)",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11).mp3",
@@ -3933,7 +3925,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 467,
+    "id": 466,
     "title": "Rules of Divorce [Part 1] (07.06.11)",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/Rules of Divorce [Part 1] (07.06.11).mp3",
@@ -3941,7 +3933,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 468,
+    "id": 467,
     "title": "Rules of Divorce [Part 2] Revisited (07.08.11)",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/Rules of Divorce [Part 2] Revisited (07.08.11).mp3",
@@ -3949,7 +3941,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 469,
+    "id": 468,
     "title": "The 18 Types Of Women You Should Not Marry",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3",
@@ -3957,7 +3949,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 470,
+    "id": 469,
     "title": "The 20 Types Of Men You Should Not Marry",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3",
@@ -3965,7 +3957,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 471,
+    "id": 470,
     "title": "the Fiqh of Divorce",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/the Fiqh of Divorce.mp3",
@@ -3973,7 +3965,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 472,
+    "id": 471,
     "title": "The Fiqh of Menses",
     "sub": "Marriage & Family",
     "archive": "The Fiqh of Menses.mp3",
@@ -3981,7 +3973,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 473,
+    "id": 472,
     "title": "Daughters Are Diamonds (06.30.11)",
     "sub": "Marriage & Family",
     "archive": "Daughters Are Diamonds (06.30.11).mp3",
@@ -3989,7 +3981,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 474,
+    "id": 473,
     "title": "LOVE",
     "sub": "Marriage & Family",
     "archive": "LOVE - Abdallah Al Faisal.mp3",
@@ -3998,7 +3990,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 475,
+    "id": 474,
     "title": "MARITAL DISCORD (NUSHOOZ)",
     "sub": "Marriage & Family",
     "archive": "MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal.mp3",
@@ -4006,7 +3998,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 476,
+    "id": 475,
     "title": "Money Can't Buy True Love (07.02.11)",
     "sub": "Marriage & Family",
     "archive": "Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal.mp3",
@@ -4014,7 +4006,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 477,
+    "id": 476,
     "title": "Muslim Home (12.21.11 to 12.22.11)",
     "sub": "Marriage & Family",
     "archive": "Muslim Home (12.21.11 to 12.22.11).mp3",
@@ -4023,7 +4015,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 478,
+    "id": 477,
     "title": "MUSLIM MARRYING NON MUSLIM",
     "sub": "Marriage & Family",
     "archive": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.mp3",
@@ -4032,7 +4024,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 479,
+    "id": 478,
     "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE",
     "sub": "Marriage & Family",
     "archive": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.mp3",
@@ -4041,7 +4033,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 480,
+    "id": 479,
     "title": "TAINTED LOVE",
     "sub": "Marriage & Family",
     "archive": "TAINTED LOVE - Abdallah Al Faisal.mp3",
@@ -4049,7 +4041,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 481,
+    "id": 480,
     "title": "tainted love 2013.04.20 (evening)",
     "sub": "Marriage & Family",
     "archive": "tainted love 2013.04.20 (evening).mp3",
@@ -4057,7 +4049,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 482,
+    "id": 481,
     "title": "The Muslim Home",
     "sub": "Marriage & Family",
     "archive": "Sheikh Abdullah Faisal - The Muslim Home.mp3",
@@ -4065,7 +4057,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 483,
+    "id": 482,
     "title": "The Muslim Home (dars)",
     "sub": "Marriage & Family",
     "archive": "The Muslim Home (dars).mp3",
@@ -4073,7 +4065,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 484,
+    "id": 483,
     "title": "WIVES & CHILDREN",
     "sub": "Marriage & Family",
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3",
@@ -4082,7 +4074,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 485,
+    "id": 484,
     "title": "WOMEN IN ISLAM",
     "sub": "Marriage & Family",
     "archive": "WOMEN IN ISLAM - Abdallah Al Faisal.mp3",
@@ -4090,7 +4082,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 486,
+    "id": 485,
     "title": "18 Merits of Ramadan [Revisited] (07.31.11)",
     "sub": "Ramadan",
     "archive": "Ramadan/18 Merits of Ramadan [Revisited] (07.31.11).mp3",
@@ -4098,7 +4090,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 487,
+    "id": 486,
     "title": "LAYLATUL QADR",
     "sub": "Ramadan",
     "archive": "Ramadan/LAYLATUL QADR - Abdallah Al Faisal.mp3",
@@ -4106,7 +4098,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 488,
+    "id": 487,
     "title": "RAMADAN OUR BLESSED GUEST",
     "sub": "Ramadan",
     "archive": "Ramadan/RAMADAN OUR BLESSED GUEST - Abdallah Al Faisal.mp3",
@@ -4114,7 +4106,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 489,
+    "id": 488,
     "title": "Ramadhan - The Month of Glory (07.30.11)",
     "sub": "Ramadan",
     "archive": "Ramadan/Ramadhan - The Month of Glory (07.30.11).mp3",
@@ -4122,7 +4114,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 490,
+    "id": 489,
     "title": "VIRTUES OF RAMADAN",
     "sub": "Ramadan",
     "archive": "Ramadan/VIRTUES OF RAMADAN - Abdallah Al Faisal.mp3",
@@ -4130,7 +4122,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 491,
+    "id": 490,
     "title": "DISEASES OF THE HEART",
     "sub": "Diseases of the Heart",
     "archive": "Diseases_of_the_Heart/DISEASES OF THE HEART - Shaykh Faisal.mp3",
@@ -4139,7 +4131,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 492,
+    "id": 491,
     "title": "Diseases of the Heart (12.26.11 to 12.29.11)",
     "sub": "Diseases of the Heart",
     "archive": "Diseases_of_the_Heart/Diseases of the Heart (12.26.11 to 12.29.11).mp3",
@@ -4148,7 +4140,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 493,
+    "id": 492,
     "title": "Diseases of the Heart [Lust]",
     "sub": "Diseases of the Heart",
     "archive": "Diseases_of_the_Heart/Diseases of the Heart [Lust]- Shaikh Faisal 2.12.2011 PT Dars.mp3",
@@ -4156,7 +4148,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 494,
+    "id": 493,
     "title": "Radio Show - Diseases of the Heart (10.29.11)",
     "sub": "Diseases of the Heart",
     "archive": "Diseases_of_the_Heart/Radio Show - Diseases of the Heart (10.29.11).mp3",
@@ -4165,7 +4157,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 495,
+    "id": 494,
     "title": "Reality of Sincerity (12.07.11)",
     "sub": "Diseases of the Heart",
     "archive": "Reality of Sincerity (12.07.11).mp3",
@@ -4174,7 +4166,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 496,
+    "id": 495,
     "title": "Road to Sincerity (07.17.11)",
     "sub": "Diseases of the Heart",
     "archive": "Road to Sincerity (07.17.11).mp3",
@@ -4182,7 +4174,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 497,
+    "id": 496,
     "title": "Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12)",
     "sub": "Personality Disorders",
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12).mp3",
@@ -4191,7 +4183,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 498,
+    "id": 497,
     "title": "Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12)",
     "sub": "Personality Disorders",
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12).mp3",
@@ -4200,7 +4192,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 499,
+    "id": 498,
     "title": "Personality Disorders [Part 3] Narcissistic (05.06.12)",
     "sub": "Personality Disorders",
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 3] Narcissistic (05.06.12).mp3",
@@ -4209,7 +4201,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 500,
+    "id": 499,
     "title": "Personality Disorders [Part 4] PTSD (05.07.12)",
     "sub": "Personality Disorders",
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 4] PTSD (05.07.12).mp3",
@@ -4218,7 +4210,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 501,
+    "id": 500,
     "title": "Personality Disorders [Part 5] Anti-Social (05.08.12)",
     "sub": "Personality Disorders",
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 5] Anti-Social (05.08.12).mp3",
@@ -4227,7 +4219,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 502,
+    "id": 501,
     "title": "Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11)",
     "sub": "Who Are You?",
     "archive": "Who Are You?/Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11).mp3",
@@ -4235,7 +4227,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 503,
+    "id": 502,
     "title": "Who Are You – Part 1",
     "sub": "Who Are You?",
     "archive": "Who Are You?/Who Are You – Part 1.mp3",
@@ -4243,7 +4235,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 504,
+    "id": 503,
     "title": "Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11)",
     "sub": "Who Are You?",
     "archive": "Who Are You?/Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11).mp3",
@@ -4251,7 +4243,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 505,
+    "id": 504,
     "title": "Who Are You – Part 2",
     "sub": "Who Are You?",
     "archive": "Who Are You?/Who Are You – Part 2.mp3",
@@ -4259,7 +4251,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 506,
+    "id": 505,
     "title": "Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11)",
     "sub": "Who Are You?",
     "archive": "Who Are You?/Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11).mp3",
@@ -4267,7 +4259,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 507,
+    "id": 506,
     "title": "Who are You2",
     "sub": "Who Are You?",
     "archive": "Who Are You?/Who are You2.mp3",
@@ -4275,7 +4267,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 508,
+    "id": 507,
     "title": "Radio Show - Allah's Blessings to Mankind (08.20.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - Allah's Blessings to Mankind (08.20.11).mp3",
@@ -4284,7 +4276,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 509,
+    "id": 508,
     "title": "Radio Show - Challenges Facing the Youth Globally (08.06.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - Challenges Facing the Youth Globally (08.06.11).mp3",
@@ -4292,7 +4284,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 510,
+    "id": 509,
     "title": "Radio Show - God In Islam (11.19.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - God In Islam (11.19.11).mp3",
@@ -4301,7 +4293,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 511,
+    "id": 510,
     "title": "Radio Show - Judgment Day (11.26.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - Judgment Day (11.26.11).mp3",
@@ -4310,7 +4302,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 512,
+    "id": 511,
     "title": "Radio Show - Manhood (10.22.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - Manhood (10.22.11).mp3",
@@ -4319,7 +4311,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 513,
+    "id": 512,
     "title": "Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11).mp3",
@@ -4328,7 +4320,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 514,
+    "id": 513,
     "title": "Radio Show - Natural Instincts (07.30.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - Natural Instincts (07.30.11).mp3",
@@ -4336,7 +4328,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 515,
+    "id": 514,
     "title": "Balanced Nation (12.19.11)",
     "sub": "Character & Dawah",
     "archive": "Balanced Nation (12.19.11).mp3",
@@ -4345,7 +4337,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 516,
+    "id": 515,
     "title": "Etiquettes Of Dawah",
     "sub": "Character & Dawah",
     "archive": "Etiquettes Of Dawah.mp3",
@@ -4353,7 +4345,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 517,
+    "id": 516,
     "title": "Foundations of the Islamic Brotherhood And Sisterhood",
     "sub": "Character & Dawah",
     "archive": "Foundations of the Islamic Brotherhood And Sisterhood.mp3",
@@ -4361,7 +4353,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 518,
+    "id": 517,
     "title": "Get Your Priorities Right (08.23.11)",
     "sub": "Character & Dawah",
     "archive": "Get Your Priorities Right (08.23.11).mp3",
@@ -4369,7 +4361,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 519,
+    "id": 518,
     "title": "How to be Sincere to Allah (08.04.11 to 08.07.11)",
     "sub": "Character & Dawah",
     "archive": "How to be Sincere to Allah (08.04.11 to 08.07.11).mp3",
@@ -4378,7 +4370,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 520,
+    "id": 519,
     "title": "How to be Sincere to the Holy Qur'an (08.09.11)",
     "sub": "Character & Dawah",
     "archive": "How to be Sincere to the Holy Qur'an (08.09.11).mp3",
@@ -4386,7 +4378,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 521,
+    "id": 520,
     "title": "How to be Sincere to the Leaders (12.06.11)",
     "sub": "Character & Dawah",
     "archive": "How to be Sincere to the Leaders (12.06.11).mp3",
@@ -4395,7 +4387,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 522,
+    "id": 521,
     "title": "How to be Sincere to the Rasool (SAW) (08.08.11)",
     "sub": "Character & Dawah",
     "archive": "How to be Sincere to the Rasool (SAW) (08.08.11).mp3",
@@ -4403,7 +4395,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 523,
+    "id": 522,
     "title": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11)",
     "sub": "Character & Dawah",
     "archive": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11).mp3",
@@ -4411,7 +4403,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 524,
+    "id": 523,
     "title": "Islamic Etiquettes (11.26.11)",
     "sub": "Character & Dawah",
     "archive": "Islamic Etiquettes (11.26.11).mp3",
@@ -4420,7 +4412,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 525,
+    "id": 524,
     "title": "KNOWLEDGE",
     "sub": "Character & Dawah",
     "archive": "KNOWLEDGE - Abdallah Al Faisal.mp3",
@@ -4428,7 +4420,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 526,
+    "id": 525,
     "title": "Manhood in Islam",
     "sub": "Character & Dawah",
     "archive": "Manhood in Islam.mp3",
@@ -4436,7 +4428,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 527,
+    "id": 526,
     "title": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12",
     "sub": "Character & Dawah",
     "archive": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12.mp3",
@@ -4445,7 +4437,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 528,
+    "id": 527,
     "title": "ROLE OF THE MASJID",
     "sub": "Character & Dawah",
     "archive": "ROLE OF THE MASJID - Shaykh Faisal.mp3",
@@ -4453,7 +4445,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 529,
+    "id": 528,
     "title": "The 5 Needs of Mankind2",
     "sub": "Character & Dawah",
     "archive": "The 5 Needs of Mankind2.mp3",
@@ -4461,7 +4453,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 530,
+    "id": 529,
     "title": "The Etiquettes of Asking Questions",
     "sub": "Character & Dawah",
     "archive": "The Etiquettes of Asking Questions.mp3",
@@ -4469,7 +4461,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 531,
+    "id": 530,
     "title": "The Importance of Intention",
     "sub": "Character & Dawah",
     "archive": "The Importance of Intention.mp3",

@@ -10,7 +10,7 @@ registerLectureChunk("Who Are You?", [
     "thumb": null,
     "part": 1,
     "series": "Who Are You",
-    "id": 502
+    "id": 501
   },
   {
     "title": "Who Are You – Part 1",
@@ -22,7 +22,7 @@ registerLectureChunk("Who Are You?", [
     "thumb": null,
     "part": 1,
     "series": "Who Are You",
-    "id": 503
+    "id": 502
   },
   {
     "title": "Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11)",
@@ -34,7 +34,7 @@ registerLectureChunk("Who Are You?", [
     "thumb": null,
     "part": 2,
     "series": "Who Are You",
-    "id": 504
+    "id": 503
   },
   {
     "title": "Who Are You – Part 2",
@@ -46,7 +46,7 @@ registerLectureChunk("Who Are You?", [
     "thumb": null,
     "part": 2,
     "series": "Who Are You",
-    "id": 505
+    "id": 504
   },
   {
     "title": "Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11)",
@@ -58,7 +58,7 @@ registerLectureChunk("Who Are You?", [
     "thumb": null,
     "part": 3,
     "series": "Who Are You",
-    "id": 506
+    "id": 505
   },
   {
     "title": "Who are You2",
@@ -68,6 +68,6 @@ registerLectureChunk("Who Are You?", [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who are You2.mp3",
     "thumb": null,
-    "id": 507
+    "id": 506
   }
 ]);

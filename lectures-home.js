@@ -20,6 +20,27 @@ const HOME_FEATURED_GUARANTEED = [
     "categoryLabel": "Wicked Scholars",
     "thumb": "thumb/47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full- .png",
     "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3"
+  },
+  {
+    "id": 226,
+    "title": "The 4 Branches Of Tauheed",
+    "categoryLabel": "Aqeedah & Tawheed",
+    "thumb": "thumb/The 4 Branches Of Tauheed.png",
+    "archive": "Tawheed/The 4 Branches Of Tauheed.mp3"
+  },
+  {
+    "id": 468,
+    "title": "The 18 Types Of Women You Should Not Marry",
+    "categoryLabel": "Marriage & Family",
+    "thumb": "thumb/The 18 Types Of Women You Should Not Marry.png",
+    "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3"
+  },
+  {
+    "id": 469,
+    "title": "The 20 Types Of Men You Should Not Marry",
+    "categoryLabel": "Marriage & Family",
+    "thumb": "thumb/The 20 Types Of Men You Should Not Marry.png",
+    "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3"
   }
 ];
 
@@ -436,6 +457,27 @@ const HOME_FEATURED = [
     "categoryLabel": "Aqeedah & Tawheed",
     "thumb": "thumb/SIGNS OF HYPOCRITES - Shaykh Faisal.png",
     "archive": "SIGNS OF HYPOCRITES - Shaykh Faisal.mp3"
+  },
+  {
+    "id": 468,
+    "title": "The 18 Types Of Women You Should Not Marry",
+    "categoryLabel": "Marriage & Family",
+    "thumb": "thumb/The 18 Types Of Women You Should Not Marry.png",
+    "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3"
+  },
+  {
+    "id": 469,
+    "title": "The 20 Types Of Men You Should Not Marry",
+    "categoryLabel": "Marriage & Family",
+    "thumb": "thumb/The 20 Types Of Men You Should Not Marry.png",
+    "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3"
+  },
+  {
+    "id": 226,
+    "title": "The 4 Branches Of Tauheed",
+    "categoryLabel": "Aqeedah & Tawheed",
+    "thumb": "thumb/The 4 Branches Of Tauheed.png",
+    "archive": "Tawheed/The 4 Branches Of Tauheed.mp3"
   },
   {
     "id": 386,
