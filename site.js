@@ -1072,27 +1072,23 @@ function mountMobileStyles() {
       flex-direction: column;
       flex: 1 1 auto;
       min-width: 0;
-      padding: 1rem;
+      padding: 0.625rem 0.875rem 0.875rem;
     }
     .media-card__head {
       display: flex;
-      align-items: center;
-      gap: 0.625rem;
-      min-height: 2.75rem;
-      margin-bottom: 0.75rem;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-bottom: 0.5rem;
     }
     .media-card__title-wrap {
       flex: 1 1 auto;
       min-width: 0;
-      display: flex;
-      align-items: center;
-      min-height: 2.75rem;
     }
     .media-card__title {
       margin: 0;
       width: 100%;
       font-size: 0.875rem;
-      line-height: 1.375rem;
+      line-height: 1.25rem;
       font-weight: 500;
       color: #e2e8f0;
       display: -webkit-box;
@@ -1103,12 +1099,13 @@ function mountMobileStyles() {
     .media-card__actions {
       display: flex;
       align-items: center;
-      gap: 0.3rem;
+      gap: 0.25rem;
       flex-shrink: 0;
+      margin-top: 0.0625rem;
     }
     .media-card__action-btn {
-      width: 2rem;
-      height: 2rem;
+      width: 1.75rem;
+      height: 1.75rem;
       border-radius: 0.5rem;
       border: 1px solid rgba(51, 65, 85, 0.65);
       background: rgba(15, 23, 42, 0.55);
