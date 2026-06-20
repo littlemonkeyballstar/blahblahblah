@@ -591,7 +591,7 @@ function mountMotionStyles() {
       view-transition-name: site-main;
     }
 
-    .site-top-bar { min-height: 2rem; }
+    .site-top-bar { min-height: 2.35rem; }
     @media (min-width: 640px) {
       .site-top-bar { min-height: 2.85rem; }
     }
@@ -1451,7 +1451,7 @@ function mountTopBar() {
       .site-top-bar__inner {
         max-width: 80rem;
         margin: 0 auto;
-        padding: 0.3rem 0.5rem;
+        padding: 0.35rem 0.5rem;
         text-align: center;
       }
       @media (min-width: 640px) {
@@ -1468,7 +1468,7 @@ function mountTopBar() {
         .site-top-bar__grid { gap: 1.25rem; }
       }
       .site-top-bar__block {
-        line-height: 1.2;
+        line-height: 1.15;
         flex: 1 1 0;
         min-width: 0;
       }
@@ -1491,14 +1491,23 @@ function mountTopBar() {
         }
       }
       .site-top-bar__en {
-        display: none;
         color: rgba(148, 163, 184, 0.85);
-        font-size: 0.6875rem;
-        letter-spacing: 0.05em;
-        margin-top: 0.1rem;
+        font-size: 0.5625rem;
+        letter-spacing: 0.03em;
+        margin-top: 0.05rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
       @media (min-width: 640px) {
-        .site-top-bar__en { display: block; }
+        .site-top-bar__en {
+          font-size: 0.6875rem;
+          letter-spacing: 0.05em;
+          margin-top: 0.1rem;
+          white-space: normal;
+          overflow: visible;
+          text-overflow: clip;
+        }
       }
       .site-top-bar__block:first-child .site-top-bar__en {
         text-transform: uppercase;
@@ -1511,7 +1520,7 @@ function mountTopBar() {
       .site-top-bar__divider {
         flex-shrink: 0;
         width: 1px;
-        height: 1.15rem;
+        height: 1.65rem;
         background: linear-gradient(180deg, transparent, rgba(212,168,83,0.25), transparent);
         font-size: 0;
         line-height: 1;
