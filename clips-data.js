@@ -508,7 +508,7 @@ const CLIPS = [
   },
   {
     "id": 63,
-    "title": "Refuting al-Bouti",
+    "title": "Exposing wicked scholar al-Bouti",
     "file": "booti.mp4",
     "archive": "booti.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/booti_000001.jpg",

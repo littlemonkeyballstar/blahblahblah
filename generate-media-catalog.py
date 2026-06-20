@@ -478,7 +478,7 @@ _CLIP_TITLES_RAW = [
     ("amj and faisal refuting hazami's", "AMJ and Faisal refuting Hazami"),
     ("baqara 216", "Surah al-Baqarah 216"),
     ("blind follwing wickeed schohlers", "Blind following wicked scholars will dump you in the Hellfire"),
-    ("booti", "Refuting al-Bouti"),
+    ("booti", "Exposing wicked scholar al-Bouti"),
     ("dealing with thise who reject dawla", "How do we deal with people who reject the dawla? (2)"),
     ("demanding shariya", "Demanding the implementation of sharia"),
     ("falling into the vicous webb of the shaytan", "Falling into the vicious web of the shaytan"),
