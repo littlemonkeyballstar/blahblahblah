@@ -13,19 +13,70 @@ const SITE_NAV_SESSION_KEY = 'shaf-internal-nav';
 const SITE_NAV_PAGES = ['index.html', 'biography.html', 'clips.html', 'videos.html', 'audio.html', 'pdfs.html'];
 const SITE_NAV_EXIT_MS = 220;
 
-function readAudioProgressStore() {
-  try {
-    const raw = localStorage.getItem(AUDIO_PROGRESS_KEY);
-    return raw ? JSON.parse(raw) : {};
-  } catch {
-    return {};
-  }
-}
-
 function writeAudioProgressStore(store) {
   try {
     localStorage.setItem(AUDIO_PROGRESS_KEY, JSON.stringify(store));
   } catch {}
+}
+
+function buildLectureIdToArchiveMap() {
+  const map = new Map();
+  if (typeof HOME_AUDIO_POOL !== 'undefined' && Array.isArray(HOME_AUDIO_POOL)) {
+    for (const item of HOME_AUDIO_POOL) {
+      if (Number.isFinite(item.id) && item.archive) map.set(item.id, item.archive);
+    }
+  }
+  for (const lec of getLoadedLectures()) {
+    if (Number.isFinite(lec.id) && lec.archive) map.set(lec.id, lec.archive);
+  }
+  return map;
+}
+
+function resolveArchiveFromLectureId(lectureId) {
+  if (!Number.isFinite(lectureId)) return null;
+  return buildLectureIdToArchiveMap().get(lectureId) || null;
+}
+
+function isNumericProgressKey(key) {
+  return /^\d+$/.test(key);
+}
+
+function migrateAudioProgressStore(store) {
+  let changed = false;
+  const migrated = {};
+  const idMap = buildLectureIdToArchiveMap();
+
+  for (const [key, value] of Object.entries(store)) {
+    if (isNumericProgressKey(key)) {
+      const archive = idMap.get(parseInt(key, 10));
+      if (!archive) {
+        changed = true;
+        continue;
+      }
+      const parsed = parseAudioProgressEntry(value);
+      const existing = migrated[archive];
+      const existingParsed = existing ? parseAudioProgressEntry(existing) : null;
+      if (parsed && (!existingParsed || parsed.at >= existingParsed.at)) {
+        migrated[archive] = value;
+      }
+      changed = true;
+      continue;
+    }
+    migrated[key] = value;
+  }
+
+  if (changed) writeAudioProgressStore(migrated);
+  return migrated;
+}
+
+function readAudioProgressStore() {
+  try {
+    const raw = localStorage.getItem(AUDIO_PROGRESS_KEY);
+    const store = raw ? JSON.parse(raw) : {};
+    return migrateAudioProgressStore(store);
+  } catch {
+    return {};
+  }
 }
 
 function lectureIdFromAudio(audio) {
@@ -35,6 +86,13 @@ function lectureIdFromAudio(audio) {
   if (!card) return null;
   const match = card.id.match(/^lecture-(\d+)$/);
   return match ? parseInt(match[1], 10) : null;
+}
+
+function lectureArchiveFromAudio(audio) {
+  const fromData = audio.dataset.lectureArchive;
+  if (fromData) return fromData;
+  const lectureId = lectureIdFromAudio(audio);
+  return resolveArchiveFromLectureId(lectureId);
 }
 
 function parseAudioProgressEntry(value) {
@@ -47,16 +105,15 @@ function parseAudioProgressEntry(value) {
   return null;
 }
 
-function saveAudioProgress(lectureId, currentTime, duration) {
-  if (!Number.isFinite(lectureId) || !Number.isFinite(currentTime)) return;
+function saveAudioProgress(archive, currentTime, duration) {
+  if (!archive || !Number.isFinite(currentTime)) return;
   const store = readAudioProgressStore();
-  const key = String(lectureId);
   if (duration && currentTime >= duration - AUDIO_PROGRESS_END_MARGIN_SEC) {
-    delete store[key];
+    delete store[archive];
   } else if (currentTime < AUDIO_PROGRESS_MIN_SAVE_SEC) {
-    delete store[key];
+    delete store[archive];
   } else {
-    store[key] = {
+    store[archive] = {
       t: Math.round(currentTime * 10) / 10,
       at: Date.now(),
     };
@@ -64,20 +121,20 @@ function saveAudioProgress(lectureId, currentTime, duration) {
   writeAudioProgressStore(store);
 }
 
-function loadAudioProgress(lectureId) {
-  const parsed = parseAudioProgressEntry(readAudioProgressStore()[String(lectureId)]);
+function loadAudioProgress(archive) {
+  if (!archive) return 0;
+  const parsed = parseAudioProgressEntry(readAudioProgressStore()[archive]);
   return parsed ? parsed.seconds : 0;
 }
 
 function getContinueListeningEntries(limit = 3) {
   const store = readAudioProgressStore();
   return Object.entries(store)
-    .map(([id, value]) => {
+    .map(([archive, value]) => {
+      if (!archive || isNumericProgressKey(archive)) return null;
       const parsed = parseAudioProgressEntry(value);
       if (!parsed) return null;
-      const lectureId = parseInt(id, 10);
-      if (!Number.isFinite(lectureId)) return null;
-      return { id: lectureId, seconds: parsed.seconds, at: parsed.at };
+      return { archive, seconds: parsed.seconds, at: parsed.at };
     })
     .filter(Boolean)
     .sort((a, b) => b.at - a.at)
@@ -95,13 +152,13 @@ function formatAudioTimestamp(seconds) {
   return `${m}:${String(s).padStart(2, '0')}`;
 }
 
-function tryRestoreAudioProgress(audio, lectureId) {
-  const saved = loadAudioProgress(lectureId);
+function tryRestoreAudioProgress(audio, archive) {
+  const saved = loadAudioProgress(archive);
   if (saved <= 0) return false;
   const duration = audio.duration;
   if (!Number.isFinite(duration) || duration <= 0) return false;
   if (saved >= duration - AUDIO_PROGRESS_END_MARGIN_SEC) {
-    saveAudioProgress(lectureId, duration, duration);
+    saveAudioProgress(archive, duration, duration);
     return false;
   }
   if (Math.abs(audio.currentTime - saved) > 1) {
@@ -151,37 +208,41 @@ function bindAudioSkipControls(root, audio) {
 }
 
 function bindAudioProgress(audio) {
-  const lectureId = lectureIdFromAudio(audio);
-  if (!Number.isFinite(lectureId)) return;
+  const archive = lectureArchiveFromAudio(audio);
+  if (!archive) return;
 
   let saveTimer = null;
   let restored = false;
+  let hasPlayed = false;
 
   const attemptRestore = () => {
     if (restored) return;
-    if (tryRestoreAudioProgress(audio, lectureId)) restored = true;
+    if (tryRestoreAudioProgress(audio, archive)) restored = true;
   };
 
-  const persist = () => saveAudioProgress(lectureId, audio.currentTime, audio.duration);
+  const persist = () => saveAudioProgress(archive, audio.currentTime, audio.duration);
 
   const scheduleSave = () => {
     clearTimeout(saveTimer);
     saveTimer = setTimeout(() => {
-      if (!audio.paused && !audio.ended) persist();
+      if (hasPlayed && !audio.paused && !audio.ended) persist();
     }, 2000);
   };
 
   audio.addEventListener('loadedmetadata', attemptRestore);
   audio.addEventListener('durationchange', attemptRestore);
-  audio.addEventListener('play', attemptRestore);
+  audio.addEventListener('play', () => {
+    hasPlayed = true;
+    attemptRestore();
+  });
   audio.addEventListener('timeupdate', scheduleSave);
   audio.addEventListener('pause', () => {
     clearTimeout(saveTimer);
-    persist();
+    if (hasPlayed) persist();
   });
   audio.addEventListener('ended', () => {
     clearTimeout(saveTimer);
-    persist();
+    if (hasPlayed) persist();
   });
 }
 
@@ -823,11 +884,11 @@ function mountHomeGlobalSearch() {
   });
 }
 
-function buildAudioLookup(pool) {
+function buildAudioLookupByArchive(pool) {
   const map = new Map();
   if (!Array.isArray(pool)) return map;
   for (const item of pool) {
-    if (Number.isFinite(item.id)) map.set(item.id, item);
+    if (item.archive) map.set(item.archive, item);
   }
   return map;
 }
@@ -836,14 +897,18 @@ function mountContinueListening(audioLookup) {
   const section = document.getElementById('continueListeningSection');
   if (!section) return;
 
-  const entries = getContinueListeningEntries(3);
+  const lookup = audioLookup instanceof Map
+    ? audioLookup
+    : buildAudioLookupByArchive(audioLookup);
+  const entries = getContinueListeningEntries(12)
+    .filter((entry) => lookup.has(entry.archive))
+    .slice(0, 3);
   if (!entries.length) {
     section.classList.add('hidden');
     section.innerHTML = '';
     return;
   }
 
-  const lookup = audioLookup instanceof Map ? audioLookup : buildAudioLookup(audioLookup);
   section.classList.remove('hidden');
   section.innerHTML = `
     <div class="flex items-center justify-between mb-4">
@@ -856,13 +921,11 @@ function mountContinueListening(audioLookup) {
 
   const listEl = document.getElementById('continueListeningList');
   listEl.innerHTML = entries.map((entry) => {
-    const meta = lookup.get(entry.id);
-    const title = meta?.title || `Lecture #${entry.id}`;
+    const meta = lookup.get(entry.archive);
+    const title = meta?.title || 'Audio lecture';
     const sub = meta?.categoryLabel || 'Audio lecture';
     const thumb = meta?.thumb;
-    const href = meta?.archive
-      ? `audio.html?archive=${encodeURIComponent(meta.archive)}`
-      : `audio.html?lecture=${entry.id}`;
+    const href = `audio.html?archive=${encodeURIComponent(entry.archive)}`;
     const thumbHtml = thumb && isValidThumb(thumb)
       ? `<img src="${thumbDisplaySrc(thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="lazy" decoding="async" onerror="${thumbImgFallbackHandler(thumb)}">`
       : `<i class="fas fa-headphones text-gold/50 text-lg"></i>`;
