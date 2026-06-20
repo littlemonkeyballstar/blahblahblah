@@ -1079,6 +1079,8 @@ function mountMobileStyles() {
       align-items: flex-start;
       gap: 0.5rem;
       margin-bottom: 0.5rem;
+      position: relative;
+      z-index: 2;
     }
     .media-card__title-wrap {
       flex: 1 1 auto;
@@ -1100,12 +1102,15 @@ function mountMobileStyles() {
       text-overflow: ellipsis;
     }
     .media-card__title-tip {
-      display: none;
+      visibility: hidden;
+      opacity: 0;
       position: absolute;
       left: 0;
-      right: 0;
-      bottom: calc(100% + 0.35rem);
-      z-index: 30;
+      top: calc(100% + 0.35rem);
+      width: max-content;
+      max-width: min(22rem, calc(100vw - 2.5rem));
+      min-width: min(100%, 14rem);
+      z-index: 40;
       padding: 0.5rem 0.65rem;
       border-radius: 0.5rem;
       background: #1e293b;
@@ -1118,14 +1123,18 @@ function mountMobileStyles() {
       word-break: break-word;
       box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
       pointer-events: none;
+      transition: opacity 0.15s ease, visibility 0.15s ease;
     }
     @media (hover: hover) and (pointer: fine) {
-      .media-card__title-wrap.is-overflow:hover .media-card__title-tip {
-        display: block;
+      .media-card__title-wrap.is-overflow:hover .media-card__title-tip,
+      .media-card__head:has(.media-card__title-wrap.is-overflow):hover .media-card__title-tip {
+        visibility: visible;
+        opacity: 1;
       }
     }
     .media-card__title-wrap.is-overflow.is-title-expanded .media-card__title-tip {
-      display: block;
+      visibility: visible;
+      opacity: 1;
     }
     @media (hover: none), (pointer: coarse) {
       .media-card__title-wrap.is-overflow {
@@ -1160,9 +1169,17 @@ function mountMobileStyles() {
     }
     .media-card__video {
       margin-top: auto;
+      overflow: hidden;
+      border-radius: 0 0 1rem 1rem;
     }
     #grid .media-card {
       height: 100%;
+      overflow: visible;
+      position: relative;
+    }
+    #grid .media-card:has(.media-card__title-wrap.is-overflow:hover),
+    #grid .media-card:has(.media-card__title-wrap.is-title-expanded) {
+      z-index: 20;
     }
   `;
   document.head.appendChild(style);
@@ -1382,9 +1399,15 @@ function bindMediaCardTitles(root = document) {
     if (!viewport || !text) return;
 
     const syncOverflow = () => {
-      const overflows = text.scrollWidth > viewport.clientWidth + 1;
+      const overflows = text.scrollWidth > viewport.clientWidth + 1
+        || text.getBoundingClientRect().width > viewport.getBoundingClientRect().width + 1;
       wrap.classList.toggle('is-overflow', overflows);
-      if (!overflows) wrap.classList.remove('is-title-expanded');
+      if (overflows) {
+        text.setAttribute('title', text.textContent || '');
+      } else {
+        text.removeAttribute('title');
+        wrap.classList.remove('is-title-expanded');
+      }
     };
 
     const scheduleSync = () => requestAnimationFrame(() => requestAnimationFrame(syncOverflow));
@@ -1872,7 +1895,7 @@ function mediaCard({
       </div>`;
 
   return `
-    <article id="${id || ''}" class="media-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5 sm:hover:-translate-y-0.5">
+    <article id="${id || ''}" class="media-card bg-slate-900/70 border border-slate-800 rounded-2xl flex flex-col hover:border-gold/30 transition-all hover:-translate-y-0.5 sm:hover:-translate-y-0.5">
       ${thumbSection}
       <div class="media-card__inner">
         <div class="media-card__head">
