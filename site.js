@@ -1086,7 +1086,7 @@ function mountMobileStyles() {
     }
     .media-card__title {
       margin: 0;
-      font-size: 0.8125rem;
+      font-size: 0.875rem;
       line-height: 1.25rem;
       font-weight: 500;
       color: #f1f5f9;
