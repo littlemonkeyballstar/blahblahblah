@@ -1079,6 +1079,7 @@ function mountMobileStyles() {
       align-items: flex-start;
       gap: 0.5rem;
       margin-bottom: 0.5rem;
+      min-height: 2.75rem;
       position: relative;
       z-index: 2;
     }
@@ -1090,16 +1091,20 @@ function mountMobileStyles() {
     .media-card__title-viewport {
       overflow: hidden;
       min-width: 0;
+      min-height: 2.75rem;
     }
     .media-card__title-text {
-      display: block;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+      overflow: hidden;
       font-size: 0.875rem;
-      line-height: 1.25rem;
+      line-height: 1.375rem;
       font-weight: 500;
       color: #e2e8f0;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      white-space: normal;
+      word-break: break-word;
+      overflow-wrap: anywhere;
     }
     .media-card__title-tip {
       visibility: hidden;
@@ -1143,10 +1148,10 @@ function mountMobileStyles() {
     }
     .media-card__actions {
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       gap: 0.25rem;
       flex-shrink: 0;
-      margin-top: 0.0625rem;
+      padding-top: 0.125rem;
     }
     .media-card__action-btn {
       width: 1.75rem;
@@ -1399,8 +1404,7 @@ function bindMediaCardTitles(root = document) {
     if (!viewport || !text) return;
 
     const syncOverflow = () => {
-      const overflows = text.scrollWidth > viewport.clientWidth + 1
-        || text.getBoundingClientRect().width > viewport.getBoundingClientRect().width + 1;
+      const overflows = text.scrollHeight > text.clientHeight + 1;
       wrap.classList.toggle('is-overflow', overflows);
       if (overflows) {
         text.setAttribute('title', text.textContent || '');
