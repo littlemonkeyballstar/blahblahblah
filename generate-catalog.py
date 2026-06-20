@@ -39,6 +39,7 @@ SRC_CACHE = WEB_THUMB / "_src"
 ASSETS_OUT = WEB_THUMB / "assets"  # GitHub Pages-safe copy (no _src underscore folder)
 EXTRACTED = WEB_THUMB / "extracted"
 ARCHIVE_URL = "https://archive.org/metadata/FaisalAudios"
+ARCHIVE_CACHE = WEBSITE / "data" / "archive-index.json"
 IMAGE_EXTS = {".jpg", ".jpeg", ".png", ".webp"}
 COVER_NAMES = {"cover.png", "cover.jpg", "cover.jpeg", "cover.webp",
                 "COVER.png", "COVER.jpg", "COVER.jpeg", "COVER.webp"}
@@ -350,6 +351,7 @@ LECTURE_TITLE_OVERRIDES = {
     norm("47 signs of the wicked scholer"): "47 Signs of the Wicked Scholar",
     norm("the Barking dogs of jahannam"): "The Barking Dogs of Jahannam (Refuting the modern day Khawarij)",
     norm("DEVIL'S DECEPTION OF SAUDI SALAFIS - Abdallah Al Faisal"): "DEVIL'S DECEPTION OF SAUDI SALAFIS (1990s)",
+    norm("MURJIA - Shaykh Faisal"): "MURJIA (Refuting liberal Muslims)",
 }
 
 LECTURE_CATEGORY_OVERRIDES = {
@@ -954,9 +956,7 @@ def resolve_lecture_title(filename_stem: str) -> str:
     return strip_speaker_from_title(title)
 
 
-def load_archive_index():
-    with urllib.request.urlopen(ARCHIVE_URL, timeout=30) as resp:
-        data = json.load(resp)
+def build_archive_index_from_ia(data: dict) -> tuple[dict[str, str], dict[str, str]]:
     by_path, by_name = {}, {}
     for item in data.get("files", []):
         name = item.get("name", "")
@@ -972,6 +972,40 @@ def load_archive_index():
                     folder, sfile = name.rsplit("/", 1)
                     by_path.setdefault(f"{folder}/{stripped}".lower(), name)
     return by_path, by_name
+
+
+def build_archive_index_from_local() -> tuple[dict[str, str], dict[str, str]]:
+    """Identity-map local MP3 paths when Internet Archive metadata is unavailable."""
+    by_path, by_name = {}, {}
+    if not ROOT.exists():
+        return by_path, by_name
+    for dirpath, _, filenames in os.walk(ROOT):
+        for filename in filenames:
+            if not filename.lower().endswith(".mp3"):
+                continue
+            rel = Path(dirpath, filename).relative_to(ROOT).as_posix()
+            by_path[rel.lower()] = rel
+            by_name.setdefault(filename.lower(), rel)
+    return by_path, by_name
+
+
+def load_archive_index():
+    try:
+        with urllib.request.urlopen(ARCHIVE_URL, timeout=30) as resp:
+            data = json.load(resp)
+        by_path, by_name = build_archive_index_from_ia(data)
+        ARCHIVE_CACHE.parent.mkdir(parents=True, exist_ok=True)
+        with open(ARCHIVE_CACHE, "w", encoding="utf-8") as handle:
+            json.dump({"by_path": by_path, "by_name": by_name}, handle)
+        return by_path, by_name
+    except Exception as err:
+        if ARCHIVE_CACHE.is_file():
+            print(f"Warning: archive fetch failed ({err}); using cached index")
+            with open(ARCHIVE_CACHE, encoding="utf-8") as handle:
+                cached = json.load(handle)
+            return cached["by_path"], cached["by_name"]
+        print(f"Warning: archive fetch failed ({err}); using local MP3 paths")
+        return build_archive_index_from_local()
 
 
 def archive_path(folder, filename, by_path, by_name):
@@ -1072,7 +1106,11 @@ class ThumbResolver:
                 if not key or len(key) < 4:
                     continue
                 by_key[key] = web_path(path)
-            self.audio_flat = [(key, rel) for key, rel in sorted(by_key.items())]
+            expanded = dict(by_key)
+            for thumb_key, lecture_key in THUMB_MATCH_ALIASES.items():
+                if thumb_key in by_key:
+                    expanded[lecture_key] = by_key[thumb_key]
+            self.audio_flat = [(key, rel) for key, rel in sorted(expanded.items())]
 
         if SRC_CACHE.exists():
             for path in SRC_CACHE.rglob("*"):

@@ -415,7 +415,7 @@ const FEATURED_LECTURES = [
   {
     "id": 378,
     "thumb": "thumb/MADKHALIS - Shaykh Faisal.png",
-    "archive": "MADKHALIS - Shaykh Faisal.mp3"
+    "archive": "Madkhali/MADKHALIS - Shaykh Faisal.mp3"
   },
   {
     "id": 370,

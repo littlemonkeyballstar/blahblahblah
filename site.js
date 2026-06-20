@@ -249,9 +249,45 @@ function bindAudioProgress(audio) {
 const _lectureChunks = new Map();
 const _lectureChunkLoads = new Map();
 const _loadedScripts = new Set();
+let _featuredThumbById = null;
+let _featuredThumbByArchive = null;
+
+function ensureFeaturedThumbLookups() {
+  if (_featuredThumbById) return;
+  _featuredThumbById = new Map();
+  _featuredThumbByArchive = new Map();
+  const pool = typeof FEATURED_LECTURES !== 'undefined' ? FEATURED_LECTURES : [];
+  for (const entry of pool) {
+    const thumb = entry.thumb;
+    if (!thumb || thumb.includes('__ia_thumb')) continue;
+    if (entry.id != null) _featuredThumbById.set(entry.id, thumb);
+    if (entry.archive) _featuredThumbByArchive.set(entry.archive, thumb);
+  }
+}
+
+function flatFeaturedThumb(lecture) {
+  if (!lecture) return null;
+  ensureFeaturedThumbLookups();
+  if (lecture.id != null && _featuredThumbById.has(lecture.id)) {
+    return _featuredThumbById.get(lecture.id);
+  }
+  if (lecture.archive && _featuredThumbByArchive.has(lecture.archive)) {
+    return _featuredThumbByArchive.get(lecture.archive);
+  }
+  return null;
+}
+
+function resolveLectureThumb(lecture) {
+  if (lecture?.thumb && !lecture.thumb.includes('__ia_thumb')) return lecture.thumb;
+  return flatFeaturedThumb(lecture);
+}
 
 function registerLectureChunk(catId, items) {
-  _lectureChunks.set(catId, items);
+  const resolved = items.map((lecture) => {
+    const thumb = resolveLectureThumb(lecture);
+    return thumb ? { ...lecture, thumb } : lecture;
+  });
+  _lectureChunks.set(catId, resolved);
 }
 
 function getLoadedLectures() {

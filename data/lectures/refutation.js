@@ -36,7 +36,7 @@ registerLectureChunk("Refutation", [
     "categoryLabel": "Refutations",
     "subcategory": "refutation_madkhali",
     "subcategoryLabel": "Madkhalis",
-    "archive": "MADKHALIS - Shaykh Faisal.mp3",
+    "archive": "Madkhali/MADKHALIS - Shaykh Faisal.mp3",
     "thumb": "thumb/MADKHALIS - Shaykh Faisal.png",
     "id": 378
   },
@@ -127,7 +127,7 @@ registerLectureChunk("Refutation", [
     "subcategory": "refutation_jews",
     "subcategoryLabel": "Jews",
     "archive": "NO PEACE WITH THE JEWS - Abdallah Al Faisal.mp3",
-    "thumb": null,
+    "thumb": "thumb/NO PEACE WITH JEWS.jpg",
     "id": 387
   },
   {
@@ -181,7 +181,7 @@ registerLectureChunk("Refutation", [
     "id": 392
   },
   {
-    "title": "MURJIA",
+    "title": "MURJIA (Refuting liberal Muslims)",
     "category": "Refutation",
     "categoryLabel": "Refutations",
     "subcategory": "refutation_deviants",

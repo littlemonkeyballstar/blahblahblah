@@ -267,7 +267,7 @@ const HOME_FEATURED = [
     "title": "MADKHALIS",
     "categoryLabel": "Refutations",
     "thumb": "thumb/MADKHALIS - Shaykh Faisal.png",
-    "archive": "MADKHALIS - Shaykh Faisal.mp3"
+    "archive": "Madkhali/MADKHALIS - Shaykh Faisal.mp3"
   },
   {
     "id": 370,
@@ -292,7 +292,7 @@ const HOME_FEATURED = [
   },
   {
     "id": 393,
-    "title": "MURJIA",
+    "title": "MURJIA (Refuting liberal Muslims)",
     "categoryLabel": "Refutations",
     "thumb": "thumb/MURJIA - Shaykh Faisal.jpg",
     "archive": "MURJIA - Shaykh Faisal.mp3"

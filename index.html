@@ -452,11 +452,14 @@
     function getFeaturedLectures() {
       const guaranteed = typeof HOME_FEATURED_GUARANTEED !== 'undefined' ? HOME_FEATURED_GUARANTEED : [];
       const pool = typeof HOME_FEATURED !== 'undefined' ? HOME_FEATURED : [];
-      const guaranteedIds = new Set(guaranteed.map((item) => item.id));
-      const rest = pool.filter((item) => !guaranteedIds.has(item.id));
       const maxSlides = 8;
-      const slots = Math.max(0, Math.min(maxSlides - guaranteed.length, rest.length));
-      return shuffleArray([...guaranteed, ...randomPick(rest, slots)]);
+      // Rotate favorites: 2 random pinned + 6 random from the full thumb/ pool
+      const favoriteSlots = Math.min(2, guaranteed.length);
+      const pickedFavorites = randomPick(guaranteed, favoriteSlots);
+      const pickedIds = new Set(pickedFavorites.map((item) => item.id));
+      const rest = pool.filter((item) => !pickedIds.has(item.id));
+      const randomSlots = Math.max(0, Math.min(maxSlides - pickedFavorites.length, rest.length));
+      return shuffleArray([...pickedFavorites, ...randomPick(rest, randomSlots)]);
     }
 
     function buildSlide(lec) {

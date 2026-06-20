@@ -814,7 +814,8 @@
       const thumbLoading = eagerThumb ? 'eager' : 'lazy';
       const thumbPriority = eagerThumb ? ' fetchpriority="high"' : '';
       const audioUrl = archiveStreamUrl(ARCHIVE_BASE, lecture.archive);
-      const hasThumb = isValidThumb(lecture.thumb);
+      const resolvedThumb = resolveLectureThumb(lecture);
+      const hasThumb = isValidThumb(resolvedThumb);
 
       const subBadge = hasThumb && lecture.subcategoryLabel
         ? `<span class="text-[10px] uppercase tracking-wider text-slate-500">${escapeHtml(lecture.subcategoryLabel)}</span>`
@@ -832,8 +833,8 @@
       const thumbSection = hasThumb
         ? `<div class="thumb-frame relative flex items-center justify-center p-3 overflow-hidden">
             ${simplePlaceholderHtml(lecture.categoryLabel)}
-            <img src="${thumbDisplaySrc(lecture.thumb)}" alt="" class="relative z-[1]" loading="${thumbLoading}" decoding="async"${thumbPriority}
-              onerror="${thumbImgFallbackHandler(lecture.thumb)}">
+            <img src="${thumbDisplaySrc(resolvedThumb)}" alt="" class="relative z-[1]" loading="${thumbLoading}" decoding="async"${thumbPriority}
+              onerror="${thumbImgFallbackHandler(resolvedThumb)}">
             <span class="absolute top-2 left-2 px-2 py-0.5 rounded-md bg-slate-950/80 text-gold text-[10px] font-semibold uppercase tracking-wider backdrop-blur-sm z-10">
               ${escapeHtml(lecture.categoryLabel)}
             </span>

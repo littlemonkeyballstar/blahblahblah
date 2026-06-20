@@ -3314,7 +3314,7 @@ const SEARCH_INDEX = [
   {
     "type": "audio",
     "id": 393,
-    "title": "MURJIA",
+    "title": "MURJIA (Refuting liberal Muslims)",
     "sub": "Refutations",
     "archive": "MURJIA - Shaykh Faisal.mp3",
     "href": "audio.html?archive=MURJIA%20-%20Shaykh%20Faisal.mp3",
