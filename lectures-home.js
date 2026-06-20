@@ -13,10 +13,24 @@ const HOME_FEATURED_GUARANTEED = [
     "categoryLabel": "Refutations",
     "thumb": "thumb/The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.jpg",
     "archive": "the Barking dogs of jahannam.mp3"
+  },
+  {
+    "id": 436,
+    "title": "47 Signs of the Wicked Scholar",
+    "categoryLabel": "Wicked Scholars",
+    "thumb": "thumb/47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full- .png",
+    "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3"
   }
 ];
 
 const HOME_FEATURED = [
+  {
+    "id": 436,
+    "title": "47 Signs of the Wicked Scholar",
+    "categoryLabel": "Wicked Scholars",
+    "thumb": "thumb/47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full- .png",
+    "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3"
+  },
   {
     "id": 231,
     "title": "What is Al-Wala wal-Bara — Explanation of core Islamic fundamentals",
@@ -74,7 +88,7 @@ const HOME_FEATURED = [
     "archive": "DEMOCRATES - Those Who Participate In Democratic Election.mp3"
   },
   {
-    "id": 491,
+    "id": 490,
     "title": "DISEASES OF THE HEART",
     "categoryLabel": "Diseases of the Heart",
     "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png",
@@ -277,7 +291,7 @@ const HOME_FEATURED = [
     "archive": "MUSA AND QAROON - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 478,
+    "id": 477,
     "title": "MUSLIM MARRYING NON MUSLIM",
     "categoryLabel": "Marriage & Family",
     "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png",
@@ -326,7 +340,7 @@ const HOME_FEATURED = [
     "archive": "Khilafah/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 479,
+    "id": 478,
     "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE",
     "categoryLabel": "Marriage & Family",
     "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg",
@@ -466,14 +480,14 @@ const HOME_FEATURED = [
     "archive": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 443,
+    "id": 442,
     "title": "WICKED SCHOLARS ARE LIKE A DOG",
     "categoryLabel": "Wicked Scholars",
     "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg",
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3"
   },
   {
-    "id": 484,
+    "id": 483,
     "title": "WIVES & CHILDREN",
     "categoryLabel": "Marriage & Family",
     "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png",

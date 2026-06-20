@@ -1,7 +1,7 @@
 /* Auto-generated — run generate-catalog.py to refresh */
 const ARCHIVE_BASE = "https://archive.org/download/FaisalAudios/";
 const THUMB_FALLBACK = "thumb/__ia_thumb.jpg";
-const LECTURE_TOTAL = 532;
+const LECTURE_TOTAL = 531;
 
 const LECTURE_CATEGORIES = [
   {
@@ -177,7 +177,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "Wicked_Scholars",
     "label": "Wicked Scholars",
-    "count": 8,
+    "count": 7,
     "subcategories": []
   },
   {
@@ -258,6 +258,11 @@ const LECTURE_CATEGORIES = [
 
 const FEATURED_LECTURES = [
   {
+    "id": 436,
+    "thumb": "thumb/47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full- .png",
+    "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3"
+  },
+  {
     "id": 231,
     "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png",
     "archive": "Al-Wala wal-Bara by shaykh Abdullah Faisal.mp3"
@@ -298,7 +303,7 @@ const FEATURED_LECTURES = [
     "archive": "DEMOCRATES - Those Who Participate In Democratic Election.mp3"
   },
   {
-    "id": 491,
+    "id": 490,
     "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png",
     "archive": "Diseases_of_the_Heart/DISEASES OF THE HEART - Shaykh Faisal.mp3"
   },
@@ -443,7 +448,7 @@ const FEATURED_LECTURES = [
     "archive": "MUSA AND QAROON - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 478,
+    "id": 477,
     "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png",
     "archive": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.mp3"
   },
@@ -478,7 +483,7 @@ const FEATURED_LECTURES = [
     "archive": "Khilafah/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 479,
+    "id": 478,
     "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg",
     "archive": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.mp3"
   },
@@ -578,12 +583,12 @@ const FEATURED_LECTURES = [
     "archive": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 443,
+    "id": 442,
     "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg",
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3"
   },
   {
-    "id": 484,
+    "id": 483,
     "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png",
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3"
   }
@@ -1033,7 +1038,7 @@ const LECTURE_ID_INDEX = {
   "440": "Wicked_Scholars",
   "441": "Wicked_Scholars",
   "442": "Wicked_Scholars",
-  "443": "Wicked_Scholars",
+  "443": "Science in the quran",
   "444": "Science in the quran",
   "445": "Science in the quran",
   "446": "Science in the quran",
@@ -1052,7 +1057,7 @@ const LECTURE_ID_INDEX = {
   "459": "Science in the quran",
   "460": "Science in the quran",
   "461": "Science in the quran",
-  "462": "Science in the quran",
+  "462": "Nikah_Divorce",
   "463": "Nikah_Divorce",
   "464": "Nikah_Divorce",
   "465": "Nikah_Divorce",
@@ -1075,36 +1080,36 @@ const LECTURE_ID_INDEX = {
   "482": "Nikah_Divorce",
   "483": "Nikah_Divorce",
   "484": "Nikah_Divorce",
-  "485": "Nikah_Divorce",
+  "485": "Ramadan",
   "486": "Ramadan",
   "487": "Ramadan",
   "488": "Ramadan",
   "489": "Ramadan",
-  "490": "Ramadan",
+  "490": "Diseases_of_the_Heart",
   "491": "Diseases_of_the_Heart",
   "492": "Diseases_of_the_Heart",
   "493": "Diseases_of_the_Heart",
   "494": "Diseases_of_the_Heart",
   "495": "Diseases_of_the_Heart",
-  "496": "Diseases_of_the_Heart",
+  "496": "Personality Disorders (Series)",
   "497": "Personality Disorders (Series)",
   "498": "Personality Disorders (Series)",
   "499": "Personality Disorders (Series)",
   "500": "Personality Disorders (Series)",
-  "501": "Personality Disorders (Series)",
+  "501": "Who Are You?",
   "502": "Who Are You?",
   "503": "Who Are You?",
   "504": "Who Are You?",
   "505": "Who Are You?",
   "506": "Who Are You?",
-  "507": "Who Are You?",
+  "507": "Radio_Show",
   "508": "Radio_Show",
   "509": "Radio_Show",
   "510": "Radio_Show",
   "511": "Radio_Show",
   "512": "Radio_Show",
   "513": "Radio_Show",
-  "514": "Radio_Show",
+  "514": "Character_Dawah",
   "515": "Character_Dawah",
   "516": "Character_Dawah",
   "517": "Character_Dawah",
@@ -1120,8 +1125,7 @@ const LECTURE_ID_INDEX = {
   "527": "Character_Dawah",
   "528": "Character_Dawah",
   "529": "Character_Dawah",
-  "530": "Character_Dawah",
-  "531": "Character_Dawah"
+  "530": "Character_Dawah"
 };
 
 const LECTURE_CHUNK_URLS = {

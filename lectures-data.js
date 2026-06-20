@@ -176,7 +176,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "Wicked_Scholars",
     "label": "Wicked Scholars",
-    "count": 8,
+    "count": 7,
     "subcategories": []
   },
   {
@@ -4886,7 +4886,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3",
-    "thumb": null,
+    "thumb": "thumb/47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full- .png",
     "id": 436
   },
   {
@@ -4940,16 +4940,6 @@ const LECTURES = [
     "id": 441
   },
   {
-    "title": "WICKED SCHOLAR",
-    "category": "Wicked_Scholars",
-    "categoryLabel": "Wicked Scholars",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "Wicked_Scholars/WICKED SCHOLAR - Abdallah Al Faisal.mp3",
-    "thumb": null,
-    "id": 442
-  },
-  {
     "title": "WICKED SCHOLARS ARE LIKE A DOG",
     "category": "Wicked_Scholars",
     "categoryLabel": "Wicked Scholars",
@@ -4957,7 +4947,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3",
     "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg",
-    "id": 443
+    "id": 442
   },
   {
     "title": "Science of Quran - Part 1",
@@ -4969,7 +4959,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "Science of Quran",
-    "id": 444
+    "id": 443
   },
   {
     "title": "Science of Quran - Part 2 - The History of the Quran's Descent",
@@ -4981,7 +4971,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Science of Quran",
-    "id": 445
+    "id": 444
   },
   {
     "title": "Science of Quran - Part 2 - The Wahy",
@@ -4993,7 +4983,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Science of Quran",
-    "id": 446
+    "id": 445
   },
   {
     "title": "Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book",
@@ -5005,7 +4995,7 @@ const LECTURES = [
     "thumb": null,
     "part": 4,
     "series": "Science of Quran",
-    "id": 447
+    "id": 446
   },
   {
     "title": "Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs",
@@ -5017,7 +5007,7 @@ const LECTURES = [
     "thumb": null,
     "part": 5,
     "series": "Science of Quran",
-    "id": 448
+    "id": 447
   },
   {
     "title": "Science Of Quran - Part 6 - The causes Of Revelation I",
@@ -5029,7 +5019,7 @@ const LECTURES = [
     "thumb": null,
     "part": 6,
     "series": "Science of Quran",
-    "id": 449
+    "id": 448
   },
   {
     "title": "Science Of Quran - Part 7 - The causes Of Revelation II",
@@ -5041,7 +5031,7 @@ const LECTURES = [
     "thumb": null,
     "part": 7,
     "series": "Science of Quran",
-    "id": 450
+    "id": 449
   },
   {
     "title": "Science of Quran - Part 8 - The Causes of Revelation – An Nisa",
@@ -5053,7 +5043,7 @@ const LECTURES = [
     "thumb": null,
     "part": 8,
     "series": "Science of Quran",
-    "id": 451
+    "id": 450
   },
   {
     "title": "Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah",
@@ -5065,7 +5055,7 @@ const LECTURES = [
     "thumb": null,
     "part": 9,
     "series": "Science of Quran",
-    "id": 452
+    "id": 451
   },
   {
     "title": "Science of Quran - Part 10 - The Causes of Revelation – Al Imraan",
@@ -5077,7 +5067,7 @@ const LECTURES = [
     "thumb": null,
     "part": 10,
     "series": "Science of Quran",
-    "id": 453
+    "id": 452
   },
   {
     "title": "Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2",
@@ -5089,7 +5079,7 @@ const LECTURES = [
     "thumb": null,
     "part": 11,
     "series": "Science of Quran",
-    "id": 454
+    "id": 453
   },
   {
     "title": "Science of Quran - Part 12 - The Causes of Revelation – Al An’am",
@@ -5101,7 +5091,7 @@ const LECTURES = [
     "thumb": null,
     "part": 12,
     "series": "Science of Quran",
-    "id": 455
+    "id": 454
   },
   {
     "title": "Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf",
@@ -5113,7 +5103,7 @@ const LECTURES = [
     "thumb": null,
     "part": 13,
     "series": "Science of Quran",
-    "id": 456
+    "id": 455
   },
   {
     "title": "Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1",
@@ -5125,7 +5115,7 @@ const LECTURES = [
     "thumb": null,
     "part": 14,
     "series": "Science of Quran",
-    "id": 457
+    "id": 456
   },
   {
     "title": "Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1",
@@ -5137,7 +5127,7 @@ const LECTURES = [
     "thumb": null,
     "part": 15,
     "series": "Science of Quran",
-    "id": 458
+    "id": 457
   },
   {
     "title": "Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2",
@@ -5149,7 +5139,7 @@ const LECTURES = [
     "thumb": null,
     "part": 16,
     "series": "Science of Quran",
-    "id": 459
+    "id": 458
   },
   {
     "title": "The Animals Of The Holy Quran - Part 1",
@@ -5161,7 +5151,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "The Animals Of The Holy Quran",
-    "id": 460
+    "id": 459
   },
   {
     "title": "The Animals Of The Holy Quran - Part 2",
@@ -5173,7 +5163,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "The Animals Of The Holy Quran",
-    "id": 461
+    "id": 460
   },
   {
     "title": "Prophesies of the Holy Quran (11.22.11 to 11.23.11)",
@@ -5183,7 +5173,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Prophesies of the Holy Quran (11.22.11 to 11.23.11).mp3",
     "thumb": "thumb/extracted/d6ec668de41ae1.jpg",
-    "id": 462
+    "id": 461
   },
   {
     "title": "Rules of Nikah [Part 1] (06.30.11)",
@@ -5195,7 +5185,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "Rules of Nikah",
-    "id": 463
+    "id": 462
   },
   {
     "title": "Rules of Nikah [Part 2] (07.01.11)",
@@ -5207,7 +5197,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Rules of Nikah",
-    "id": 464
+    "id": 463
   },
   {
     "title": "Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11)",
@@ -5219,7 +5209,7 @@ const LECTURES = [
     "thumb": null,
     "part": 3,
     "series": "Rules of Nikah",
-    "id": 465
+    "id": 464
   },
   {
     "title": "Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11)",
@@ -5231,7 +5221,7 @@ const LECTURES = [
     "thumb": null,
     "part": 4,
     "series": "Rules of Nikah",
-    "id": 466
+    "id": 465
   },
   {
     "title": "Rules of Divorce [Part 1] (07.06.11)",
@@ -5243,7 +5233,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "Rules of Divorce",
-    "id": 467
+    "id": 466
   },
   {
     "title": "Rules of Divorce [Part 2] Revisited (07.08.11)",
@@ -5255,7 +5245,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Rules of Divorce",
-    "id": 468
+    "id": 467
   },
   {
     "title": "The 18 Types Of Women You Should Not Marry",
@@ -5265,7 +5255,7 @@ const LECTURES = [
     "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3",
     "thumb": null,
-    "id": 469
+    "id": 468
   },
   {
     "title": "The 20 Types Of Men You Should Not Marry",
@@ -5275,7 +5265,7 @@ const LECTURES = [
     "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3",
     "thumb": null,
-    "id": 470
+    "id": 469
   },
   {
     "title": "the Fiqh of Divorce",
@@ -5285,7 +5275,7 @@ const LECTURES = [
     "subcategoryLabel": "Fiqh of Divorce",
     "archive": "Nikah_Divorce/the Fiqh of Divorce.mp3",
     "thumb": null,
-    "id": 471
+    "id": 470
   },
   {
     "title": "The Fiqh of Menses",
@@ -5295,7 +5285,7 @@ const LECTURES = [
     "subcategoryLabel": "Fiqh of Menses",
     "archive": "The Fiqh of Menses.mp3",
     "thumb": null,
-    "id": 472
+    "id": 471
   },
   {
     "title": "Daughters Are Diamonds (06.30.11)",
@@ -5305,7 +5295,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Daughters Are Diamonds (06.30.11).mp3",
     "thumb": null,
-    "id": 473
+    "id": 472
   },
   {
     "title": "LOVE",
@@ -5315,7 +5305,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "LOVE - Abdallah Al Faisal.mp3",
     "thumb": "thumb/extracted/6d7686edec03e1.jpg",
-    "id": 474
+    "id": 473
   },
   {
     "title": "MARITAL DISCORD (NUSHOOZ)",
@@ -5325,7 +5315,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 475
+    "id": 474
   },
   {
     "title": "Money Can't Buy True Love (07.02.11)",
@@ -5335,7 +5325,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal.mp3",
     "thumb": null,
-    "id": 476
+    "id": 475
   },
   {
     "title": "Muslim Home (12.21.11 to 12.22.11)",
@@ -5345,7 +5335,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Muslim Home (12.21.11 to 12.22.11).mp3",
     "thumb": "thumb/extracted/8be0c03a517daa.jpg",
-    "id": 477
+    "id": 476
   },
   {
     "title": "MUSLIM MARRYING NON MUSLIM",
@@ -5355,7 +5345,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.mp3",
     "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png",
-    "id": 478
+    "id": 477
   },
   {
     "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE",
@@ -5365,7 +5355,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.mp3",
     "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg",
-    "id": 479
+    "id": 478
   },
   {
     "title": "TAINTED LOVE",
@@ -5375,7 +5365,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "TAINTED LOVE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 480
+    "id": 479
   },
   {
     "title": "tainted love 2013.04.20 (evening)",
@@ -5385,7 +5375,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "tainted love 2013.04.20 (evening).mp3",
     "thumb": null,
-    "id": 481
+    "id": 480
   },
   {
     "title": "The Muslim Home",
@@ -5395,7 +5385,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - The Muslim Home.mp3",
     "thumb": null,
-    "id": 482
+    "id": 481
   },
   {
     "title": "The Muslim Home (dars)",
@@ -5405,7 +5395,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Muslim Home (dars).mp3",
     "thumb": null,
-    "id": 483
+    "id": 482
   },
   {
     "title": "WIVES & CHILDREN",
@@ -5415,7 +5405,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3",
     "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png",
-    "id": 484
+    "id": 483
   },
   {
     "title": "WOMEN IN ISLAM",
@@ -5425,7 +5415,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "WOMEN IN ISLAM - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 485
+    "id": 484
   },
   {
     "title": "18 Merits of Ramadan [Revisited] (07.31.11)",
@@ -5435,7 +5425,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Ramadan/18 Merits of Ramadan [Revisited] (07.31.11).mp3",
     "thumb": null,
-    "id": 486
+    "id": 485
   },
   {
     "title": "LAYLATUL QADR",
@@ -5445,7 +5435,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Ramadan/LAYLATUL QADR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 487
+    "id": 486
   },
   {
     "title": "RAMADAN OUR BLESSED GUEST",
@@ -5455,7 +5445,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Ramadan/RAMADAN OUR BLESSED GUEST - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 488
+    "id": 487
   },
   {
     "title": "Ramadhan - The Month of Glory (07.30.11)",
@@ -5465,7 +5455,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Ramadan/Ramadhan - The Month of Glory (07.30.11).mp3",
     "thumb": null,
-    "id": 489
+    "id": 488
   },
   {
     "title": "VIRTUES OF RAMADAN",
@@ -5475,7 +5465,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Ramadan/VIRTUES OF RAMADAN - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 490
+    "id": 489
   },
   {
     "title": "DISEASES OF THE HEART",
@@ -5485,7 +5475,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Diseases_of_the_Heart/DISEASES OF THE HEART - Shaykh Faisal.mp3",
     "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png",
-    "id": 491
+    "id": 490
   },
   {
     "title": "Diseases of the Heart (12.26.11 to 12.29.11)",
@@ -5495,7 +5485,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Diseases_of_the_Heart/Diseases of the Heart (12.26.11 to 12.29.11).mp3",
     "thumb": "thumb/extracted/076fb5be36c654.jpg",
-    "id": 492
+    "id": 491
   },
   {
     "title": "Diseases of the Heart [Lust]",
@@ -5505,7 +5495,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Diseases_of_the_Heart/Diseases of the Heart [Lust]- Shaikh Faisal 2.12.2011 PT Dars.mp3",
     "thumb": null,
-    "id": 493
+    "id": 492
   },
   {
     "title": "Radio Show - Diseases of the Heart (10.29.11)",
@@ -5515,7 +5505,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Diseases_of_the_Heart/Radio Show - Diseases of the Heart (10.29.11).mp3",
     "thumb": "thumb/extracted/f5c36659976c9e.jpg",
-    "id": 494
+    "id": 493
   },
   {
     "title": "Reality of Sincerity (12.07.11)",
@@ -5525,7 +5515,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Reality of Sincerity (12.07.11).mp3",
     "thumb": "thumb/extracted/1e7db6b17401c6.jpg",
-    "id": 495
+    "id": 494
   },
   {
     "title": "Road to Sincerity (07.17.11)",
@@ -5535,7 +5525,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Road to Sincerity (07.17.11).mp3",
     "thumb": null,
-    "id": 496
+    "id": 495
   },
   {
     "title": "Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12)",
@@ -5547,7 +5537,7 @@ const LECTURES = [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 1,
     "series": "Personality Disorders",
-    "id": 497
+    "id": 496
   },
   {
     "title": "Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12)",
@@ -5559,7 +5549,7 @@ const LECTURES = [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 2,
     "series": "Personality Disorders",
-    "id": 498
+    "id": 497
   },
   {
     "title": "Personality Disorders [Part 3] Narcissistic (05.06.12)",
@@ -5571,7 +5561,7 @@ const LECTURES = [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 3,
     "series": "Personality Disorders",
-    "id": 499
+    "id": 498
   },
   {
     "title": "Personality Disorders [Part 4] PTSD (05.07.12)",
@@ -5583,7 +5573,7 @@ const LECTURES = [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 4,
     "series": "Personality Disorders",
-    "id": 500
+    "id": 499
   },
   {
     "title": "Personality Disorders [Part 5] Anti-Social (05.08.12)",
@@ -5595,7 +5585,7 @@ const LECTURES = [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 5,
     "series": "Personality Disorders",
-    "id": 501
+    "id": 500
   },
   {
     "title": "Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11)",
@@ -5607,7 +5597,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "Who Are You",
-    "id": 502
+    "id": 501
   },
   {
     "title": "Who Are You – Part 1",
@@ -5619,7 +5609,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "Who Are You",
-    "id": 503
+    "id": 502
   },
   {
     "title": "Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11)",
@@ -5631,7 +5621,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Who Are You",
-    "id": 504
+    "id": 503
   },
   {
     "title": "Who Are You – Part 2",
@@ -5643,7 +5633,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Who Are You",
-    "id": 505
+    "id": 504
   },
   {
     "title": "Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11)",
@@ -5655,7 +5645,7 @@ const LECTURES = [
     "thumb": null,
     "part": 3,
     "series": "Who Are You",
-    "id": 506
+    "id": 505
   },
   {
     "title": "Who are You2",
@@ -5665,7 +5655,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who are You2.mp3",
     "thumb": null,
-    "id": 507
+    "id": 506
   },
   {
     "title": "Radio Show - Allah's Blessings to Mankind (08.20.11)",
@@ -5675,7 +5665,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Allah's Blessings to Mankind (08.20.11).mp3",
     "thumb": "thumb/extracted/2676a8f4838e99.jpg",
-    "id": 508
+    "id": 507
   },
   {
     "title": "Radio Show - Challenges Facing the Youth Globally (08.06.11)",
@@ -5685,7 +5675,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Challenges Facing the Youth Globally (08.06.11).mp3",
     "thumb": null,
-    "id": 509
+    "id": 508
   },
   {
     "title": "Radio Show - God In Islam (11.19.11)",
@@ -5695,7 +5685,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - God In Islam (11.19.11).mp3",
     "thumb": "thumb/extracted/b1693094c8ce71.jpg",
-    "id": 510
+    "id": 509
   },
   {
     "title": "Radio Show - Judgment Day (11.26.11)",
@@ -5705,7 +5695,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Judgment Day (11.26.11).mp3",
     "thumb": "thumb/extracted/6862f6ca95768a.jpg",
-    "id": 511
+    "id": 510
   },
   {
     "title": "Radio Show - Manhood (10.22.11)",
@@ -5715,7 +5705,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Manhood (10.22.11).mp3",
     "thumb": "thumb/extracted/e38b5240266f79.jpg",
-    "id": 512
+    "id": 511
   },
   {
     "title": "Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11)",
@@ -5725,7 +5715,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11).mp3",
     "thumb": "thumb/extracted/f30bbb19eb83af.jpg",
-    "id": 513
+    "id": 512
   },
   {
     "title": "Radio Show - Natural Instincts (07.30.11)",
@@ -5735,7 +5725,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Natural Instincts (07.30.11).mp3",
     "thumb": null,
-    "id": 514
+    "id": 513
   },
   {
     "title": "Balanced Nation (12.19.11)",
@@ -5745,7 +5735,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Balanced Nation (12.19.11).mp3",
     "thumb": "thumb/extracted/8dcb3b088624c3.jpg",
-    "id": 515
+    "id": 514
   },
   {
     "title": "Etiquettes Of Dawah",
@@ -5755,7 +5745,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Etiquettes Of Dawah.mp3",
     "thumb": null,
-    "id": 516
+    "id": 515
   },
   {
     "title": "Foundations of the Islamic Brotherhood And Sisterhood",
@@ -5765,7 +5755,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Foundations of the Islamic Brotherhood And Sisterhood.mp3",
     "thumb": null,
-    "id": 517
+    "id": 516
   },
   {
     "title": "Get Your Priorities Right (08.23.11)",
@@ -5775,7 +5765,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Get Your Priorities Right (08.23.11).mp3",
     "thumb": null,
-    "id": 518
+    "id": 517
   },
   {
     "title": "How to be Sincere to Allah (08.04.11 to 08.07.11)",
@@ -5785,7 +5775,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to Allah (08.04.11 to 08.07.11).mp3",
     "thumb": "thumb/extracted/4cbffbbbd24ca8.jpg",
-    "id": 519
+    "id": 518
   },
   {
     "title": "How to be Sincere to the Holy Qur'an (08.09.11)",
@@ -5795,7 +5785,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to the Holy Qur'an (08.09.11).mp3",
     "thumb": null,
-    "id": 520
+    "id": 519
   },
   {
     "title": "How to be Sincere to the Leaders (12.06.11)",
@@ -5805,7 +5795,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to the Leaders (12.06.11).mp3",
     "thumb": "thumb/extracted/fd6728401a4f1a.jpg",
-    "id": 521
+    "id": 520
   },
   {
     "title": "How to be Sincere to the Rasool (SAW) (08.08.11)",
@@ -5815,7 +5805,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to the Rasool (SAW) (08.08.11).mp3",
     "thumb": null,
-    "id": 522
+    "id": 521
   },
   {
     "title": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11)",
@@ -5825,7 +5815,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11).mp3",
     "thumb": null,
-    "id": 523
+    "id": 522
   },
   {
     "title": "Islamic Etiquettes (11.26.11)",
@@ -5835,7 +5825,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Islamic Etiquettes (11.26.11).mp3",
     "thumb": "thumb/extracted/74a3ae70b699b0.jpg",
-    "id": 524
+    "id": 523
   },
   {
     "title": "KNOWLEDGE",
@@ -5845,7 +5835,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "KNOWLEDGE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 525
+    "id": 524
   },
   {
     "title": "Manhood in Islam",
@@ -5855,7 +5845,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Manhood in Islam.mp3",
     "thumb": null,
-    "id": 526
+    "id": 525
   },
   {
     "title": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12",
@@ -5865,7 +5855,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12.mp3",
     "thumb": "thumb/extracted/78f1df9c3dffb9.jpg",
-    "id": 527
+    "id": 526
   },
   {
     "title": "ROLE OF THE MASJID",
@@ -5875,7 +5865,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "ROLE OF THE MASJID - Shaykh Faisal.mp3",
     "thumb": null,
-    "id": 528
+    "id": 527
   },
   {
     "title": "The 5 Needs of Mankind2",
@@ -5885,7 +5875,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 5 Needs of Mankind2.mp3",
     "thumb": null,
-    "id": 529
+    "id": 528
   },
   {
     "title": "The Etiquettes of Asking Questions",
@@ -5895,7 +5885,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Etiquettes of Asking Questions.mp3",
     "thumb": null,
-    "id": 530
+    "id": 529
   },
   {
     "title": "The Importance of Intention",
@@ -5905,11 +5895,16 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Importance of Intention.mp3",
     "thumb": null,
-    "id": 531
+    "id": 530
   }
 ];
 
 const FEATURED_LECTURES = [
+  {
+    "id": 436,
+    "thumb": "thumb/47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full- .png",
+    "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3"
+  },
   {
     "id": 231,
     "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png",
@@ -5951,7 +5946,7 @@ const FEATURED_LECTURES = [
     "archive": "DEMOCRATES - Those Who Participate In Democratic Election.mp3"
   },
   {
-    "id": 491,
+    "id": 490,
     "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png",
     "archive": "Diseases_of_the_Heart/DISEASES OF THE HEART - Shaykh Faisal.mp3"
   },
@@ -6096,7 +6091,7 @@ const FEATURED_LECTURES = [
     "archive": "MUSA AND QAROON - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 478,
+    "id": 477,
     "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png",
     "archive": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.mp3"
   },
@@ -6131,7 +6126,7 @@ const FEATURED_LECTURES = [
     "archive": "Khilafah/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 479,
+    "id": 478,
     "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg",
     "archive": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.mp3"
   },
@@ -6231,12 +6226,12 @@ const FEATURED_LECTURES = [
     "archive": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 443,
+    "id": 442,
     "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg",
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3"
   },
   {
-    "id": 484,
+    "id": 483,
     "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png",
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3"
   }

@@ -66,12 +66,15 @@ EXCLUDED_LECTURES = {
     "towards watering down the holy quran",
     # Duplicate of IMPORTANCE OF HIJRAH - Abdallah Al Faisal.mp3
     "the importance of hijrah",
+    # Removed per site owner request
+    "wicked scholar abdallah al faisal",
 }
 
 # Always included in the homepage featured slideshow, but order is shuffled (MP3 stem).
 GUARANTEED_HOME_FEATURED_STEMS = [
     "Al-Wala wal-Bara by shaykh Abdullah Faisal",
     "the Barking dogs of jahannam",
+    "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-",
 ]
 
 def is_blocked_thumb(path: Path) -> bool:

@@ -7,7 +7,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3",
-    "thumb": null,
+    "thumb": "thumb/47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full- .png",
     "id": 436
   },
   {
@@ -61,16 +61,6 @@ registerLectureChunk("Wicked_Scholars", [
     "id": 441
   },
   {
-    "title": "WICKED SCHOLAR",
-    "category": "Wicked_Scholars",
-    "categoryLabel": "Wicked Scholars",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "Wicked_Scholars/WICKED SCHOLAR - Abdallah Al Faisal.mp3",
-    "thumb": null,
-    "id": 442
-  },
-  {
     "title": "WICKED SCHOLARS ARE LIKE A DOG",
     "category": "Wicked_Scholars",
     "categoryLabel": "Wicked Scholars",
@@ -78,6 +68,6 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3",
     "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg",
-    "id": 443
+    "id": 442
   }
 ]);
