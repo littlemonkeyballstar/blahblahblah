@@ -1072,58 +1072,53 @@ function mountMobileStyles() {
       flex-direction: column;
       flex: 1 1 auto;
       min-width: 0;
-      padding: 0.75rem 0.875rem 0.875rem;
+      padding: 1rem;
     }
     .media-card__head {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
-      min-height: 2.5rem;
-      margin-bottom: 0.5rem;
+      gap: 0.625rem;
+      min-height: 2.75rem;
+      margin-bottom: 0.75rem;
     }
     .media-card__title-wrap {
       flex: 1 1 auto;
       min-width: 0;
-      min-height: 2.5rem;
       display: flex;
       align-items: center;
+      min-height: 2.75rem;
     }
     .media-card__title {
       margin: 0;
+      width: 100%;
       font-size: 0.875rem;
-      line-height: 1.25rem;
+      line-height: 1.375rem;
       font-weight: 500;
-      color: #f1f5f9;
+      color: #e2e8f0;
       display: -webkit-box;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
       overflow: hidden;
-      max-height: 2.5rem;
     }
     .media-card__actions {
-      display: inline-flex;
-      align-items: stretch;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
       flex-shrink: 0;
-      border-radius: 0.5rem;
-      border: 1px solid rgba(51, 65, 85, 0.75);
-      background: rgba(2, 6, 23, 0.45);
-      overflow: hidden;
     }
     .media-card__action-btn {
-      width: 1.875rem;
-      height: 1.875rem;
-      border: none;
-      border-radius: 0;
-      background: transparent;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 0.5rem;
+      border: 1px solid rgba(51, 65, 85, 0.65);
+      background: rgba(15, 23, 42, 0.55);
       color: #94a3b8;
-      transition: color 0.2s ease, background 0.2s ease;
-    }
-    .media-card__action-btn + .media-card__action-btn {
-      border-left: 1px solid rgba(51, 65, 85, 0.75);
+      transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
     }
     .media-card__action-btn:hover {
       color: #d4a853;
-      background: rgba(15, 23, 42, 0.75);
+      border-color: rgba(212, 168, 83, 0.4);
+      background: rgba(15, 23, 42, 0.85);
     }
     .media-card__action-btn.share-link-btn {
       cursor: pointer;
@@ -1132,8 +1127,6 @@ function mountMobileStyles() {
     }
     .media-card__video {
       margin-top: auto;
-      border-radius: 0.5rem;
-      overflow: hidden;
     }
     #grid .media-card {
       height: 100%;
