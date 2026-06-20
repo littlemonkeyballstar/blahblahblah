@@ -1072,14 +1072,13 @@ function mountMobileStyles() {
       flex-direction: column;
       flex: 1 1 auto;
       min-width: 0;
-      padding: 0.625rem 0.875rem 0.875rem;
+      padding: 0.4rem 0.75rem 0.55rem;
     }
     .media-card__head {
       display: flex;
       align-items: flex-start;
-      gap: 0.5rem;
-      margin-bottom: 0.5rem;
-      min-height: 2.75rem;
+      gap: 0.375rem;
+      margin-bottom: 0.25rem;
       position: relative;
       z-index: 2;
     }
@@ -1091,7 +1090,7 @@ function mountMobileStyles() {
     .media-card__title-viewport {
       overflow: hidden;
       min-width: 0;
-      min-height: 2.75rem;
+      min-height: 2.6rem;
     }
     .media-card__title-text {
       display: -webkit-box;
@@ -1099,7 +1098,7 @@ function mountMobileStyles() {
       -webkit-line-clamp: 2;
       overflow: hidden;
       font-size: 0.875rem;
-      line-height: 1.375rem;
+      line-height: 1.3rem;
       font-weight: 500;
       color: #e2e8f0;
       white-space: normal;
@@ -1149,9 +1148,8 @@ function mountMobileStyles() {
     .media-card__actions {
       display: flex;
       align-items: flex-start;
-      gap: 0.25rem;
+      gap: 0.2rem;
       flex-shrink: 0;
-      padding-top: 0.125rem;
     }
     .media-card__action-btn {
       width: 1.75rem;
