@@ -1107,39 +1107,64 @@ function mountMobileStyles() {
       opacity: 0;
       position: absolute;
       left: 0;
-      top: calc(100% + 0.35rem);
+      top: calc(100% + 0.3rem);
       width: max-content;
       max-width: min(22rem, calc(100vw - 2.5rem));
       min-width: min(100%, 14rem);
       z-index: 40;
-      padding: 0.5rem 0.65rem;
-      border-radius: 0.5rem;
-      background: #1e293b;
-      border: 1px solid rgba(212, 168, 83, 0.35);
+      padding: 0.55rem 0.7rem;
+      border-radius: 0.625rem;
+      background: linear-gradient(180deg, #243044 0%, #1e293b 100%);
+      border: 1px solid rgba(212, 168, 83, 0.45);
       font-size: 0.8125rem;
-      line-height: 1.4;
+      line-height: 1.45;
       font-weight: 500;
-      color: #e2e8f0;
+      color: #f1f5f9;
       white-space: normal;
       word-break: break-word;
-      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.45);
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(212, 168, 83, 0.08);
       pointer-events: none;
-      transition: opacity 0.15s ease, visibility 0.15s ease;
+      transform: scale(0.9) translateY(-6px);
+      transform-origin: top left;
+      transition:
+        opacity 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+        transform 0.22s cubic-bezier(0.22, 1, 0.36, 1),
+        visibility 0.22s;
+    }
+    .media-card__title-wrap.is-overflow.is-title-expanded {
+      z-index: 45;
     }
     @media (hover: hover) and (pointer: fine) {
       .media-card__title-wrap.is-overflow:hover .media-card__title-tip,
       .media-card__head:has(.media-card__title-wrap.is-overflow):hover .media-card__title-tip {
         visibility: visible;
         opacity: 1;
+        transform: scale(1) translateY(0);
       }
     }
     .media-card__title-wrap.is-overflow.is-title-expanded .media-card__title-tip {
       visibility: visible;
       opacity: 1;
+      transform: scale(1) translateY(0);
+      pointer-events: auto;
     }
     @media (hover: none), (pointer: coarse) {
       .media-card__title-wrap.is-overflow {
         cursor: pointer;
+      }
+      .media-card__title-wrap.is-overflow .media-card__title-text {
+        background: linear-gradient(transparent 70%, rgba(212, 168, 83, 0.14) 0);
+      }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .media-card__title-tip {
+        transform: none;
+        transition: opacity 0.15s ease, visibility 0.15s ease;
+      }
+      .media-card__title-wrap.is-overflow:hover .media-card__title-tip,
+      .media-card__head:has(.media-card__title-wrap.is-overflow):hover .media-card__title-tip,
+      .media-card__title-wrap.is-overflow.is-title-expanded .media-card__title-tip {
+        transform: none;
       }
     }
     .media-card__actions {
@@ -1179,7 +1204,7 @@ function mountMobileStyles() {
       position: relative;
     }
     #grid .media-card:has(.media-card__title-wrap.is-overflow:hover),
-    #grid .media-card:has(.media-card__title-wrap.is-title-expanded) {
+    #grid .media-card.is-title-popout {
       z-index: 20;
     }
   `;
@@ -1404,10 +1429,18 @@ function bindMediaCardTitles(root = document) {
         || text.getBoundingClientRect().width > viewport.getBoundingClientRect().width + 1;
       wrap.classList.toggle('is-overflow', overflows);
       if (overflows) {
-        text.setAttribute('title', text.textContent || '');
+        text.removeAttribute('title');
+        wrap.setAttribute('aria-label', `Full title: ${text.textContent || ''}`);
+        wrap.setAttribute('role', 'button');
+        wrap.setAttribute('tabindex', '0');
       } else {
         text.removeAttribute('title');
+        wrap.removeAttribute('aria-label');
+        wrap.removeAttribute('role');
+        wrap.removeAttribute('tabindex');
         wrap.classList.remove('is-title-expanded');
+        wrap.setAttribute('aria-expanded', 'false');
+        wrap.closest('.media-card')?.classList.remove('is-title-popout');
       }
     };
 
@@ -1426,6 +1459,15 @@ function bindMediaCardTitles(root = document) {
       document.fonts.ready.then(scheduleSync);
     }
 
+    wrap.setAttribute('aria-expanded', 'false');
+
+    const setExpanded = (expanded) => {
+      wrap.classList.toggle('is-title-expanded', expanded);
+      wrap.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      const card = wrap.closest('.media-card');
+      if (card) card.classList.toggle('is-title-popout', expanded);
+    };
+
     wrap.addEventListener('click', (event) => {
       if (!wrap.classList.contains('is-overflow')) return;
       if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
@@ -1433,8 +1475,25 @@ function bindMediaCardTitles(root = document) {
       const wasExpanded = wrap.classList.contains('is-title-expanded');
       document.querySelectorAll('.media-card__title-wrap.is-title-expanded').forEach((other) => {
         other.classList.remove('is-title-expanded');
+        other.setAttribute('aria-expanded', 'false');
+        other.closest('.media-card')?.classList.remove('is-title-popout');
       });
-      if (!wasExpanded) wrap.classList.add('is-title-expanded');
+      setExpanded(!wasExpanded);
+    });
+
+    wrap.addEventListener('keydown', (event) => {
+      if (!wrap.classList.contains('is-overflow')) return;
+      if (event.key !== 'Enter' && event.key !== ' ') return;
+      event.preventDefault();
+      const wasExpanded = wrap.classList.contains('is-title-expanded');
+      document.querySelectorAll('.media-card__title-wrap.is-title-expanded').forEach((other) => {
+        if (other !== wrap) {
+          other.classList.remove('is-title-expanded');
+          other.setAttribute('aria-expanded', 'false');
+          other.closest('.media-card')?.classList.remove('is-title-popout');
+        }
+      });
+      setExpanded(!wasExpanded);
     });
   });
 
@@ -1444,6 +1503,8 @@ function bindMediaCardTitles(root = document) {
       if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) return;
       document.querySelectorAll('.media-card__title-wrap.is-title-expanded').forEach((wrap) => {
         wrap.classList.remove('is-title-expanded');
+        wrap.setAttribute('aria-expanded', 'false');
+        wrap.closest('.media-card')?.classList.remove('is-title-popout');
       });
     });
   }
