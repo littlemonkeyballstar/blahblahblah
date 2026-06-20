@@ -755,9 +755,41 @@ def display_title(filename_stem: str) -> str:
     return title
 
 
+_SPEAKER_NAME = (
+    r"(?:shaykh|shaikh|sheikh|shykh|shaik)"
+    r"(?:\s+(?:abdullah|abdallah|abdillah))?"
+    r"(?:\s+al)?"
+    r"\s+faisal"
+)
+
+
+def strip_speaker_from_title(title: str) -> str:
+    """Drop redundant Shaykh/Sheikh Abdullah Faisal labels from display titles."""
+    if not title:
+        return title
+    text = title.strip()
+    speaker = _SPEAKER_NAME
+    if not re.match(rf"^{speaker}\s+(?:tells?|said|explains|answers)\b", text, flags=re.I):
+        text = re.sub(rf"^{speaker}\s*[-–—:|]+\s*", "", text, flags=re.I)
+        text = re.sub(rf"^{speaker}\s+(?=[A-Z0-9\"'])", "", text, flags=re.I)
+    text = re.sub(rf"\s*[-–—]\s*{speaker}\s*[-–—]\s*", " — ", text, flags=re.I)
+    text = re.sub(rf"\s+with\s+{speaker}\s+", " — ", text, flags=re.I)
+    text = re.sub(rf"\s+by\s+{speaker}\b.*$", "", text, flags=re.I)
+    text = re.sub(rf"[-–—]\s*{speaker}\b.*$", "", text, flags=re.I)
+    text = re.sub(rf"\s*[-–—]\s*{speaker}\b(?:\s+\w+)*\s*$", "", text, flags=re.I)
+    text = re.sub(rf"\s+{speaker}(?:\s+\d{{4}})?\s*$", "", text, flags=re.I)
+    text = re.sub(r"\s+translated\s+by\s+(?:abdullah|abdallah|abdillah)\s+al\s+faisal\s*$", "", text, flags=re.I)
+    text = re.sub(r"\s*[-–—]\s*(?:by\s+)?(?:abdullah|abdallah|abdillah)\s+al\s+faisal(?:\s*[-–—]\s*[^-–—]+)?\s*$", "", text, flags=re.I)
+    text = re.sub(r"\s+", " ", text).strip()
+    text = re.sub(r"\s*[-–—]\s*$", "", text).strip()
+    text = re.sub(r"^\s*[-–—]\s*", "", text).strip()
+    return text
+
+
 def resolve_lecture_title(filename_stem: str) -> str:
     title = display_title(filename_stem)
-    return LECTURE_TITLE_OVERRIDES.get(norm(filename_stem), title)
+    title = LECTURE_TITLE_OVERRIDES.get(norm(filename_stem), title)
+    return strip_speaker_from_title(title)
 
 
 def load_archive_index():

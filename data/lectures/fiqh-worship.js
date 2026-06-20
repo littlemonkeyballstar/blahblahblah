@@ -18,7 +18,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Application of Revelation - Quran, Sunnah, ijmaa and Qiyas.mp3",
     "thumb": null,
-    "id": 25
+    "id": 26
   },
   {
     "title": "Application of Revelation Daroora Mafhoom Qawl Sahaba Urf Amal of Madina",
@@ -28,7 +28,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Application_of_Revelation_Daroora_Mafhoom_Qawl_Sahaba_Urf_Amal_of_Madina_mp3.mp3",
     "thumb": null,
-    "id": 26
+    "id": 27
   },
   {
     "title": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan",
@@ -38,7 +38,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan.mp3",
     "thumb": null,
-    "id": 27
+    "id": 28
   },
   {
     "title": "Description of Paradise [Part 1] (07.04.11)",
@@ -48,7 +48,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Description of Paradise [Part 1] (07.04.11).mp3",
     "thumb": null,
-    "id": 50
+    "id": 52
   },
   {
     "title": "Description of Paradise [Part 2] (07.05.11)",
@@ -58,7 +58,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Description of Paradise [Part 2] (07.05.11).mp3",
     "thumb": null,
-    "id": 51
+    "id": 53
   },
   {
     "title": "Description of the Prophet's Prayer (06.19.11)",
@@ -68,7 +68,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Description of the Prophet's Prayer (06.19.11).mp3",
     "thumb": null,
-    "id": 52
+    "id": 54
   },
   {
     "title": "Fasting - What You Need To Know (08.01.11)",
@@ -78,7 +78,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Fasting - What You Need To Know (08.01.11).mp3",
     "thumb": null,
-    "id": 71
+    "id": 72
   },
   {
     "title": "Fiqhul Waaqi (04.30.12)",
@@ -88,7 +88,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Fiqhul Waaqi (04.30.12).mp3",
     "thumb": "thumb/extracted/077f32b6dc714f.jpg",
-    "id": 73
+    "id": 74
   },
   {
     "title": "How To Make Hajj (10.25.11)[v2]",
@@ -98,7 +98,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "How To Make Hajj (10.25.11)[v2].mp3",
     "thumb": "thumb/extracted/3e8344b2f72015.jpg",
-    "id": 85
+    "id": 86
   },
   {
     "title": "Lailatul Qadr explained (dars)",
@@ -108,7 +108,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Lailatul Qadr explained (dars).mp3",
     "thumb": null,
-    "id": 125
+    "id": 128
   },
   {
     "title": "Merits of Salah (06.23.11)",
@@ -118,17 +118,17 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Merits of Salah (06.23.11).mp3",
     "thumb": null,
-    "id": 143
+    "id": 147
   },
   {
-    "title": "PUNISHMENT OF THE GRAVE - Abdallah Al Faisal",
+    "title": "PUNISHMENT OF THE GRAVE",
     "category": "Fiqh_Worship",
     "categoryLabel": "Fiqh & Worship",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "PUNISHMENT OF THE GRAVE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 176
+    "id": 182
   },
   {
     "title": "Rules and Merits of Zakah (09.01.11)",
@@ -138,7 +138,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Rules and Merits of Zakah (09.01.11).mp3",
     "thumb": null,
-    "id": 204
+    "id": 210
   },
   {
     "title": "Rules Of Fasting",
@@ -148,7 +148,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Rules Of Fasting.mp3",
     "thumb": null,
-    "id": 207
+    "id": 213
   },
   {
     "title": "Rules of Fasting (07.31.11)",
@@ -158,7 +158,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Rules of Fasting (07.31.11).mp3",
     "thumb": null,
-    "id": 208
+    "id": 214
   },
   {
     "title": "Salah of the Rasool described",
@@ -168,7 +168,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "Salah of the Rasool described.mp3",
     "thumb": null,
-    "id": 214
+    "id": 220
   },
   {
     "title": "The 4 Pillars Of Qadr",
@@ -178,7 +178,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "The 4 Pillars Of Qadr.mp3",
     "thumb": null,
-    "id": 426
+    "id": 416
   },
   {
     "title": "The Fiqh of Asking Questions",
@@ -188,7 +188,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "The_Fiqh_of_Asking_Questions_mp3.mp3",
     "thumb": null,
-    "id": 451
+    "id": 444
   },
   {
     "title": "The Fiqh of Clothing",
@@ -198,7 +198,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "The Fiqh of Clothing.mp3",
     "thumb": null,
-    "id": 452
+    "id": 445
   },
   {
     "title": "the Fiqh of Food-1",
@@ -208,7 +208,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "the Fiqh of Food-1.mp3",
     "thumb": null,
-    "id": 454
+    "id": 447
   },
   {
     "title": "The Fiqh of Trading",
@@ -218,7 +218,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "The Fiqh of Trading.mp3",
     "thumb": null,
-    "id": 456
+    "id": 449
   },
   {
     "title": "The Rules of Fasting",
@@ -228,7 +228,7 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "The Rules of Fasting.mp3",
     "thumb": null,
-    "id": 467
+    "id": 462
   },
   {
     "title": "The virtues of Dhikr",
@@ -238,16 +238,16 @@ registerLectureChunk("Fiqh_Worship", [
     "subcategoryLabel": null,
     "archive": "The virtues of Dhikr.mp3",
     "thumb": null,
-    "id": 496
+    "id": 491
   },
   {
-    "title": "VIRTUES OF MAKKAH - Shaykh Faisal",
+    "title": "VIRTUES OF MAKKAH",
     "category": "Fiqh_Worship",
     "categoryLabel": "Fiqh & Worship",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "VIRTUES OF MAKKAH - Shaykh Faisal.mp3",
     "thumb": "thumb/VIRTUES OF MAKKAH - Shaykh Faisal.jpg",
-    "id": 509
+    "id": 507
   }
 ]);

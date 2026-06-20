@@ -21,14 +21,14 @@ registerLectureChunk("Aqeedah", [
     "id": 5
   },
   {
-    "title": "Al-Wala wal-Bara by Shaykh Abdullah Faisal",
+    "title": "Al-Wala wal-Bara",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Al-Wala wal-Bara by shaykh Abdullah Faisal.mp3",
     "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png",
-    "id": 18
+    "id": 19
   },
   {
     "title": "Allah Blesses Whom He Wills (06.28.11)(1)",
@@ -38,87 +38,97 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Allah Blesses Whom He Wills (06.28.11)(1).mp3",
     "thumb": null,
-    "id": 21
+    "id": 22
   },
   {
-    "title": "ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal",
+    "title": "ARE YOU A TAKFIRI",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.mp3",
     "thumb": "thumb/ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.png",
-    "id": 28
+    "id": 29
   },
   {
-    "title": "DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal",
+    "title": "DEMOCRACY IS A RELIGION",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal.mp3",
     "thumb": "thumb/DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal.png",
-    "id": 47
+    "id": 48
   },
   {
-    "title": "DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal",
+    "title": "DEMOCRACY IS THE GREATEST SHIRK",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.mp3",
     "thumb": "thumb/DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.png",
-    "id": 48
+    "id": 49
   },
   {
-    "title": "DISMANTLE THE SHARIAH IS MAJOR KUFR - Abdallah Al Faisal",
+    "title": "Democracy The Greatest Shirk",
+    "category": "Aqeedah",
+    "categoryLabel": "Aqeedah",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "Sheikh Abdullah Faisal - Democracy   The Greatest Shirk.mp3",
+    "thumb": null,
+    "id": 50
+  },
+  {
+    "title": "DISMANTLE THE SHARIAH IS MAJOR KUFR",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "DISMANTLE THE SHARIAH IS MAJOR KUFR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 58
+    "id": 60
   },
   {
-    "title": "DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal",
+    "title": "DO NOT OBEY THE KUFFAR & THE MUNAFIQUN",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.mp3",
     "thumb": "thumb/DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.png",
-    "id": 59
+    "id": 61
   },
   {
-    "title": "EXCUSE OF IGNORANCE - Abdallah Al Faisal",
+    "title": "EXCUSE OF IGNORANCE",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "EXCUSE OF IGNORANCE - Abdallah Al Faisal.mp3",
     "thumb": "thumb/EXCUSE OF IGNORANCE - Abdallah Al Faisal.jpg",
-    "id": 69
+    "id": 70
   },
   {
-    "title": "FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal",
+    "title": "FIFTY SEVEN SIGNS OF A MUNAFIQ",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.mp3",
     "thumb": "thumb/FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.jpg",
-    "id": 72
+    "id": 73
   },
   {
-    "title": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal",
+    "title": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.mp3",
     "thumb": "thumb/FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.jpg",
-    "id": 75
+    "id": 76
   },
   {
     "title": "Hearts of the Kafirs Are Alike (07.11.11)",
@@ -128,17 +138,17 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Hearts of the Kafirs Are Alike (07.11.11).mp3",
     "thumb": null,
-    "id": 79
+    "id": 80
   },
   {
-    "title": "IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal",
+    "title": "IMPEDIMENTS OF TAKFIR",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.mp3",
     "thumb": "thumb/IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.png",
-    "id": 89
+    "id": 92
   },
   {
     "title": "Invalidation Of Your Actions – Part 1",
@@ -148,7 +158,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Invalidation Of Your Actions – Part 1.mp3",
     "thumb": null,
-    "id": 92
+    "id": 95
   },
   {
     "title": "Invalidation Of Your Actions – Part 2",
@@ -158,17 +168,17 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Invalidation Of Your Actions – Part 2.mp3",
     "thumb": null,
-    "id": 93
+    "id": 96
   },
   {
-    "title": "KUFR DOONA KUFR - Abdallah Al Faisal",
+    "title": "KUFR DOONA KUFR",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "KUFR DOONA KUFR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/KUFR DOONA KUFR - Abdallah Al Faisal.jpg",
-    "id": 124
+    "id": 127
   },
   {
     "title": "Let's Call A Spade A Spade - Part 2",
@@ -178,7 +188,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Let's Call A Spade A Spade - Part 2.mp3",
     "thumb": null,
-    "id": 129
+    "id": 132
   },
   {
     "title": "Let's Call A Spade A Spade - Part 3",
@@ -188,7 +198,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Let's Call A Spade A Spade - Part 3.mp3",
     "thumb": null,
-    "id": 130
+    "id": 133
   },
   {
     "title": "Let's Call A Spade A Spade - Part 4",
@@ -198,7 +208,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Let's Call A Spade A Spade - Part 4.mp3",
     "thumb": null,
-    "id": 131
+    "id": 134
   },
   {
     "title": "Let's Call A Spade A Spade Part 1",
@@ -208,7 +218,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Let's Call A Spade A Spade Part 1.mp3",
     "thumb": null,
-    "id": 132
+    "id": 135
   },
   {
     "title": "Nawaaqid al islam by Muhd ibn Abdul Wahhab",
@@ -218,57 +228,47 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Nawaaqid al islam by Muhd ibn Abdul Wahhab.mp3",
     "thumb": null,
-    "id": 159
+    "id": 165
   },
   {
-    "title": "NAWAQID AL ISLAM - Abdallah Al Faisal",
+    "title": "NAWAQID AL ISLAM",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "NAWAQID AL ISLAM - Abdallah Al Faisal.mp3",
     "thumb": "thumb/NAWAQID AL ISLAM - Abdallah Al Faisal.jpg",
-    "id": 160
+    "id": 166
   },
   {
-    "title": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal",
+    "title": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.mp3",
     "thumb": "thumb/NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.png",
-    "id": 161
+    "id": 167
   },
   {
-    "title": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal",
+    "title": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.mp3",
     "thumb": "thumb/PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.jpg",
-    "id": 174
+    "id": 180
   },
   {
-    "title": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal",
+    "title": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION)",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.mp3",
     "thumb": "thumb/SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.png",
-    "id": 235
-  },
-  {
-    "title": "Sheikh Abdullah Faisal - Democracy   The Greatest Shirk",
-    "category": "Aqeedah",
-    "categoryLabel": "Aqeedah",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "Sheikh Abdullah Faisal - Democracy   The Greatest Shirk.mp3",
-    "thumb": null,
-    "id": 240
+    "id": 241
   },
   {
     "title": "Shirk In Perspective (07.10.11)",
@@ -278,17 +278,17 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Shirk In Perspective (07.10.11).mp3",
     "thumb": null,
-    "id": 258
+    "id": 246
   },
   {
-    "title": "SIGNS OF HYPOCRITES - Shaykh Faisal",
+    "title": "SIGNS OF HYPOCRITES",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "SIGNS OF HYPOCRITES - Shaykh Faisal.mp3",
     "thumb": "thumb/SIGNS OF HYPOCRITES - Shaykh Faisal.png",
-    "id": 260
+    "id": 249
   },
   {
     "title": "The 13 Shades Of Kufr",
@@ -298,7 +298,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "The 13 Shades Of Kufr.mp3",
     "thumb": null,
-    "id": 417
+    "id": 407
   },
   {
     "title": "The 15 Shades of Kufr",
@@ -308,7 +308,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "The 15 Shades of Kufr.mp3",
     "thumb": null,
-    "id": 418
+    "id": 408
   },
   {
     "title": "The 17 Shades of Shirk (dars)",
@@ -318,7 +318,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "The 17 Shades of Shirk (dars).mp3",
     "thumb": null,
-    "id": 419
+    "id": 409
   },
   {
     "title": "The 57 Signs Of A Munafiq - Part 1",
@@ -328,37 +328,37 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "The 57 Signs Of A Munafiq - Part 1.mp3",
     "thumb": null,
-    "id": 434
+    "id": 424
   },
   {
-    "title": "THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal",
+    "title": "THIRTY FIVE SIGNS OF A HYPOCRITE",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 504
+    "id": 500
   },
   {
-    "title": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR - Abdallah Al Faisal",
+    "title": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/extracted/40f8d0fb22e4b9.jpg",
-    "id": 508
+    "id": 504
   },
   {
-    "title": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal",
+    "title": "WHAT MAKES YOU A KAFIR",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png",
-    "id": 517
+    "id": 515
   },
   {
     "title": "Where Is Allah SWT (07.08.11)",
@@ -368,7 +368,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Where Is Allah SWT (07.08.11).mp3",
     "thumb": null,
-    "id": 518
+    "id": 516
   },
   {
     "title": "Why is takfir important",
@@ -378,6 +378,6 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "conf_imped_takfir.mp3",
     "thumb": null,
-    "id": 526
+    "id": 524
   }
 ]);

@@ -4,7 +4,7 @@ const CLIPS_ARCHIVE_BASE = "https://archive.org/download/the-creed-of-the-shia/"
 const CLIPS = [
   {
     "id": 0,
-    "title": "Refusing to takfir Mushrikeen (polytheists) — Shaykh Abdullah Faisal",
+    "title": "Refusing to takfir Mushrikeen (polytheists)",
     "file": "0510.ia.mp4",
     "archive": "0510.ia.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/0510_000001.jpg",
@@ -44,7 +44,7 @@ const CLIPS = [
   },
   {
     "id": 5,
-    "title": "All the kuffar have their own brand in Islam — Shaykh Abdullah Faisal",
+    "title": "All the kuffar have their own brand in Islam",
     "file": "All the kaffirs have their own brand in islam! - Shaykh Abdullah Faisal.mp4",
     "archive": "All the kaffirs have their own brand in islam! - Shaykh Abdullah Faisal.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/All the kaffirs have their own brand in islam! - Shaykh Abdullah Faisal_000001.jpg",
@@ -68,7 +68,7 @@ const CLIPS = [
   },
   {
     "id": 8,
-    "title": "Do not take my enemy as your friend — Shaykh Abdullah Faisal",
+    "title": "Do not take my enemy as your friend",
     "file": "DO NOT TAKE MY ENEMY AS YOUR FRIENDby Shaykh Abdu.mp4",
     "archive": "DO NOT TAKE MY ENEMY AS YOUR FRIENDby Shaykh Abdu.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/DO NOT TAKE MY ENEMY AS YOUR FRIENDby Shaykh Abdu_000001.jpg",
@@ -92,7 +92,7 @@ const CLIPS = [
   },
   {
     "id": 11,
-    "title": "Did Jesus preach jihad? — Shaykh Abdullah Faisal answers",
+    "title": "Did Jesus preach jihad?",
     "file": "Did Jesus preach Jihad  Sheikh Abdullah al Faisal Answers.mp4",
     "archive": "Did Jesus preach Jihad  Sheikh Abdullah al Faisal Answers.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Did Jesus preach Jihad  Sheikh Abdullah al Faisal Answers_000001.jpg",
@@ -116,7 +116,7 @@ const CLIPS = [
   },
   {
     "id": 14,
-    "title": "Every big evil empire has its end — Shaykh Abdullah Faisal",
+    "title": "Every big evil empire has its end",
     "file": "Every Big Evil Empire Has Its Endby Shaykh Abdull.mp4",
     "archive": "Every Big Evil Empire Has Its Endby Shaykh Abdull.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Every Big Evil Empire Has Its Endby Shaykh Abdull_000001.jpg",
@@ -172,7 +172,7 @@ const CLIPS = [
   },
   {
     "id": 21,
-    "title": "How Allah Mocks Hypocrites Who Follow Wicked Scholars - Shaykh Abdullah Faisal",
+    "title": "How Allah Mocks Hypocrites Who Follow Wicked Scholars",
     "file": "How Allah Mocks Hypocrites Who Follow Wicked.mp4",
     "archive": "How Allah Mocks Hypocrites Who Follow Wicked.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/How Allah Mocks Hypocrites Who Follow Wicked_000001.jpg",
@@ -196,7 +196,7 @@ const CLIPS = [
   },
   {
     "id": 24,
-    "title": "How to spot a Munafiq (Hypocrite) by Shaykh Abdullah Faisal",
+    "title": "How to spot a Munafiq (Hypocrite)",
     "file": "How to spot a Munafiq.mp4",
     "archive": "How to spot a Munafiq.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/How to spot a Munafiq_000001.jpg",
@@ -332,7 +332,7 @@ const CLIPS = [
   },
   {
     "id": 41,
-    "title": "The evil scholar is a lizard — Shaykh Abdullah Faisal",
+    "title": "The evil scholar is a lizard",
     "file": "The Evil Scholar is a lizard - Shaykh Abdullah Faisal.mp4",
     "archive": "The Evil Scholar is a lizard - Shaykh Abdullah Faisal.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Evil Scholar is a lizard - Shaykh Abdullah Faisal_000001.jpg",
@@ -340,7 +340,7 @@ const CLIPS = [
   },
   {
     "id": 42,
-    "title": "The importance of hijra — Shaykh Abdullah Faisal",
+    "title": "The importance of hijra",
     "file": "The Importance of hijra - shaykh abdullah faisal.mp4",
     "archive": "The Importance of hijra - shaykh abdullah faisal.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Importance of hijra - shaykh abdullah faisal_000001.jpg",
@@ -404,7 +404,7 @@ const CLIPS = [
   },
   {
     "id": 50,
-    "title": "Those who label the mujahideen as khawarij — Shaykh Abdullah Faisal",
+    "title": "Those who label the mujahideen as khawarij",
     "file": "Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal.mp4",
     "archive": "Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal_000001.jpg",
@@ -692,7 +692,7 @@ const CLIPS = [
   },
   {
     "id": 86,
-    "title": "Wicked scholars — Shaykh Abdullah Faisal",
+    "title": "Wicked scholars",
     "file": "wicked scholars Abdullah faisal shaykh.mp4",
     "archive": "wicked scholars Abdullah faisal shaykh.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/wicked scholars Abdullah faisal shaykh_000001.jpg",

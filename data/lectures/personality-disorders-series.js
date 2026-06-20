@@ -8,7 +8,7 @@ registerLectureChunk("Personality Disorders (Series)", [
     "subcategoryLabel": null,
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12).mp3",
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
-    "id": 168
+    "id": 174
   },
   {
     "title": "Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12)",
@@ -18,7 +18,7 @@ registerLectureChunk("Personality Disorders (Series)", [
     "subcategoryLabel": null,
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12).mp3",
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
-    "id": 169
+    "id": 175
   },
   {
     "title": "Personality Disorders [Part 3] Narcissistic (05.06.12)",
@@ -28,7 +28,7 @@ registerLectureChunk("Personality Disorders (Series)", [
     "subcategoryLabel": null,
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 3] Narcissistic (05.06.12).mp3",
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
-    "id": 170
+    "id": 176
   },
   {
     "title": "Personality Disorders [Part 4] PTSD (05.07.12)",
@@ -38,7 +38,7 @@ registerLectureChunk("Personality Disorders (Series)", [
     "subcategoryLabel": null,
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 4] PTSD (05.07.12).mp3",
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
-    "id": 171
+    "id": 177
   },
   {
     "title": "Personality Disorders [Part 5] Anti-Social (05.08.12)",
@@ -48,6 +48,6 @@ registerLectureChunk("Personality Disorders (Series)", [
     "subcategoryLabel": null,
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 5] Anti-Social (05.08.12).mp3",
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
-    "id": 172
+    "id": 178
   }
 ]);

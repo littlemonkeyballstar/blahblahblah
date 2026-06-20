@@ -41,6 +41,16 @@ registerLectureChunk("Prophets_Seerah", [
     "id": 16
   },
   {
+    "title": "Al Isra Wal Mira'aj",
+    "category": "Prophets_Seerah",
+    "categoryLabel": "Prophets & Seerah",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "Sheikh Abdullah Faisal   Al Isra Wal Mira'aj.mp3",
+    "thumb": null,
+    "id": 17
+  },
+  {
     "title": "al Israa wal Mi'raaj",
     "category": "Prophets_Seerah",
     "categoryLabel": "Prophets & Seerah",
@@ -48,7 +58,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "al Israa wal Mi'raaj.mp3",
     "thumb": null,
-    "id": 17
+    "id": 18
   },
   {
     "title": "Allah (SWT) Has Honored Bani Adam - Mankind",
@@ -58,7 +68,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Allah (SWT) Has Honored Bani Adam - Mankind.mp3",
     "thumb": null,
-    "id": 19
+    "id": 20
   },
   {
     "title": "Allah's Commandments to Ibrahim (AS) (07.21.11)",
@@ -68,7 +78,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Allah's Commandments to Ibrahim (AS) (07.21.11).mp3",
     "thumb": null,
-    "id": 23
+    "id": 24
   },
   {
     "title": "Beware of Invading the Land of Ibrahim (07.28.11)",
@@ -78,17 +88,17 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Beware of Invading the Land of Ibrahim (07.28.11).mp3",
     "thumb": null,
-    "id": 35
+    "id": 36
   },
   {
-    "title": "BOY AND THE KING - Shaykh Faisal",
+    "title": "BOY AND THE KING",
     "category": "Prophets_Seerah",
     "categoryLabel": "Prophets & Seerah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "BOY AND THE KING - Shaykh Faisal.mp3",
     "thumb": "thumb/BOY AND THE KING - Shaykh Faisal.jpg",
-    "id": 38
+    "id": 39
   },
   {
     "title": "Islam of Umar (RA) (07.09.11)",
@@ -98,7 +108,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Islam of Umar (RA) (07.09.11).mp3",
     "thumb": null,
-    "id": 97
+    "id": 100
   },
   {
     "title": "Many Miracles of the Prophet Muhammad (SAW) (07.20.11)",
@@ -108,17 +118,17 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Many Miracles of the Prophet Muhammad (SAW) (07.20.11).mp3",
     "thumb": null,
-    "id": 139
+    "id": 143
   },
   {
-    "title": "MILLATU IBRAHIM - Shaykh Faisal",
+    "title": "MILLATU IBRAHIM",
     "category": "Prophets_Seerah",
     "categoryLabel": "Prophets & Seerah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "MILLATU IBRAHIM - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/f9c271ac07d98b.png",
-    "id": 146
+    "id": 150
   },
   {
     "title": "Musa & al Khidr (dars)",
@@ -128,7 +138,7 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Musa & al Khidr (dars).mp3",
     "thumb": null,
-    "id": 149
+    "id": 153
   },
   {
     "title": "Musa & Al-Khidr (07.09.11)",
@@ -138,47 +148,37 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "Musa & Al-Khidr (07.09.11).mp3",
     "thumb": null,
-    "id": 150
+    "id": 154
   },
   {
-    "title": "MUSA AND KHIDR - Abdallah Al Faisal",
+    "title": "MUSA AND KHIDR",
     "category": "Prophets_Seerah",
     "categoryLabel": "Prophets & Seerah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "MUSA AND KHIDR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/MUSA AND KHIDR - Abdallah Al Faisal.jpg",
-    "id": 151
+    "id": 155
   },
   {
-    "title": "MUSA AND QAROON - Abdallah Al Faisal",
+    "title": "MUSA AND QAROON",
     "category": "Prophets_Seerah",
     "categoryLabel": "Prophets & Seerah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "MUSA AND QAROON - Abdallah Al Faisal.mp3",
     "thumb": "thumb/MUSA AND QAROON - Abdallah Al Faisal.jpg",
-    "id": 152
+    "id": 156
   },
   {
-    "title": "PEOPLE OF THE CAVE - Abdallah Al Faisal",
+    "title": "PEOPLE OF THE CAVE",
     "category": "Prophets_Seerah",
     "categoryLabel": "Prophets & Seerah",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "PEOPLE OF THE CAVE - Abdallah Al Faisal.mp3",
     "thumb": "thumb/PEOPLE OF THE CAVE - Abdallah Al Faisal.jpg",
-    "id": 167
-  },
-  {
-    "title": "Sheikh Abdullah Faisal   Al Isra Wal Mira'aj",
-    "category": "Prophets_Seerah",
-    "categoryLabel": "Prophets & Seerah",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "Sheikh Abdullah Faisal   Al Isra Wal Mira'aj.mp3",
-    "thumb": null,
-    "id": 238
+    "id": 173
   },
   {
     "title": "the Sleepers in the Cave",
@@ -188,6 +188,6 @@ registerLectureChunk("Prophets_Seerah", [
     "subcategoryLabel": null,
     "archive": "the Sleepers in the Cave.mp3",
     "thumb": null,
-    "id": 494
+    "id": 489
   }
 ]);

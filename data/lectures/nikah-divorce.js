@@ -8,37 +8,37 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": null,
     "archive": "Daughters Are Diamonds (06.30.11).mp3",
     "thumb": null,
-    "id": 44
+    "id": 45
   },
   {
-    "title": "LOVE - Abdallah Al Faisal",
+    "title": "LOVE",
     "category": "Nikah_Divorce",
     "categoryLabel": "Marriage & Family",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "LOVE - Abdallah Al Faisal.mp3",
     "thumb": "thumb/extracted/6d7686edec03e1.jpg",
-    "id": 133
+    "id": 136
   },
   {
-    "title": "MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal",
+    "title": "MARITAL DISCORD (NUSHOOZ)",
     "category": "Nikah_Divorce",
     "categoryLabel": "Marriage & Family",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 140
+    "id": 144
   },
   {
-    "title": "Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal",
+    "title": "Money Can't Buy True Love (07.02.11)",
     "category": "Nikah_Divorce",
     "categoryLabel": "Marriage & Family",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal.mp3",
     "thumb": null,
-    "id": 147
+    "id": 151
   },
   {
     "title": "Muslim Home (12.21.11 to 12.22.11)",
@@ -48,27 +48,27 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": null,
     "archive": "Muslim Home (12.21.11 to 12.22.11).mp3",
     "thumb": "thumb/extracted/8be0c03a517daa.jpg",
-    "id": 153
+    "id": 158
   },
   {
-    "title": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal",
+    "title": "MUSLIM MARRYING NON MUSLIM",
     "category": "Nikah_Divorce",
     "categoryLabel": "Marriage & Family",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.mp3",
     "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png",
-    "id": 154
+    "id": 159
   },
   {
-    "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal",
+    "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE",
     "category": "Nikah_Divorce",
     "categoryLabel": "Marriage & Family",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.mp3",
     "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg",
-    "id": 166
+    "id": 172
   },
   {
     "title": "Rules of Divorce [Part 1] (07.06.11)",
@@ -78,7 +78,7 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": "Rules of Divorce",
     "archive": "Nikah_Divorce/Rules of Divorce [Part 1] (07.06.11).mp3",
     "thumb": null,
-    "id": 205
+    "id": 211
   },
   {
     "title": "Rules of Divorce [Part 2] Revisited (07.08.11)",
@@ -88,7 +88,7 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": "Rules of Divorce",
     "archive": "Nikah_Divorce/Rules of Divorce [Part 2] Revisited (07.08.11).mp3",
     "thumb": null,
-    "id": 206
+    "id": 212
   },
   {
     "title": "Rules of Nikah [Part 1] (06.30.11)",
@@ -98,7 +98,7 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": "Rules of Nikah",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 1] (06.30.11).mp3",
     "thumb": null,
-    "id": 209
+    "id": 215
   },
   {
     "title": "Rules of Nikah [Part 2] (07.01.11)",
@@ -108,7 +108,7 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": "Rules of Nikah",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 2] (07.01.11).mp3",
     "thumb": null,
-    "id": 210
+    "id": 216
   },
   {
     "title": "Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11)",
@@ -118,7 +118,7 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": "Rules of Nikah",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11).mp3",
     "thumb": null,
-    "id": 211
+    "id": 217
   },
   {
     "title": "Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11)",
@@ -128,27 +128,17 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": "Rules of Nikah",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11).mp3",
     "thumb": null,
-    "id": 212
+    "id": 218
   },
   {
-    "title": "Sheikh Abdullah Faisal - The Muslim Home",
-    "category": "Nikah_Divorce",
-    "categoryLabel": "Marriage & Family",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "Sheikh Abdullah Faisal - The Muslim Home.mp3",
-    "thumb": null,
-    "id": 252
-  },
-  {
-    "title": "TAINTED LOVE - Abdallah Al Faisal",
+    "title": "TAINTED LOVE",
     "category": "Nikah_Divorce",
     "categoryLabel": "Marriage & Family",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "TAINTED LOVE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 412
+    "id": 401
   },
   {
     "title": "tainted love 2013.04.20 (evening)",
@@ -158,7 +148,7 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": null,
     "archive": "tainted love 2013.04.20 (evening).mp3",
     "thumb": null,
-    "id": 413
+    "id": 402
   },
   {
     "title": "The 18 Types Of Women You Should Not Marry",
@@ -168,7 +158,7 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3",
     "thumb": null,
-    "id": 420
+    "id": 410
   },
   {
     "title": "The 20 Types Of Men You Should Not Marry",
@@ -178,7 +168,7 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3",
     "thumb": null,
-    "id": 421
+    "id": 411
   },
   {
     "title": "the Fiqh of Divorce",
@@ -188,7 +178,7 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": "Fiqh of Divorce",
     "archive": "Nikah_Divorce/the Fiqh of Divorce.mp3",
     "thumb": null,
-    "id": 453
+    "id": 446
   },
   {
     "title": "The Fiqh of Menses",
@@ -198,7 +188,17 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": "Fiqh of Menses",
     "archive": "The Fiqh of Menses.mp3",
     "thumb": null,
-    "id": 455
+    "id": 448
+  },
+  {
+    "title": "The Muslim Home",
+    "category": "Nikah_Divorce",
+    "categoryLabel": "Marriage & Family",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "Sheikh Abdullah Faisal - The Muslim Home.mp3",
+    "thumb": null,
+    "id": 456
   },
   {
     "title": "The Muslim Home (dars)",
@@ -208,26 +208,26 @@ registerLectureChunk("Nikah_Divorce", [
     "subcategoryLabel": null,
     "archive": "The Muslim Home (dars).mp3",
     "thumb": null,
-    "id": 462
+    "id": 457
   },
   {
-    "title": "WIVES & CHILDREN - Shaykh Faisal",
+    "title": "WIVES & CHILDREN",
     "category": "Nikah_Divorce",
     "categoryLabel": "Marriage & Family",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3",
     "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png",
-    "id": 531
+    "id": 529
   },
   {
-    "title": "WOMEN IN ISLAM - Abdallah Al Faisal",
+    "title": "WOMEN IN ISLAM",
     "category": "Nikah_Divorce",
     "categoryLabel": "Marriage & Family",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "WOMEN IN ISLAM - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 532
+    "id": 530
   }
 ]);
