@@ -339,7 +339,7 @@ LECTURE_TITLE_OVERRIDES = {
     norm("is-the-dawla-khawarij"): "Is the dawla khawarij?",
     norm("TAFSEER OF SURAH AT TAWBAH - Abdallah Al Faisal"): "Tafsir At-Tawbah (Whole 25h lecture)",
     norm("Towards Watering Down The Holy Quran(1)"): "Towards Watering Down The Holy Quran",
-    norm("Al-Wala wal-Bara by shaykh Abdullah Faisal"): "Al-Wala wal-Bara",
+    norm("Al-Wala wal-Bara by shaykh Abdullah Faisal"): "What is Al-Wala wal-Bara — Explanation of core Islamic fundamentals",
     norm("47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-"): "47 Signs of the Wicked Scholar",
     norm("47 signs of the wicked scholer"): "47 Signs of the Wicked Scholar",
 }
