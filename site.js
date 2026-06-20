@@ -1084,17 +1084,43 @@ function mountMobileStyles() {
       flex: 1 1 auto;
       min-width: 0;
     }
-    .media-card__title {
-      margin: 0;
-      width: 100%;
+    .media-card__title-viewport {
+      overflow: hidden;
+      height: 1.25rem;
+      min-width: 0;
+    }
+    .media-card__title-marquee {
       font-size: 0.875rem;
       line-height: 1.25rem;
       font-weight: 500;
       color: #e2e8f0;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
+      white-space: nowrap;
+    }
+    .media-card__title-wrap:not(.is-scrolling) .media-card__title-marquee {
+      display: block;
       overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+    }
+    .media-card__title-wrap:not(.is-scrolling) .media-card__title-text--dup {
+      display: none;
+    }
+    .media-card__title-wrap.is-scrolling .media-card__title-marquee {
+      display: inline-flex;
+      align-items: center;
+      gap: 2rem;
+      width: max-content;
+      will-change: transform;
+      animation: media-title-ticker var(--ticker-duration, 18s) linear infinite;
+    }
+    @keyframes media-title-ticker {
+      from { transform: translateX(0); }
+      to { transform: translateX(var(--ticker-distance, -50%)); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .media-card__title-wrap.is-scrolling .media-card__title-marquee {
+        animation: none;
+      }
     }
     .media-card__actions {
       display: flex;
@@ -1327,6 +1353,27 @@ function downloadIconLink(url, { label = 'Download', className = '' } = {}) {
   return `<a href="${url}" class="${linkClass}" target="_blank" rel="noopener" download title="${escapeHtml(label)}" aria-label="${escapeHtml(label)}">
     <i class="fas fa-download text-sm"></i>
   </a>`;
+}
+
+function bindMediaCardTitles(root = document) {
+  const gap = 32;
+  const speed = 28;
+
+  root.querySelectorAll('.media-card__title-wrap:not([data-title-bound])').forEach((wrap) => {
+    wrap.dataset.titleBound = '1';
+    const viewport = wrap.querySelector('.media-card__title-viewport');
+    const text = wrap.querySelector('.media-card__title-text');
+    if (!viewport || !text) return;
+
+    requestAnimationFrame(() => {
+      if (text.scrollWidth <= viewport.clientWidth + 1) return;
+      wrap.classList.add('is-scrolling');
+      text.setAttribute('title', text.textContent || '');
+      const distance = text.offsetWidth + gap;
+      wrap.style.setProperty('--ticker-distance', `-${distance}px`);
+      wrap.style.setProperty('--ticker-duration', `${Math.max(12, distance / speed)}s`);
+    });
+  });
 }
 
 function downloadGlassLink(url, { label = 'Download' } = {}) {
@@ -1781,7 +1828,12 @@ function mediaCard({
       <div class="media-card__inner">
         <div class="media-card__head">
           <div class="media-card__title-wrap">
-            <p class="media-card__title" title="${escapeHtml(title)}">${escapeHtml(title)}</p>
+            <div class="media-card__title-viewport">
+              <div class="media-card__title-marquee">
+                <span class="media-card__title-text">${escapeHtml(title)}</span>
+                <span class="media-card__title-text media-card__title-text--dup" aria-hidden="true">${escapeHtml(title)}</span>
+              </div>
+            </div>
           </div>
           ${actions}
         </div>
