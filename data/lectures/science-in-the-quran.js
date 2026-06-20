@@ -8,7 +8,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Prophesies of the Holy Quran (11.22.11 to 11.23.11).mp3",
     "thumb": "thumb/extracted/d6ec668de41ae1.jpg",
-    "id": 181
+    "id": 180
   },
   {
     "title": "Science of Quran - Part 1",
@@ -18,7 +18,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science of Quran - Part 1.mp3",
     "thumb": null,
-    "id": 224
+    "id": 223
   },
   {
     "title": "Science of Quran - Part 10 - The Causes of Revelation – Al Imraan",
@@ -28,7 +28,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science of Quran - Part 10 - The Causes of Revelation – Al Imraan.mp3",
     "thumb": null,
-    "id": 225
+    "id": 224
   },
   {
     "title": "Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2",
@@ -38,7 +38,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2.mp3",
     "thumb": null,
-    "id": 226
+    "id": 225
   },
   {
     "title": "Science of Quran - Part 12 - The Causes of Revelation – Al An’am",
@@ -48,7 +48,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science of Quran - Part 12 - The Causes of Revelation – Al An’am.mp3",
     "thumb": null,
-    "id": 227
+    "id": 226
   },
   {
     "title": "Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf",
@@ -58,7 +58,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf.mp3",
     "thumb": null,
-    "id": 228
+    "id": 227
   },
   {
     "title": "Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1",
@@ -68,7 +68,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1.mp3",
     "thumb": null,
-    "id": 229
+    "id": 228
   },
   {
     "title": "Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1",
@@ -78,7 +78,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1.mp3",
     "thumb": null,
-    "id": 230
+    "id": 229
   },
   {
     "title": "Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2",
@@ -88,7 +88,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2.mp3",
     "thumb": null,
-    "id": 231
+    "id": 230
   },
   {
     "title": "Science of Quran - Part 2 - The History of the Quran's Descent",
@@ -98,7 +98,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science of Quran - Part 2 - The History of the Quran's Descent.mp3",
     "thumb": null,
-    "id": 232
+    "id": 231
   },
   {
     "title": "Science of Quran - Part 2 - The Wahy",
@@ -108,7 +108,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science of Quran - Part 2 - The Wahy.mp3",
     "thumb": null,
-    "id": 233
+    "id": 232
   },
   {
     "title": "Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book",
@@ -118,7 +118,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book.mp3",
     "thumb": null,
-    "id": 234
+    "id": 233
   },
   {
     "title": "Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs",
@@ -128,7 +128,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs.mp3",
     "thumb": null,
-    "id": 235
+    "id": 234
   },
   {
     "title": "Science Of Quran - Part 6 - The causes Of Revelation I",
@@ -138,7 +138,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science Of Quran - Part 6 - The causes Of Revelation I.mp3",
     "thumb": null,
-    "id": 236
+    "id": 235
   },
   {
     "title": "Science Of Quran - Part 7 - The causes Of Revelation II",
@@ -148,7 +148,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science Of Quran - Part 7 - The causes Of Revelation II.mp3",
     "thumb": null,
-    "id": 237
+    "id": 236
   },
   {
     "title": "Science of Quran - Part 8 - The Causes of Revelation – An Nisa",
@@ -158,7 +158,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science of Quran - Part 8 - The Causes of Revelation – An Nisa.mp3",
     "thumb": null,
-    "id": 238
+    "id": 237
   },
   {
     "title": "Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah",
@@ -168,7 +168,7 @@ registerLectureChunk("Science in the quran", [
     "subcategoryLabel": null,
     "archive": "Science in the quran/Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah.mp3",
     "thumb": null,
-    "id": 239
+    "id": 238
   },
   {
     "title": "The Animals Of The Holy Quran - Part 1",

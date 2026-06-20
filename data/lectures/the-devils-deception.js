@@ -8,7 +8,7 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/DEVIL'S DECEPTION OF SAUDI SALAFIS - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 55
+    "id": 54
   },
   {
     "title": "Devils Deception of the Saudi Salafis (07.13.11)",
@@ -18,7 +18,7 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/Devils Deception of the Saudi Salafis (07.13.11).mp3",
     "thumb": null,
-    "id": 56
+    "id": 55
   },
   {
     "title": "The Devil's Deception of the Aathir",

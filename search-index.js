@@ -62,8 +62,8 @@ const SEARCH_INDEX = [
   {
     "type": "audio",
     "id": 8,
-    "title": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full",
-    "sub": "Ummah & Contemporary Issues",
+    "title": "47 signs of the wicked scholer",
+    "sub": "General Lectures",
     "href": "audio.html?lecture=8"
   },
   {
@@ -126,1174 +126,1175 @@ const SEARCH_INDEX = [
   {
     "type": "audio",
     "id": 17,
-    "title": "Al Isra Wal Mira'aj",
+    "title": "al Israa wal Mi'raaj",
     "sub": "Prophets & Seerah",
     "href": "audio.html?lecture=17"
   },
   {
     "type": "audio",
     "id": 18,
-    "title": "al Israa wal Mi'raaj",
-    "sub": "Prophets & Seerah",
-    "href": "audio.html?lecture=18"
-  },
-  {
-    "type": "audio",
-    "id": 19,
     "title": "Al-Wala wal-Bara",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=19",
+    "href": "audio.html?lecture=18",
     "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png"
   },
   {
     "type": "audio",
-    "id": 20,
+    "id": 19,
     "title": "Allah (SWT) Has Honored Bani Adam - Mankind",
     "sub": "Prophets & Seerah",
+    "href": "audio.html?lecture=19"
+  },
+  {
+    "type": "audio",
+    "id": 20,
+    "title": "Allah Blesses Whom He Wills (06.28.11)",
+    "sub": "General Lectures",
     "href": "audio.html?lecture=20"
   },
   {
     "type": "audio",
     "id": 21,
-    "title": "Allah Blesses Whom He Wills (06.28.11)",
-    "sub": "General Lectures",
+    "title": "Allah Blesses Whom He Wills (06.28.11)(1)",
+    "sub": "Aqeedah",
     "href": "audio.html?lecture=21"
   },
   {
     "type": "audio",
     "id": 22,
-    "title": "Allah Blesses Whom He Wills (06.28.11)(1)",
-    "sub": "Aqeedah",
+    "title": "Allah is Sufficient to Take Revenge Against Them (08.24.11)",
+    "sub": "General Lectures",
     "href": "audio.html?lecture=22"
   },
   {
     "type": "audio",
     "id": 23,
-    "title": "Allah is Sufficient to Take Revenge Against Them (08.24.11)",
-    "sub": "General Lectures",
+    "title": "Allah's Commandments to Ibrahim (AS) (07.21.11)",
+    "sub": "Prophets & Seerah",
     "href": "audio.html?lecture=23"
   },
   {
     "type": "audio",
     "id": 24,
-    "title": "Allah's Commandments to Ibrahim (AS) (07.21.11)",
-    "sub": "Prophets & Seerah",
-    "href": "audio.html?lecture=24"
-  },
-  {
-    "type": "audio",
-    "id": 25,
     "title": "Allah's Sunnah Will Never Change (11.15.11 to 11.16.11)",
     "sub": "General Lectures",
-    "href": "audio.html?lecture=25",
+    "href": "audio.html?lecture=24",
     "thumb": "thumb/extracted/e15c7f8eb0f20c.jpg"
   },
   {
     "type": "audio",
-    "id": 26,
+    "id": 25,
     "title": "Application of Revelation - Quran, Sunnah, ijmaa and Qiyas",
+    "sub": "Fiqh & Worship",
+    "href": "audio.html?lecture=25"
+  },
+  {
+    "type": "audio",
+    "id": 26,
+    "title": "Application of Revelation Daroora Mafhoom Qawl Sahaba Urf Amal of Madina",
     "sub": "Fiqh & Worship",
     "href": "audio.html?lecture=26"
   },
   {
     "type": "audio",
     "id": 27,
-    "title": "Application of Revelation Daroora Mafhoom Qawl Sahaba Urf Amal of Madina",
+    "title": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan",
     "sub": "Fiqh & Worship",
     "href": "audio.html?lecture=27"
   },
   {
     "type": "audio",
     "id": 28,
-    "title": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan",
-    "sub": "Fiqh & Worship",
-    "href": "audio.html?lecture=28"
-  },
-  {
-    "type": "audio",
-    "id": 29,
     "title": "ARE YOU A TAKFIRI",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=29",
+    "href": "audio.html?lecture=28",
     "thumb": "thumb/ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
-    "id": 30,
+    "id": 29,
     "title": "AT Conference — Every Ummah Needs A State",
+    "sub": "Ummah & Contemporary Issues",
+    "href": "audio.html?lecture=29"
+  },
+  {
+    "type": "audio",
+    "id": 30,
+    "title": "AT Conference — Ideological Warfare",
     "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=30"
   },
   {
     "type": "audio",
     "id": 31,
-    "title": "AT Conference — Ideological Warfare",
+    "title": "AT Conference — The Barking Dogs Of Jahannum",
     "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=31"
   },
   {
     "type": "audio",
     "id": 32,
-    "title": "AT Conference — The Barking Dogs Of Jahannum",
-    "sub": "Ummah & Contemporary Issues",
-    "href": "audio.html?lecture=32"
-  },
-  {
-    "type": "audio",
-    "id": 33,
     "title": "Balanced Nation (12.19.11)",
     "sub": "Character & Dawah",
-    "href": "audio.html?lecture=33",
+    "href": "audio.html?lecture=32",
     "thumb": "thumb/extracted/8dcb3b088624c3.jpg"
   },
   {
     "type": "audio",
-    "id": 34,
+    "id": 33,
     "title": "Be And It Is (07.12.11)",
+    "sub": "General Lectures",
+    "href": "audio.html?lecture=33"
+  },
+  {
+    "type": "audio",
+    "id": 34,
+    "title": "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11)",
     "sub": "General Lectures",
     "href": "audio.html?lecture=34"
   },
   {
     "type": "audio",
     "id": 35,
-    "title": "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11)",
-    "sub": "General Lectures",
+    "title": "Beware of Invading the Land of Ibrahim (07.28.11)",
+    "sub": "Prophets & Seerah",
     "href": "audio.html?lecture=35"
   },
   {
     "type": "audio",
     "id": 36,
-    "title": "Beware of Invading the Land of Ibrahim (07.28.11)",
-    "sub": "Prophets & Seerah",
-    "href": "audio.html?lecture=36"
-  },
-  {
-    "type": "audio",
-    "id": 37,
     "title": "BEWARE OF THE WICKED SCHOLARS",
     "sub": "Wicked Scholars",
-    "href": "audio.html?lecture=37",
+    "href": "audio.html?lecture=36",
     "thumb": "thumb/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 38,
+    "id": 37,
     "title": "Black Magic (06.29.11)",
     "sub": "Ummah & Contemporary Issues",
-    "href": "audio.html?lecture=38"
+    "href": "audio.html?lecture=37"
   },
   {
     "type": "audio",
-    "id": 39,
+    "id": 38,
     "title": "BOY AND THE KING",
     "sub": "Prophets & Seerah",
-    "href": "audio.html?lecture=39",
+    "href": "audio.html?lecture=38",
     "thumb": "thumb/BOY AND THE KING - Shaykh Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 40,
+    "id": 39,
     "title": "Can the Khilaafa survive",
     "sub": "Khilafah",
+    "href": "audio.html?lecture=39"
+  },
+  {
+    "type": "audio",
+    "id": 40,
+    "title": "CANCERS IN THE BODY OF THE UMMAH",
+    "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=40"
   },
   {
     "type": "audio",
     "id": 41,
-    "title": "CANCERS IN THE BODY OF THE UMMAH",
+    "title": "Challenges Facing the Muslim Ummah - Part 2",
     "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=41"
   },
   {
     "type": "audio",
     "id": 42,
-    "title": "Challenges Facing the Muslim Ummah - Part 2",
+    "title": "Challenges Facing the Ummah",
     "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=42"
   },
   {
     "type": "audio",
     "id": 43,
-    "title": "Challenges Facing the Ummah",
+    "title": "Changing the Goalpost",
     "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=43"
   },
   {
     "type": "audio",
     "id": 44,
-    "title": "Changing the Goalpost",
-    "sub": "Ummah & Contemporary Issues",
+    "title": "Daughters Are Diamonds (06.30.11)",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=44"
   },
   {
     "type": "audio",
     "id": 45,
-    "title": "Daughters Are Diamonds (06.30.11)",
-    "sub": "Marriage & Family",
-    "href": "audio.html?lecture=45"
-  },
-  {
-    "type": "audio",
-    "id": 46,
-    "title": "DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal",
+    "title": "DECLARATION OF WAR - Osama Bin Laden",
     "sub": "Jihad",
-    "href": "audio.html?lecture=46",
+    "href": "audio.html?lecture=45",
     "thumb": "thumb/DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 47,
+    "id": 46,
     "title": "DEFINITION OF A SCHOLAR",
     "sub": "Wicked Scholars",
-    "href": "audio.html?lecture=47"
+    "href": "audio.html?lecture=46"
   },
   {
     "type": "audio",
-    "id": 48,
+    "id": 47,
     "title": "DEMOCRACY IS A RELIGION",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=48",
+    "href": "audio.html?lecture=47",
     "thumb": "thumb/DEMOCRACY IS A RELIGION - Shaykh Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
-    "id": 49,
+    "id": 48,
     "title": "DEMOCRACY IS THE GREATEST SHIRK",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=49",
+    "href": "audio.html?lecture=48",
     "thumb": "thumb/DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
-    "id": 50,
+    "id": 49,
     "title": "Democracy The Greatest Shirk",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=50"
+    "href": "audio.html?lecture=49"
   },
   {
     "type": "audio",
-    "id": 51,
+    "id": 50,
     "title": "DEMOCRATES - Those Who Participate In Democratic Election",
     "sub": "Refutations",
-    "href": "audio.html?lecture=51",
+    "href": "audio.html?lecture=50",
     "thumb": "thumb/DEMOCRATES - Those Who Participate In Democratic Election.png"
   },
   {
     "type": "audio",
-    "id": 52,
+    "id": 51,
     "title": "Description of Paradise [Part 1] (07.04.11)",
+    "sub": "Fiqh & Worship",
+    "href": "audio.html?lecture=51"
+  },
+  {
+    "type": "audio",
+    "id": 52,
+    "title": "Description of Paradise [Part 2] (07.05.11)",
     "sub": "Fiqh & Worship",
     "href": "audio.html?lecture=52"
   },
   {
     "type": "audio",
     "id": 53,
-    "title": "Description of Paradise [Part 2] (07.05.11)",
+    "title": "Description of the Prophet's Prayer (06.19.11)",
     "sub": "Fiqh & Worship",
     "href": "audio.html?lecture=53"
   },
   {
     "type": "audio",
     "id": 54,
-    "title": "Description of the Prophet's Prayer (06.19.11)",
-    "sub": "Fiqh & Worship",
+    "title": "DEVIL'S DECEPTION OF SAUDI SALAFIS",
+    "sub": "The Devil's Deception",
     "href": "audio.html?lecture=54"
   },
   {
     "type": "audio",
     "id": 55,
-    "title": "DEVIL'S DECEPTION OF SAUDI SALAFIS",
+    "title": "Devils Deception of the Saudi Salafis (07.13.11)",
     "sub": "The Devil's Deception",
     "href": "audio.html?lecture=55"
   },
   {
     "type": "audio",
     "id": 56,
-    "title": "Devils Deception of the Saudi Salafis (07.13.11)",
-    "sub": "The Devil's Deception",
-    "href": "audio.html?lecture=56"
-  },
-  {
-    "type": "audio",
-    "id": 57,
     "title": "DISEASES OF THE HEART",
     "sub": "Diseases of the Heart",
-    "href": "audio.html?lecture=57",
+    "href": "audio.html?lecture=56",
     "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png"
   },
   {
     "type": "audio",
-    "id": 58,
+    "id": 57,
     "title": "Diseases of the Heart (12.26.11 to 12.29.11)",
     "sub": "Diseases of the Heart",
-    "href": "audio.html?lecture=58",
+    "href": "audio.html?lecture=57",
     "thumb": "thumb/extracted/076fb5be36c654.jpg"
   },
   {
     "type": "audio",
-    "id": 59,
-    "title": "Diseases of the Heart [Lust]- Shaikh Faisal 2.12.2011 PT Dars",
+    "id": 58,
+    "title": "Diseases of the Heart [Lust]",
     "sub": "Diseases of the Heart",
+    "href": "audio.html?lecture=58"
+  },
+  {
+    "type": "audio",
+    "id": 59,
+    "title": "DISMANTLE THE SHARIAH IS MAJOR KUFR",
+    "sub": "Aqeedah",
     "href": "audio.html?lecture=59"
   },
   {
     "type": "audio",
     "id": 60,
-    "title": "DISMANTLE THE SHARIAH IS MAJOR KUFR",
-    "sub": "Aqeedah",
-    "href": "audio.html?lecture=60"
-  },
-  {
-    "type": "audio",
-    "id": 61,
     "title": "DO NOT OBEY THE KUFFAR & THE MUNAFIQUN",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=61",
+    "href": "audio.html?lecture=60",
     "thumb": "thumb/DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.png"
   },
   {
     "type": "audio",
-    "id": 62,
+    "id": 61,
     "title": "DO NOT TAKE MY ENEMY AS YOUR FRIEND",
     "sub": "Refutations",
-    "href": "audio.html?lecture=62",
+    "href": "audio.html?lecture=61",
     "thumb": "thumb/DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.png"
   },
   {
     "type": "audio",
-    "id": 63,
+    "id": 62,
     "title": "DO NOT TAKE THE KUFFAR AS ALLIES",
     "sub": "Refutations",
-    "href": "audio.html?lecture=63",
+    "href": "audio.html?lecture=62",
     "thumb": "thumb/DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 64,
+    "id": 63,
     "title": "Don't Envy the Kuffaar for their Jahiliyya (07.26.11)",
     "sub": "General Lectures",
+    "href": "audio.html?lecture=63"
+  },
+  {
+    "type": "audio",
+    "id": 64,
+    "title": "Dreams -Their Significance And Meanings – Part 1",
+    "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=64"
   },
   {
     "type": "audio",
     "id": 65,
-    "title": "Dreams -Their Significance And Meanings – Part 1",
-    "sub": "Ummah & Contemporary Issues",
+    "title": "Dua - The weapon of a believer",
+    "sub": "General Lectures",
     "href": "audio.html?lecture=65"
   },
   {
     "type": "audio",
     "id": 66,
-    "title": "Dua - The weapon of a believer",
-    "sub": "General Lectures",
-    "href": "audio.html?lecture=66"
-  },
-  {
-    "type": "audio",
-    "id": 67,
     "title": "Entering the Lizard Hole",
     "sub": "Refutations",
-    "href": "audio.html?lecture=67",
+    "href": "audio.html?lecture=66",
     "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal.png"
   },
   {
     "type": "audio",
-    "id": 68,
+    "id": 67,
     "title": "Etiquettes Of Dawah",
     "sub": "Character & Dawah",
-    "href": "audio.html?lecture=68"
+    "href": "audio.html?lecture=67"
   },
   {
     "type": "audio",
-    "id": 69,
+    "id": 68,
     "title": "EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN",
     "sub": "Wicked Scholars",
-    "href": "audio.html?lecture=69",
+    "href": "audio.html?lecture=68",
     "thumb": "thumb/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 70,
+    "id": 69,
     "title": "EXCUSE OF IGNORANCE",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=70",
+    "href": "audio.html?lecture=69",
     "thumb": "thumb/EXCUSE OF IGNORANCE - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 71,
+    "id": 70,
     "title": "Exposing Those Who Insult Allah (07.10.11)",
     "sub": "General Lectures",
+    "href": "audio.html?lecture=70"
+  },
+  {
+    "type": "audio",
+    "id": 71,
+    "title": "Fasting - What You Need To Know (08.01.11)",
+    "sub": "Fiqh & Worship",
     "href": "audio.html?lecture=71"
   },
   {
     "type": "audio",
     "id": 72,
-    "title": "Fasting - What You Need To Know (08.01.11)",
-    "sub": "Fiqh & Worship",
-    "href": "audio.html?lecture=72"
-  },
-  {
-    "type": "audio",
-    "id": 73,
     "title": "FIFTY SEVEN SIGNS OF A MUNAFIQ",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=73",
+    "href": "audio.html?lecture=72",
     "thumb": "thumb/FIFTY SEVEN SIGNS OF A MUNAFIQ - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 74,
+    "id": 73,
     "title": "Fiqhul Waaqi (04.30.12)",
     "sub": "Fiqh & Worship",
-    "href": "audio.html?lecture=74",
+    "href": "audio.html?lecture=73",
     "thumb": "thumb/extracted/077f32b6dc714f.jpg"
   },
   {
     "type": "audio",
-    "id": 75,
+    "id": 74,
     "title": "Foundations of the Islamic Brotherhood And Sisterhood",
     "sub": "Character & Dawah",
-    "href": "audio.html?lecture=75"
+    "href": "audio.html?lecture=74"
   },
   {
     "type": "audio",
-    "id": 76,
+    "id": 75,
     "title": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=76",
+    "href": "audio.html?lecture=75",
     "thumb": "thumb/FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 77,
+    "id": 76,
     "title": "Future of the Caliphate",
     "sub": "Khilafah",
-    "href": "audio.html?lecture=77"
+    "href": "audio.html?lecture=76"
   },
   {
     "type": "audio",
-    "id": 78,
+    "id": 77,
     "title": "GAY LESBIAN LGBT",
     "sub": "Refutations",
-    "href": "audio.html?lecture=78",
+    "href": "audio.html?lecture=77",
     "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal.png"
   },
   {
     "type": "audio",
-    "id": 79,
+    "id": 78,
     "title": "Get Your Priorities Right (08.23.11)",
     "sub": "Character & Dawah",
+    "href": "audio.html?lecture=78"
+  },
+  {
+    "type": "audio",
+    "id": 79,
+    "title": "Hearts of the Kafirs Are Alike (07.11.11)",
+    "sub": "Aqeedah",
     "href": "audio.html?lecture=79"
   },
   {
     "type": "audio",
     "id": 80,
-    "title": "Hearts of the Kafirs Are Alike (07.11.11)",
-    "sub": "Aqeedah",
-    "href": "audio.html?lecture=80"
-  },
-  {
-    "type": "audio",
-    "id": 81,
     "title": "How to be Sincere to Allah (08.04.11 to 08.07.11)",
     "sub": "Character & Dawah",
-    "href": "audio.html?lecture=81",
+    "href": "audio.html?lecture=80",
     "thumb": "thumb/extracted/4cbffbbbd24ca8.jpg"
   },
   {
     "type": "audio",
-    "id": 82,
+    "id": 81,
     "title": "How to be Sincere to the Holy Qur'an (08.09.11)",
     "sub": "Character & Dawah",
-    "href": "audio.html?lecture=82"
+    "href": "audio.html?lecture=81"
   },
   {
     "type": "audio",
-    "id": 83,
+    "id": 82,
     "title": "How to be Sincere to the Leaders (12.06.11)",
     "sub": "Character & Dawah",
-    "href": "audio.html?lecture=83",
+    "href": "audio.html?lecture=82",
     "thumb": "thumb/extracted/fd6728401a4f1a.jpg"
   },
   {
     "type": "audio",
-    "id": 84,
+    "id": 83,
     "title": "How to be Sincere to the Rasool (SAW) (08.08.11)",
+    "sub": "Character & Dawah",
+    "href": "audio.html?lecture=83"
+  },
+  {
+    "type": "audio",
+    "id": 84,
+    "title": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11)",
     "sub": "Character & Dawah",
     "href": "audio.html?lecture=84"
   },
   {
     "type": "audio",
     "id": 85,
-    "title": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11)",
-    "sub": "Character & Dawah",
-    "href": "audio.html?lecture=85"
-  },
-  {
-    "type": "audio",
-    "id": 86,
     "title": "How To Make Hajj (10.25.11)[v2]",
     "sub": "Fiqh & Worship",
-    "href": "audio.html?lecture=86",
+    "href": "audio.html?lecture=85",
     "thumb": "thumb/extracted/3e8344b2f72015.jpg"
   },
   {
     "type": "audio",
-    "id": 87,
+    "id": 86,
     "title": "Human Rights",
     "sub": "Ummah & Contemporary Issues",
-    "href": "audio.html?lecture=87"
+    "href": "audio.html?lecture=86"
   },
   {
     "type": "audio",
-    "id": 88,
+    "id": 87,
     "title": "Human Soul (10.06.11)",
     "sub": "Ummah & Contemporary Issues",
-    "href": "audio.html?lecture=88",
+    "href": "audio.html?lecture=87",
     "thumb": "thumb/extracted/b5590561372303.jpg"
   },
   {
     "type": "audio",
-    "id": 89,
+    "id": 88,
     "title": "Ideological Warfare",
     "sub": "Ummah & Contemporary Issues",
-    "href": "audio.html?lecture=89"
+    "href": "audio.html?lecture=88"
   },
   {
     "type": "audio",
-    "id": 90,
+    "id": 89,
     "title": "IFK SLANDER OF AYSHA",
     "sub": "Refutations",
-    "href": "audio.html?lecture=90",
+    "href": "audio.html?lecture=89",
     "thumb": "thumb/IFK  SLANDER OF AYSHA - Shaykh Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 91,
+    "id": 90,
     "title": "IJTIHAAD MASLAHA",
     "sub": "Islamic Knowledge",
-    "href": "audio.html?lecture=91"
+    "href": "audio.html?lecture=90"
   },
   {
     "type": "audio",
-    "id": 92,
+    "id": 91,
     "title": "IMPEDIMENTS OF TAKFIR",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=92",
+    "href": "audio.html?lecture=91",
     "thumb": "thumb/IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
-    "id": 93,
+    "id": 92,
     "title": "IMPORTANCE OF HIJRAH",
     "sub": "Jihad",
-    "href": "audio.html?lecture=93",
+    "href": "audio.html?lecture=92",
     "thumb": "thumb/IMPORTANCE OF HIJRAH - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 94,
+    "id": 93,
     "title": "INSULTING THE PROPHET ﷺ",
     "sub": "Refutations",
-    "href": "audio.html?lecture=94",
+    "href": "audio.html?lecture=93",
     "thumb": "thumb/INSULTING THE PROPHET ABDALLAH AL FAISAL.jpg"
   },
   {
     "type": "audio",
-    "id": 95,
+    "id": 94,
     "title": "Invalidation Of Your Actions – Part 1",
+    "sub": "Aqeedah",
+    "href": "audio.html?lecture=94"
+  },
+  {
+    "type": "audio",
+    "id": 95,
+    "title": "Invalidation Of Your Actions – Part 2",
     "sub": "Aqeedah",
     "href": "audio.html?lecture=95"
   },
   {
     "type": "audio",
     "id": 96,
-    "title": "Invalidation Of Your Actions – Part 2",
-    "sub": "Aqeedah",
+    "title": "Is the caliphate valid",
+    "sub": "Khilafah",
     "href": "audio.html?lecture=96"
   },
   {
     "type": "audio",
     "id": 97,
-    "title": "Is the caliphate valid",
+    "title": "Is the dawla khawarij?",
     "sub": "Khilafah",
     "href": "audio.html?lecture=97"
   },
   {
     "type": "audio",
     "id": 98,
-    "title": "Is the dawla khawarij?",
-    "sub": "Khilafah",
+    "title": "ISLAM AND THE WEST",
+    "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=98"
   },
   {
     "type": "audio",
     "id": 99,
-    "title": "ISLAM AND THE WEST",
-    "sub": "Ummah & Contemporary Issues",
+    "title": "Islam of Umar (RA) (07.09.11)",
+    "sub": "Prophets & Seerah",
     "href": "audio.html?lecture=99"
   },
   {
     "type": "audio",
     "id": 100,
-    "title": "Islam of Umar (RA) (07.09.11)",
-    "sub": "Prophets & Seerah",
+    "title": "ISLAM THE MOST HYGIENIC RELIGION",
+    "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=100"
   },
   {
     "type": "audio",
     "id": 101,
-    "title": "ISLAM THE MOST HYGIENIC RELIGION",
-    "sub": "Ummah & Contemporary Issues",
-    "href": "audio.html?lecture=101"
-  },
-  {
-    "type": "audio",
-    "id": 102,
     "title": "ISLAM UNDER SIEGE",
     "sub": "Ummah & Contemporary Issues",
-    "href": "audio.html?lecture=102",
+    "href": "audio.html?lecture=101",
     "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 103,
+    "id": 102,
     "title": "Islam was Revealed in Stages (08.28.11)",
     "sub": "General Lectures",
-    "href": "audio.html?lecture=103"
+    "href": "audio.html?lecture=102"
   },
   {
     "type": "audio",
-    "id": 104,
+    "id": 103,
     "title": "Islamic Etiquettes (11.26.11)",
     "sub": "Character & Dawah",
-    "href": "audio.html?lecture=104",
+    "href": "audio.html?lecture=103",
     "thumb": "thumb/extracted/74a3ae70b699b0.jpg"
   },
   {
     "type": "audio",
-    "id": 105,
+    "id": 104,
     "title": "Jahiliyya Gives Everyone a Raw Deal (07.24.11)",
     "sub": "General Lectures",
-    "href": "audio.html?lecture=105"
+    "href": "audio.html?lecture=104"
   },
   {
     "type": "audio",
-    "id": 106,
+    "id": 105,
     "title": "JIHAD AIMS & OBJECTIVES",
     "sub": "Jihad",
-    "href": "audio.html?lecture=106",
+    "href": "audio.html?lecture=105",
     "thumb": "thumb/extracted/5943e51a1e4e99.jpg"
   },
   {
     "type": "audio",
-    "id": 107,
+    "id": 106,
     "title": "Jokers in the Pack - Refuting the Ashaa'ira (09.22.11)",
     "sub": "Jokers in the Pack",
-    "href": "audio.html?lecture=107",
+    "href": "audio.html?lecture=106",
     "thumb": "thumb/extracted/787a2e39c0a084.jpg"
   },
   {
     "type": "audio",
-    "id": 108,
+    "id": 107,
     "title": "Jokers in the Pack - Refuting the Barelvis (09.15.11)",
     "sub": "Jokers in the Pack",
-    "href": "audio.html?lecture=108",
+    "href": "audio.html?lecture=107",
     "thumb": "thumb/extracted/aa33845bb947d5.jpg"
   },
   {
     "type": "audio",
-    "id": 109,
+    "id": 108,
     "title": "Jokers in the Pack - Refuting the Democrats (09.25.11)",
     "sub": "Jokers in the Pack",
-    "href": "audio.html?lecture=109",
+    "href": "audio.html?lecture=108",
     "thumb": "thumb/extracted/6fc2d99d26e86c.jpg"
   },
   {
     "type": "audio",
-    "id": 110,
+    "id": 109,
     "title": "Jokers in the Pack - Refuting the Goofy Sufi (09.07.11 to 09.08.11)",
     "sub": "Jokers in the Pack",
-    "href": "audio.html?lecture=110",
+    "href": "audio.html?lecture=109",
     "thumb": "thumb/extracted/7ec1dd62855308.jpg"
   },
   {
     "type": "audio",
-    "id": 111,
+    "id": 110,
     "title": "Jokers in the Pack - Refuting the Hizb ut Tahrir (09.17.11 to 09.18.11)",
     "sub": "Jokers in the Pack",
-    "href": "audio.html?lecture=111",
+    "href": "audio.html?lecture=110",
     "thumb": "thumb/extracted/e82be5cea574d4.jpg"
   },
   {
     "type": "audio",
-    "id": 112,
+    "id": 111,
     "title": "Jokers in the Pack - Refuting the Khawarij (09.04.11)[v2]",
     "sub": "Jokers in the Pack",
-    "href": "audio.html?lecture=112",
+    "href": "audio.html?lecture=111",
     "thumb": "thumb/extracted/c7cb6d95434762.jpg"
   },
   {
     "type": "audio",
-    "id": 113,
+    "id": 112,
     "title": "Jokers in the Pack - Refuting the Murjia (09.05.11)",
     "sub": "Jokers in the Pack",
-    "href": "audio.html?lecture=113",
+    "href": "audio.html?lecture=112",
     "thumb": "thumb/extracted/fc48e24075122d.jpg"
   },
   {
     "type": "audio",
-    "id": 114,
+    "id": 113,
     "title": "Jokers in the Pack - Refuting the Mutazila (09.06.11)",
     "sub": "Jokers in the Pack",
-    "href": "audio.html?lecture=114",
+    "href": "audio.html?lecture=113",
     "thumb": "thumb/extracted/0d0b3abc5b8d23.jpg"
   },
   {
     "type": "audio",
-    "id": 115,
+    "id": 114,
     "title": "Jokers in the Pack - Refuting the Parvezis (09.20.11)",
     "sub": "Jokers in the Pack",
-    "href": "audio.html?lecture=115",
+    "href": "audio.html?lecture=114",
     "thumb": "thumb/extracted/d7425d6a8787a3.jpg"
   },
   {
     "type": "audio",
-    "id": 116,
+    "id": 115,
     "title": "Jokers in the Pack - Refuting the Qadiyaani (09.21.11)",
     "sub": "Jokers in the Pack",
-    "href": "audio.html?lecture=116",
+    "href": "audio.html?lecture=115",
     "thumb": "thumb/extracted/09d526bcf4824f.jpg"
   },
   {
     "type": "audio",
-    "id": 117,
+    "id": 116,
     "title": "Jokers in the Pack - Refuting the Saudi Salafi (09.10.11 to 09.11.11)",
     "sub": "Jokers in the Pack",
-    "href": "audio.html?lecture=117",
+    "href": "audio.html?lecture=116",
     "thumb": "thumb/extracted/7624621f770187.jpg"
   },
   {
     "type": "audio",
-    "id": 118,
+    "id": 117,
     "title": "Jokers in the Pack - Refuting the Shia (09.12.11 to 09.14.11)",
     "sub": "Jokers in the Pack",
-    "href": "audio.html?lecture=118",
+    "href": "audio.html?lecture=117",
     "thumb": "thumb/extracted/01d0797b9f6e26.jpg"
   },
   {
     "type": "audio",
-    "id": 119,
+    "id": 118,
     "title": "JUDGEMENT DAY",
+    "sub": "Ummah & Contemporary Issues",
+    "href": "audio.html?lecture=118"
+  },
+  {
+    "type": "audio",
+    "id": 119,
+    "title": "Judgment Day (07.27.11)",
     "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=119"
   },
   {
     "type": "audio",
     "id": 120,
-    "title": "Judgment Day (07.27.11)",
-    "sub": "Ummah & Contemporary Issues",
-    "href": "audio.html?lecture=120"
-  },
-  {
-    "type": "audio",
-    "id": 121,
     "title": "KASHF USH SHUBUHAAT",
     "sub": "Refutations",
-    "href": "audio.html?lecture=121",
+    "href": "audio.html?lecture=120",
     "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 122,
+    "id": 121,
     "title": "KHAWARIJ AND THEIR AQEEDAH",
     "sub": "Refutations",
-    "href": "audio.html?lecture=122",
+    "href": "audio.html?lecture=121",
     "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.png"
   },
   {
     "type": "audio",
-    "id": 123,
+    "id": 122,
     "title": "KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED",
     "sub": "Khilafah",
-    "href": "audio.html?lecture=123",
+    "href": "audio.html?lecture=122",
     "thumb": "thumb/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 124,
+    "id": 123,
     "title": "KHILAFAH SURVIVE & REVIVE",
     "sub": "Khilafah",
-    "href": "audio.html?lecture=124",
+    "href": "audio.html?lecture=123",
     "thumb": "thumb/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 125,
+    "id": 124,
     "title": "KNOWLEDGE",
+    "sub": "General Lectures",
+    "href": "audio.html?lecture=124"
+  },
+  {
+    "type": "audio",
+    "id": 125,
+    "title": "Kufaar and the Fear Factor (07.03.11)",
     "sub": "General Lectures",
     "href": "audio.html?lecture=125"
   },
   {
     "type": "audio",
     "id": 126,
-    "title": "Kufaar and the Fear Factor (07.03.11)",
-    "sub": "General Lectures",
-    "href": "audio.html?lecture=126"
-  },
-  {
-    "type": "audio",
-    "id": 127,
     "title": "KUFR DOONA KUFR",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=127",
+    "href": "audio.html?lecture=126",
     "thumb": "thumb/KUFR DOONA KUFR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 128,
+    "id": 127,
     "title": "Lailatul Qadr explained (dars)",
     "sub": "Fiqh & Worship",
+    "href": "audio.html?lecture=127"
+  },
+  {
+    "type": "audio",
+    "id": 128,
+    "title": "LAYLATUL QADR",
+    "sub": "Ramadan",
     "href": "audio.html?lecture=128"
   },
   {
     "type": "audio",
     "id": 129,
-    "title": "LAYLATUL QADR",
-    "sub": "Ramadan",
+    "title": "LEADERSHIP IN ISLAM",
+    "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=129"
   },
   {
     "type": "audio",
     "id": 130,
-    "title": "LEADERSHIP IN ISLAM",
-    "sub": "Ummah & Contemporary Issues",
+    "title": "LET THE SCHOLARS BEWARE",
+    "sub": "Wicked Scholars",
     "href": "audio.html?lecture=130"
   },
   {
     "type": "audio",
     "id": 131,
-    "title": "LET THE SCHOLARS BEWARE",
-    "sub": "Wicked Scholars",
+    "title": "Let's Call A Spade A Spade - Part 2",
+    "sub": "Aqeedah",
     "href": "audio.html?lecture=131"
   },
   {
     "type": "audio",
     "id": 132,
-    "title": "Let's Call A Spade A Spade - Part 2",
+    "title": "Let's Call A Spade A Spade - Part 3",
     "sub": "Aqeedah",
     "href": "audio.html?lecture=132"
   },
   {
     "type": "audio",
     "id": 133,
-    "title": "Let's Call A Spade A Spade - Part 3",
+    "title": "Let's Call A Spade A Spade - Part 4",
     "sub": "Aqeedah",
     "href": "audio.html?lecture=133"
   },
   {
     "type": "audio",
     "id": 134,
-    "title": "Let's Call A Spade A Spade - Part 4",
+    "title": "Let's Call A Spade A Spade Part 1",
     "sub": "Aqeedah",
     "href": "audio.html?lecture=134"
   },
   {
     "type": "audio",
     "id": 135,
-    "title": "Let's Call A Spade A Spade Part 1",
-    "sub": "Aqeedah",
-    "href": "audio.html?lecture=135"
-  },
-  {
-    "type": "audio",
-    "id": 136,
     "title": "LOVE",
     "sub": "Marriage & Family",
-    "href": "audio.html?lecture=136",
+    "href": "audio.html?lecture=135",
     "thumb": "thumb/extracted/6d7686edec03e1.jpg"
   },
   {
     "type": "audio",
-    "id": 137,
+    "id": 136,
     "title": "Love and Hate for Allah's Sake",
     "sub": "General Lectures",
+    "href": "audio.html?lecture=136"
+  },
+  {
+    "type": "audio",
+    "id": 137,
+    "title": "Mad Dogs of the Middle East [REVISITED] (10.20.11)",
+    "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=137"
   },
   {
     "type": "audio",
     "id": 138,
-    "title": "Mad Dogs of the Middle East [REVISITED] (10.20.11)",
-    "sub": "Ummah & Contemporary Issues",
-    "href": "audio.html?lecture=138"
-  },
-  {
-    "type": "audio",
-    "id": 139,
     "title": "MADKHALIS",
     "sub": "Refutations",
-    "href": "audio.html?lecture=139",
+    "href": "audio.html?lecture=138",
     "thumb": "thumb/MADKHALIS - Shaykh Faisal.png"
   },
   {
     "type": "audio",
-    "id": 140,
+    "id": 139,
     "title": "Magic (06.24.11)",
     "sub": "Ummah & Contemporary Issues",
-    "href": "audio.html?lecture=140"
+    "href": "audio.html?lecture=139"
   },
   {
     "type": "audio",
-    "id": 141,
+    "id": 140,
     "title": "MANHAJ FOR ESTABLISHING SHARIAH",
     "sub": "Khilafah",
-    "href": "audio.html?lecture=141",
+    "href": "audio.html?lecture=140",
     "thumb": "thumb/MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 142,
+    "id": 141,
     "title": "Manhood in Islam",
     "sub": "Character & Dawah",
+    "href": "audio.html?lecture=141"
+  },
+  {
+    "type": "audio",
+    "id": 142,
+    "title": "Many Miracles of the Prophet Muhammad (SAW) (07.20.11)",
+    "sub": "Prophets & Seerah",
     "href": "audio.html?lecture=142"
   },
   {
     "type": "audio",
     "id": 143,
-    "title": "Many Miracles of the Prophet Muhammad (SAW) (07.20.11)",
-    "sub": "Prophets & Seerah",
+    "title": "MARITAL DISCORD (NUSHOOZ)",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=143"
   },
   {
     "type": "audio",
     "id": 144,
-    "title": "MARITAL DISCORD (NUSHOOZ)",
-    "sub": "Marriage & Family",
-    "href": "audio.html?lecture=144"
-  },
-  {
-    "type": "audio",
-    "id": 145,
     "title": "MELTDOWN OF DEMOCRACY",
     "sub": "Refutations",
-    "href": "audio.html?lecture=145",
+    "href": "audio.html?lecture=144",
     "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
-    "id": 146,
+    "id": 145,
     "title": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12",
     "sub": "Character & Dawah",
-    "href": "audio.html?lecture=146",
+    "href": "audio.html?lecture=145",
     "thumb": "thumb/extracted/78f1df9c3dffb9.jpg"
   },
   {
     "type": "audio",
-    "id": 147,
+    "id": 146,
     "title": "Merits of Salah (06.23.11)",
     "sub": "Fiqh & Worship",
+    "href": "audio.html?lecture=146"
+  },
+  {
+    "type": "audio",
+    "id": 147,
+    "title": "Message from the Calipha (HA) to the Ummah",
+    "sub": "Khilafah",
     "href": "audio.html?lecture=147"
   },
   {
     "type": "audio",
     "id": 148,
-    "title": "Message from the Calipha (HA) to the Ummah",
-    "sub": "Khilafah",
+    "title": "Might Without Wisdom is a Recipe for Disaster (07.27.11)",
+    "sub": "General Lectures",
     "href": "audio.html?lecture=148"
   },
   {
     "type": "audio",
     "id": 149,
-    "title": "Might Without Wisdom is a Recipe for Disaster (07.27.11)",
-    "sub": "General Lectures",
-    "href": "audio.html?lecture=149"
-  },
-  {
-    "type": "audio",
-    "id": 150,
     "title": "MILLATU IBRAHIM",
     "sub": "Prophets & Seerah",
-    "href": "audio.html?lecture=150",
+    "href": "audio.html?lecture=149",
     "thumb": "thumb/extracted/f9c271ac07d98b.png"
   },
   {
     "type": "audio",
-    "id": 151,
+    "id": 150,
     "title": "Money Can't Buy True Love (07.02.11)",
     "sub": "Marriage & Family",
-    "href": "audio.html?lecture=151"
+    "href": "audio.html?lecture=150"
   },
   {
     "type": "audio",
-    "id": 152,
+    "id": 151,
     "title": "MURJIA",
     "sub": "Refutations",
-    "href": "audio.html?lecture=152",
+    "href": "audio.html?lecture=151",
     "thumb": "thumb/MURJIA - Shaykh Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 153,
+    "id": 152,
     "title": "Musa & al Khidr (dars)",
+    "sub": "Prophets & Seerah",
+    "href": "audio.html?lecture=152"
+  },
+  {
+    "type": "audio",
+    "id": 153,
+    "title": "Musa & Al-Khidr (07.09.11)",
     "sub": "Prophets & Seerah",
     "href": "audio.html?lecture=153"
   },
   {
     "type": "audio",
     "id": 154,
-    "title": "Musa & Al-Khidr (07.09.11)",
-    "sub": "Prophets & Seerah",
-    "href": "audio.html?lecture=154"
-  },
-  {
-    "type": "audio",
-    "id": 155,
     "title": "MUSA AND KHIDR",
     "sub": "Prophets & Seerah",
-    "href": "audio.html?lecture=155",
+    "href": "audio.html?lecture=154",
     "thumb": "thumb/MUSA AND KHIDR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 156,
+    "id": 155,
     "title": "MUSA AND QAROON",
     "sub": "Prophets & Seerah",
-    "href": "audio.html?lecture=156",
+    "href": "audio.html?lecture=155",
     "thumb": "thumb/MUSA AND QAROON - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 157,
+    "id": 156,
     "title": "Muslim Character",
     "sub": "Ummah & Contemporary Issues",
-    "href": "audio.html?lecture=157"
+    "href": "audio.html?lecture=156"
   },
   {
     "type": "audio",
-    "id": 158,
+    "id": 157,
     "title": "Muslim Home (12.21.11 to 12.22.11)",
     "sub": "Marriage & Family",
-    "href": "audio.html?lecture=158",
+    "href": "audio.html?lecture=157",
     "thumb": "thumb/extracted/8be0c03a517daa.jpg"
   },
   {
     "type": "audio",
-    "id": 159,
+    "id": 158,
     "title": "MUSLIM MARRYING NON MUSLIM",
     "sub": "Marriage & Family",
-    "href": "audio.html?lecture=159",
+    "href": "audio.html?lecture=158",
     "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
-    "id": 160,
+    "id": 159,
     "title": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL)",
     "sub": "Ummah & Contemporary Issues",
-    "href": "audio.html?lecture=160",
+    "href": "audio.html?lecture=159",
     "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
-    "id": 161,
+    "id": 160,
     "title": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM",
     "sub": "Refutations",
-    "href": "audio.html?lecture=161",
+    "href": "audio.html?lecture=160",
     "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 162,
+    "id": 161,
     "title": "Natural Disasters - Why They Occur",
+    "sub": "Ummah & Contemporary Issues",
+    "href": "audio.html?lecture=161"
+  },
+  {
+    "type": "audio",
+    "id": 162,
+    "title": "NATURAL DISASTERS, WHY DO THEY OCCUR",
     "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=162"
   },
   {
     "type": "audio",
     "id": 163,
-    "title": "NATURAL DISASTERS, WHY DO THEY OCCUR",
+    "title": "Natural Instincts",
     "sub": "Ummah & Contemporary Issues",
     "href": "audio.html?lecture=163"
   },
   {
     "type": "audio",
     "id": 164,
-    "title": "Natural Instincts",
-    "sub": "Ummah & Contemporary Issues",
+    "title": "Nawaaqid al islam by Muhd ibn Abdul Wahhab",
+    "sub": "Aqeedah",
     "href": "audio.html?lecture=164"
   },
   {
     "type": "audio",
     "id": 165,
-    "title": "Nawaaqid al islam by Muhd ibn Abdul Wahhab",
-    "sub": "Aqeedah",
-    "href": "audio.html?lecture=165"
-  },
-  {
-    "type": "audio",
-    "id": 166,
     "title": "NAWAQID AL ISLAM",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=166",
+    "href": "audio.html?lecture=165",
     "thumb": "thumb/NAWAQID AL ISLAM - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 167,
+    "id": 166,
     "title": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=167",
+    "href": "audio.html?lecture=166",
     "thumb": "thumb/NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
-    "id": 168,
+    "id": 167,
     "title": "NO PEACE WITH THE JEWS",
     "sub": "Refutations",
-    "href": "audio.html?lecture=168"
+    "href": "audio.html?lecture=167"
   },
   {
     "type": "audio",
-    "id": 169,
+    "id": 168,
     "title": "OBLIGATION TO ESTABLISH KHILAFAH",
     "sub": "Khilafah",
-    "href": "audio.html?lecture=169",
+    "href": "audio.html?lecture=168",
     "thumb": "thumb/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 170,
+    "id": 169,
     "title": "Our 6 Sacred Possessions",
+    "sub": "General Lectures",
+    "href": "audio.html?lecture=169"
+  },
+  {
+    "type": "audio",
+    "id": 170,
+    "title": "Paradise is Exclusive to the Muslims (07.04.11)",
     "sub": "General Lectures",
     "href": "audio.html?lecture=170"
   },
   {
     "type": "audio",
     "id": 171,
-    "title": "Paradise is Exclusive to the Muslims (07.04.11)",
-    "sub": "General Lectures",
-    "href": "audio.html?lecture=171"
-  },
-  {
-    "type": "audio",
-    "id": 172,
     "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE",
     "sub": "Marriage & Family",
-    "href": "audio.html?lecture=172",
+    "href": "audio.html?lecture=171",
     "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 173,
+    "id": 172,
     "title": "PEOPLE OF THE CAVE",
     "sub": "Prophets & Seerah",
-    "href": "audio.html?lecture=173",
+    "href": "audio.html?lecture=172",
     "thumb": "thumb/PEOPLE OF THE CAVE - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 174,
+    "id": 173,
     "title": "Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12)",
+    "sub": "Personality Disorders",
+    "href": "audio.html?lecture=173",
+    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
+  },
+  {
+    "type": "audio",
+    "id": 174,
+    "title": "Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12)",
     "sub": "Personality Disorders",
     "href": "audio.html?lecture=174",
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
@@ -1301,7 +1302,7 @@ const SEARCH_INDEX = [
   {
     "type": "audio",
     "id": 175,
-    "title": "Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12)",
+    "title": "Personality Disorders [Part 3] Narcissistic (05.06.12)",
     "sub": "Personality Disorders",
     "href": "audio.html?lecture=175",
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
@@ -1309,7 +1310,7 @@ const SEARCH_INDEX = [
   {
     "type": "audio",
     "id": 176,
-    "title": "Personality Disorders [Part 3] Narcissistic (05.06.12)",
+    "title": "Personality Disorders [Part 4] PTSD (05.07.12)",
     "sub": "Personality Disorders",
     "href": "audio.html?lecture=176",
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
@@ -1317,7 +1318,7 @@ const SEARCH_INDEX = [
   {
     "type": "audio",
     "id": 177,
-    "title": "Personality Disorders [Part 4] PTSD (05.07.12)",
+    "title": "Personality Disorders [Part 5] Anti-Social (05.08.12)",
     "sub": "Personality Disorders",
     "href": "audio.html?lecture=177",
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
@@ -1325,484 +1326,483 @@ const SEARCH_INDEX = [
   {
     "type": "audio",
     "id": 178,
-    "title": "Personality Disorders [Part 5] Anti-Social (05.08.12)",
-    "sub": "Personality Disorders",
-    "href": "audio.html?lecture=178",
-    "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png"
+    "title": "Power of Intercession (07.18.11)",
+    "sub": "General Lectures",
+    "href": "audio.html?lecture=178"
   },
   {
     "type": "audio",
     "id": 179,
-    "title": "Power of Intercession (07.18.11)",
-    "sub": "General Lectures",
-    "href": "audio.html?lecture=179"
-  },
-  {
-    "type": "audio",
-    "id": 180,
     "title": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=180",
+    "href": "audio.html?lecture=179",
     "thumb": "thumb/PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 181,
+    "id": 180,
     "title": "Prophesies of the Holy Quran (11.22.11 to 11.23.11)",
     "sub": "Science in the Quran",
-    "href": "audio.html?lecture=181",
+    "href": "audio.html?lecture=180",
     "thumb": "thumb/extracted/d6ec668de41ae1.jpg"
   },
   {
     "type": "audio",
-    "id": 182,
+    "id": 181,
     "title": "PUNISHMENT OF THE GRAVE",
     "sub": "Fiqh & Worship",
+    "href": "audio.html?lecture=181"
+  },
+  {
+    "type": "audio",
+    "id": 182,
+    "title": "Radical Islamic Terrorism",
+    "sub": "Refutations",
     "href": "audio.html?lecture=182"
   },
   {
     "type": "audio",
     "id": 183,
-    "title": "Radical Islamic Terrorism",
+    "title": "Radical islamic terrorism2",
     "sub": "Refutations",
     "href": "audio.html?lecture=183"
   },
   {
     "type": "audio",
     "id": 184,
-    "title": "Radical islamic terrorism2",
-    "sub": "Refutations",
-    "href": "audio.html?lecture=184"
-  },
-  {
-    "type": "audio",
-    "id": 185,
     "title": "Radio Show - Allah's Blessings to Mankind (08.20.11)",
     "sub": "Radio Show",
-    "href": "audio.html?lecture=185",
+    "href": "audio.html?lecture=184",
     "thumb": "thumb/extracted/2676a8f4838e99.jpg"
   },
   {
     "type": "audio",
-    "id": 186,
+    "id": 185,
     "title": "Radio Show - Challenges Facing the Youth Globally (08.06.11)",
     "sub": "Radio Show",
-    "href": "audio.html?lecture=186"
+    "href": "audio.html?lecture=185"
   },
   {
     "type": "audio",
-    "id": 187,
+    "id": 186,
     "title": "Radio Show - Diseases of the Heart (10.29.11)",
     "sub": "Diseases of the Heart",
-    "href": "audio.html?lecture=187",
+    "href": "audio.html?lecture=186",
     "thumb": "thumb/extracted/f5c36659976c9e.jpg"
   },
   {
     "type": "audio",
-    "id": 188,
+    "id": 187,
     "title": "Radio Show - God In Islam (11.19.11)",
     "sub": "Radio Show",
-    "href": "audio.html?lecture=188",
+    "href": "audio.html?lecture=187",
     "thumb": "thumb/extracted/b1693094c8ce71.jpg"
   },
   {
     "type": "audio",
-    "id": 189,
+    "id": 188,
     "title": "Radio Show - Judgment Day (11.26.11)",
     "sub": "Radio Show",
-    "href": "audio.html?lecture=189",
+    "href": "audio.html?lecture=188",
     "thumb": "thumb/extracted/6862f6ca95768a.jpg"
   },
   {
     "type": "audio",
-    "id": 190,
+    "id": 189,
     "title": "Radio Show - Manhood (10.22.11)",
     "sub": "Radio Show",
-    "href": "audio.html?lecture=190",
+    "href": "audio.html?lecture=189",
     "thumb": "thumb/extracted/e38b5240266f79.jpg"
   },
   {
     "type": "audio",
-    "id": 191,
+    "id": 190,
     "title": "Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11)",
     "sub": "Radio Show",
-    "href": "audio.html?lecture=191",
+    "href": "audio.html?lecture=190",
     "thumb": "thumb/extracted/f30bbb19eb83af.jpg"
   },
   {
     "type": "audio",
-    "id": 192,
+    "id": 191,
     "title": "Radio Show - Natural Instincts (07.30.11)",
     "sub": "Radio Show",
+    "href": "audio.html?lecture=191"
+  },
+  {
+    "type": "audio",
+    "id": 192,
+    "title": "RAMADAN OUR BLESSED GUEST",
+    "sub": "Ramadan",
     "href": "audio.html?lecture=192"
   },
   {
     "type": "audio",
     "id": 193,
-    "title": "RAMADAN OUR BLESSED GUEST",
+    "title": "Ramadhan - The Month of Glory (07.30.11)",
     "sub": "Ramadan",
     "href": "audio.html?lecture=193"
   },
   {
     "type": "audio",
     "id": 194,
-    "title": "Ramadhan - The Month of Glory (07.30.11)",
-    "sub": "Ramadan",
+    "title": "REALITY OF EMAAN",
+    "sub": "Iman & the Hereafter",
     "href": "audio.html?lecture=194"
   },
   {
     "type": "audio",
     "id": 195,
-    "title": "REALITY OF EMAAN",
-    "sub": "Iman & the Hereafter",
+    "title": "Reality of FGM (08.25.11)",
+    "sub": "General Lectures",
     "href": "audio.html?lecture=195"
   },
   {
     "type": "audio",
     "id": 196,
-    "title": "Reality of FGM (08.25.11)",
-    "sub": "General Lectures",
-    "href": "audio.html?lecture=196"
-  },
-  {
-    "type": "audio",
-    "id": 197,
     "title": "REALITY OF POVERTY",
     "sub": "Ummah & Contemporary Issues",
-    "href": "audio.html?lecture=197",
+    "href": "audio.html?lecture=196",
     "thumb": "thumb/extracted/4e609eaf7de4d7.jpg"
   },
   {
     "type": "audio",
-    "id": 198,
+    "id": 197,
     "title": "Reality of Poverty (02.27.12)",
     "sub": "General Lectures",
-    "href": "audio.html?lecture=198",
+    "href": "audio.html?lecture=197",
     "thumb": "thumb/extracted/290cda89069668.jpg"
   },
   {
     "type": "audio",
-    "id": 199,
+    "id": 198,
     "title": "Reality of Sincerity (12.07.11)",
     "sub": "Diseases of the Heart",
-    "href": "audio.html?lecture=199",
+    "href": "audio.html?lecture=198",
     "thumb": "thumb/extracted/1e7db6b17401c6.jpg"
   },
   {
     "type": "audio",
-    "id": 200,
+    "id": 199,
     "title": "REALITY OF THE JEWS",
     "sub": "Refutations",
-    "href": "audio.html?lecture=200",
+    "href": "audio.html?lecture=199",
     "thumb": "thumb/REALITY OF THE JEWS - Abdallah Al Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 201,
+    "id": 200,
     "title": "Refuting Geert Wilders (07.07.11)",
+    "sub": "Refutations",
+    "href": "audio.html?lecture=200"
+  },
+  {
+    "type": "audio",
+    "id": 201,
+    "title": "Refuting The Lie Concerning Kufr Doona Kufr",
     "sub": "Refutations",
     "href": "audio.html?lecture=201"
   },
   {
     "type": "audio",
     "id": 202,
-    "title": "Refuting The Lie Concerning Kufr Doona Kufr",
+    "title": "Refuting The Lie Concerning The Excuse of Ignorance",
     "sub": "Refutations",
     "href": "audio.html?lecture=202"
   },
   {
     "type": "audio",
     "id": 203,
-    "title": "Refuting The Lie Concerning The Excuse of Ignorance",
+    "title": "REJECTING THE TAGHUT",
     "sub": "Refutations",
     "href": "audio.html?lecture=203"
   },
   {
     "type": "audio",
     "id": 204,
-    "title": "REJECTING THE TAGHUT",
+    "title": "Removing the Doubts",
     "sub": "Refutations",
     "href": "audio.html?lecture=204"
   },
   {
     "type": "audio",
     "id": 205,
-    "title": "Removing the Doubts",
-    "sub": "Refutations",
-    "href": "audio.html?lecture=205"
-  },
-  {
-    "type": "audio",
-    "id": 206,
     "title": "REQUIREMENTS OF JIHAD",
     "sub": "Jihad",
-    "href": "audio.html?lecture=206",
+    "href": "audio.html?lecture=205",
     "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
-    "id": 207,
+    "id": 206,
     "title": "Resist To Exist (07.07.11)",
     "sub": "General Lectures",
+    "href": "audio.html?lecture=206"
+  },
+  {
+    "type": "audio",
+    "id": 207,
+    "title": "Road to Sincerity (07.17.11)",
+    "sub": "Diseases of the Heart",
     "href": "audio.html?lecture=207"
   },
   {
     "type": "audio",
     "id": 208,
-    "title": "Road to Sincerity (07.17.11)",
-    "sub": "Diseases of the Heart",
+    "title": "ROLE OF THE MASJID",
+    "sub": "Islamic Knowledge",
     "href": "audio.html?lecture=208"
   },
   {
     "type": "audio",
     "id": 209,
-    "title": "ROLE OF THE MASJID",
-    "sub": "Islamic Knowledge",
+    "title": "Rules and Merits of Zakah (09.01.11)",
+    "sub": "Fiqh & Worship",
     "href": "audio.html?lecture=209"
   },
   {
     "type": "audio",
     "id": 210,
-    "title": "Rules and Merits of Zakah (09.01.11)",
-    "sub": "Fiqh & Worship",
+    "title": "Rules of Divorce [Part 1] (07.06.11)",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=210"
   },
   {
     "type": "audio",
     "id": 211,
-    "title": "Rules of Divorce [Part 1] (07.06.11)",
+    "title": "Rules of Divorce [Part 2] Revisited (07.08.11)",
     "sub": "Marriage & Family",
     "href": "audio.html?lecture=211"
   },
   {
     "type": "audio",
     "id": 212,
-    "title": "Rules of Divorce [Part 2] Revisited (07.08.11)",
-    "sub": "Marriage & Family",
+    "title": "Rules Of Fasting",
+    "sub": "Fiqh & Worship",
     "href": "audio.html?lecture=212"
   },
   {
     "type": "audio",
     "id": 213,
-    "title": "Rules Of Fasting",
+    "title": "Rules of Fasting (07.31.11)",
     "sub": "Fiqh & Worship",
     "href": "audio.html?lecture=213"
   },
   {
     "type": "audio",
     "id": 214,
-    "title": "Rules of Fasting (07.31.11)",
-    "sub": "Fiqh & Worship",
+    "title": "Rules of Nikah [Part 1] (06.30.11)",
+    "sub": "Marriage & Family",
     "href": "audio.html?lecture=214"
   },
   {
     "type": "audio",
     "id": 215,
-    "title": "Rules of Nikah [Part 1] (06.30.11)",
+    "title": "Rules of Nikah [Part 2] (07.01.11)",
     "sub": "Marriage & Family",
     "href": "audio.html?lecture=215"
   },
   {
     "type": "audio",
     "id": 216,
-    "title": "Rules of Nikah [Part 2] (07.01.11)",
+    "title": "Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11)",
     "sub": "Marriage & Family",
     "href": "audio.html?lecture=216"
   },
   {
     "type": "audio",
     "id": 217,
-    "title": "Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11)",
+    "title": "Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11)",
     "sub": "Marriage & Family",
     "href": "audio.html?lecture=217"
   },
   {
     "type": "audio",
     "id": 218,
-    "title": "Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11)",
-    "sub": "Marriage & Family",
-    "href": "audio.html?lecture=218"
-  },
-  {
-    "type": "audio",
-    "id": 219,
     "title": "SALAFI JIHADI",
     "sub": "Jihad",
-    "href": "audio.html?lecture=219",
+    "href": "audio.html?lecture=218",
     "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png"
   },
   {
     "type": "audio",
-    "id": 220,
+    "id": 219,
     "title": "Salah of the Rasool described",
     "sub": "Fiqh & Worship",
+    "href": "audio.html?lecture=219"
+  },
+  {
+    "type": "audio",
+    "id": 220,
+    "title": "Satan's Web (dars)",
+    "sub": "General Lectures",
     "href": "audio.html?lecture=220"
   },
   {
     "type": "audio",
     "id": 221,
-    "title": "Satan's Web (dars)",
-    "sub": "General Lectures",
-    "href": "audio.html?lecture=221"
-  },
-  {
-    "type": "audio",
-    "id": 222,
     "title": "Satans Web (12.17.11)",
     "sub": "General Lectures",
-    "href": "audio.html?lecture=222",
+    "href": "audio.html?lecture=221",
     "thumb": "thumb/extracted/63ebe64c1fee50.jpg"
   },
   {
     "type": "audio",
-    "id": 223,
+    "id": 222,
     "title": "SAUDI SALAFI",
     "sub": "Refutations",
-    "href": "audio.html?lecture=223",
+    "href": "audio.html?lecture=222",
     "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal.jpg"
   },
   {
     "type": "audio",
-    "id": 224,
+    "id": 223,
     "title": "Science of Quran - Part 1",
+    "sub": "Science in the Quran",
+    "href": "audio.html?lecture=223"
+  },
+  {
+    "type": "audio",
+    "id": 224,
+    "title": "Science of Quran - Part 10 - The Causes of Revelation – Al Imraan",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=224"
   },
   {
     "type": "audio",
     "id": 225,
-    "title": "Science of Quran - Part 10 - The Causes of Revelation – Al Imraan",
+    "title": "Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=225"
   },
   {
     "type": "audio",
     "id": 226,
-    "title": "Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2",
+    "title": "Science of Quran - Part 12 - The Causes of Revelation – Al An’am",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=226"
   },
   {
     "type": "audio",
     "id": 227,
-    "title": "Science of Quran - Part 12 - The Causes of Revelation – Al An’am",
+    "title": "Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=227"
   },
   {
     "type": "audio",
     "id": 228,
-    "title": "Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf",
+    "title": "Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=228"
   },
   {
     "type": "audio",
     "id": 229,
-    "title": "Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1",
+    "title": "Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=229"
   },
   {
     "type": "audio",
     "id": 230,
-    "title": "Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1",
+    "title": "Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=230"
   },
   {
     "type": "audio",
     "id": 231,
-    "title": "Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2",
+    "title": "Science of Quran - Part 2 - The History of the Quran's Descent",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=231"
   },
   {
     "type": "audio",
     "id": 232,
-    "title": "Science of Quran - Part 2 - The History of the Quran's Descent",
+    "title": "Science of Quran - Part 2 - The Wahy",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=232"
   },
   {
     "type": "audio",
     "id": 233,
-    "title": "Science of Quran - Part 2 - The Wahy",
+    "title": "Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=233"
   },
   {
     "type": "audio",
     "id": 234,
-    "title": "Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book",
+    "title": "Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=234"
   },
   {
     "type": "audio",
     "id": 235,
-    "title": "Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs",
+    "title": "Science Of Quran - Part 6 - The causes Of Revelation I",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=235"
   },
   {
     "type": "audio",
     "id": 236,
-    "title": "Science Of Quran - Part 6 - The causes Of Revelation I",
+    "title": "Science Of Quran - Part 7 - The causes Of Revelation II",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=236"
   },
   {
     "type": "audio",
     "id": 237,
-    "title": "Science Of Quran - Part 7 - The causes Of Revelation II",
+    "title": "Science of Quran - Part 8 - The Causes of Revelation – An Nisa",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=237"
   },
   {
     "type": "audio",
     "id": 238,
-    "title": "Science of Quran - Part 8 - The Causes of Revelation – An Nisa",
+    "title": "Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah",
     "sub": "Science in the Quran",
     "href": "audio.html?lecture=238"
   },
   {
     "type": "audio",
     "id": 239,
-    "title": "Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah",
-    "sub": "Science in the Quran",
-    "href": "audio.html?lecture=239"
-  },
-  {
-    "type": "audio",
-    "id": 240,
     "title": "SECULARISM",
     "sub": "Refutations",
-    "href": "audio.html?lecture=240",
+    "href": "audio.html?lecture=239",
     "thumb": "thumb/SECULARISM - Shaykh Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
-    "id": 241,
+    "id": 240,
     "title": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION)",
     "sub": "Aqeedah",
-    "href": "audio.html?lecture=241",
+    "href": "audio.html?lecture=240",
     "thumb": "thumb/SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
-    "id": 242,
+    "id": 241,
     "title": "SEVENTEEN SIGNS OF THE WICKED SCHOLAR",
     "sub": "Wicked Scholars",
-    "href": "audio.html?lecture=242"
+    "href": "audio.html?lecture=241"
+  },
+  {
+    "type": "audio",
+    "id": 242,
+    "title": "SHARIAH VS MAN MADE LAWS",
+    "sub": "Refutations",
+    "href": "audio.html?lecture=242",
+    "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png"
   },
   {
     "type": "audio",
     "id": 243,
-    "title": "SHARIAH VS MAN MADE LAWS",
-    "sub": "Refutations",
-    "href": "audio.html?lecture=243",
-    "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png"
+    "title": "Sheikh Abdullah Faisal Al Isra Wal Mira'aj",
+    "sub": "Prophets & Seerah",
+    "href": "audio.html?lecture=243"
   },
   {
     "type": "audio",
@@ -4240,7 +4240,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 36,
-    "title": "IS CHRISTIANITY PAGANISM (DEBATE) - Abdallah Al Faisal VS Gospel Minister Bishop Joseph Ade Gold",
+    "title": "IS CHRISTIANITY PAGANISM (DEBATE) VS Gospel Minister Bishop Joseph Ade Gold",
     "sub": "Video lecture",
     "href": "videos.html?video=36",
     "thumb": "thumb/videos/IS CHRISTIANITY PAGANISM (DEBATE) - Abdallah Al Faisal VS Gospel Minister Bishop Joseph Ade Gold.jpg"
@@ -4320,7 +4320,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 46,
-    "title": "LET THE SCHOLARS BEWARE - Abdullah El Faisal.ia",
+    "title": "LET THE SCHOLARS BEWARE",
     "sub": "Video lecture",
     "href": "videos.html?video=46",
     "thumb": "thumb/videos/LET THE SCHOLARS BEWARE - Abdullah El Faisal.ia.jpg"
@@ -4336,753 +4336,745 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 48,
-    "title": "Let the Scholars Beware",
-    "sub": "Video lecture",
-    "href": "videos.html?video=48",
-    "thumb": "thumb/videos/Let the Scholars Beware by Shaikh Faisal.jpg"
-  },
-  {
-    "type": "video",
-    "id": 49,
     "title": "Live Islam",
     "sub": "Video lecture",
-    "href": "videos.html?video=49",
+    "href": "videos.html?video=48",
     "thumb": "thumb/videos/Live Islam - Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
-    "id": 50,
+    "id": 49,
     "title": "MANHOOD",
     "sub": "Video lecture",
-    "href": "videos.html?video=50",
+    "href": "videos.html?video=49",
     "thumb": "thumb/videos/MANHOOD - Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
-    "id": 51,
+    "id": 50,
     "title": "MARITAL DISCORD (NUSHOOZ)",
     "sub": "Video lecture",
-    "href": "videos.html?video=51",
+    "href": "videos.html?video=50",
     "thumb": "thumb/videos/MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 52,
+    "id": 51,
     "title": "MERITS OF THE PROPHET MUHAMMAD (saw)",
     "sub": "Video lecture",
-    "href": "videos.html?video=52",
+    "href": "videos.html?video=51",
     "thumb": "thumb/videos/MERITS OF THE PROPHET MUHAMMAD (saw) - Shaikh Faisal 2009.jpg"
   },
   {
     "type": "video",
-    "id": 53,
+    "id": 52,
     "title": "MUSLIM HOME",
     "sub": "Video lecture",
-    "href": "videos.html?video=53",
+    "href": "videos.html?video=52",
     "thumb": "thumb/videos/MUSLIM HOME - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 54,
+    "id": 53,
     "title": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL)",
     "sub": "Video lecture",
-    "href": "videos.html?video=54",
+    "href": "videos.html?video=53",
     "thumb": "thumb/videos/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 55,
+    "id": 54,
     "title": "Muhammad ibn Abdul Wahhab - The 10 Nullifiers of Islam",
     "sub": "Video lecture",
-    "href": "videos.html?video=55",
+    "href": "videos.html?video=54",
     "thumb": "thumb/videos/Muhammad ibn Abdul Wahhab - The 10 Nullifiers of Islam.jpg"
   },
   {
     "type": "video",
-    "id": 56,
+    "id": 55,
     "title": "NATURAL DISASTERS, WHY DO THEY OCCUR",
     "sub": "Video lecture",
-    "href": "videos.html?video=56",
+    "href": "videos.html?video=55",
     "thumb": "thumb/videos/NATURAL DISASTERS, WHY DO THEY OCCUR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 57,
+    "id": 56,
     "title": "NO PEACE WITH THE JEWS",
     "sub": "Video lecture",
-    "href": "videos.html?video=57",
+    "href": "videos.html?video=56",
     "thumb": "thumb/videos/NO PEACE WITH THE JEWS - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 58,
+    "id": 57,
     "title": "Natural Instincts",
     "sub": "Video lecture",
-    "href": "videos.html?video=58",
+    "href": "videos.html?video=57",
     "thumb": "thumb/videos/Natural Instincts  Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 59,
+    "id": 58,
     "title": "Nushooz [Marital Discord]",
     "sub": "Video lecture",
-    "href": "videos.html?video=59",
+    "href": "videos.html?video=58",
     "thumb": "thumb/videos/Nushooz [Marital Discord] - Shaikh Faisal 1998.jpg"
   },
   {
     "type": "video",
-    "id": 60,
+    "id": 59,
     "title": "PUNISHMENT OF THE GRAVE",
     "sub": "Video lecture",
-    "href": "videos.html?video=60",
+    "href": "videos.html?video=59",
     "thumb": "thumb/videos/PUNISHMENT OF THE GRAVE - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 61,
+    "id": 60,
     "title": "Philosophy of the Islamic Creed",
     "sub": "Video lecture",
-    "href": "videos.html?video=61",
+    "href": "videos.html?video=60",
     "thumb": "thumb/videos/Philosophy of the Islamic Creed by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 62,
+    "id": 61,
     "title": "REALITY OF EMAAN",
     "sub": "Video lecture",
-    "href": "videos.html?video=62",
+    "href": "videos.html?video=61",
     "thumb": "thumb/videos/REALITY OF EMAAN - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 63,
+    "id": 62,
     "title": "Ramadan - Our Blessed Guest",
     "sub": "Video lecture",
-    "href": "videos.html?video=63",
+    "href": "videos.html?video=62",
     "thumb": "thumb/videos/Ramadan - Our Blessed Guest by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 64,
+    "id": 63,
     "title": "Rejecting the Taghut",
     "sub": "Video lecture",
-    "href": "videos.html?video=64",
+    "href": "videos.html?video=63",
     "thumb": "thumb/videos/Rejecting the Taghut by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 65,
+    "id": 64,
     "title": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION)",
     "sub": "Video lecture",
-    "href": "videos.html?video=65",
+    "href": "videos.html?video=64",
     "thumb": "thumb/videos/SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 66,
+    "id": 65,
     "title": "SEVEN CONDITIONS OF SHAHADA",
     "sub": "Video lecture",
-    "href": "videos.html?video=66",
+    "href": "videos.html?video=65",
     "thumb": "thumb/videos/SEVEN CONDITIONS OF SHAHADA - Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
-    "id": 67,
+    "id": 66,
     "title": "SEVENTEEN SIGNS OF THE WICKED SCHOLAR",
     "sub": "Video lecture",
-    "href": "videos.html?video=67",
+    "href": "videos.html?video=66",
     "thumb": "thumb/videos/SEVENTEEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 68,
+    "id": 67,
     "title": "SHIA DEBATE COMING SOON...",
     "sub": "Video lecture",
-    "href": "videos.html?video=68",
+    "href": "videos.html?video=67",
     "thumb": "thumb/videos/SHIA DEBATE COMING SOON....jpg"
   },
   {
     "type": "video",
-    "id": 69,
+    "id": 68,
     "title": "SHIA KNOW YOUR ENEMY",
     "sub": "Video lecture",
-    "href": "videos.html?video=69",
+    "href": "videos.html?video=68",
     "thumb": "thumb/videos/SHIA KNOW YOUR ENEMY - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 70,
+    "id": 69,
     "title": "SIGNS BEFORE JUDGEMENT DAY",
     "sub": "Video lecture",
-    "href": "videos.html?video=70",
+    "href": "videos.html?video=69",
     "thumb": "thumb/videos/SIGNS BEFORE JUDGEMENT DAY - Shaykh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 71,
+    "id": 70,
     "title": "SIX TYPES OF LOVE",
     "sub": "Video lecture",
-    "href": "videos.html?video=71",
+    "href": "videos.html?video=70",
     "thumb": "thumb/videos/SIX TYPES OF LOVE - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 72,
+    "id": 71,
     "title": "STORY OF ABRAHAM",
     "sub": "Video lecture",
-    "href": "videos.html?video=72",
+    "href": "videos.html?video=71",
     "thumb": "thumb/videos/STORY OF ABRAHAM - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 73,
+    "id": 72,
     "title": "Satan s Web",
     "sub": "Video lecture",
-    "href": "videos.html?video=73",
+    "href": "videos.html?video=72",
     "thumb": "thumb/videos/Satan s Web by Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
-    "id": 74,
+    "id": 73,
     "title": "Shariah vs Man Made Laws",
     "sub": "Video lecture",
-    "href": "videos.html?video=74",
+    "href": "videos.html?video=73",
     "thumb": "thumb/videos/Shariah vs Man Made Laws by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 75,
-    "title": "Shaykh Faisal tells a story of two rasta s in Africa - Funny!",
+    "id": 74,
+    "title": "Tells a story of two rasta s in Africa - Funny!",
     "sub": "Video lecture",
-    "href": "videos.html?video=75",
+    "href": "videos.html?video=74",
     "thumb": "thumb/videos/Shaykh Faisal tells a story of two rasta s in Africa - Funny!.jpg"
   },
   {
     "type": "video",
-    "id": 76,
+    "id": 75,
     "title": "Devils Deception of Saudi Salafi 1990s",
     "sub": "Video lecture",
-    "href": "videos.html?video=76",
+    "href": "videos.html?video=75",
     "thumb": "thumb/videos/Sheikh Faisal - Devils Deception of Saudi Salafi 1990s.jpg"
   },
   {
     "type": "video",
-    "id": 77,
+    "id": 76,
     "title": "Shirk in Perspective",
     "sub": "Video lecture",
-    "href": "videos.html?video=77",
+    "href": "videos.html?video=76",
     "thumb": "thumb/videos/Shirk in Perspective by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 78,
+    "id": 77,
     "title": "Signs Of The Wicked Scholar",
     "sub": "Video lecture",
-    "href": "videos.html?video=78",
+    "href": "videos.html?video=77",
     "thumb": "thumb/videos/Signs Of The Wicked Scholar - Shaykh Abdullah Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 79,
+    "id": 78,
     "title": "TAFSEER (001) SURAH FATIHA",
     "sub": "Video lecture",
-    "href": "videos.html?video=79",
+    "href": "videos.html?video=78",
     "thumb": "thumb/videos/TAFSEER (001) SURAH FATIHA - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 80,
+    "id": 79,
     "title": "TAFSEER (067) SURAH AL MULK",
     "sub": "Video lecture",
-    "href": "videos.html?video=80",
+    "href": "videos.html?video=79",
     "thumb": "thumb/videos/TAFSEER (067) SURAH AL MULK - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 81,
+    "id": 80,
     "title": "TAFSEER (102) SURAH AT TAKAATHUR",
     "sub": "Video lecture",
-    "href": "videos.html?video=81",
+    "href": "videos.html?video=80",
     "thumb": "thumb/videos/TAFSEER (102) SURAH AT TAKAATHUR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 82,
+    "id": 81,
     "title": "TAFSEER (103) SURAH AL ASR",
     "sub": "Video lecture",
-    "href": "videos.html?video=82",
+    "href": "videos.html?video=81",
     "thumb": "thumb/videos/TAFSEER (103) SURAH AL ASR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 83,
+    "id": 82,
     "title": "TAFSEER (108) SURAH AL KAWTHAR",
     "sub": "Video lecture",
-    "href": "videos.html?video=83",
+    "href": "videos.html?video=82",
     "thumb": "thumb/videos/TAFSEER (108) SURAH AL KAWTHAR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 84,
+    "id": 83,
     "title": "TAFSEER (110) SURAH AN NASR",
     "sub": "Video lecture",
-    "href": "videos.html?video=84",
+    "href": "videos.html?video=83",
     "thumb": "thumb/videos/TAFSEER (110) SURAH AN NASR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 85,
+    "id": 84,
     "title": "TAFSEER (111) SURAH AL MASAD",
     "sub": "Video lecture",
-    "href": "videos.html?video=85",
+    "href": "videos.html?video=84",
     "thumb": "thumb/videos/TAFSEER (111) SURAH AL MASAD - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 86,
+    "id": 85,
     "title": "TAWBAH",
     "sub": "Video lecture",
-    "href": "videos.html?video=86",
+    "href": "videos.html?video=85",
     "thumb": "thumb/videos/TAWBAH - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 87,
-    "title": "TEN NULLIFIERS OF ISLAM - Abdullah El Faisal",
+    "id": 86,
+    "title": "TEN NULLIFIERS OF ISLAM",
     "sub": "Video lecture",
-    "href": "videos.html?video=87",
+    "href": "videos.html?video=86",
     "thumb": "thumb/videos/TEN NULLIFIERS OF ISLAM - Abdullah El Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 88,
+    "id": 87,
     "title": "THE HUMAN SOUL",
     "sub": "Video lecture",
-    "href": "videos.html?video=88",
+    "href": "videos.html?video=87",
     "thumb": "thumb/videos/THE HUMAN SOUL  Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
-    "id": 89,
+    "id": 88,
     "title": "THE MUSLIM HOME",
     "sub": "Video lecture",
-    "href": "videos.html?video=89",
+    "href": "videos.html?video=88",
     "thumb": "thumb/videos/THE MUSLIM HOME  Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 90,
+    "id": 89,
     "title": "THE SIGNS BEFORE JUDGEMENT DAY",
     "sub": "Video lecture",
-    "href": "videos.html?video=90",
+    "href": "videos.html?video=89",
     "thumb": "thumb/videos/THE SIGNS BEFORE JUDGEMENT DAY  Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 91,
+    "id": 90,
     "title": "THE SIX SACRED POSSESSIONS",
     "sub": "Video lecture",
-    "href": "videos.html?video=91",
+    "href": "videos.html?video=90",
     "thumb": "thumb/videos/THE SIX SACRED POSSESSIONS  Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 92,
+    "id": 91,
     "title": "THEY DO NOT LOVE ALLAH",
     "sub": "Video lecture",
-    "href": "videos.html?video=92",
+    "href": "videos.html?video=91",
     "thumb": "thumb/videos/THEY DO NOT LOVE ALLAH - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 93,
+    "id": 92,
     "title": "THIRTY FIVE SIGNS OF A HYPOCRITE",
     "sub": "Video lecture",
-    "href": "videos.html?video=93",
+    "href": "videos.html?video=92",
     "thumb": "thumb/videos/THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 94,
+    "id": 93,
     "title": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT",
     "sub": "Video lecture",
-    "href": "videos.html?video=94",
+    "href": "videos.html?video=93",
     "thumb": "thumb/videos/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 95,
+    "id": 94,
     "title": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT",
     "sub": "Video lecture",
-    "href": "videos.html?video=95",
+    "href": "videos.html?video=94",
     "thumb": "thumb/videos/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 96,
+    "id": 95,
     "title": "Tafsir Surah Al-Asr — Aug 22nd, 2014",
     "sub": "Video lecture",
-    "href": "videos.html?video=96",
+    "href": "videos.html?video=95",
     "thumb": "thumb/videos/Tafsir Surah Al-Asr - Shaikh Faisal - Aug 22nd, 2014.jpg"
   },
   {
     "type": "video",
-    "id": 97,
+    "id": 96,
     "title": "Tafsir Surah At-Takathur",
     "sub": "Video lecture",
-    "href": "videos.html?video=97",
+    "href": "videos.html?video=96",
     "thumb": "thumb/videos/Tafsir Surah At-Takathur by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 98,
+    "id": 97,
     "title": "Tafsir Surah Fatiha",
     "sub": "Video lecture",
-    "href": "videos.html?video=98",
+    "href": "videos.html?video=97",
     "thumb": "thumb/videos/Tafsir Surah Fatiha by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 99,
+    "id": 98,
     "title": "Tafsir Surah Iklaas — Aug 23rd 2014",
     "sub": "Video lecture",
-    "href": "videos.html?video=99",
+    "href": "videos.html?video=98",
     "thumb": "thumb/videos/Tafsir Surah Iklaas - Shaikh Faisal - Aug 23rd 2014.jpg"
   },
   {
     "type": "video",
-    "id": 100,
+    "id": 99,
     "title": "Tafsir Surah Kawthar",
     "sub": "Video lecture",
-    "href": "videos.html?video=100",
+    "href": "videos.html?video=99",
     "thumb": "thumb/videos/Tafsir Surah Kawthar by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 101,
+    "id": 100,
     "title": "Tafsir Surah Masad",
     "sub": "Video lecture",
-    "href": "videos.html?video=101",
+    "href": "videos.html?video=100",
     "thumb": "thumb/videos/Tafsir Surah Masad by Shaikh Faisal Dec 2014.jpg"
   },
   {
     "type": "video",
-    "id": 102,
+    "id": 101,
     "title": "Tafsir Surah Mulk",
     "sub": "Video lecture",
-    "href": "videos.html?video=102",
+    "href": "videos.html?video=101",
     "thumb": "thumb/videos/Tafsir Surah Mulk by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 103,
+    "id": 102,
     "title": "Tafsir Surah Nasr",
     "sub": "Video lecture",
-    "href": "videos.html?video=103",
+    "href": "videos.html?video=102",
     "thumb": "thumb/videos/Tafsir Surah Nasr by Shaikh Faisal Dec 2014.jpg"
   },
   {
     "type": "video",
-    "id": 104,
+    "id": 103,
     "title": "Tafsir Surah Zalzala",
     "sub": "Video lecture",
-    "href": "videos.html?video=104",
+    "href": "videos.html?video=103",
     "thumb": "thumb/videos/Tafsir Surah Zalzala - Shaikh Faisal Dec 2014.jpg"
   },
   {
     "type": "video",
-    "id": 105,
+    "id": 104,
     "title": "Taharah [Bulugh Al-Maram]",
     "sub": "Video lecture",
-    "href": "videos.html?video=105",
+    "href": "videos.html?video=104",
     "thumb": "thumb/videos/Taharah [Bulugh Al-Maram] by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 106,
+    "id": 105,
     "title": "The 16 Shades of Kufr",
     "sub": "Video lecture",
-    "href": "videos.html?video=106",
+    "href": "videos.html?video=105",
     "thumb": "thumb/videos/The 16 Shades of Kufr by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 107,
+    "id": 106,
     "title": "The 19 Realities of the Truth",
     "sub": "Video lecture",
-    "href": "videos.html?video=107",
+    "href": "videos.html?video=106",
     "thumb": "thumb/videos/The 19 Realities of the Truth by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 108,
+    "id": 107,
     "title": "The 30 Scholastic Questions",
     "sub": "Video lecture",
-    "href": "videos.html?video=108",
+    "href": "videos.html?video=107",
     "thumb": "thumb/videos/The 30 Scholastic Questions by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 109,
+    "id": 108,
     "title": "The 35 Signs of a Hypocrite",
     "sub": "Video lecture",
-    "href": "videos.html?video=109",
+    "href": "videos.html?video=108",
     "thumb": "thumb/videos/The 35 Signs of a Hypocrite by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 110,
+    "id": 109,
     "title": "The Barking Dogs of Jahannam (Refuting the Khawarij)",
     "sub": "Video lecture",
-    "href": "videos.html?video=110",
+    "href": "videos.html?video=109",
     "thumb": "thumb/videos/The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 111,
+    "id": 110,
     "title": "The Best Generation",
     "sub": "Video lecture",
-    "href": "videos.html?video=111",
+    "href": "videos.html?video=110",
     "thumb": "thumb/videos/The Best Generation - Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
-    "id": 112,
+    "id": 111,
     "title": "The Devil s Deception of the Aathir",
     "sub": "Video lecture",
-    "href": "videos.html?video=112",
+    "href": "videos.html?video=111",
     "thumb": "thumb/videos/The Devil s Deception of the Aathir by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 113,
+    "id": 112,
     "title": "The Devils Deception of the Quraniyoon",
     "sub": "Video lecture",
-    "href": "videos.html?video=113",
+    "href": "videos.html?video=112",
     "thumb": "thumb/videos/The Devils Deception of the Quraniyoon by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 114,
+    "id": 113,
     "title": "The Eight Gates of Paradise",
     "sub": "Video lecture",
-    "href": "videos.html?video=114",
+    "href": "videos.html?video=113",
     "thumb": "thumb/videos/The Eight Gates of Paradise - Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 115,
+    "id": 114,
     "title": "The Fiqh of Marriage",
     "sub": "Video lecture",
-    "href": "videos.html?video=115",
+    "href": "videos.html?video=114",
     "thumb": "thumb/videos/The Fiqh of Marriage by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 116,
+    "id": 115,
     "title": "The Five Ahkaam of the Shariah",
     "sub": "Video lecture",
-    "href": "videos.html?video=116",
+    "href": "videos.html?video=115",
     "thumb": "thumb/videos/The Five Ahkaam of the Shariah by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 117,
+    "id": 116,
     "title": "The Five Needs of Mankind",
     "sub": "Video lecture",
-    "href": "videos.html?video=117",
+    "href": "videos.html?video=116",
     "thumb": "thumb/videos/The Five Needs of Mankind by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 118,
+    "id": 117,
     "title": "The Four Branches of Tawheed (aka Authentic Tawheed) 2001",
     "sub": "Video lecture",
-    "href": "videos.html?video=118",
+    "href": "videos.html?video=117",
     "thumb": "thumb/videos/The Four Branches of Tawheed (aka Authentic Tawheed) 2001.jpg"
   },
   {
     "type": "video",
-    "id": 119,
+    "id": 118,
     "title": "The Four Pillars of Qadr",
     "sub": "Video lecture",
-    "href": "videos.html?video=119",
+    "href": "videos.html?video=118",
     "thumb": "thumb/videos/The Four Pillars of Qadr by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 120,
+    "id": 119,
     "title": "The Importance of Marriage",
     "sub": "Video lecture",
-    "href": "videos.html?video=120",
+    "href": "videos.html?video=119",
     "thumb": "thumb/videos/The Importance of Marriage - Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 121,
+    "id": 120,
     "title": "The Laws of Nature",
     "sub": "Video lecture",
-    "href": "videos.html?video=121",
+    "href": "videos.html?video=120",
     "thumb": "thumb/videos/The Laws of Nature by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 122,
+    "id": 121,
     "title": "The Making of an Ummah",
     "sub": "Video lecture",
-    "href": "videos.html?video=122",
+    "href": "videos.html?video=121",
     "thumb": "thumb/videos/The Making of an Ummah by Shaikh Faisal 2008.jpg"
   },
   {
     "type": "video",
-    "id": 123,
+    "id": 122,
     "title": "The Manhaj for Establishing the Shariah",
     "sub": "Video lecture",
-    "href": "videos.html?video=123",
+    "href": "videos.html?video=122",
     "thumb": "thumb/videos/The Manhaj for Establishing the Shariah by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 124,
+    "id": 123,
     "title": "The Philosophy of Islamic Jurisprudence",
     "sub": "Video lecture",
-    "href": "videos.html?video=124",
+    "href": "videos.html?video=123",
     "thumb": "thumb/videos/The Philosophy of Islamic Jurisprudence by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 125,
+    "id": 124,
     "title": "The Predictions of the Quran",
     "sub": "Video lecture",
-    "href": "videos.html?video=125",
+    "href": "videos.html?video=124",
     "thumb": "thumb/videos/The Predictions of the Quran by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 126,
+    "id": 125,
     "title": "The Prophet Muhammad s (saw) Last Sermon",
     "sub": "Video lecture",
-    "href": "videos.html?video=126",
+    "href": "videos.html?video=125",
     "thumb": "thumb/videos/The Prophet Muhammad s (saw) Last Sermon by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 127,
+    "id": 126,
     "title": "The Quran has no flaws",
     "sub": "Video lecture",
-    "href": "videos.html?video=127",
+    "href": "videos.html?video=126",
     "thumb": "thumb/videos/The Quran has no flaws by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 128,
+    "id": 127,
     "title": "The Reality Of Iman (Video)",
     "sub": "Video lecture",
-    "href": "videos.html?video=128",
+    "href": "videos.html?video=127",
     "thumb": "thumb/videos/The Reality Of Iman (Video).jpg"
   },
   {
     "type": "video",
-    "id": 129,
+    "id": 128,
     "title": "The Reality Of The Truth",
     "sub": "Video lecture",
-    "href": "videos.html?video=129",
+    "href": "videos.html?video=128",
     "thumb": "thumb/videos/The Reality Of The Truth.jpg"
   },
   {
     "type": "video",
-    "id": 130,
+    "id": 129,
     "title": "The Rules of Fasting",
     "sub": "Video lecture",
-    "href": "videos.html?video=130",
+    "href": "videos.html?video=129",
     "thumb": "thumb/videos/The Rules of Fasting   Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 131,
+    "id": 130,
     "title": "The Six Types of Love",
     "sub": "Video lecture",
-    "href": "videos.html?video=131",
+    "href": "videos.html?video=130",
     "thumb": "thumb/videos/The Six Types of Love by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 132,
+    "id": 131,
     "title": "The State of the Ummah",
     "sub": "Video lecture",
-    "href": "videos.html?video=132",
+    "href": "videos.html?video=131",
     "thumb": "thumb/videos/The State of the Ummah by Shaikh Faisal (2).jpg"
   },
   {
     "type": "video",
-    "id": 133,
+    "id": 132,
     "title": "The Story of Abraham",
     "sub": "Video lecture",
-    "href": "videos.html?video=133",
+    "href": "videos.html?video=132",
     "thumb": "thumb/videos/The Story of Abraham by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 134,
+    "id": 133,
     "title": "The Three Principles of Muhammad ibn Abdul Wahhab",
     "sub": "Video lecture",
-    "href": "videos.html?video=134",
+    "href": "videos.html?video=133",
     "thumb": "thumb/videos/The Three Principles of Muhammad ibn Abdul Wahhab by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 135,
+    "id": 134,
     "title": "VIRTUES OF TAQWA",
     "sub": "Video lecture",
-    "href": "videos.html?video=135",
+    "href": "videos.html?video=134",
     "thumb": "thumb/videos/VIRTUES OF TAQWA - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 136,
+    "id": 135,
     "title": "Virtues Of Charity (Video)",
     "sub": "Video lecture",
-    "href": "videos.html?video=136",
+    "href": "videos.html?video=135",
     "thumb": "thumb/videos/Virtues Of Charity (Video).jpg"
   },
   {
     "type": "video",
-    "id": 137,
+    "id": 136,
     "title": "Virtues of Ramadan",
     "sub": "Video lecture",
-    "href": "videos.html?video=137",
+    "href": "videos.html?video=136",
     "thumb": "thumb/videos/Virtues of Ramadan by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 138,
+    "id": 137,
     "title": "WICKED SCHOLAR",
     "sub": "Video lecture",
-    "href": "videos.html?video=138",
+    "href": "videos.html?video=137",
     "thumb": "thumb/videos/WICKED SCHOLAR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 139,
+    "id": 138,
     "title": "Why the Quran is a Wise Book",
     "sub": "Video lecture",
-    "href": "videos.html?video=139",
+    "href": "videos.html?video=138",
     "thumb": "thumb/videos/Why the Quran is a Wise Book   Shaikh Faisal.jpg"
   },
   {
     "type": "video",
-    "id": 140,
+    "id": 139,
     "title": "Women in Islam",
     "sub": "Video lecture",
-    "href": "videos.html?video=140",
+    "href": "videos.html?video=139",
     "thumb": "thumb/videos/Women in Islam.jpg"
   },
   {
     "type": "video",
-    "id": 141,
+    "id": 140,
     "title": "The creed of the Shia",
     "sub": "Video lecture",
-    "href": "videos.html?video=141",
+    "href": "videos.html?video=140",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Creed Of the shia _000001.jpg"
   },
   {
@@ -5384,7 +5376,7 @@ const SEARCH_INDEX = [
   {
     "type": "clip",
     "id": 37,
-    "title": "Shaykh Faisal (humorous clip)",
+    "title": "Humorous clip",
     "sub": "Short clip",
     "href": "clips.html?clip=37",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Shaykh faisal funny_000001.jpg"

@@ -300,7 +300,7 @@ const CLIPS = [
   },
   {
     "id": 37,
-    "title": "Shaykh Faisal (humorous clip)",
+    "title": "Humorous clip",
     "file": "Shaykh faisal funny.mp4",
     "archive": "Shaykh faisal funny.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Shaykh faisal funny_000001.jpg",

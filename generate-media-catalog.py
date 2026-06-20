@@ -76,23 +76,43 @@ _SPEAKER_NAME = (
 )
 
 
+_SPEAKER_PLAIN = r"(?:abdullah|abdallah|abdillah)\s+(?:el|al)\s+faisal"
+
+
 def strip_speaker_from_title(title: str) -> str:
     """Drop redundant Shaykh/Sheikh Abdullah Faisal labels from display titles."""
     if not title:
         return title
     text = title.strip()
     speaker = _SPEAKER_NAME
-    if not re.match(rf"^{speaker}\s+(?:tells?|said|explains|answers)\b", text, flags=re.I):
-        text = re.sub(rf"^{speaker}\s*[-–—:|]+\s*", "", text, flags=re.I)
-        text = re.sub(rf"^{speaker}\s+(?=[A-Z0-9\"'])", "", text, flags=re.I)
+    plain = _SPEAKER_PLAIN
+
+    text = re.sub(rf"^{speaker}\s*[-–—:|]+\s*", "", text, flags=re.I)
+    text = re.sub(
+        rf"^{speaker}\s+(tells?|said|explains|answers)\b",
+        lambda match: match.group(1).capitalize(),
+        text,
+        flags=re.I,
+    )
+    text = re.sub(rf"^{speaker}\s+(?=[A-Z0-9\"'(])", "", text)
+
+    paren = re.match(rf"^{speaker}\s*\(([^)]+)\)\s*$", text, flags=re.I)
+    if paren:
+        inner = paren.group(1).strip()
+        return inner[:1].upper() + inner[1:] if inner else text
+
     text = re.sub(rf"\s*[-–—]\s*{speaker}\s*[-–—]\s*", " — ", text, flags=re.I)
     text = re.sub(rf"\s+with\s+{speaker}\s+", " — ", text, flags=re.I)
     text = re.sub(rf"\s+by\s+{speaker}\b.*$", "", text, flags=re.I)
     text = re.sub(rf"[-–—]\s*{speaker}\b.*$", "", text, flags=re.I)
     text = re.sub(rf"\s*[-–—]\s*{speaker}\b(?:\s+\w+)*\s*$", "", text, flags=re.I)
     text = re.sub(rf"\s+{speaker}(?:\s+\d{{4}})?\s*$", "", text, flags=re.I)
+    text = re.sub(rf"\s*[-–—]\s*{speaker}\s+answers?\s*$", "", text, flags=re.I)
+    text = re.sub(rf"\s*[-–—]\s*{plain}(?:\.ia)?\s*$", "", text, flags=re.I)
+    text = re.sub(rf"\s*[-–—]\s*{plain}\s+vs\s+", " VS ", text, flags=re.I)
     text = re.sub(r"\s+translated\s+by\s+(?:abdullah|abdallah|abdillah)\s+al\s+faisal\s*$", "", text, flags=re.I)
     text = re.sub(r"\s*[-–—]\s*(?:by\s+)?(?:abdullah|abdallah|abdillah)\s+al\s+faisal(?:\s*[-–—]\s*[^-–—]+)?\s*$", "", text, flags=re.I)
+    text = re.sub(r"\.ia\b", "", text, flags=re.I)
     text = re.sub(r"\s+", " ", text).strip()
     text = re.sub(r"\s*[-–—]\s*$", "", text).strip()
     text = re.sub(r"^\s*[-–—]\s*", "", text).strip()
@@ -244,7 +264,7 @@ _CLIP_TITLES_RAW = [
         "Shamsis_teacher_Abu_Khadeeja_exposed_as_a_homosexual_pedophile_i0zSl3gpFog",
         "Shamsi's teacher Abu Khadeeja exposed",
     ),
-    ("Shaykh faisal funny", "Shaykh Faisal (humorous clip)"),
+    ("Shaykh faisal funny", "Humorous clip"),
     ("The 'Headless Chicken' Mentality of Modern Ex", "The headless chicken mentality of modern extremists"),
     ("The Battle Between Truth & Falsehood Never Ends", "The battle between truth and falsehood never ends"),
     ("The Evil Scholar is a lizard - Shaykh Abdullah Faisal", "The evil scholar is a lizard — Shaykh Abdullah Faisal"),

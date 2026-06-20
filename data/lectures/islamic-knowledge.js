@@ -8,7 +8,7 @@ registerLectureChunk("Islamic_Knowledge", [
     "subcategoryLabel": null,
     "archive": "IJTIHAAD MASLAHA - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 91
+    "id": 90
   },
   {
     "title": "ROLE OF THE MASJID",
@@ -18,6 +18,6 @@ registerLectureChunk("Islamic_Knowledge", [
     "subcategoryLabel": null,
     "archive": "ROLE OF THE MASJID - Shaykh Faisal.mp3",
     "thumb": null,
-    "id": 209
+    "id": 208
   }
 ]);

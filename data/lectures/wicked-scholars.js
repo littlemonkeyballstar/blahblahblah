@@ -8,7 +8,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.mp3",
     "thumb": "thumb/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.jpg",
-    "id": 37
+    "id": 36
   },
   {
     "title": "DEFINITION OF A SCHOLAR",
@@ -18,7 +18,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "DEFINITION OF A SCHOLAR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 47
+    "id": 46
   },
   {
     "title": "EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN",
@@ -28,7 +28,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.mp3",
     "thumb": "thumb/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.jpg",
-    "id": 69
+    "id": 68
   },
   {
     "title": "LET THE SCHOLARS BEWARE",
@@ -38,7 +38,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "LET THE SCHOLARS BEWARE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 131
+    "id": 130
   },
   {
     "title": "SEVENTEEN SIGNS OF THE WICKED SCHOLAR",
@@ -48,7 +48,7 @@ registerLectureChunk("Wicked_Scholars", [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/SEVENTEEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal.mp3",
     "thumb": null,
-    "id": 242
+    "id": 241
   },
   {
     "title": "WICKED SCHOLAR",

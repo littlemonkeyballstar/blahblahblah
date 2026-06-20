@@ -8,7 +8,7 @@ registerLectureChunk("Iman_Afterlife", [
     "subcategoryLabel": null,
     "archive": "REALITY OF EMAAN - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 195
+    "id": 194
   },
   {
     "title": "THEY DO NOT LOVE ALLAH",

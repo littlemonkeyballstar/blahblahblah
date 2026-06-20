@@ -98,7 +98,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Allah Blesses Whom He Wills (06.28.11).mp3",
     "thumb": null,
-    "id": 21
+    "id": 20
   },
   {
     "title": "Allah is Sufficient to Take Revenge Against Them (08.24.11)",
@@ -108,7 +108,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Allah is Sufficient to Take Revenge Against Them (08.24.11).mp3",
     "thumb": null,
-    "id": 23
+    "id": 22
   },
   {
     "title": "Allah's Sunnah Will Never Change (11.15.11 to 11.16.11)",
@@ -118,7 +118,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Allah's Sunnah Will Never Change (11.15.11 to 11.16.11).mp3",
     "thumb": "thumb/extracted/e15c7f8eb0f20c.jpg",
-    "id": 25
+    "id": 24
   },
   {
     "title": "Be And It Is (07.12.11)",
@@ -128,7 +128,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Be And It Is (07.12.11).mp3",
     "thumb": null,
-    "id": 34
+    "id": 33
   },
   {
     "title": "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11)",
@@ -138,7 +138,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11).mp3",
     "thumb": null,
-    "id": 35
+    "id": 34
   },
   {
     "title": "Don't Envy the Kuffaar for their Jahiliyya (07.26.11)",
@@ -148,7 +148,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Don't Envy the Kuffaar for their Jahiliyya (07.26.11).mp3",
     "thumb": null,
-    "id": 64
+    "id": 63
   },
   {
     "title": "Dua - The weapon of a believer",
@@ -158,7 +158,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Dua - The weapon of a believer.mp3",
     "thumb": null,
-    "id": 66
+    "id": 65
   },
   {
     "title": "Exposing Those Who Insult Allah (07.10.11)",
@@ -168,7 +168,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Exposing Those Who Insult Allah (07.10.11).mp3",
     "thumb": null,
-    "id": 71
+    "id": 70
   },
   {
     "title": "Islam was Revealed in Stages (08.28.11)",
@@ -178,7 +178,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Islam was Revealed in Stages (08.28.11).mp3",
     "thumb": null,
-    "id": 103
+    "id": 102
   },
   {
     "title": "Jahiliyya Gives Everyone a Raw Deal (07.24.11)",
@@ -188,7 +188,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Jahiliyya Gives Everyone a Raw Deal (07.24.11).mp3",
     "thumb": null,
-    "id": 105
+    "id": 104
   },
   {
     "title": "KNOWLEDGE",
@@ -198,7 +198,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "KNOWLEDGE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 125
+    "id": 124
   },
   {
     "title": "Kufaar and the Fear Factor (07.03.11)",
@@ -208,7 +208,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Kufaar and the Fear Factor (07.03.11).mp3",
     "thumb": null,
-    "id": 126
+    "id": 125
   },
   {
     "title": "Love and Hate for Allah's Sake",
@@ -218,7 +218,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Love and Hate for Allah's Sake.mp3",
     "thumb": null,
-    "id": 137
+    "id": 136
   },
   {
     "title": "Might Without Wisdom is a Recipe for Disaster (07.27.11)",
@@ -228,7 +228,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Might Without Wisdom is a Recipe for Disaster (07.27.11).mp3",
     "thumb": null,
-    "id": 149
+    "id": 148
   },
   {
     "title": "Our 6 Sacred Possessions",
@@ -238,7 +238,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Our 6 Sacred Possessions.mp3",
     "thumb": null,
-    "id": 170
+    "id": 169
   },
   {
     "title": "Paradise is Exclusive to the Muslims (07.04.11)",
@@ -248,7 +248,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Paradise is Exclusive to the Muslims (07.04.11).mp3",
     "thumb": null,
-    "id": 171
+    "id": 170
   },
   {
     "title": "Power of Intercession (07.18.11)",
@@ -258,7 +258,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Power of Intercession (07.18.11).mp3",
     "thumb": null,
-    "id": 179
+    "id": 178
   },
   {
     "title": "Reality of FGM (08.25.11)",
@@ -268,7 +268,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Reality of FGM (08.25.11).mp3",
     "thumb": null,
-    "id": 196
+    "id": 195
   },
   {
     "title": "Reality of Poverty (02.27.12)",
@@ -278,7 +278,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Reality of Poverty (02.27.12).mp3",
     "thumb": "thumb/extracted/290cda89069668.jpg",
-    "id": 198
+    "id": 197
   },
   {
     "title": "Resist To Exist (07.07.11)",
@@ -288,7 +288,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Resist To Exist (07.07.11).mp3",
     "thumb": null,
-    "id": 207
+    "id": 206
   },
   {
     "title": "Satan's Web (dars)",
@@ -298,7 +298,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Satan's Web (dars).mp3",
     "thumb": null,
-    "id": 221
+    "id": 220
   },
   {
     "title": "Satans Web (12.17.11)",
@@ -308,7 +308,7 @@ registerLectureChunk("General", [
     "subcategoryLabel": null,
     "archive": "Satans Web (12.17.11).mp3",
     "thumb": "thumb/extracted/63ebe64c1fee50.jpg",
-    "id": 222
+    "id": 221
   },
   {
     "title": "Tawassul",
