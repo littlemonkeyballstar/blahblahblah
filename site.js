@@ -1097,16 +1097,19 @@ function mountMobileStyles() {
       white-space: nowrap;
     }
     .media-card__title-wrap:not(.is-overflow) .media-card__title-marquee,
-    .media-card__title-wrap.is-overflow:not(.is-scrolling) .media-card__title-marquee {
+    .media-card__title-wrap.is-overflow:not(.is-scrolling) .media-card__title-marquee,
+    .media-card--title-hover .media-card__title-wrap.is-overflow .media-card__title-marquee {
       display: block;
       overflow: hidden;
       text-overflow: ellipsis;
       max-width: 100%;
     }
-    .media-card__title-wrap.is-overflow:not(.is-scrolling) .media-card__title-text--dup {
+    .media-card__title-wrap.is-overflow:not(.is-scrolling) .media-card__title-text--dup,
+    .media-card--title-hover .media-card__title-wrap.is-overflow .media-card__title-text--dup {
       display: none;
     }
-    .media-card__title-wrap.is-overflow.is-scrolling .media-card__title-marquee {
+    .media-card__title-wrap.is-overflow.is-scrolling .media-card__title-marquee,
+    .media-card--title-hover.is-title-active .media-card__title-wrap.is-overflow .media-card__title-marquee {
       display: inline-flex;
       align-items: center;
       gap: 2rem;
@@ -1114,13 +1117,35 @@ function mountMobileStyles() {
       will-change: transform;
       animation: media-title-ticker var(--ticker-duration, 18s) linear infinite;
     }
+    .media-card--title-hover.is-title-active .media-card__title-wrap.is-overflow .media-card__title-text--dup {
+      display: inline;
+    }
+    @media (hover: hover) and (pointer: fine) {
+      .media-card--title-hover:hover .media-card__title-wrap.is-overflow .media-card__title-marquee {
+        display: inline-flex;
+        align-items: center;
+        gap: 2rem;
+        width: max-content;
+        will-change: transform;
+        animation: media-title-ticker var(--ticker-duration, 18s) linear infinite;
+      }
+      .media-card--title-hover:hover .media-card__title-wrap.is-overflow .media-card__title-text--dup {
+        display: inline;
+      }
+    }
     @keyframes media-title-ticker {
       from { transform: translateX(0); }
       to { transform: translateX(var(--ticker-distance, -50%)); }
     }
     @media (prefers-reduced-motion: reduce) {
-      .media-card__title-wrap.is-overflow.is-scrolling .media-card__title-marquee {
+      .media-card__title-wrap.is-overflow.is-scrolling .media-card__title-marquee,
+      .media-card--title-hover.is-title-active .media-card__title-wrap.is-overflow .media-card__title-marquee {
         animation: none;
+      }
+      @media (hover: hover) and (pointer: fine) {
+        .media-card--title-hover:hover .media-card__title-wrap.is-overflow .media-card__title-marquee {
+          animation: none;
+        }
       }
     }
     .media-card__actions {
@@ -1356,19 +1381,18 @@ function downloadIconLink(url, { label = 'Download', className = '' } = {}) {
   </a>`;
 }
 
-function isCoarsePointerDevice() {
-  return window.matchMedia('(hover: none), (pointer: coarse)').matches;
-}
-
 function bindMediaCardTitles(root = document, { onDemand = true } = {}) {
   const gap = 32;
   const speed = 28;
 
   root.querySelectorAll('.media-card__title-wrap:not([data-title-bound])').forEach((wrap) => {
     wrap.dataset.titleBound = '1';
+    const card = wrap.closest('.media-card');
     const viewport = wrap.querySelector('.media-card__title-viewport');
     const text = wrap.querySelector('.media-card__title-text');
     if (!viewport || !text) return;
+
+    if (onDemand && card) card.classList.add('media-card--title-hover');
 
     const markOverflow = () => {
       if (text.scrollWidth <= viewport.clientWidth + 1) return;
@@ -1383,27 +1407,16 @@ function bindMediaCardTitles(root = document, { onDemand = true } = {}) {
 
     requestAnimationFrame(markOverflow);
 
-    if (!onDemand) return;
+    if (!onDemand || !card) return;
 
-    wrap.addEventListener('mouseenter', () => {
-      if (wrap.classList.contains('is-overflow') && !isCoarsePointerDevice()) {
-        wrap.classList.add('is-scrolling');
-      }
-    });
-    wrap.addEventListener('mouseleave', () => {
-      if (!isCoarsePointerDevice()) wrap.classList.remove('is-scrolling');
-    });
+    const startTouchScroll = () => {
+      if (wrap.classList.contains('is-overflow')) card.classList.add('is-title-active');
+    };
+    const stopTouchScroll = () => card.classList.remove('is-title-active');
 
-    if ('IntersectionObserver' in window) {
-      const observeTarget = wrap.closest('.media-card') || wrap;
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-          if (!wrap.classList.contains('is-overflow') || !isCoarsePointerDevice()) return;
-          wrap.classList.toggle('is-scrolling', entry.isIntersecting);
-        });
-      }, { threshold: 0.55 });
-      observer.observe(observeTarget);
-    }
+    card.addEventListener('touchstart', startTouchScroll, { passive: true });
+    card.addEventListener('touchend', stopTouchScroll);
+    card.addEventListener('touchcancel', stopTouchScroll);
   });
 }
 
