@@ -207,7 +207,7 @@ def polish_video_title(title: str, *, stem: str = "") -> str:
 
 
 _VIDEO_TITLE_OVERRIDES_RAW = [
-    ("Al-Wala wal-Bara by shaykh Abdullah Faisal", "What is Al-Wala wal-Bara Explained"),
+    ("Al-Wala wal-Bara by shaykh Abdullah Faisal", "What is Al-Wala wal-Bara — Explanation of core Islamic fundamentals"),
     ("06.35 signs of a Munafiq by Sheikh Abdullah Faisal", "The 35 signs of a munafiq"),
     ("AUTHENTIC TAWHEED - Abdallah Al Faisal", "Authentic Tawheed"),
     ("Application of Revelation   The 11 Shariah Hujjah by Shaikh Faisal", "Application of Revelation — The 11 Shariah Hujjah"),

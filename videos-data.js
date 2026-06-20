@@ -92,7 +92,7 @@ const VIDEOS = [
   },
   {
     "id": 11,
-    "title": "What is Al-Wala wal-Bara Explained",
+    "title": "What is Al-Wala wal-Bara — Explanation of core Islamic fundamentals",
     "file": "Al-Wala wal-Bara by shaykh Abdullah Faisal.mp4",
     "archive": "Al-Wala wal-Bara by shaykh Abdullah Faisal.mp4",
     "thumb": "thumb/videos/Al-Wala wal-Bara by shaykh Abdullah Faisal.jpg",

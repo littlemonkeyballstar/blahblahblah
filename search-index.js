@@ -4040,7 +4040,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 11,
-    "title": "What is Al-Wala wal-Bara Explained",
+    "title": "What is Al-Wala wal-Bara — Explanation of core Islamic fundamentals",
     "sub": "Video lecture",
     "href": "videos.html?video=11",
     "thumb": "thumb/videos/Al-Wala wal-Bara by shaykh Abdullah Faisal.jpg"
