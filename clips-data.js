@@ -644,7 +644,7 @@ const CLIPS = [
   },
   {
     "id": 80,
-    "title": "Signs of the khawarij",
+    "title": "The lie about mujahideen being khawarij",
     "file": "sign of a khawarij.mp4",
     "archive": "sign of a khawarij.mp4",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/sign of a khawarij_000001.jpg",

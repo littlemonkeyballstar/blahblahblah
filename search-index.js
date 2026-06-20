@@ -5736,7 +5736,7 @@ const SEARCH_INDEX = [
   {
     "type": "clip",
     "id": 80,
-    "title": "Signs of the khawarij",
+    "title": "The lie about mujahideen being khawarij",
     "sub": "Short clip",
     "href": "clips.html?clip=80",
     "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/sign of a khawarij_000001.jpg"

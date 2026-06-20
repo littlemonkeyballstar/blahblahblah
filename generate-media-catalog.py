@@ -498,7 +498,7 @@ _CLIP_TITLES_RAW = [
     ("reality of truth 12", "The reality of truth (part 12)"),
     ("reject taghut", "Reject the taghut"),
     ("sdadwf", "Refuting those who put false conditions on jihad"),
-    ("sign of a khawarij", "Signs of the khawarij"),
+    ("sign of a khawarij", "The lie about mujahideen being khawarij"),
     ("signs of a hypocrite clip", "Signs of a hypocrite"),
     ("solution is living at dar al islam", "The solution is living in dar al-Islam"),
     ("tahakum", "Tahakum — ruling by other than what Allah revealed"),
