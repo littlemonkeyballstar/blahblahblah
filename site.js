@@ -1076,13 +1076,17 @@ function mountMobileStyles() {
     }
     .media-card__head {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 0.5rem;
+      min-height: 2.5rem;
       margin-bottom: 0.5rem;
     }
     .media-card__title-wrap {
       flex: 1 1 auto;
       min-width: 0;
+      min-height: 2.5rem;
+      display: flex;
+      align-items: center;
     }
     .media-card__title {
       margin: 0;
