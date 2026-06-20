@@ -766,7 +766,7 @@
 
       const downloadOverlay = downloadGlassLink(audioUrl, { label: 'Download audio' });
       const shareUrl = lecture.archive
-        ? `audio.html?archive=${encodeURIComponent(lecture.archive)}`
+        ? pageItemShareUrl('audio.html', 'lecture', lecture.id, { archive: lecture.archive })
         : pageItemShareUrl('audio.html', 'lecture', lecture.id);
       const shareOverlay = shareGlassButton(shareUrl, {
         label: 'Copy link to this lecture',

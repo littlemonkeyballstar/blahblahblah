@@ -1486,8 +1486,26 @@ async function resolveAudioLectureFromParams(params = new URLSearchParams(locati
   return getLoadedLectures().find((lec) => lec.id === id) || null;
 }
 
+function siteBaseUrl() {
+  return SITE_URL.endsWith('/') ? SITE_URL : `${SITE_URL}/`;
+}
+
+/** Always build share links on the public site URL, not a relative path. */
+function absoluteShareUrl(url) {
+  if (!url) return '';
+  try {
+    const parsed = new URL(url, siteBaseUrl());
+    const canonical = new URL(siteBaseUrl());
+    parsed.protocol = canonical.protocol;
+    parsed.host = canonical.host;
+    return parsed.href;
+  } catch {
+    return url;
+  }
+}
+
 function pageItemShareUrl(page, param, id, options = {}) {
-  const url = new URL(page, location.href);
+  const url = new URL(page, siteBaseUrl());
   url.search = '';
   if (options.archive) url.searchParams.set('archive', options.archive);
   else url.searchParams.set(param, String(id));
@@ -1517,6 +1535,60 @@ async function copyTextToClipboard(text) {
   }
 }
 
+function ensureCopyToastStyles() {
+  if (document.getElementById('site-copy-toast-styles')) return;
+  const style = document.createElement('style');
+  style.id = 'site-copy-toast-styles';
+  style.textContent = `
+    .site-copy-toast {
+      position: fixed;
+      left: 50%;
+      bottom: 1.5rem;
+      z-index: 300;
+      transform: translate(-50%, 1rem);
+      opacity: 0;
+      pointer-events: none;
+      padding: 0.65rem 1.1rem;
+      border-radius: 9999px;
+      background: rgba(8, 13, 24, 0.94);
+      border: 1px solid rgba(212, 168, 83, 0.35);
+      color: #e8c97a;
+      font-size: 0.875rem;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+      transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+    .site-copy-toast--visible {
+      opacity: 1;
+      transform: translate(-50%, 0);
+    }
+    .site-copy-toast--error {
+      color: #fca5a5;
+      border-color: rgba(248, 113, 113, 0.35);
+    }
+  `;
+  document.head.appendChild(style);
+}
+
+function showCopyToast(message, ok = true) {
+  ensureCopyToastStyles();
+  let toast = document.getElementById('site-copy-toast');
+  if (!toast) {
+    toast = document.createElement('div');
+    toast.id = 'site-copy-toast';
+    toast.setAttribute('role', 'status');
+    toast.setAttribute('aria-live', 'polite');
+    document.body.appendChild(toast);
+  }
+  toast.textContent = message;
+  toast.className = `site-copy-toast site-copy-toast--visible${ok ? '' : ' site-copy-toast--error'}`;
+  clearTimeout(showCopyToast._timer);
+  showCopyToast._timer = window.setTimeout(() => {
+    toast.classList.remove('site-copy-toast--visible');
+  }, 2200);
+}
+
 function showShareFeedback(btn, ok) {
   const icon = btn.querySelector('i');
   if (!icon) return;
@@ -1535,9 +1607,11 @@ function bindShareButtons(root = document) {
     btn.addEventListener('click', async (e) => {
       e.preventDefault();
       e.stopPropagation();
-      const url = btn.dataset.shareUrl;
+      const url = absoluteShareUrl(btn.dataset.shareUrl);
       if (!url) return;
-      showShareFeedback(btn, await copyTextToClipboard(url));
+      const ok = await copyTextToClipboard(url);
+      showShareFeedback(btn, ok);
+      showCopyToast(ok ? 'Link copied' : 'Could not copy link', ok);
     });
   });
 }
