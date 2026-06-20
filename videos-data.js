@@ -28,7 +28,7 @@ const VIDEOS = [
   },
   {
     "id": 3,
-    "title": "35 Signs of a Munafiq",
+    "title": "The 35 signs of a munafiq",
     "file": "06.35 signs of a Munafiq by Sheikh Abdullah Faisal.mp4",
     "archive": "06.35 signs of a Munafiq by Sheikh Abdullah Faisal.mp4",
     "thumb": "thumb/videos/06.35 signs of a Munafiq by Sheikh Abdullah Faisal.jpg",

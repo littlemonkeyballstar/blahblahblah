@@ -3976,7 +3976,7 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 3,
-    "title": "35 Signs of a Munafiq",
+    "title": "The 35 signs of a munafiq",
     "sub": "Video lecture",
     "href": "videos.html?video=3",
     "thumb": "thumb/videos/06.35 signs of a Munafiq by Sheikh Abdullah Faisal.jpg"
