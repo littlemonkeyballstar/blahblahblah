@@ -31,16 +31,6 @@ registerLectureChunk("General", [
     "id": 6
   },
   {
-    "title": "47 signs of the wicked scholer",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3",
-    "thumb": null,
-    "id": 8
-  },
-  {
     "title": "6 Gifts from Allah to Muhammad (SAW) (06.29.11)",
     "category": "General",
     "categoryLabel": "General Lectures",

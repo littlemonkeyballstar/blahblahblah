@@ -62,8 +62,8 @@ const SEARCH_INDEX = [
   {
     "type": "audio",
     "id": 8,
-    "title": "47 signs of the wicked scholer",
-    "sub": "General Lectures",
+    "title": "47 Signs of the Wicked Scholar",
+    "sub": "Wicked Scholars",
     "href": "audio.html?lecture=8"
   },
   {

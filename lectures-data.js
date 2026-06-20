@@ -110,7 +110,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "General",
     "label": "General Lectures",
-    "count": 71,
+    "count": 70,
     "subcategories": []
   },
   {
@@ -194,7 +194,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "Wicked_Scholars",
     "label": "Wicked Scholars",
-    "count": 7,
+    "count": 8,
     "subcategories": []
   },
   {
@@ -355,9 +355,9 @@ const LECTURES = [
     "id": 7
   },
   {
-    "title": "47 signs of the wicked scholer",
-    "category": "General",
-    "categoryLabel": "General Lectures",
+    "title": "47 Signs of the Wicked Scholar",
+    "category": "Wicked_Scholars",
+    "categoryLabel": "Wicked Scholars",
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3",
