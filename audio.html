@@ -608,20 +608,27 @@
     function openCategoryPicker() {
       const picker = document.getElementById('categoryPicker');
       if (!picker) return;
+      if (document.activeElement instanceof HTMLElement) {
+        document.activeElement.blur();
+      }
       picker.classList.remove('hidden');
       picker.setAttribute('aria-hidden', 'false');
       document.body.classList.add('category-picker-open');
       const search = document.getElementById('categoryPickerSearch');
       if (search) {
         search.value = '';
+        search.blur();
         renderCategoryPickerList();
-        requestAnimationFrame(() => search.focus());
       }
     }
 
     function closeCategoryPicker() {
       const picker = document.getElementById('categoryPicker');
       if (!picker) return;
+      document.getElementById('categoryPickerSearch')?.blur();
+      if (document.activeElement instanceof HTMLElement) {
+        document.activeElement.blur();
+      }
       picker.classList.add('hidden');
       picker.setAttribute('aria-hidden', 'true');
       document.body.classList.remove('category-picker-open');
@@ -938,7 +945,10 @@
       renderLectures();
     });
 
-    document.getElementById('openCategoryPicker')?.addEventListener('click', openCategoryPicker);
+    document.getElementById('openCategoryPicker')?.addEventListener('click', (e) => {
+      e.currentTarget.blur();
+      openCategoryPicker();
+    });
     document.getElementById('closeCategoryPicker')?.addEventListener('click', closeCategoryPicker);
     document.getElementById('categoryPickerBackdrop')?.addEventListener('click', closeCategoryPicker);
     document.getElementById('categoryPickerSearch')?.addEventListener('input', renderCategoryPickerList);
