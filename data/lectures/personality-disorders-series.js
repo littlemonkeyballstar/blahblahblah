@@ -10,7 +10,7 @@ registerLectureChunk("Personality Disorders (Series)", [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 1,
     "series": "Personality Disorders",
-    "id": 501
+    "id": 497
   },
   {
     "title": "Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12)",
@@ -22,7 +22,7 @@ registerLectureChunk("Personality Disorders (Series)", [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 2,
     "series": "Personality Disorders",
-    "id": 502
+    "id": 498
   },
   {
     "title": "Personality Disorders [Part 3] Narcissistic (05.06.12)",
@@ -34,7 +34,7 @@ registerLectureChunk("Personality Disorders (Series)", [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 3,
     "series": "Personality Disorders",
-    "id": 503
+    "id": 499
   },
   {
     "title": "Personality Disorders [Part 4] PTSD (05.07.12)",
@@ -46,7 +46,7 @@ registerLectureChunk("Personality Disorders (Series)", [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 4,
     "series": "Personality Disorders",
-    "id": 504
+    "id": 500
   },
   {
     "title": "Personality Disorders [Part 5] Anti-Social (05.08.12)",
@@ -58,6 +58,6 @@ registerLectureChunk("Personality Disorders (Series)", [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 5,
     "series": "Personality Disorders",
-    "id": 505
+    "id": 501
   }
 ]);

@@ -2014,22 +2014,6 @@ const SEARCH_INDEX = [
   {
     "type": "audio",
     "id": 235,
-    "title": "IJTIHAAD MASLAHA",
-    "sub": "Islamic Knowledge",
-    "archive": "IJTIHAAD MASLAHA - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=IJTIHAAD%20MASLAHA%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 236,
-    "title": "ROLE OF THE MASJID",
-    "sub": "Islamic Knowledge",
-    "archive": "ROLE OF THE MASJID - Shaykh Faisal.mp3",
-    "href": "audio.html?archive=ROLE%20OF%20THE%20MASJID%20-%20Shaykh%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 237,
     "title": "Dreams -Their Significance And Meanings – Part 1",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Dreams  -Their Significance And Meanings – Part 1.mp3",
@@ -2037,7 +2021,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 238,
+    "id": 236,
     "title": "Challenges Facing the Muslim Ummah - Part 2",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Challenges Facing the Muslim Ummah - Part 2.mp3",
@@ -2045,7 +2029,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 239,
+    "id": 237,
     "title": "AT Conference — Every Ummah Needs A State",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Conference/AT Conference - Shaikh Abdullah Faisal - Every Ummah Needs A State.mp3",
@@ -2053,7 +2037,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 240,
+    "id": 238,
     "title": "AT Conference — Ideological Warfare",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Conference/AT Conference - Shaikh Abdullah Faisal - Ideological Warfare.mp3",
@@ -2061,7 +2045,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 241,
+    "id": 239,
     "title": "AT Conference — The Barking Dogs Of Jahannum",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Conference/AT Conference - Shaikh Abdillah Faisal - The Barking Dogs Of Jahannum.mp3",
@@ -2069,7 +2053,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 242,
+    "id": 240,
     "title": "Black Magic (06.29.11)",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Black Magic (06.29.11).mp3",
@@ -2077,7 +2061,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 243,
+    "id": 241,
     "title": "CANCERS IN THE BODY OF THE UMMAH",
     "sub": "Ummah & Contemporary Issues",
     "archive": "CANCERS IN THE BODY OF THE UMMAH - Abdallah Al Faisal.mp3",
@@ -2085,7 +2069,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 244,
+    "id": 242,
     "title": "Challenges Facing the Ummah",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Challenges Facing the Ummah.mp3",
@@ -2093,7 +2077,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 245,
+    "id": 243,
     "title": "Changing the Goalpost",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Changing the Goalpost.mp3",
@@ -2101,7 +2085,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 246,
+    "id": 244,
     "title": "Human Rights",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Sheikh Abdullah Faisal - Human Rights.mp3",
@@ -2109,7 +2093,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 247,
+    "id": 245,
     "title": "Human Soul (10.06.11)",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Human Soul (10.06.11).mp3",
@@ -2118,7 +2102,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 248,
+    "id": 246,
     "title": "Ideological Warfare",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Sheikh Abdullah Faisal - Ideological Warfare.mp3",
@@ -2126,7 +2110,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 249,
+    "id": 247,
     "title": "ISLAM AND THE WEST",
     "sub": "Ummah & Contemporary Issues",
     "archive": "ISLAM AND THE WEST - Abdallah Al Faisal.mp3",
@@ -2134,7 +2118,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 250,
+    "id": 248,
     "title": "ISLAM THE MOST HYGIENIC RELIGION",
     "sub": "Ummah & Contemporary Issues",
     "archive": "ISLAM THE MOST HYGIENIC RELIGION - Abdallah Al Faisal.mp3",
@@ -2142,7 +2126,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 251,
+    "id": 249,
     "title": "ISLAM UNDER SIEGE",
     "sub": "Ummah & Contemporary Issues",
     "archive": "ISLAM UNDER SIEGE - Shaykh Faisal.mp3",
@@ -2151,7 +2135,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 252,
+    "id": 250,
     "title": "JUDGEMENT DAY",
     "sub": "Ummah & Contemporary Issues",
     "archive": "JUDGEMENT DAY - Abdallah Al Faisal.mp3",
@@ -2159,7 +2143,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 253,
+    "id": 251,
     "title": "Judgment Day (07.27.11)",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Judgment Day (07.27.11).mp3",
@@ -2167,7 +2151,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 254,
+    "id": 252,
     "title": "LEADERSHIP IN ISLAM",
     "sub": "Ummah & Contemporary Issues",
     "archive": "LEADERSHIP IN ISLAM.mp3",
@@ -2175,7 +2159,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 255,
+    "id": 253,
     "title": "Mad Dogs of the Middle East [REVISITED] (10.20.11)",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Mad Dogs of the Middle East [REVISITED] (10.20.11).mp3",
@@ -2183,7 +2167,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 256,
+    "id": 254,
     "title": "Magic (06.24.11)",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Magic (06.24.11).mp3",
@@ -2191,7 +2175,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 257,
+    "id": 255,
     "title": "Muslim Character",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Sheikh Abdullah Faisal - Muslim Character.mp3",
@@ -2199,7 +2183,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 258,
+    "id": 256,
     "title": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL)",
     "sub": "Ummah & Contemporary Issues",
     "archive": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.mp3",
@@ -2208,7 +2192,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 259,
+    "id": 257,
     "title": "Natural Disasters - Why They Occur",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Natural Disasters - Why They Occur.mp3",
@@ -2216,7 +2200,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 260,
+    "id": 258,
     "title": "NATURAL DISASTERS, WHY DO THEY OCCUR",
     "sub": "Ummah & Contemporary Issues",
     "archive": "NATURAL DISASTERS, WHY DO THEY OCCUR - Abdallah Al Faisal.mp3",
@@ -2224,7 +2208,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 261,
+    "id": 259,
     "title": "Natural Instincts",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Sheikh Abdullah Faisal - Natural Instincts.mp3",
@@ -2232,7 +2216,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 262,
+    "id": 260,
     "title": "REALITY OF POVERTY",
     "sub": "Ummah & Contemporary Issues",
     "archive": "REALITY OF POVERTY - Abdallah Al Faisal.mp3",
@@ -2241,7 +2225,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 263,
+    "id": 261,
     "title": "SIGNS BEFORE JUDGEMENT DAY",
     "sub": "Ummah & Contemporary Issues",
     "archive": "SIGNS BEFORE JUDGEMENT DAY - Shaykh Faisal.mp3",
@@ -2249,7 +2233,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 264,
+    "id": 262,
     "title": "Signs Before The Day of Judgement",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Sheikh Abdullah Faisal - Signs Before The Day of Judgement.mp3",
@@ -2257,7 +2241,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 265,
+    "id": 263,
     "title": "Tawba",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Sheikh Abdullah Faisal - Tawba.mp3",
@@ -2265,7 +2249,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 266,
+    "id": 264,
     "title": "The Jinn",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Sheikh Abdullah Faisal - The Jinn.mp3",
@@ -2273,7 +2257,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 267,
+    "id": 265,
     "title": "Unity The Way Forward",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Sheikh Abdullah Faisal - Unity The Way Forward.mp3",
@@ -2281,7 +2265,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 268,
+    "id": 266,
     "title": "Unity The Way Forward copy",
     "sub": "Ummah & Contemporary Issues",
     "archive": "Sheikh Abdullah Faisal - Unity The Way Forward copy.mp3",
@@ -2289,7 +2273,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 269,
+    "id": 267,
     "title": "Weakness of Mankind [Part 1] (06.25.11)",
     "sub": "General Lectures",
     "archive": "Weakness of Mankind [Part 1] (06.25.11).mp3",
@@ -2297,7 +2281,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 270,
+    "id": 268,
     "title": "Weakness of Mankind [Part 2] (06.26.11)",
     "sub": "General Lectures",
     "archive": "Weakness of Mankind [Part 2] (06.26.11).mp3",
@@ -2305,7 +2289,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 271,
+    "id": 269,
     "title": "Weakness of Mankind [Part 3] (06.27.11)",
     "sub": "General Lectures",
     "archive": "Weakness of Mankind [Part 3] (06.27.11).mp3",
@@ -2313,7 +2297,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 272,
+    "id": 270,
     "title": "20 Laws of Nature",
     "sub": "General Lectures",
     "archive": "20 Laws of Nature.mp3",
@@ -2321,7 +2305,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 273,
+    "id": 271,
     "title": "25 promises of Allah (swt) to the believer",
     "sub": "General Lectures",
     "archive": "25 promises of Allah (swt) to the believer.mp3",
@@ -2329,7 +2313,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 274,
+    "id": 272,
     "title": "4 Crucial Tests from Allah (06.27.11)",
     "sub": "General Lectures",
     "archive": "4 Crucial Tests from Allah (06.27.11).mp3",
@@ -2337,7 +2321,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 275,
+    "id": 273,
     "title": "6 Gifts from Allah to Muhammad (SAW) (06.29.11)",
     "sub": "General Lectures",
     "archive": "6 Gifts from Allah to Muhammad (SAW) (06.29.11).mp3",
@@ -2345,7 +2329,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 276,
+    "id": 274,
     "title": "6 Special Favors of Allah to Muhammad [SAW] (12.20.11)",
     "sub": "General Lectures",
     "archive": "6 Special Favors of Allah to Muhammad [SAW] (12.20.11).mp3",
@@ -2354,7 +2338,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 277,
+    "id": 275,
     "title": "7 Worst Sins (07.11.11)",
     "sub": "General Lectures",
     "archive": "7 Worst Sins (07.11.11).mp3",
@@ -2362,7 +2346,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 278,
+    "id": 276,
     "title": "9 Reasons They Hate Us",
     "sub": "General Lectures",
     "archive": "9 Reasons They Hate Us.mp3",
@@ -2370,7 +2354,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 279,
+    "id": 277,
     "title": "Abrogated Evidences (06.29.11)",
     "sub": "General Lectures",
     "archive": "Abrogated Evidences (06.29.11).mp3",
@@ -2378,7 +2362,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 280,
+    "id": 278,
     "title": "Allah Blesses Whom He Wills (06.28.11)",
     "sub": "General Lectures",
     "archive": "Allah Blesses Whom He Wills (06.28.11).mp3",
@@ -2386,7 +2370,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 281,
+    "id": 279,
     "title": "Allah is Sufficient to Take Revenge Against Them (08.24.11)",
     "sub": "General Lectures",
     "archive": "Allah is Sufficient to Take Revenge Against Them (08.24.11).mp3",
@@ -2394,7 +2378,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 282,
+    "id": 280,
     "title": "Allah's Sunnah Will Never Change (11.15.11 to 11.16.11)",
     "sub": "General Lectures",
     "archive": "Allah's Sunnah Will Never Change (11.15.11 to 11.16.11).mp3",
@@ -2403,7 +2387,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 283,
+    "id": 281,
     "title": "Be And It Is (07.12.11)",
     "sub": "General Lectures",
     "archive": "Be And It Is (07.12.11).mp3",
@@ -2411,7 +2395,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 284,
+    "id": 282,
     "title": "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11)",
     "sub": "General Lectures",
     "archive": "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11).mp3",
@@ -2419,7 +2403,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 285,
+    "id": 283,
     "title": "Don't Envy the Kuffaar for their Jahiliyya (07.26.11)",
     "sub": "General Lectures",
     "archive": "Don't Envy the Kuffaar for their Jahiliyya (07.26.11).mp3",
@@ -2427,15 +2411,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 286,
-    "title": "Dua - The weapon of a believer",
-    "sub": "General Lectures",
-    "archive": "Dua - The weapon of a believer.mp3",
-    "href": "audio.html?archive=Dua%20-%20The%20weapon%20of%20a%20believer.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 287,
+    "id": 284,
     "title": "Exposing Those Who Insult Allah (07.10.11)",
     "sub": "General Lectures",
     "archive": "Exposing Those Who Insult Allah (07.10.11).mp3",
@@ -2443,7 +2419,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 288,
+    "id": 285,
     "title": "Islam was Revealed in Stages (08.28.11)",
     "sub": "General Lectures",
     "archive": "Islam was Revealed in Stages (08.28.11).mp3",
@@ -2451,7 +2427,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 289,
+    "id": 286,
     "title": "Jahiliyya Gives Everyone a Raw Deal (07.24.11)",
     "sub": "General Lectures",
     "archive": "Jahiliyya Gives Everyone a Raw Deal (07.24.11).mp3",
@@ -2459,15 +2435,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 290,
-    "title": "KNOWLEDGE",
-    "sub": "General Lectures",
-    "archive": "KNOWLEDGE - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=KNOWLEDGE%20-%20Abdallah%20Al%20Faisal.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 291,
+    "id": 287,
     "title": "Kufaar and the Fear Factor (07.03.11)",
     "sub": "General Lectures",
     "archive": "Kufaar and the Fear Factor (07.03.11).mp3",
@@ -2475,7 +2443,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 292,
+    "id": 288,
     "title": "Love and Hate for Allah's Sake",
     "sub": "General Lectures",
     "archive": "Sheikh Abdullah Faisal - Love and Hate for Allah's Sake.mp3",
@@ -2483,7 +2451,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 293,
+    "id": 289,
     "title": "Might Without Wisdom is a Recipe for Disaster (07.27.11)",
     "sub": "General Lectures",
     "archive": "Might Without Wisdom is a Recipe for Disaster (07.27.11).mp3",
@@ -2491,7 +2459,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 294,
+    "id": 290,
     "title": "Our 6 Sacred Possessions",
     "sub": "General Lectures",
     "archive": "Our 6 Sacred Possessions.mp3",
@@ -2499,7 +2467,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 295,
+    "id": 291,
     "title": "Paradise is Exclusive to the Muslims (07.04.11)",
     "sub": "General Lectures",
     "archive": "Paradise is Exclusive to the Muslims (07.04.11).mp3",
@@ -2507,7 +2475,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 296,
+    "id": 292,
     "title": "Power of Intercession (07.18.11)",
     "sub": "General Lectures",
     "archive": "Power of Intercession (07.18.11).mp3",
@@ -2515,7 +2483,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 297,
+    "id": 293,
     "title": "Reality of FGM (08.25.11)",
     "sub": "General Lectures",
     "archive": "Reality of FGM (08.25.11).mp3",
@@ -2523,7 +2491,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 298,
+    "id": 294,
     "title": "Reality of Poverty (02.27.12)",
     "sub": "General Lectures",
     "archive": "Reality of Poverty (02.27.12).mp3",
@@ -2532,7 +2500,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 299,
+    "id": 295,
     "title": "Resist To Exist (07.07.11)",
     "sub": "General Lectures",
     "archive": "Resist To Exist (07.07.11).mp3",
@@ -2540,7 +2508,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 300,
+    "id": 296,
     "title": "Satan's Web (dars)",
     "sub": "General Lectures",
     "archive": "Satan's Web (dars).mp3",
@@ -2548,7 +2516,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 301,
+    "id": 297,
     "title": "Satans Web (12.17.11)",
     "sub": "General Lectures",
     "archive": "Satans Web (12.17.11).mp3",
@@ -2557,7 +2525,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 302,
+    "id": 298,
     "title": "Tawassul",
     "sub": "General Lectures",
     "archive": "Tawassul.mp3",
@@ -2565,7 +2533,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 303,
+    "id": 299,
     "title": "The 10 things Muslims Cannot Doubt",
     "sub": "General Lectures",
     "archive": "The 10 things Muslims Cannot Doubt.mp3",
@@ -2573,7 +2541,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 304,
+    "id": 300,
     "title": "The 21 Reasons Why The Quran Is A Wise Book",
     "sub": "General Lectures",
     "archive": "The 21 Reasons Why The Quran Is A Wise Book.mp3",
@@ -2581,7 +2549,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 305,
+    "id": 301,
     "title": "The 35 People Allah SWT Abhors",
     "sub": "General Lectures",
     "archive": "The 35 People Allah SWT Abhors.mp3",
@@ -2589,7 +2557,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 306,
+    "id": 302,
     "title": "The 36 People Allah SWT Loves",
     "sub": "General Lectures",
     "archive": "The 36 People Allah SWT Loves.mp3",
@@ -2597,23 +2565,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 307,
-    "title": "The 5 Ahkaam of Shariah",
-    "sub": "General Lectures",
-    "archive": "The 5 Ahkaam of Shariah.mp3",
-    "href": "audio.html?archive=The%205%20Ahkaam%20of%20Shariah.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 308,
-    "title": "The 5 Needs of Mankind2",
-    "sub": "General Lectures",
-    "archive": "The 5 Needs of Mankind2.mp3",
-    "href": "audio.html?archive=The%205%20Needs%20of%20Mankind2.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 309,
+    "id": 303,
     "title": "The 8 Gates of Paradise",
     "sub": "General Lectures",
     "archive": "the_8_Gates_of_Paradise_mp3.mp3",
@@ -2621,7 +2573,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 310,
+    "id": 304,
     "title": "the 9 reasons kuffaar hate us",
     "sub": "General Lectures",
     "archive": "the 9 reasons kuffaar hate us.mp3",
@@ -2629,7 +2581,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 311,
+    "id": 305,
     "title": "The American Ban on Muslims",
     "sub": "General Lectures",
     "archive": "The American Ban on Muslims.mp3",
@@ -2637,7 +2589,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 312,
+    "id": 306,
     "title": "The Bombing of the Goofi Soofis",
     "sub": "General Lectures",
     "archive": "The Bombing of the Goofi Soofis.mp3",
@@ -2645,7 +2597,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 313,
+    "id": 307,
     "title": "The Evil Consequences Of Insulting The Rasool (Saw)",
     "sub": "General Lectures",
     "archive": "The Evil Consequences Of Insulting The Rasool (Saw).mp3",
@@ -2653,7 +2605,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 314,
+    "id": 308,
     "title": "The Evil Effects of Sins",
     "sub": "General Lectures",
     "archive": "The Evil Effects of Sins.mp3",
@@ -2661,7 +2613,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 315,
+    "id": 309,
     "title": "The Evil Rulers Of The World",
     "sub": "General Lectures",
     "archive": "The Evil Rulers Of The World.mp3",
@@ -2669,7 +2621,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 316,
+    "id": 310,
     "title": "The farewell khutbah 14-07-14",
     "sub": "General Lectures",
     "archive": "The farewell khutbah 14-07-14.mp3",
@@ -2677,7 +2629,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 317,
+    "id": 311,
     "title": "The Holy Spirit (06.18.11)",
     "sub": "General Lectures",
     "archive": "The Holy Spirit (06.18.11).mp3",
@@ -2685,7 +2637,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 318,
+    "id": 312,
     "title": "The Hyenas Of The Ummah",
     "sub": "General Lectures",
     "archive": "The Hyenas Of The Ummah.mp3",
@@ -2693,23 +2645,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 319,
-    "title": "The Importance of Intention",
-    "sub": "General Lectures",
-    "archive": "The Importance of Intention.mp3",
-    "href": "audio.html?archive=The%20Importance%20of%20Intention.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 320,
-    "title": "The Philosophy of the islamic Jurisprudence",
-    "sub": "General Lectures",
-    "archive": "The Philosophy of the islamic Jurisprudence.mp3",
-    "href": "audio.html?archive=The%20Philosophy%20of%20the%20islamic%20Jurisprudence.mp3"
-  },
-  {
-    "type": "audio",
-    "id": 321,
+    "id": 313,
     "title": "The Reality of Fitnah",
     "sub": "General Lectures",
     "archive": "The Reality of Fitnah.mp3",
@@ -2717,7 +2653,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 322,
+    "id": 314,
     "title": "The Reality of Racism",
     "sub": "General Lectures",
     "archive": "The Reality of Racism.mp3",
@@ -2725,7 +2661,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 323,
+    "id": 315,
     "title": "The Ship Is Sinking (07.13.11)",
     "sub": "General Lectures",
     "archive": "The Ship Is Sinking (07.13.11).mp3",
@@ -2733,7 +2669,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 324,
+    "id": 316,
     "title": "the Siege of al Aqsa",
     "sub": "General Lectures",
     "archive": "the Siege of al Aqsa.mp3",
@@ -2741,7 +2677,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 325,
+    "id": 317,
     "title": "the usa Bombing of Assad, a Muslim perspective",
     "sub": "General Lectures",
     "archive": "the usa Bombing of Assad, a Muslim perspective.mp3",
@@ -2749,7 +2685,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 326,
+    "id": 318,
     "title": "the Weaknesses of Mankind2",
     "sub": "General Lectures",
     "archive": "the Weaknesses of Mankind2.mp3",
@@ -2757,7 +2693,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 327,
+    "id": 319,
     "title": "The wisdom of the Prophet (saw) 07-15-14",
     "sub": "General Lectures",
     "archive": "The wisdom of the Prophet (saw) 07-15-14.mp3",
@@ -2765,7 +2701,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 328,
+    "id": 320,
     "title": "Their hearts Are Alike",
     "sub": "General Lectures",
     "archive": "Their hearts Are Alike.mp3",
@@ -2773,7 +2709,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 329,
+    "id": 321,
     "title": "Them versus Us",
     "sub": "General Lectures",
     "archive": "Sheikh Abdullah Faisal - Them versus Us.mp3",
@@ -2781,7 +2717,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 330,
+    "id": 322,
     "title": "They Shall Reap What They Sow and You Shall Reap What You Sow (08.22.11)",
     "sub": "General Lectures",
     "archive": "They Shall Reap What They Sow and You Shall Reap What You Sow (08.22.11).mp3",
@@ -2789,7 +2725,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 331,
+    "id": 323,
     "title": "They Shall Reap What They Sow and You Shall Reap What You Sow 08",
     "sub": "General Lectures",
     "archive": "They_Shall_Reap_What_They_Sow_and_You_Shall_Reap_What_You_Sow_08.mp3",
@@ -2797,7 +2733,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 332,
+    "id": 324,
     "title": "We Hear & We Obey (06.23.11)",
     "sub": "General Lectures",
     "archive": "We Hear & We Obey (06.23.11).mp3",
@@ -2805,7 +2741,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 333,
+    "id": 325,
     "title": "We Shall Never Follow the Jews & the Christians (07.14.11)",
     "sub": "General Lectures",
     "archive": "We Shall Never Follow the Jews & the Christians (07.14.11).mp3",
@@ -2813,7 +2749,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 334,
+    "id": 326,
     "title": "We Shall Never give up Better For Worse (07.16.11)",
     "sub": "General Lectures",
     "archive": "We Shall Never give up Better For Worse (07.16.11).mp3",
@@ -2821,7 +2757,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 335,
+    "id": 327,
     "title": "Wish For Death If Your Claim Is The Truth (06.25.11)",
     "sub": "General Lectures",
     "archive": "Wish For Death If Your Claim Is The Truth (06.25.11).mp3",
@@ -2829,7 +2765,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 336,
+    "id": 328,
     "title": "Worst Con Artist is the Man Who Cons Himself (08.03.11)",
     "sub": "General Lectures",
     "archive": "Worst Con Artist is the Man Who Cons Himself (08.03.11).mp3",
@@ -2837,7 +2773,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 337,
+    "id": 329,
     "title": "You Can't Have Your Cake & Eat It Too (07.20.11)",
     "sub": "General Lectures",
     "archive": "You Can't Have Your Cake & Eat It Too (07.20.11).mp3",
@@ -2845,7 +2781,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 338,
+    "id": 330,
     "title": "Description of Paradise [Part 1] (07.04.11)",
     "sub": "Fiqh & Worship",
     "archive": "Description of Paradise [Part 1] (07.04.11).mp3",
@@ -2853,7 +2789,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 339,
+    "id": 331,
     "title": "Description of Paradise [Part 2] (07.05.11)",
     "sub": "Fiqh & Worship",
     "archive": "Description of Paradise [Part 2] (07.05.11).mp3",
@@ -2861,7 +2797,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 340,
+    "id": 332,
     "title": "4 Pillars of Qadr (12.24.11)",
     "sub": "Fiqh & Worship",
     "archive": "4 Pillars of Qadr (12.24.11).mp3",
@@ -2870,7 +2806,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 341,
+    "id": 333,
     "title": "Application of Revelation - Quran, Sunnah, ijmaa and Qiyas",
     "sub": "Fiqh & Worship",
     "archive": "Application of Revelation - Quran, Sunnah, ijmaa and Qiyas.mp3",
@@ -2878,7 +2814,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 342,
+    "id": 334,
     "title": "Application of Revelation Daroora Mafhoom Qawl Sahaba Urf Amal of Madina",
     "sub": "Fiqh & Worship",
     "archive": "Application_of_Revelation_Daroora_Mafhoom_Qawl_Sahaba_Urf_Amal_of_Madina_mp3.mp3",
@@ -2886,7 +2822,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 343,
+    "id": 335,
     "title": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan",
     "sub": "Fiqh & Worship",
     "archive": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan.mp3",
@@ -2894,7 +2830,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 344,
+    "id": 336,
     "title": "Description of the Prophet's Prayer (06.19.11)",
     "sub": "Fiqh & Worship",
     "archive": "Description of the Prophet's Prayer (06.19.11).mp3",
@@ -2902,7 +2838,15 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 345,
+    "id": 337,
+    "title": "Dua - The weapon of a believer",
+    "sub": "Fiqh & Worship",
+    "archive": "Dua - The weapon of a believer.mp3",
+    "href": "audio.html?archive=Dua%20-%20The%20weapon%20of%20a%20believer.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 338,
     "title": "Fasting - What You Need To Know (08.01.11)",
     "sub": "Fiqh & Worship",
     "archive": "Fasting - What You Need To Know (08.01.11).mp3",
@@ -2910,7 +2854,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 346,
+    "id": 339,
     "title": "Fiqhul Waaqi (04.30.12)",
     "sub": "Fiqh & Worship",
     "archive": "Fiqhul Waaqi (04.30.12).mp3",
@@ -2919,7 +2863,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 347,
+    "id": 340,
     "title": "How To Make Hajj (10.25.11)[v2]",
     "sub": "Fiqh & Worship",
     "archive": "How To Make Hajj (10.25.11)[v2].mp3",
@@ -2928,7 +2872,15 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 348,
+    "id": 341,
+    "title": "IJTIHAAD MASLAHA",
+    "sub": "Fiqh & Worship",
+    "archive": "IJTIHAAD MASLAHA - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=IJTIHAAD%20MASLAHA%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 342,
     "title": "Lailatul Qadr explained (dars)",
     "sub": "Fiqh & Worship",
     "archive": "Lailatul Qadr explained (dars).mp3",
@@ -2936,7 +2888,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 349,
+    "id": 343,
     "title": "Merits of Salah (06.23.11)",
     "sub": "Fiqh & Worship",
     "archive": "Merits of Salah (06.23.11).mp3",
@@ -2944,7 +2896,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 350,
+    "id": 344,
     "title": "PUNISHMENT OF THE GRAVE",
     "sub": "Fiqh & Worship",
     "archive": "PUNISHMENT OF THE GRAVE - Abdallah Al Faisal.mp3",
@@ -2952,7 +2904,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 351,
+    "id": 345,
     "title": "Rules and Merits of Zakah (09.01.11)",
     "sub": "Fiqh & Worship",
     "archive": "Rules and Merits of Zakah (09.01.11).mp3",
@@ -2960,7 +2912,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 352,
+    "id": 346,
     "title": "Rules Of Fasting",
     "sub": "Fiqh & Worship",
     "archive": "Rules Of Fasting.mp3",
@@ -2968,7 +2920,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 353,
+    "id": 347,
     "title": "Rules of Fasting (07.31.11)",
     "sub": "Fiqh & Worship",
     "archive": "Rules of Fasting (07.31.11).mp3",
@@ -2976,7 +2928,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 354,
+    "id": 348,
     "title": "Salah of the Rasool described",
     "sub": "Fiqh & Worship",
     "archive": "Salah of the Rasool described.mp3",
@@ -2984,7 +2936,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 355,
+    "id": 349,
     "title": "The 4 Pillars Of Qadr",
     "sub": "Fiqh & Worship",
     "archive": "The 4 Pillars Of Qadr.mp3",
@@ -2992,7 +2944,15 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 356,
+    "id": 350,
+    "title": "The 5 Ahkaam of Shariah",
+    "sub": "Fiqh & Worship",
+    "archive": "The 5 Ahkaam of Shariah.mp3",
+    "href": "audio.html?archive=The%205%20Ahkaam%20of%20Shariah.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 351,
     "title": "The Fiqh of Asking Questions",
     "sub": "Fiqh & Worship",
     "archive": "The_Fiqh_of_Asking_Questions_mp3.mp3",
@@ -3000,7 +2960,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 357,
+    "id": 352,
     "title": "The Fiqh of Clothing",
     "sub": "Fiqh & Worship",
     "archive": "The Fiqh of Clothing.mp3",
@@ -3008,7 +2968,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 358,
+    "id": 353,
     "title": "the Fiqh of Food-1",
     "sub": "Fiqh & Worship",
     "archive": "the Fiqh of Food-1.mp3",
@@ -3016,7 +2976,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 359,
+    "id": 354,
     "title": "The Fiqh of Trading",
     "sub": "Fiqh & Worship",
     "archive": "The Fiqh of Trading.mp3",
@@ -3024,7 +2984,15 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 360,
+    "id": 355,
+    "title": "The Philosophy of the islamic Jurisprudence",
+    "sub": "Fiqh & Worship",
+    "archive": "The Philosophy of the islamic Jurisprudence.mp3",
+    "href": "audio.html?archive=The%20Philosophy%20of%20the%20islamic%20Jurisprudence.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 356,
     "title": "The Rules of Fasting",
     "sub": "Fiqh & Worship",
     "archive": "The Rules of Fasting.mp3",
@@ -3032,7 +3000,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 361,
+    "id": 357,
     "title": "The virtues of Dhikr",
     "sub": "Fiqh & Worship",
     "archive": "The virtues of Dhikr.mp3",
@@ -3040,7 +3008,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 362,
+    "id": 358,
     "title": "VIRTUES OF MAKKAH",
     "sub": "Fiqh & Worship",
     "archive": "VIRTUES OF MAKKAH - Shaykh Faisal.mp3",
@@ -3049,7 +3017,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 363,
+    "id": 359,
     "title": "DECLARATION OF WAR - Osama Bin Laden",
     "sub": "Jihad",
     "archive": "DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.mp3",
@@ -3058,7 +3026,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 364,
+    "id": 360,
     "title": "IMPORTANCE OF HIJRAH",
     "sub": "Jihad",
     "archive": "IMPORTANCE OF HIJRAH - Abdallah Al Faisal.mp3",
@@ -3067,7 +3035,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 365,
+    "id": 361,
     "title": "JIHAD AIMS & OBJECTIVES",
     "sub": "Jihad",
     "archive": "Jihad/JIHAD AIMS & OBJECTIVES - Shaykh Faisal.mp3",
@@ -3076,7 +3044,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 366,
+    "id": 362,
     "title": "REQUIREMENTS OF JIHAD",
     "sub": "Jihad",
     "archive": "Jihad/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.mp3",
@@ -3085,7 +3053,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 367,
+    "id": 363,
     "title": "SALAFI JIHADI",
     "sub": "Jihad",
     "archive": "Jihad/SALAFI JIHADI - Shaykh Faisal.mp3",
@@ -3094,7 +3062,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 368,
+    "id": 364,
     "title": "Can the Khilaafa survive",
     "sub": "Khilafah",
     "archive": "Can the Khilaafa survive.mp3",
@@ -3102,7 +3070,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 369,
+    "id": 365,
     "title": "Future of the Caliphate",
     "sub": "Khilafah",
     "archive": "Khilafah/Future of the Caliphate.mp3",
@@ -3110,7 +3078,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 370,
+    "id": 366,
     "title": "Is the caliphate valid",
     "sub": "Khilafah",
     "archive": "Khilafah/Is the caliphate valid.mp3",
@@ -3118,7 +3086,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 371,
+    "id": 367,
     "title": "Is the dawla khawarij?",
     "sub": "Khilafah",
     "archive": "Khilafah/is-the-dawla-khawarij.mp3",
@@ -3126,7 +3094,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 372,
+    "id": 368,
     "title": "KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED",
     "sub": "Khilafah",
     "archive": "Khilafah/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.mp3",
@@ -3135,7 +3103,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 373,
+    "id": 369,
     "title": "KHILAFAH SURVIVE & REVIVE",
     "sub": "Khilafah",
     "archive": "Khilafah/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.mp3",
@@ -3144,7 +3112,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 374,
+    "id": 370,
     "title": "MANHAJ FOR ESTABLISHING SHARIAH",
     "sub": "Khilafah",
     "archive": "MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.mp3",
@@ -3153,7 +3121,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 375,
+    "id": 371,
     "title": "Message from the Calipha (HA) to the Ummah",
     "sub": "Khilafah",
     "archive": "Message from the Calipha (HA) to the Ummah.mp3",
@@ -3161,7 +3129,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 376,
+    "id": 372,
     "title": "OBLIGATION TO ESTABLISH KHILAFAH",
     "sub": "Khilafah",
     "archive": "Khilafah/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.mp3",
@@ -3170,7 +3138,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 377,
+    "id": 373,
     "title": "The Enemies of the Caliphate",
     "sub": "Khilafah",
     "archive": "Khilafah/The Enemies of the Caliphate.mp3",
@@ -3178,7 +3146,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 378,
+    "id": 374,
     "title": "THE IMPORTANCE OF SHARI`AH",
     "sub": "Khilafah",
     "archive": "Khilafah/THE IMPORTANCE OF SHARI`AH.mp3",
@@ -3186,7 +3154,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 379,
+    "id": 375,
     "title": "SHIA GREATEST ENEMY WITHIN",
     "sub": "Refutations",
     "archive": "Shia/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.mp3",
@@ -3195,7 +3163,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 380,
+    "id": 376,
     "title": "SHIA KNOW YOUR ENEMY",
     "sub": "Refutations",
     "archive": "Shia/SHIA KNOW YOUR ENEMY - Shaykh Faisal.mp3",
@@ -3204,7 +3172,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 381,
+    "id": 377,
     "title": "Why we hate the shia",
     "sub": "Refutations",
     "archive": "Shia/Why we hate the shia.mp3",
@@ -3212,7 +3180,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 382,
+    "id": 378,
     "title": "MADKHALIS",
     "sub": "Refutations",
     "archive": "MADKHALIS - Shaykh Faisal.mp3",
@@ -3221,7 +3189,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 383,
+    "id": 379,
     "title": "SAUDI SALAFI",
     "sub": "Refutations",
     "archive": "SAUDI SALAFI - Shaykh Faisal.mp3",
@@ -3230,7 +3198,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 384,
+    "id": 380,
     "title": "DEMOCRATES - Those Who Participate In Democratic Election",
     "sub": "Refutations",
     "archive": "DEMOCRATES - Those Who Participate In Democratic Election.mp3",
@@ -3239,7 +3207,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 385,
+    "id": 381,
     "title": "MELTDOWN OF DEMOCRACY",
     "sub": "Refutations",
     "archive": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.mp3",
@@ -3248,7 +3216,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 386,
+    "id": 382,
     "title": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM",
     "sub": "Refutations",
     "archive": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.mp3",
@@ -3257,7 +3225,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 387,
+    "id": 383,
     "title": "SECULARISM",
     "sub": "Refutations",
     "archive": "SECULARISM - Shaykh Abdallah Al Faisal.mp3",
@@ -3266,7 +3234,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 388,
+    "id": 384,
     "title": "SHARIAH VS MAN MADE LAWS",
     "sub": "Refutations",
     "archive": "SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.mp3",
@@ -3275,7 +3243,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 389,
+    "id": 385,
     "title": "KHAWARIJ AND THEIR AQEEDAH",
     "sub": "Refutations",
     "archive": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.mp3",
@@ -3284,7 +3252,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 390,
+    "id": 386,
     "title": "The Barking Dogs of Jahannam (Refuting the modern day Khawarij)",
     "sub": "Refutations",
     "archive": "the Barking dogs of jahannam.mp3",
@@ -3293,7 +3261,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 391,
+    "id": 387,
     "title": "NO PEACE WITH THE JEWS",
     "sub": "Refutations",
     "archive": "NO PEACE WITH THE JEWS - Abdallah Al Faisal.mp3",
@@ -3301,7 +3269,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 392,
+    "id": 388,
     "title": "REALITY OF THE JEWS",
     "sub": "Refutations",
     "archive": "REALITY OF THE JEWS - Abdallah Al Faisal.mp3",
@@ -3310,7 +3278,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 393,
+    "id": 389,
     "title": "THE REALITY OF THE JEWS",
     "sub": "Refutations",
     "archive": "THE REALITY OF THE JEWS.mp3",
@@ -3318,7 +3286,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 394,
+    "id": 390,
     "title": "Entering the Lizard Hole",
     "sub": "Refutations",
     "archive": "Entering the Lizard Hole.mp3",
@@ -3327,7 +3295,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 395,
+    "id": 391,
     "title": "GAY LESBIAN LGBT",
     "sub": "Refutations",
     "archive": "GAY LESBIAN LGBT - Shaykh Faisal.mp3",
@@ -3336,7 +3304,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 396,
+    "id": 392,
     "title": "KASHF USH SHUBUHAAT",
     "sub": "Refutations",
     "archive": "KASHF USH SHUBUHAAT - Shaykh Faisal.mp3",
@@ -3345,7 +3313,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 397,
+    "id": 393,
     "title": "MURJIA",
     "sub": "Refutations",
     "archive": "MURJIA - Shaykh Faisal.mp3",
@@ -3354,7 +3322,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 398,
+    "id": 394,
     "title": "Removing the Doubts",
     "sub": "Refutations",
     "archive": "Removing the Doubts.mp3",
@@ -3362,7 +3330,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 399,
+    "id": 395,
     "title": "DO NOT TAKE MY ENEMY AS YOUR FRIEND",
     "sub": "Refutations",
     "archive": "DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.mp3",
@@ -3371,7 +3339,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 400,
+    "id": 396,
     "title": "DO NOT TAKE THE KUFFAR AS ALLIES",
     "sub": "Refutations",
     "archive": "DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.mp3",
@@ -3380,7 +3348,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 401,
+    "id": 397,
     "title": "IFK SLANDER OF AYSHA",
     "sub": "Refutations",
     "archive": "IFK  SLANDER OF AYSHA - Shaykh Faisal.mp3",
@@ -3389,7 +3357,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 402,
+    "id": 398,
     "title": "INSULTING THE PROPHET ﷺ",
     "sub": "Refutations",
     "archive": "INSULTING THE PROPHET ﷺ  - Abdallah Al Faisal.mp3",
@@ -3398,7 +3366,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 403,
+    "id": 399,
     "title": "Radical Islamic Terrorism",
     "sub": "Refutations",
     "archive": "Radical Islamic Terrorism.mp3",
@@ -3406,7 +3374,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 404,
+    "id": 400,
     "title": "Radical islamic terrorism2",
     "sub": "Refutations",
     "archive": "Radical islamic terrorism2.mp3",
@@ -3414,7 +3382,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 405,
+    "id": 401,
     "title": "Refuting Geert Wilders (07.07.11)",
     "sub": "Refutations",
     "archive": "Refutation/Refuting Geert Wilders (07.07.11).mp3",
@@ -3422,7 +3390,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 406,
+    "id": 402,
     "title": "Refuting The Lie Concerning Kufr Doona Kufr",
     "sub": "Refutations",
     "archive": "Refutation/Refuting The Lie Concerning Kufr Doona Kufr.mp3",
@@ -3430,7 +3398,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 407,
+    "id": 403,
     "title": "Refuting The Lie Concerning The Excuse of Ignorance",
     "sub": "Refutations",
     "archive": "Refutation/Refuting The Lie Concerning The Excuse of Ignorance.mp3",
@@ -3438,7 +3406,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 408,
+    "id": 404,
     "title": "REJECTING THE TAGHUT",
     "sub": "Refutations",
     "archive": "REJECTING THE TAGHUT - Abdallah Al Faisal.mp3",
@@ -3446,7 +3414,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 409,
+    "id": 405,
     "title": "Slander of Aisha (RA) (07.12.11)",
     "sub": "Refutations",
     "archive": "Slander of Aisha (RA) (07.12.11).mp3",
@@ -3454,7 +3422,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 410,
+    "id": 406,
     "title": "Slander of Aisha (RA) [REVISITED] (08.14.11)",
     "sub": "Refutations",
     "archive": "Slander of Aisha (RA) [REVISITED] (08.14.11).mp3",
@@ -3462,7 +3430,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 411,
+    "id": 407,
     "title": "THE DOMAIN OF APOSTASY",
     "sub": "Refutations",
     "archive": "THE DOMAIN OF APOSTASY.mp3",
@@ -3470,7 +3438,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 412,
+    "id": 408,
     "title": "THEY ARE THE WORST OF CREATURES",
     "sub": "Refutations",
     "archive": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.mp3",
@@ -3479,7 +3447,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 413,
+    "id": 409,
     "title": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT",
     "sub": "Refutations",
     "archive": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.mp3",
@@ -3488,7 +3456,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 414,
+    "id": 410,
     "title": "Towards Watering Down The Holy Quran",
     "sub": "Refutations",
     "archive": "Towards Watering Down The Holy Quran(1).mp3",
@@ -3496,7 +3464,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 415,
+    "id": 411,
     "title": "White Supremacy - A Cancer In The Body of Humanity",
     "sub": "Refutations",
     "archive": "White Supremacy - A Cancer In The Body of Humanity.mp3",
@@ -3504,7 +3472,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 416,
+    "id": 412,
     "title": "Jokers in the Pack - Refuting the Ashaa'ira (09.22.11)",
     "sub": "Jokers in the Pack",
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Ashaa'ira (09.22.11).mp3",
@@ -3513,7 +3481,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 417,
+    "id": 413,
     "title": "Jokers in the Pack - Refuting the Barelvis (09.15.11)",
     "sub": "Jokers in the Pack",
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Barelvis (09.15.11).mp3",
@@ -3522,7 +3490,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 418,
+    "id": 414,
     "title": "Jokers in the Pack - Refuting the Democrats (09.25.11)",
     "sub": "Jokers in the Pack",
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Democrats (09.25.11).mp3",
@@ -3531,7 +3499,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 419,
+    "id": 415,
     "title": "Jokers in the Pack - Refuting the Goofy Sufi (09.07.11 to 09.08.11)",
     "sub": "Jokers in the Pack",
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Goofy Sufi (09.07.11 to 09.08.11).mp3",
@@ -3540,7 +3508,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 420,
+    "id": 416,
     "title": "Jokers in the Pack - Refuting the Hizb ut Tahrir (09.17.11 to 09.18.11)",
     "sub": "Jokers in the Pack",
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Hizb ut Tahrir (09.17.11 to 09.18.11).mp3",
@@ -3549,7 +3517,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 421,
+    "id": 417,
     "title": "Jokers in the Pack - Refuting the Khawarij (09.04.11)[v2]",
     "sub": "Jokers in the Pack",
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Khawarij (09.04.11)[v2].mp3",
@@ -3558,7 +3526,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 422,
+    "id": 418,
     "title": "Jokers in the Pack - Refuting the Murjia (09.05.11)",
     "sub": "Jokers in the Pack",
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Murjia (09.05.11).mp3",
@@ -3567,7 +3535,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 423,
+    "id": 419,
     "title": "Jokers in the Pack - Refuting the Mutazila (09.06.11)",
     "sub": "Jokers in the Pack",
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Mutazila (09.06.11).mp3",
@@ -3576,7 +3544,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 424,
+    "id": 420,
     "title": "Jokers in the Pack - Refuting the Parvezis (09.20.11)",
     "sub": "Jokers in the Pack",
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Parvezis (09.20.11).mp3",
@@ -3585,7 +3553,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 425,
+    "id": 421,
     "title": "Jokers in the Pack - Refuting the Qadiyaani (09.21.11)",
     "sub": "Jokers in the Pack",
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Qadiyaani (09.21.11).mp3",
@@ -3594,7 +3562,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 426,
+    "id": 422,
     "title": "Jokers in the Pack - Refuting the Saudi Salafi (09.10.11 to 09.11.11)",
     "sub": "Jokers in the Pack",
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Saudi Salafi (09.10.11 to 09.11.11).mp3",
@@ -3603,7 +3571,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 427,
+    "id": 423,
     "title": "Jokers in the Pack - Refuting the Shia (09.12.11 to 09.14.11)",
     "sub": "Jokers in the Pack",
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Shia (09.12.11 to 09.14.11).mp3",
@@ -3612,7 +3580,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 428,
+    "id": 424,
     "title": "The 5 Desperate Zindeeq - Brelvis (02.16.12)",
     "sub": "The 5 Desperate Zindeeq",
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Brelvis (02.16.12).mp3",
@@ -3621,7 +3589,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 429,
+    "id": 425,
     "title": "The 5 Desperate Zindeeq - Democrats (evening dars 02.18.12)",
     "sub": "The 5 Desperate Zindeeq",
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Democrats (evening dars 02.18.12).mp3",
@@ -3630,7 +3598,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 430,
+    "id": 426,
     "title": "The 5 Desperate Zindeeq - Goofy Sufi (02.11.12)",
     "sub": "The 5 Desperate Zindeeq",
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Goofy Sufi (02.11.12).mp3",
@@ -3639,7 +3607,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 431,
+    "id": 427,
     "title": "The 5 Desperate Zindeeq - MADkhalis (02.14.12 to 02.15.12)",
     "sub": "The 5 Desperate Zindeeq",
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - MADkhalis (02.14.12 to 02.15.12).mp3",
@@ -3648,7 +3616,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 432,
+    "id": 428,
     "title": "The 5 Desperate Zindeeq - Shady Shia (02.12.12 to 02.13.12)",
     "sub": "The 5 Desperate Zindeeq",
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Shady Shia (02.12.12 to 02.13.12).mp3",
@@ -3657,7 +3625,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 433,
+    "id": 429,
     "title": "DEVIL'S DECEPTION OF SAUDI SALAFIS (1990s)",
     "sub": "The Devil's Deception",
     "archive": "The Devils Deception/DEVIL'S DECEPTION OF SAUDI SALAFIS - Abdallah Al Faisal.mp3",
@@ -3665,7 +3633,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 434,
+    "id": 430,
     "title": "Devils Deception of the Saudi Salafis (07.13.11)",
     "sub": "The Devil's Deception",
     "archive": "The Devils Deception/Devils Deception of the Saudi Salafis (07.13.11).mp3",
@@ -3673,7 +3641,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 435,
+    "id": 431,
     "title": "The Devil's Deception of the Aathir",
     "sub": "The Devil's Deception",
     "archive": "The Devils Deception/The Devil's Deception of the Aathir.mp3",
@@ -3681,7 +3649,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 436,
+    "id": 432,
     "title": "The Devil's Deception of The Murji",
     "sub": "The Devil's Deception",
     "archive": "The Devils Deception/09.Sheikh Abdullah Faisal - The Devil's Deception of The Murji.mp3",
@@ -3689,7 +3657,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 437,
+    "id": 433,
     "title": "The Devil's Deception of the Murjia",
     "sub": "The Devil's Deception",
     "archive": "The Devils Deception/The Devil's Deception of the Murjia.mp3",
@@ -3697,7 +3665,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 438,
+    "id": 434,
     "title": "The Devil's Deception of The Qadiani",
     "sub": "The Devil's Deception",
     "archive": "The Devils Deception/08.Sheikh Abdullah Faisal - The Devil's Deception of The Qadiani.mp3",
@@ -3705,7 +3673,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 439,
+    "id": 435,
     "title": "The Devil's Deception of The Shia",
     "sub": "The Devil's Deception",
     "archive": "The Devils Deception/06.Sheikh Abdullah Faisal - The Devil's Deception of The Shia.mp3",
@@ -3713,7 +3681,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 440,
+    "id": 436,
     "title": "47 Signs of the Wicked Scholar",
     "sub": "Wicked Scholars",
     "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3",
@@ -3721,7 +3689,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 441,
+    "id": 437,
     "title": "BEWARE OF THE WICKED SCHOLARS",
     "sub": "Wicked Scholars",
     "archive": "Wicked_Scholars/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.mp3",
@@ -3730,7 +3698,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 442,
+    "id": 438,
     "title": "DEFINITION OF A SCHOLAR",
     "sub": "Wicked Scholars",
     "archive": "DEFINITION OF A SCHOLAR - Abdallah Al Faisal.mp3",
@@ -3738,7 +3706,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 443,
+    "id": 439,
     "title": "EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN",
     "sub": "Wicked Scholars",
     "archive": "Wicked_Scholars/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.mp3",
@@ -3747,7 +3715,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 444,
+    "id": 440,
     "title": "LET THE SCHOLARS BEWARE",
     "sub": "Wicked Scholars",
     "archive": "LET THE SCHOLARS BEWARE - Abdallah Al Faisal.mp3",
@@ -3755,7 +3723,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 445,
+    "id": 441,
     "title": "SEVENTEEN SIGNS OF THE WICKED SCHOLAR",
     "sub": "Wicked Scholars",
     "archive": "Wicked_Scholars/SEVENTEEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal.mp3",
@@ -3763,7 +3731,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 446,
+    "id": 442,
     "title": "WICKED SCHOLAR",
     "sub": "Wicked Scholars",
     "archive": "Wicked_Scholars/WICKED SCHOLAR - Abdallah Al Faisal.mp3",
@@ -3771,7 +3739,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 447,
+    "id": 443,
     "title": "WICKED SCHOLARS ARE LIKE A DOG",
     "sub": "Wicked Scholars",
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3",
@@ -3780,7 +3748,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 448,
+    "id": 444,
     "title": "Science of Quran - Part 1",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 1.mp3",
@@ -3788,7 +3756,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 449,
+    "id": 445,
     "title": "Science of Quran - Part 2 - The History of the Quran's Descent",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 2 - The History of the Quran's Descent.mp3",
@@ -3796,7 +3764,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 450,
+    "id": 446,
     "title": "Science of Quran - Part 2 - The Wahy",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 2 - The Wahy.mp3",
@@ -3804,7 +3772,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 451,
+    "id": 447,
     "title": "Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book.mp3",
@@ -3812,7 +3780,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 452,
+    "id": 448,
     "title": "Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs.mp3",
@@ -3820,7 +3788,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 453,
+    "id": 449,
     "title": "Science Of Quran - Part 6 - The causes Of Revelation I",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science Of Quran - Part 6 - The causes Of Revelation I.mp3",
@@ -3828,7 +3796,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 454,
+    "id": 450,
     "title": "Science Of Quran - Part 7 - The causes Of Revelation II",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science Of Quran - Part 7 - The causes Of Revelation II.mp3",
@@ -3836,7 +3804,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 455,
+    "id": 451,
     "title": "Science of Quran - Part 8 - The Causes of Revelation – An Nisa",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 8 - The Causes of Revelation – An Nisa.mp3",
@@ -3844,7 +3812,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 456,
+    "id": 452,
     "title": "Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah.mp3",
@@ -3852,7 +3820,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 457,
+    "id": 453,
     "title": "Science of Quran - Part 10 - The Causes of Revelation – Al Imraan",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 10 - The Causes of Revelation – Al Imraan.mp3",
@@ -3860,7 +3828,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 458,
+    "id": 454,
     "title": "Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2.mp3",
@@ -3868,7 +3836,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 459,
+    "id": 455,
     "title": "Science of Quran - Part 12 - The Causes of Revelation – Al An’am",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 12 - The Causes of Revelation – Al An’am.mp3",
@@ -3876,7 +3844,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 460,
+    "id": 456,
     "title": "Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf.mp3",
@@ -3884,7 +3852,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 461,
+    "id": 457,
     "title": "Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1.mp3",
@@ -3892,7 +3860,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 462,
+    "id": 458,
     "title": "Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1.mp3",
@@ -3900,7 +3868,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 463,
+    "id": 459,
     "title": "Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2",
     "sub": "Science in the Quran",
     "archive": "Science in the quran/Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2.mp3",
@@ -3908,7 +3876,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 464,
+    "id": 460,
     "title": "The Animals Of The Holy Quran - Part 1",
     "sub": "Science in the Quran",
     "archive": "The Animals Of The Holy Quran - Part 1.mp3",
@@ -3916,7 +3884,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 465,
+    "id": 461,
     "title": "The Animals Of The Holy Quran - Part 2",
     "sub": "Science in the Quran",
     "archive": "The Animals Of The Holy Quran - Part 2.mp3",
@@ -3924,7 +3892,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 466,
+    "id": 462,
     "title": "Prophesies of the Holy Quran (11.22.11 to 11.23.11)",
     "sub": "Science in the Quran",
     "archive": "Prophesies of the Holy Quran (11.22.11 to 11.23.11).mp3",
@@ -3933,7 +3901,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 467,
+    "id": 463,
     "title": "Rules of Nikah [Part 1] (06.30.11)",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 1] (06.30.11).mp3",
@@ -3941,7 +3909,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 468,
+    "id": 464,
     "title": "Rules of Nikah [Part 2] (07.01.11)",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 2] (07.01.11).mp3",
@@ -3949,7 +3917,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 469,
+    "id": 465,
     "title": "Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11)",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11).mp3",
@@ -3957,7 +3925,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 470,
+    "id": 466,
     "title": "Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11)",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11).mp3",
@@ -3965,7 +3933,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 471,
+    "id": 467,
     "title": "Rules of Divorce [Part 1] (07.06.11)",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/Rules of Divorce [Part 1] (07.06.11).mp3",
@@ -3973,7 +3941,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 472,
+    "id": 468,
     "title": "Rules of Divorce [Part 2] Revisited (07.08.11)",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/Rules of Divorce [Part 2] Revisited (07.08.11).mp3",
@@ -3981,7 +3949,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 473,
+    "id": 469,
     "title": "The 18 Types Of Women You Should Not Marry",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3",
@@ -3989,7 +3957,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 474,
+    "id": 470,
     "title": "The 20 Types Of Men You Should Not Marry",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3",
@@ -3997,7 +3965,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 475,
+    "id": 471,
     "title": "the Fiqh of Divorce",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/the Fiqh of Divorce.mp3",
@@ -4005,7 +3973,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 476,
+    "id": 472,
     "title": "The Fiqh of Menses",
     "sub": "Marriage & Family",
     "archive": "The Fiqh of Menses.mp3",
@@ -4013,7 +3981,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 477,
+    "id": 473,
     "title": "Daughters Are Diamonds (06.30.11)",
     "sub": "Marriage & Family",
     "archive": "Daughters Are Diamonds (06.30.11).mp3",
@@ -4021,7 +3989,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 478,
+    "id": 474,
     "title": "LOVE",
     "sub": "Marriage & Family",
     "archive": "LOVE - Abdallah Al Faisal.mp3",
@@ -4030,7 +3998,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 479,
+    "id": 475,
     "title": "MARITAL DISCORD (NUSHOOZ)",
     "sub": "Marriage & Family",
     "archive": "MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal.mp3",
@@ -4038,7 +4006,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 480,
+    "id": 476,
     "title": "Money Can't Buy True Love (07.02.11)",
     "sub": "Marriage & Family",
     "archive": "Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal.mp3",
@@ -4046,7 +4014,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 481,
+    "id": 477,
     "title": "Muslim Home (12.21.11 to 12.22.11)",
     "sub": "Marriage & Family",
     "archive": "Muslim Home (12.21.11 to 12.22.11).mp3",
@@ -4055,7 +4023,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 482,
+    "id": 478,
     "title": "MUSLIM MARRYING NON MUSLIM",
     "sub": "Marriage & Family",
     "archive": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.mp3",
@@ -4064,7 +4032,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 483,
+    "id": 479,
     "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE",
     "sub": "Marriage & Family",
     "archive": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.mp3",
@@ -4073,7 +4041,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 484,
+    "id": 480,
     "title": "TAINTED LOVE",
     "sub": "Marriage & Family",
     "archive": "TAINTED LOVE - Abdallah Al Faisal.mp3",
@@ -4081,7 +4049,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 485,
+    "id": 481,
     "title": "tainted love 2013.04.20 (evening)",
     "sub": "Marriage & Family",
     "archive": "tainted love 2013.04.20 (evening).mp3",
@@ -4089,7 +4057,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 486,
+    "id": 482,
     "title": "The Muslim Home",
     "sub": "Marriage & Family",
     "archive": "Sheikh Abdullah Faisal - The Muslim Home.mp3",
@@ -4097,7 +4065,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 487,
+    "id": 483,
     "title": "The Muslim Home (dars)",
     "sub": "Marriage & Family",
     "archive": "The Muslim Home (dars).mp3",
@@ -4105,7 +4073,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 488,
+    "id": 484,
     "title": "WIVES & CHILDREN",
     "sub": "Marriage & Family",
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3",
@@ -4114,7 +4082,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 489,
+    "id": 485,
     "title": "WOMEN IN ISLAM",
     "sub": "Marriage & Family",
     "archive": "WOMEN IN ISLAM - Abdallah Al Faisal.mp3",
@@ -4122,7 +4090,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 490,
+    "id": 486,
     "title": "18 Merits of Ramadan [Revisited] (07.31.11)",
     "sub": "Ramadan",
     "archive": "Ramadan/18 Merits of Ramadan [Revisited] (07.31.11).mp3",
@@ -4130,7 +4098,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 491,
+    "id": 487,
     "title": "LAYLATUL QADR",
     "sub": "Ramadan",
     "archive": "Ramadan/LAYLATUL QADR - Abdallah Al Faisal.mp3",
@@ -4138,7 +4106,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 492,
+    "id": 488,
     "title": "RAMADAN OUR BLESSED GUEST",
     "sub": "Ramadan",
     "archive": "Ramadan/RAMADAN OUR BLESSED GUEST - Abdallah Al Faisal.mp3",
@@ -4146,7 +4114,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 493,
+    "id": 489,
     "title": "Ramadhan - The Month of Glory (07.30.11)",
     "sub": "Ramadan",
     "archive": "Ramadan/Ramadhan - The Month of Glory (07.30.11).mp3",
@@ -4154,7 +4122,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 494,
+    "id": 490,
     "title": "VIRTUES OF RAMADAN",
     "sub": "Ramadan",
     "archive": "Ramadan/VIRTUES OF RAMADAN - Abdallah Al Faisal.mp3",
@@ -4162,7 +4130,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 495,
+    "id": 491,
     "title": "DISEASES OF THE HEART",
     "sub": "Diseases of the Heart",
     "archive": "Diseases_of_the_Heart/DISEASES OF THE HEART - Shaykh Faisal.mp3",
@@ -4171,7 +4139,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 496,
+    "id": 492,
     "title": "Diseases of the Heart (12.26.11 to 12.29.11)",
     "sub": "Diseases of the Heart",
     "archive": "Diseases_of_the_Heart/Diseases of the Heart (12.26.11 to 12.29.11).mp3",
@@ -4180,7 +4148,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 497,
+    "id": 493,
     "title": "Diseases of the Heart [Lust]",
     "sub": "Diseases of the Heart",
     "archive": "Diseases_of_the_Heart/Diseases of the Heart [Lust]- Shaikh Faisal 2.12.2011 PT Dars.mp3",
@@ -4188,7 +4156,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 498,
+    "id": 494,
     "title": "Radio Show - Diseases of the Heart (10.29.11)",
     "sub": "Diseases of the Heart",
     "archive": "Diseases_of_the_Heart/Radio Show - Diseases of the Heart (10.29.11).mp3",
@@ -4197,7 +4165,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 499,
+    "id": 495,
     "title": "Reality of Sincerity (12.07.11)",
     "sub": "Diseases of the Heart",
     "archive": "Reality of Sincerity (12.07.11).mp3",
@@ -4206,7 +4174,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 500,
+    "id": 496,
     "title": "Road to Sincerity (07.17.11)",
     "sub": "Diseases of the Heart",
     "archive": "Road to Sincerity (07.17.11).mp3",
@@ -4214,7 +4182,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 501,
+    "id": 497,
     "title": "Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12)",
     "sub": "Personality Disorders",
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12).mp3",
@@ -4223,7 +4191,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 502,
+    "id": 498,
     "title": "Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12)",
     "sub": "Personality Disorders",
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12).mp3",
@@ -4232,7 +4200,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 503,
+    "id": 499,
     "title": "Personality Disorders [Part 3] Narcissistic (05.06.12)",
     "sub": "Personality Disorders",
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 3] Narcissistic (05.06.12).mp3",
@@ -4241,7 +4209,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 504,
+    "id": 500,
     "title": "Personality Disorders [Part 4] PTSD (05.07.12)",
     "sub": "Personality Disorders",
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 4] PTSD (05.07.12).mp3",
@@ -4250,7 +4218,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 505,
+    "id": 501,
     "title": "Personality Disorders [Part 5] Anti-Social (05.08.12)",
     "sub": "Personality Disorders",
     "archive": "Personality Disorders (Series)/Personality Disorders [Part 5] Anti-Social (05.08.12).mp3",
@@ -4259,7 +4227,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 506,
+    "id": 502,
     "title": "Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11)",
     "sub": "Who Are You?",
     "archive": "Who Are You?/Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11).mp3",
@@ -4267,7 +4235,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 507,
+    "id": 503,
     "title": "Who Are You – Part 1",
     "sub": "Who Are You?",
     "archive": "Who Are You?/Who Are You – Part 1.mp3",
@@ -4275,7 +4243,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 508,
+    "id": 504,
     "title": "Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11)",
     "sub": "Who Are You?",
     "archive": "Who Are You?/Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11).mp3",
@@ -4283,7 +4251,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 509,
+    "id": 505,
     "title": "Who Are You – Part 2",
     "sub": "Who Are You?",
     "archive": "Who Are You?/Who Are You – Part 2.mp3",
@@ -4291,7 +4259,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 510,
+    "id": 506,
     "title": "Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11)",
     "sub": "Who Are You?",
     "archive": "Who Are You?/Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11).mp3",
@@ -4299,7 +4267,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 511,
+    "id": 507,
     "title": "Who are You2",
     "sub": "Who Are You?",
     "archive": "Who Are You?/Who are You2.mp3",
@@ -4307,7 +4275,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 512,
+    "id": 508,
     "title": "Radio Show - Allah's Blessings to Mankind (08.20.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - Allah's Blessings to Mankind (08.20.11).mp3",
@@ -4316,7 +4284,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 513,
+    "id": 509,
     "title": "Radio Show - Challenges Facing the Youth Globally (08.06.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - Challenges Facing the Youth Globally (08.06.11).mp3",
@@ -4324,7 +4292,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 514,
+    "id": 510,
     "title": "Radio Show - God In Islam (11.19.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - God In Islam (11.19.11).mp3",
@@ -4333,7 +4301,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 515,
+    "id": 511,
     "title": "Radio Show - Judgment Day (11.26.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - Judgment Day (11.26.11).mp3",
@@ -4342,7 +4310,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 516,
+    "id": 512,
     "title": "Radio Show - Manhood (10.22.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - Manhood (10.22.11).mp3",
@@ -4351,7 +4319,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 517,
+    "id": 513,
     "title": "Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11).mp3",
@@ -4360,7 +4328,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 518,
+    "id": 514,
     "title": "Radio Show - Natural Instincts (07.30.11)",
     "sub": "Radio Show",
     "archive": "Radio_Show/Radio Show - Natural Instincts (07.30.11).mp3",
@@ -4368,7 +4336,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 519,
+    "id": 515,
     "title": "Balanced Nation (12.19.11)",
     "sub": "Character & Dawah",
     "archive": "Balanced Nation (12.19.11).mp3",
@@ -4377,7 +4345,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 520,
+    "id": 516,
     "title": "Etiquettes Of Dawah",
     "sub": "Character & Dawah",
     "archive": "Etiquettes Of Dawah.mp3",
@@ -4385,7 +4353,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 521,
+    "id": 517,
     "title": "Foundations of the Islamic Brotherhood And Sisterhood",
     "sub": "Character & Dawah",
     "archive": "Foundations of the Islamic Brotherhood And Sisterhood.mp3",
@@ -4393,7 +4361,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 522,
+    "id": 518,
     "title": "Get Your Priorities Right (08.23.11)",
     "sub": "Character & Dawah",
     "archive": "Get Your Priorities Right (08.23.11).mp3",
@@ -4401,7 +4369,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 523,
+    "id": 519,
     "title": "How to be Sincere to Allah (08.04.11 to 08.07.11)",
     "sub": "Character & Dawah",
     "archive": "How to be Sincere to Allah (08.04.11 to 08.07.11).mp3",
@@ -4410,7 +4378,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 524,
+    "id": 520,
     "title": "How to be Sincere to the Holy Qur'an (08.09.11)",
     "sub": "Character & Dawah",
     "archive": "How to be Sincere to the Holy Qur'an (08.09.11).mp3",
@@ -4418,7 +4386,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 525,
+    "id": 521,
     "title": "How to be Sincere to the Leaders (12.06.11)",
     "sub": "Character & Dawah",
     "archive": "How to be Sincere to the Leaders (12.06.11).mp3",
@@ -4427,7 +4395,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 526,
+    "id": 522,
     "title": "How to be Sincere to the Rasool (SAW) (08.08.11)",
     "sub": "Character & Dawah",
     "archive": "How to be Sincere to the Rasool (SAW) (08.08.11).mp3",
@@ -4435,7 +4403,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 527,
+    "id": 523,
     "title": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11)",
     "sub": "Character & Dawah",
     "archive": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11).mp3",
@@ -4443,7 +4411,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 528,
+    "id": 524,
     "title": "Islamic Etiquettes (11.26.11)",
     "sub": "Character & Dawah",
     "archive": "Islamic Etiquettes (11.26.11).mp3",
@@ -4452,7 +4420,15 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 529,
+    "id": 525,
+    "title": "KNOWLEDGE",
+    "sub": "Character & Dawah",
+    "archive": "KNOWLEDGE - Abdallah Al Faisal.mp3",
+    "href": "audio.html?archive=KNOWLEDGE%20-%20Abdallah%20Al%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 526,
     "title": "Manhood in Islam",
     "sub": "Character & Dawah",
     "archive": "Manhood in Islam.mp3",
@@ -4460,7 +4436,7 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 530,
+    "id": 527,
     "title": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12",
     "sub": "Character & Dawah",
     "archive": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12.mp3",
@@ -4469,11 +4445,35 @@ const SEARCH_INDEX = [
   },
   {
     "type": "audio",
-    "id": 531,
+    "id": 528,
+    "title": "ROLE OF THE MASJID",
+    "sub": "Character & Dawah",
+    "archive": "ROLE OF THE MASJID - Shaykh Faisal.mp3",
+    "href": "audio.html?archive=ROLE%20OF%20THE%20MASJID%20-%20Shaykh%20Faisal.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 529,
+    "title": "The 5 Needs of Mankind2",
+    "sub": "Character & Dawah",
+    "archive": "The 5 Needs of Mankind2.mp3",
+    "href": "audio.html?archive=The%205%20Needs%20of%20Mankind2.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 530,
     "title": "The Etiquettes of Asking Questions",
     "sub": "Character & Dawah",
     "archive": "The Etiquettes of Asking Questions.mp3",
     "href": "audio.html?archive=The%20Etiquettes%20of%20Asking%20Questions.mp3"
+  },
+  {
+    "type": "audio",
+    "id": 531,
+    "title": "The Importance of Intention",
+    "sub": "Character & Dawah",
+    "archive": "The Importance of Intention.mp3",
+    "href": "audio.html?archive=The%20Importance%20of%20Intention.mp3"
   },
   {
     "type": "video",

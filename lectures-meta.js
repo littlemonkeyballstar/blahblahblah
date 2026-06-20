@@ -85,12 +85,6 @@ const LECTURE_CATEGORIES = [
     "subcategories": []
   },
   {
-    "id": "Islamic_Knowledge",
-    "label": "Islamic Knowledge",
-    "count": 2,
-    "subcategories": []
-  },
-  {
     "id": "Ummah_Affairs",
     "label": "Ummah & Contemporary Issues",
     "count": 32,
@@ -99,13 +93,13 @@ const LECTURE_CATEGORIES = [
   {
     "id": "General",
     "label": "General Lectures",
-    "count": 69,
+    "count": 63,
     "subcategories": []
   },
   {
     "id": "Fiqh_Worship",
     "label": "Fiqh & Worship",
-    "count": 25,
+    "count": 29,
     "subcategories": []
   },
   {
@@ -257,7 +251,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "Character_Dawah",
     "label": "Character & Dawah",
-    "count": 13,
+    "count": 17,
     "subcategories": []
   }
 ];
@@ -274,7 +268,7 @@ const FEATURED_LECTURES = [
     "archive": "ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.mp3"
   },
   {
-    "id": 441,
+    "id": 437,
     "thumb": "thumb/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.jpg",
     "archive": "Wicked_Scholars/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.mp3"
   },
@@ -284,7 +278,7 @@ const FEATURED_LECTURES = [
     "archive": "BOY AND THE KING - Shaykh Faisal.mp3"
   },
   {
-    "id": 363,
+    "id": 359,
     "thumb": "thumb/DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.jpg",
     "archive": "DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.mp3"
   },
@@ -299,12 +293,12 @@ const FEATURED_LECTURES = [
     "archive": "DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 384,
+    "id": 380,
     "thumb": "thumb/DEMOCRATES - Those Who Participate In Democratic Election.png",
     "archive": "DEMOCRATES - Those Who Participate In Democratic Election.mp3"
   },
   {
-    "id": 495,
+    "id": 491,
     "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png",
     "archive": "Diseases_of_the_Heart/DISEASES OF THE HEART - Shaykh Faisal.mp3"
   },
@@ -314,22 +308,22 @@ const FEATURED_LECTURES = [
     "archive": "DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.mp3"
   },
   {
-    "id": 399,
+    "id": 395,
     "thumb": "thumb/DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.png",
     "archive": "DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.mp3"
   },
   {
-    "id": 400,
+    "id": 396,
     "thumb": "thumb/DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.jpg",
     "archive": "DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 394,
+    "id": 390,
     "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal.png",
     "archive": "Entering the Lizard Hole.mp3"
   },
   {
-    "id": 443,
+    "id": 439,
     "thumb": "thumb/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.jpg",
     "archive": "Wicked_Scholars/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.mp3"
   },
@@ -354,12 +348,12 @@ const FEATURED_LECTURES = [
     "archive": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 395,
+    "id": 391,
     "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal.png",
     "archive": "GAY LESBIAN LGBT - Shaykh Faisal.mp3"
   },
   {
-    "id": 401,
+    "id": 397,
     "thumb": "thumb/IFK  SLANDER OF AYSHA - Shaykh Faisal.jpg",
     "archive": "IFK  SLANDER OF AYSHA - Shaykh Faisal.mp3"
   },
@@ -369,42 +363,42 @@ const FEATURED_LECTURES = [
     "archive": "IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.mp3"
   },
   {
-    "id": 364,
+    "id": 360,
     "thumb": "thumb/IMPORTANCE OF HIJRAH - Abdallah Al Faisal.jpg",
     "archive": "IMPORTANCE OF HIJRAH - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 402,
+    "id": 398,
     "thumb": "thumb/INSULTING THE PROPHET ABDALLAH AL FAISAL.jpg",
     "archive": "INSULTING THE PROPHET ﷺ  - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 251,
+    "id": 249,
     "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg",
     "archive": "ISLAM UNDER SIEGE - Shaykh Faisal.mp3"
   },
   {
-    "id": 365,
+    "id": 361,
     "thumb": "thumb/JIHAD AIMS & OBJECTIVES - Abdallah Al Faisal.jpg",
     "archive": "Jihad/JIHAD AIMS & OBJECTIVES - Shaykh Faisal.mp3"
   },
   {
-    "id": 396,
+    "id": 392,
     "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg",
     "archive": "KASHF USH SHUBUHAAT - Shaykh Faisal.mp3"
   },
   {
-    "id": 389,
+    "id": 385,
     "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.png",
     "archive": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.mp3"
   },
   {
-    "id": 372,
+    "id": 368,
     "thumb": "thumb/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.jpg",
     "archive": "Khilafah/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.mp3"
   },
   {
-    "id": 373,
+    "id": 369,
     "thumb": "thumb/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.jpg",
     "archive": "Khilafah/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.mp3"
   },
@@ -414,27 +408,27 @@ const FEATURED_LECTURES = [
     "archive": "KUFR DOONA KUFR - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 382,
+    "id": 378,
     "thumb": "thumb/MADKHALIS - Shaykh Faisal.png",
     "archive": "MADKHALIS - Shaykh Faisal.mp3"
   },
   {
-    "id": 374,
+    "id": 370,
     "thumb": "thumb/MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.jpg",
     "archive": "MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.mp3"
   },
   {
-    "id": 385,
+    "id": 381,
     "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.jpg",
     "archive": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 385,
+    "id": 381,
     "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.png",
     "archive": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 397,
+    "id": 393,
     "thumb": "thumb/MURJIA - Shaykh Faisal.jpg",
     "archive": "MURJIA - Shaykh Faisal.mp3"
   },
@@ -449,17 +443,17 @@ const FEATURED_LECTURES = [
     "archive": "MUSA AND QAROON - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 482,
+    "id": 478,
     "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png",
     "archive": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.mp3"
   },
   {
-    "id": 258,
+    "id": 256,
     "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png",
     "archive": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 386,
+    "id": 382,
     "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg",
     "archive": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.mp3"
   },
@@ -474,17 +468,17 @@ const FEATURED_LECTURES = [
     "archive": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 391,
+    "id": 387,
     "thumb": "thumb/NO PEACE WITH JEWS.jpg",
     "archive": "NO PEACE WITH THE JEWS - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 376,
+    "id": 372,
     "thumb": "thumb/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.jpg",
     "archive": "Khilafah/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 483,
+    "id": 479,
     "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg",
     "archive": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.mp3"
   },
@@ -499,32 +493,32 @@ const FEATURED_LECTURES = [
     "archive": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 392,
+    "id": 388,
     "thumb": "thumb/REALITY OF THE JEWS - Abdallah Al Faisal.jpg",
     "archive": "REALITY OF THE JEWS - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 366,
+    "id": 362,
     "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.jpg",
     "archive": "Jihad/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 366,
+    "id": 362,
     "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.png",
     "archive": "Jihad/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 367,
+    "id": 363,
     "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png",
     "archive": "Jihad/SALAFI JIHADI - Shaykh Faisal.mp3"
   },
   {
-    "id": 383,
+    "id": 379,
     "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal.jpg",
     "archive": "SAUDI SALAFI - Shaykh Faisal.mp3"
   },
   {
-    "id": 387,
+    "id": 383,
     "thumb": "thumb/SECULARISM - Shaykh Abdallah Al Faisal.png",
     "archive": "SECULARISM - Shaykh Abdallah Al Faisal.mp3"
   },
@@ -534,17 +528,17 @@ const FEATURED_LECTURES = [
     "archive": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 388,
+    "id": 384,
     "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png",
     "archive": "SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 379,
+    "id": 375,
     "thumb": "thumb/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.jpg",
     "archive": "Shia/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.mp3"
   },
   {
-    "id": 380,
+    "id": 376,
     "thumb": "thumb/SHIA KNOW YOUR ENEMY - Shaykh Faisal.jpg",
     "archive": "Shia/SHIA KNOW YOUR ENEMY - Shaykh Faisal.mp3"
   },
@@ -554,17 +548,17 @@ const FEATURED_LECTURES = [
     "archive": "SIGNS OF HYPOCRITES - Shaykh Faisal.mp3"
   },
   {
-    "id": 390,
+    "id": 386,
     "thumb": "thumb/The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.jpg",
     "archive": "the Barking dogs of jahannam.mp3"
   },
   {
-    "id": 412,
+    "id": 408,
     "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg",
     "archive": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 413,
+    "id": 409,
     "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg",
     "archive": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.mp3"
   },
@@ -574,7 +568,7 @@ const FEATURED_LECTURES = [
     "archive": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 362,
+    "id": 358,
     "thumb": "thumb/VIRTUES OF MAKKAH - Shaykh Faisal.jpg",
     "archive": "VIRTUES OF MAKKAH - Shaykh Faisal.mp3"
   },
@@ -584,12 +578,12 @@ const FEATURED_LECTURES = [
     "archive": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 447,
+    "id": 443,
     "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg",
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3"
   },
   {
-    "id": 488,
+    "id": 484,
     "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png",
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3"
   }
@@ -831,8 +825,8 @@ const LECTURE_ID_INDEX = {
   "232": "Aqeedah",
   "233": "Aqeedah",
   "234": "Aqeedah",
-  "235": "Islamic_Knowledge",
-  "236": "Islamic_Knowledge",
+  "235": "Ummah_Affairs",
+  "236": "Ummah_Affairs",
   "237": "Ummah_Affairs",
   "238": "Ummah_Affairs",
   "239": "Ummah_Affairs",
@@ -863,8 +857,8 @@ const LECTURE_ID_INDEX = {
   "264": "Ummah_Affairs",
   "265": "Ummah_Affairs",
   "266": "Ummah_Affairs",
-  "267": "Ummah_Affairs",
-  "268": "Ummah_Affairs",
+  "267": "General",
+  "268": "General",
   "269": "General",
   "270": "General",
   "271": "General",
@@ -926,14 +920,14 @@ const LECTURE_ID_INDEX = {
   "327": "General",
   "328": "General",
   "329": "General",
-  "330": "General",
-  "331": "General",
-  "332": "General",
-  "333": "General",
-  "334": "General",
-  "335": "General",
-  "336": "General",
-  "337": "General",
+  "330": "Fiqh_Worship",
+  "331": "Fiqh_Worship",
+  "332": "Fiqh_Worship",
+  "333": "Fiqh_Worship",
+  "334": "Fiqh_Worship",
+  "335": "Fiqh_Worship",
+  "336": "Fiqh_Worship",
+  "337": "Fiqh_Worship",
   "338": "Fiqh_Worship",
   "339": "Fiqh_Worship",
   "340": "Fiqh_Worship",
@@ -955,15 +949,15 @@ const LECTURE_ID_INDEX = {
   "356": "Fiqh_Worship",
   "357": "Fiqh_Worship",
   "358": "Fiqh_Worship",
-  "359": "Fiqh_Worship",
-  "360": "Fiqh_Worship",
-  "361": "Fiqh_Worship",
-  "362": "Fiqh_Worship",
+  "359": "Jihad",
+  "360": "Jihad",
+  "361": "Jihad",
+  "362": "Jihad",
   "363": "Jihad",
-  "364": "Jihad",
-  "365": "Jihad",
-  "366": "Jihad",
-  "367": "Jihad",
+  "364": "Khilafah",
+  "365": "Khilafah",
+  "366": "Khilafah",
+  "367": "Khilafah",
   "368": "Khilafah",
   "369": "Khilafah",
   "370": "Khilafah",
@@ -971,10 +965,10 @@ const LECTURE_ID_INDEX = {
   "372": "Khilafah",
   "373": "Khilafah",
   "374": "Khilafah",
-  "375": "Khilafah",
-  "376": "Khilafah",
-  "377": "Khilafah",
-  "378": "Khilafah",
+  "375": "Refutation",
+  "376": "Refutation",
+  "377": "Refutation",
+  "378": "Refutation",
   "379": "Refutation",
   "380": "Refutation",
   "381": "Refutation",
@@ -1008,10 +1002,10 @@ const LECTURE_ID_INDEX = {
   "409": "Refutation",
   "410": "Refutation",
   "411": "Refutation",
-  "412": "Refutation",
-  "413": "Refutation",
-  "414": "Refutation",
-  "415": "Refutation",
+  "412": "Jokers in the pack",
+  "413": "Jokers in the pack",
+  "414": "Jokers in the pack",
+  "415": "Jokers in the pack",
   "416": "Jokers in the pack",
   "417": "Jokers in the pack",
   "418": "Jokers in the pack",
@@ -1020,30 +1014,30 @@ const LECTURE_ID_INDEX = {
   "421": "Jokers in the pack",
   "422": "Jokers in the pack",
   "423": "Jokers in the pack",
-  "424": "Jokers in the pack",
-  "425": "Jokers in the pack",
-  "426": "Jokers in the pack",
-  "427": "Jokers in the pack",
+  "424": "The 5 Desperate Zindeeq",
+  "425": "The 5 Desperate Zindeeq",
+  "426": "The 5 Desperate Zindeeq",
+  "427": "The 5 Desperate Zindeeq",
   "428": "The 5 Desperate Zindeeq",
-  "429": "The 5 Desperate Zindeeq",
-  "430": "The 5 Desperate Zindeeq",
-  "431": "The 5 Desperate Zindeeq",
-  "432": "The 5 Desperate Zindeeq",
+  "429": "The Devils Deception",
+  "430": "The Devils Deception",
+  "431": "The Devils Deception",
+  "432": "The Devils Deception",
   "433": "The Devils Deception",
   "434": "The Devils Deception",
   "435": "The Devils Deception",
-  "436": "The Devils Deception",
-  "437": "The Devils Deception",
-  "438": "The Devils Deception",
-  "439": "The Devils Deception",
+  "436": "Wicked_Scholars",
+  "437": "Wicked_Scholars",
+  "438": "Wicked_Scholars",
+  "439": "Wicked_Scholars",
   "440": "Wicked_Scholars",
   "441": "Wicked_Scholars",
   "442": "Wicked_Scholars",
   "443": "Wicked_Scholars",
-  "444": "Wicked_Scholars",
-  "445": "Wicked_Scholars",
-  "446": "Wicked_Scholars",
-  "447": "Wicked_Scholars",
+  "444": "Science in the quran",
+  "445": "Science in the quran",
+  "446": "Science in the quran",
+  "447": "Science in the quran",
   "448": "Science in the quran",
   "449": "Science in the quran",
   "450": "Science in the quran",
@@ -1059,10 +1053,10 @@ const LECTURE_ID_INDEX = {
   "460": "Science in the quran",
   "461": "Science in the quran",
   "462": "Science in the quran",
-  "463": "Science in the quran",
-  "464": "Science in the quran",
-  "465": "Science in the quran",
-  "466": "Science in the quran",
+  "463": "Nikah_Divorce",
+  "464": "Nikah_Divorce",
+  "465": "Nikah_Divorce",
+  "466": "Nikah_Divorce",
   "467": "Nikah_Divorce",
   "468": "Nikah_Divorce",
   "469": "Nikah_Divorce",
@@ -1082,39 +1076,39 @@ const LECTURE_ID_INDEX = {
   "483": "Nikah_Divorce",
   "484": "Nikah_Divorce",
   "485": "Nikah_Divorce",
-  "486": "Nikah_Divorce",
-  "487": "Nikah_Divorce",
-  "488": "Nikah_Divorce",
-  "489": "Nikah_Divorce",
+  "486": "Ramadan",
+  "487": "Ramadan",
+  "488": "Ramadan",
+  "489": "Ramadan",
   "490": "Ramadan",
-  "491": "Ramadan",
-  "492": "Ramadan",
-  "493": "Ramadan",
-  "494": "Ramadan",
+  "491": "Diseases_of_the_Heart",
+  "492": "Diseases_of_the_Heart",
+  "493": "Diseases_of_the_Heart",
+  "494": "Diseases_of_the_Heart",
   "495": "Diseases_of_the_Heart",
   "496": "Diseases_of_the_Heart",
-  "497": "Diseases_of_the_Heart",
-  "498": "Diseases_of_the_Heart",
-  "499": "Diseases_of_the_Heart",
-  "500": "Diseases_of_the_Heart",
+  "497": "Personality Disorders (Series)",
+  "498": "Personality Disorders (Series)",
+  "499": "Personality Disorders (Series)",
+  "500": "Personality Disorders (Series)",
   "501": "Personality Disorders (Series)",
-  "502": "Personality Disorders (Series)",
-  "503": "Personality Disorders (Series)",
-  "504": "Personality Disorders (Series)",
-  "505": "Personality Disorders (Series)",
+  "502": "Who Are You?",
+  "503": "Who Are You?",
+  "504": "Who Are You?",
+  "505": "Who Are You?",
   "506": "Who Are You?",
   "507": "Who Are You?",
-  "508": "Who Are You?",
-  "509": "Who Are You?",
-  "510": "Who Are You?",
-  "511": "Who Are You?",
+  "508": "Radio_Show",
+  "509": "Radio_Show",
+  "510": "Radio_Show",
+  "511": "Radio_Show",
   "512": "Radio_Show",
   "513": "Radio_Show",
   "514": "Radio_Show",
-  "515": "Radio_Show",
-  "516": "Radio_Show",
-  "517": "Radio_Show",
-  "518": "Radio_Show",
+  "515": "Character_Dawah",
+  "516": "Character_Dawah",
+  "517": "Character_Dawah",
+  "518": "Character_Dawah",
   "519": "Character_Dawah",
   "520": "Character_Dawah",
   "521": "Character_Dawah",
@@ -1135,7 +1129,6 @@ const LECTURE_CHUNK_URLS = {
   "The Sealed Nector (Series)": "data/lectures/the-sealed-nector-series.js?v=20260620",
   "Prophets_Seerah": "data/lectures/prophets-seerah.js?v=20260620",
   "Aqeedah": "data/lectures/aqeedah.js?v=20260620",
-  "Islamic_Knowledge": "data/lectures/islamic-knowledge.js?v=20260620",
   "Ummah_Affairs": "data/lectures/ummah-affairs.js?v=20260620",
   "General": "data/lectures/general.js?v=20260620",
   "Fiqh_Worship": "data/lectures/fiqh-worship.js?v=20260620",

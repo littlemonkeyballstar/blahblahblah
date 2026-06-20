@@ -84,12 +84,6 @@ const LECTURE_CATEGORIES = [
     "subcategories": []
   },
   {
-    "id": "Islamic_Knowledge",
-    "label": "Islamic Knowledge",
-    "count": 2,
-    "subcategories": []
-  },
-  {
     "id": "Ummah_Affairs",
     "label": "Ummah & Contemporary Issues",
     "count": 32,
@@ -98,13 +92,13 @@ const LECTURE_CATEGORIES = [
   {
     "id": "General",
     "label": "General Lectures",
-    "count": 69,
+    "count": 63,
     "subcategories": []
   },
   {
     "id": "Fiqh_Worship",
     "label": "Fiqh & Worship",
-    "count": 25,
+    "count": 29,
     "subcategories": []
   },
   {
@@ -256,7 +250,7 @@ const LECTURE_CATEGORIES = [
   {
     "id": "Character_Dawah",
     "label": "Character & Dawah",
-    "count": 13,
+    "count": 17,
     "subcategories": []
   }
 ];
@@ -2866,26 +2860,6 @@ const LECTURES = [
     "id": 234
   },
   {
-    "title": "IJTIHAAD MASLAHA",
-    "category": "Islamic_Knowledge",
-    "categoryLabel": "Islamic Knowledge",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "IJTIHAAD MASLAHA - Abdallah Al Faisal.mp3",
-    "thumb": null,
-    "id": 235
-  },
-  {
-    "title": "ROLE OF THE MASJID",
-    "category": "Islamic_Knowledge",
-    "categoryLabel": "Islamic Knowledge",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "ROLE OF THE MASJID - Shaykh Faisal.mp3",
-    "thumb": null,
-    "id": 236
-  },
-  {
     "title": "Dreams -Their Significance And Meanings – Part 1",
     "category": "Ummah_Affairs",
     "categoryLabel": "Ummah & Contemporary Issues",
@@ -2893,7 +2867,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Dreams  -Their Significance And Meanings – Part 1.mp3",
     "thumb": null,
-    "id": 237
+    "id": 235
   },
   {
     "title": "Challenges Facing the Muslim Ummah - Part 2",
@@ -2903,7 +2877,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Challenges Facing the Muslim Ummah - Part 2.mp3",
     "thumb": null,
-    "id": 238
+    "id": 236
   },
   {
     "title": "AT Conference — Every Ummah Needs A State",
@@ -2913,7 +2887,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Conference/AT Conference - Shaikh Abdullah Faisal - Every Ummah Needs A State.mp3",
     "thumb": null,
-    "id": 239
+    "id": 237
   },
   {
     "title": "AT Conference — Ideological Warfare",
@@ -2923,7 +2897,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Conference/AT Conference - Shaikh Abdullah Faisal - Ideological Warfare.mp3",
     "thumb": null,
-    "id": 240
+    "id": 238
   },
   {
     "title": "AT Conference — The Barking Dogs Of Jahannum",
@@ -2933,7 +2907,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Conference/AT Conference - Shaikh Abdillah Faisal - The Barking Dogs Of Jahannum.mp3",
     "thumb": null,
-    "id": 241
+    "id": 239
   },
   {
     "title": "Black Magic (06.29.11)",
@@ -2943,7 +2917,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Black Magic (06.29.11).mp3",
     "thumb": null,
-    "id": 242
+    "id": 240
   },
   {
     "title": "CANCERS IN THE BODY OF THE UMMAH",
@@ -2953,7 +2927,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "CANCERS IN THE BODY OF THE UMMAH - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 243
+    "id": 241
   },
   {
     "title": "Challenges Facing the Ummah",
@@ -2963,7 +2937,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Challenges Facing the Ummah.mp3",
     "thumb": null,
-    "id": 244
+    "id": 242
   },
   {
     "title": "Changing the Goalpost",
@@ -2973,7 +2947,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Changing the Goalpost.mp3",
     "thumb": null,
-    "id": 245
+    "id": 243
   },
   {
     "title": "Human Rights",
@@ -2983,7 +2957,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Human Rights.mp3",
     "thumb": null,
-    "id": 246
+    "id": 244
   },
   {
     "title": "Human Soul (10.06.11)",
@@ -2993,7 +2967,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Human Soul (10.06.11).mp3",
     "thumb": "thumb/extracted/b5590561372303.jpg",
-    "id": 247
+    "id": 245
   },
   {
     "title": "Ideological Warfare",
@@ -3003,7 +2977,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Ideological Warfare.mp3",
     "thumb": null,
-    "id": 248
+    "id": 246
   },
   {
     "title": "ISLAM AND THE WEST",
@@ -3013,7 +2987,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "ISLAM AND THE WEST - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 249
+    "id": 247
   },
   {
     "title": "ISLAM THE MOST HYGIENIC RELIGION",
@@ -3023,7 +2997,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "ISLAM THE MOST HYGIENIC RELIGION - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 250
+    "id": 248
   },
   {
     "title": "ISLAM UNDER SIEGE",
@@ -3033,7 +3007,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "ISLAM UNDER SIEGE - Shaykh Faisal.mp3",
     "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg",
-    "id": 251
+    "id": 249
   },
   {
     "title": "JUDGEMENT DAY",
@@ -3043,7 +3017,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "JUDGEMENT DAY - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 252
+    "id": 250
   },
   {
     "title": "Judgment Day (07.27.11)",
@@ -3053,7 +3027,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Judgment Day (07.27.11).mp3",
     "thumb": null,
-    "id": 253
+    "id": 251
   },
   {
     "title": "LEADERSHIP IN ISLAM",
@@ -3063,7 +3037,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "LEADERSHIP IN ISLAM.mp3",
     "thumb": null,
-    "id": 254
+    "id": 252
   },
   {
     "title": "Mad Dogs of the Middle East [REVISITED] (10.20.11)",
@@ -3073,7 +3047,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Mad Dogs of the Middle East [REVISITED] (10.20.11).mp3",
     "thumb": null,
-    "id": 255
+    "id": 253
   },
   {
     "title": "Magic (06.24.11)",
@@ -3083,7 +3057,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Magic (06.24.11).mp3",
     "thumb": null,
-    "id": 256
+    "id": 254
   },
   {
     "title": "Muslim Character",
@@ -3093,7 +3067,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Muslim Character.mp3",
     "thumb": null,
-    "id": 257
+    "id": 255
   },
   {
     "title": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL)",
@@ -3103,7 +3077,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.mp3",
     "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png",
-    "id": 258
+    "id": 256
   },
   {
     "title": "Natural Disasters - Why They Occur",
@@ -3113,7 +3087,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Natural Disasters - Why They Occur.mp3",
     "thumb": null,
-    "id": 259
+    "id": 257
   },
   {
     "title": "NATURAL DISASTERS, WHY DO THEY OCCUR",
@@ -3123,7 +3097,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "NATURAL DISASTERS, WHY DO THEY OCCUR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 260
+    "id": 258
   },
   {
     "title": "Natural Instincts",
@@ -3133,7 +3107,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Natural Instincts.mp3",
     "thumb": null,
-    "id": 261
+    "id": 259
   },
   {
     "title": "REALITY OF POVERTY",
@@ -3143,7 +3117,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "REALITY OF POVERTY - Abdallah Al Faisal.mp3",
     "thumb": "thumb/extracted/4e609eaf7de4d7.jpg",
-    "id": 262
+    "id": 260
   },
   {
     "title": "SIGNS BEFORE JUDGEMENT DAY",
@@ -3153,7 +3127,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "SIGNS BEFORE JUDGEMENT DAY - Shaykh Faisal.mp3",
     "thumb": null,
-    "id": 263
+    "id": 261
   },
   {
     "title": "Signs Before The Day of Judgement",
@@ -3163,7 +3137,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Signs Before The Day of Judgement.mp3",
     "thumb": null,
-    "id": 264
+    "id": 262
   },
   {
     "title": "Tawba",
@@ -3173,7 +3147,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Tawba.mp3",
     "thumb": null,
-    "id": 265
+    "id": 263
   },
   {
     "title": "The Jinn",
@@ -3183,7 +3157,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - The Jinn.mp3",
     "thumb": null,
-    "id": 266
+    "id": 264
   },
   {
     "title": "Unity The Way Forward",
@@ -3193,7 +3167,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Unity The Way Forward.mp3",
     "thumb": null,
-    "id": 267
+    "id": 265
   },
   {
     "title": "Unity The Way Forward copy",
@@ -3203,7 +3177,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Unity The Way Forward copy.mp3",
     "thumb": null,
-    "id": 268
+    "id": 266
   },
   {
     "title": "Weakness of Mankind [Part 1] (06.25.11)",
@@ -3215,7 +3189,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "Weakness of Mankind",
-    "id": 269
+    "id": 267
   },
   {
     "title": "Weakness of Mankind [Part 2] (06.26.11)",
@@ -3227,7 +3201,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Weakness of Mankind",
-    "id": 270
+    "id": 268
   },
   {
     "title": "Weakness of Mankind [Part 3] (06.27.11)",
@@ -3239,7 +3213,7 @@ const LECTURES = [
     "thumb": null,
     "part": 3,
     "series": "Weakness of Mankind",
-    "id": 271
+    "id": 269
   },
   {
     "title": "20 Laws of Nature",
@@ -3249,7 +3223,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "20 Laws of Nature.mp3",
     "thumb": null,
-    "id": 272
+    "id": 270
   },
   {
     "title": "25 promises of Allah (swt) to the believer",
@@ -3259,7 +3233,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "25 promises of Allah (swt) to the believer.mp3",
     "thumb": null,
-    "id": 273
+    "id": 271
   },
   {
     "title": "4 Crucial Tests from Allah (06.27.11)",
@@ -3269,7 +3243,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "4 Crucial Tests from Allah (06.27.11).mp3",
     "thumb": null,
-    "id": 274
+    "id": 272
   },
   {
     "title": "6 Gifts from Allah to Muhammad (SAW) (06.29.11)",
@@ -3279,7 +3253,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "6 Gifts from Allah to Muhammad (SAW) (06.29.11).mp3",
     "thumb": null,
-    "id": 275
+    "id": 273
   },
   {
     "title": "6 Special Favors of Allah to Muhammad [SAW] (12.20.11)",
@@ -3289,7 +3263,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "6 Special Favors of Allah to Muhammad [SAW] (12.20.11).mp3",
     "thumb": "thumb/extracted/bdca466316cd4b.jpg",
-    "id": 276
+    "id": 274
   },
   {
     "title": "7 Worst Sins (07.11.11)",
@@ -3299,7 +3273,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "7 Worst Sins (07.11.11).mp3",
     "thumb": null,
-    "id": 277
+    "id": 275
   },
   {
     "title": "9 Reasons They Hate Us",
@@ -3309,7 +3283,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "9 Reasons They Hate Us.mp3",
     "thumb": null,
-    "id": 278
+    "id": 276
   },
   {
     "title": "Abrogated Evidences (06.29.11)",
@@ -3319,7 +3293,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Abrogated Evidences (06.29.11).mp3",
     "thumb": null,
-    "id": 279
+    "id": 277
   },
   {
     "title": "Allah Blesses Whom He Wills (06.28.11)",
@@ -3329,7 +3303,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Allah Blesses Whom He Wills (06.28.11).mp3",
     "thumb": null,
-    "id": 280
+    "id": 278
   },
   {
     "title": "Allah is Sufficient to Take Revenge Against Them (08.24.11)",
@@ -3339,7 +3313,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Allah is Sufficient to Take Revenge Against Them (08.24.11).mp3",
     "thumb": null,
-    "id": 281
+    "id": 279
   },
   {
     "title": "Allah's Sunnah Will Never Change (11.15.11 to 11.16.11)",
@@ -3349,7 +3323,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Allah's Sunnah Will Never Change (11.15.11 to 11.16.11).mp3",
     "thumb": "thumb/extracted/e15c7f8eb0f20c.jpg",
-    "id": 282
+    "id": 280
   },
   {
     "title": "Be And It Is (07.12.11)",
@@ -3359,7 +3333,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Be And It Is (07.12.11).mp3",
     "thumb": null,
-    "id": 283
+    "id": 281
   },
   {
     "title": "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11)",
@@ -3369,7 +3343,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11).mp3",
     "thumb": null,
-    "id": 284
+    "id": 282
   },
   {
     "title": "Don't Envy the Kuffaar for their Jahiliyya (07.26.11)",
@@ -3379,17 +3353,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Don't Envy the Kuffaar for their Jahiliyya (07.26.11).mp3",
     "thumb": null,
-    "id": 285
-  },
-  {
-    "title": "Dua - The weapon of a believer",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "Dua - The weapon of a believer.mp3",
-    "thumb": null,
-    "id": 286
+    "id": 283
   },
   {
     "title": "Exposing Those Who Insult Allah (07.10.11)",
@@ -3399,7 +3363,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Exposing Those Who Insult Allah (07.10.11).mp3",
     "thumb": null,
-    "id": 287
+    "id": 284
   },
   {
     "title": "Islam was Revealed in Stages (08.28.11)",
@@ -3409,7 +3373,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Islam was Revealed in Stages (08.28.11).mp3",
     "thumb": null,
-    "id": 288
+    "id": 285
   },
   {
     "title": "Jahiliyya Gives Everyone a Raw Deal (07.24.11)",
@@ -3419,17 +3383,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jahiliyya Gives Everyone a Raw Deal (07.24.11).mp3",
     "thumb": null,
-    "id": 289
-  },
-  {
-    "title": "KNOWLEDGE",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "KNOWLEDGE - Abdallah Al Faisal.mp3",
-    "thumb": null,
-    "id": 290
+    "id": 286
   },
   {
     "title": "Kufaar and the Fear Factor (07.03.11)",
@@ -3439,7 +3393,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Kufaar and the Fear Factor (07.03.11).mp3",
     "thumb": null,
-    "id": 291
+    "id": 287
   },
   {
     "title": "Love and Hate for Allah's Sake",
@@ -3449,7 +3403,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Love and Hate for Allah's Sake.mp3",
     "thumb": null,
-    "id": 292
+    "id": 288
   },
   {
     "title": "Might Without Wisdom is a Recipe for Disaster (07.27.11)",
@@ -3459,7 +3413,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Might Without Wisdom is a Recipe for Disaster (07.27.11).mp3",
     "thumb": null,
-    "id": 293
+    "id": 289
   },
   {
     "title": "Our 6 Sacred Possessions",
@@ -3469,7 +3423,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Our 6 Sacred Possessions.mp3",
     "thumb": null,
-    "id": 294
+    "id": 290
   },
   {
     "title": "Paradise is Exclusive to the Muslims (07.04.11)",
@@ -3479,7 +3433,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Paradise is Exclusive to the Muslims (07.04.11).mp3",
     "thumb": null,
-    "id": 295
+    "id": 291
   },
   {
     "title": "Power of Intercession (07.18.11)",
@@ -3489,7 +3443,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Power of Intercession (07.18.11).mp3",
     "thumb": null,
-    "id": 296
+    "id": 292
   },
   {
     "title": "Reality of FGM (08.25.11)",
@@ -3499,7 +3453,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Reality of FGM (08.25.11).mp3",
     "thumb": null,
-    "id": 297
+    "id": 293
   },
   {
     "title": "Reality of Poverty (02.27.12)",
@@ -3509,7 +3463,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Reality of Poverty (02.27.12).mp3",
     "thumb": "thumb/extracted/290cda89069668.jpg",
-    "id": 298
+    "id": 294
   },
   {
     "title": "Resist To Exist (07.07.11)",
@@ -3519,7 +3473,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Resist To Exist (07.07.11).mp3",
     "thumb": null,
-    "id": 299
+    "id": 295
   },
   {
     "title": "Satan's Web (dars)",
@@ -3529,7 +3483,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Satan's Web (dars).mp3",
     "thumb": null,
-    "id": 300
+    "id": 296
   },
   {
     "title": "Satans Web (12.17.11)",
@@ -3539,7 +3493,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Satans Web (12.17.11).mp3",
     "thumb": "thumb/extracted/63ebe64c1fee50.jpg",
-    "id": 301
+    "id": 297
   },
   {
     "title": "Tawassul",
@@ -3549,7 +3503,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Tawassul.mp3",
     "thumb": null,
-    "id": 302
+    "id": 298
   },
   {
     "title": "The 10 things Muslims Cannot Doubt",
@@ -3559,7 +3513,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 10 things Muslims Cannot Doubt.mp3",
     "thumb": null,
-    "id": 303
+    "id": 299
   },
   {
     "title": "The 21 Reasons Why The Quran Is A Wise Book",
@@ -3569,7 +3523,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 21 Reasons Why The Quran Is A Wise Book.mp3",
     "thumb": null,
-    "id": 304
+    "id": 300
   },
   {
     "title": "The 35 People Allah SWT Abhors",
@@ -3579,7 +3533,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 35 People Allah SWT Abhors.mp3",
     "thumb": null,
-    "id": 305
+    "id": 301
   },
   {
     "title": "The 36 People Allah SWT Loves",
@@ -3589,27 +3543,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 36 People Allah SWT Loves.mp3",
     "thumb": null,
-    "id": 306
-  },
-  {
-    "title": "The 5 Ahkaam of Shariah",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "The 5 Ahkaam of Shariah.mp3",
-    "thumb": null,
-    "id": 307
-  },
-  {
-    "title": "The 5 Needs of Mankind2",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "The 5 Needs of Mankind2.mp3",
-    "thumb": null,
-    "id": 308
+    "id": 302
   },
   {
     "title": "The 8 Gates of Paradise",
@@ -3619,7 +3553,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the_8_Gates_of_Paradise_mp3.mp3",
     "thumb": null,
-    "id": 309
+    "id": 303
   },
   {
     "title": "the 9 reasons kuffaar hate us",
@@ -3629,7 +3563,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the 9 reasons kuffaar hate us.mp3",
     "thumb": null,
-    "id": 310
+    "id": 304
   },
   {
     "title": "The American Ban on Muslims",
@@ -3639,7 +3573,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The American Ban on Muslims.mp3",
     "thumb": null,
-    "id": 311
+    "id": 305
   },
   {
     "title": "The Bombing of the Goofi Soofis",
@@ -3649,7 +3583,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Bombing of the Goofi Soofis.mp3",
     "thumb": null,
-    "id": 312
+    "id": 306
   },
   {
     "title": "The Evil Consequences Of Insulting The Rasool (Saw)",
@@ -3659,7 +3593,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Evil Consequences Of Insulting The Rasool (Saw).mp3",
     "thumb": null,
-    "id": 313
+    "id": 307
   },
   {
     "title": "The Evil Effects of Sins",
@@ -3669,7 +3603,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Evil Effects of Sins.mp3",
     "thumb": null,
-    "id": 314
+    "id": 308
   },
   {
     "title": "The Evil Rulers Of The World",
@@ -3679,7 +3613,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Evil Rulers Of The World.mp3",
     "thumb": null,
-    "id": 315
+    "id": 309
   },
   {
     "title": "The farewell khutbah 14-07-14",
@@ -3689,7 +3623,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The farewell khutbah 14-07-14.mp3",
     "thumb": null,
-    "id": 316
+    "id": 310
   },
   {
     "title": "The Holy Spirit (06.18.11)",
@@ -3699,7 +3633,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Holy Spirit (06.18.11).mp3",
     "thumb": null,
-    "id": 317
+    "id": 311
   },
   {
     "title": "The Hyenas Of The Ummah",
@@ -3709,27 +3643,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Hyenas Of The Ummah.mp3",
     "thumb": null,
-    "id": 318
-  },
-  {
-    "title": "The Importance of Intention",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "The Importance of Intention.mp3",
-    "thumb": null,
-    "id": 319
-  },
-  {
-    "title": "The Philosophy of the islamic Jurisprudence",
-    "category": "General",
-    "categoryLabel": "General Lectures",
-    "subcategory": null,
-    "subcategoryLabel": null,
-    "archive": "The Philosophy of the islamic Jurisprudence.mp3",
-    "thumb": null,
-    "id": 320
+    "id": 312
   },
   {
     "title": "The Reality of Fitnah",
@@ -3739,7 +3653,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Reality of Fitnah.mp3",
     "thumb": null,
-    "id": 321
+    "id": 313
   },
   {
     "title": "The Reality of Racism",
@@ -3749,7 +3663,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Reality of Racism.mp3",
     "thumb": null,
-    "id": 322
+    "id": 314
   },
   {
     "title": "The Ship Is Sinking (07.13.11)",
@@ -3759,7 +3673,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Ship Is Sinking (07.13.11).mp3",
     "thumb": null,
-    "id": 323
+    "id": 315
   },
   {
     "title": "the Siege of al Aqsa",
@@ -3769,7 +3683,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the Siege of al Aqsa.mp3",
     "thumb": null,
-    "id": 324
+    "id": 316
   },
   {
     "title": "the usa Bombing of Assad, a Muslim perspective",
@@ -3779,7 +3693,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the usa Bombing of Assad, a Muslim perspective.mp3",
     "thumb": null,
-    "id": 325
+    "id": 317
   },
   {
     "title": "the Weaknesses of Mankind2",
@@ -3789,7 +3703,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the Weaknesses of Mankind2.mp3",
     "thumb": null,
-    "id": 326
+    "id": 318
   },
   {
     "title": "The wisdom of the Prophet (saw) 07-15-14",
@@ -3799,7 +3713,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The wisdom of the Prophet (saw) 07-15-14.mp3",
     "thumb": null,
-    "id": 327
+    "id": 319
   },
   {
     "title": "Their hearts Are Alike",
@@ -3809,7 +3723,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Their hearts Are Alike.mp3",
     "thumb": null,
-    "id": 328
+    "id": 320
   },
   {
     "title": "Them versus Us",
@@ -3819,7 +3733,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - Them versus Us.mp3",
     "thumb": null,
-    "id": 329
+    "id": 321
   },
   {
     "title": "They Shall Reap What They Sow and You Shall Reap What You Sow (08.22.11)",
@@ -3829,7 +3743,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "They Shall Reap What They Sow and You Shall Reap What You Sow (08.22.11).mp3",
     "thumb": null,
-    "id": 330
+    "id": 322
   },
   {
     "title": "They Shall Reap What They Sow and You Shall Reap What You Sow 08",
@@ -3839,7 +3753,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "They_Shall_Reap_What_They_Sow_and_You_Shall_Reap_What_You_Sow_08.mp3",
     "thumb": null,
-    "id": 331
+    "id": 323
   },
   {
     "title": "We Hear & We Obey (06.23.11)",
@@ -3849,7 +3763,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "We Hear & We Obey (06.23.11).mp3",
     "thumb": null,
-    "id": 332
+    "id": 324
   },
   {
     "title": "We Shall Never Follow the Jews & the Christians (07.14.11)",
@@ -3859,7 +3773,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "We Shall Never Follow the Jews & the Christians (07.14.11).mp3",
     "thumb": null,
-    "id": 333
+    "id": 325
   },
   {
     "title": "We Shall Never give up Better For Worse (07.16.11)",
@@ -3869,7 +3783,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "We Shall Never give up Better For Worse (07.16.11).mp3",
     "thumb": null,
-    "id": 334
+    "id": 326
   },
   {
     "title": "Wish For Death If Your Claim Is The Truth (06.25.11)",
@@ -3879,7 +3793,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Wish For Death If Your Claim Is The Truth (06.25.11).mp3",
     "thumb": null,
-    "id": 335
+    "id": 327
   },
   {
     "title": "Worst Con Artist is the Man Who Cons Himself (08.03.11)",
@@ -3889,7 +3803,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Worst Con Artist is the Man Who Cons Himself (08.03.11).mp3",
     "thumb": null,
-    "id": 336
+    "id": 328
   },
   {
     "title": "You Can't Have Your Cake & Eat It Too (07.20.11)",
@@ -3899,7 +3813,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "You Can't Have Your Cake & Eat It Too (07.20.11).mp3",
     "thumb": null,
-    "id": 337
+    "id": 329
   },
   {
     "title": "Description of Paradise [Part 1] (07.04.11)",
@@ -3911,7 +3825,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "Description of Paradise",
-    "id": 338
+    "id": 330
   },
   {
     "title": "Description of Paradise [Part 2] (07.05.11)",
@@ -3923,7 +3837,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Description of Paradise",
-    "id": 339
+    "id": 331
   },
   {
     "title": "4 Pillars of Qadr (12.24.11)",
@@ -3933,7 +3847,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "4 Pillars of Qadr (12.24.11).mp3",
     "thumb": "thumb/extracted/dba37ed1feed4a.jpg",
-    "id": 340
+    "id": 332
   },
   {
     "title": "Application of Revelation - Quran, Sunnah, ijmaa and Qiyas",
@@ -3943,7 +3857,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Application of Revelation - Quran, Sunnah, ijmaa and Qiyas.mp3",
     "thumb": null,
-    "id": 341
+    "id": 333
   },
   {
     "title": "Application of Revelation Daroora Mafhoom Qawl Sahaba Urf Amal of Madina",
@@ -3953,7 +3867,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Application_of_Revelation_Daroora_Mafhoom_Qawl_Sahaba_Urf_Amal_of_Madina_mp3.mp3",
     "thumb": null,
-    "id": 342
+    "id": 334
   },
   {
     "title": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan",
@@ -3963,7 +3877,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Application of Revelation-ijtihaad, Maslaha, istishaab & istihsaan.mp3",
     "thumb": null,
-    "id": 343
+    "id": 335
   },
   {
     "title": "Description of the Prophet's Prayer (06.19.11)",
@@ -3973,7 +3887,17 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Description of the Prophet's Prayer (06.19.11).mp3",
     "thumb": null,
-    "id": 344
+    "id": 336
+  },
+  {
+    "title": "Dua - The weapon of a believer",
+    "category": "Fiqh_Worship",
+    "categoryLabel": "Fiqh & Worship",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "Dua - The weapon of a believer.mp3",
+    "thumb": null,
+    "id": 337
   },
   {
     "title": "Fasting - What You Need To Know (08.01.11)",
@@ -3983,7 +3907,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Fasting - What You Need To Know (08.01.11).mp3",
     "thumb": null,
-    "id": 345
+    "id": 338
   },
   {
     "title": "Fiqhul Waaqi (04.30.12)",
@@ -3993,7 +3917,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Fiqhul Waaqi (04.30.12).mp3",
     "thumb": "thumb/extracted/077f32b6dc714f.jpg",
-    "id": 346
+    "id": 339
   },
   {
     "title": "How To Make Hajj (10.25.11)[v2]",
@@ -4003,7 +3927,17 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "How To Make Hajj (10.25.11)[v2].mp3",
     "thumb": "thumb/extracted/3e8344b2f72015.jpg",
-    "id": 347
+    "id": 340
+  },
+  {
+    "title": "IJTIHAAD MASLAHA",
+    "category": "Fiqh_Worship",
+    "categoryLabel": "Fiqh & Worship",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "IJTIHAAD MASLAHA - Abdallah Al Faisal.mp3",
+    "thumb": null,
+    "id": 341
   },
   {
     "title": "Lailatul Qadr explained (dars)",
@@ -4013,7 +3947,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Lailatul Qadr explained (dars).mp3",
     "thumb": null,
-    "id": 348
+    "id": 342
   },
   {
     "title": "Merits of Salah (06.23.11)",
@@ -4023,7 +3957,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Merits of Salah (06.23.11).mp3",
     "thumb": null,
-    "id": 349
+    "id": 343
   },
   {
     "title": "PUNISHMENT OF THE GRAVE",
@@ -4033,7 +3967,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "PUNISHMENT OF THE GRAVE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 350
+    "id": 344
   },
   {
     "title": "Rules and Merits of Zakah (09.01.11)",
@@ -4043,7 +3977,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Rules and Merits of Zakah (09.01.11).mp3",
     "thumb": null,
-    "id": 351
+    "id": 345
   },
   {
     "title": "Rules Of Fasting",
@@ -4053,7 +3987,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Rules Of Fasting.mp3",
     "thumb": null,
-    "id": 352
+    "id": 346
   },
   {
     "title": "Rules of Fasting (07.31.11)",
@@ -4063,7 +3997,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Rules of Fasting (07.31.11).mp3",
     "thumb": null,
-    "id": 353
+    "id": 347
   },
   {
     "title": "Salah of the Rasool described",
@@ -4073,7 +4007,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Salah of the Rasool described.mp3",
     "thumb": null,
-    "id": 354
+    "id": 348
   },
   {
     "title": "The 4 Pillars Of Qadr",
@@ -4083,7 +4017,17 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 4 Pillars Of Qadr.mp3",
     "thumb": null,
-    "id": 355
+    "id": 349
+  },
+  {
+    "title": "The 5 Ahkaam of Shariah",
+    "category": "Fiqh_Worship",
+    "categoryLabel": "Fiqh & Worship",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "The 5 Ahkaam of Shariah.mp3",
+    "thumb": null,
+    "id": 350
   },
   {
     "title": "The Fiqh of Asking Questions",
@@ -4093,7 +4037,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The_Fiqh_of_Asking_Questions_mp3.mp3",
     "thumb": null,
-    "id": 356
+    "id": 351
   },
   {
     "title": "The Fiqh of Clothing",
@@ -4103,7 +4047,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Fiqh of Clothing.mp3",
     "thumb": null,
-    "id": 357
+    "id": 352
   },
   {
     "title": "the Fiqh of Food-1",
@@ -4113,7 +4057,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "the Fiqh of Food-1.mp3",
     "thumb": null,
-    "id": 358
+    "id": 353
   },
   {
     "title": "The Fiqh of Trading",
@@ -4123,7 +4067,17 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Fiqh of Trading.mp3",
     "thumb": null,
-    "id": 359
+    "id": 354
+  },
+  {
+    "title": "The Philosophy of the islamic Jurisprudence",
+    "category": "Fiqh_Worship",
+    "categoryLabel": "Fiqh & Worship",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "The Philosophy of the islamic Jurisprudence.mp3",
+    "thumb": null,
+    "id": 355
   },
   {
     "title": "The Rules of Fasting",
@@ -4133,7 +4087,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Rules of Fasting.mp3",
     "thumb": null,
-    "id": 360
+    "id": 356
   },
   {
     "title": "The virtues of Dhikr",
@@ -4143,7 +4097,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The virtues of Dhikr.mp3",
     "thumb": null,
-    "id": 361
+    "id": 357
   },
   {
     "title": "VIRTUES OF MAKKAH",
@@ -4153,7 +4107,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "VIRTUES OF MAKKAH - Shaykh Faisal.mp3",
     "thumb": "thumb/VIRTUES OF MAKKAH - Shaykh Faisal.jpg",
-    "id": 362
+    "id": 358
   },
   {
     "title": "DECLARATION OF WAR - Osama Bin Laden",
@@ -4163,7 +4117,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.mp3",
     "thumb": "thumb/DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.jpg",
-    "id": 363
+    "id": 359
   },
   {
     "title": "IMPORTANCE OF HIJRAH",
@@ -4173,7 +4127,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "IMPORTANCE OF HIJRAH - Abdallah Al Faisal.mp3",
     "thumb": "thumb/IMPORTANCE OF HIJRAH - Abdallah Al Faisal.jpg",
-    "id": 364
+    "id": 360
   },
   {
     "title": "JIHAD AIMS & OBJECTIVES",
@@ -4183,7 +4137,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jihad/JIHAD AIMS & OBJECTIVES - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/5943e51a1e4e99.jpg",
-    "id": 365
+    "id": 361
   },
   {
     "title": "REQUIREMENTS OF JIHAD",
@@ -4193,7 +4147,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jihad/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.mp3",
     "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.png",
-    "id": 366
+    "id": 362
   },
   {
     "title": "SALAFI JIHADI",
@@ -4203,7 +4157,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jihad/SALAFI JIHADI - Shaykh Faisal.mp3",
     "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png",
-    "id": 367
+    "id": 363
   },
   {
     "title": "Can the Khilaafa survive",
@@ -4213,7 +4167,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Can the Khilaafa survive.mp3",
     "thumb": null,
-    "id": 368
+    "id": 364
   },
   {
     "title": "Future of the Caliphate",
@@ -4223,7 +4177,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Khilafah/Future of the Caliphate.mp3",
     "thumb": null,
-    "id": 369
+    "id": 365
   },
   {
     "title": "Is the caliphate valid",
@@ -4233,7 +4187,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Khilafah/Is the caliphate valid.mp3",
     "thumb": null,
-    "id": 370
+    "id": 366
   },
   {
     "title": "Is the dawla khawarij?",
@@ -4243,7 +4197,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Khilafah/is-the-dawla-khawarij.mp3",
     "thumb": null,
-    "id": 371
+    "id": 367
   },
   {
     "title": "KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED",
@@ -4253,7 +4207,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Khilafah/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.mp3",
     "thumb": "thumb/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.jpg",
-    "id": 372
+    "id": 368
   },
   {
     "title": "KHILAFAH SURVIVE & REVIVE",
@@ -4263,7 +4217,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Khilafah/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.mp3",
     "thumb": "thumb/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.jpg",
-    "id": 373
+    "id": 369
   },
   {
     "title": "MANHAJ FOR ESTABLISHING SHARIAH",
@@ -4273,7 +4227,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.mp3",
     "thumb": "thumb/MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.jpg",
-    "id": 374
+    "id": 370
   },
   {
     "title": "Message from the Calipha (HA) to the Ummah",
@@ -4283,7 +4237,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Message from the Calipha (HA) to the Ummah.mp3",
     "thumb": null,
-    "id": 375
+    "id": 371
   },
   {
     "title": "OBLIGATION TO ESTABLISH KHILAFAH",
@@ -4293,7 +4247,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Khilafah/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.mp3",
     "thumb": "thumb/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.jpg",
-    "id": 376
+    "id": 372
   },
   {
     "title": "The Enemies of the Caliphate",
@@ -4303,7 +4257,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Khilafah/The Enemies of the Caliphate.mp3",
     "thumb": null,
-    "id": 377
+    "id": 373
   },
   {
     "title": "THE IMPORTANCE OF SHARI`AH",
@@ -4313,7 +4267,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Khilafah/THE IMPORTANCE OF SHARI`AH.mp3",
     "thumb": null,
-    "id": 378
+    "id": 374
   },
   {
     "title": "SHIA GREATEST ENEMY WITHIN",
@@ -4323,7 +4277,7 @@ const LECTURES = [
     "subcategoryLabel": "Shia",
     "archive": "Shia/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.mp3",
     "thumb": "thumb/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.jpg",
-    "id": 379
+    "id": 375
   },
   {
     "title": "SHIA KNOW YOUR ENEMY",
@@ -4333,7 +4287,7 @@ const LECTURES = [
     "subcategoryLabel": "Shia",
     "archive": "Shia/SHIA KNOW YOUR ENEMY - Shaykh Faisal.mp3",
     "thumb": "thumb/SHIA KNOW YOUR ENEMY - Shaykh Faisal.jpg",
-    "id": 380
+    "id": 376
   },
   {
     "title": "Why we hate the shia",
@@ -4343,7 +4297,7 @@ const LECTURES = [
     "subcategoryLabel": "Shia",
     "archive": "Shia/Why we hate the shia.mp3",
     "thumb": null,
-    "id": 381
+    "id": 377
   },
   {
     "title": "MADKHALIS",
@@ -4353,7 +4307,7 @@ const LECTURES = [
     "subcategoryLabel": "Madkhalis",
     "archive": "MADKHALIS - Shaykh Faisal.mp3",
     "thumb": "thumb/MADKHALIS - Shaykh Faisal.png",
-    "id": 382
+    "id": 378
   },
   {
     "title": "SAUDI SALAFI",
@@ -4363,7 +4317,7 @@ const LECTURES = [
     "subcategoryLabel": "Madkhalis",
     "archive": "SAUDI SALAFI - Shaykh Faisal.mp3",
     "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal.jpg",
-    "id": 383
+    "id": 379
   },
   {
     "title": "DEMOCRATES - Those Who Participate In Democratic Election",
@@ -4373,7 +4327,7 @@ const LECTURES = [
     "subcategoryLabel": "Democracy & Secularism",
     "archive": "DEMOCRATES - Those Who Participate In Democratic Election.mp3",
     "thumb": "thumb/DEMOCRATES - Those Who Participate In Democratic Election.png",
-    "id": 384
+    "id": 380
   },
   {
     "title": "MELTDOWN OF DEMOCRACY",
@@ -4383,7 +4337,7 @@ const LECTURES = [
     "subcategoryLabel": "Democracy & Secularism",
     "archive": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.mp3",
     "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.png",
-    "id": 385
+    "id": 381
   },
   {
     "title": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM",
@@ -4393,7 +4347,7 @@ const LECTURES = [
     "subcategoryLabel": "Democracy & Secularism",
     "archive": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.mp3",
     "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg",
-    "id": 386
+    "id": 382
   },
   {
     "title": "SECULARISM",
@@ -4403,7 +4357,7 @@ const LECTURES = [
     "subcategoryLabel": "Democracy & Secularism",
     "archive": "SECULARISM - Shaykh Abdallah Al Faisal.mp3",
     "thumb": "thumb/SECULARISM - Shaykh Abdallah Al Faisal.png",
-    "id": 387
+    "id": 383
   },
   {
     "title": "SHARIAH VS MAN MADE LAWS",
@@ -4413,7 +4367,7 @@ const LECTURES = [
     "subcategoryLabel": "Democracy & Secularism",
     "archive": "SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.mp3",
     "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png",
-    "id": 388
+    "id": 384
   },
   {
     "title": "KHAWARIJ AND THEIR AQEEDAH",
@@ -4423,7 +4377,7 @@ const LECTURES = [
     "subcategoryLabel": "Khawarij",
     "archive": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.mp3",
     "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.png",
-    "id": 389
+    "id": 385
   },
   {
     "title": "The Barking Dogs of Jahannam (Refuting the modern day Khawarij)",
@@ -4433,7 +4387,7 @@ const LECTURES = [
     "subcategoryLabel": "Khawarij",
     "archive": "the Barking dogs of jahannam.mp3",
     "thumb": "thumb/The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.jpg",
-    "id": 390
+    "id": 386
   },
   {
     "title": "NO PEACE WITH THE JEWS",
@@ -4443,7 +4397,7 @@ const LECTURES = [
     "subcategoryLabel": "Jews",
     "archive": "NO PEACE WITH THE JEWS - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 391
+    "id": 387
   },
   {
     "title": "REALITY OF THE JEWS",
@@ -4453,7 +4407,7 @@ const LECTURES = [
     "subcategoryLabel": "Jews",
     "archive": "REALITY OF THE JEWS - Abdallah Al Faisal.mp3",
     "thumb": "thumb/REALITY OF THE JEWS - Abdallah Al Faisal.jpg",
-    "id": 392
+    "id": 388
   },
   {
     "title": "THE REALITY OF THE JEWS",
@@ -4463,7 +4417,7 @@ const LECTURES = [
     "subcategoryLabel": "Jews",
     "archive": "THE REALITY OF THE JEWS.mp3",
     "thumb": null,
-    "id": 393
+    "id": 389
   },
   {
     "title": "Entering the Lizard Hole",
@@ -4473,7 +4427,7 @@ const LECTURES = [
     "subcategoryLabel": "Deviant Groups",
     "archive": "Entering the Lizard Hole.mp3",
     "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal.png",
-    "id": 394
+    "id": 390
   },
   {
     "title": "GAY LESBIAN LGBT",
@@ -4483,7 +4437,7 @@ const LECTURES = [
     "subcategoryLabel": "Deviant Groups",
     "archive": "GAY LESBIAN LGBT - Shaykh Faisal.mp3",
     "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal.png",
-    "id": 395
+    "id": 391
   },
   {
     "title": "KASHF USH SHUBUHAAT",
@@ -4493,7 +4447,7 @@ const LECTURES = [
     "subcategoryLabel": "Deviant Groups",
     "archive": "KASHF USH SHUBUHAAT - Shaykh Faisal.mp3",
     "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg",
-    "id": 396
+    "id": 392
   },
   {
     "title": "MURJIA",
@@ -4503,7 +4457,7 @@ const LECTURES = [
     "subcategoryLabel": "Deviant Groups",
     "archive": "MURJIA - Shaykh Faisal.mp3",
     "thumb": "thumb/MURJIA - Shaykh Faisal.jpg",
-    "id": 397
+    "id": 393
   },
   {
     "title": "Removing the Doubts",
@@ -4513,7 +4467,7 @@ const LECTURES = [
     "subcategoryLabel": "Deviant Groups",
     "archive": "Removing the Doubts.mp3",
     "thumb": null,
-    "id": 398
+    "id": 394
   },
   {
     "title": "DO NOT TAKE MY ENEMY AS YOUR FRIEND",
@@ -4523,7 +4477,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.mp3",
     "thumb": "thumb/DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.png",
-    "id": 399
+    "id": 395
   },
   {
     "title": "DO NOT TAKE THE KUFFAR AS ALLIES",
@@ -4533,7 +4487,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.mp3",
     "thumb": "thumb/DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.jpg",
-    "id": 400
+    "id": 396
   },
   {
     "title": "IFK SLANDER OF AYSHA",
@@ -4543,7 +4497,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "IFK  SLANDER OF AYSHA - Shaykh Faisal.mp3",
     "thumb": "thumb/IFK  SLANDER OF AYSHA - Shaykh Faisal.jpg",
-    "id": 401
+    "id": 397
   },
   {
     "title": "INSULTING THE PROPHET ﷺ",
@@ -4553,7 +4507,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "INSULTING THE PROPHET ﷺ  - Abdallah Al Faisal.mp3",
     "thumb": "thumb/INSULTING THE PROPHET ABDALLAH AL FAISAL.jpg",
-    "id": 402
+    "id": 398
   },
   {
     "title": "Radical Islamic Terrorism",
@@ -4563,7 +4517,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "Radical Islamic Terrorism.mp3",
     "thumb": null,
-    "id": 403
+    "id": 399
   },
   {
     "title": "Radical islamic terrorism2",
@@ -4573,7 +4527,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "Radical islamic terrorism2.mp3",
     "thumb": null,
-    "id": 404
+    "id": 400
   },
   {
     "title": "Refuting Geert Wilders (07.07.11)",
@@ -4583,7 +4537,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "Refutation/Refuting Geert Wilders (07.07.11).mp3",
     "thumb": null,
-    "id": 405
+    "id": 401
   },
   {
     "title": "Refuting The Lie Concerning Kufr Doona Kufr",
@@ -4593,7 +4547,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "Refutation/Refuting The Lie Concerning Kufr Doona Kufr.mp3",
     "thumb": null,
-    "id": 406
+    "id": 402
   },
   {
     "title": "Refuting The Lie Concerning The Excuse of Ignorance",
@@ -4603,7 +4557,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "Refutation/Refuting The Lie Concerning The Excuse of Ignorance.mp3",
     "thumb": null,
-    "id": 407
+    "id": 403
   },
   {
     "title": "REJECTING THE TAGHUT",
@@ -4613,7 +4567,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "REJECTING THE TAGHUT - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 408
+    "id": 404
   },
   {
     "title": "Slander of Aisha (RA) (07.12.11)",
@@ -4623,7 +4577,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "Slander of Aisha (RA) (07.12.11).mp3",
     "thumb": null,
-    "id": 409
+    "id": 405
   },
   {
     "title": "Slander of Aisha (RA) [REVISITED] (08.14.11)",
@@ -4633,7 +4587,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "Slander of Aisha (RA) [REVISITED] (08.14.11).mp3",
     "thumb": null,
-    "id": 410
+    "id": 406
   },
   {
     "title": "THE DOMAIN OF APOSTASY",
@@ -4643,7 +4597,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "THE DOMAIN OF APOSTASY.mp3",
     "thumb": null,
-    "id": 411
+    "id": 407
   },
   {
     "title": "THEY ARE THE WORST OF CREATURES",
@@ -4653,7 +4607,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.mp3",
     "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg",
-    "id": 412
+    "id": 408
   },
   {
     "title": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT",
@@ -4663,7 +4617,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.mp3",
     "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg",
-    "id": 413
+    "id": 409
   },
   {
     "title": "Towards Watering Down The Holy Quran",
@@ -4673,7 +4627,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "Towards Watering Down The Holy Quran(1).mp3",
     "thumb": null,
-    "id": 414
+    "id": 410
   },
   {
     "title": "White Supremacy - A Cancer In The Body of Humanity",
@@ -4683,7 +4637,7 @@ const LECTURES = [
     "subcategoryLabel": "General Refutations",
     "archive": "White Supremacy - A Cancer In The Body of Humanity.mp3",
     "thumb": null,
-    "id": 415
+    "id": 411
   },
   {
     "title": "Jokers in the Pack - Refuting the Ashaa'ira (09.22.11)",
@@ -4693,7 +4647,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Ashaa'ira (09.22.11).mp3",
     "thumb": "thumb/extracted/787a2e39c0a084.jpg",
-    "id": 416
+    "id": 412
   },
   {
     "title": "Jokers in the Pack - Refuting the Barelvis (09.15.11)",
@@ -4703,7 +4657,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Barelvis (09.15.11).mp3",
     "thumb": "thumb/extracted/aa33845bb947d5.jpg",
-    "id": 417
+    "id": 413
   },
   {
     "title": "Jokers in the Pack - Refuting the Democrats (09.25.11)",
@@ -4713,7 +4667,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Democrats (09.25.11).mp3",
     "thumb": "thumb/extracted/6fc2d99d26e86c.jpg",
-    "id": 418
+    "id": 414
   },
   {
     "title": "Jokers in the Pack - Refuting the Goofy Sufi (09.07.11 to 09.08.11)",
@@ -4723,7 +4677,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Goofy Sufi (09.07.11 to 09.08.11).mp3",
     "thumb": "thumb/extracted/7ec1dd62855308.jpg",
-    "id": 419
+    "id": 415
   },
   {
     "title": "Jokers in the Pack - Refuting the Hizb ut Tahrir (09.17.11 to 09.18.11)",
@@ -4733,7 +4687,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Hizb ut Tahrir (09.17.11 to 09.18.11).mp3",
     "thumb": "thumb/extracted/e82be5cea574d4.jpg",
-    "id": 420
+    "id": 416
   },
   {
     "title": "Jokers in the Pack - Refuting the Khawarij (09.04.11)[v2]",
@@ -4743,7 +4697,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Khawarij (09.04.11)[v2].mp3",
     "thumb": "thumb/extracted/c7cb6d95434762.jpg",
-    "id": 421
+    "id": 417
   },
   {
     "title": "Jokers in the Pack - Refuting the Murjia (09.05.11)",
@@ -4753,7 +4707,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Murjia (09.05.11).mp3",
     "thumb": "thumb/extracted/fc48e24075122d.jpg",
-    "id": 422
+    "id": 418
   },
   {
     "title": "Jokers in the Pack - Refuting the Mutazila (09.06.11)",
@@ -4763,7 +4717,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Mutazila (09.06.11).mp3",
     "thumb": "thumb/extracted/0d0b3abc5b8d23.jpg",
-    "id": 423
+    "id": 419
   },
   {
     "title": "Jokers in the Pack - Refuting the Parvezis (09.20.11)",
@@ -4773,7 +4727,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Parvezis (09.20.11).mp3",
     "thumb": "thumb/extracted/d7425d6a8787a3.jpg",
-    "id": 424
+    "id": 420
   },
   {
     "title": "Jokers in the Pack - Refuting the Qadiyaani (09.21.11)",
@@ -4783,7 +4737,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Qadiyaani (09.21.11).mp3",
     "thumb": "thumb/extracted/09d526bcf4824f.jpg",
-    "id": 425
+    "id": 421
   },
   {
     "title": "Jokers in the Pack - Refuting the Saudi Salafi (09.10.11 to 09.11.11)",
@@ -4793,7 +4747,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Saudi Salafi (09.10.11 to 09.11.11).mp3",
     "thumb": "thumb/extracted/7624621f770187.jpg",
-    "id": 426
+    "id": 422
   },
   {
     "title": "Jokers in the Pack - Refuting the Shia (09.12.11 to 09.14.11)",
@@ -4803,7 +4757,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Jokers in the pack/Jokers in the Pack - Refuting the Shia (09.12.11 to 09.14.11).mp3",
     "thumb": "thumb/extracted/01d0797b9f6e26.jpg",
-    "id": 427
+    "id": 423
   },
   {
     "title": "The 5 Desperate Zindeeq - Brelvis (02.16.12)",
@@ -4813,7 +4767,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Brelvis (02.16.12).mp3",
     "thumb": "thumb/extracted/b04fec2582151f.jpg",
-    "id": 428
+    "id": 424
   },
   {
     "title": "The 5 Desperate Zindeeq - Democrats (evening dars 02.18.12)",
@@ -4823,7 +4777,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Democrats (evening dars 02.18.12).mp3",
     "thumb": "thumb/extracted/41b5aff9acda6a.jpg",
-    "id": 429
+    "id": 425
   },
   {
     "title": "The 5 Desperate Zindeeq - Goofy Sufi (02.11.12)",
@@ -4833,7 +4787,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Goofy Sufi (02.11.12).mp3",
     "thumb": "thumb/extracted/b8aa5601d8bc82.jpg",
-    "id": 430
+    "id": 426
   },
   {
     "title": "The 5 Desperate Zindeeq - MADkhalis (02.14.12 to 02.15.12)",
@@ -4843,7 +4797,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - MADkhalis (02.14.12 to 02.15.12).mp3",
     "thumb": "thumb/extracted/136b8efb67a320.jpg",
-    "id": 431
+    "id": 427
   },
   {
     "title": "The 5 Desperate Zindeeq - Shady Shia (02.12.12 to 02.13.12)",
@@ -4853,7 +4807,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The 5 Desperate Zindeeq/The 5 Desperate Zindeeq - Shady Shia (02.12.12 to 02.13.12).mp3",
     "thumb": "thumb/extracted/b44b317b263042.jpg",
-    "id": 432
+    "id": 428
   },
   {
     "title": "DEVIL'S DECEPTION OF SAUDI SALAFIS (1990s)",
@@ -4863,7 +4817,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/DEVIL'S DECEPTION OF SAUDI SALAFIS - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 433
+    "id": 429
   },
   {
     "title": "Devils Deception of the Saudi Salafis (07.13.11)",
@@ -4873,7 +4827,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/Devils Deception of the Saudi Salafis (07.13.11).mp3",
     "thumb": null,
-    "id": 434
+    "id": 430
   },
   {
     "title": "The Devil's Deception of the Aathir",
@@ -4883,7 +4837,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/The Devil's Deception of the Aathir.mp3",
     "thumb": null,
-    "id": 435
+    "id": 431
   },
   {
     "title": "The Devil's Deception of The Murji",
@@ -4893,7 +4847,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/09.Sheikh Abdullah Faisal - The Devil's Deception of The Murji.mp3",
     "thumb": null,
-    "id": 436
+    "id": 432
   },
   {
     "title": "The Devil's Deception of the Murjia",
@@ -4903,7 +4857,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/The Devil's Deception of the Murjia.mp3",
     "thumb": null,
-    "id": 437
+    "id": 433
   },
   {
     "title": "The Devil's Deception of The Qadiani",
@@ -4913,7 +4867,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/08.Sheikh Abdullah Faisal - The Devil's Deception of The Qadiani.mp3",
     "thumb": null,
-    "id": 438
+    "id": 434
   },
   {
     "title": "The Devil's Deception of The Shia",
@@ -4923,7 +4877,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/06.Sheikh Abdullah Faisal - The Devil's Deception of The Shia.mp3",
     "thumb": null,
-    "id": 439
+    "id": 435
   },
   {
     "title": "47 Signs of the Wicked Scholar",
@@ -4933,7 +4887,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3",
     "thumb": null,
-    "id": 440
+    "id": 436
   },
   {
     "title": "BEWARE OF THE WICKED SCHOLARS",
@@ -4943,7 +4897,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.mp3",
     "thumb": "thumb/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.jpg",
-    "id": 441
+    "id": 437
   },
   {
     "title": "DEFINITION OF A SCHOLAR",
@@ -4953,7 +4907,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "DEFINITION OF A SCHOLAR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 442
+    "id": 438
   },
   {
     "title": "EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN",
@@ -4963,7 +4917,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.mp3",
     "thumb": "thumb/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.jpg",
-    "id": 443
+    "id": 439
   },
   {
     "title": "LET THE SCHOLARS BEWARE",
@@ -4973,7 +4927,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "LET THE SCHOLARS BEWARE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 444
+    "id": 440
   },
   {
     "title": "SEVENTEEN SIGNS OF THE WICKED SCHOLAR",
@@ -4983,7 +4937,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/SEVENTEEN SIGNS OF THE WICKED SCHOLAR - Abdullah Al Faisal.mp3",
     "thumb": null,
-    "id": 445
+    "id": 441
   },
   {
     "title": "WICKED SCHOLAR",
@@ -4993,7 +4947,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/WICKED SCHOLAR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 446
+    "id": 442
   },
   {
     "title": "WICKED SCHOLARS ARE LIKE A DOG",
@@ -5003,7 +4957,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3",
     "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg",
-    "id": 447
+    "id": 443
   },
   {
     "title": "Science of Quran - Part 1",
@@ -5015,7 +4969,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "Science of Quran",
-    "id": 448
+    "id": 444
   },
   {
     "title": "Science of Quran - Part 2 - The History of the Quran's Descent",
@@ -5027,7 +4981,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Science of Quran",
-    "id": 449
+    "id": 445
   },
   {
     "title": "Science of Quran - Part 2 - The Wahy",
@@ -5039,7 +4993,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Science of Quran",
-    "id": 450
+    "id": 446
   },
   {
     "title": "Science of Quran - Part 4 - The 20 Reasons Why The Quran Is A Wise Book",
@@ -5051,7 +5005,7 @@ const LECTURES = [
     "thumb": null,
     "part": 4,
     "series": "Science of Quran",
-    "id": 451
+    "id": 447
   },
   {
     "title": "Science Of Quran - Part 5 - The Characteristics Of The Makkan And Madinan Surahs",
@@ -5063,7 +5017,7 @@ const LECTURES = [
     "thumb": null,
     "part": 5,
     "series": "Science of Quran",
-    "id": 452
+    "id": 448
   },
   {
     "title": "Science Of Quran - Part 6 - The causes Of Revelation I",
@@ -5075,7 +5029,7 @@ const LECTURES = [
     "thumb": null,
     "part": 6,
     "series": "Science of Quran",
-    "id": 453
+    "id": 449
   },
   {
     "title": "Science Of Quran - Part 7 - The causes Of Revelation II",
@@ -5087,7 +5041,7 @@ const LECTURES = [
     "thumb": null,
     "part": 7,
     "series": "Science of Quran",
-    "id": 454
+    "id": 450
   },
   {
     "title": "Science of Quran - Part 8 - The Causes of Revelation – An Nisa",
@@ -5099,7 +5053,7 @@ const LECTURES = [
     "thumb": null,
     "part": 8,
     "series": "Science of Quran",
-    "id": 455
+    "id": 451
   },
   {
     "title": "Science of Quran - Part 9 - The Causes of Revelation – Al Ma'idah",
@@ -5111,7 +5065,7 @@ const LECTURES = [
     "thumb": null,
     "part": 9,
     "series": "Science of Quran",
-    "id": 456
+    "id": 452
   },
   {
     "title": "Science of Quran - Part 10 - The Causes of Revelation – Al Imraan",
@@ -5123,7 +5077,7 @@ const LECTURES = [
     "thumb": null,
     "part": 10,
     "series": "Science of Quran",
-    "id": 457
+    "id": 453
   },
   {
     "title": "Science of Quran - Part 11 - The Causes of Revelation – Al Ma'idah 2",
@@ -5135,7 +5089,7 @@ const LECTURES = [
     "thumb": null,
     "part": 11,
     "series": "Science of Quran",
-    "id": 458
+    "id": 454
   },
   {
     "title": "Science of Quran - Part 12 - The Causes of Revelation – Al An’am",
@@ -5147,7 +5101,7 @@ const LECTURES = [
     "thumb": null,
     "part": 12,
     "series": "Science of Quran",
-    "id": 459
+    "id": 455
   },
   {
     "title": "Science of Quran - Part 13 - The Causes of Revelation – Al ‘Araf",
@@ -5159,7 +5113,7 @@ const LECTURES = [
     "thumb": null,
     "part": 13,
     "series": "Science of Quran",
-    "id": 460
+    "id": 456
   },
   {
     "title": "Science of Quran - Part 14 - The Causes of Revelation – Al Anfal - Part 1",
@@ -5171,7 +5125,7 @@ const LECTURES = [
     "thumb": null,
     "part": 14,
     "series": "Science of Quran",
-    "id": 461
+    "id": 457
   },
   {
     "title": "Science of Quran - Part 15 - The Causes of Revelation – Tawbah – Part 1",
@@ -5183,7 +5137,7 @@ const LECTURES = [
     "thumb": null,
     "part": 15,
     "series": "Science of Quran",
-    "id": 462
+    "id": 458
   },
   {
     "title": "Science of Quran - Part 16 - The Causes of Revelation – Tawbah – Part 2",
@@ -5195,7 +5149,7 @@ const LECTURES = [
     "thumb": null,
     "part": 16,
     "series": "Science of Quran",
-    "id": 463
+    "id": 459
   },
   {
     "title": "The Animals Of The Holy Quran - Part 1",
@@ -5207,7 +5161,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "The Animals Of The Holy Quran",
-    "id": 464
+    "id": 460
   },
   {
     "title": "The Animals Of The Holy Quran - Part 2",
@@ -5219,7 +5173,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "The Animals Of The Holy Quran",
-    "id": 465
+    "id": 461
   },
   {
     "title": "Prophesies of the Holy Quran (11.22.11 to 11.23.11)",
@@ -5229,7 +5183,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Prophesies of the Holy Quran (11.22.11 to 11.23.11).mp3",
     "thumb": "thumb/extracted/d6ec668de41ae1.jpg",
-    "id": 466
+    "id": 462
   },
   {
     "title": "Rules of Nikah [Part 1] (06.30.11)",
@@ -5241,7 +5195,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "Rules of Nikah",
-    "id": 467
+    "id": 463
   },
   {
     "title": "Rules of Nikah [Part 2] (07.01.11)",
@@ -5253,7 +5207,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Rules of Nikah",
-    "id": 468
+    "id": 464
   },
   {
     "title": "Rules of Nikah [Part 3] Bedroom Etiquettes In Islam (07.02.11)",
@@ -5265,7 +5219,7 @@ const LECTURES = [
     "thumb": null,
     "part": 3,
     "series": "Rules of Nikah",
-    "id": 469
+    "id": 465
   },
   {
     "title": "Rules of Nikah [Part 4] Rights of the Wife & Husband (07.03.11)",
@@ -5277,7 +5231,7 @@ const LECTURES = [
     "thumb": null,
     "part": 4,
     "series": "Rules of Nikah",
-    "id": 470
+    "id": 466
   },
   {
     "title": "Rules of Divorce [Part 1] (07.06.11)",
@@ -5289,7 +5243,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "Rules of Divorce",
-    "id": 471
+    "id": 467
   },
   {
     "title": "Rules of Divorce [Part 2] Revisited (07.08.11)",
@@ -5301,7 +5255,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Rules of Divorce",
-    "id": 472
+    "id": 468
   },
   {
     "title": "The 18 Types Of Women You Should Not Marry",
@@ -5311,7 +5265,7 @@ const LECTURES = [
     "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3",
     "thumb": null,
-    "id": 473
+    "id": 469
   },
   {
     "title": "The 20 Types Of Men You Should Not Marry",
@@ -5321,7 +5275,7 @@ const LECTURES = [
     "subcategoryLabel": "Types to Avoid Marrying",
     "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3",
     "thumb": null,
-    "id": 474
+    "id": 470
   },
   {
     "title": "the Fiqh of Divorce",
@@ -5331,7 +5285,7 @@ const LECTURES = [
     "subcategoryLabel": "Fiqh of Divorce",
     "archive": "Nikah_Divorce/the Fiqh of Divorce.mp3",
     "thumb": null,
-    "id": 475
+    "id": 471
   },
   {
     "title": "The Fiqh of Menses",
@@ -5341,7 +5295,7 @@ const LECTURES = [
     "subcategoryLabel": "Fiqh of Menses",
     "archive": "The Fiqh of Menses.mp3",
     "thumb": null,
-    "id": 476
+    "id": 472
   },
   {
     "title": "Daughters Are Diamonds (06.30.11)",
@@ -5351,7 +5305,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Daughters Are Diamonds (06.30.11).mp3",
     "thumb": null,
-    "id": 477
+    "id": 473
   },
   {
     "title": "LOVE",
@@ -5361,7 +5315,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "LOVE - Abdallah Al Faisal.mp3",
     "thumb": "thumb/extracted/6d7686edec03e1.jpg",
-    "id": 478
+    "id": 474
   },
   {
     "title": "MARITAL DISCORD (NUSHOOZ)",
@@ -5371,7 +5325,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "MARITAL DISCORD (NUSHOOZ) - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 479
+    "id": 475
   },
   {
     "title": "Money Can't Buy True Love (07.02.11)",
@@ -5381,7 +5335,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Money Can't Buy True Love (07.02.11) Shaikh Abdullah Faisal.mp3",
     "thumb": null,
-    "id": 480
+    "id": 476
   },
   {
     "title": "Muslim Home (12.21.11 to 12.22.11)",
@@ -5391,7 +5345,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Muslim Home (12.21.11 to 12.22.11).mp3",
     "thumb": "thumb/extracted/8be0c03a517daa.jpg",
-    "id": 481
+    "id": 477
   },
   {
     "title": "MUSLIM MARRYING NON MUSLIM",
@@ -5401,7 +5355,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.mp3",
     "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png",
-    "id": 482
+    "id": 478
   },
   {
     "title": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE",
@@ -5411,7 +5365,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.mp3",
     "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg",
-    "id": 483
+    "id": 479
   },
   {
     "title": "TAINTED LOVE",
@@ -5421,7 +5375,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "TAINTED LOVE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 484
+    "id": 480
   },
   {
     "title": "tainted love 2013.04.20 (evening)",
@@ -5431,7 +5385,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "tainted love 2013.04.20 (evening).mp3",
     "thumb": null,
-    "id": 485
+    "id": 481
   },
   {
     "title": "The Muslim Home",
@@ -5441,7 +5395,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Sheikh Abdullah Faisal - The Muslim Home.mp3",
     "thumb": null,
-    "id": 486
+    "id": 482
   },
   {
     "title": "The Muslim Home (dars)",
@@ -5451,7 +5405,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "The Muslim Home (dars).mp3",
     "thumb": null,
-    "id": 487
+    "id": 483
   },
   {
     "title": "WIVES & CHILDREN",
@@ -5461,7 +5415,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3",
     "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png",
-    "id": 488
+    "id": 484
   },
   {
     "title": "WOMEN IN ISLAM",
@@ -5471,7 +5425,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "WOMEN IN ISLAM - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 489
+    "id": 485
   },
   {
     "title": "18 Merits of Ramadan [Revisited] (07.31.11)",
@@ -5481,7 +5435,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Ramadan/18 Merits of Ramadan [Revisited] (07.31.11).mp3",
     "thumb": null,
-    "id": 490
+    "id": 486
   },
   {
     "title": "LAYLATUL QADR",
@@ -5491,7 +5445,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Ramadan/LAYLATUL QADR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 491
+    "id": 487
   },
   {
     "title": "RAMADAN OUR BLESSED GUEST",
@@ -5501,7 +5455,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Ramadan/RAMADAN OUR BLESSED GUEST - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 492
+    "id": 488
   },
   {
     "title": "Ramadhan - The Month of Glory (07.30.11)",
@@ -5511,7 +5465,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Ramadan/Ramadhan - The Month of Glory (07.30.11).mp3",
     "thumb": null,
-    "id": 493
+    "id": 489
   },
   {
     "title": "VIRTUES OF RAMADAN",
@@ -5521,7 +5475,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Ramadan/VIRTUES OF RAMADAN - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 494
+    "id": 490
   },
   {
     "title": "DISEASES OF THE HEART",
@@ -5531,7 +5485,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Diseases_of_the_Heart/DISEASES OF THE HEART - Shaykh Faisal.mp3",
     "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png",
-    "id": 495
+    "id": 491
   },
   {
     "title": "Diseases of the Heart (12.26.11 to 12.29.11)",
@@ -5541,7 +5495,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Diseases_of_the_Heart/Diseases of the Heart (12.26.11 to 12.29.11).mp3",
     "thumb": "thumb/extracted/076fb5be36c654.jpg",
-    "id": 496
+    "id": 492
   },
   {
     "title": "Diseases of the Heart [Lust]",
@@ -5551,7 +5505,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Diseases_of_the_Heart/Diseases of the Heart [Lust]- Shaikh Faisal 2.12.2011 PT Dars.mp3",
     "thumb": null,
-    "id": 497
+    "id": 493
   },
   {
     "title": "Radio Show - Diseases of the Heart (10.29.11)",
@@ -5561,7 +5515,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Diseases_of_the_Heart/Radio Show - Diseases of the Heart (10.29.11).mp3",
     "thumb": "thumb/extracted/f5c36659976c9e.jpg",
-    "id": 498
+    "id": 494
   },
   {
     "title": "Reality of Sincerity (12.07.11)",
@@ -5571,7 +5525,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Reality of Sincerity (12.07.11).mp3",
     "thumb": "thumb/extracted/1e7db6b17401c6.jpg",
-    "id": 499
+    "id": 495
   },
   {
     "title": "Road to Sincerity (07.17.11)",
@@ -5581,7 +5535,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Road to Sincerity (07.17.11).mp3",
     "thumb": null,
-    "id": 500
+    "id": 496
   },
   {
     "title": "Personality Disorders [Part 1] Paranoia and Schizophrenia (05.02.12)",
@@ -5593,7 +5547,7 @@ const LECTURES = [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 1,
     "series": "Personality Disorders",
-    "id": 501
+    "id": 497
   },
   {
     "title": "Personality Disorders [Part 2] ADHD, OCD and Bipolar (05.03.12)",
@@ -5605,7 +5559,7 @@ const LECTURES = [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 2,
     "series": "Personality Disorders",
-    "id": 502
+    "id": 498
   },
   {
     "title": "Personality Disorders [Part 3] Narcissistic (05.06.12)",
@@ -5617,7 +5571,7 @@ const LECTURES = [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 3,
     "series": "Personality Disorders",
-    "id": 503
+    "id": 499
   },
   {
     "title": "Personality Disorders [Part 4] PTSD (05.07.12)",
@@ -5629,7 +5583,7 @@ const LECTURES = [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 4,
     "series": "Personality Disorders",
-    "id": 504
+    "id": 500
   },
   {
     "title": "Personality Disorders [Part 5] Anti-Social (05.08.12)",
@@ -5641,7 +5595,7 @@ const LECTURES = [
     "thumb": "thumb/assets/Personality Disorders (Series)/COVER.png",
     "part": 5,
     "series": "Personality Disorders",
-    "id": 505
+    "id": 501
   },
   {
     "title": "Who Are You [Part 1] You Are Witnesses Over Mankind (07.21.11)",
@@ -5653,7 +5607,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "Who Are You",
-    "id": 506
+    "id": 502
   },
   {
     "title": "Who Are You – Part 1",
@@ -5665,7 +5619,7 @@ const LECTURES = [
     "thumb": null,
     "part": 1,
     "series": "Who Are You",
-    "id": 507
+    "id": 503
   },
   {
     "title": "Who Are You [Part 2] Succesful Indeed Are The Believers (07.23.11)",
@@ -5677,7 +5631,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Who Are You",
-    "id": 508
+    "id": 504
   },
   {
     "title": "Who Are You – Part 2",
@@ -5689,7 +5643,7 @@ const LECTURES = [
     "thumb": null,
     "part": 2,
     "series": "Who Are You",
-    "id": 509
+    "id": 505
   },
   {
     "title": "Who Are You [Part 3] You Are the Righteous Servants of Ar-Rahman (07.24.11)",
@@ -5701,7 +5655,7 @@ const LECTURES = [
     "thumb": null,
     "part": 3,
     "series": "Who Are You",
-    "id": 510
+    "id": 506
   },
   {
     "title": "Who are You2",
@@ -5711,7 +5665,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Who Are You?/Who are You2.mp3",
     "thumb": null,
-    "id": 511
+    "id": 507
   },
   {
     "title": "Radio Show - Allah's Blessings to Mankind (08.20.11)",
@@ -5721,7 +5675,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Allah's Blessings to Mankind (08.20.11).mp3",
     "thumb": "thumb/extracted/2676a8f4838e99.jpg",
-    "id": 512
+    "id": 508
   },
   {
     "title": "Radio Show - Challenges Facing the Youth Globally (08.06.11)",
@@ -5731,7 +5685,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Challenges Facing the Youth Globally (08.06.11).mp3",
     "thumb": null,
-    "id": 513
+    "id": 509
   },
   {
     "title": "Radio Show - God In Islam (11.19.11)",
@@ -5741,7 +5695,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - God In Islam (11.19.11).mp3",
     "thumb": "thumb/extracted/b1693094c8ce71.jpg",
-    "id": 514
+    "id": 510
   },
   {
     "title": "Radio Show - Judgment Day (11.26.11)",
@@ -5751,7 +5705,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Judgment Day (11.26.11).mp3",
     "thumb": "thumb/extracted/6862f6ca95768a.jpg",
-    "id": 515
+    "id": 511
   },
   {
     "title": "Radio Show - Manhood (10.22.11)",
@@ -5761,7 +5715,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Manhood (10.22.11).mp3",
     "thumb": "thumb/extracted/e38b5240266f79.jpg",
-    "id": 516
+    "id": 512
   },
   {
     "title": "Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11)",
@@ -5771,7 +5725,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Muhammad (PBUH) the Man & the Mission (09.03.11).mp3",
     "thumb": "thumb/extracted/f30bbb19eb83af.jpg",
-    "id": 517
+    "id": 513
   },
   {
     "title": "Radio Show - Natural Instincts (07.30.11)",
@@ -5781,7 +5735,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Radio_Show/Radio Show - Natural Instincts (07.30.11).mp3",
     "thumb": null,
-    "id": 518
+    "id": 514
   },
   {
     "title": "Balanced Nation (12.19.11)",
@@ -5791,7 +5745,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Balanced Nation (12.19.11).mp3",
     "thumb": "thumb/extracted/8dcb3b088624c3.jpg",
-    "id": 519
+    "id": 515
   },
   {
     "title": "Etiquettes Of Dawah",
@@ -5801,7 +5755,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Etiquettes Of Dawah.mp3",
     "thumb": null,
-    "id": 520
+    "id": 516
   },
   {
     "title": "Foundations of the Islamic Brotherhood And Sisterhood",
@@ -5811,7 +5765,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Foundations of the Islamic Brotherhood And Sisterhood.mp3",
     "thumb": null,
-    "id": 521
+    "id": 517
   },
   {
     "title": "Get Your Priorities Right (08.23.11)",
@@ -5821,7 +5775,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Get Your Priorities Right (08.23.11).mp3",
     "thumb": null,
-    "id": 522
+    "id": 518
   },
   {
     "title": "How to be Sincere to Allah (08.04.11 to 08.07.11)",
@@ -5831,7 +5785,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to Allah (08.04.11 to 08.07.11).mp3",
     "thumb": "thumb/extracted/4cbffbbbd24ca8.jpg",
-    "id": 523
+    "id": 519
   },
   {
     "title": "How to be Sincere to the Holy Qur'an (08.09.11)",
@@ -5841,7 +5795,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to the Holy Qur'an (08.09.11).mp3",
     "thumb": null,
-    "id": 524
+    "id": 520
   },
   {
     "title": "How to be Sincere to the Leaders (12.06.11)",
@@ -5851,7 +5805,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to the Leaders (12.06.11).mp3",
     "thumb": "thumb/extracted/fd6728401a4f1a.jpg",
-    "id": 525
+    "id": 521
   },
   {
     "title": "How to be Sincere to the Rasool (SAW) (08.08.11)",
@@ -5861,7 +5815,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to the Rasool (SAW) (08.08.11).mp3",
     "thumb": null,
-    "id": 526
+    "id": 522
   },
   {
     "title": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11)",
@@ -5871,7 +5825,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "How to be Sincere to Your Muslim Brothers & Sisters (08.11.11).mp3",
     "thumb": null,
-    "id": 527
+    "id": 523
   },
   {
     "title": "Islamic Etiquettes (11.26.11)",
@@ -5881,7 +5835,17 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Islamic Etiquettes (11.26.11).mp3",
     "thumb": "thumb/extracted/74a3ae70b699b0.jpg",
-    "id": 528
+    "id": 524
+  },
+  {
+    "title": "KNOWLEDGE",
+    "category": "Character_Dawah",
+    "categoryLabel": "Character & Dawah",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "KNOWLEDGE - Abdallah Al Faisal.mp3",
+    "thumb": null,
+    "id": 525
   },
   {
     "title": "Manhood in Islam",
@@ -5891,7 +5855,7 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Manhood in Islam.mp3",
     "thumb": null,
-    "id": 529
+    "id": 526
   },
   {
     "title": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12",
@@ -5901,7 +5865,27 @@ const LECTURES = [
     "subcategoryLabel": null,
     "archive": "Merits and Etiquettes of Dawah (02.04.12 to 02.09.12.mp3",
     "thumb": "thumb/extracted/78f1df9c3dffb9.jpg",
-    "id": 530
+    "id": 527
+  },
+  {
+    "title": "ROLE OF THE MASJID",
+    "category": "Character_Dawah",
+    "categoryLabel": "Character & Dawah",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "ROLE OF THE MASJID - Shaykh Faisal.mp3",
+    "thumb": null,
+    "id": 528
+  },
+  {
+    "title": "The 5 Needs of Mankind2",
+    "category": "Character_Dawah",
+    "categoryLabel": "Character & Dawah",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "The 5 Needs of Mankind2.mp3",
+    "thumb": null,
+    "id": 529
   },
   {
     "title": "The Etiquettes of Asking Questions",
@@ -5910,6 +5894,16 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Etiquettes of Asking Questions.mp3",
+    "thumb": null,
+    "id": 530
+  },
+  {
+    "title": "The Importance of Intention",
+    "category": "Character_Dawah",
+    "categoryLabel": "Character & Dawah",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "The Importance of Intention.mp3",
     "thumb": null,
     "id": 531
   }
@@ -5927,7 +5921,7 @@ const FEATURED_LECTURES = [
     "archive": "ARE YOU A TAKFIRI - Shaykh Abdallah Al Faisal.mp3"
   },
   {
-    "id": 441,
+    "id": 437,
     "thumb": "thumb/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.jpg",
     "archive": "Wicked_Scholars/BEWARE OF THE WICKED SCHOLARS - Abdallah Al Faisal.mp3"
   },
@@ -5937,7 +5931,7 @@ const FEATURED_LECTURES = [
     "archive": "BOY AND THE KING - Shaykh Faisal.mp3"
   },
   {
-    "id": 363,
+    "id": 359,
     "thumb": "thumb/DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.jpg",
     "archive": "DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.mp3"
   },
@@ -5952,12 +5946,12 @@ const FEATURED_LECTURES = [
     "archive": "DEMOCRACY IS THE GREATEST SHIRK - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 384,
+    "id": 380,
     "thumb": "thumb/DEMOCRATES - Those Who Participate In Democratic Election.png",
     "archive": "DEMOCRATES - Those Who Participate In Democratic Election.mp3"
   },
   {
-    "id": 495,
+    "id": 491,
     "thumb": "thumb/DISEASES OF THE HEART - Shaykh Faisal.png",
     "archive": "Diseases_of_the_Heart/DISEASES OF THE HEART - Shaykh Faisal.mp3"
   },
@@ -5967,22 +5961,22 @@ const FEATURED_LECTURES = [
     "archive": "DO NOT OBEY THE KUFFAR & THE MUNAFIQUN - Shaykh Faisal.mp3"
   },
   {
-    "id": 399,
+    "id": 395,
     "thumb": "thumb/DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.png",
     "archive": "DO NOT TAKE MY ENEMY AS YOUR FRIEND - Shaykh Faisal.mp3"
   },
   {
-    "id": 400,
+    "id": 396,
     "thumb": "thumb/DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.jpg",
     "archive": "DO NOT TAKE THE KUFFAR AS ALLIES - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 394,
+    "id": 390,
     "thumb": "thumb/ENTERING THE LIZARD HOLE - Shaykh Faisal.png",
     "archive": "Entering the Lizard Hole.mp3"
   },
   {
-    "id": 443,
+    "id": 439,
     "thumb": "thumb/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.jpg",
     "archive": "Wicked_Scholars/EVIL WICKED SCHOLARS LETTER TO AMEER AL MUMENEEN - Abdallah Al Faisal.mp3"
   },
@@ -6007,12 +6001,12 @@ const FEATURED_LECTURES = [
     "archive": "FRIENDS OF ALLAH & THE FRIENDS OF SHAYTAN - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 395,
+    "id": 391,
     "thumb": "thumb/GAY LESBIAN LGBT - Shaykh Faisal.png",
     "archive": "GAY LESBIAN LGBT - Shaykh Faisal.mp3"
   },
   {
-    "id": 401,
+    "id": 397,
     "thumb": "thumb/IFK  SLANDER OF AYSHA - Shaykh Faisal.jpg",
     "archive": "IFK  SLANDER OF AYSHA - Shaykh Faisal.mp3"
   },
@@ -6022,42 +6016,42 @@ const FEATURED_LECTURES = [
     "archive": "IMPEDIMENTS OF TAKFIR - Shaykh Abdallah Al Faisal.mp3"
   },
   {
-    "id": 364,
+    "id": 360,
     "thumb": "thumb/IMPORTANCE OF HIJRAH - Abdallah Al Faisal.jpg",
     "archive": "IMPORTANCE OF HIJRAH - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 402,
+    "id": 398,
     "thumb": "thumb/INSULTING THE PROPHET ABDALLAH AL FAISAL.jpg",
     "archive": "INSULTING THE PROPHET ﷺ  - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 251,
+    "id": 249,
     "thumb": "thumb/ISLAM UNDER SIEGE - Shaykh Faisal.jpg",
     "archive": "ISLAM UNDER SIEGE - Shaykh Faisal.mp3"
   },
   {
-    "id": 365,
+    "id": 361,
     "thumb": "thumb/JIHAD AIMS & OBJECTIVES - Abdallah Al Faisal.jpg",
     "archive": "Jihad/JIHAD AIMS & OBJECTIVES - Shaykh Faisal.mp3"
   },
   {
-    "id": 396,
+    "id": 392,
     "thumb": "thumb/KASHF USH SHUBUHAAT - Shaykh Faisal.jpg",
     "archive": "KASHF USH SHUBUHAAT - Shaykh Faisal.mp3"
   },
   {
-    "id": 389,
+    "id": 385,
     "thumb": "thumb/KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.png",
     "archive": "KHAWARIJ AND THEIR AQEEDAH - Shaykh Faisal.mp3"
   },
   {
-    "id": 372,
+    "id": 368,
     "thumb": "thumb/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.jpg",
     "archive": "Khilafah/KHILAFAH GREATEST PROPHESIES THIS UMMAH WITNESSED - Shaykh Faisal.mp3"
   },
   {
-    "id": 373,
+    "id": 369,
     "thumb": "thumb/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.jpg",
     "archive": "Khilafah/KHILAFAH SURVIVE & REVIVE - Shaykh Faisal.mp3"
   },
@@ -6067,27 +6061,27 @@ const FEATURED_LECTURES = [
     "archive": "KUFR DOONA KUFR - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 382,
+    "id": 378,
     "thumb": "thumb/MADKHALIS - Shaykh Faisal.png",
     "archive": "MADKHALIS - Shaykh Faisal.mp3"
   },
   {
-    "id": 374,
+    "id": 370,
     "thumb": "thumb/MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.jpg",
     "archive": "MANHAJ FOR ESTABLISHING SHARIAH - Shaykh Faisal.mp3"
   },
   {
-    "id": 385,
+    "id": 381,
     "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.jpg",
     "archive": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 385,
+    "id": 381,
     "thumb": "thumb/MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.png",
     "archive": "MELTDOWN OF DEMOCRACY - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 397,
+    "id": 393,
     "thumb": "thumb/MURJIA - Shaykh Faisal.jpg",
     "archive": "MURJIA - Shaykh Faisal.mp3"
   },
@@ -6102,17 +6096,17 @@ const FEATURED_LECTURES = [
     "archive": "MUSA AND QAROON - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 482,
+    "id": 478,
     "thumb": "thumb/MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.png",
     "archive": "MUSLIM MARRYING NON MUSLIM - Shaykh Abdallah Al Faisal.mp3"
   },
   {
-    "id": 258,
+    "id": 256,
     "thumb": "thumb/MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.png",
     "archive": "MYSTERIES OF THE SOUL EXPOUNDED (HUMAN SOUL) - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 386,
+    "id": 382,
     "thumb": "thumb/NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.jpg",
     "archive": "NATIONALISM SECULARISM DEMOCRACY OR ISLAM - Abdallah Al Faisal.mp3"
   },
@@ -6127,17 +6121,17 @@ const FEATURED_LECTURES = [
     "archive": "NEVER PRAY JANAZAH FOR ANY HYPOCRITE NOR STAND FOR THEIR GRAVE - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 391,
+    "id": 387,
     "thumb": "thumb/NO PEACE WITH JEWS.jpg",
     "archive": "NO PEACE WITH THE JEWS - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 376,
+    "id": 372,
     "thumb": "thumb/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.jpg",
     "archive": "Khilafah/OBLIGATION TO ESTABLISH KHILAFAH - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 483,
+    "id": 479,
     "thumb": "thumb/PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.jpg",
     "archive": "PARENT CHILD RELATIONSHIP & THE WESTERN CULTURE - Shaykh Faisal.mp3"
   },
@@ -6152,32 +6146,32 @@ const FEATURED_LECTURES = [
     "archive": "PRINCIPLES OF AHLUS SUNNAH WAL JAMA'AH - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 392,
+    "id": 388,
     "thumb": "thumb/REALITY OF THE JEWS - Abdallah Al Faisal.jpg",
     "archive": "REALITY OF THE JEWS - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 366,
+    "id": 362,
     "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.jpg",
     "archive": "Jihad/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 366,
+    "id": 362,
     "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.png",
     "archive": "Jihad/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 367,
+    "id": 363,
     "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png",
     "archive": "Jihad/SALAFI JIHADI - Shaykh Faisal.mp3"
   },
   {
-    "id": 383,
+    "id": 379,
     "thumb": "thumb/SAUDI SALAFI - Shaykh Faisal.jpg",
     "archive": "SAUDI SALAFI - Shaykh Faisal.mp3"
   },
   {
-    "id": 387,
+    "id": 383,
     "thumb": "thumb/SECULARISM - Shaykh Abdallah Al Faisal.png",
     "archive": "SECULARISM - Shaykh Abdallah Al Faisal.mp3"
   },
@@ -6187,17 +6181,17 @@ const FEATURED_LECTURES = [
     "archive": "SEVEN CONDITIONS OF SHAHADA (CLASSIC VERSION) - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 388,
+    "id": 384,
     "thumb": "thumb/SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.png",
     "archive": "SHARIAH VS MAN MADE LAWS - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 379,
+    "id": 375,
     "thumb": "thumb/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.jpg",
     "archive": "Shia/SHIA GREATEST ENEMY WITHIN - Shaykh Faisal.mp3"
   },
   {
-    "id": 380,
+    "id": 376,
     "thumb": "thumb/SHIA KNOW YOUR ENEMY - Shaykh Faisal.jpg",
     "archive": "Shia/SHIA KNOW YOUR ENEMY - Shaykh Faisal.mp3"
   },
@@ -6207,17 +6201,17 @@ const FEATURED_LECTURES = [
     "archive": "SIGNS OF HYPOCRITES - Shaykh Faisal.mp3"
   },
   {
-    "id": 390,
+    "id": 386,
     "thumb": "thumb/The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.jpg",
     "archive": "the Barking dogs of jahannam.mp3"
   },
   {
-    "id": 412,
+    "id": 408,
     "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg",
     "archive": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 413,
+    "id": 409,
     "thumb": "thumb/THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.jpg",
     "archive": "THOSE WHO DISBELIEVE FIGHT IN THE CAUSE OF TAGHUT - Abdallah Al Faisal.mp3"
   },
@@ -6227,7 +6221,7 @@ const FEATURED_LECTURES = [
     "archive": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 362,
+    "id": 358,
     "thumb": "thumb/VIRTUES OF MAKKAH - Shaykh Faisal.jpg",
     "archive": "VIRTUES OF MAKKAH - Shaykh Faisal.mp3"
   },
@@ -6237,12 +6231,12 @@ const FEATURED_LECTURES = [
     "archive": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.mp3"
   },
   {
-    "id": 447,
+    "id": 443,
     "thumb": "thumb/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.jpg",
     "archive": "Wicked_Scholars/WICKED SCHOLARS ARE LIKE A DOG - Shaykh Faisal.mp3"
   },
   {
-    "id": 488,
+    "id": 484,
     "thumb": "thumb/WIVES & CHILDREN - Shaykh Faisal.png",
     "archive": "WIVES & CHILDREN - Shaykh Faisal.mp3"
   }

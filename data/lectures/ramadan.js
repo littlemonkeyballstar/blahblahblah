@@ -8,7 +8,7 @@ registerLectureChunk("Ramadan", [
     "subcategoryLabel": null,
     "archive": "Ramadan/18 Merits of Ramadan [Revisited] (07.31.11).mp3",
     "thumb": null,
-    "id": 490
+    "id": 486
   },
   {
     "title": "LAYLATUL QADR",
@@ -18,7 +18,7 @@ registerLectureChunk("Ramadan", [
     "subcategoryLabel": null,
     "archive": "Ramadan/LAYLATUL QADR - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 491
+    "id": 487
   },
   {
     "title": "RAMADAN OUR BLESSED GUEST",
@@ -28,7 +28,7 @@ registerLectureChunk("Ramadan", [
     "subcategoryLabel": null,
     "archive": "Ramadan/RAMADAN OUR BLESSED GUEST - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 492
+    "id": 488
   },
   {
     "title": "Ramadhan - The Month of Glory (07.30.11)",
@@ -38,7 +38,7 @@ registerLectureChunk("Ramadan", [
     "subcategoryLabel": null,
     "archive": "Ramadan/Ramadhan - The Month of Glory (07.30.11).mp3",
     "thumb": null,
-    "id": 493
+    "id": 489
   },
   {
     "title": "VIRTUES OF RAMADAN",
@@ -48,6 +48,6 @@ registerLectureChunk("Ramadan", [
     "subcategoryLabel": null,
     "archive": "Ramadan/VIRTUES OF RAMADAN - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 494
+    "id": 490
   }
 ]);

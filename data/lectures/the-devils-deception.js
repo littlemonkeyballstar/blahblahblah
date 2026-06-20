@@ -8,7 +8,7 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/DEVIL'S DECEPTION OF SAUDI SALAFIS - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 433
+    "id": 429
   },
   {
     "title": "Devils Deception of the Saudi Salafis (07.13.11)",
@@ -18,7 +18,7 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/Devils Deception of the Saudi Salafis (07.13.11).mp3",
     "thumb": null,
-    "id": 434
+    "id": 430
   },
   {
     "title": "The Devil's Deception of the Aathir",
@@ -28,7 +28,7 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/The Devil's Deception of the Aathir.mp3",
     "thumb": null,
-    "id": 435
+    "id": 431
   },
   {
     "title": "The Devil's Deception of The Murji",
@@ -38,7 +38,7 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/09.Sheikh Abdullah Faisal - The Devil's Deception of The Murji.mp3",
     "thumb": null,
-    "id": 436
+    "id": 432
   },
   {
     "title": "The Devil's Deception of the Murjia",
@@ -48,7 +48,7 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/The Devil's Deception of the Murjia.mp3",
     "thumb": null,
-    "id": 437
+    "id": 433
   },
   {
     "title": "The Devil's Deception of The Qadiani",
@@ -58,7 +58,7 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/08.Sheikh Abdullah Faisal - The Devil's Deception of The Qadiani.mp3",
     "thumb": null,
-    "id": 438
+    "id": 434
   },
   {
     "title": "The Devil's Deception of The Shia",
@@ -68,6 +68,6 @@ registerLectureChunk("The Devils Deception", [
     "subcategoryLabel": null,
     "archive": "The Devils Deception/06.Sheikh Abdullah Faisal - The Devil's Deception of The Shia.mp3",
     "thumb": null,
-    "id": 439
+    "id": 435
   }
 ]);

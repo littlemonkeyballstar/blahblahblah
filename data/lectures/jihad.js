@@ -8,7 +8,7 @@ registerLectureChunk("Jihad", [
     "subcategoryLabel": null,
     "archive": "DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.mp3",
     "thumb": "thumb/DECLARATION OF WAR - Osama Bin Laden Translated by Abdallah Al Faisal.jpg",
-    "id": 363
+    "id": 359
   },
   {
     "title": "IMPORTANCE OF HIJRAH",
@@ -18,7 +18,7 @@ registerLectureChunk("Jihad", [
     "subcategoryLabel": null,
     "archive": "IMPORTANCE OF HIJRAH - Abdallah Al Faisal.mp3",
     "thumb": "thumb/IMPORTANCE OF HIJRAH - Abdallah Al Faisal.jpg",
-    "id": 364
+    "id": 360
   },
   {
     "title": "JIHAD AIMS & OBJECTIVES",
@@ -28,7 +28,7 @@ registerLectureChunk("Jihad", [
     "subcategoryLabel": null,
     "archive": "Jihad/JIHAD AIMS & OBJECTIVES - Shaykh Faisal.mp3",
     "thumb": "thumb/extracted/5943e51a1e4e99.jpg",
-    "id": 365
+    "id": 361
   },
   {
     "title": "REQUIREMENTS OF JIHAD",
@@ -38,7 +38,7 @@ registerLectureChunk("Jihad", [
     "subcategoryLabel": null,
     "archive": "Jihad/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.mp3",
     "thumb": "thumb/REQUIREMENTS OF JIHAD - Abdallah Al Faisal.png",
-    "id": 366
+    "id": 362
   },
   {
     "title": "SALAFI JIHADI",
@@ -48,6 +48,6 @@ registerLectureChunk("Jihad", [
     "subcategoryLabel": null,
     "archive": "Jihad/SALAFI JIHADI - Shaykh Faisal.mp3",
     "thumb": "thumb/SALAFI JIHADI - Shaykh Faisal.png",
-    "id": 367
+    "id": 363
   }
 ]);

@@ -112,7 +112,6 @@ DISPLAY_NAMES = {
     "Character_Dawah": "Character & Dawah",
     "Ummah_Affairs": "Ummah & Contemporary Issues",
     "The 5 Desperate Zindeeq": "The 5 Desperate Zindeeq",
-    "Islamic_Knowledge": "Islamic Knowledge",
 }
 
 # Fold small / sect-specific folders into broader categories
@@ -184,7 +183,6 @@ CAT_ORDER = [
     "The Sealed Nector (Series)",
     "Prophets_Seerah",
     "Aqeedah",
-    "Islamic_Knowledge",
     "Ummah_Affairs",
     "General",
     "Fiqh_Worship",
@@ -226,8 +224,8 @@ TITLE_SERIES_PATTERNS: list[tuple[str, str, str | None]] = [
     (r"reality of emaan|paradise is exclusive|8 gates of paradise|35 people|36 people|"
      r"power of intercession|they do not love allah|trade that saves|painful torment|wish for death|"
      r"\bworst sins\b|evil effects of sins|evil consequences.*rasool|they shall reap", "Aqeedah", None),
-    (r"^knowledge -|philosophy of the islamic jurisprudence|ijtihaad maslaha|5 ahkaam of shariah|"
-     r"5 needs of mankind|importance of intention|dua - the weapon|role of the masjid", "Islamic_Knowledge", None),
+    (r"philosophy of the islamic jurisprudence|ijtihaad maslaha|5 ahkaam of shariah|dua - the weapon", "Fiqh_Worship", None),
+    (r"^knowledge -|5 needs of mankind|importance of intention|role of the masjid", "Character_Dawah", None),
     (r"people of the cave|sleepers in the cave", "Prophets_Seerah", None),
     (r"women in islam|wives & children|parent child|marital discord|daughters are diamonds|muslim home|tainted love|"
      r"muslim marrying|fiqh of menses|money can't buy true love|^love - abdallah", "Nikah_Divorce", None),
@@ -359,6 +357,14 @@ LECTURE_CATEGORY_OVERRIDES = {
     norm("REALITY OF EMAAN - Abdallah Al Faisal"): "Aqeedah",
     norm("THEY DO NOT LOVE ALLAH - Abdallah Al Faisal"): "Aqeedah",
     norm("TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal"): "Aqeedah",
+    norm("IJTIHAAD MASLAHA - Abdallah Al Faisal"): "Fiqh_Worship",
+    norm("ROLE OF THE MASJID - Shaykh Faisal"): "Character_Dawah",
+    norm("Dua - The weapon of a believer"): "Fiqh_Worship",
+    norm("The 5 Ahkaam of Shariah"): "Fiqh_Worship",
+    norm("The 5 Needs of Mankind2"): "Character_Dawah",
+    norm("The Importance of Intention"): "Character_Dawah",
+    norm("The Philosophy of the islamic Jurisprudence"): "Fiqh_Worship",
+    norm("KNOWLEDGE - Abdallah Al Faisal"): "Character_Dawah",
 }
 
 # Pin specific lectures to the top of their sub-series (lower = earlier).
@@ -384,13 +390,10 @@ GENERAL_LECTURE_TITLES = frozenset(
         "Be And It Is (07.12.11)",
         "Beware of Going Against the Ijmaa3 of the Ummah (08.02.11)",
         "Don't Envy the Kuffaar for their Jahiliyya (07.26.11)",
-        "Dua - The weapon of a believer",
         "Exposing Those Who Insult Allah (07.10.11)",
-        "IJTIHAAD MASLAHA - Abdallah Al Faisal",
         "ISLAM THE MOST HYGIENIC RELIGION - Abdallah Al Faisal",
         "Islam was Revealed in Stages (08.28.11)",
         "Jahiliyya Gives Everyone a Raw Deal (07.24.11)",
-        "KNOWLEDGE - Abdallah Al Faisal",
         "Kufaar and the Fear Factor (07.03.11)",
         "Might Without Wisdom is a Recipe for Disaster (07.27.11)",
         "Our 6 Sacred Possessions",
@@ -398,7 +401,6 @@ GENERAL_LECTURE_TITLES = frozenset(
         "Power of Intercession (07.18.11)",
 
         "REALITY OF POVERTY - Abdallah Al Faisal",
-        "ROLE OF THE MASJID - Shaykh Faisal",
         "Reality of FGM (08.25.11)",
         "Reality of Poverty (02.27.12)",
         "Resist To Exist (07.07.11)",
@@ -410,8 +412,6 @@ GENERAL_LECTURE_TITLES = frozenset(
         "The 21 Reasons Why The Quran Is A Wise Book",
         "The 35 People Allah SWT Abhors",
         "The 36 People Allah SWT Loves",
-        "The 5 Ahkaam of Shariah",
-        "The 5 Needs of Mankind2",
         "The 8 Gates of Paradise",
         "The American Ban on Muslims",
         "The Bombing of the Goofi Soofis",
@@ -420,8 +420,6 @@ GENERAL_LECTURE_TITLES = frozenset(
         "The Evil Rulers Of The World",
         "The Holy Spirit (06.18.11)",
         "The Hyenas Of The Ummah",
-        "The Importance of Intention",
-        "The Philosophy of the islamic Jurisprudence",
         "The Reality of Fitnah",
         "The Reality of Racism",
         "The Ship Is Sinking (07.13.11)",
@@ -512,6 +510,9 @@ def resolve_category(title: str, folder_category: str, folder_subcategory: str |
 
     if category == "Tawheed":
         category = "Aqeedah"
+
+    if category == "Islamic_Knowledge":
+        category = "General"
 
     return category, subcategory
 
