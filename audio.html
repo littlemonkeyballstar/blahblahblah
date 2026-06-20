@@ -288,6 +288,18 @@
       to { transform: translateY(0); opacity: 1; }
     }
     body.category-picker-open { overflow: hidden; }
+    #categoryPicker {
+      z-index: 120;
+      isolation: isolate;
+    }
+    body.category-picker-open .site-top-bar,
+    body.category-picker-open .site-header {
+      z-index: 10;
+    }
+    body.category-picker-open .audio-category-panel {
+      visibility: hidden;
+      pointer-events: none;
+    }
   </style>
 </head>
 
@@ -347,27 +359,6 @@
         </div>
       </aside>
 
-      <!-- Mobile: full category picker -->
-      <div id="categoryPicker" class="fixed inset-0 z-[70] hidden" role="dialog" aria-modal="true" aria-labelledby="categoryPickerTitle" aria-hidden="true">
-        <button type="button" id="categoryPickerBackdrop" class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm" aria-label="Close category list"></button>
-        <div class="category-picker-sheet absolute inset-x-0 bottom-0 max-h-[88vh] flex flex-col rounded-t-2xl border border-slate-700 bg-slate-925 shadow-2xl">
-          <div class="flex items-center justify-between gap-3 px-4 py-3 border-b border-slate-800 shrink-0">
-            <h2 id="categoryPickerTitle" class="font-display text-lg text-gold-gradient">All categories</h2>
-            <button type="button" id="closeCategoryPicker" class="w-10 h-10 rounded-full border border-slate-700 text-slate-400 hover:text-gold hover:border-gold/40 transition" aria-label="Close">
-              <i class="fas fa-times"></i>
-            </button>
-          </div>
-          <div class="px-4 py-3 border-b border-slate-800 shrink-0">
-            <div class="relative">
-              <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 text-sm"></i>
-              <input id="categoryPickerSearch" type="search" placeholder="Filter categories…"
-                class="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold/50 text-base">
-            </div>
-          </div>
-          <nav id="categoryPickerList" class="overflow-y-auto overscroll-contain px-3 py-2 pb-[max(1rem,env(safe-area-inset-bottom))] space-y-1" aria-label="All lecture categories"></nav>
-        </div>
-      </div>
-
       <!-- Main content -->
       <div class="flex-1 min-w-0">
 
@@ -409,6 +400,27 @@
       </div>
     </div>
   </main>
+
+  <!-- Mobile: full category picker (body-level so it sits above sticky header) -->
+  <div id="categoryPicker" class="fixed inset-0 hidden" role="dialog" aria-modal="true" aria-labelledby="categoryPickerTitle" aria-hidden="true">
+    <button type="button" id="categoryPickerBackdrop" class="absolute inset-0 bg-slate-950/80 backdrop-blur-sm" aria-label="Close category list"></button>
+    <div class="category-picker-sheet absolute inset-x-0 bottom-0 max-h-[88vh] flex flex-col rounded-t-2xl border border-slate-700 bg-slate-925 shadow-2xl">
+      <div class="flex items-center justify-between gap-3 px-4 py-3 border-b border-slate-800 shrink-0">
+        <h2 id="categoryPickerTitle" class="font-display text-lg text-gold-gradient">All categories</h2>
+        <button type="button" id="closeCategoryPicker" class="w-10 h-10 rounded-full border border-slate-700 text-slate-400 hover:text-gold hover:border-gold/40 transition" aria-label="Close">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="px-4 py-3 border-b border-slate-800 shrink-0">
+        <div class="relative">
+          <i class="fas fa-search absolute left-3 top-1/2 -translate-y-1/2 text-slate-500 text-sm"></i>
+          <input id="categoryPickerSearch" type="search" placeholder="Filter categories…"
+            class="w-full pl-10 pr-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-100 placeholder-slate-500 focus:outline-none focus:border-gold/50 text-base">
+        </div>
+      </div>
+      <nav id="categoryPickerList" class="overflow-y-auto overscroll-contain px-3 py-2 pb-[max(1rem,env(safe-area-inset-bottom))] space-y-1" aria-label="All lecture categories"></nav>
+    </div>
+  </div>
 
   <footer class="border-t border-slate-800 bg-slate-925/50 py-10 px-4 text-center">
     <p class="text-slate-400 text-sm mb-3">May Allah reward Shaykh Abdullah Faisal and hasten his release. Ameen.</p>
@@ -645,12 +657,23 @@
 
     let lectureLoadToken = 0;
 
+    function lecturesAlreadyLoadedForFilter() {
+      const searching = !!(state.search || '').trim();
+      if (searching || state.category === 'all') {
+        return lectureChunksReadyForBrowse();
+      }
+      return lectureChunkIsLoaded(state.category);
+    }
+
     async function refreshLectures() {
       const token = ++lectureLoadToken;
       const grid = document.getElementById('lectureGrid');
       const empty = document.getElementById('emptyState');
+      const showSpinner = !lecturesAlreadyLoadedForFilter();
       empty.classList.add('hidden');
-      grid.innerHTML = '<p class="col-span-full text-center py-16 text-slate-500"><i class="fas fa-spinner fa-spin mr-2"></i>Loading lectures…</p>';
+      if (showSpinner) {
+        grid.innerHTML = '<p class="col-span-full text-center py-16 text-slate-500"><i class="fas fa-spinner fa-spin mr-2"></i>Loading lectures…</p>';
+      }
       try {
         await ensureLecturesForFilter(state.category, state.search);
       } catch (err) {
@@ -845,6 +868,7 @@
       const grid = document.getElementById('lectureGrid');
       const empty = document.getElementById('emptyState');
 
+      const useStagger = !window.matchMedia('(min-width: 1024px)').matches;
       animateContentSwap(grid, () => {
         if (!pageItems.length) {
           grid.innerHTML = '';
@@ -857,7 +881,7 @@
       bindLectureAudioPlayers();
       bindShareButtons(grid);
       enhanceGridThumbs(grid, { priorityCount: 8 });
-      });
+      }, { stagger: useStagger, fast: !useStagger });
     }
 
     function bindLectureAudioPlayers() {

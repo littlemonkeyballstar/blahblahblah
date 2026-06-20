@@ -297,6 +297,17 @@ async function ensureLecturesForFilter(category, searchQuery) {
   }
 }
 
+function lectureChunkIsLoaded(category) {
+  if (!category || category === 'all') return lectureChunksReadyForBrowse();
+  return _lectureChunks.has(category);
+}
+
+function lectureChunksReadyForBrowse() {
+  if (typeof LECTURE_CHUNK_URLS === 'undefined') return false;
+  const keys = Object.keys(LECTURE_CHUNK_URLS);
+  return keys.length > 0 && keys.every((id) => _lectureChunks.has(id));
+}
+
 function initCloudflareAnalytics() {
   if (!CLOUDFLARE_ANALYTICS_TOKEN) return;
   const src = 'https://static.cloudflareinsights.com/beacon.min.js';
@@ -640,6 +651,17 @@ function mountMotionStyles() {
       opacity: 1;
       transform: none;
     }
+    .content-swap-fast.content-swap-out {
+      transform: translateY(3px);
+    }
+    @media (min-width: 1024px) {
+      .content-swap {
+        transition-duration: 0.14s;
+      }
+      .content-swap-out {
+        transform: translateY(4px);
+      }
+    }
 
     .stagger-item {
       animation: site-stagger-in 0.38s cubic-bezier(0.22, 1, 0.36, 1) both;
@@ -695,7 +717,7 @@ function initSiteMotion() {
   window.addEventListener('pagehide', handlePageHide);
 }
 
-function animateContentSwap(container, updateFn, { stagger = true } = {}) {
+function animateContentSwap(container, updateFn, { stagger = true, fast = false } = {}) {
   if (!container) {
     if (updateFn) updateFn();
     return Promise.resolve();
@@ -706,7 +728,10 @@ function animateContentSwap(container, updateFn, { stagger = true } = {}) {
     return Promise.resolve();
   }
 
+  const outMs = fast ? 90 : 160;
+  const inMs = fast ? 160 : 320;
   container.classList.add('content-swap');
+  if (fast) container.classList.add('content-swap-fast');
   container.classList.add('content-swap-out');
 
   return new Promise((resolve) => {
@@ -716,10 +741,10 @@ function animateContentSwap(container, updateFn, { stagger = true } = {}) {
       container.classList.add('content-swap-in');
       if (stagger) staggerRevealChildren(container);
       window.setTimeout(() => {
-        container.classList.remove('content-swap-in');
+        container.classList.remove('content-swap-in', 'content-swap-fast');
         resolve();
-      }, 320);
-    }, 160);
+      }, inMs);
+    }, outMs);
   });
 }
 
@@ -1157,7 +1182,7 @@ function mountMobileStyles() {
       .audio-category-panel {
         position: sticky;
         top: 4.25rem;
-        z-index: 40;
+        z-index: 30;
         background: rgba(12, 18, 32, 0.96) !important;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
