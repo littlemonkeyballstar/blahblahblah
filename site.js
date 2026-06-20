@@ -1168,6 +1168,15 @@ function mountMobileStyles() {
   document.head.appendChild(style);
 }
 
+function mountArchiveLoadNote(targetId = 'archiveLoadNote') {
+  const mount = document.getElementById(targetId);
+  if (!mount) return;
+  mount.innerHTML = `<p class="archive-load-note flex items-start gap-2 text-xs sm:text-sm text-slate-500 max-w-3xl leading-relaxed">
+    <i class="fas fa-circle-info text-gold/70 mt-0.5 shrink-0" aria-hidden="true"></i>
+    <span>If media won&rsquo;t load, try disabling your VPN or switching DNS &mdash; some providers (e.g. Proton) block Internet Archive.</span>
+  </p>`;
+}
+
 function mountTopBar() {
   initCloudflareAnalytics();
   initSiteMotion();

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="/favicon.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="robots" content="noindex">
+  <title>Page not found • Shaykh Abdullah Faisal</title>
+  <link rel="stylesheet" href="/site.css" onerror="document.documentElement.classList.add('no-tailwind')">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; }
+    .font-display { font-family: 'Playfair Display', Georgia, serif; }
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #e8c97a 0%, #d4a853 50%, #c49a3c 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .islamic-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23d4a853' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/svg%3E");
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-200 islamic-pattern min-h-screen flex flex-col">
+
+  <div id="siteTopBar"></div>
+
+  <header class="site-header bg-slate-925/90 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
+    <div class="site-header__inner max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-5 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
+      <a href="/index.html" class="site-header__title font-display text-xl sm:text-3xl font-bold text-gold-gradient text-center sm:text-left shrink-0">Shaykh Abdullah Faisal</a>
+      <nav class="site-nav flex sm:flex-wrap gap-1 text-sm font-medium justify-start sm:justify-end">
+        <a href="/index.html" data-nav="home" class="px-4 py-2 rounded-full transition">Home</a>
+        <a href="/biography.html" data-nav="biography" class="px-4 py-2 rounded-full transition"><span class="nav-long">Biography</span><span class="nav-short">Bio</span></a>
+        <a href="/clips.html" data-nav="clips" class="px-4 py-2 rounded-full transition"><span class="nav-long">Clips/Shorts</span><span class="nav-short">Clips</span></a>
+        <a href="/videos.html" data-nav="videos" class="px-4 py-2 rounded-full transition"><span class="nav-long">Video Lectures</span><span class="nav-short">Videos</span></a>
+        <a href="/audio.html" data-nav="audio" class="px-4 py-2 rounded-full transition"><span class="nav-long">Audio Lectures</span><span class="nav-short">Audio</span></a>
+        <a href="/pdfs.html" data-nav="pdfs" class="px-4 py-2 rounded-full transition"><span class="nav-long">PDF Books</span><span class="nav-short">PDFs</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1 flex items-center justify-center px-4 sm:px-8 py-16 sm:py-24">
+    <div class="max-w-lg w-full text-center">
+      <p class="text-gold/80 text-sm font-semibold tracking-[0.2em] uppercase mb-3">404</p>
+      <h1 class="font-display text-3xl sm:text-4xl text-gold-gradient mb-4">Page not found</h1>
+      <p class="text-slate-400 text-sm sm:text-base leading-relaxed mb-8">
+        That link doesn’t exist or may have moved. Head back home or pick a section below.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3 mb-10">
+        <a href="/index.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-gold text-slate-950 font-semibold text-sm hover:bg-gold/90 transition">
+          <i class="fas fa-home"></i> Back to home
+        </a>
+        <a href="/audio.html" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl border border-slate-700 text-slate-300 text-sm hover:border-gold/40 hover:text-gold transition">
+          <i class="fas fa-headphones"></i> Audio lectures
+        </a>
+      </div>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 text-sm">
+        <a href="/videos.html" class="px-3 py-2 rounded-lg border border-slate-800 bg-slate-900/60 hover:border-gold/30 transition">Videos</a>
+        <a href="/clips.html" class="px-3 py-2 rounded-lg border border-slate-800 bg-slate-900/60 hover:border-gold/30 transition">Clips</a>
+        <a href="/pdfs.html" class="px-3 py-2 rounded-lg border border-slate-800 bg-slate-900/60 hover:border-gold/30 transition">PDFs</a>
+        <a href="/biography.html" class="px-3 py-2 rounded-lg border border-slate-800 bg-slate-900/60 hover:border-gold/30 transition">Bio</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="border-t border-slate-800 bg-slate-925/50 py-10 px-4 text-center">
+    <p id="siteTelegram" class="mb-4"></p>
+    <p id="siteDisclaimer" class="text-slate-500 text-sm max-w-2xl mx-auto leading-relaxed"></p>
+  </footer>
+
+  <script src="/site.js"></script>
+  <script>
+    mountTopBar();
+    document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
+    mountTelegramLink();
+    setActiveNav('');
+  </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Shaykh Abdullah Faisal Educational Archive">
+  <defs>
+    <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c97a"/>
+      <stop offset="50%" stop-color="#d4a853"/>
+      <stop offset="100%" stop-color="#b8923f"/>
+    </linearGradient>
+    <pattern id="pattern" width="60" height="60" patternUnits="userSpaceOnUse">
+      <path fill="#d4a853" fill-opacity="0.05" d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="630" fill="#080d18"/>
+  <rect width="1200" height="630" fill="url(#pattern)"/>
+  <rect x="48" y="48" width="1104" height="534" rx="28" fill="none" stroke="url(#gold)" stroke-width="2" opacity="0.35"/>
+  <rect x="120" y="195" width="960" height="4" rx="2" fill="url(#gold)" opacity="0.45"/>
+  <text x="600" y="290" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" fill="url(#gold)">Shaykh Abdullah Faisal</text>
+  <text x="600" y="360" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="34" font-weight="500" fill="#94a3b8" letter-spacing="0.12em">EDUCATIONAL ARCHIVE</text>
+  <text x="600" y="430" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="26" fill="#64748b">Audio · Video · Clips · PDFs</text>
+  <rect x="120" y="475" width="960" height="4" rx="2" fill="url(#gold)" opacity="0.25"/>
+  <text x="600" y="545" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#475569">shaykhabdullahfaisal.com</text>
+</svg>
