@@ -267,7 +267,7 @@ const HOME_FEATURED = [
     "title": "MADKHALIS",
     "categoryLabel": "Refutations",
     "thumb": "thumb/MADKHALIS - Shaykh Faisal.png",
-    "archive": "Madkhali/MADKHALIS - Shaykh Faisal.mp3"
+    "archive": "MADKHALIS - Shaykh Faisal.mp3"
   },
   {
     "id": 370,

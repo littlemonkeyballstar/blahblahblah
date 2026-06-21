@@ -1941,7 +1941,8 @@ const SEARCH_INDEX = [
     "title": "The 4 Branches Of Tauheed",
     "sub": "Aqeedah & Tawheed",
     "archive": "Tawheed/The 4 Branches Of Tauheed.mp3",
-    "href": "audio.html?archive=Tawheed%2FThe%204%20Branches%20Of%20Tauheed.mp3"
+    "href": "audio.html?archive=Tawheed%2FThe%204%20Branches%20Of%20Tauheed.mp3",
+    "thumb": "thumb/The 4 Branches Of Tauheed.png"
   },
   {
     "type": "audio",
@@ -3265,7 +3266,8 @@ const SEARCH_INDEX = [
     "title": "NO PEACE WITH THE JEWS",
     "sub": "Refutations",
     "archive": "NO PEACE WITH THE JEWS - Abdallah Al Faisal.mp3",
-    "href": "audio.html?archive=NO%20PEACE%20WITH%20THE%20JEWS%20-%20Abdallah%20Al%20Faisal.mp3"
+    "href": "audio.html?archive=NO%20PEACE%20WITH%20THE%20JEWS%20-%20Abdallah%20Al%20Faisal.mp3",
+    "thumb": "thumb/NO PEACE WITH JEWS.jpg"
   },
   {
     "type": "audio",
@@ -3685,7 +3687,8 @@ const SEARCH_INDEX = [
     "title": "47 Signs of the Wicked Scholar",
     "sub": "Wicked Scholars",
     "archive": "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-.mp3",
-    "href": "audio.html?archive=47%20signs%20of%20the%20wicked%20scholer%20by%20Sheikh%20Abdullah%20Faisal%20-Full-.mp3"
+    "href": "audio.html?archive=47%20signs%20of%20the%20wicked%20scholer%20by%20Sheikh%20Abdullah%20Faisal%20-Full-.mp3",
+    "thumb": "thumb/47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full- .png"
   },
   {
     "type": "audio",
@@ -3945,7 +3948,8 @@ const SEARCH_INDEX = [
     "title": "The 18 Types Of Women You Should Not Marry",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/The 18 Types Of Women You Should Not Marry.mp3",
-    "href": "audio.html?archive=Nikah_Divorce%2FThe%2018%20Types%20Of%20Women%20You%20Should%20Not%20Marry.mp3"
+    "href": "audio.html?archive=Nikah_Divorce%2FThe%2018%20Types%20Of%20Women%20You%20Should%20Not%20Marry.mp3",
+    "thumb": "thumb/The 18 Types Of Women You Should Not Marry.png"
   },
   {
     "type": "audio",
@@ -3953,7 +3957,8 @@ const SEARCH_INDEX = [
     "title": "The 20 Types Of Men You Should Not Marry",
     "sub": "Marriage & Family",
     "archive": "Nikah_Divorce/The 20 Types Of Men You Should Not Marry.mp3",
-    "href": "audio.html?archive=Nikah_Divorce%2FThe%2020%20Types%20Of%20Men%20You%20Should%20Not%20Marry.mp3"
+    "href": "audio.html?archive=Nikah_Divorce%2FThe%2020%20Types%20Of%20Men%20You%20Should%20Not%20Marry.mp3",
+    "thumb": "thumb/The 20 Types Of Men You Should Not Marry.png"
   },
   {
     "type": "audio",

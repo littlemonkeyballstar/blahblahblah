@@ -4305,7 +4305,7 @@ const LECTURES = [
     "categoryLabel": "Refutations",
     "subcategory": "refutation_madkhali",
     "subcategoryLabel": "Madkhalis",
-    "archive": "Madkhali/MADKHALIS - Shaykh Faisal.mp3",
+    "archive": "MADKHALIS - Shaykh Faisal.mp3",
     "thumb": "thumb/MADKHALIS - Shaykh Faisal.png",
     "id": 378
   },
@@ -4845,7 +4845,7 @@ const LECTURES = [
     "categoryLabel": "The Devil's Deception",
     "subcategory": null,
     "subcategoryLabel": null,
-    "archive": "The Devils Deception/Sheikh Abdullah Faisal - The Devil's Deception of The Murji.mp3",
+    "archive": "The Devils Deception/09.Sheikh Abdullah Faisal - The Devil's Deception of The Murji.mp3",
     "thumb": null,
     "id": 432
   },
@@ -4865,7 +4865,7 @@ const LECTURES = [
     "categoryLabel": "The Devil's Deception",
     "subcategory": null,
     "subcategoryLabel": null,
-    "archive": "The Devils Deception/Sheikh Abdullah Faisal - The Devil's Deception of The Qadiani.mp3",
+    "archive": "The Devils Deception/08.Sheikh Abdullah Faisal - The Devil's Deception of The Qadiani.mp3",
     "thumb": null,
     "id": 434
   },
@@ -4875,7 +4875,7 @@ const LECTURES = [
     "categoryLabel": "The Devil's Deception",
     "subcategory": null,
     "subcategoryLabel": null,
-    "archive": "The Devils Deception/Sheikh Abdullah Faisal - The Devil's Deception of The Shia.mp3",
+    "archive": "The Devils Deception/06.Sheikh Abdullah Faisal - The Devil's Deception of The Shia.mp3",
     "thumb": null,
     "id": 435
   },
@@ -6058,7 +6058,7 @@ const FEATURED_LECTURES = [
   {
     "id": 378,
     "thumb": "thumb/MADKHALIS - Shaykh Faisal.png",
-    "archive": "Madkhali/MADKHALIS - Shaykh Faisal.mp3"
+    "archive": "MADKHALIS - Shaykh Faisal.mp3"
   },
   {
     "id": 370,

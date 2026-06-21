@@ -415,7 +415,7 @@ const FEATURED_LECTURES = [
   {
     "id": 378,
     "thumb": "thumb/MADKHALIS - Shaykh Faisal.png",
-    "archive": "Madkhali/MADKHALIS - Shaykh Faisal.mp3"
+    "archive": "MADKHALIS - Shaykh Faisal.mp3"
   },
   {
     "id": 370,
@@ -1144,26 +1144,26 @@ const LECTURE_ID_INDEX = {
 };
 
 const LECTURE_CHUNK_URLS = {
-  "Tafseer": "data/lectures/tafseer.js?v=20260620",
-  "The Sealed Nector (Series)": "data/lectures/the-sealed-nector-series.js?v=20260620",
-  "Prophets_Seerah": "data/lectures/prophets-seerah.js?v=20260620",
-  "Aqeedah": "data/lectures/aqeedah.js?v=20260620",
-  "Ummah_Affairs": "data/lectures/ummah-affairs.js?v=20260620",
-  "General": "data/lectures/general.js?v=20260620",
-  "Fiqh_Worship": "data/lectures/fiqh-worship.js?v=20260620",
-  "Jihad": "data/lectures/jihad.js?v=20260620",
-  "Khilafah": "data/lectures/khilafah.js?v=20260620",
-  "Refutation": "data/lectures/refutation.js?v=20260620",
-  "Jokers in the pack": "data/lectures/jokers-in-the-pack.js?v=20260620",
-  "The 5 Desperate Zindeeq": "data/lectures/the-5-desperate-zindeeq.js?v=20260620",
-  "The Devils Deception": "data/lectures/the-devils-deception.js?v=20260620",
-  "Wicked_Scholars": "data/lectures/wicked-scholars.js?v=20260620",
-  "Science in the quran": "data/lectures/science-in-the-quran.js?v=20260620",
-  "Nikah_Divorce": "data/lectures/nikah-divorce.js?v=20260620",
-  "Ramadan": "data/lectures/ramadan.js?v=20260620",
-  "Diseases_of_the_Heart": "data/lectures/diseases-of-the-heart.js?v=20260620",
-  "Personality Disorders (Series)": "data/lectures/personality-disorders-series.js?v=20260620",
-  "Who Are You?": "data/lectures/who-are-you.js?v=20260620",
-  "Radio_Show": "data/lectures/radio-show.js?v=20260620",
-  "Character_Dawah": "data/lectures/character-dawah.js?v=20260620"
+  "Tafseer": "data/lectures/tafseer.js?v=20260621",
+  "The Sealed Nector (Series)": "data/lectures/the-sealed-nector-series.js?v=20260621",
+  "Prophets_Seerah": "data/lectures/prophets-seerah.js?v=20260621",
+  "Aqeedah": "data/lectures/aqeedah.js?v=20260621",
+  "Ummah_Affairs": "data/lectures/ummah-affairs.js?v=20260621",
+  "General": "data/lectures/general.js?v=20260621",
+  "Fiqh_Worship": "data/lectures/fiqh-worship.js?v=20260621",
+  "Jihad": "data/lectures/jihad.js?v=20260621",
+  "Khilafah": "data/lectures/khilafah.js?v=20260621",
+  "Refutation": "data/lectures/refutation.js?v=20260621",
+  "Jokers in the pack": "data/lectures/jokers-in-the-pack.js?v=20260621",
+  "The 5 Desperate Zindeeq": "data/lectures/the-5-desperate-zindeeq.js?v=20260621",
+  "The Devils Deception": "data/lectures/the-devils-deception.js?v=20260621",
+  "Wicked_Scholars": "data/lectures/wicked-scholars.js?v=20260621",
+  "Science in the quran": "data/lectures/science-in-the-quran.js?v=20260621",
+  "Nikah_Divorce": "data/lectures/nikah-divorce.js?v=20260621",
+  "Ramadan": "data/lectures/ramadan.js?v=20260621",
+  "Diseases_of_the_Heart": "data/lectures/diseases-of-the-heart.js?v=20260621",
+  "Personality Disorders (Series)": "data/lectures/personality-disorders-series.js?v=20260621",
+  "Who Are You?": "data/lectures/who-are-you.js?v=20260621",
+  "Radio_Show": "data/lectures/radio-show.js?v=20260621",
+  "Character_Dawah": "data/lectures/character-dawah.js?v=20260621"
 };
