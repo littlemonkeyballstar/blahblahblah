@@ -812,7 +812,8 @@
     }
 
     /* ── Lecture card ── */
-    function buildCard(lecture, index = 99) {
+    function buildCard(lecture, index = 99, options = {}) {
+      const searchMode = !!options.searchMode;
       const eagerThumb = index < 8;
       const thumbLoading = eagerThumb ? 'eager' : 'lazy';
       const thumbPriority = eagerThumb ? ' fetchpriority="high"' : '';
@@ -824,14 +825,14 @@
         ? `<span class="text-[10px] uppercase tracking-wider text-slate-500">${escapeHtml(lecture.subcategoryLabel)}</span>`
         : '';
 
-      const downloadOverlay = downloadGlassLink(audioUrl, { label: 'Download audio' });
+      const downloadOverlay = searchMode ? '' : downloadGlassLink(audioUrl, { label: 'Download audio' });
       const shareUrl = lecture.archive
         ? pageItemShareUrl('audio.html', 'lecture', lecture.id, { archive: lecture.archive })
         : pageItemShareUrl('audio.html', 'lecture', lecture.id);
       const shareOverlay = shareGlassButton(shareUrl, {
         label: 'Copy link to this lecture',
       });
-      const transportStrip = audioTransportStripHtml();
+      const transportStrip = searchMode ? '' : audioTransportStripHtml();
 
       const thumbSection = hasThumb
         ? `<div class="thumb-frame relative flex items-center justify-center p-3 overflow-hidden">
@@ -853,16 +854,23 @@
             ${downloadOverlay}
           </div>`;
 
+      const playerSection = searchMode
+        ? `<button type="button" data-view-lecture-id="${lecture.id}" class="mt-auto w-full py-2.5 px-4 rounded-xl bg-gold/15 border border-gold/35 text-gold text-sm font-medium hover:bg-gold/25 transition flex items-center justify-center gap-2">
+            <i class="fas fa-arrow-right text-xs"></i> View lecture
+          </button>
+          <p class="text-[11px] text-slate-500 mt-2 text-center">${escapeHtml(lecture.categoryLabel || '')}</p>`
+        : `<audio controls preload="none" class="mt-auto h-9 w-full" data-lecture-id="${lecture.id}" data-lecture-archive="${escapeHtml(lecture.archive)}">
+            <source src="${audioUrl}" type="audio/mpeg">
+          </audio>`;
+
       return `
-        <article id="lecture-${lecture.id}" class="lecture-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col">
+        <article id="lecture-${lecture.id}" class="lecture-card bg-slate-900/70 border border-slate-800 rounded-2xl overflow-hidden flex flex-col${searchMode ? ' lecture-card--search' : ''}">
           ${thumbSection}
           ${transportStrip}
           <div class="p-4 flex flex-col flex-1">
             ${subBadge}
             <h3 class="font-medium text-sm text-slate-100 leading-snug mt-1 mb-3 line-clamp-3" title="${escapeHtml(lecture.title)}">${escapeHtml(lecture.title)}</h3>
-            <audio controls preload="none" class="mt-auto h-9 w-full" data-lecture-id="${lecture.id}" data-lecture-archive="${escapeHtml(lecture.archive)}">
-              <source src="${audioUrl}" type="audio/mpeg">
-            </audio>
+            ${playerSection}
           </div>
         </article>`;
     }
@@ -884,6 +892,7 @@
       if (query) {
         label = ' across all lectures';
         label += ` matching "${query}"`;
+        label += ' — tap View lecture to open in the library';
       } else if (state.category !== 'all') {
         const cat = LECTURE_CATEGORIES.find(c => c.id === state.category);
         label = ' in ' + (cat ? cat.label : state.category);
@@ -897,6 +906,7 @@
       const grid = document.getElementById('lectureGrid');
       const empty = document.getElementById('emptyState');
 
+      const searching = !!state.search.trim();
       const fastNav = !!options.fast;
       const useStagger = !fastNav && !window.matchMedia('(min-width: 1024px)').matches;
       return animateContentSwap(grid, () => {
@@ -905,13 +915,27 @@
           empty.classList.remove('hidden');
         } else {
           empty.classList.add('hidden');
-          grid.innerHTML = pageItems.map((lecture, index) => buildCard(lecture, index)).join('');
+          grid.innerHTML = pageItems.map((lecture, index) => buildCard(lecture, index, { searchMode: searching })).join('');
         }
       renderPagination(totalPages);
-      bindLectureAudioPlayers();
+      if (searching) bindViewLectureButtons(grid);
+      else bindLectureAudioPlayers();
       bindShareButtons(grid);
       enhanceGridThumbs(grid, { priorityCount: 8 });
       }, { stagger: useStagger, fast: fastNav || !useStagger });
+    }
+
+    function bindViewLectureButtons(grid) {
+      grid.querySelectorAll('[data-view-lecture-id]').forEach((btn) => {
+        btn.addEventListener('click', async () => {
+          const id = parseInt(btn.dataset.viewLectureId, 10);
+          const lec = getLoadedLectures().find((l) => l.id === id);
+          if (!lec) return;
+          const searchInput = document.getElementById('searchInput');
+          searchInput.blur();
+          await navigateToLecture(lec, { fastRender: true });
+        });
+      });
     }
 
     function bindLectureAudioPlayers() {
