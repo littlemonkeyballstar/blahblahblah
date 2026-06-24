@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate videos-data.js and clips-data.js from Internet Archive + local thumbs."""
 import json
+import os
 import re
 import shutil
 import subprocess
@@ -11,8 +12,24 @@ from difflib import SequenceMatcher
 from pathlib import Path
 
 WEBSITE = Path(__file__).resolve().parent
-VIDEO_SRC = WEBSITE.parent / "www" / "Sheikh Faisal Video Lectures"
 VIDEO_THUMB_OUT = WEBSITE / "thumb" / "videos"
+CLIPS_THUMB_OUT = WEBSITE / "thumb" / "clips"
+
+
+def resolve_video_src() -> Path:
+    env = os.environ.get("FAISAL_VIDEO_SRC", "").strip()
+    if env:
+        return Path(env)
+    for candidate in (
+        Path("/media/sawako/BIgP/faisal/Sheikh Faisal Video Lectures"),
+        WEBSITE.parent / "www" / "Sheikh Faisal Video Lectures",
+    ):
+        if candidate.is_dir():
+            return candidate
+    return WEBSITE.parent / "www" / "Sheikh Faisal Video Lectures"
+
+
+VIDEO_SRC = resolve_video_src()
 VIDEOS_ARCHIVE = "https://archive.org/metadata/FaisalVideos"
 CLIPS_ARCHIVE = "https://archive.org/metadata/the-creed-of-the-shia"
 CLIPS_ARCHIVE_BASE = "https://archive.org/download/the-creed-of-the-shia/"
@@ -527,30 +544,38 @@ def fetch_metadata(url: str) -> dict:
         return json.load(resp)
 
 
+def _index_thumb_folder(folder: Path, rel_prefix: str, index: dict[str, str], mirror_to: Path | None = None) -> None:
+    if not folder.is_dir():
+        return
+    for src in folder.iterdir():
+        if src.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"}:
+            continue
+        if src.name in BLOCKED:
+            continue
+        if mirror_to is not None:
+            dest = mirror_to / src.name
+            if not dest.exists() or dest.stat().st_size != src.stat().st_size:
+                shutil.copy2(src, dest)
+        rel = f"{rel_prefix}/{src.name}"
+        for key in (norm(src.stem), norm(src.name)):
+            if key:
+                index.setdefault(key, rel)
+
+
 def build_thumb_index() -> dict[str, str]:
     """Index all images in thumb/videos/ and source thumb/ folder."""
     index: dict[str, str] = {}
     VIDEO_THUMB_OUT.mkdir(parents=True, exist_ok=True)
+    _index_thumb_folder(VIDEO_THUMB_OUT, "thumb/videos", index)
+    _index_thumb_folder(VIDEO_SRC / "thumb", "thumb/videos", index, mirror_to=VIDEO_THUMB_OUT)
+    return index
 
-    folders = [VIDEO_THUMB_OUT]
-    src_thumb = VIDEO_SRC / "thumb"
-    if src_thumb.is_dir():
-        folders.append(src_thumb)
 
-    for folder in folders:
-        for src in folder.iterdir():
-            if src.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"}:
-                continue
-            if src.name in BLOCKED:
-                continue
-            if folder == src_thumb:
-                dest = VIDEO_THUMB_OUT / src.name
-                if not dest.exists() or dest.stat().st_size != src.stat().st_size:
-                    shutil.copy2(src, dest)
-            rel = f"thumb/videos/{src.name}"
-            for key in (norm(src.stem), norm(src.name)):
-                if key:
-                    index.setdefault(key, rel)
+def build_clip_thumb_index() -> dict[str, str]:
+    """Index locally extracted clip thumbnails."""
+    index: dict[str, str] = {}
+    CLIPS_THUMB_OUT.mkdir(parents=True, exist_ok=True)
+    _index_thumb_folder(CLIPS_THUMB_OUT, "thumb/clips", index)
     return index
 
 
@@ -583,11 +608,12 @@ def build_clips_archive_thumb_map(meta: dict) -> dict[str, str]:
     return archive_thumb_map
 
 
-def append_promoted_videos(videos: list[dict], clips_meta: dict) -> list[dict]:
+def append_promoted_videos(videos: list[dict], clips_meta: dict, local_thumb_index: dict[str, str] | None = None) -> list[dict]:
     """Add selected full-length videos from the clips archive to the video library."""
     if not PROMOTED_VIDEOS_FROM_CLIPS:
         return videos
 
+    local_thumb_index = local_thumb_index or {}
     thumb_map = build_clips_archive_thumb_map(clips_meta)
     existing_titles = {norm(video["title"]) for video in videos}
 
@@ -597,7 +623,10 @@ def append_promoted_videos(videos: list[dict], clips_meta: dict) -> list[dict]:
             continue
         filename = spec["file"]
         stem = Path(filename).stem
-        thumb = find_thumb(stem + ".mp4", {}, thumb_map) or find_thumb(filename, {}, thumb_map)
+        thumb = (
+            find_thumb(stem + ".mp4", local_thumb_index, thumb_map)
+            or find_thumb(filename, local_thumb_index, thumb_map)
+        )
         videos.append({
             "id": len(videos),
             "title": title,
@@ -661,6 +690,7 @@ def build_videos():
 def build_clips(meta: dict | None = None):
     if meta is None:
         meta = fetch_metadata(CLIPS_ARCHIVE)
+    local_thumb_index = build_clip_thumb_index()
     archive_thumb_map = build_clips_archive_thumb_map(meta)
 
     all_mp4 = [f["name"] for f in meta.get("files", []) if f.get("name", "").endswith(".mp4")]
@@ -687,9 +717,9 @@ def build_clips(meta: dict | None = None):
         stem = Path(name).stem
         if stem.endswith(".ia"):
             stem = stem[:-3]
-        thumb = find_thumb(stem + ".mp4", {}, archive_thumb_map)
+        thumb = find_thumb(stem + ".mp4", local_thumb_index, archive_thumb_map)
         if not thumb:
-            thumb = find_thumb(name, {}, archive_thumb_map)
+            thumb = find_thumb(name, local_thumb_index, archive_thumb_map)
 
         stem_key = norm(stem)
         title = strip_speaker_from_title(CLIP_TITLE_OVERRIDES.get(stem_key, clean_clip_title(stem)))
@@ -767,7 +797,8 @@ def write_search_index(videos: list[dict], clips: list[dict]) -> None:
 
 def main():
     clips_meta = fetch_metadata(CLIPS_ARCHIVE)
-    videos = append_promoted_videos(build_videos(), clips_meta)
+    local_video_thumbs = build_thumb_index()
+    videos = append_promoted_videos(build_videos(), clips_meta, local_video_thumbs)
     clips = build_clips(clips_meta)
     write_js("videos-data.js", "VIDEOS", "VIDEOS_ARCHIVE_BASE", "https://archive.org/download/FaisalVideos/", videos)
     write_js("clips-data.js", "CLIPS", "CLIPS_ARCHIVE_BASE", CLIPS_ARCHIVE_BASE, clips)

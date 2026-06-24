@@ -151,7 +151,7 @@ const VIDEOS = [
     "title": "Beware of Oxymorons",
     "file": "Beware of Oxymorons by Sheikh Abdullah Faisal.mp4",
     "archive": "Beware of Oxymorons by Sheikh Abdullah Faisal.mp4",
-    "thumb": "https://archive.org/download/FaisalVideos/FaisalVideos.thumbs/Beware of Oxymorons by Sheikh Abdullah Faisal_000001.jpg",
+    "thumb": "thumb/videos/Beware of Oxymorons by Sheikh Abdullah Faisal.jpg",
     "stream": "https://archive.org/download/FaisalVideos/Beware%20of%20Oxymorons%20by%20Sheikh%20Abdullah%20Faisal.mp4"
   },
   {
@@ -879,7 +879,7 @@ const VIDEOS = [
     "title": "The 15 People Killed by Shariah",
     "file": "The 15 People Killed by Shariah.mp4",
     "archive": "The 15 People Killed by Shariah.mp4",
-    "thumb": "https://archive.org/download/FaisalVideos/FaisalVideos.thumbs/The 15 People Killed by Shariah_000001.jpg",
+    "thumb": "thumb/videos/The 15 People Killed by Shariah.jpg",
     "stream": "https://archive.org/download/FaisalVideos/The%2015%20People%20Killed%20by%20Shariah.mp4"
   },
   {
@@ -1127,7 +1127,7 @@ const VIDEOS = [
     "title": "The Three Types of Hearts",
     "file": "The Three Types of Hearts.mp4",
     "archive": "The Three Types of Hearts.mp4",
-    "thumb": "thumb/videos/The Three Types of Hearts by Shaikh Faisal.jpg",
+    "thumb": "thumb/videos/The Three Types of Hearts.jpg",
     "stream": "https://archive.org/download/FaisalVideos/The%20Three%20Types%20of%20Hearts.mp4"
   },
   {
@@ -1183,7 +1183,7 @@ const VIDEOS = [
     "title": "The creed of the Shia",
     "file": "The Creed Of the shia .mp4",
     "archive": "The Creed Of the shia .mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Creed Of the shia _000001.jpg",
+    "thumb": "thumb/videos/The Creed Of the shia .jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/The%20Creed%20Of%20the%20shia%20.mp4"
   }
 ];

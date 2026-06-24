@@ -64,14 +64,16 @@ while IFS= read -r -d '' chunk; do
   printf '%s\n' "${chunk#./}"
 done < <(find data/lectures -maxdepth 1 -name '*.js' -print0 2>/dev/null | sort -z)
 
-if [[ -d thumb/videos ]]; then
-  echo ""
-  echo "New video thumbs (upload when you add lectures):"
-  if git rev-parse --is-inside-work-tree &>/dev/null; then
-    git status --porcelain thumb/videos/ 2>/dev/null | sed 's/^.. //' | grep -E '\.(jpg|jpeg|png|webp)$' || true
+for thumb_dir in thumb/videos thumb/clips; do
+  if [[ -d "$thumb_dir" ]]; then
+    echo ""
+    echo "New ${thumb_dir} assets (upload when you add lectures):"
+    if git rev-parse --is-inside-work-tree &>/dev/null; then
+      git status --porcelain "$thumb_dir/" 2>/dev/null | sed 's/^.. //' | grep -E '\.(jpg|jpeg|png|webp)$' || true
+    fi
   fi
-  echo "(If none listed above, still upload any new thumb/videos/*.jpg you added manually.)"
-fi
+done
+echo "(If none listed above, still upload any new thumb/videos or thumb/clips JPGs.)"
 
 echo ""
 echo "Generator scripts (not uploaded): generate-catalog.py, generate-media-catalog.py"

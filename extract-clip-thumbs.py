@@ -1,14 +1,13 @@
 #!/usr/bin/env python3
 """
-Extract video thumbnail frames with ffmpeg from local .mp4 files.
+Extract clip thumbnail frames with ffmpeg from local short .mp4 files.
 
-Matches Internet Archive FaisalVideos filenames to local files (fuzzy),
-copies existing images from source thumb/, or grabs a frame with ffmpeg.
+Matches Internet Archive the-creed-of-the-shia filenames to local clips.
 
-Output: Website/thumb/videos/{archive-stem}.jpg
+Output: Website/thumb/clips/{archive-stem}.jpg
 
-    FAISAL_VIDEO_SRC="/path/to/Sheikh Faisal Video Lectures" python3 extract-video-thumbs.py
-    python3 extract-video-thumbs.py --force   # re-extract even when thumb exists
+    FAISAL_CLIPS_SRC="/path/to/clips" python3 extract-clip-thumbs.py
+    python3 extract-clip-thumbs.py --force
 """
 from __future__ import annotations
 
@@ -24,25 +23,24 @@ from difflib import SequenceMatcher
 from pathlib import Path
 
 WEBSITE = Path(__file__).resolve().parent
-THUMB_OUT = WEBSITE / "thumb" / "videos"
-VIDEOS_ARCHIVE = "https://archive.org/metadata/FaisalVideos"
-BLOCKED = {"__ia_thumb.jpg", "__ia_thumb.png"}
+THUMB_OUT = WEBSITE / "thumb" / "clips"
+CLIPS_ARCHIVE = "https://archive.org/metadata/the-creed-of-the-shia"
 VF = "scale=1280:720:force_original_aspect_ratio=decrease,pad=1280:720:(ow-iw)/2:(oh-ih)/2:black"
 
-DEFAULT_VIDEO_SRCS = [
-    Path("/media/sawako/BIgP/faisal/Sheikh Faisal Video Lectures"),
-    WEBSITE.parent / "www" / "Sheikh Faisal Video Lectures",
+DEFAULT_CLIPS_SRCS = [
+    Path("/media/sawako/BIgP/Shaykh Faisal cllips⁄shorts"),
+    WEBSITE.parent / "www" / "Shaykh Faisal clips",
 ]
 
 
-def resolve_video_src() -> Path:
-    env = os.environ.get("FAISAL_VIDEO_SRC", "").strip()
+def resolve_clips_src() -> Path:
+    env = os.environ.get("FAISAL_CLIPS_SRC", "").strip()
     if env:
         return Path(env)
-    for candidate in DEFAULT_VIDEO_SRCS:
+    for candidate in DEFAULT_CLIPS_SRCS:
         if candidate.is_dir():
             return candidate
-    return DEFAULT_VIDEO_SRCS[0]
+    return DEFAULT_CLIPS_SRCS[0]
 
 
 def norm_key(name: str) -> str:
@@ -86,11 +84,11 @@ def video_duration(mp4: Path) -> float | None:
 
 def seek_time(mp4: Path) -> str:
     duration = video_duration(mp4)
-    if not duration or duration <= 90:
-        return "00:00:30"
-    seconds = min(150.0, max(45.0, duration * 0.05))
+    if not duration or duration <= 20:
+        return "00:00:03"
+    seconds = min(30.0, max(2.0, duration * 0.12))
     whole = int(seconds)
-    return f"{whole // 3600:02d}:{(whole % 3600) // 60:02d}:{whole % 60:02d}"
+    return f"00:00:{whole:02d}"
 
 
 def extract_frame(mp4: Path, dest: Path) -> bool:
@@ -102,7 +100,7 @@ def extract_frame(mp4: Path, dest: Path) -> bool:
         str(dest),
     ]
     try:
-        subprocess.run(cmd, check=True, timeout=180)
+        subprocess.run(cmd, check=True, timeout=120)
         return dest.exists() and dest.stat().st_size > 500
     except (subprocess.CalledProcessError, subprocess.TimeoutExpired):
         if dest.exists():
@@ -111,19 +109,17 @@ def extract_frame(mp4: Path, dest: Path) -> bool:
 
 
 def fetch_archive_mp4s() -> list[str]:
-    req = urllib.request.Request(VIDEOS_ARCHIVE, headers={"User-Agent": "shaykhabdullahfaisal-catalog/1.0"})
+    req = urllib.request.Request(CLIPS_ARCHIVE, headers={"User-Agent": "shaykhabdullahfaisal-catalog/1.0"})
     with urllib.request.urlopen(req, timeout=60) as resp:
         data = json.load(resp)
-    names = [
-        f["name"] for f in data.get("files", [])
-        if f.get("name", "").endswith(".mp4") and not f["name"].startswith("FaisalVideos.thumbs")
-    ]
-    return sorted(names)
+    return sorted(f["name"] for f in data.get("files", []) if f.get("name", "").lower().endswith(".mp4"))
 
 
-def build_local_index(video_src: Path) -> dict[str, Path]:
+def build_local_index(clips_src: Path) -> dict[str, Path]:
     index: dict[str, Path] = {}
-    for mp4 in video_src.glob("*.mp4"):
+    for mp4 in clips_src.iterdir():
+        if mp4.suffix.lower() != ".mp4":
+            continue
         index[norm_key(mp4.stem)] = mp4
     return index
 
@@ -139,44 +135,35 @@ def find_local_mp4(archive_name: str, local_index: dict[str, Path]) -> Path | No
     best_score = 0.0
     for local_key, path in local_index.items():
         score = similarity(key, local_key)
-        if score > best_score and score >= 0.92:
+        if score > best_score and score >= 0.90:
             best_score = score
             best_path = path
     return best_path
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Extract local thumbnails for FaisalVideos lectures")
+    parser = argparse.ArgumentParser(description="Extract local thumbnails for clip library")
     parser.add_argument("--force", action="store_true", help="Re-extract even when output JPG already exists")
     args = parser.parse_args()
 
-    video_src = resolve_video_src()
-    if not video_src.is_dir():
-        print(f"Video folder not found: {video_src}")
+    clips_src = resolve_clips_src()
+    if not clips_src.is_dir():
+        print(f"Clips folder not found: {clips_src}")
         return 1
 
-    src_thumb = video_src / "thumb"
     THUMB_OUT.mkdir(parents=True, exist_ok=True)
     use_ffmpeg = has_ffmpeg()
     if not use_ffmpeg:
-        print("Warning: ffmpeg not found — will only copy existing thumb/ images")
+        print("ffmpeg is required for clip thumbnails")
+        return 1
 
-    local_index = build_local_index(video_src)
-    src_by_key: dict[str, Path] = {}
-    if src_thumb.is_dir():
-        for img in src_thumb.iterdir():
-            if img.suffix.lower() not in {".jpg", ".jpeg", ".png", ".webp"}:
-                continue
-            if img.name in BLOCKED:
-                continue
-            src_by_key[norm_key(img.stem)] = img
-
+    local_index = build_local_index(clips_src)
     archive_names = fetch_archive_mp4s()
-    copied = extracted = skipped = missing = 0
+    extracted = skipped = missing_local = failed = 0
 
-    print(f"Source: {video_src}")
-    print(f"Local MP4 files: {len(local_index)}")
-    print(f"Archive catalog: {len(archive_names)} videos")
+    print(f"Source: {clips_src}")
+    print(f"Local clip files: {len(local_index)}")
+    print(f"Archive catalog: {len(archive_names)} clips")
 
     for archive_name in archive_names:
         stem = Path(archive_name).stem
@@ -188,25 +175,21 @@ def main() -> int:
             skipped += 1
             continue
 
-        key = norm_key(stem)
-        if key in src_by_key:
-            shutil.copy2(src_by_key[key], dest)
-            copied += 1
-            continue
-
         mp4 = find_local_mp4(archive_name, local_index)
-        if mp4 and use_ffmpeg and extract_frame(mp4, dest):
-            extracted += 1
+        if not mp4:
+            missing_local += 1
             continue
 
-        if not mp4:
-            missing += 1
-            print(f"  No local file: {archive_name}")
+        if extract_frame(mp4, dest):
+            extracted += 1
         else:
-            missing += 1
+            failed += 1
             print(f"  Extract failed: {archive_name} ({mp4.name})")
 
-    print(f"Done — copied {copied}, extracted {extracted}, skipped {skipped}, missing {missing}")
+    print(
+        f"Done — extracted {extracted}, skipped {skipped}, "
+        f"no local file {missing_local}, failed {failed}"
+    )
     print(f"Thumbnails in {THUMB_OUT}: {len(list(THUMB_OUT.glob('*.jpg')))}")
     print("Run: python3 generate-media-catalog.py")
     return 0

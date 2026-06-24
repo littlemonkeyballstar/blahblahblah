@@ -4646,7 +4646,7 @@ const SEARCH_INDEX = [
     "title": "Beware of Oxymorons",
     "sub": "Video lecture",
     "href": "videos.html?video=18",
-    "thumb": "https://archive.org/download/FaisalVideos/FaisalVideos.thumbs/Beware of Oxymorons by Sheikh Abdullah Faisal_000001.jpg"
+    "thumb": "thumb/videos/Beware of Oxymorons by Sheikh Abdullah Faisal.jpg"
   },
   {
     "type": "video",
@@ -5374,7 +5374,7 @@ const SEARCH_INDEX = [
     "title": "The 15 People Killed by Shariah",
     "sub": "Video lecture",
     "href": "videos.html?video=109",
-    "thumb": "https://archive.org/download/FaisalVideos/FaisalVideos.thumbs/The 15 People Killed by Shariah_000001.jpg"
+    "thumb": "thumb/videos/The 15 People Killed by Shariah.jpg"
   },
   {
     "type": "video",
@@ -5622,7 +5622,7 @@ const SEARCH_INDEX = [
     "title": "The Three Types of Hearts",
     "sub": "Video lecture",
     "href": "videos.html?video=140",
-    "thumb": "thumb/videos/The Three Types of Hearts by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/The Three Types of Hearts.jpg"
   },
   {
     "type": "video",
@@ -5686,7 +5686,7 @@ const SEARCH_INDEX = [
     "title": "Refusing to takfir Mushrikeen (polytheists)",
     "sub": "Short clip",
     "href": "clips.html?clip=0",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/0510_000001.jpg"
+    "thumb": "thumb/clips/0510.jpg"
   },
   {
     "type": "clip",
@@ -5694,7 +5694,7 @@ const SEARCH_INDEX = [
     "title": "They will fight you until you leave Islam",
     "sub": "Short clip",
     "href": "clips.html?clip=1",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/2 They Will Fight You Until You Leave Islam_000001.jpg"
+    "thumb": "thumb/clips/2 They Will Fight You Until You Leave Islam.jpg"
   },
   {
     "type": "clip",
@@ -5710,7 +5710,7 @@ const SEARCH_INDEX = [
     "title": "A controversial ruling: seeking help from non-Muslims",
     "sub": "Short clip",
     "href": "clips.html?clip=3",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/A Controversial Ruling  Seeking Help from Non(1)_000001.jpg"
+    "thumb": "thumb/clips/A Controversial Ruling  Seeking Help from Non(1).jpg"
   },
   {
     "type": "clip",
@@ -5790,7 +5790,7 @@ const SEARCH_INDEX = [
     "title": "Dismantling sharia: minor sin or major disbelief",
     "sub": "Short clip",
     "href": "clips.html?clip=13",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Dismantling Sharia  Minor Sin or Major Disbel_000001.jpg"
+    "thumb": "thumb/clips/Dismantling Sharia  Minor Sin or Major Disbel.jpg"
   },
   {
     "type": "clip",
@@ -5806,7 +5806,7 @@ const SEARCH_INDEX = [
     "title": "Every man needs to know this before marriage",
     "sub": "Short clip",
     "href": "clips.html?clip=15",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Every man needs to know this before marriage_000001.jpg"
+    "thumb": "thumb/clips/Every man needs to know this before marriage.jpg"
   },
   {
     "type": "clip",
@@ -5814,7 +5814,7 @@ const SEARCH_INDEX = [
     "title": "Explosive claim: Sheikh Albani's link to Freemasonry",
     "sub": "Short clip",
     "href": "clips.html?clip=16",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Explosive Claim  Sheikh Albani's Link to Free_000001.jpg"
+    "thumb": "thumb/clips/Explosive Claim  Sheikh Albani's Link to Free.jpg"
   },
   {
     "type": "clip",
@@ -5830,7 +5830,7 @@ const SEARCH_INDEX = [
     "title": "Exposing the evil world order — the Jews",
     "sub": "Short clip",
     "href": "clips.html?clip=18",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Exposing the evil world order - The jews_000001.jpg"
+    "thumb": "thumb/clips/Exposing the evil world order - The jews.jpg"
   },
   {
     "type": "clip",
@@ -5838,7 +5838,7 @@ const SEARCH_INDEX = [
     "title": "Extremist vs Islamic view: are all Muslims grave worshippers?",
     "sub": "Short clip",
     "href": "clips.html?clip=19",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Extremist vs. Islamic View  Are All Muslims G(1)_000001.jpg"
+    "thumb": "thumb/clips/Extremist vs. Islamic View  Are All Muslims G(1).jpg"
   },
   {
     "type": "clip",
@@ -5846,7 +5846,7 @@ const SEARCH_INDEX = [
     "title": "Hero or killer: the biased criticism of Saddam",
     "sub": "Short clip",
     "href": "clips.html?clip=20",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Hero or Killer  The Biased Criticism of Sadda_000001.jpg"
+    "thumb": "thumb/clips/Hero or Killer  The Biased Criticism of Sadda.jpg"
   },
   {
     "type": "clip",
@@ -5862,7 +5862,7 @@ const SEARCH_INDEX = [
     "title": "How did Ali (ra) deal with the Khawarij?",
     "sub": "Short clip",
     "href": "clips.html?clip=22",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/How did ALI (ra) Deal with the Khawarij (Puritans)_000001.jpg"
+    "thumb": "thumb/clips/How did ALI (ra) Deal with the Khawarij (Puritans).jpg"
   },
   {
     "type": "clip",
@@ -5886,7 +5886,7 @@ const SEARCH_INDEX = [
     "title": "Hypocrites rushing to join the kuffar",
     "sub": "Short clip",
     "href": "clips.html?clip=25",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Hypocrites Rushing To Join The Kuffar_000001.jpg"
+    "thumb": "thumb/clips/Hypocrites Rushing To Join The Kuffar.jpg"
   },
   {
     "type": "clip",
@@ -5902,7 +5902,7 @@ const SEARCH_INDEX = [
     "title": "If they put the sun in my right hand and the moon in my left, I would not cease",
     "sub": "Short clip",
     "href": "clips.html?clip=27",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/If They Put The Sun In My Right Hand & Moon In My_000001.jpg"
+    "thumb": "thumb/clips/If They Put The Sun In My Right Hand & Moon In My.jpg"
   },
   {
     "type": "clip",
@@ -5910,7 +5910,7 @@ const SEARCH_INDEX = [
     "title": "Ignoring invasion, fixating on women driving",
     "sub": "Short clip",
     "href": "clips.html?clip=28",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Ignoring Invasion, Fixating on Women Driving_000001.jpg"
+    "thumb": "thumb/clips/Ignoring Invasion, Fixating on Women Driving.jpg"
   },
   {
     "type": "clip",
@@ -5926,7 +5926,7 @@ const SEARCH_INDEX = [
     "title": "Jews and Christians will never be pleased with you",
     "sub": "Short clip",
     "href": "clips.html?clip=30",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Jews & Christians Will Never Be Pleased With You_000001.jpg"
+    "thumb": "thumb/clips/Jews & Christians Will Never Be Pleased With You.jpg"
   },
   {
     "type": "clip",
@@ -5958,7 +5958,7 @@ const SEARCH_INDEX = [
     "title": "Only a sincere believer finds comfort in the truth",
     "sub": "Short clip",
     "href": "clips.html?clip=34",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Only a sincere beliver finds comfort in the truth!_000001.jpg"
+    "thumb": "thumb/clips/Only a sincere beliver finds comfort in the truth!.jpg"
   },
   {
     "type": "clip",
@@ -5982,7 +5982,7 @@ const SEARCH_INDEX = [
     "title": "Humorous clip",
     "sub": "Short clip",
     "href": "clips.html?clip=37",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Shaykh faisal funny_000001.jpg"
+    "thumb": "thumb/clips/Shaykh faisal funny.jpg"
   },
   {
     "type": "clip",
@@ -5990,7 +5990,7 @@ const SEARCH_INDEX = [
     "title": "The headless chicken mentality of modern extremists",
     "sub": "Short clip",
     "href": "clips.html?clip=38",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The 'Headless Chicken' Mentality of Modern Ex_000001.jpg"
+    "thumb": "thumb/clips/The 'Headless Chicken' Mentality of Modern Ex.jpg"
   },
   {
     "type": "clip",
@@ -5998,7 +5998,7 @@ const SEARCH_INDEX = [
     "title": "The battle between truth and falsehood never ends",
     "sub": "Short clip",
     "href": "clips.html?clip=39",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Battle Between Truth & Falsehood Never Ends_000001.jpg"
+    "thumb": "thumb/clips/The Battle Between Truth & Falsehood Never Ends.jpg"
   },
   {
     "type": "clip",
@@ -6030,7 +6030,7 @@ const SEARCH_INDEX = [
     "title": "The importance of hijra",
     "sub": "Short clip",
     "href": "clips.html?clip=43",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Importance of hijra - shaykh abdullah faisal_000001.jpg"
+    "thumb": "thumb/clips/The Importance of hijra - shaykh abdullah faisal.jpg"
   },
   {
     "type": "clip",
@@ -6038,7 +6038,7 @@ const SEARCH_INDEX = [
     "title": "The sin of refusing to call a kafir a kafir",
     "sub": "Short clip",
     "href": "clips.html?clip=44",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Sin of Refusing to Call a Kafir a Kafir_000001.jpg"
+    "thumb": "thumb/clips/The Sin of Refusing to Call a Kafir a Kafir.jpg"
   },
   {
     "type": "clip",
@@ -6046,7 +6046,7 @@ const SEARCH_INDEX = [
     "title": "The ummah is sick and the scholars are to blame",
     "sub": "Short clip",
     "href": "clips.html?clip=45",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Ummah is Sick & The Scholars are to Blame_000001.jpg"
+    "thumb": "thumb/clips/The Ummah is Sick & The Scholars are to Blame.jpg"
   },
   {
     "type": "clip",
@@ -6086,7 +6086,7 @@ const SEARCH_INDEX = [
     "title": "They will fight you until you leave Islam (Surah Baqarah)",
     "sub": "Short clip",
     "href": "clips.html?clip=50",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/They Will Fight You Until You Leave Islam (Baqara_000001.jpg"
+    "thumb": "thumb/clips/They Will Fight You Until You Leave Islam (Baqara.jpg"
   },
   {
     "type": "clip",
@@ -6126,7 +6126,7 @@ const SEARCH_INDEX = [
     "title": "Who is 'the other'? Defining 'the excuser' in Islam",
     "sub": "Short clip",
     "href": "clips.html?clip=55",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Who Is 'The Other'  Defining 'The Excuser' In(1)_000001.jpg"
+    "thumb": "thumb/clips/Who Is 'The Other'  Defining 'The Excuser' In(1).jpg"
   },
   {
     "type": "clip",
@@ -6158,7 +6158,7 @@ const SEARCH_INDEX = [
     "title": "Your choice of spouse reveals your true faith",
     "sub": "Short clip",
     "href": "clips.html?clip=59",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Your Choice of Spouse Reveals Your True Faith_000001.jpg"
+    "thumb": "thumb/clips/Your Choice of Spouse Reveals Your True Faith.jpg"
   },
   {
     "type": "clip",
@@ -6166,7 +6166,7 @@ const SEARCH_INDEX = [
     "title": "Al-wala wal-bara",
     "sub": "Short clip",
     "href": "clips.html?clip=60",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/al wala al bara_000001.jpg"
+    "thumb": "thumb/clips/al wala al bara.jpg"
   },
   {
     "type": "clip",
@@ -6198,7 +6198,7 @@ const SEARCH_INDEX = [
     "title": "Blind following wicked scholars will dump you in the Hellfire",
     "sub": "Short clip",
     "href": "clips.html?clip=64",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/blind follwing wickeed schohlers_000001.jpg"
+    "thumb": "thumb/clips/blind follwing wickeed schohlers.jpg"
   },
   {
     "type": "clip",
@@ -6206,7 +6206,7 @@ const SEARCH_INDEX = [
     "title": "Exposing wicked scholar al-Bouti",
     "sub": "Short clip",
     "href": "clips.html?clip=65",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/booti_000001.jpg"
+    "thumb": "thumb/clips/booti.jpg"
   },
   {
     "type": "clip",
@@ -6246,7 +6246,7 @@ const SEARCH_INDEX = [
     "title": "Giving up the better for the worse",
     "sub": "Short clip",
     "href": "clips.html?clip=70",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/giving up better for worse_000001.jpg"
+    "thumb": "thumb/clips/giving up better for worse.jpg"
   },
   {
     "type": "clip",
@@ -6254,7 +6254,7 @@ const SEARCH_INDEX = [
     "title": "Why is ibn Baz a kaffir?",
     "sub": "Short clip",
     "href": "clips.html?clip=71",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/ibn baz_000001.jpg"
+    "thumb": "thumb/clips/ibn baz.jpg"
   },
   {
     "type": "clip",
@@ -6270,7 +6270,7 @@ const SEARCH_INDEX = [
     "title": "If you don't do jihad, it will come to your door",
     "sub": "Short clip",
     "href": "clips.html?clip=73",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/if you dont do jihad it will come to your door!!_000001.jpg"
+    "thumb": "thumb/clips/if you dont do jihad it will come to your door!!.jpg"
   },
   {
     "type": "clip",
@@ -6286,7 +6286,7 @@ const SEARCH_INDEX = [
     "title": "The importance of hijra (part 2)",
     "sub": "Short clip",
     "href": "clips.html?clip=75",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/importance of hijra 2_000001.jpg"
+    "thumb": "thumb/clips/importance of hijra 2.jpg"
   },
   {
     "type": "clip",
@@ -6334,7 +6334,7 @@ const SEARCH_INDEX = [
     "title": "The reality of truth (part 12)",
     "sub": "Short clip",
     "href": "clips.html?clip=81",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/reality of truth 12_000001.jpg"
+    "thumb": "thumb/clips/reality of truth 12.jpg"
   },
   {
     "type": "clip",
@@ -6342,7 +6342,7 @@ const SEARCH_INDEX = [
     "title": "Reject the taghut",
     "sub": "Short clip",
     "href": "clips.html?clip=82",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/reject taghut_000001.jpg"
+    "thumb": "thumb/clips/reject taghut.jpg"
   },
   {
     "type": "clip",
@@ -6358,7 +6358,7 @@ const SEARCH_INDEX = [
     "title": "The lie about mujahideen being khawarij",
     "sub": "Short clip",
     "href": "clips.html?clip=84",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/sign of a khawarij_000001.jpg"
+    "thumb": "thumb/clips/sign of a khawarij.jpg"
   },
   {
     "type": "clip",
@@ -6366,7 +6366,7 @@ const SEARCH_INDEX = [
     "title": "Signs of a hypocrite",
     "sub": "Short clip",
     "href": "clips.html?clip=85",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/signs of a hypocrite clip_000001.jpg"
+    "thumb": "thumb/clips/signs of a hypocrite clip.jpg"
   },
   {
     "type": "clip",
@@ -6390,7 +6390,7 @@ const SEARCH_INDEX = [
     "title": "The Taliban destroys the Buddha statues",
     "sub": "Short clip",
     "href": "clips.html?clip=88",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/taliban breaks buddah _000001.jpg"
+    "thumb": "thumb/clips/taliban breaks buddah .jpg"
   },
   {
     "type": "clip",
