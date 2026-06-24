@@ -624,11 +624,6 @@ function mountMotionStyles() {
     @media (min-width: 640px) {
       .site-top-bar { min-height: 2.85rem; }
     }
-    .site-header { min-height: 3.65rem; }
-    @media (min-width: 640px) {
-      .site-header { min-height: 4.75rem; }
-    }
-
     .page-transition-overlay {
       position: fixed;
       inset: 0;
@@ -1228,8 +1223,6 @@ function mountMobileStyles() {
       input[type="search"], input[type="text"], select {
         font-size: 16px !important;
       }
-      .site-header__inner { padding-top: 0.75rem; padding-bottom: 0.75rem; }
-      .site-header__title { font-size: 1.25rem !important; line-height: 1.3; }
       .site-header__actions {
         gap: 0.25rem;
       }
