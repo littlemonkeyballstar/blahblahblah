@@ -1181,8 +1181,6 @@ function mountMobileStyles() {
         padding: 0.5rem 0.875rem !important;
         font-size: 0.8125rem !important;
       }
-      .nav-long { display: none; }
-      .nav-short { display: inline; }
 
       .mobile-section-title { font-size: 1.25rem !important; }
       .mobile-preview-card {
@@ -1267,11 +1265,6 @@ function mountMobileStyles() {
         padding: 1rem 1.5rem !important;
       }
       .footer-links { line-height: 1.8; }
-    }
-
-    @media (min-width: 640px) {
-      .nav-long { display: inline; }
-      .nav-short { display: none; }
     }
 
     @media (min-width: 1024px) {

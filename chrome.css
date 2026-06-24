@@ -125,3 +125,48 @@ html.site-internal-nav #homeMain {
 ::view-transition-new(site-chrome) {
   animation: none !important;
 }
+
+/* Nav labels — must load in <head> so mobile never flashes long titles during tab switches */
+.nav-long {
+  display: none;
+}
+.nav-short {
+  display: inline;
+}
+@media (min-width: 640px) {
+  .nav-long {
+    display: inline;
+  }
+  .nav-short {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) {
+  .site-nav a .nav-long {
+    display: none !important;
+    visibility: hidden !important;
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+  }
+  .site-nav a .nav-short {
+    display: inline !important;
+  }
+}
+
+/* Active tab styling before site.js runs (prevents pulse on in-site navigation) */
+.nav-page-home [data-nav="home"],
+.nav-page-biography [data-nav="biography"],
+.nav-page-clips [data-nav="clips"],
+.nav-page-videos [data-nav="videos"],
+.nav-page-audio [data-nav="audio"],
+.nav-page-pdfs [data-nav="pdfs"] {
+  background-color: #d4a853;
+  color: #020617;
+  font-weight: 600;
+  box-shadow: 0 1px 2px rgba(212, 168, 83, 0.2);
+}
