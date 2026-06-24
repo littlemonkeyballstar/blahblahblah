@@ -573,6 +573,11 @@ const FEATURED_LECTURES = [
     "archive": "the Barking dogs of jahannam.mp3"
   },
   {
+    "id": 227,
+    "thumb": "thumb/The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal.png",
+    "archive": "The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal.mp3"
+  },
+  {
     "id": 409,
     "thumb": "thumb/THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.jpg",
     "archive": "THEY ARE THE WORST OF CREATURES - Abdallah Al Faisal.mp3"

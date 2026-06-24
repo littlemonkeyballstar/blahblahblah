@@ -2786,7 +2786,7 @@ const LECTURES = [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal.mp3",
-    "thumb": null,
+    "thumb": "thumb/The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal.png",
     "id": 227
   },
   {
@@ -6244,6 +6244,11 @@ const FEATURED_LECTURES = [
     "id": 387,
     "thumb": "thumb/The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal.jpg",
     "archive": "the Barking dogs of jahannam.mp3"
+  },
+  {
+    "id": 227,
+    "thumb": "thumb/The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal.png",
+    "archive": "The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal.mp3"
   },
   {
     "id": 409,

@@ -369,7 +369,7 @@ registerLectureChunk("Aqeedah", [
     "subcategory": null,
     "subcategoryLabel": null,
     "archive": "The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal.mp3",
-    "thumb": null,
+    "thumb": "thumb/The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal.png",
     "id": 227
   },
   {

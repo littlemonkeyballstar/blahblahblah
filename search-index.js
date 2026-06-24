@@ -1950,7 +1950,8 @@ const SEARCH_INDEX = [
     "title": "The Four Branches of Tawheed (Authentic Tawheed 2001)",
     "sub": "Aqeedah & Tawheed",
     "archive": "The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal.mp3",
-    "href": "audio.html?archive=The%20Four%20Branches%20of%20Tawheed%20%28aka%20Authentic%20Tawheed%202001%20by%20Shaykh%20Faisal.mp3"
+    "href": "audio.html?archive=The%20Four%20Branches%20of%20Tawheed%20%28aka%20Authentic%20Tawheed%202001%20by%20Shaykh%20Faisal.mp3",
+    "thumb": "thumb/The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal.png"
   },
   {
     "type": "audio",
@@ -5678,7 +5679,7 @@ const SEARCH_INDEX = [
     "title": "The creed of the Shia",
     "sub": "Video lecture",
     "href": "videos.html?video=147",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Creed Of the shia _000001.jpg"
+    "thumb": "thumb/videos/The Creed Of the shia .jpg"
   },
   {
     "type": "clip",

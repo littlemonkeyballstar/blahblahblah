@@ -452,14 +452,17 @@
     function getFeaturedLectures() {
       const guaranteed = typeof HOME_FEATURED_GUARANTEED !== 'undefined' ? HOME_FEATURED_GUARANTEED : [];
       const pool = typeof HOME_FEATURED !== 'undefined' ? HOME_FEATURED : [];
-      const maxSlides = 8;
-      // Rotate favorites: 2 random pinned + 6 random from the full thumb/ pool
-      const favoriteSlots = Math.min(2, guaranteed.length);
-      const pickedFavorites = randomPick(guaranteed, favoriteSlots);
-      const pickedIds = new Set(pickedFavorites.map((item) => item.id));
-      const rest = pool.filter((item) => !pickedIds.has(item.id));
-      const randomSlots = Math.max(0, Math.min(maxSlides - pickedFavorites.length, rest.length));
-      return shuffleArray([...pickedFavorites, ...randomPick(rest, randomSlots)]);
+      // Every thumb/ pool entry rotates in the slideshow (guaranteed entries use their thumb artwork).
+      const byId = new Map();
+      for (const item of pool) {
+        if (item?.id != null) byId.set(item.id, item);
+      }
+      for (const item of guaranteed) {
+        if (item?.id == null) continue;
+        const existing = byId.get(item.id);
+        byId.set(item.id, existing ? { ...existing, ...item, thumb: item.thumb || existing.thumb } : item);
+      }
+      return shuffleArray([...byId.values()]);
     }
 
     function buildSlide(lec) {

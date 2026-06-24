@@ -15,7 +15,7 @@ python3 generate-media-catalog.py
 
 if [[ -d "$AUDIO_SRC" ]]; then
   echo "Regenerating audio catalog from $AUDIO_SRC ..."
-  python3 generate-catalog.py
+  FAISAL_AUDIO_SRC="$AUDIO_SRC" python3 generate-catalog.py
 else
   echo ""
   echo "Skipping audio catalog regen — source not found:"

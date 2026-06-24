@@ -32,7 +32,20 @@ try:
 except ImportError:
     HAS_MUTAGEN = False
 
-ROOT = Path(__file__).resolve().parent.parent / "www" / "SheikhFaisalAudioLectures"
+def resolve_audio_src() -> Path:
+    env = os.environ.get("FAISAL_AUDIO_SRC", "").strip()
+    if env:
+        return Path(env)
+    for candidate in (
+        Path("/media/sawako/BIgP/faisal/SheikhFaisalAudioLectures"),
+        Path(__file__).resolve().parent.parent / "www" / "SheikhFaisalAudioLectures",
+    ):
+        if candidate.is_dir():
+            return candidate
+    return Path(__file__).resolve().parent.parent / "www" / "SheikhFaisalAudioLectures"
+
+
+ROOT = resolve_audio_src()
 WEBSITE = Path(__file__).resolve().parent
 WEB_THUMB = WEBSITE / "thumb"
 SRC_CACHE = WEB_THUMB / "_src"
@@ -77,6 +90,7 @@ GUARANTEED_HOME_FEATURED_STEMS = [
     "the Barking dogs of jahannam",
     "47 signs of the wicked scholer by Sheikh Abdullah Faisal -Full-",
     "The 4 Branches Of Tauheed",
+    "The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal",
     "The 18 Types Of Women You Should Not Marry",
     "The 20 Types Of Men You Should Not Marry",
 ]
@@ -773,6 +787,9 @@ THUMB_MATCH_ALIASES = {
     norm("The Barking Dogs of Jahannam (Refuting the Khawarij) by Shaikh Faisal"): norm(
         "the Barking dogs of jahannam"
     ),
+    norm("The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal"): norm(
+        "The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal"
+    ),
 }
 
 
@@ -843,6 +860,8 @@ def build_featured_lectures(lectures: list[dict]) -> list[dict]:
         thumb_web = web_path(path)
         lecture = find_lecture_for_flat_thumb(key, lectures, thumb_path=thumb_web)
         if lecture is None:
+            if not is_digest_thumb_key(key):
+                print(f"Warning: thumb/ image has no matching lecture: {path.name}")
             continue
         featured.append({"id": lecture["id"], "thumb": thumb_web, "archive": lecture["archive"]})
 
