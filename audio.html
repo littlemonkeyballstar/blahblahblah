@@ -365,6 +365,9 @@
       </div>
     </div>
 
+    <!-- Continue listening (filled by site.js when saved progress exists) -->
+    <section id="continueListeningSection" class="hidden mb-8"></section>
+
     <div class="flex flex-col lg:flex-row gap-8">
 
       <!-- Sidebar: categories -->
@@ -936,6 +939,10 @@
             el.classList.remove('is-playing-audio');
           });
           setPlaying(true);
+          const lectureId = parseInt(audio.dataset.lectureId, 10);
+          const archive = audio.dataset.lectureArchive || null;
+          syncLectureUrl(lectureId, archive);
+          saveLastAudioLecture(lectureId, archive);
         });
         audio.addEventListener('pause', () => setPlaying(false));
         audio.addEventListener('ended', () => setPlaying(false));
@@ -1017,39 +1024,99 @@
       refreshLectures();
     });
 
-    async function applyDeepLink() {
-      const params = new URLSearchParams(location.search);
-      const archive = params.get('archive');
-      const idParam = params.get('lecture');
-      if (!archive && idParam === null) return;
+    function focusDeepLinkedCard(lec) {
+      requestAnimationFrame(() => {
+        const el = document.getElementById('lecture-' + lec.id);
+        if (!el) return;
+        el.classList.add('ring-2', 'ring-gold', 'shadow-lg', 'shadow-gold/20');
+        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        const audio = el.querySelector('audio');
+        if (audio && lec.archive) {
+          audio.preload = 'metadata';
+          tryRestoreAudioProgress(audio, lec.archive);
+        }
+      });
+    }
 
-      let lec = null;
-      if (archive) {
-        await loadAllLectureChunks();
-        lec = getLoadedLectures().find((l) => l.archive === archive);
-      } else {
-        const id = parseInt(idParam, 10);
-        const catId = typeof LECTURE_ID_INDEX !== 'undefined' ? LECTURE_ID_INDEX[String(id)] : null;
-        if (catId) await loadLectureChunk(catId);
-        else await loadAllLectureChunks();
-        lec = getLoadedLectures().find((l) => l.id === id);
-      }
+    async function navigateToLecture(lec) {
       if (!lec) return;
+      syncLectureUrl(lec.id, lec.archive);
+      saveLastAudioLecture(lec.id, lec.archive);
       state.category = lec.category;
       state.subcategory = lec.subcategory || 'all';
+      state.search = '';
+      state.page = 1;
+      document.getElementById('searchInput').value = '';
       updateCategoryUI();
       renderSubcategories();
       const list = getFiltered();
       const idx = list.findIndex(l => l.id === lec.id);
       if (idx >= 0) state.page = Math.floor(idx / state.perPage) + 1;
       renderLectures();
-      requestAnimationFrame(() => {
-        const el = document.getElementById('lecture-' + lec.id);
-        if (el) {
-          el.classList.add('ring-2', 'ring-gold', 'shadow-lg', 'shadow-gold/20');
-          el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }
-      });
+      focusDeepLinkedCard(lec);
+    }
+
+    async function resolveLectureFromParams(params) {
+      const archive = params.get('archive');
+      const idParam = params.get('lecture');
+      if (!archive && idParam === null) return null;
+
+      if (archive) {
+        await loadAllLectureChunks();
+        return getLoadedLectures().find((l) => l.archive === archive) || null;
+      }
+      const id = parseInt(idParam, 10);
+      const catId = typeof LECTURE_ID_INDEX !== 'undefined' ? LECTURE_ID_INDEX[String(id)] : null;
+      if (catId) await loadLectureChunk(catId);
+      else await loadAllLectureChunks();
+      return getLoadedLectures().find((l) => l.id === id) || null;
+    }
+
+    async function applyDeepLink() {
+      const params = new URLSearchParams(location.search);
+      const lec = await resolveLectureFromParams(params);
+      if (!lec) return;
+      await navigateToLecture(lec);
+    }
+
+    async function resumeLectureByArchive(archive) {
+      let lec = getLoadedLectures().find((l) => l.archive === archive);
+      if (!lec) {
+        await loadAllLectureChunks();
+        lec = getLoadedLectures().find((l) => l.archive === archive);
+      }
+      if (lec) await navigateToLecture(lec);
+    }
+
+    async function resolveInitialDeepLink() {
+      const params = new URLSearchParams(location.search);
+      if (params.get('archive') || params.get('lecture') !== null) {
+        await applyDeepLink();
+        return;
+      }
+      if (!isPageReload()) return;
+      const last = readLastAudioLecture();
+      if (!last) return;
+      syncLectureUrl(last.id, last.archive);
+      const fallback = new URLSearchParams();
+      if (last.archive) fallback.set('archive', last.archive);
+      else if (last.id != null) fallback.set('lecture', String(last.id));
+      const lec = await resolveLectureFromParams(fallback);
+      if (lec) await navigateToLecture(lec);
+    }
+
+    async function mountAudioContinueListening() {
+      const entries = getContinueListeningEntries(3);
+      if (!entries.length) return;
+      try {
+        const lookup = await buildFullAudioLookup();
+        mountContinueListening(lookup, {
+          page: 'audio',
+          onResume: (archive) => resumeLectureByArchive(archive),
+        });
+      } catch (err) {
+        console.error('Continue listening failed:', err);
+      }
     }
 
     /* ── Init ── */
@@ -1064,7 +1131,12 @@
       document.getElementById('totalCount').textContent = LECTURE_TOTAL;
       renderCategories();
       renderSubcategories();
-      refreshLectures().then(() => applyDeepLink()).catch((err) => console.error('Audio deep link failed:', err));
+      Promise.all([
+        refreshLectures(),
+        mountAudioContinueListening(),
+      ])
+        .then(() => resolveInitialDeepLink())
+        .catch((err) => console.error('Audio page init failed:', err));
     } catch (err) {
       console.error('Audio page init failed:', err);
       const grid = document.getElementById('lectureGrid');

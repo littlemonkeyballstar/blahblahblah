@@ -1006,10 +1006,11 @@ function buildAudioLookupByArchive(pool) {
   return map;
 }
 
-function mountContinueListening(audioLookup) {
+function mountContinueListening(audioLookup, options = {}) {
   const section = document.getElementById('continueListeningSection');
   if (!section) return;
 
+  const { page = 'home', onResume } = options;
   const lookup = audioLookup instanceof Map
     ? audioLookup
     : buildAudioLookupByArchive(audioLookup);
@@ -1022,13 +1023,17 @@ function mountContinueListening(audioLookup) {
     return;
   }
 
+  const headerLink = page === 'home'
+    ? '<a href="audio.html" class="text-sm text-gold hover:text-gold-light">Audio library <i class="fas fa-arrow-right text-xs"></i></a>'
+    : '';
+
   section.classList.remove('hidden');
   section.innerHTML = `
     <div class="flex items-center justify-between mb-4">
       <h2 class="font-display text-lg sm:text-xl text-gold-gradient flex items-center gap-2">
         <i class="fas fa-play-circle text-gold text-sm"></i> Continue listening
       </h2>
-      <a href="audio.html" class="text-sm text-gold hover:text-gold-light">Audio library <i class="fas fa-arrow-right text-xs"></i></a>
+      ${headerLink}
     </div>
     <div id="continueListeningList" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3"></div>`;
 
@@ -1036,14 +1041,16 @@ function mountContinueListening(audioLookup) {
   listEl.innerHTML = entries.map((entry) => {
     const meta = lookup.get(entry.archive);
     const title = meta?.title || 'Audio lecture';
-    const sub = meta?.categoryLabel || 'Audio lecture';
+    const sub = meta?.categoryLabel || lectureCategoryLabel(meta);
     const thumb = meta?.thumb;
-    const href = `audio.html?archive=${encodeURIComponent(entry.archive)}`;
+    const href = onResume
+      ? '#'
+      : `audio.html?archive=${encodeURIComponent(entry.archive)}`;
     const thumbHtml = thumb && isValidThumb(thumb)
       ? `<img src="${thumbDisplaySrc(thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="lazy" decoding="async" onerror="${thumbImgFallbackHandler(thumb)}">`
       : `<i class="fas fa-headphones text-gold/50 text-lg"></i>`;
     return `
-      <a href="${href}" class="continue-listening-card card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900/60 group">
+      <a href="${href}" data-continue-archive="${escapeHtml(entry.archive)}" class="continue-listening-card card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900/60 group">
         <div class="continue-listening-thumb w-16 h-16 rounded-lg overflow-hidden thumb-box flex items-center justify-center flex-shrink-0 p-1">
           ${thumbHtml}
         </div>
@@ -1057,6 +1064,14 @@ function mountContinueListening(audioLookup) {
         <i class="fas fa-play text-gold/50 group-hover:text-gold text-sm flex-shrink-0"></i>
       </a>`;
   }).join('');
+  if (onResume) {
+    listEl.querySelectorAll('[data-continue-archive]').forEach((el) => {
+      el.addEventListener('click', (e) => {
+        e.preventDefault();
+        onResume(el.dataset.continueArchive);
+      });
+    });
+  }
   enhanceGridThumbs(listEl, { priorityCount: 3 });
 
   section.classList.add('home-fade-in');
@@ -1609,6 +1624,68 @@ function pageItemShareUrl(page, param, id, options = {}) {
   if (options.archive) url.searchParams.set('archive', options.archive);
   else url.searchParams.set(param, String(id));
   return url.href;
+}
+
+const LAST_AUDIO_LECTURE_KEY = 'shaf-last-audio-lecture';
+
+function syncLectureUrl(lectureId, archive) {
+  const url = new URL(location.href);
+  url.search = '';
+  if (archive) url.searchParams.set('archive', archive);
+  else if (Number.isFinite(lectureId)) url.searchParams.set('lecture', String(lectureId));
+  const next = url.pathname + url.search + url.hash;
+  if (location.pathname + location.search + location.hash !== next) {
+    history.replaceState(null, '', next);
+  }
+}
+
+function saveLastAudioLecture(lectureId, archive) {
+  if (!archive && !Number.isFinite(lectureId)) return;
+  try {
+    sessionStorage.setItem(LAST_AUDIO_LECTURE_KEY, JSON.stringify({
+      id: Number.isFinite(lectureId) ? lectureId : null,
+      archive: archive || null,
+      at: Date.now(),
+    }));
+  } catch {}
+}
+
+function readLastAudioLecture() {
+  try {
+    const raw = sessionStorage.getItem(LAST_AUDIO_LECTURE_KEY);
+    if (!raw) return null;
+    const data = JSON.parse(raw);
+    if (!data?.archive && !Number.isFinite(data?.id)) return null;
+    return data;
+  } catch {
+    return null;
+  }
+}
+
+function isPageReload() {
+  const nav = performance.getEntriesByType?.('navigation')[0];
+  return nav?.type === 'reload' || performance.navigation?.type === 1;
+}
+
+function lectureCategoryLabel(lecture) {
+  if (!lecture) return 'Audio lecture';
+  if (lecture.categoryLabel) return lecture.categoryLabel;
+  const cat = typeof LECTURE_CATEGORIES !== 'undefined'
+    ? LECTURE_CATEGORIES.find((c) => c.id === lecture.category)
+    : null;
+  return cat?.label || lecture.category || 'Audio lecture';
+}
+
+async function buildFullAudioLookup() {
+  const map = buildAudioLookupByArchive(
+    typeof HOME_AUDIO_POOL !== 'undefined' ? HOME_AUDIO_POOL : []
+  );
+  await loadAllLectureChunks();
+  for (const lec of getLoadedLectures()) {
+    if (!lec.archive) continue;
+    map.set(lec.archive, { ...lec, categoryLabel: lectureCategoryLabel(lec) });
+  }
+  return map;
 }
 
 async function copyTextToClipboard(text) {
