@@ -824,7 +824,7 @@ function searchResultThumb(item, meta) {
 }
 
 const GLOBAL_SEARCH_HTML = `
-  <div id="homeSearch" class="home-search">
+  <div id="homeSearch" class="home-search" title="Global search">
     <div class="home-search__bar">
       <div id="homeSearchField" class="home-search__field" aria-hidden="true">
         <div class="home-search__inner">
@@ -835,7 +835,7 @@ const GLOBAL_SEARCH_HTML = `
           </button>
         </div>
       </div>
-      <button type="button" id="homeSearchToggle" class="home-search__toggle" aria-label="Open search" aria-expanded="false" aria-controls="homeSearchField">
+      <button type="button" id="homeSearchToggle" class="home-search__toggle" title="Global search" aria-label="Open search" aria-expanded="false" aria-controls="homeSearchField">
         <i class="fas fa-search text-sm"></i>
       </button>
     </div>
@@ -875,6 +875,8 @@ function mountGlobalSearch() {
   if (!root || !toggle || !field || !input || !results) return;
   if (root.dataset.searchInit === '1') return;
   root.dataset.searchInit = '1';
+  root.setAttribute('title', 'Global search');
+  toggle.setAttribute('title', 'Global search');
 
   let debounceTimer = null;
   let indexLoadPromise = null;

@@ -210,36 +210,17 @@
     </div>
   </div>
 
-  <header class="site-header site-chrome bg-slate-925/90 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
-    <div class="site-header__inner max-w-7xl mx-auto px-4 sm:px-8 py-3 sm:py-5 flex flex-col sm:flex-row items-center sm:items-center justify-between gap-3 sm:gap-4">
-      <a href="index.html" class="site-header__title font-display text-xl sm:text-3xl font-bold text-gold-gradient tracking-wide text-center sm:text-left shrink-0">Shaykh Abdullah Faisal</a>
-      <div class="site-header__actions">
-        <nav class="site-nav flex sm:flex-wrap items-center gap-1 sm:gap-2 text-sm font-medium justify-start sm:justify-end flex-1 sm:flex-initial min-w-0">
-          <a href="index.html" data-nav="home" class="px-4 py-2 rounded-full transition">Home</a>
-          <a href="biography.html" data-nav="biography" class="px-4 py-2 rounded-full transition"><span class="nav-long">Biography</span><span class="nav-short">Bio</span></a>
-          <a href="clips.html" data-nav="clips" class="px-4 py-2 rounded-full transition"><span class="nav-long">Clips/Shorts</span><span class="nav-short">Clips</span></a>
-          <a href="videos.html" data-nav="videos" class="px-4 py-2 rounded-full transition"><span class="nav-long">Video Lectures</span><span class="nav-short">Videos</span></a>
-          <a href="audio.html" data-nav="audio" class="px-4 py-2 rounded-full transition"><span class="nav-long">Audio Lectures</span><span class="nav-short">Audio</span></a>
-          <a href="pdfs.html" data-nav="pdfs" class="px-4 py-2 rounded-full transition"><span class="nav-long">PDF Books</span><span class="nav-short">PDFs</span></a>
-        </nav>
-        <div id="homeSearch" class="home-search">
-          <div class="home-search__bar">
-            <div id="homeSearchField" class="home-search__field" aria-hidden="true">
-              <div class="home-search__inner">
-                <label for="globalSearch" class="sr-only">Search audio, videos, clips, and PDFs</label>
-                <input id="globalSearch" type="search" placeholder="Search archive…" autocomplete="off" class="home-search__input">
-                <button type="button" id="homeSearchClose" class="home-search__close" aria-label="Close search">
-                  <i class="fas fa-times text-xs"></i>
-                </button>
-              </div>
-            </div>
-            <button type="button" id="homeSearchToggle" class="home-search__toggle" aria-label="Open search" aria-expanded="false" aria-controls="homeSearchField">
-              <i class="fas fa-search text-sm"></i>
-            </button>
-          </div>
-          <div id="globalSearchResults" class="home-search__results hidden"></div>
-        </div>
-      </div>
+  <header class="site-header site-chrome bg-slate-925/90 backdrop-blur border-b border-slate-800 sticky top-0 z-50">
+    <div class="site-header__inner max-w-[90rem] mx-auto px-4 sm:px-8 py-3 sm:py-5 flex flex-col sm:flex-row items-center justify-between gap-3 sm:gap-4">
+      <a href="index.html" class="site-header__title font-display text-xl sm:text-3xl font-bold text-gold-gradient text-center sm:text-left shrink-0">Shaykh Abdullah Faisal</a>
+      <nav class="site-nav flex sm:flex-wrap gap-1 text-sm font-medium justify-start sm:justify-end">
+        <a href="index.html" data-nav="home" class="px-4 py-2 rounded-full transition">Home</a>
+        <a href="biography.html" data-nav="biography" class="px-4 py-2 rounded-full transition"><span class="nav-long">Biography</span><span class="nav-short">Bio</span></a>
+        <a href="clips.html" data-nav="clips" class="px-4 py-2 rounded-full transition"><span class="nav-long">Clips/Shorts</span><span class="nav-short">Clips</span></a>
+        <a href="videos.html" data-nav="videos" class="px-4 py-2 rounded-full transition"><span class="nav-long">Video Lectures</span><span class="nav-short">Videos</span></a>
+        <a href="audio.html" data-nav="audio" class="px-4 py-2 rounded-full transition"><span class="nav-long">Audio Lectures</span><span class="nav-short">Audio</span></a>
+        <a href="pdfs.html" data-nav="pdfs" class="px-4 py-2 rounded-full transition"><span class="nav-long">PDF Books</span><span class="nav-short">PDFs</span></a>
+      </nav>
     </div>
   </header>
 
@@ -462,12 +443,13 @@
       document.getElementById('audioPreview').innerHTML = homePreviewSkeleton(4);
     }
 
+    mountTopBar();
+    document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
+    mountTelegramLink();
+    setActiveNav('home');
+
     async function bootHome() {
       try {
-        mountTopBar();
-        document.getElementById('siteDisclaimer').textContent = SITE_DISCLAIMER;
-        mountTelegramLink();
-        setActiveNav('home');
         showHomeSkeletons();
 
         await Promise.all([
