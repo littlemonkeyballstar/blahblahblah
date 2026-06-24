@@ -1043,14 +1043,10 @@ function mountContinueListening(audioLookup, options = {}) {
     const title = meta?.title || 'Audio lecture';
     const sub = meta?.categoryLabel || lectureCategoryLabel(meta);
     const thumb = meta?.thumb;
-    const href = onResume
-      ? '#'
-      : `audio.html?archive=${encodeURIComponent(entry.archive)}`;
     const thumbHtml = thumb && isValidThumb(thumb)
       ? `<img src="${thumbDisplaySrc(thumb)}" alt="" class="max-w-full max-h-full object-contain" loading="lazy" decoding="async" onerror="${thumbImgFallbackHandler(thumb)}">`
       : `<i class="fas fa-headphones text-gold/50 text-lg"></i>`;
-    return `
-      <a href="${href}" data-continue-archive="${escapeHtml(entry.archive)}" class="continue-listening-card card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900/60 group">
+    const cardInner = `
         <div class="continue-listening-thumb w-16 h-16 rounded-lg overflow-hidden thumb-box flex items-center justify-center flex-shrink-0 p-1">
           ${thumbHtml}
         </div>
@@ -1061,14 +1057,24 @@ function mountContinueListening(audioLookup, options = {}) {
             <i class="fas fa-clock text-[0.65rem]"></i> Resume at ${formatAudioTimestamp(entry.seconds)}
           </p>
         </div>
-        <i class="fas fa-play text-gold/50 group-hover:text-gold text-sm flex-shrink-0"></i>
+        <i class="fas fa-play text-gold/50 group-hover:text-gold text-sm flex-shrink-0"></i>`;
+    if (onResume) {
+      const idAttr = Number.isFinite(meta?.id) ? ` data-continue-id="${meta.id}"` : '';
+      return `
+      <button type="button" data-continue-archive="${escapeHtml(entry.archive)}"${idAttr} class="continue-listening-card card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900/60 group w-full text-left">
+        ${cardInner}
+      </button>`;
+    }
+    const href = `audio.html?archive=${encodeURIComponent(entry.archive)}`;
+    return `
+      <a href="${href}" class="continue-listening-card card-hover flex items-center gap-3 p-3 rounded-xl border border-slate-800 bg-slate-900/60 group">
+        ${cardInner}
       </a>`;
   }).join('');
   if (onResume) {
     listEl.querySelectorAll('[data-continue-archive]').forEach((el) => {
-      el.addEventListener('click', (e) => {
-        e.preventDefault();
-        onResume(el.dataset.continueArchive);
+      el.addEventListener('click', () => {
+        onResume(el.dataset.continueArchive, el.dataset.continueId);
       });
     });
   }

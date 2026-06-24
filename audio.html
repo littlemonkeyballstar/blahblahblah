@@ -868,7 +868,7 @@
     }
 
     /* ── Main render ── */
-    function renderLectures() {
+    function renderLectures(options = {}) {
       const filtered = getFiltered();
       const totalPages = Math.max(1, Math.ceil(filtered.length / state.perPage));
       if (state.page > totalPages) state.page = totalPages;
@@ -897,8 +897,9 @@
       const grid = document.getElementById('lectureGrid');
       const empty = document.getElementById('emptyState');
 
-      const useStagger = !window.matchMedia('(min-width: 1024px)').matches;
-      animateContentSwap(grid, () => {
+      const fastNav = !!options.fast;
+      const useStagger = !fastNav && !window.matchMedia('(min-width: 1024px)').matches;
+      return animateContentSwap(grid, () => {
         if (!pageItems.length) {
           grid.innerHTML = '';
           empty.classList.remove('hidden');
@@ -910,7 +911,7 @@
       bindLectureAudioPlayers();
       bindShareButtons(grid);
       enhanceGridThumbs(grid, { priorityCount: 8 });
-      }, { stagger: useStagger, fast: !useStagger });
+      }, { stagger: useStagger, fast: fastNav || !useStagger });
     }
 
     function bindLectureAudioPlayers() {
@@ -1024,22 +1025,31 @@
       refreshLectures();
     });
 
-    function focusDeepLinkedCard(lec) {
-      requestAnimationFrame(() => {
-        const el = document.getElementById('lecture-' + lec.id);
-        if (!el) return;
-        el.classList.add('ring-2', 'ring-gold', 'shadow-lg', 'shadow-gold/20');
-        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        const audio = el.querySelector('audio');
-        if (audio && lec.archive) {
-          audio.preload = 'metadata';
-          tryRestoreAudioProgress(audio, lec.archive);
+    function focusDeepLinkedCard(lec, options = {}) {
+      const { autoPlay = false } = options;
+      const el = document.getElementById('lecture-' + lec.id);
+      if (!el) return false;
+      el.classList.add('ring-2', 'ring-gold', 'shadow-lg', 'shadow-gold/20');
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      const audio = el.querySelector('audio');
+      if (audio && lec.archive) {
+        audio.preload = 'metadata';
+        tryRestoreAudioProgress(audio, lec.archive);
+        if (autoPlay) {
+          const grid = document.getElementById('lectureGrid');
+          grid.querySelectorAll('audio').forEach((other) => {
+            if (other !== audio && !other.paused) other.pause();
+          });
+          const playPromise = audio.play();
+          if (playPromise) playPromise.catch(() => {});
         }
-      });
+      }
+      return true;
     }
 
-    async function navigateToLecture(lec) {
+    async function navigateToLecture(lec, options = {}) {
       if (!lec) return;
+      const { autoPlay = false, fastRender = false } = options;
       syncLectureUrl(lec.id, lec.archive);
       saveLastAudioLecture(lec.id, lec.archive);
       state.category = lec.category;
@@ -1049,11 +1059,12 @@
       document.getElementById('searchInput').value = '';
       updateCategoryUI();
       renderSubcategories();
+      await ensureLecturesForFilter(lec.category, '');
       const list = getFiltered();
       const idx = list.findIndex(l => l.id === lec.id);
       if (idx >= 0) state.page = Math.floor(idx / state.perPage) + 1;
-      renderLectures();
-      focusDeepLinkedCard(lec);
+      await renderLectures({ fast: fastRender });
+      focusDeepLinkedCard(lec, { autoPlay });
     }
 
     async function resolveLectureFromParams(params) {
@@ -1079,13 +1090,24 @@
       await navigateToLecture(lec);
     }
 
-    async function resumeLectureByArchive(archive) {
-      let lec = getLoadedLectures().find((l) => l.archive === archive);
-      if (!lec) {
-        await loadAllLectureChunks();
+    async function resumeLectureByArchive(archive, lectureId) {
+      const id = lectureId ? parseInt(lectureId, 10) : NaN;
+      let lec = Number.isFinite(id)
+        ? getLoadedLectures().find((l) => l.id === id)
+        : null;
+      if (!lec && archive) {
         lec = getLoadedLectures().find((l) => l.archive === archive);
       }
-      if (lec) await navigateToLecture(lec);
+      if (!lec) {
+        await loadAllLectureChunks();
+        if (Number.isFinite(id)) {
+          lec = getLoadedLectures().find((l) => l.id === id);
+        }
+        if (!lec && archive) {
+          lec = getLoadedLectures().find((l) => l.archive === archive);
+        }
+      }
+      if (lec) await navigateToLecture(lec, { autoPlay: true, fastRender: true });
     }
 
     async function resolveInitialDeepLink() {
@@ -1112,7 +1134,7 @@
         const lookup = await buildFullAudioLookup();
         mountContinueListening(lookup, {
           page: 'audio',
-          onResume: (archive) => resumeLectureByArchive(archive),
+          onResume: (archive, lectureId) => resumeLectureByArchive(archive, lectureId),
         });
       } catch (err) {
         console.error('Continue listening failed:', err);
