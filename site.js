@@ -1254,10 +1254,7 @@ function mountMobileStyles() {
         -webkit-overflow-scrolling: touch;
         scrollbar-width: none;
         gap: 0.375rem;
-        flex: 1;
-        min-width: 0;
         padding: 0.125rem 0 0.375rem;
-        mask-image: linear-gradient(90deg, transparent, #000 0.5rem, #000 calc(100% - 2.5rem), transparent);
       }
       .site-nav::-webkit-scrollbar { display: none; }
       .site-nav a {
@@ -1560,6 +1557,7 @@ function mountTopBar() {
     }
   }
   mountGlobalSearch();
+  requestAnimationFrame(() => scrollActiveNavIntoView());
 }
 
 function mountTelegramLink(id = 'siteTelegram') {
@@ -2386,6 +2384,14 @@ function mediaCard({
     </article>`;
 }
 
+function scrollActiveNavIntoView() {
+  if (window.matchMedia('(min-width: 640px)').matches) return;
+  const nav = document.querySelector('.site-header__actions .site-nav, .site-header .site-nav');
+  const active = nav?.querySelector('[data-nav].bg-gold, [data-nav].font-semibold');
+  if (!active) return;
+  active.scrollIntoView({ behavior: 'smooth', inline: 'end', block: 'nearest' });
+}
+
 function setActiveNav(page) {
   document.querySelectorAll('[data-nav]').forEach(link => {
     const active = link.dataset.nav === page;
@@ -2398,4 +2404,5 @@ function setActiveNav(page) {
     link.classList.toggle('hover:bg-gold/15', !active);
     link.classList.toggle('hover:text-gold', !active);
   });
+  requestAnimationFrame(() => scrollActiveNavIntoView());
 }
