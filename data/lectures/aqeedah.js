@@ -363,6 +363,16 @@ registerLectureChunk("Aqeedah", [
     "id": 226
   },
   {
+    "title": "The Four Branches of Tawheed (Authentic Tawheed 2001)",
+    "category": "Aqeedah",
+    "categoryLabel": "Aqeedah & Tawheed",
+    "subcategory": null,
+    "subcategoryLabel": null,
+    "archive": "The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal.mp3",
+    "thumb": null,
+    "id": 227
+  },
+  {
     "title": "THEY DO NOT LOVE ALLAH",
     "category": "Aqeedah",
     "categoryLabel": "Aqeedah & Tawheed",
@@ -370,7 +380,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "THEY DO NOT LOVE ALLAH - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 227
+    "id": 228
   },
   {
     "title": "THIRTY FIVE SIGNS OF A HYPOCRITE",
@@ -380,7 +390,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "THIRTY FIVE SIGNS OF A HYPOCRITE - Abdallah Al Faisal.mp3",
     "thumb": null,
-    "id": 228
+    "id": 229
   },
   {
     "title": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT",
@@ -390,7 +400,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.mp3",
     "thumb": "thumb/TRADE THAT SAVES ONE FROM PAINFUL TORMENT - Abdallah Al Faisal.png",
-    "id": 229
+    "id": 230
   },
   {
     "title": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR",
@@ -400,7 +410,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "TWENTY FIVE THINGS THAT MAKES YOU A KAAFIR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/extracted/40f8d0fb22e4b9.jpg",
-    "id": 230
+    "id": 231
   },
   {
     "title": "What is Al-Wala wal-Bara — Explanation of core Islamic fundamentals",
@@ -410,7 +420,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Al-Wala wal-Bara by shaykh Abdullah Faisal.mp3",
     "thumb": "thumb/Al-Wala wal-Bara by shaykh Abdullah Faisal.png",
-    "id": 231
+    "id": 232
   },
   {
     "title": "WHAT MAKES YOU A KAFIR",
@@ -420,7 +430,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.mp3",
     "thumb": "thumb/WHAT MAKES YOU A KAFIR - Abdallah Al Faisal.png",
-    "id": 232
+    "id": 233
   },
   {
     "title": "Where Is Allah SWT (07.08.11)",
@@ -430,7 +440,7 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "Where Is Allah SWT (07.08.11).mp3",
     "thumb": null,
-    "id": 233
+    "id": 234
   },
   {
     "title": "Why is takfir important",
@@ -440,6 +450,6 @@ registerLectureChunk("Aqeedah", [
     "subcategoryLabel": null,
     "archive": "conf_imped_takfir.mp3",
     "thumb": null,
-    "id": 234
+    "id": 235
   }
 ]);

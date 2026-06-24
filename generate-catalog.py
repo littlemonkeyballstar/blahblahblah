@@ -352,6 +352,9 @@ LECTURE_TITLE_OVERRIDES = {
     norm("the Barking dogs of jahannam"): "The Barking Dogs of Jahannam (Refuting the modern day Khawarij)",
     norm("DEVIL'S DECEPTION OF SAUDI SALAFIS - Abdallah Al Faisal"): "DEVIL'S DECEPTION OF SAUDI SALAFIS (1990s)",
     norm("MURJIA - Shaykh Faisal"): "MURJIA (Refuting liberal Muslims)",
+    norm("Evil_Desire by shaykh faisal"): "Evil Desire",
+    norm("The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal"): "The Four Branches of Tawheed (Authentic Tawheed 2001)",
+    norm("The Importance of Marriage by Shaikh Abdullah  Faisal"): "The Importance of Marriage",
 }
 
 LECTURE_CATEGORY_OVERRIDES = {
@@ -373,6 +376,9 @@ LECTURE_CATEGORY_OVERRIDES = {
     norm("The Importance of Intention"): "Character_Dawah",
     norm("The Philosophy of the islamic Jurisprudence"): "Fiqh_Worship",
     norm("KNOWLEDGE - Abdallah Al Faisal"): "Character_Dawah",
+    norm("Evil_Desire by shaykh faisal"): "Character_Dawah",
+    norm("The Four Branches of Tawheed (aka Authentic Tawheed 2001 by Shaykh Faisal"): "Aqeedah",
+    norm("The Importance of Marriage by Shaikh Abdullah  Faisal"): "Nikah_Divorce",
 }
 
 # Pin specific lectures to the top of their sub-series (lower = earlier).

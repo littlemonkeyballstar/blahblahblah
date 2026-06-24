@@ -291,6 +291,10 @@ _VIDEO_TITLE_OVERRIDES_RAW = [
     ),
     ("Shirk in Perspective by Shaikh Faisal", "Shirk in Perspective Explained"),
     ("Rejecting the Taghut by Shaikh Faisal", "Rejecting the Taghut Explained"),
+    ("The Three Types of Hearts", "The Three Types of Hearts"),
+    ("The Paris Outrage - A Muslim Perspective", "The Paris Outrage — A Muslim Perspective"),
+    ("The 15 People Killed by Shariah", "The 15 People Killed by Shariah"),
+    ("Prophetic Guidance", "Prophetic Guidance"),
 ]
 VIDEO_TITLE_OVERRIDES = {norm(stem): title for stem, title in _VIDEO_TITLE_OVERRIDES_RAW}
 
