@@ -357,10 +357,18 @@ function initCloudflareAnalytics() {
 
 let searchIndexLoadPromise = null;
 
+function siteScriptBase() {
+  const ref = document.querySelector('script[src*="site.js"]');
+  if (!ref) return '';
+  const src = ref.getAttribute('src') || '';
+  const idx = src.lastIndexOf('site.js');
+  return idx >= 0 ? src.slice(0, idx) : '';
+}
+
 function ensureSearchIndexLoaded() {
   if (typeof SEARCH_INDEX !== 'undefined') return Promise.resolve();
   if (!searchIndexLoadPromise) {
-    searchIndexLoadPromise = loadExternalScript('search-index.js');
+    searchIndexLoadPromise = loadExternalScript(`${siteScriptBase()}search-index.js`);
   }
   return searchIndexLoadPromise;
 }
@@ -815,7 +823,49 @@ function searchResultThumb(item, meta) {
   </span>`;
 }
 
-function mountHomeGlobalSearch() {
+const GLOBAL_SEARCH_HTML = `
+  <div id="homeSearch" class="home-search">
+    <div class="home-search__bar">
+      <div id="homeSearchField" class="home-search__field" aria-hidden="true">
+        <div class="home-search__inner">
+          <label for="globalSearch" class="sr-only">Search audio, videos, clips, and PDFs</label>
+          <input id="globalSearch" type="search" placeholder="Search archive…" autocomplete="off" class="home-search__input">
+          <button type="button" id="homeSearchClose" class="home-search__close" aria-label="Close search">
+            <i class="fas fa-times text-xs"></i>
+          </button>
+        </div>
+      </div>
+      <button type="button" id="homeSearchToggle" class="home-search__toggle" aria-label="Open search" aria-expanded="false" aria-controls="homeSearchField">
+        <i class="fas fa-search text-sm"></i>
+      </button>
+    </div>
+    <div id="globalSearchResults" class="home-search__results hidden"></div>
+  </div>`;
+
+function ensureGlobalSearchInHeader() {
+  const headerInner = document.querySelector('.site-header .site-header__inner');
+  if (!headerInner) return null;
+
+  const nav = headerInner.querySelector('.site-nav');
+  if (!nav) return document.getElementById('homeSearch');
+
+  let actions = headerInner.querySelector('.site-header__actions');
+  if (!actions) {
+    actions = document.createElement('div');
+    actions.className = 'site-header__actions';
+    headerInner.appendChild(actions);
+  }
+  if (nav.parentElement !== actions) {
+    actions.appendChild(nav);
+  }
+  if (!document.getElementById('homeSearch')) {
+    actions.insertAdjacentHTML('beforeend', GLOBAL_SEARCH_HTML);
+  }
+  return document.getElementById('homeSearch');
+}
+
+function mountGlobalSearch() {
+  ensureGlobalSearchInHeader();
   const root = document.getElementById('homeSearch');
   const toggle = document.getElementById('homeSearchToggle');
   const field = document.getElementById('homeSearchField');
@@ -823,10 +873,18 @@ function mountHomeGlobalSearch() {
   const input = document.getElementById('globalSearch');
   const results = document.getElementById('globalSearchResults');
   if (!root || !toggle || !field || !input || !results) return;
+  if (root.dataset.searchInit === '1') return;
+  root.dataset.searchInit = '1';
 
   let debounceTimer = null;
   let indexLoadPromise = null;
   let isOpen = false;
+
+  const updateResultsPosition = () => {
+    if (!isOpen || window.innerWidth >= 640) return;
+    const rect = root.getBoundingClientRect();
+    document.documentElement.style.setProperty('--global-search-top', `${Math.round(rect.bottom)}px`);
+  };
 
   const hideResults = () => {
     results.classList.add('hidden');
@@ -852,6 +910,7 @@ function mountHomeGlobalSearch() {
         </a>`;
     }).join('');
     results.classList.remove('hidden');
+    updateResultsPosition();
   };
 
   const loadIndex = () => {
@@ -872,6 +931,7 @@ function mountHomeGlobalSearch() {
     if (!isOpen) return;
     isOpen = false;
     root.classList.remove('is-open');
+    document.documentElement.classList.remove('global-search-open');
     toggle.setAttribute('aria-expanded', 'false');
     toggle.setAttribute('aria-label', 'Open search');
     field.setAttribute('aria-hidden', 'true');
@@ -884,6 +944,8 @@ function mountHomeGlobalSearch() {
     if (isOpen) return;
     isOpen = true;
     root.classList.add('is-open');
+    document.documentElement.classList.add('global-search-open');
+    updateResultsPosition();
     toggle.setAttribute('aria-expanded', 'true');
     toggle.setAttribute('aria-label', 'Close search');
     field.setAttribute('aria-hidden', 'false');
@@ -928,6 +990,14 @@ function mountHomeGlobalSearch() {
     if (root.contains(e.target)) return;
     closeSearch();
   });
+
+  window.addEventListener('resize', updateResultsPosition);
+  window.addEventListener('scroll', updateResultsPosition, { passive: true });
+}
+
+/** @deprecated Use mountGlobalSearch — kept for backwards compatibility */
+function mountHomeGlobalSearch() {
+  mountGlobalSearch();
 }
 
 function buildAudioLookupByArchive(pool) {
@@ -1452,13 +1522,12 @@ function mountTopBar() {
   mountLayoutFallback();
   mountMobileStyles();
   const el = document.getElementById('siteTopBar');
-  if (!el) return;
-  if (el.querySelector('.site-top-bar__grid')) {
-    el.classList.add('site-top-bar', 'site-chrome');
-    return;
-  }
-  el.className = 'site-top-bar site-chrome';
-  el.innerHTML = `
+  if (el) {
+    if (el.querySelector('.site-top-bar__grid')) {
+      el.classList.add('site-top-bar', 'site-chrome');
+    } else {
+      el.className = 'site-top-bar site-chrome';
+      el.innerHTML = `
     <div class="site-top-bar__inner">
       <div class="site-top-bar__grid">
         <div class="site-top-bar__block">
@@ -1472,7 +1541,9 @@ function mountTopBar() {
         </div>
       </div>
     </div>`;
-
+    }
+  }
+  mountGlobalSearch();
 }
 
 function mountTelegramLink(id = 'siteTelegram') {
