@@ -511,7 +511,7 @@ const VIDEOS = [
     "title": "Prophetic Guidance",
     "file": "Prophetic Guidance.mp4",
     "archive": "Prophetic Guidance.mp4",
-    "thumb": null,
+    "thumb": "thumb/videos/Prophetic Guidance.jpg",
     "stream": "https://archive.org/download/FaisalVideos/Prophetic%20Guidance.mp4"
   },
   {
@@ -1031,7 +1031,7 @@ const VIDEOS = [
     "title": "The Paris Outrage — A Muslim Perspective",
     "file": "The Paris Outrage - A Muslim Perspective.mp4",
     "archive": "The Paris Outrage - A Muslim Perspective.mp4",
-    "thumb": null,
+    "thumb": "thumb/videos/The Paris Outrage - A Muslim Perspective.jpg",
     "stream": "https://archive.org/download/FaisalVideos/The%20Paris%20Outrage%20-%20A%20Muslim%20Perspective.mp4"
   },
   {

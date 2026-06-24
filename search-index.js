@@ -5005,7 +5005,8 @@ const SEARCH_INDEX = [
     "id": 63,
     "title": "Prophetic Guidance",
     "sub": "Video lecture",
-    "href": "videos.html?video=63"
+    "href": "videos.html?video=63",
+    "thumb": "thumb/videos/Prophetic Guidance.jpg"
   },
   {
     "type": "video",
@@ -5524,7 +5525,8 @@ const SEARCH_INDEX = [
     "id": 128,
     "title": "The Paris Outrage — A Muslim Perspective",
     "sub": "Video lecture",
-    "href": "videos.html?video=128"
+    "href": "videos.html?video=128",
+    "thumb": "thumb/videos/The Paris Outrage - A Muslim Perspective.jpg"
   },
   {
     "type": "video",
