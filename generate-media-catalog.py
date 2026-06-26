@@ -312,6 +312,10 @@ _VIDEO_TITLE_OVERRIDES_RAW = [
     ("The Paris Outrage - A Muslim Perspective", "The Paris Outrage — A Muslim Perspective"),
     ("The 15 People Killed by Shariah", "The 15 People Killed by Shariah"),
     ("Prophetic Guidance", "Prophetic Guidance"),
+    ("How To Be Sincere To The Ummah", "How To Be Sincere To The Ummah"),
+    ("Meaning of Jihad", "Meaning of Jihad"),
+    ("The Animals of the Quran", "The Animals of the Quran"),
+    ("The Women of the Quran", "The Women of the Quran"),
 ]
 VIDEO_TITLE_OVERRIDES = {norm(stem): title for stem, title in _VIDEO_TITLE_OVERRIDES_RAW}
 
@@ -471,7 +475,14 @@ _CLIP_TITLES_RAW = [
         "Shamsi's teacher Abu Khadeeja exposed",
     ),
     ("Shaykh faisal funny", "Humorous clip"),
-    ("The 'Headless Chicken' Mentality of Modern Ex", "The headless chicken mentality of modern extremists"),
+    (
+        "The 'Headless Chicken' Mentality of Modern Ex",
+        "The 'Headless Chicken' Mentality of Modern Khawarji",
+    ),
+    (
+        "why are khawarij gay",
+        "Why the Khawarij Are Sympathetic Towards Gay People",
+    ),
     ("The Battle Between Truth & Falsehood Never Ends", "The battle between truth and falsehood never ends"),
     ("The Evil Scholar is a lizard - Shaykh Abdullah Faisal", "The evil scholar is a lizard — Shaykh Abdullah Faisal"),
     ("The Importance of hijra - shaykh abdullah faisal", "The importance of hijra — Shaykh Abdullah Faisal"),
