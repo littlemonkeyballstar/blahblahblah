@@ -5831,7 +5831,7 @@ const SEARCH_INDEX = [
     "title": "Do not dispair and loose your trust in allah",
     "sub": "Short clip",
     "href": "clips.html?clip=14",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Do not dispair and loose your trust in allah _000001.jpg"
+    "thumb": "thumb/clips/Do not dispair and loose your trust in allah .jpg"
   },
   {
     "type": "clip",
@@ -5839,7 +5839,7 @@ const SEARCH_INDEX = [
     "title": "Do you want to live in humiliation or jihad",
     "sub": "Short clip",
     "href": "clips.html?clip=15",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Do you want to live in humiliation or jihad_000001.jpg"
+    "thumb": "thumb/clips/Do you want to live in humiliation or jihad.jpg"
   },
   {
     "type": "clip",

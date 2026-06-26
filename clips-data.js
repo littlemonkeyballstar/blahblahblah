@@ -119,7 +119,7 @@ const CLIPS = [
     "title": "Do not dispair and loose your trust in allah",
     "file": "Do not dispair and loose your trust in allah .mp4",
     "archive": "Do not dispair and loose your trust in allah .mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Do not dispair and loose your trust in allah _000001.jpg",
+    "thumb": "thumb/clips/Do not dispair and loose your trust in allah .jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/Do%20not%20dispair%20and%20loose%20your%20trust%20in%20allah%20.mp4"
   },
   {
@@ -127,7 +127,7 @@ const CLIPS = [
     "title": "Do you want to live in humiliation or jihad",
     "file": "Do you want to live in humiliation or jihad.mp4",
     "archive": "Do you want to live in humiliation or jihad.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Do you want to live in humiliation or jihad_000001.jpg",
+    "thumb": "thumb/clips/Do you want to live in humiliation or jihad.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/Do%20you%20want%20to%20live%20in%20humiliation%20or%20jihad.mp4"
   },
   {
