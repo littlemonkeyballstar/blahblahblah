@@ -5743,7 +5743,7 @@ const SEARCH_INDEX = [
     "title": "4 Signs of a Munafiq (Hypocrite) and how they cause fitna",
     "sub": "Short clip",
     "href": "clips.html?clip=2",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/4 Signs of a Munafiq (Hypocrite)_000001.jpg"
+    "thumb": "thumb/clips/4 Signs of a Munafiq (Hypocrite).jpg"
   },
   {
     "type": "clip",
@@ -5767,7 +5767,7 @@ const SEARCH_INDEX = [
     "title": "All the kuffar have their own brand in Islam",
     "sub": "Short clip",
     "href": "clips.html?clip=5",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/All the kaffirs have their own brand in islam! - Shaykh Abdullah Faisal_000001.jpg"
+    "thumb": "thumb/clips/All the kaffirs have their own brand in islam! - Shaykh Abdullah Faisal.jpg"
   },
   {
     "type": "clip",
@@ -5775,7 +5775,7 @@ const SEARCH_INDEX = [
     "title": "Allah is sufficient to take revenge against them",
     "sub": "Short clip",
     "href": "clips.html?clip=6",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Allah is sufficient to take revange_000001.jpg"
+    "thumb": "thumb/clips/Allah is sufficient to take revange.jpg"
   },
   {
     "type": "clip",
@@ -5791,7 +5791,7 @@ const SEARCH_INDEX = [
     "title": "Do not take my enemy as your friend",
     "sub": "Short clip",
     "href": "clips.html?clip=8",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/DO NOT TAKE MY ENEMY AS YOUR FRIENDby Shaykh Abdu_000001.jpg"
+    "thumb": "thumb/clips/DO NOT TAKE MY ENEMY AS YOUR FRIENDby Shaykh Abdu.jpg"
   },
   {
     "type": "clip",
@@ -5807,7 +5807,7 @@ const SEARCH_INDEX = [
     "title": "Democracy is the greatest shirk",
     "sub": "Short clip",
     "href": "clips.html?clip=10",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Democracy is the greatest shirk_000001.jpg"
+    "thumb": "thumb/clips/Democracy is the greatest shirk.jpg"
   },
   {
     "type": "clip",
@@ -5836,7 +5836,7 @@ const SEARCH_INDEX = [
   {
     "type": "clip",
     "id": 14,
-    "title": "Do not dispair and loose your trust in allah",
+    "title": "Do not despair and lose your trust in Allah",
     "sub": "Short clip",
     "href": "clips.html?clip=14",
     "thumb": "thumb/clips/Do not dispair and loose your trust in allah .jpg"
@@ -5879,7 +5879,7 @@ const SEARCH_INDEX = [
     "title": "Exposing Ibn Baz's aid to the kuffar",
     "sub": "Short clip",
     "href": "clips.html?clip=19",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Exposing Ibn Baz’s Aid to the Kuffar_000001.jpg"
+    "thumb": "thumb/clips/Exposing Ibn Baz’s Aid to the Kuffar.jpg"
   },
   {
     "type": "clip",
@@ -5911,7 +5911,7 @@ const SEARCH_INDEX = [
     "title": "How Allah Mocks Hypocrites Who Follow Wicked Scholars",
     "sub": "Short clip",
     "href": "clips.html?clip=23",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/How Allah Mocks Hypocrites Who Follow Wicked_000001.jpg"
+    "thumb": "thumb/clips/How Allah Mocks Hypocrites Who Follow Wicked.jpg"
   },
   {
     "type": "clip",
@@ -5927,7 +5927,7 @@ const SEARCH_INDEX = [
     "title": "How do we deal with people who reject the dawla?",
     "sub": "Short clip",
     "href": "clips.html?clip=25",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/How do we deal with those who reject dawla1_000001.jpg"
+    "thumb": "thumb/clips/How do we deal with those who reject dawla1.jpg"
   },
   {
     "type": "clip",
@@ -5935,7 +5935,7 @@ const SEARCH_INDEX = [
     "title": "How to spot a Munafiq (Hypocrite)",
     "sub": "Short clip",
     "href": "clips.html?clip=26",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/How to spot a Munafiq_000001.jpg"
+    "thumb": "thumb/clips/How to spot a Munafiq.jpg"
   },
   {
     "type": "clip",
@@ -5991,7 +5991,7 @@ const SEARCH_INDEX = [
     "title": "Jokers in the pack — refuting the Ash'ari",
     "sub": "Short clip",
     "href": "clips.html?clip=33",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Jokers in the Pack - Refuting the Ashaa_000001.jpg"
+    "thumb": "thumb/clips/Jokers in the Pack - Refuting the Ashaa.jpg"
   },
   {
     "type": "clip",
@@ -6004,10 +6004,10 @@ const SEARCH_INDEX = [
   {
     "type": "clip",
     "id": 35,
-    "title": "Madakilah's were never a Muslims",
+    "title": "The Madakilah were never Muslims",
     "sub": "Short clip",
     "href": "clips.html?clip=35",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Madakilah's were never a Muslims_000001.jpg"
+    "thumb": "thumb/clips/Madakilah's were never a Muslims.jpg"
   },
   {
     "type": "clip",
@@ -6063,7 +6063,7 @@ const SEARCH_INDEX = [
     "title": "The Betrayal of the Mujahideen by Saudi Salafis in Yemen",
     "sub": "Short clip",
     "href": "clips.html?clip=42",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Betrayal of the Mujahideenby Saudi Salafis in_000001.jpg"
+    "thumb": "thumb/clips/The Betrayal of the Mujahideenby Saudi Salafis in.jpg"
   },
   {
     "type": "clip",
@@ -6071,7 +6071,7 @@ const SEARCH_INDEX = [
     "title": "The Book in which there is no doubt",
     "sub": "Short clip",
     "href": "clips.html?clip=43",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Book in which there is no doubt_000001.jpg"
+    "thumb": "thumb/clips/The Book in which there is no doubt.jpg"
   },
   {
     "type": "clip",
@@ -6079,7 +6079,7 @@ const SEARCH_INDEX = [
     "title": "The evil scholar is a lizard",
     "sub": "Short clip",
     "href": "clips.html?clip=44",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Evil Scholar is a lizard - Shaykh Abdullah Faisal_000001.jpg"
+    "thumb": "thumb/clips/The Evil Scholar is a lizard - Shaykh Abdullah Faisal.jpg"
   },
   {
     "type": "clip",
@@ -6119,7 +6119,7 @@ const SEARCH_INDEX = [
     "title": "The lie about jihad",
     "sub": "Short clip",
     "href": "clips.html?clip=49",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The lie about Jihad_000001.jpg"
+    "thumb": "thumb/clips/The lie about Jihad.jpg"
   },
   {
     "type": "clip",
@@ -6127,7 +6127,7 @@ const SEARCH_INDEX = [
     "title": "The man who goes out for jihad",
     "sub": "Short clip",
     "href": "clips.html?clip=50",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The man who goes out in Jihad_000001.jpg"
+    "thumb": "thumb/clips/The man who goes out in Jihad.jpg"
   },
   {
     "type": "clip",
@@ -6151,7 +6151,7 @@ const SEARCH_INDEX = [
     "title": "They Will try to buy you out",
     "sub": "Short clip",
     "href": "clips.html?clip=53",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/They Will try to buy you out_000001.jpg"
+    "thumb": "thumb/clips/They Will try to buy you out.jpg"
   },
   {
     "type": "clip",
@@ -6159,7 +6159,7 @@ const SEARCH_INDEX = [
     "title": "Those who label the mujahideen as khawarij",
     "sub": "Short clip",
     "href": "clips.html?clip=54",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal_000001.jpg"
+    "thumb": "thumb/clips/Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal.jpg"
   },
   {
     "type": "clip",
@@ -6167,7 +6167,7 @@ const SEARCH_INDEX = [
     "title": "Those who follow their evil and corrupted desires",
     "sub": "Short clip",
     "href": "clips.html?clip=55",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Those who follow their evil and corrupted desires_000001.jpg"
+    "thumb": "thumb/clips/Those who follow their evil and corrupted desires.jpg"
   },
   {
     "type": "clip",
@@ -6191,7 +6191,7 @@ const SEARCH_INDEX = [
     "title": "Why Being Ignorant in Islam Can Lead to Being a Munafiq (Hypocrite)",
     "sub": "Short clip",
     "href": "clips.html?clip=58",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Why Being Ignorant in Islam Can Lead to Being a 22_000001.jpg"
+    "thumb": "thumb/clips/Why Being Ignorant in Islam Can Lead to Being a 22.jpg"
   },
   {
     "type": "clip",
@@ -6199,7 +6199,7 @@ const SEARCH_INDEX = [
     "title": "Why Believing in Allah Doesn't Make You Special",
     "sub": "Short clip",
     "href": "clips.html?clip=59",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Why Believing in Allah Doesn'tMake You Special_000001.jpg"
+    "thumb": "thumb/clips/Why Believing in Allah Doesn'tMake You Special.jpg"
   },
   {
     "type": "clip",
@@ -6231,7 +6231,7 @@ const SEARCH_INDEX = [
     "title": "Allah will dump you and your wicked scholar in the Hellfire",
     "sub": "Short clip",
     "href": "clips.html?clip=63",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/allah wil dump you and your wicked schohler in the hellfire_000001.jpg"
+    "thumb": "thumb/clips/allah wil dump you and your wicked schohler in the hellfire.jpg"
   },
   {
     "type": "clip",
@@ -6239,7 +6239,7 @@ const SEARCH_INDEX = [
     "title": "AMJ and Faisal refuting Hazami",
     "sub": "Short clip",
     "href": "clips.html?clip=64",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/amj and faisal refuting hazami's_000001.jpg"
+    "thumb": "thumb/clips/amj and faisal refuting hazami's.jpg"
   },
   {
     "type": "clip",
@@ -6271,7 +6271,7 @@ const SEARCH_INDEX = [
     "title": "How do we deal with people who reject the dawla? (2)",
     "sub": "Short clip",
     "href": "clips.html?clip=68",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/dealing with thise who reject dawla_000001.jpg"
+    "thumb": "thumb/clips/dealing with thise who reject dawla.jpg"
   },
   {
     "type": "clip",
@@ -6279,15 +6279,15 @@ const SEARCH_INDEX = [
     "title": "Demanding the implementation of sharia",
     "sub": "Short clip",
     "href": "clips.html?clip=69",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/demanding shariya_000001.jpg"
+    "thumb": "thumb/clips/demanding shariya.jpg"
   },
   {
     "type": "clip",
     "id": 70,
-    "title": "falling in the shaytans vicous veb",
+    "title": "Falling into the shaytan's vicious web",
     "sub": "Short clip",
     "href": "clips.html?clip=70",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/falling in the shaytans vicous veb_000001.jpg"
+    "thumb": "thumb/clips/falling in the shaytans vicous veb.jpg"
   },
   {
     "type": "clip",
@@ -6295,7 +6295,7 @@ const SEARCH_INDEX = [
     "title": "Falling into the vicious web of the shaytan",
     "sub": "Short clip",
     "href": "clips.html?clip=71",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/falling into the vicous webb of the shaytan_000001.jpg"
+    "thumb": "thumb/clips/falling into the vicous webb of the shaytan.jpg"
   },
   {
     "type": "clip",
@@ -6380,10 +6380,10 @@ const SEARCH_INDEX = [
   {
     "type": "clip",
     "id": 82,
-    "title": "qadiani's eposed",
+    "title": "The Qadiani exposed",
     "sub": "Short clip",
     "href": "clips.html?clip=82",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/qadiani's eposed_000001.jpg"
+    "thumb": "thumb/clips/qadiani's eposed.jpg"
   },
   {
     "type": "clip",
@@ -6399,7 +6399,7 @@ const SEARCH_INDEX = [
     "title": "refuting khawarij",
     "sub": "Short clip",
     "href": "clips.html?clip=84",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/refuting khawarij_000001.jpg"
+    "thumb": "thumb/clips/refuting khawarij.jpg"
   },
   {
     "type": "clip",
@@ -6463,7 +6463,7 @@ const SEARCH_INDEX = [
     "title": "The spy who killed Imam Anwar al-Awlaki",
     "sub": "Short clip",
     "href": "clips.html?clip=92",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/the spy who killed imam al awlaki_000001.jpg"
+    "thumb": "thumb/clips/the spy who killed imam al awlaki.jpg"
   },
   {
     "type": "clip",

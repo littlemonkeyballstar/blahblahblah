@@ -23,7 +23,7 @@ const CLIPS = [
     "title": "4 Signs of a Munafiq (Hypocrite) and how they cause fitna",
     "file": "4 Signs of a Munafiq (Hypocrite).mp4",
     "archive": "4 Signs of a Munafiq (Hypocrite).mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/4 Signs of a Munafiq (Hypocrite)_000001.jpg",
+    "thumb": "thumb/clips/4 Signs of a Munafiq (Hypocrite).jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/4%20Signs%20of%20a%20Munafiq%20%28Hypocrite%29.mp4"
   },
   {
@@ -47,7 +47,7 @@ const CLIPS = [
     "title": "All the kuffar have their own brand in Islam",
     "file": "All the kaffirs have their own brand in islam! - Shaykh Abdullah Faisal.mp4",
     "archive": "All the kaffirs have their own brand in islam! - Shaykh Abdullah Faisal.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/All the kaffirs have their own brand in islam! - Shaykh Abdullah Faisal_000001.jpg",
+    "thumb": "thumb/clips/All the kaffirs have their own brand in islam! - Shaykh Abdullah Faisal.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/All%20the%20kaffirs%20have%20their%20own%20brand%20in%20islam%21%20-%20Shaykh%20Abdullah%20Faisal.mp4"
   },
   {
@@ -55,7 +55,7 @@ const CLIPS = [
     "title": "Allah is sufficient to take revenge against them",
     "file": "Allah is sufficient to take revange.mp4",
     "archive": "Allah is sufficient to take revange.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Allah is sufficient to take revange_000001.jpg",
+    "thumb": "thumb/clips/Allah is sufficient to take revange.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/Allah%20is%20sufficient%20to%20take%20revange.mp4"
   },
   {
@@ -71,7 +71,7 @@ const CLIPS = [
     "title": "Do not take my enemy as your friend",
     "file": "DO NOT TAKE MY ENEMY AS YOUR FRIENDby Shaykh Abdu.mp4",
     "archive": "DO NOT TAKE MY ENEMY AS YOUR FRIENDby Shaykh Abdu.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/DO NOT TAKE MY ENEMY AS YOUR FRIENDby Shaykh Abdu_000001.jpg",
+    "thumb": "thumb/clips/DO NOT TAKE MY ENEMY AS YOUR FRIENDby Shaykh Abdu.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/DO%20NOT%20TAKE%20MY%20ENEMY%20AS%20YOUR%20FRIENDby%20Shaykh%20Abdu.mp4"
   },
   {
@@ -87,7 +87,7 @@ const CLIPS = [
     "title": "Democracy is the greatest shirk",
     "file": "Democracy is the greatest shirk.mp4",
     "archive": "Democracy is the greatest shirk.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Democracy is the greatest shirk_000001.jpg",
+    "thumb": "thumb/clips/Democracy is the greatest shirk.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/Democracy%20is%20the%20greatest%20shirk.mp4"
   },
   {
@@ -116,7 +116,7 @@ const CLIPS = [
   },
   {
     "id": 14,
-    "title": "Do not dispair and loose your trust in allah",
+    "title": "Do not despair and lose your trust in Allah",
     "file": "Do not dispair and loose your trust in allah .mp4",
     "archive": "Do not dispair and loose your trust in allah .mp4",
     "thumb": "thumb/clips/Do not dispair and loose your trust in allah .jpg",
@@ -159,7 +159,7 @@ const CLIPS = [
     "title": "Exposing Ibn Baz's aid to the kuffar",
     "file": "Exposing Ibn Baz’s Aid to the Kuffar.mp4",
     "archive": "Exposing Ibn Baz’s Aid to the Kuffar.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Exposing Ibn Baz’s Aid to the Kuffar_000001.jpg",
+    "thumb": "thumb/clips/Exposing Ibn Baz’s Aid to the Kuffar.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/Exposing%20Ibn%20Baz%E2%80%99s%20Aid%20to%20the%20Kuffar.mp4"
   },
   {
@@ -191,7 +191,7 @@ const CLIPS = [
     "title": "How Allah Mocks Hypocrites Who Follow Wicked Scholars",
     "file": "How Allah Mocks Hypocrites Who Follow Wicked.mp4",
     "archive": "How Allah Mocks Hypocrites Who Follow Wicked.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/How Allah Mocks Hypocrites Who Follow Wicked_000001.jpg",
+    "thumb": "thumb/clips/How Allah Mocks Hypocrites Who Follow Wicked.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/How%20Allah%20Mocks%20Hypocrites%20Who%20Follow%20Wicked.mp4"
   },
   {
@@ -207,7 +207,7 @@ const CLIPS = [
     "title": "How do we deal with people who reject the dawla?",
     "file": "How do we deal with those who reject dawla1.mp4",
     "archive": "How do we deal with those who reject dawla1.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/How do we deal with those who reject dawla1_000001.jpg",
+    "thumb": "thumb/clips/How do we deal with those who reject dawla1.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/How%20do%20we%20deal%20with%20those%20who%20reject%20dawla1.mp4"
   },
   {
@@ -215,7 +215,7 @@ const CLIPS = [
     "title": "How to spot a Munafiq (Hypocrite)",
     "file": "How to spot a Munafiq.mp4",
     "archive": "How to spot a Munafiq.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/How to spot a Munafiq_000001.jpg",
+    "thumb": "thumb/clips/How to spot a Munafiq.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/How%20to%20spot%20a%20Munafiq.mp4"
   },
   {
@@ -271,7 +271,7 @@ const CLIPS = [
     "title": "Jokers in the pack — refuting the Ash'ari",
     "file": "Jokers in the Pack - Refuting the Ashaa.mp4",
     "archive": "Jokers in the Pack - Refuting the Ashaa.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Jokers in the Pack - Refuting the Ashaa_000001.jpg",
+    "thumb": "thumb/clips/Jokers in the Pack - Refuting the Ashaa.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/Jokers%20in%20the%20Pack%20-%20Refuting%20the%20Ashaa.mp4"
   },
   {
@@ -284,10 +284,10 @@ const CLIPS = [
   },
   {
     "id": 35,
-    "title": "Madakilah's were never a Muslims",
+    "title": "The Madakilah were never Muslims",
     "file": "Madakilah's were never a Muslims.mp4",
     "archive": "Madakilah's were never a Muslims.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Madakilah's were never a Muslims_000001.jpg",
+    "thumb": "thumb/clips/Madakilah's were never a Muslims.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/Madakilah%27s%20were%20never%20a%20Muslims.mp4"
   },
   {
@@ -343,7 +343,7 @@ const CLIPS = [
     "title": "The Betrayal of the Mujahideen by Saudi Salafis in Yemen",
     "file": "The Betrayal of the Mujahideenby Saudi Salafis in.mp4",
     "archive": "The Betrayal of the Mujahideenby Saudi Salafis in.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Betrayal of the Mujahideenby Saudi Salafis in_000001.jpg",
+    "thumb": "thumb/clips/The Betrayal of the Mujahideenby Saudi Salafis in.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/The%20Betrayal%20of%20the%20Mujahideenby%20Saudi%20Salafis%20in.mp4"
   },
   {
@@ -351,7 +351,7 @@ const CLIPS = [
     "title": "The Book in which there is no doubt",
     "file": "The Book in which there is no doubt.mp4",
     "archive": "The Book in which there is no doubt.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Book in which there is no doubt_000001.jpg",
+    "thumb": "thumb/clips/The Book in which there is no doubt.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/The%20Book%20in%20which%20there%20is%20no%20doubt.mp4"
   },
   {
@@ -359,7 +359,7 @@ const CLIPS = [
     "title": "The evil scholar is a lizard",
     "file": "The Evil Scholar is a lizard - Shaykh Abdullah Faisal.mp4",
     "archive": "The Evil Scholar is a lizard - Shaykh Abdullah Faisal.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The Evil Scholar is a lizard - Shaykh Abdullah Faisal_000001.jpg",
+    "thumb": "thumb/clips/The Evil Scholar is a lizard - Shaykh Abdullah Faisal.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/The%20Evil%20Scholar%20is%20a%20lizard%20-%20Shaykh%20Abdullah%20Faisal.mp4"
   },
   {
@@ -399,7 +399,7 @@ const CLIPS = [
     "title": "The lie about jihad",
     "file": "The lie about Jihad.mp4",
     "archive": "The lie about Jihad.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The lie about Jihad_000001.jpg",
+    "thumb": "thumb/clips/The lie about Jihad.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/The%20lie%20about%20Jihad.mp4"
   },
   {
@@ -407,7 +407,7 @@ const CLIPS = [
     "title": "The man who goes out for jihad",
     "file": "The man who goes out in Jihad.mp4",
     "archive": "The man who goes out in Jihad.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/The man who goes out in Jihad_000001.jpg",
+    "thumb": "thumb/clips/The man who goes out in Jihad.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/The%20man%20who%20goes%20out%20in%20Jihad.mp4"
   },
   {
@@ -431,7 +431,7 @@ const CLIPS = [
     "title": "They Will try to buy you out",
     "file": "They Will try to buy you out.mp4",
     "archive": "They Will try to buy you out.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/They Will try to buy you out_000001.jpg",
+    "thumb": "thumb/clips/They Will try to buy you out.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/They%20Will%20try%20to%20buy%20you%20out.mp4"
   },
   {
@@ -439,7 +439,7 @@ const CLIPS = [
     "title": "Those who label the mujahideen as khawarij",
     "file": "Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal.mp4",
     "archive": "Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal_000001.jpg",
+    "thumb": "thumb/clips/Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/Those%20Who%20Label%20the%20Mujahideen%20as%20Khawarij%20by%20Shaykh%20Abdullah%20Faisal.mp4"
   },
   {
@@ -447,7 +447,7 @@ const CLIPS = [
     "title": "Those who follow their evil and corrupted desires",
     "file": "Those who follow their evil and corrupted desires.mp4",
     "archive": "Those who follow their evil and corrupted desires.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Those who follow their evil and corrupted desires_000001.jpg",
+    "thumb": "thumb/clips/Those who follow their evil and corrupted desires.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/Those%20who%20follow%20their%20evil%20and%20corrupted%20desires.mp4"
   },
   {
@@ -471,7 +471,7 @@ const CLIPS = [
     "title": "Why Being Ignorant in Islam Can Lead to Being a Munafiq (Hypocrite)",
     "file": "Why Being Ignorant in Islam Can Lead to Being a 22.mp4",
     "archive": "Why Being Ignorant in Islam Can Lead to Being a 22.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Why Being Ignorant in Islam Can Lead to Being a 22_000001.jpg",
+    "thumb": "thumb/clips/Why Being Ignorant in Islam Can Lead to Being a 22.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/Why%20Being%20Ignorant%20in%20Islam%20Can%20Lead%20to%20Being%20a%2022.mp4"
   },
   {
@@ -479,7 +479,7 @@ const CLIPS = [
     "title": "Why Believing in Allah Doesn't Make You Special",
     "file": "Why Believing in Allah Doesn'tMake You Special.mp4",
     "archive": "Why Believing in Allah Doesn'tMake You Special.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/Why Believing in Allah Doesn'tMake You Special_000001.jpg",
+    "thumb": "thumb/clips/Why Believing in Allah Doesn'tMake You Special.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/Why%20Believing%20in%20Allah%20Doesn%27tMake%20You%20Special.mp4"
   },
   {
@@ -511,7 +511,7 @@ const CLIPS = [
     "title": "Allah will dump you and your wicked scholar in the Hellfire",
     "file": "allah wil dump you and your wicked schohler in the hellfire.mp4",
     "archive": "allah wil dump you and your wicked schohler in the hellfire.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/allah wil dump you and your wicked schohler in the hellfire_000001.jpg",
+    "thumb": "thumb/clips/allah wil dump you and your wicked schohler in the hellfire.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/allah%20wil%20dump%20you%20and%20your%20wicked%20schohler%20in%20the%20hellfire.mp4"
   },
   {
@@ -519,7 +519,7 @@ const CLIPS = [
     "title": "AMJ and Faisal refuting Hazami",
     "file": "amj and faisal refuting hazami's.mp4",
     "archive": "amj and faisal refuting hazami's.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/amj and faisal refuting hazami's_000001.jpg",
+    "thumb": "thumb/clips/amj and faisal refuting hazami's.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/amj%20and%20faisal%20refuting%20hazami%27s.mp4"
   },
   {
@@ -551,7 +551,7 @@ const CLIPS = [
     "title": "How do we deal with people who reject the dawla? (2)",
     "file": "dealing with thise who reject dawla.mp4",
     "archive": "dealing with thise who reject dawla.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/dealing with thise who reject dawla_000001.jpg",
+    "thumb": "thumb/clips/dealing with thise who reject dawla.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/dealing%20with%20thise%20who%20reject%20dawla.mp4"
   },
   {
@@ -559,15 +559,15 @@ const CLIPS = [
     "title": "Demanding the implementation of sharia",
     "file": "demanding shariya.mp4",
     "archive": "demanding shariya.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/demanding shariya_000001.jpg",
+    "thumb": "thumb/clips/demanding shariya.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/demanding%20shariya.mp4"
   },
   {
     "id": 70,
-    "title": "falling in the shaytans vicous veb",
+    "title": "Falling into the shaytan's vicious web",
     "file": "falling in the shaytans vicous veb.mp4",
     "archive": "falling in the shaytans vicous veb.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/falling in the shaytans vicous veb_000001.jpg",
+    "thumb": "thumb/clips/falling in the shaytans vicous veb.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/falling%20in%20the%20shaytans%20vicous%20veb.mp4"
   },
   {
@@ -575,7 +575,7 @@ const CLIPS = [
     "title": "Falling into the vicious web of the shaytan",
     "file": "falling into the vicous webb of the shaytan.mp4",
     "archive": "falling into the vicous webb of the shaytan.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/falling into the vicous webb of the shaytan_000001.jpg",
+    "thumb": "thumb/clips/falling into the vicous webb of the shaytan.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/falling%20into%20the%20vicous%20webb%20of%20the%20shaytan.mp4"
   },
   {
@@ -660,10 +660,10 @@ const CLIPS = [
   },
   {
     "id": 82,
-    "title": "qadiani's eposed",
+    "title": "The Qadiani exposed",
     "file": "qadiani's eposed.mp4",
     "archive": "qadiani's eposed.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/qadiani's eposed_000001.jpg",
+    "thumb": "thumb/clips/qadiani's eposed.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/qadiani%27s%20eposed.mp4"
   },
   {
@@ -679,7 +679,7 @@ const CLIPS = [
     "title": "refuting khawarij",
     "file": "refuting khawarij.mp4",
     "archive": "refuting khawarij.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/refuting khawarij_000001.jpg",
+    "thumb": "thumb/clips/refuting khawarij.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/refuting%20khawarij.mp4"
   },
   {
@@ -743,7 +743,7 @@ const CLIPS = [
     "title": "The spy who killed Imam Anwar al-Awlaki",
     "file": "the spy who killed imam al awlaki.mp4",
     "archive": "the spy who killed imam al awlaki.mp4",
-    "thumb": "https://archive.org/download/the-creed-of-the-shia/the-creed-of-the-shia.thumbs/the spy who killed imam al awlaki_000001.jpg",
+    "thumb": "thumb/clips/the spy who killed imam al awlaki.jpg",
     "stream": "https://archive.org/download/the-creed-of-the-shia/the%20spy%20who%20killed%20imam%20al%20awlaki.mp4"
   },
   {

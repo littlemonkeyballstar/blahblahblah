@@ -464,8 +464,12 @@ _CLIP_TITLES_RAW = [
     ("Is it nessesery to takfir (muslims by name)", "Is it necessary to takfir Muslims by name?"),
     ("Jews & Christians Will Never Be Pleased With You", "Jews and Christians will never be pleased with you"),
     ("Jokers in the Pack - Refuting the Ashaa", "Jokers in the pack — refuting the Ash'ari"),
+    (
+        "Do not dispair and loose your trust in allah ",
+        "Do not despair and lose your trust in Allah",
+    ),
     ("Living in humulation while ummah suffers (ptsd)", "Living in humiliation while the ummah suffers (PTSD)"),
-    ("Madakilah's were never a Muslims", "Madakilah's were never a Muslims"),
+    ("Madakilah's were never a Muslims", "The Madakilah were never Muslims"),
     ("Only a sincere beliver finds comfort in the truth!", "Only a sincere believer finds comfort in the truth"),
     (
         "Oppression causes apostasy(Forced Marriages as ex",
@@ -514,6 +518,7 @@ _CLIP_TITLES_RAW = [
     ("booti", "Exposing wicked scholar al-Bouti"),
     ("dealing with thise who reject dawla", "How do we deal with people who reject the dawla? (2)"),
     ("demanding shariya", "Demanding the implementation of sharia"),
+    ("falling in the shaytans vicous veb", "Falling into the shaytan's vicious web"),
     ("falling into the vicous webb of the shaytan", "Falling into the vicious web of the shaytan"),
     ("giving up better for worse", "Giving up the better for the worse"),
     ("ibn baz", "Why is ibn Baz a kaffir?"),
@@ -528,6 +533,7 @@ _CLIP_TITLES_RAW = [
     ("man made izims skizims", "The shame of man-made law"),
     ("murfti of the taghut", "The mufti of the taghut"),
     ("narrsasit", "Narcissist personality disorder"),
+    ("qadiani's eposed", "The Qadiani exposed"),
     ("reality of truth 12", "The reality of truth (part 12)"),
     ("reject taghut", "Reject the taghut"),
     ("sdadwf", "Refuting those who put false conditions on jihad"),
@@ -824,6 +830,10 @@ def main():
     build_home_pool = WEBSITE / "build-home-previews-pool.py"
     if build_home_pool.is_file():
         subprocess.run([sys.executable, str(build_home_pool)], check=False, cwd=WEBSITE)
+
+    sitemap_script = WEBSITE / "generate-sitemap.py"
+    if sitemap_script.is_file():
+        subprocess.run([sys.executable, str(sitemap_script)], check=False, cwd=WEBSITE)
 
 
 if __name__ == "__main__":
