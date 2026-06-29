@@ -1164,6 +1164,14 @@ const VIDEOS = [
   },
   {
     "id": 145,
+    "title": "The Greatest Oppression Is Shirk",
+    "file": "The greatest oppression is shirk - Shaykh Faisal.mp4",
+    "archive": "The greatest oppression is shirk - Shaykh Faisal.mp4",
+    "thumb": "thumb/videos/The greatest oppression is shirk - Shaykh Faisal.jpg",
+    "stream": "https://archive.org/download/FaisalVideos/The%20greatest%20oppression%20is%20shirk%20-%20Shaykh%20Faisal.mp4"
+  },
+  {
+    "id": 146,
     "title": "Virtues of Taqwa",
     "file": "VIRTUES OF TAQWA - Abdallah Al Faisal.mp4",
     "archive": "VIRTUES OF TAQWA - Abdallah Al Faisal.mp4",
@@ -1171,7 +1179,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/VIRTUES%20OF%20TAQWA%20-%20Abdallah%20Al%20Faisal.mp4"
   },
   {
-    "id": 146,
+    "id": 147,
     "title": "Virtues of Charity",
     "file": "Virtues Of Charity (Video).mp4",
     "archive": "Virtues Of Charity (Video).mp4",
@@ -1179,7 +1187,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Virtues%20Of%20Charity%20%28Video%29.mp4"
   },
   {
-    "id": 147,
+    "id": 148,
     "title": "Virtues of Ramadan",
     "file": "Virtues of Ramadan by Shaikh Faisal.mp4",
     "archive": "Virtues of Ramadan by Shaikh Faisal.mp4",
@@ -1187,7 +1195,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Virtues%20of%20Ramadan%20by%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 148,
+    "id": 149,
     "title": "The Wicked Scholar",
     "file": "WICKED SCHOLAR - Abdallah Al Faisal.mp4",
     "archive": "WICKED SCHOLAR - Abdallah Al Faisal.mp4",
@@ -1195,7 +1203,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/WICKED%20SCHOLAR%20-%20Abdallah%20Al%20Faisal.mp4"
   },
   {
-    "id": 149,
+    "id": 150,
     "title": "Why the Quran is a Wise Book",
     "file": "Why the Quran is a Wise Book   Shaikh Faisal.mp4",
     "archive": "Why the Quran is a Wise Book   Shaikh Faisal.mp4",
@@ -1203,7 +1211,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Why%20the%20Quran%20is%20a%20Wise%20Book%20%20%20Shaikh%20Faisal.mp4"
   },
   {
-    "id": 150,
+    "id": 151,
     "title": "Women in Islam Explained",
     "file": "Women in Islam.mp4",
     "archive": "Women in Islam.mp4",
@@ -1211,7 +1219,7 @@ const VIDEOS = [
     "stream": "https://archive.org/download/FaisalVideos/Women%20in%20Islam.mp4"
   },
   {
-    "id": 151,
+    "id": 152,
     "title": "The creed of the Shia",
     "file": "The Creed Of the shia .mp4",
     "archive": "The Creed Of the shia .mp4",

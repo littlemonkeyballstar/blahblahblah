@@ -316,6 +316,7 @@ _VIDEO_TITLE_OVERRIDES_RAW = [
     ("Meaning of Jihad", "Meaning of Jihad"),
     ("The Animals of the Quran", "The Animals of the Quran"),
     ("The Women of the Quran", "The Women of the Quran"),
+    ("The greatest oppression is shirk - Shaykh Faisal", "The Greatest Oppression Is Shirk"),
 ]
 VIDEO_TITLE_OVERRIDES = {norm(stem): title for stem, title in _VIDEO_TITLE_OVERRIDES_RAW}
 

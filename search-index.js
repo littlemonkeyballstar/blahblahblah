@@ -5660,57 +5660,65 @@ const SEARCH_INDEX = [
   {
     "type": "video",
     "id": 145,
-    "title": "Virtues of Taqwa",
+    "title": "The Greatest Oppression Is Shirk",
     "sub": "Video lecture",
     "href": "videos.html?video=145",
-    "thumb": "thumb/videos/VIRTUES OF TAQWA - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/The greatest oppression is shirk - Shaykh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 146,
-    "title": "Virtues of Charity",
+    "title": "Virtues of Taqwa",
     "sub": "Video lecture",
     "href": "videos.html?video=146",
-    "thumb": "thumb/videos/Virtues Of Charity (Video).jpg"
+    "thumb": "thumb/videos/VIRTUES OF TAQWA - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 147,
-    "title": "Virtues of Ramadan",
+    "title": "Virtues of Charity",
     "sub": "Video lecture",
     "href": "videos.html?video=147",
-    "thumb": "thumb/videos/Virtues of Ramadan by Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/Virtues Of Charity (Video).jpg"
   },
   {
     "type": "video",
     "id": 148,
-    "title": "The Wicked Scholar",
+    "title": "Virtues of Ramadan",
     "sub": "Video lecture",
     "href": "videos.html?video=148",
-    "thumb": "thumb/videos/WICKED SCHOLAR - Abdallah Al Faisal.jpg"
+    "thumb": "thumb/videos/Virtues of Ramadan by Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 149,
-    "title": "Why the Quran is a Wise Book",
+    "title": "The Wicked Scholar",
     "sub": "Video lecture",
     "href": "videos.html?video=149",
-    "thumb": "thumb/videos/Why the Quran is a Wise Book   Shaikh Faisal.jpg"
+    "thumb": "thumb/videos/WICKED SCHOLAR - Abdallah Al Faisal.jpg"
   },
   {
     "type": "video",
     "id": 150,
-    "title": "Women in Islam Explained",
+    "title": "Why the Quran is a Wise Book",
     "sub": "Video lecture",
     "href": "videos.html?video=150",
-    "thumb": "thumb/videos/Women in Islam.jpg"
+    "thumb": "thumb/videos/Why the Quran is a Wise Book   Shaikh Faisal.jpg"
   },
   {
     "type": "video",
     "id": 151,
-    "title": "The creed of the Shia",
+    "title": "Women in Islam Explained",
     "sub": "Video lecture",
     "href": "videos.html?video=151",
+    "thumb": "thumb/videos/Women in Islam.jpg"
+  },
+  {
+    "type": "video",
+    "id": 152,
+    "title": "The creed of the Shia",
+    "sub": "Video lecture",
+    "href": "videos.html?video=152",
     "thumb": "thumb/videos/The Creed Of the shia .jpg"
   },
   {
