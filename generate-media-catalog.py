@@ -544,6 +544,22 @@ _CLIP_TITLES_RAW = [
     ("taliban breaks buddah ", "The Taliban destroys the Buddha statues"),
     ("the spy who killed imam al awlaki", "The spy who killed Imam Anwar al-Awlaki"),
     ("wicked scholars Abdullah faisal shaykh", "Wicked scholars — Shaykh Abdullah Faisal"),
+    (
+        "grave worshipers exposed clip",
+        "Grave worshippers: the evil creed exposed in the Quran",
+    ),
+    (
+        "You Cannot Be a MuslimWithout Rejecting Taghut",
+        "You Cannot Be a Muslim Without Rejecting Taghut",
+    ),
+    (
+        "Intellectual Laziness A Disease Of Mankind Among",
+        "Intellectual Laziness: A Disease of Mankind Among Muslims",
+    ),
+    (
+        "The Madakilas watering down islam",
+        "Islam Getting Watered Down — The Kuffar Madakhilah Exposed: How They Changed School Curriculums to Stop 'Radical Islam'",
+    ),
 ]
 CLIP_TITLE_OVERRIDES = {norm(stem): title for stem, title in _CLIP_TITLES_RAW}
 
