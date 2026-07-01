@@ -700,7 +700,7 @@ const CLIPS = [
   },
   {
     "id": 87,
-    "title": "refuting khawarij",
+    "title": "The 'Headless Chicken' Mentality of Modern Khawarj",
     "file": "refuting khawarij.mp4",
     "archive": "refuting khawarij.mp4",
     "thumb": "thumb/clips/refuting khawarij.jpg",

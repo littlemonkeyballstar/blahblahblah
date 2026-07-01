@@ -6420,7 +6420,7 @@ const SEARCH_INDEX = [
   {
     "type": "clip",
     "id": 87,
-    "title": "refuting khawarij",
+    "title": "The 'Headless Chicken' Mentality of Modern Khawarj",
     "sub": "Short clip",
     "href": "clips.html?clip=87",
     "thumb": "thumb/clips/refuting khawarij.jpg"

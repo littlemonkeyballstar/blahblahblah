@@ -487,6 +487,10 @@ _CLIP_TITLES_RAW = [
         "The 'Headless Chicken' Mentality of Modern Khawarji",
     ),
     (
+        "refuting khawarij",
+        "The 'Headless Chicken' Mentality of Modern Khawarj",
+    ),
+    (
         "why are khawarij gay",
         "Why the Khawarij Are Sympathetic Towards Gay People",
     ),
