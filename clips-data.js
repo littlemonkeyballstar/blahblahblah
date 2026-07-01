@@ -588,14 +588,6 @@ const CLIPS = [
   },
   {
     "id": 73,
-    "title": "Falling into the shaytan's vicious web",
-    "file": "falling in the shaytans vicous veb.mp4",
-    "archive": "falling in the shaytans vicous veb.mp4",
-    "thumb": "thumb/clips/falling in the shaytans vicous veb.jpg",
-    "stream": "https://archive.org/download/the-creed-of-the-shia/falling%20in%20the%20shaytans%20vicous%20veb.mp4"
-  },
-  {
-    "id": 74,
     "title": "Falling into the vicious web of the shaytan",
     "file": "falling into the vicous webb of the shaytan.mp4",
     "archive": "falling into the vicous webb of the shaytan.mp4",
@@ -603,7 +595,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/falling%20into%20the%20vicous%20webb%20of%20the%20shaytan.mp4"
   },
   {
-    "id": 75,
+    "id": 74,
     "title": "Giving up the better for the worse",
     "file": "giving up better for worse.mp4",
     "archive": "giving up better for worse.mp4",
@@ -611,7 +603,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/giving%20up%20better%20for%20worse.mp4"
   },
   {
-    "id": 76,
+    "id": 75,
     "title": "Grave worshippers: the evil creed exposed in the Quran",
     "file": "grave worshipers exposed clip.mp4",
     "archive": "grave worshipers exposed clip.mp4",
@@ -619,7 +611,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/grave%20worshipers%20exposed%20clip.mp4"
   },
   {
-    "id": 77,
+    "id": 76,
     "title": "Why is ibn Baz a kaffir?",
     "file": "ibn baz.mp4",
     "archive": "ibn baz.mp4",
@@ -627,7 +619,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/ibn%20baz.mp4"
   },
   {
-    "id": 78,
+    "id": 77,
     "title": "If you are not practicing, you will develop a personality disorder",
     "file": "if you are mot practicing u will get a personality.mp4",
     "archive": "if you are mot practicing u will get a personality.mp4",
@@ -635,7 +627,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/if%20you%20are%20mot%20practicing%20u%20will%20get%20a%20personality.mp4"
   },
   {
-    "id": 79,
+    "id": 78,
     "title": "If you don't do jihad, it will come to your door",
     "file": "if you dont do jihad it will come to your door!!.mp4",
     "archive": "if you dont do jihad it will come to your door!!.mp4",
@@ -643,7 +635,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/if%20you%20dont%20do%20jihad%20it%20will%20come%20to%20your%20door%21%21.mp4"
   },
   {
-    "id": 80,
+    "id": 79,
     "title": "Never Argue with a Jahiloon",
     "file": "ignore the jailoom.mp4",
     "archive": "ignore the jailoom.mp4",
@@ -651,7 +643,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/ignore%20the%20jailoom.mp4"
   },
   {
-    "id": 81,
+    "id": 80,
     "title": "The importance of hijra (part 2)",
     "file": "importance of hijra 2.mp4",
     "archive": "importance of hijra 2.mp4",
@@ -659,7 +651,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/importance%20of%20hijra%202.mp4"
   },
   {
-    "id": 82,
+    "id": 81,
     "title": "Is the dawla khawarij?",
     "file": "is dawla khawarij.mp4",
     "archive": "is dawla khawarij.mp4",
@@ -667,7 +659,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/is%20dawla%20khawarij.mp4"
   },
   {
-    "id": 83,
+    "id": 82,
     "title": "The shame of man-made law",
     "file": "man made izims skizims.mp4",
     "archive": "man made izims skizims.mp4",
@@ -675,7 +667,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/man%20made%20izims%20skizims.mp4"
   },
   {
-    "id": 84,
+    "id": 83,
     "title": "The mufti of the taghut",
     "file": "murfti of the taghut.mp4",
     "archive": "murfti of the taghut.mp4",
@@ -683,7 +675,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/murfti%20of%20the%20taghut.mp4"
   },
   {
-    "id": 85,
+    "id": 84,
     "title": "Narcissist personality disorder",
     "file": "narrsasit.mp4",
     "archive": "narrsasit.mp4",
@@ -691,7 +683,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/narrsasit.mp4"
   },
   {
-    "id": 86,
+    "id": 85,
     "title": "The Qadiani exposed",
     "file": "qadiani's eposed.mp4",
     "archive": "qadiani's eposed.mp4",
@@ -699,7 +691,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/qadiani%27s%20eposed.mp4"
   },
   {
-    "id": 87,
+    "id": 86,
     "title": "The reality of truth (part 12)",
     "file": "reality of truth 12.mp4",
     "archive": "reality of truth 12.mp4",
@@ -707,7 +699,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/reality%20of%20truth%2012.mp4"
   },
   {
-    "id": 88,
+    "id": 87,
     "title": "refuting khawarij",
     "file": "refuting khawarij.mp4",
     "archive": "refuting khawarij.mp4",
@@ -715,7 +707,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/refuting%20khawarij.mp4"
   },
   {
-    "id": 89,
+    "id": 88,
     "title": "Reject the taghut",
     "file": "reject taghut.mp4",
     "archive": "reject taghut.mp4",
@@ -723,7 +715,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/reject%20taghut.mp4"
   },
   {
-    "id": 90,
+    "id": 89,
     "title": "Refuting those who put false conditions on jihad",
     "file": "sdadwf.ia.mp4",
     "archive": "sdadwf.ia.mp4",
@@ -731,7 +723,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/sdadwf.ia.mp4"
   },
   {
-    "id": 91,
+    "id": 90,
     "title": "The lie about mujahideen being khawarij",
     "file": "sign of a khawarij.mp4",
     "archive": "sign of a khawarij.mp4",
@@ -739,7 +731,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/sign%20of%20a%20khawarij.mp4"
   },
   {
-    "id": 92,
+    "id": 91,
     "title": "Signs of a hypocrite",
     "file": "signs of a hypocrite clip.mp4",
     "archive": "signs of a hypocrite clip.mp4",
@@ -747,7 +739,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/signs%20of%20a%20hypocrite%20clip.mp4"
   },
   {
-    "id": 93,
+    "id": 92,
     "title": "The solution is living in dar al-Islam",
     "file": "solution is living at dar al islam.mp4",
     "archive": "solution is living at dar al islam.mp4",
@@ -755,7 +747,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/solution%20is%20living%20at%20dar%20al%20islam.mp4"
   },
   {
-    "id": 94,
+    "id": 93,
     "title": "Tahakum — ruling by other than what Allah revealed",
     "file": "tahakum.mp4",
     "archive": "tahakum.mp4",
@@ -763,7 +755,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/tahakum.mp4"
   },
   {
-    "id": 95,
+    "id": 94,
     "title": "The Taliban destroys the Buddha statues",
     "file": "taliban breaks buddah .mp4",
     "archive": "taliban breaks buddah .mp4",
@@ -771,7 +763,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/taliban%20breaks%20buddah%20.mp4"
   },
   {
-    "id": 96,
+    "id": 95,
     "title": "The spy who killed Imam Anwar al-Awlaki",
     "file": "the spy who killed imam al awlaki.mp4",
     "archive": "the spy who killed imam al awlaki.mp4",
@@ -779,7 +771,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/the%20spy%20who%20killed%20imam%20al%20awlaki.mp4"
   },
   {
-    "id": 97,
+    "id": 96,
     "title": "Why the Khawarij Are Sympathetic Towards Gay People",
     "file": "why are khawarij gay.mp4",
     "archive": "why are khawarij gay.mp4",
@@ -787,7 +779,7 @@ const CLIPS = [
     "stream": "https://archive.org/download/the-creed-of-the-shia/why%20are%20khawarij%20gay.mp4"
   },
   {
-    "id": 98,
+    "id": 97,
     "title": "Wicked scholars",
     "file": "wicked scholars Abdullah faisal shaykh.mp4",
     "archive": "wicked scholars Abdullah faisal shaykh.mp4",

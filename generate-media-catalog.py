@@ -386,6 +386,8 @@ EXCLUDED_CLIP_NORMS = {
     norm("comfort in the truth"),
     norm("alwaraalbara"),
     norm("The Creed Of the shia "),
+    # Duplicate of falling into the vicous webb of the shaytan.mp4
+    norm("falling in the shaytans vicous veb"),
 }
 
 # Polished display title for every clip (keyed by normalized IA filename stem)
@@ -518,7 +520,6 @@ _CLIP_TITLES_RAW = [
     ("booti", "Exposing wicked scholar al-Bouti"),
     ("dealing with thise who reject dawla", "How do we deal with people who reject the dawla? (2)"),
     ("demanding shariya", "Demanding the implementation of sharia"),
-    ("falling in the shaytans vicous veb", "Falling into the shaytan's vicious web"),
     ("falling into the vicous webb of the shaytan", "Falling into the vicious web of the shaytan"),
     ("giving up better for worse", "Giving up the better for the worse"),
     ("ibn baz", "Why is ibn Baz a kaffir?"),
@@ -613,10 +614,12 @@ def build_clip_thumb_index() -> dict[str, str]:
     return index
 
 
-def _thumb_lookup(filename: str, index: dict[str, str]) -> str | None:
+def _thumb_lookup(filename: str, index: dict[str, str], *, exact: bool = False) -> str | None:
     key = norm(filename)
     if key in index:
         return index[key]
+    if exact:
+        return None
     best_rel = None
     best_score = 0.0
     for k, rel in index.items():
@@ -627,8 +630,17 @@ def _thumb_lookup(filename: str, index: dict[str, str]) -> str | None:
     return best_rel
 
 
-def find_thumb(filename: str, local_index: dict[str, str], archive_map: dict[str, str]) -> str | None:
-    return _thumb_lookup(filename, local_index) or _thumb_lookup(filename, archive_map)
+def find_thumb(
+    filename: str,
+    local_index: dict[str, str],
+    archive_map: dict[str, str],
+    *,
+    exact: bool = False,
+) -> str | None:
+    return (
+        _thumb_lookup(filename, local_index, exact=exact)
+        or _thumb_lookup(filename, archive_map, exact=exact)
+    )
 
 
 def build_clips_archive_thumb_map(meta: dict) -> dict[str, str]:
@@ -751,9 +763,9 @@ def build_clips(meta: dict | None = None):
         stem = Path(name).stem
         if stem.endswith(".ia"):
             stem = stem[:-3]
-        thumb = find_thumb(stem + ".mp4", local_thumb_index, archive_thumb_map)
+        thumb = find_thumb(stem + ".mp4", local_thumb_index, archive_thumb_map, exact=True)
         if not thumb:
-            thumb = find_thumb(name, local_thumb_index, archive_thumb_map)
+            thumb = find_thumb(name, local_thumb_index, archive_thumb_map, exact=True)
 
         stem_key = norm(stem)
         title = strip_speaker_from_title(CLIP_TITLE_OVERRIDES.get(stem_key, clean_clip_title(stem)))
