@@ -6044,7 +6044,7 @@ const SEARCH_INDEX = [
   {
     "type": "clip",
     "id": 40,
-    "title": "Humorous clip",
+    "title": "Shaykh Faisal challanges his enamy's",
     "sub": "Short clip",
     "href": "clips.html?clip=40",
     "thumb": "thumb/clips/Shaykh faisal funny.jpg"
@@ -6052,457 +6052,449 @@ const SEARCH_INDEX = [
   {
     "type": "clip",
     "id": 41,
-    "title": "The 'Headless Chicken' Mentality of Modern Khawarji",
-    "sub": "Short clip",
-    "href": "clips.html?clip=41",
-    "thumb": "thumb/clips/The 'Headless Chicken' Mentality of Modern Ex.jpg"
-  },
-  {
-    "type": "clip",
-    "id": 42,
     "title": "The battle between truth and falsehood never ends",
     "sub": "Short clip",
-    "href": "clips.html?clip=42",
+    "href": "clips.html?clip=41",
     "thumb": "thumb/clips/The Battle Between Truth & Falsehood Never Ends.jpg"
   },
   {
     "type": "clip",
-    "id": 43,
+    "id": 42,
     "title": "The Betrayal of the Mujahideen by Saudi Salafis in Yemen",
     "sub": "Short clip",
-    "href": "clips.html?clip=43",
+    "href": "clips.html?clip=42",
     "thumb": "thumb/clips/The Betrayal of the Mujahideenby Saudi Salafis in.jpg"
   },
   {
     "type": "clip",
-    "id": 44,
+    "id": 43,
     "title": "The Book in which there is no doubt",
     "sub": "Short clip",
-    "href": "clips.html?clip=44",
+    "href": "clips.html?clip=43",
     "thumb": "thumb/clips/The Book in which there is no doubt.jpg"
   },
   {
     "type": "clip",
-    "id": 45,
+    "id": 44,
     "title": "The evil scholar is a lizard",
     "sub": "Short clip",
-    "href": "clips.html?clip=45",
+    "href": "clips.html?clip=44",
     "thumb": "thumb/clips/The Evil Scholar is a lizard - Shaykh Abdullah Faisal.jpg"
   },
   {
     "type": "clip",
-    "id": 46,
+    "id": 45,
     "title": "The importance of hijra",
     "sub": "Short clip",
-    "href": "clips.html?clip=46",
+    "href": "clips.html?clip=45",
     "thumb": "thumb/clips/The Importance of hijra - shaykh abdullah faisal.jpg"
   },
   {
     "type": "clip",
-    "id": 47,
+    "id": 46,
     "title": "Islam Getting Watered Down — The Kuffar Madakhilah Exposed: How They Changed School Curriculums to Stop 'Radical Islam'",
     "sub": "Short clip",
-    "href": "clips.html?clip=47",
+    "href": "clips.html?clip=46",
     "thumb": "thumb/clips/The Madakilas watering down islam.jpg"
   },
   {
     "type": "clip",
-    "id": 48,
+    "id": 47,
     "title": "The sin of refusing to call a kafir a kafir",
     "sub": "Short clip",
-    "href": "clips.html?clip=48",
+    "href": "clips.html?clip=47",
     "thumb": "thumb/clips/The Sin of Refusing to Call a Kafir a Kafir.jpg"
   },
   {
     "type": "clip",
-    "id": 49,
+    "id": 48,
     "title": "The ummah is sick and the scholars are to blame",
     "sub": "Short clip",
-    "href": "clips.html?clip=49",
+    "href": "clips.html?clip=48",
     "thumb": "thumb/clips/The Ummah is Sick & The Scholars are to Blame.jpg"
   },
   {
     "type": "clip",
-    "id": 50,
+    "id": 49,
     "title": "The killing of journalists",
     "sub": "Short clip",
-    "href": "clips.html?clip=50",
+    "href": "clips.html?clip=49",
     "thumb": "thumb/clips/The killing of journalists.jpg"
   },
   {
     "type": "clip",
-    "id": 51,
+    "id": 50,
     "title": "The lie about jihad",
     "sub": "Short clip",
-    "href": "clips.html?clip=51",
+    "href": "clips.html?clip=50",
     "thumb": "thumb/clips/The lie about Jihad.jpg"
   },
   {
     "type": "clip",
-    "id": 52,
+    "id": 51,
     "title": "The man who goes out for jihad",
     "sub": "Short clip",
-    "href": "clips.html?clip=52",
+    "href": "clips.html?clip=51",
     "thumb": "thumb/clips/The man who goes out in Jihad.jpg"
   },
   {
     "type": "clip",
-    "id": 53,
+    "id": 52,
     "title": "They control what you learn about Islam",
     "sub": "Short clip",
-    "href": "clips.html?clip=53",
+    "href": "clips.html?clip=52",
     "thumb": "thumb/clips/They Control what you learn about isllam.jpg"
   },
   {
     "type": "clip",
-    "id": 54,
+    "id": 53,
     "title": "They will fight you until you leave Islam (Surah Baqarah)",
     "sub": "Short clip",
-    "href": "clips.html?clip=54",
+    "href": "clips.html?clip=53",
     "thumb": "thumb/clips/They Will Fight You Until You Leave Islam (Baqara.jpg"
   },
   {
     "type": "clip",
-    "id": 55,
+    "id": 54,
     "title": "They Will try to buy you out",
     "sub": "Short clip",
-    "href": "clips.html?clip=55",
+    "href": "clips.html?clip=54",
     "thumb": "thumb/clips/They Will try to buy you out.jpg"
   },
   {
     "type": "clip",
-    "id": 56,
+    "id": 55,
     "title": "Those who label the mujahideen as khawarij",
     "sub": "Short clip",
-    "href": "clips.html?clip=56",
+    "href": "clips.html?clip=55",
     "thumb": "thumb/clips/Those Who Label the Mujahideen as Khawarij by Shaykh Abdullah Faisal.jpg"
   },
   {
     "type": "clip",
-    "id": 57,
+    "id": 56,
     "title": "Those who follow their evil and corrupted desires",
     "sub": "Short clip",
-    "href": "clips.html?clip=57",
+    "href": "clips.html?clip=56",
     "thumb": "thumb/clips/Those who follow their evil and corrupted desires.jpg"
   },
   {
     "type": "clip",
-    "id": 58,
+    "id": 57,
     "title": "Why does Allah bless the kuffar?",
     "sub": "Short clip",
-    "href": "clips.html?clip=58",
+    "href": "clips.html?clip=57",
     "thumb": "thumb/clips/WHY ALLAH BLESS THE KUFFAR1 - Trim.jpg"
   },
   {
     "type": "clip",
-    "id": 59,
+    "id": 58,
     "title": "Who is 'the other'? Defining 'the excuser' in Islam",
     "sub": "Short clip",
-    "href": "clips.html?clip=59",
+    "href": "clips.html?clip=58",
     "thumb": "thumb/clips/Who Is 'The Other'  Defining 'The Excuser' In(1).jpg"
   },
   {
     "type": "clip",
-    "id": 60,
+    "id": 59,
     "title": "Why Being Ignorant in Islam Can Lead to Being a Munafiq (Hypocrite)",
     "sub": "Short clip",
-    "href": "clips.html?clip=60",
+    "href": "clips.html?clip=59",
     "thumb": "thumb/clips/Why Being Ignorant in Islam Can Lead to Being a 22.jpg"
   },
   {
     "type": "clip",
-    "id": 61,
+    "id": 60,
     "title": "Why Believing in Allah Doesn't Make You Special",
     "sub": "Short clip",
-    "href": "clips.html?clip=61",
+    "href": "clips.html?clip=60",
     "thumb": "thumb/clips/Why Believing in Allah Doesn'tMake You Special.jpg"
   },
   {
     "type": "clip",
-    "id": 62,
+    "id": 61,
     "title": "Why do Christians love Jews and hate Muslims?",
     "sub": "Short clip",
-    "href": "clips.html?clip=62",
+    "href": "clips.html?clip=61",
     "thumb": "thumb/clips/Why do christians love jews and hate muslims.jpg"
   },
   {
     "type": "clip",
-    "id": 63,
+    "id": 62,
     "title": "You Cannot Be a Muslim Without Rejecting Taghut",
     "sub": "Short clip",
-    "href": "clips.html?clip=63",
+    "href": "clips.html?clip=62",
     "thumb": "thumb/clips/You Cannot Be a MuslimWithout Rejecting Taghut.jpg"
   },
   {
     "type": "clip",
-    "id": 64,
+    "id": 63,
     "title": "Your choice of spouse reveals your true faith",
     "sub": "Short clip",
-    "href": "clips.html?clip=64",
+    "href": "clips.html?clip=63",
     "thumb": "thumb/clips/Your Choice of Spouse Reveals Your True Faith.jpg"
   },
   {
     "type": "clip",
-    "id": 65,
+    "id": 64,
     "title": "Al-wala wal-bara",
     "sub": "Short clip",
-    "href": "clips.html?clip=65",
+    "href": "clips.html?clip=64",
     "thumb": "thumb/clips/al wala al bara.jpg"
   },
   {
     "type": "clip",
-    "id": 66,
+    "id": 65,
     "title": "Allah will dump you and your wicked scholar in the Hellfire",
     "sub": "Short clip",
-    "href": "clips.html?clip=66",
+    "href": "clips.html?clip=65",
     "thumb": "thumb/clips/allah wil dump you and your wicked schohler in the hellfire.jpg"
   },
   {
     "type": "clip",
-    "id": 67,
+    "id": 66,
     "title": "AMJ and Faisal refuting Hazami",
     "sub": "Short clip",
-    "href": "clips.html?clip=67",
+    "href": "clips.html?clip=66",
     "thumb": "thumb/clips/amj and faisal refuting hazami's.jpg"
   },
   {
     "type": "clip",
-    "id": 68,
+    "id": 67,
     "title": "Surah al-Baqarah 216",
     "sub": "Short clip",
-    "href": "clips.html?clip=68",
+    "href": "clips.html?clip=67",
     "thumb": "thumb/clips/baqara 216.jpg"
   },
   {
     "type": "clip",
-    "id": 69,
+    "id": 68,
     "title": "Blind following wicked scholars will dump you in the Hellfire",
     "sub": "Short clip",
-    "href": "clips.html?clip=69",
+    "href": "clips.html?clip=68",
     "thumb": "thumb/clips/blind follwing wickeed schohlers.jpg"
   },
   {
     "type": "clip",
-    "id": 70,
+    "id": 69,
     "title": "Exposing wicked scholar al-Bouti",
     "sub": "Short clip",
-    "href": "clips.html?clip=70",
+    "href": "clips.html?clip=69",
     "thumb": "thumb/clips/booti.jpg"
   },
   {
     "type": "clip",
-    "id": 71,
+    "id": 70,
     "title": "How do we deal with people who reject the dawla? (2)",
     "sub": "Short clip",
-    "href": "clips.html?clip=71",
+    "href": "clips.html?clip=70",
     "thumb": "thumb/clips/dealing with thise who reject dawla.jpg"
   },
   {
     "type": "clip",
-    "id": 72,
+    "id": 71,
     "title": "Demanding the implementation of sharia",
     "sub": "Short clip",
-    "href": "clips.html?clip=72",
+    "href": "clips.html?clip=71",
     "thumb": "thumb/clips/demanding shariya.jpg"
   },
   {
     "type": "clip",
-    "id": 73,
+    "id": 72,
     "title": "Falling into the vicious web of the shaytan",
     "sub": "Short clip",
-    "href": "clips.html?clip=73",
+    "href": "clips.html?clip=72",
     "thumb": "thumb/clips/falling into the vicous webb of the shaytan.jpg"
   },
   {
     "type": "clip",
-    "id": 74,
+    "id": 73,
     "title": "Giving up the better for the worse",
     "sub": "Short clip",
-    "href": "clips.html?clip=74",
+    "href": "clips.html?clip=73",
     "thumb": "thumb/clips/giving up better for worse.jpg"
   },
   {
     "type": "clip",
-    "id": 75,
+    "id": 74,
     "title": "Grave worshippers: the evil creed exposed in the Quran",
     "sub": "Short clip",
-    "href": "clips.html?clip=75",
+    "href": "clips.html?clip=74",
     "thumb": "thumb/clips/grave worshipers exposed clip.jpg"
   },
   {
     "type": "clip",
-    "id": 76,
+    "id": 75,
     "title": "Why is ibn Baz a kaffir?",
     "sub": "Short clip",
-    "href": "clips.html?clip=76",
+    "href": "clips.html?clip=75",
     "thumb": "thumb/clips/ibn baz.jpg"
   },
   {
     "type": "clip",
-    "id": 77,
+    "id": 76,
     "title": "If you are not practicing, you will develop a personality disorder",
     "sub": "Short clip",
-    "href": "clips.html?clip=77",
+    "href": "clips.html?clip=76",
     "thumb": "thumb/clips/if you are mot practicing u will get a personality.jpg"
   },
   {
     "type": "clip",
-    "id": 78,
+    "id": 77,
     "title": "If you don't do jihad, it will come to your door",
     "sub": "Short clip",
-    "href": "clips.html?clip=78",
+    "href": "clips.html?clip=77",
     "thumb": "thumb/clips/if you dont do jihad it will come to your door!!.jpg"
   },
   {
     "type": "clip",
-    "id": 79,
+    "id": 78,
     "title": "Never Argue with a Jahiloon",
     "sub": "Short clip",
-    "href": "clips.html?clip=79",
+    "href": "clips.html?clip=78",
     "thumb": "thumb/clips/ignore the jailoom.jpg"
   },
   {
     "type": "clip",
-    "id": 80,
+    "id": 79,
     "title": "The importance of hijra (part 2)",
     "sub": "Short clip",
-    "href": "clips.html?clip=80",
+    "href": "clips.html?clip=79",
     "thumb": "thumb/clips/importance of hijra 2.jpg"
   },
   {
     "type": "clip",
-    "id": 81,
+    "id": 80,
     "title": "Is the dawla khawarij?",
     "sub": "Short clip",
-    "href": "clips.html?clip=81",
+    "href": "clips.html?clip=80",
     "thumb": "thumb/clips/is dawla khawarij.jpg"
   },
   {
     "type": "clip",
-    "id": 82,
+    "id": 81,
     "title": "The shame of man-made law",
     "sub": "Short clip",
-    "href": "clips.html?clip=82",
+    "href": "clips.html?clip=81",
     "thumb": "thumb/clips/man made izims skizims.jpg"
   },
   {
     "type": "clip",
-    "id": 83,
+    "id": 82,
     "title": "The mufti of the taghut",
     "sub": "Short clip",
-    "href": "clips.html?clip=83",
+    "href": "clips.html?clip=82",
     "thumb": "thumb/clips/murfti of the taghut.jpg"
   },
   {
     "type": "clip",
-    "id": 84,
+    "id": 83,
     "title": "Narcissist personality disorder",
     "sub": "Short clip",
-    "href": "clips.html?clip=84",
+    "href": "clips.html?clip=83",
     "thumb": "thumb/clips/narrsasit.jpg"
   },
   {
     "type": "clip",
-    "id": 85,
+    "id": 84,
     "title": "The Qadiani exposed",
     "sub": "Short clip",
-    "href": "clips.html?clip=85",
+    "href": "clips.html?clip=84",
     "thumb": "thumb/clips/qadiani's eposed.jpg"
   },
   {
     "type": "clip",
-    "id": 86,
+    "id": 85,
     "title": "The reality of truth (part 12)",
     "sub": "Short clip",
-    "href": "clips.html?clip=86",
+    "href": "clips.html?clip=85",
     "thumb": "thumb/clips/reality of truth 12.jpg"
   },
   {
     "type": "clip",
-    "id": 87,
+    "id": 86,
     "title": "The 'Headless Chicken' Mentality of Modern Khawarj",
     "sub": "Short clip",
-    "href": "clips.html?clip=87",
+    "href": "clips.html?clip=86",
     "thumb": "thumb/clips/refuting khawarij.jpg"
   },
   {
     "type": "clip",
-    "id": 88,
+    "id": 87,
     "title": "Reject the taghut",
     "sub": "Short clip",
-    "href": "clips.html?clip=88",
+    "href": "clips.html?clip=87",
     "thumb": "thumb/clips/reject taghut.jpg"
   },
   {
     "type": "clip",
-    "id": 89,
+    "id": 88,
     "title": "Refuting those who put false conditions on jihad",
     "sub": "Short clip",
-    "href": "clips.html?clip=89",
+    "href": "clips.html?clip=88",
     "thumb": "thumb/clips/sdadwf.jpg"
   },
   {
     "type": "clip",
-    "id": 90,
+    "id": 89,
     "title": "The lie about mujahideen being khawarij",
     "sub": "Short clip",
-    "href": "clips.html?clip=90",
+    "href": "clips.html?clip=89",
     "thumb": "thumb/clips/sign of a khawarij.jpg"
   },
   {
     "type": "clip",
-    "id": 91,
+    "id": 90,
     "title": "Signs of a hypocrite",
     "sub": "Short clip",
-    "href": "clips.html?clip=91",
+    "href": "clips.html?clip=90",
     "thumb": "thumb/clips/signs of a hypocrite clip.jpg"
   },
   {
     "type": "clip",
-    "id": 92,
+    "id": 91,
     "title": "The solution is living in dar al-Islam",
     "sub": "Short clip",
-    "href": "clips.html?clip=92",
+    "href": "clips.html?clip=91",
     "thumb": "thumb/clips/solution is living at dar al islam.jpg"
   },
   {
     "type": "clip",
-    "id": 93,
+    "id": 92,
     "title": "Tahakum — ruling by other than what Allah revealed",
     "sub": "Short clip",
-    "href": "clips.html?clip=93",
+    "href": "clips.html?clip=92",
     "thumb": "thumb/clips/tahakum.jpg"
   },
   {
     "type": "clip",
-    "id": 94,
+    "id": 93,
     "title": "The Taliban destroys the Buddha statues",
     "sub": "Short clip",
-    "href": "clips.html?clip=94",
+    "href": "clips.html?clip=93",
     "thumb": "thumb/clips/taliban breaks buddah .jpg"
   },
   {
     "type": "clip",
-    "id": 95,
+    "id": 94,
     "title": "The spy who killed Imam Anwar al-Awlaki",
     "sub": "Short clip",
-    "href": "clips.html?clip=95",
+    "href": "clips.html?clip=94",
     "thumb": "thumb/clips/the spy who killed imam al awlaki.jpg"
   },
   {
     "type": "clip",
-    "id": 96,
+    "id": 95,
     "title": "Why the Khawarij Are Sympathetic Towards Gay People",
     "sub": "Short clip",
-    "href": "clips.html?clip=96",
+    "href": "clips.html?clip=95",
     "thumb": "thumb/clips/why are khawarij gay.jpg"
   },
   {
     "type": "clip",
-    "id": 97,
+    "id": 96,
     "title": "Wicked scholars",
     "sub": "Short clip",
-    "href": "clips.html?clip=97",
+    "href": "clips.html?clip=96",
     "thumb": "thumb/clips/wicked scholars Abdullah faisal shaykh.jpg"
   },
   {

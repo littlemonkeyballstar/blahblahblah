@@ -388,6 +388,8 @@ EXCLUDED_CLIP_NORMS = {
     norm("The Creed Of the shia "),
     # Duplicate of falling into the vicous webb of the shaytan.mp4
     norm("falling in the shaytans vicous veb"),
+    # Duplicate of refuting khawarij.mp4 (Headless Chicken Khawarj)
+    norm("The 'Headless Chicken' Mentality of Modern Ex"),
 }
 
 # Polished display title for every clip (keyed by normalized IA filename stem)
@@ -481,11 +483,7 @@ _CLIP_TITLES_RAW = [
         "Shamsis_teacher_Abu_Khadeeja_exposed_as_a_homosexual_pedophile_i0zSl3gpFog",
         "Shamsi's teacher Abu Khadeeja exposed",
     ),
-    ("Shaykh faisal funny", "Humorous clip"),
-    (
-        "The 'Headless Chicken' Mentality of Modern Ex",
-        "The 'Headless Chicken' Mentality of Modern Khawarji",
-    ),
+    ("Shaykh faisal funny", "Shaykh Faisal challanges his enamy's"),
     (
         "refuting khawarij",
         "The 'Headless Chicken' Mentality of Modern Khawarj",
